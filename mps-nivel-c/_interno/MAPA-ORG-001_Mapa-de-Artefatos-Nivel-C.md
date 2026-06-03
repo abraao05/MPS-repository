@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.12 (rascunho) |
+| **Versão** | 0.13 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -56,7 +56,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.12 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.13 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
@@ -67,6 +67,7 @@ MPS-Nivel-C/
 | PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.2 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
 | PRO-OSW-001 | Governança Organizacional de Processos | 1.1 | OSW 2, 3, 4, 5, 6, 7 | Aprovado |
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.1 | OSW 8, 9, 10 | Aprovado |
+| PLA-MED-001 | Plano de Medição | 1.0 | MED 1-7; GPC 9; OSW 6 | Aprovado |
 
 ---
 
@@ -82,7 +83,7 @@ MPS-Nivel-C/
 | OSW 3 | Informações de governança identificadas e usadas | **PRO-OSW-001 §6** | ORG | Jira/Confluence | ✅ |
 | OSW 4+ | Autoridade, competências e colaboradores alinhados aos objetivos | **PRO-OSW-001 §4** | DEF/ORG | Confluence | ✅ |
 | OSW 5+ | Riscos/oportunidades organizacionais geridos | **PRO-OSW-001 §5** + EST-GPC-002 | ORG | Jira | ✅ |
-| OSW 6 | Coleta/análise/uso de medidas organizacionais garantidos | **PRO-OSW-001 §6** (+ MED) | ORG | Jira | 🟨 |
+| OSW 6 | Coleta/análise/uso de medidas organizacionais garantidos | **PRO-OSW-001 §6 + PLA-MED-001 §5** | ORG | Jira | ✅ |
 | OSW 7 | Alinhamento dos processos aos objetivos garantido | **PRO-OSW-001 §7** — análise crítica trimestral | ORG | Confluence | ✅ |
 | OSW 8 | Oportunidades de negócio/investimentos priorizados (portfólio) | **PRO-OSW-002 §3** | DEF/ORG | Confluence | ✅ |
 | OSW 9 | Recursos/orçamento/autoridade do portfólio estabelecidos | **PRO-OSW-002 §4** + quadro de capacity | ORG | Confluence | ✅ |
@@ -103,7 +104,7 @@ MPS-Nivel-C/
 | GPC 6 | Estrutura de apoio (SEPG/grupo de processos) estabelecida | **PRO-GPC-002 — Definição do Time de Melhoria Contínua** | DEF/ORG | Confluence | ✅ |
 | GPC 7 | Estratégia de gerência de riscos e oportunidades | **EST-GPC-002 — Estratégia de Gerência de Riscos** | DEF/ORG | Confluence | ✅ |
 | GPC 8 | Ambientes padrão de trabalho estabelecidos | **PLA-GPC-001 §3** | DEF/ORG | Confluence | ✅ |
-| GPC 9 | Repositório organizacional de medidas + garantia da qualidade de medidas | (ver MED) Definição do repositório de medidas | DEF/ORG | Jira | ⬜ |
+| GPC 9 | Repositório organizacional de medidas + garantia da qualidade de medidas | **PLA-MED-001 §4 e §8** | DEF/ORG | Jira | ✅ |
 | GPC 10 | Processos-padrão implantados na organização | **PLA-GPC-001 §4** | ORG | Confluence | ✅ |
 | GPC 11 | Efetividade das melhorias avaliada e relatada | **PLA-GPC-001 §6** | ORG | Confluence | ✅ |
 
@@ -114,13 +115,13 @@ MPS-Nivel-C/
 ### MED — Medição
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| MED 1 | Objetivos de medição derivados dos objetivos de negócio | Plano de Medição (objetivos) | DEF/ORG | Confluence | ⬜ |
-| MED 2 | Medidas com definições operacionais | **Catálogo de Medidas (definições operacionais)** | DEF/ORG | Confluence | ⬜ |
-| MED 3+ | Medidas coletadas, verificadas e armazenadas | Repositório de medidas (registros) | ORG | Jira | ⬜ |
-| MED 4+ | Desempenho organizacional analisado | Relatório de análise de desempenho | ORG | Jira | ⬜ |
-| MED 5 | Ações corretivas a partir das medidas | Registro de ações corretivas | ORG | Jira | ⬜ |
-| MED 6 | Resultados comunicados periodicamente | Comunicação de desempenho (ata/e-mail) | ORG | Confluence | ⬜ |
-| MED 7 | Repositório avaliado periodicamente (qualidade de medidas) | Procedimento + registro de qualidade de medidas | DEF/ORG | Confluence | ⬜ |
+| MED 1 | Objetivos de medição derivados dos objetivos de negócio | **PLA-MED-001 §2** | DEF/ORG | Confluence | ✅ |
+| MED 2 | Medidas com definições operacionais | **PLA-MED-001 §3** — Catálogo de Medidas | DEF/ORG | Confluence | ✅ |
+| MED 3+ | Medidas coletadas, verificadas e armazenadas | **PLA-MED-001 §4** | ORG | Jira | ✅ |
+| MED 4+ | Desempenho organizacional analisado | **PLA-MED-001 §5** | ORG | Jira | ✅ |
+| MED 5 | Ações corretivas a partir das medidas | **PLA-MED-001 §6** | ORG | Jira | ✅ |
+| MED 6 | Resultados comunicados periodicamente | **PLA-MED-001 §7** | ORG | Confluence | ✅ |
+| MED 7 | Repositório avaliado periodicamente (qualidade de medidas) | **PLA-MED-001 §8** | DEF/ORG | Confluence | ✅ |
 
 > **MED — nota de ferramenta (v0.2):** o Jira é o repositório de medidas. Atenção na produção: o avaliador exige que os indicadores sejam **consolidados e analisados ao longo do tempo** (não números soltos por projeto). Provável necessidade de uma camada de consolidação — dashboard do Jira ou planilha de indicadores organizacional. Definir no Plano de Medição.
 
