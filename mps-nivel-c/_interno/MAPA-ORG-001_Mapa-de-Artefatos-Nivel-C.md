@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.18 (rascunho) |
+| **Versão** | 0.19 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -59,7 +59,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.18 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.19 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
@@ -80,6 +80,8 @@ MPS-Nivel-C/
 | PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.0 | REQ 1-7 | Aprovado |
 | TPL-REQ-001 | Template de Documento de Requisitos | 1.0 | REQ (template) | Aprovado |
 | TPL-REQ-002 | Template de Matriz de Rastreabilidade | 1.0 | REQ 4 (template) | Aprovado |
+| PRO-PCP-001 | Processo de Projeto e Construção do Produto | 1.0 | PCP 1-3 | Aprovado |
+| TPL-PCP-001 | Template de Documento de Design | 1.0 | PCP (template) | Aprovado |
 
 ---
 
@@ -212,9 +214,9 @@ MPS-Nivel-C/
 ### PCP — Projeto e Construção do Produto
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| PCP 1+ | Design desenvolvido com solução baseada em critérios + rastreável | **Documento de Design / Arquitetura** | TPL + PROJ | Template→Registros | ⬜ |
-| PCP 2 | Design avaliado e problemas tratados | Registro de revisão de design | PROJ | Registros | ⬜ |
-| PCP 3+ | Produto implementado conforme design + informações mantidas | Código/build + documentação técnica | PROJ | Git/Azure DevOps | ⬜ |
+| PCP 1+ | Design desenvolvido com solução baseada em critérios + rastreável | **Documento de Design / Arquitetura** | TPL + PROJ | Template→Registros | ✅ |
+| PCP 2 | Design avaliado e problemas tratados | Registro de revisão de design | PROJ | Registros | ✅ |
+| PCP 3+ | Produto implementado conforme design + informações mantidas | Código/build + documentação técnica | PROJ | Git/Azure DevOps | ✅ |
 
 ### ITP — Integração do Produto
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
