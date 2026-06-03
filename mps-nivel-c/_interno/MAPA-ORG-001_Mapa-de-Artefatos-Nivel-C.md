@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.21 (rascunho) |
+| **Versão** | 0.22 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -59,7 +59,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.21 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.22 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
@@ -87,6 +87,7 @@ MPS-Nivel-C/
 | PRO-VV-001 | Processo de Verificação e Validação | 1.1 | VV 1-5 | Aprovado |
 | TPL-VV-001 | Template de Plano de V&V | 1.1 | VV (template) | Aprovado |
 | TPL-VV-002 | Template de Registro de Revisão por Pares | 1.0 | VV 2 (template) | Aprovado |
+| MAPA-CAP-001 | Mapa de Capacidade dos Processos | 1.0 | CP-E/D/C (rastreabilidade) | Aprovado |
 
 ---
 
@@ -252,13 +253,13 @@ MPS-Nivel-C/
 
 | Atributo (CP-E/D/C) | O que exige | Como evidenciamos (transversal) | Status |
 |---|---|---|---|
-| (i) Processo produz resultados definidos | O processo realmente funciona | Registros de uso em cada processo | ⬜ |
-| (ii) Processo-padrão + diretrizes de adaptação usados | Planejar/executar/monitorar com papéis, infra, produtos | Tailoring (GPR 2+) + processo-padrão (GPC 2+) | ⬜ |
-| (iii) Pessoas preparadas para o processo | Capacitação adequada | Plano de Capacitação (CAP) + registros | ⬜ |
-| (iv) Verificação objetiva de que o processo é seguido | Auditoria de aderência ao processo | **Registros de Garantia da Qualidade (GQA)** | ⬜ |
-| (v) Produtos de trabalho avaliados objetivamente | Revisão de produtos vs. padrão | Registros de GQA de produtos | ⬜ |
-| (vi) Oportunidades de melhoria identificadas | Durante a garantia da qualidade | Alimenta GPC 4 (oport. de melhoria) | ⬜ |
-| (vii) Informações disponibilizadas à organização | Compartilhar ativos/medidas | Biblioteca de processos + repositório de medidas | ⬜ |
+| (i) Processo produz resultados definidos | O processo realmente funciona | Registros de uso em cada processo | 🟨 |
+| (ii) Processo-padrão + diretrizes de adaptação usados | Planejar/executar/monitorar com papéis, infra, produtos | Tailoring (GPR 2+) + processo-padrão (GPC 2+) | 🟨 |
+| (iii) Pessoas preparadas para o processo | Capacitação adequada | Plano de Capacitação (CAP) + registros | 🟨 |
+| (iv) Verificação objetiva de que o processo é seguido | Auditoria de aderência ao processo | **Registros de Garantia da Qualidade (GQA)** | 🟨 |
+| (v) Produtos de trabalho avaliados objetivamente | Revisão de produtos vs. padrão | Registros de GQA de produtos | 🟨 |
+| (vi) Oportunidades de melhoria identificadas | Durante a garantia da qualidade | Alimenta GPC 4 (oport. de melhoria) | 🟨 |
+| (vii) Informações disponibilizadas à organização | Compartilhar ativos/medidas | Biblioteca de processos + repositório de medidas | 🟨 |
 
 ---
 
