@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.13 (rascunho) |
+| **Versão** | 0.14 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -56,7 +56,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.13 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.14 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
@@ -68,6 +68,7 @@ MPS-Nivel-C/
 | PRO-OSW-001 | Governança Organizacional de Processos | 1.1 | OSW 2, 3, 4, 5, 6, 7 | Aprovado |
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.1 | OSW 8, 9, 10 | Aprovado |
 | PLA-MED-001 | Plano de Medição | 1.0 | MED 1-7; GPC 9; OSW 6 | Aprovado |
+| PLA-GCO-001 | Plano de Gerência de Configuração | 1.0 | GCO 1-5 | Aprovado |
 
 ---
 
@@ -142,11 +143,11 @@ MPS-Nivel-C/
 ### GCO — Gerência de Configuração
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| GCO 1 | Itens de configuração identificados + níveis de controle | **Plano de Gerência de Configuração** | DEF/ORG | Confluence | ⬜ |
-| GCO 2 | Sistema de GC e controle de mudanças | Definição do sistema de GC + controle de mudança | DEF/ORG | Git/Azure DevOps | ⬜ |
-| GCO 3 | Baselines estabelecidas | Registro de baselines | PROJ | Git/Azure DevOps | ⬜ |
-| GCO 4 | Registros de itens e modificações | Log de itens de configuração / changelog | PROJ | Git/Azure DevOps | ⬜ |
-| GCO 5 | Auditorias de configuração executadas | **Template de Auditoria de Configuração** + registros | TPL + PROJ | Template→Registros | ⬜ |
+| GCO 1 | Itens de configuração identificados + níveis de controle | **PLA-GCO-001 §3** | DEF/ORG | Confluence | ✅ |
+| GCO 2 | Sistema de GC e controle de mudanças | **PLA-GCO-001 §4** | DEF/ORG | Git/Azure DevOps | ✅ |
+| GCO 3 | Baselines estabelecidas | **PLA-GCO-001 §5** (tags/releases) | PROJ | Git/Azure DevOps | ✅ |
+| GCO 4 | Registros de itens e modificações | **PLA-GCO-001 §6** | PROJ | Git/Azure DevOps | ✅ |
+| GCO 5 | Auditorias de configuração executadas | **PLA-GCO-001 §7** (auditoria via GQA) | DEF/ORG | Confluence | ✅ |
 
 ### AQU — Aquisição
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
