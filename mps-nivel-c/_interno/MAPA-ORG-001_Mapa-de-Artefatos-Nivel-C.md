@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.14 (rascunho) |
+| **Versão** | 0.15 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -56,7 +56,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.14 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.15 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
@@ -69,6 +69,8 @@ MPS-Nivel-C/
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.1 | OSW 8, 9, 10 | Aprovado |
 | PLA-MED-001 | Plano de Medição | 1.0 | MED 1-7; GPC 9; OSW 6 | Aprovado |
 | PLA-GCO-001 | Plano de Gerência de Configuração | 1.0 | GCO 1-5 | Aprovado |
+| PRO-GDE-001 | Processo de Gerência de Decisões | 1.0 | GDE 1-6 | Aprovado |
+| PLA-CAP-001 | Plano de Capacitação | 1.0 | CAP 1-4 | Aprovado |
 
 ---
 
@@ -129,16 +131,16 @@ MPS-Nivel-C/
 ### CAP — Capacitação
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| CAP 1+ | Necessidades de capacitação identificadas + planos | **Plano de Capacitação** | DEF/ORG | Confluence | ⬜ |
-| CAP 2 | Treinamentos realizados e registrados | Registros de treinamento (listas, certificados) | ORG | Confluence | ⬜ |
-| CAP 3 | Efetividade do programa avaliada e comunicada | Avaliação de efetividade de treinamento | ORG | Confluence | ⬜ |
-| CAP 4 | Habilidades de instrutores e recursos mantidos | Registro de recursos/instrutores | ORG | Confluence | ⬜ |
+| CAP 1+ | Necessidades de capacitação identificadas + planos | **PLA-CAP-001 §3** | DEF/ORG | Confluence | ✅ |
+| CAP 2 | Treinamentos realizados e registrados | **PLA-CAP-001 §4** (controle de capacitação) | ORG | Confluence | ✅ |
+| CAP 3 | Efetividade do programa avaliada e comunicada | **PLA-CAP-001 §5** | ORG | Confluence | ✅ |
+| CAP 4 | Habilidades de instrutores e recursos mantidos | **PLA-CAP-001 §6** | ORG | Confluence | ✅ |
 
 ### GDE — Gerência de Decisões
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| GDE 1 | Diretrizes de quando usar decisão formal | **Diretriz de Tomada de Decisão Formal** | DEF/ORG | Confluence | ⬜ |
-| GDE 2–6 | Problema, alternativas, critérios, métodos, avaliação e decisão registrados | **Template de Registro de Decisão (RAD)** + registros | TPL + PROJ | Template→Registros | ⬜ |
+| GDE 1 | Diretrizes de quando usar decisão formal | **PRO-GDE-001 §3** (gatilhos) | DEF/ORG | Confluence | ✅ |
+| GDE 2–6 | Problema, alternativas, critérios, métodos, avaliação e decisão registrados | **PRO-GDE-001 §4-5** (processo + RAD) | DEF/ORG + PROJ | Confluence | ✅ |
 
 ### GCO — Gerência de Configuração
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
