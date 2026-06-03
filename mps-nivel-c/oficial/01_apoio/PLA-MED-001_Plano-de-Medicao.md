@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-MED-001 — Plano de Medição |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações), com patrocínio do Founder e CEO |
@@ -84,6 +84,7 @@ As medidas abaixo são derivadas dos objetivos de medição e possuem definiçã
 - *Definição:* proporção de itens reabertos (devolvidos após considerados concluídos) em relação ao total de itens.
 - *Fórmula:* itens reabertos / total de itens concluídos.
 - *Fonte:* Jira. *Frequência de coleta:* por sprint.
+- *Captura:* os defeitos encontrados em teste são registrados como itens vinculados à história/tarefa (por exemplo, subtarefas de bug no Jira), o que permite contabilizar quantas vezes um item retornou para correção e dá origem ao indicador de retrabalho.
 
 > O *burndown* da sprint é utilizado pelas equipes como ferramenta de acompanhamento diário, não constituindo medida organizacional consolidada.
 
@@ -144,3 +145,4 @@ O repositório organizacional de medidas é avaliado periodicamente para assegur
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do plano de medição |
+| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Detalhamento da captura do indicador de retrabalho (subtarefas de bug no Jira) |

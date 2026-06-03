@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GUIA-GPC-001 — Guia de Adaptação do Processo-Padrão (Tailoring) |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
@@ -82,6 +82,13 @@ Adaptações adicionais possíveis em projetos pequenos, desde que preservados o
 |---|---|
 | Projeto com requisitos **críticos ou regulatórios** | Maior rigor nas atividades de verificação, validação e registro; controles reforçados conforme a exigência aplicável. |
 
+### 4.6. Cadência de entrega e ambientes
+
+| Situação | Adaptação |
+|---|---|
+| **Cadência de entrega ao cliente** | Embora o desenvolvimento seja ágil (sprints de duas semanas), o cliente não precisa receber um pacote a cada sprint. A cadência de entrega ao cliente é definida por projeto e **acordada na etapa de Apresentação e Aprovação do Plano** (a Timeware pode consolidar internamente os incrementos em stage e entregar conforme a cadência combinada). |
+| **Ambiente de stage** | O ambiente de stage (réplica de produção) é recomendado, mas **não é obrigatório**. Sua ausência é uma adaptação possível, com a ressalva de que aumenta o risco de instabilidade nas apresentações ao cliente, que passariam a ocorrer em homologação. |
+
 ## 5. Como registrar a adaptação em um projeto
 
 A adaptação de cada projeto é decidida no início (entre a abertura/kickoff gerencial e o fechamento do plano) e registrada como parte do planejamento do projeto, por meio do Registro de Adaptação do Processo (associado à Gerência de Projetos — GPR).
@@ -112,3 +119,4 @@ A decisão e a justificativa ("projeto sem front-end — UX/UI não se aplica") 
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do guia de adaptação do processo-padrão |
 | 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Ajuste de nomenclatura de fase conforme o novo fluxo |
+| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão do eixo de adaptação de cadência de entrega e ambiente de stage |

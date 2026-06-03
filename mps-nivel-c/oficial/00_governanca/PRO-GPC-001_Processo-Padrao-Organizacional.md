@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPC-001 — Processo-Padrão Organizacional |
-| **Versão** | 2.0 |
+| **Versão** | 2.1 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
@@ -151,23 +151,25 @@ A partir dos requisitos, o trabalho de concepção corre em **duas trilhas paral
 - O código é versionado e integrado continuamente (Git + Azure DevOps).
 - Cada item é concluído quando atende à **Definição de Pronto** (ver seção 6).
 - Mudanças de escopo em relação à baseline seguem o fluxo de **change request** (impacto financeiro como aditivo ou crédito, ou troca de prioridade de itens de mesmo tamanho).
+- Ao final de cada sprint, a **Review** formaliza o aceite do que foi entregue na sprint, com o PM/PO e as partes interessadas. Em épicos grandes, o aceite pode ocorrer **história a história**, ao longo das sprints. Este é o aceite no nível do **produto** (entrega incremental), distinto do encerramento do projeto (Fase 7).
 
 **Produtos de trabalho:** incrementos de software; código versionado; registros de revisão por pares (code review); registros de teste do QA; artefatos de sprint (backlog da sprint, board); change requests, quando houver.
 
-**Pontos de controle:** Definição de Pronto atendida a cada item; incremento entregue em ambiente de homologação/staging.
+**Pontos de controle:** Definição de Pronto atendida a cada item; incremento promovido ao ambiente de homologação.
 
 ### Fase 7 — Homologação, Entrega e Encerramento
 
 **Entrada:** incrementos prontos em homologação; entregas concluídas conforme o contrato.
 
 **Atividades:**
-- O produto é disponibilizado em **homologação/staging**; o **cliente avalia e aprova**; após a aprovação, é promovido para **produção**, com o material de apoio necessário.
-- Concluídas as entregas, realiza-se o **marco de encerramento formal** do projeto.
+- O produto é validado internamente em **homologação** e, quando há esse ambiente, disponibilizado em **stage** (réplica de produção) para a apresentação ao cliente. O **cliente avalia e aprova** e, após a aprovação, o produto é promovido para **produção**, com o material de apoio necessário. A promoção para produção pode ser feita pela Timeware ou pelo cliente, conforme o acordado no projeto.
+- O encerramento ocorre em dois níveis, que não se confundem: o aceite **das entregas** (produto) é feito incrementalmente nas Reviews de sprint (Fase 6); o encerramento **do projeto** (gestão) é o marco formal realizado quando todas as entregas do contrato foram concluídas.
+- Concluídas as entregas, realiza-se o **marco de encerramento formal do projeto**, com o **Termo de Encerramento** (contraparte do Termo de Abertura, na camada de gestão de projetos).
 - Produz-se o **Relatório de Encerramento** e o registro de **Lições Aprendidas**; obtém-se o **Termo de Aceite** do cliente.
 - Quando há sustentação contratada, a transição é feita para a unidade de negócio responsável.
 - As lições aprendidas alimentam a melhoria de processos (GPC).
 
-**Produtos de trabalho:** registro de homologação; aprovação do cliente; registro de entrega em produção; Relatório de Encerramento; Lições Aprendidas; Termo de Aceite.
+**Produtos de trabalho:** registro de homologação; aprovação do cliente; registro de entrega em produção; Termo de Encerramento; Relatório de Encerramento; Lições Aprendidas; Termo de Aceite.
 
 **Pontos de controle:** aprovação formal do cliente antes da produção; marco de encerramento realizado e Termo de Aceite registrado.
 
@@ -178,9 +180,24 @@ Um item de trabalho só é considerado pronto quando:
 1. os **critérios de aceite** estão atendidos;
 2. o **code review** foi realizado e aprovado;
 3. os **testes do QA** foram executados e aprovados;
-4. o item foi **entregue no ambiente de homologação/staging**.
+4. o item foi **promovido ao ambiente de homologação** (e, quando houver, ao ambiente de stage para validação com o cliente).
 
-## 7. Processos de apoio (transversais)
+## 7. Ambientes
+
+O desenvolvimento da Timeware utiliza, no cenário de referência, quatro ambientes distintos, todos gerenciados dentro do fluxo de controle de versão (Git + Azure DevOps):
+
+| Ambiente | Finalidade | Característica |
+|---|---|---|
+| **Desenvolvimento** | Trabalho da equipe de desenvolvimento. | Ambiente livre; base de dados pode ser alterada livremente. |
+| **QA** | Execução dos testes pelo QA. | Ambiente dedicado às atividades de verificação e validação. |
+| **Homologação** | Validação interna antes da exposição ao cliente. | Base de testes com acesso restrito; ainda pode conter dados de teste. |
+| **Stage** | Apresentação ao cliente e validação final. | **Réplica de produção** (base e aplicação estáveis); reduz o risco de falhas na demonstração ao cliente. |
+
+Após a aprovação no stage, o produto é promovido para **produção**.
+
+O ambiente de **stage não é obrigatório** em todos os projetos: trata-se de um ponto de adaptação (GUIA-GPC-001). Sua ausência, porém, aumenta o risco de instabilidade nas apresentações ao cliente, uma vez que a validação passaria a ocorrer em homologação.
+
+## 8. Processos de apoio (transversais)
 
 | Processo | Como atravessa o fluxo |
 |---|---|
@@ -191,11 +208,11 @@ Um item de trabalho só é considerado pronto quando:
 | **Capacitação (CAP)** | Equipes preparadas para os processos e tecnologias dos projetos. |
 | **Garantia da Qualidade (GQA)** | Aderência ao processo e qualidade dos produtos verificadas de forma objetiva e independente. |
 
-## 8. Adaptação
+## 9. Adaptação
 
 Este processo-padrão é adaptado a cada projeto conforme as diretrizes do Guia de Adaptação (GUIA-GPC-001). A adaptação considera fatores como porte, criticidade, duração e características do contrato, podendo ajustar a profundidade dos produtos de trabalho e das atividades, sem eliminar os pontos de controle obrigatórios.
 
-## 9. Documentos relacionados
+## 10. Documentos relacionados
 
 - POL-ORG-001 — Política Organizacional de Processos
 - GUIA-GPC-001 — Guia de Adaptação do Processo-Padrão
@@ -211,3 +228,4 @@ Este processo-padrão é adaptado a cada projeto conforme as diretrizes do Guia 
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo-padrão organizacional de desenvolvimento de software sob medida |
 | 2.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Reestruturação do fluxo: inclusão do Escritório de Projetos, kickoff como marco gerencial, fase de concepção em trilhas paralelas e aprovação do plano (baseline). Sete fases. |
+| 2.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição dos quatro ambientes (dev, QA, homologação, stage); distinção entre homologação e stage; encerramento de projeto vs. review de sprint |

@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-VV-001 — Processo de Verificação e Validação |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
@@ -44,7 +44,20 @@ Este processo define como a Timeware verifica e valida seus produtos de software
 - **Desenvolvimento:** o desenvolvedor testa o que produziu conforme os **critérios de aceite** definidos.
 - **QA:** aplica metodologias de teste sobre o produto (teste exploratório guiado pelos requisitos, testes funcionais, de integração e outros aplicáveis), documentando os cenários com evidências e formalizando-os em **Gherkin** (`Dado/Quando/Então`) para reúso e eventual automação.
 - **Ferramentas e ambientes:** os casos e resultados de teste são mantidos em **Azure Test Plans** e/ou **Jira/Xray**. Os casos podem iniciar em planilha e ser importados para a ferramenta — fluxo aceito e documentado.
-- A homologação ocorre em ambiente de **homologação/staging**.
+- O QA atua em ambiente dedicado e a validação ocorre em **homologação**; a validação final com o cliente ocorre em **stage** (réplica de produção), quando esse ambiente existe. A definição dos ambientes consta do Processo-Padrão (PRO-GPC-001).
+
+### 5.1. Critério para elaboração de mapa de teste
+
+Nem toda história exige um **mapa de teste** (conjunto estruturado de cenários). O esforço de documentação é proporcional à complexidade do item:
+
+| Situação | Mapa de teste | Teste |
+|---|---|---|
+| Alteração simples que não altera o fluxo (ex.: inclusão de um campo) | Não exigido | Exigido |
+| Tela ou funcionalidade elaborada (ex.: cadastro com campos obrigatórios e opcionais, múltiplos caminhos) | Exigido (cenários de preenchimento e validação) | Exigido |
+
+A decisão de elaborar ou não o mapa de teste segue esta orientação e é registrada na própria história/teste. O critério existe para garantir consistência sem impor documentação desnecessária a itens triviais.
+
+**Teste em itens não testáveis de forma real:** quando não é possível executar um teste real sobre o item (por exemplo, determinadas integrações), **não se realiza teste simulado (mocado) como substituto** — um teste mocado não constitui evidência de teste. Nesses casos, a limitação é registrada e a verificação se dá pelos meios aplicáveis (revisão, validação indireta).
 
 ## 6. Execução e tratamento de problemas (VV 4)
 
@@ -56,7 +69,9 @@ As atividades de verificação e validação são **executadas** conforme o plan
 4. **Aprovação:** atendidos os critérios, a task é aprovada.
 5. **Formalização em Gherkin:** os cenários são formalizados em **Gherkin** (`Dado / Quando / Então`), contemplando o caminho de sucesso (*happy path*) e os de exceção (*sad path*). Esses cenários ficam prontos para as **rodadas futuras de teste (regressão)** e para **automação**, quando a equipe decidir automatizá-los.
 
-Os **defeitos** identificados são registrados (Jira/Xray), priorizados e **tratados** até a resolução. A validação final com o cliente ocorre na **homologação**, antes da promoção para produção.
+Os **defeitos** identificados são registrados (Jira/Xray), priorizados e **tratados** até a resolução. A validação final com o cliente ocorre em **stage** (ou homologação, quando não há stage), antes da promoção para produção.
+
+**Registro de defeitos e retrabalho:** os defeitos encontrados em teste são registrados como itens vinculados à história/tarefa correspondente (por exemplo, subtarefas de bug no Jira). Esse vínculo permite acompanhar quantas vezes um item foi testado e retornou para correção, alimentando o indicador de **retrabalho** da Medição (PLA-MED-001) e dando visibilidade à qualidade da entrega.
 
 > A automação de testes não é obrigatória em todos os projetos: os cenários Gherkin mantêm o conhecimento de teste documentado e reaproveitável, e a automação é adotada quando a equipe avalia que compensa.
 
@@ -91,3 +106,4 @@ Os **defeitos** identificados são registrados (Jira/Xray), priorizados e **trat
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de verificação e validação |
 | 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Detalhamento do fluxo do QA (teste exploratório, evidências, cenários Gherkin) |
+| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Critério de mapa de teste; teste mocado não é evidência; ambientes (homologação/stage); registro de bugs/retrabalho via subtarefas |

@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPR-001 — Processo de Gerência de Projetos |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
@@ -74,7 +74,16 @@ As estimativas baseadas em histórico aumentam a previsibilidade e são posterio
 - O **Plano de Projeto** integra escopo, estimativas, cronograma, recursos, riscos e comunicação em um documento coerente (TPL-GPR-001), mantido atualizado.
 - O plano é **revisado com as partes interessadas** e o **compromisso** da equipe e dos envolvidos é obtido e registrado.
 
-## 9. Monitoramento e controle (GPR 14 a 18)
+## 9. Abertura e encerramento do projeto (camada de gestão)
+
+A gestão do projeto delimita-se por dois marcos formais, distintos das entregas de produto:
+
+- **Abertura:** o projeto é formalmente aberto no kickoff gerencial, registrado no **Termo de Abertura** (objetivo, escopo inicial, equipe, partes interessadas).
+- **Encerramento:** concluídas as entregas do contrato, o projeto é formalmente encerrado com o **Termo de Encerramento**, o **Relatório de Encerramento**, o registro de **Lições Aprendidas** e o **Termo de Aceite** do cliente.
+
+Estes marcos pertencem à camada de **gestão de projetos** e não se confundem com o aceite das entregas de **produto**, que ocorre incrementalmente nas Reviews de sprint (e, em épicos grandes, pode ocorrer história a história).
+
+## 10. Monitoramento e controle (GPR 14 a 18)
 
 O projeto é monitorado continuamente, comparando o planejado com o realizado:
 
@@ -83,12 +92,12 @@ O projeto é monitorado continuamente, comparando o planejado com o realizado:
 - **Riscos (GPR 17):** monitorados e comunicados continuamente.
 - **Ações corretivas (GPR 18):** desvios identificados geram ações corretivas, acompanhadas até a conclusão (Jira).
 
-## 10. Análise de causas e melhoria (GPR 19, 20)
+## 11. Análise de causas e melhoria (GPR 19, 20)
 
 - **Análise (GPR 19):** resultados significativos (positivos ou negativos) têm suas causas analisadas, especialmente na retrospectiva e no encerramento.
 - **Melhoria (GPR 20):** mudanças e lições aprendidas eficazes são encaminhadas como oportunidades de melhoria à organização (alimentando o ciclo de melhoria de processos, PLA-GPC-001).
 
-## 11. Documentos e artefatos relacionados
+## 12. Documentos e artefatos relacionados
 
 - PRO-GPC-001 — Processo-Padrão Organizacional
 - GUIA-GPC-001 — Guia de Adaptação do Processo-Padrão
@@ -105,3 +114,4 @@ O projeto é monitorado continuamente, comparando o planejado com o realizado:
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de gerência de projetos |
 | 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Alinhamento ao novo fluxo: kickoff gerencial, concepção em trilhas, aprovação do plano e baseline |
+| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão dos marcos de abertura/encerramento de projeto (Termo de Encerramento) e distinção entre aceite de produto (review) e encerramento de projeto |
