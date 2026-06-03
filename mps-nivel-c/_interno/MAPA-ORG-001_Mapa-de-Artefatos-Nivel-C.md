@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.15 (rascunho) |
+| **Versão** | 0.16 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -56,7 +56,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.15 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.16 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
@@ -71,6 +71,7 @@ MPS-Nivel-C/
 | PLA-GCO-001 | Plano de Gerência de Configuração | 1.0 | GCO 1-5 | Aprovado |
 | PRO-GDE-001 | Processo de Gerência de Decisões | 1.0 | GDE 1-6 | Aprovado |
 | PLA-CAP-001 | Plano de Capacitação | 1.0 | CAP 1-4 | Aprovado |
+| PRO-AQU-001 | Processo de Aquisição | 1.0 | AQU 1-4 | Aprovado (a confirmar aplicabilidade c/ ASR) |
 
 ---
 
@@ -154,10 +155,10 @@ MPS-Nivel-C/
 ### AQU — Aquisição
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| AQU 1 | Critérios de avaliação de fornecedores + pedidos de proposta | **Critérios de Seleção de Fornecedores** | DEF/ORG | Confluence | ⬜ |
-| AQU 2 | Respostas avaliadas e fornecedor selecionado | Registro de seleção de fornecedor | PROJ | Registros | ⬜ |
-| AQU 3+ | Desempenho do fornecedor monitorado (acordo) | **Template de Acordo + Monitoramento de Fornecedor** | TPL + PROJ | Template→Registros | ⬜ |
-| AQU 4+ | Revisão técnica das entregas do fornecedor documentada | Registro de revisão técnica de entregas | PROJ | Registros | ⬜ |
+| AQU 1 | Critérios de avaliação de fornecedores + pedidos de proposta | **PRO-AQU-001 §3** | DEF/ORG | Confluence | ✅ |
+| AQU 2 | Respostas avaliadas e fornecedor selecionado | **PRO-AQU-001 §4** | DEF/ORG + PROJ | Confluence | ✅ |
+| AQU 3+ | Desempenho do fornecedor monitorado (acordo) | **PRO-AQU-001 §5** | DEF/ORG + PROJ | Confluence | ✅ |
+| AQU 4+ | Revisão técnica das entregas do fornecedor documentada | **PRO-AQU-001 §6** | DEF/ORG + PROJ | Confluence | ✅ |
 
 > **AQU — DECISÃO v0.2: ÚLTIMO A PRODUZIR / CANDIDATO A NÃO-APLICÁVEL.** A TIMEWARE confirmou que **nenhum dos 4 projetos** da avaliação tem aquisição/subcontratação de desenvolvimento (todo o desenvolvimento é feito por colaboradores próprios sob gestão da TIMEWARE). Ação: (1) confirmar a não-aplicabilidade com o **avaliador líder da ASR**; (2) se a ASR exigir, produzir apenas a versão organizacional enxuta (Critérios de Seleção + Template de Acordo/Monitoramento) "na prateleira". **Não bloqueia o restante da implantação.**
 
