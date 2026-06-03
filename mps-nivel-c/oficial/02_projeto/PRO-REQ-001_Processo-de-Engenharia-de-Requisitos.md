@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-REQ-001 — Processo de Engenharia de Requisitos |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
@@ -25,7 +25,7 @@ Este processo define como a Timeware levanta, especifica, analisa, valida e mant
 
 ## 2. Visão geral
 
-Os requisitos são trabalhados a partir do **Discovery**, conduzido em conjunto por **Tech Lead e Product Owner** junto ao cliente, e evoluem ao longo do projeto. Como o design opera em trilha antecipada ao desenvolvimento, mudanças estruturais identificadas no design podem atualizar os requisitos — sempre com controle e rastreabilidade.
+Os requisitos são trabalhados a partir do **Discovery**, conduzido em conjunto por **Tech Lead e Product Owner** junto ao cliente, após a abertura formal do projeto (kickoff gerencial). O Documento de Requisitos reúne a especificação funcional e técnica e alimenta a concepção (arquitetura, design, estimativas). Os requisitos evoluem ao longo do projeto: mudanças estruturais identificadas no design adiantado podem atualizá-los — sempre com controle e rastreabilidade; após a aprovação do plano, mudanças de escopo seguem o fluxo de change request.
 
 ## 3. Identificação de necessidades e entendimento (REQ 1)
 
@@ -84,3 +84,4 @@ Mudanças de requisito são avaliadas quanto ao impacto (escopo, prazo, design),
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de engenharia de requisitos |
+| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Contextualização do Discovery no novo fluxo (após kickoff gerencial; alimenta a concepção) |

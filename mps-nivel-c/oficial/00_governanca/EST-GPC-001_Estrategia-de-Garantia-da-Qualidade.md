@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | EST-GPC-001 — Estratégia de Garantia da Qualidade (GQA) |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
@@ -47,10 +47,11 @@ A cada ponto de controle do processo-padrão, verifica-se a aderência correspon
 
 | Marco | O que é verificado |
 |---|---|
-| Abertura | Termo de Abertura registrado; responsável designado. |
+| Abertura (Kickoff gerencial) | Termo de Abertura registrado; equipe designada; ata de kickoff. |
 | Discovery / Requisitos | Requisitos especificados e validados; rastreabilidade estabelecida. |
-| Design | Design avaliado antes da construção; quando aplicável, protótipo aceito pelo cliente. |
-| Desenvolvimento | Definição de Pronto sendo aplicada (critérios de aceite, code review, testes do QA). |
+| Concepção | Design avaliado; quando aplicável, protótipo aceito pelo cliente; estimativas concluídas. |
+| Aprovação do Plano | Plano de Projeto aprovado pelo cliente; aceite registrado em ata; baseline estabelecida. |
+| Desenvolvimento | Definição de Pronto sendo aplicada (critérios de aceite, code review, testes do QA); change requests tratados. |
 | Homologação / Entrega | Aprovação do cliente registrada antes da promoção para produção. |
 | Encerramento | Termo de Aceite e lições aprendidas registrados. |
 
@@ -100,3 +101,4 @@ A GQA é uma fonte de oportunidades de melhoria. Desvios recorrentes, dificuldad
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial da estratégia de garantia da qualidade de processo |
 | 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Ajuste do escalonamento de impasses para o COO (estrutura organizacional) |
+| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Atualização dos marcos de verificação conforme o novo fluxo (kickoff gerencial, concepção, aprovação do plano) |

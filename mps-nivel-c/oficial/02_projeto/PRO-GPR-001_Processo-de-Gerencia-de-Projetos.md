@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPR-001 — Processo de Gerência de Projetos |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
@@ -29,7 +29,9 @@ Este processo opera em conjunto com o Processo-Padrão Organizacional (PRO-GPC-0
 
 ## 2. Planejamento ágil e o plano de projeto
 
-A Timeware adota abordagem ágil (Scrum). O **Plano de Projeto** é mantido enxuto e vivo: estabelece a visão geral e os compromissos no início, é detalhado incrementalmente nas sprints (por meio do backlog e do planning) e é atualizado sempre que há mudança relevante. O plano não é um documento congelado; reflete o estado atual do projeto.
+A Timeware adota abordagem ágil (Scrum). O **Plano de Projeto** é fechado ao final da concepção, a partir dos insumos das trilhas de projeto e de produto (escopo detalhado, design, estimativas), e é **aprovado pelo cliente** na reunião de Apresentação e Aprovação do Plano — momento em que passa a ser a **linha de base (baseline)** do projeto. O aceite é registrado em ata, sem documento de assinatura separado.
+
+A partir da baseline, o plano é mantido enxuto e vivo: é detalhado incrementalmente nas sprints (por meio do backlog e do planning) e atualizado quando há mudança relevante; mudanças de escopo em relação à baseline seguem o fluxo de change request. O plano não é um documento congelado, mas a baseline é a referência de compromisso com o cliente.
 
 O Plano de Projeto é registrado no template TPL-GPR-001.
 
@@ -44,14 +46,14 @@ O Plano de Projeto é registrado no template TPL-GPR-001.
 
 ## 4. Escopo e adaptação (GPR 1, GPR 2)
 
-- O **escopo** do projeto é estabelecido a partir do Termo de Abertura e do trabalho de requisitos (REQ), e mantido atualizado conforme mudanças aprovadas.
+- O **escopo** do projeto parte do escopo macro do contrato, é formalizado no **Termo de Abertura** (kickoff gerencial) e detalhado no trabalho de requisitos (REQ) e na concepção, sendo mantido atualizado conforme mudanças aprovadas (change request sobre a baseline).
 - No início, o processo-padrão é **adaptado** ao projeto conforme o Guia de Adaptação (GUIA-GPC-001), e a adaptação é registrada (Registro de Adaptação do Processo). A adaptação define, por exemplo, se há etapa de UX/UI, o nível de formalidade da documentação e a combinação de papéis.
 
 ## 5. Estimativas, orçamento e cronograma (GPR 3, 4, 5)
 
 - **Estimativa de tamanho:** os itens são estimados em **story points**, por meio de *planning poker*, durante o refinamento.
 - **Estimativa de esforço, prazo e custo:** derivada do tamanho com base na **velocity histórica** das sprints e em dados de projetos anteriores (mantidos pela Medição — PLA-MED-001). As estimativas são registradas no Jira.
-- **Orçamento e cronograma:** o cronograma é organizado em sprints e **marcos**, com o orçamento correspondente. O cronograma é acompanhado e ajustado conforme o andamento.
+- **Orçamento e cronograma:** o cronograma é organizado em sprints e **marcos** (incluindo os marcos de kickoff gerencial e de aprovação do plano), com o orçamento correspondente. As datas apresentadas no kickoff são datas-alvo; o cronograma é fechado no plano aprovado e ajustado conforme o andamento.
 
 As estimativas baseadas em histórico aumentam a previsibilidade e são posteriormente comparadas com o realizado (estimado × real), realimentando a base histórica.
 
@@ -102,3 +104,4 @@ O projeto é monitorado continuamente, comparando o planejado com o realizado:
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de gerência de projetos |
+| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Alinhamento ao novo fluxo: kickoff gerencial, concepção em trilhas, aprovação do plano e baseline |

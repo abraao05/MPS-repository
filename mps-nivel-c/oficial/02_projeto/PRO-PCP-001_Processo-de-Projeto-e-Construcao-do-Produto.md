@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-PCP-001 — Processo de Projeto e Construção do Produto |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
@@ -23,7 +23,7 @@ Este processo define como a Timeware projeta (design) e constrói o produto de s
 
 ## 2. Visão geral
 
-O design opera em **trilha antecipada** ao desenvolvimento (de uma a duas sprints à frente) e compreende duas dimensões:
+O design ocorre em dois momentos distintos: (a) na **concepção** (antes da construção), como parte das trilhas paralelas que geram insumo para o plano — define-se a arquitetura e, quando aplicável, o design de UX/UI validado com o cliente; e (b) durante o **desenvolvimento**, em que o design segue **adiantado** de uma a duas sprints à frente da construção. Em ambos, o design compreende duas dimensões:
 
 - **Design de produto (UX/UI):** aplicável a projetos com interface de usuário. Quando aplicável, parte de wireframes de baixa fidelidade validados com o cliente.
 - **Design técnico (arquitetura):** sempre aplicável. Arquitetura, modelo de dados e integrações, definidos pelo Arquiteto/Tech Lead.
@@ -77,3 +77,4 @@ A aplicabilidade do design de UX/UI é definida na adaptação do projeto (GUIA-
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de projeto e construção do produto |
+| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Distinção entre design na concepção (pré-plano) e design adiantado nas sprints |

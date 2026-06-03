@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.22 (rascunho) |
-| **Data** | 02/06/2026 |
+| **Versão** | 0.23 (rascunho) |
+| **Data** | 03/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
 | **Fonte de escopo** | PlanilhaIndicadores_SW_2024__NivelC.xlsx |
@@ -59,12 +59,12 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.22 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.23 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
-| PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
-| GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.0 | GPC 2 | Aprovado |
-| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.1 | GPC 3; CP (iv,v,vi) | Aprovado |
+| PRO-GPC-001 | Processo-Padrão Organizacional | 2.0 | GPC 2 | Aprovado |
+| GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.1 | GPC 2 | Aprovado |
+| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.2 | GPC 3; CP (iv,v,vi) | Aprovado |
 | PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.1 | GPC 6 | Aprovado |
 | EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.1 | GPC 7 | Aprovado |
 | PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.2 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
@@ -75,12 +75,12 @@ MPS-Nivel-C/
 | PRO-GDE-001 | Processo de Gerência de Decisões | 1.0 | GDE 1-6 | Aprovado |
 | PLA-CAP-001 | Plano de Capacitação | 1.0 | CAP 1-4 | Aprovado |
 | PRO-AQU-001 | Processo de Aquisição | 1.0 | AQU 1-4 | Aprovado (a confirmar aplicabilidade c/ ASR) |
-| PRO-GPR-001 | Processo de Gerência de Projetos | 1.0 | GPR 1-20 | Aprovado |
+| PRO-GPR-001 | Processo de Gerência de Projetos | 1.1 | GPR 1-20 | Aprovado |
 | TPL-GPR-001 | Template de Plano de Projeto | 1.0 | GPR (template) | Aprovado |
-| PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.0 | REQ 1-7 | Aprovado |
+| PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.1 | REQ 1-7 | Aprovado |
 | TPL-REQ-001 | Template de Documento de Requisitos | 1.0 | REQ (template) | Aprovado |
 | TPL-REQ-002 | Template de Matriz de Rastreabilidade | 1.0 | REQ 4 (template) | Aprovado |
-| PRO-PCP-001 | Processo de Projeto e Construção do Produto | 1.0 | PCP 1-3 | Aprovado |
+| PRO-PCP-001 | Processo de Projeto e Construção do Produto | 1.1 | PCP 1-3 | Aprovado |
 | TPL-PCP-001 | Template de Documento de Design | 1.0 | PCP (template) | Aprovado |
 | PRO-ITP-001 | Processo de Integração do Produto | 1.0 | ITP 1-6 | Aprovado |
 | TPL-ITP-001 | Template de Estratégia de Integração | 1.0 | ITP (template) | Aprovado |

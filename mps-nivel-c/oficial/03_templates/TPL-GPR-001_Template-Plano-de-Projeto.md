@@ -50,9 +50,10 @@
 
 | Marco | Data prevista |
 |---|---|
-| [Abertura] | [data] |
-| [Fim do Discovery] | [data] |
-| [Fim do Design] | [data] |
+| [Kickoff gerencial (abertura)] | [data] |
+| [Fim do Discovery / Requisitos] | [data] |
+| [Fim da Concepção (design + estimativas)] | [data] |
+| [Aprovação do Plano (baseline)] | [data] |
 | [Entregas / releases] | [datas] |
 | [Encerramento] | [data] |
 
@@ -85,13 +86,15 @@
 
 *[Registre a avaliação de viabilidade do projeto considerando escopo, estimativas, recursos e riscos.]*
 
-## 11. Compromisso (GPR 13)
+## 11. Aprovação do Plano (GPR 13)
 
-*[Registre a revisão do plano com as partes interessadas e o aceite/compromisso obtido.]*
+*[O plano é apresentado ao cliente na reunião de Apresentação e Aprovação do Plano. O aceite é registrado na ata dessa reunião (não há documento de assinatura separado). Registre abaixo a referência da reunião/ata e os envolvidos.]*
 
-| Envolvido | Papel | Compromisso/aceite | Data |
-|---|---|---|---|
-| [nome/papel] | [...] | [aceite] | [data] |
+| Envolvido | Papel | Aceite | Data | Ref. da ata |
+|---|---|---|---|---|
+| [nome/papel] | [...] | [aprovado] | [data] | [link/ata] |
+
+> A aprovação registrada aqui estabelece a **baseline** do projeto. A partir dela, mudanças de escopo seguem o fluxo de change request.
 
 ---
 
