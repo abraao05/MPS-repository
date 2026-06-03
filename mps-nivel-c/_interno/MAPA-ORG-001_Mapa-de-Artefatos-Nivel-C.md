@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.25 (rascunho) |
+| **Versão** | 0.26 (rascunho) |
 | **Data** | 03/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -59,7 +59,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.25 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.26 | GPC 1 (rastreabilidade) | Rascunho |
 | GUIA-ORG-001 | Guia de Estrutura do Confluence [INTERNO] | 1.0 | — (apoio) | Aprovado |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
@@ -88,6 +88,14 @@ MPS-Nivel-C/
 | PRO-VV-001 | Processo de Verificação e Validação | 1.2 | VV 1-5 | Aprovado |
 | TPL-VV-001 | Template de Plano de V&V | 1.1 | VV (template) | Aprovado |
 | TPL-VV-002 | Template de Registro de Revisão por Pares | 1.0 | VV 2 (template) | Aprovado |
+| TPL-GPR-002 | Template de Termo de Abertura do Projeto | 1.0 | GPR (template) | Aprovado |
+| TPL-GPR-003 | Template de Registro de Adaptação do Processo | 1.0 | GPR 2 / CP-C (template) | Aprovado |
+| TPL-GPR-004 | Template de Termo de Encerramento e Aceite | 1.0 | GPR (template) | Aprovado |
+| TPL-GPR-005 | Template de Relatório de Acompanhamento | 1.0 | GPR 14 (template) | Aprovado |
+| TPL-GPR-006 | Template de Change Request | 1.0 | GPR / GCO (template) | Aprovado |
+| TPL-GDE-001 | Template de Registro de Análise de Decisão (RAD) | 1.0 | GDE (template) | Aprovado |
+| TPL-ORG-001 | Template de Ata de Reunião | 1.0 | — (apoio, multiuso) | Aprovado |
+| GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | 1.0 | — (apoio) | Aprovado |
 | MAPA-CAP-001 | Mapa de Capacidade dos Processos | 1.0 | CP-E/D/C (rastreabilidade) | Aprovado |
 
 ---
