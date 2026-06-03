@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.16 (rascunho) |
+| **Versão** | 0.18 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -18,6 +18,9 @@
 > **Legenda de Status:** ⬜ A fazer · 🟨 Em andamento · ✅ Pronto · 🔵 Revisar
 >
 > **Legenda de Tipo:** `ORG` = artefato organizacional (faz 1 vez) · `PROJ` = artefato de projeto (preenche por projeto, x4) · `TPL` = template/modelo · `DEF` = documento de definição/política
+
+> **Nota importante sobre os processos de PROJETO (GPR, REQ, PCP, ITP, VV):** o status ✅ nesses processos indica que a **definição do processo e os templates** estão prontos (camada organizacional). A **evidência de uso** — os templates preenchidos em cada um dos 4 projetos da avaliação — é uma etapa posterior (camada de evidência), ainda a ser produzida quando os 4 projetos forem selecionados e documentados. Definição pronta ≠ evidência nos projetos.
+
 
 ---
 
@@ -56,7 +59,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.16 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.18 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
@@ -72,6 +75,11 @@ MPS-Nivel-C/
 | PRO-GDE-001 | Processo de Gerência de Decisões | 1.0 | GDE 1-6 | Aprovado |
 | PLA-CAP-001 | Plano de Capacitação | 1.0 | CAP 1-4 | Aprovado |
 | PRO-AQU-001 | Processo de Aquisição | 1.0 | AQU 1-4 | Aprovado (a confirmar aplicabilidade c/ ASR) |
+| PRO-GPR-001 | Processo de Gerência de Projetos | 1.0 | GPR 1-20 | Aprovado |
+| TPL-GPR-001 | Template de Plano de Projeto | 1.0 | GPR (template) | Aprovado |
+| PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.0 | REQ 1-7 | Aprovado |
+| TPL-REQ-001 | Template de Documento de Requisitos | 1.0 | REQ (template) | Aprovado |
+| TPL-REQ-002 | Template de Matriz de Rastreabilidade | 1.0 | REQ 4 (template) | Aprovado |
 
 ---
 
@@ -169,37 +177,37 @@ MPS-Nivel-C/
 ### GPR — Gerência de Projetos
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| GPR 1 | Escopo estabelecido e mantido | Termo de Abertura / Escopo (no Plano de Projeto) | PROJ | Registros | ⬜ |
-| GPR 2+ | Processo definido para o projeto (adaptado do padrão) | **Registro de Adaptação do Processo (Tailoring)** | TPL + PROJ | Template→Registros | ⬜ |
-| GPR 3+ | Estimativas de dimensão | Registro de estimativa de dimensão | PROJ | Registros | ⬜ |
-| GPR 4+ | Estimativas de esforço, duração, custo (baseadas no repositório) | Registro de estimativas | PROJ | Registros | ⬜ |
-| GPR 5 | Orçamento e cronograma com marcos | Cronograma + orçamento | PROJ | Jira | ⬜ |
-| GPR 6 | Recursos humanos planejados | Plano de recursos humanos (no Plano) | PROJ | Registros | ⬜ |
-| GPR 7+ | Recursos materiais e ambiente de trabalho | Plano de recursos materiais/ambiente | PROJ | Registros | ⬜ |
-| GPR 8 | Estratégia de transição p/ operação e suporte | Plano de transição | PROJ | Registros | ⬜ |
-| GPR 9 | Envolvimento das partes interessadas planejado | Plano de comunicação/partes interessadas | PROJ | Registros | ⬜ |
-| GPR 10+ | Riscos/oportunidades do projeto tratados | Registro de riscos do projeto | PROJ | Jira | ⬜ |
-| GPR 11 | Viabilidade do projeto avaliada | Registro de análise de viabilidade | PROJ | Registros | ⬜ |
-| GPR 12+ | Plano geral integrado e mantido | **Template de Plano de Projeto** | TPL + PROJ | Template→Registros | ⬜ |
-| GPR 13+ | Plano revisado com interessados + compromisso obtido | Ata de revisão/compromisso do plano | PROJ | Registros | ⬜ |
-| GPR 14+ | Monitoramento do planejado vs. realizado | **Template de Relatório de Acompanhamento** | TPL + PROJ | Template→Registros | ⬜ |
-| GPR 15 | Envolvimento das partes interessadas monitorado | (no relatório de acompanhamento) | PROJ | Registros | ⬜ |
-| GPR 16 | Transição monitorada | (no relatório de acompanhamento) | PROJ | Registros | ⬜ |
-| GPR 17+ | Riscos monitorados e comunicados | (no registro de riscos) | PROJ | Jira | ⬜ |
-| GPR 18+ | Ações corretivas identificadas e acompanhadas | Registro de ações/issues | PROJ | Jira | ⬜ |
-| GPR 19+ | Resultados significativos analisados (causas) | Registro de análise de causas | PROJ | Registros | ⬜ |
-| GPR 20 | Mudanças eficazes propostas como melhoria | (alimenta GPC 4) | PROJ | Confluence | ⬜ |
+| GPR 1 | Escopo estabelecido e mantido | Termo de Abertura / Escopo (no Plano de Projeto) | PROJ | Registros | ✅ |
+| GPR 2+ | Processo definido para o projeto (adaptado do padrão) | **Registro de Adaptação do Processo (Tailoring)** | TPL + PROJ | Template→Registros | ✅ |
+| GPR 3+ | Estimativas de dimensão | Registro de estimativa de dimensão | PROJ | Registros | ✅ |
+| GPR 4+ | Estimativas de esforço, duração, custo (baseadas no repositório) | Registro de estimativas | PROJ | Registros | ✅ |
+| GPR 5 | Orçamento e cronograma com marcos | Cronograma + orçamento | PROJ | Jira | ✅ |
+| GPR 6 | Recursos humanos planejados | Plano de recursos humanos (no Plano) | PROJ | Registros | ✅ |
+| GPR 7+ | Recursos materiais e ambiente de trabalho | Plano de recursos materiais/ambiente | PROJ | Registros | ✅ |
+| GPR 8 | Estratégia de transição p/ operação e suporte | Plano de transição | PROJ | Registros | ✅ |
+| GPR 9 | Envolvimento das partes interessadas planejado | Plano de comunicação/partes interessadas | PROJ | Registros | ✅ |
+| GPR 10+ | Riscos/oportunidades do projeto tratados | Registro de riscos do projeto | PROJ | Jira | ✅ |
+| GPR 11 | Viabilidade do projeto avaliada | Registro de análise de viabilidade | PROJ | Registros | ✅ |
+| GPR 12+ | Plano geral integrado e mantido | **Template de Plano de Projeto** | TPL + PROJ | Template→Registros | ✅ |
+| GPR 13+ | Plano revisado com interessados + compromisso obtido | Ata de revisão/compromisso do plano | PROJ | Registros | ✅ |
+| GPR 14+ | Monitoramento do planejado vs. realizado | **Template de Relatório de Acompanhamento** | TPL + PROJ | Template→Registros | ✅ |
+| GPR 15 | Envolvimento das partes interessadas monitorado | (no relatório de acompanhamento) | PROJ | Registros | ✅ |
+| GPR 16 | Transição monitorada | (no relatório de acompanhamento) | PROJ | Registros | ✅ |
+| GPR 17+ | Riscos monitorados e comunicados | (no registro de riscos) | PROJ | Jira | ✅ |
+| GPR 18+ | Ações corretivas identificadas e acompanhadas | Registro de ações/issues | PROJ | Jira | ✅ |
+| GPR 19+ | Resultados significativos analisados (causas) | Registro de análise de causas | PROJ | Registros | ✅ |
+| GPR 20 | Mudanças eficazes propostas como melhoria | (alimenta GPC 4) | PROJ | Confluence | ✅ |
 
 ### REQ — Engenharia de Requisitos
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| REQ 1 | Necessidades das partes interessadas identificadas + entendimento confirmado | **Documento de Requisitos** | TPL + PROJ | Template→Registros | ⬜ |
-| REQ 2+ | Requisitos especificados, priorizados, alocados | (no Documento de Requisitos) | PROJ | Registros | ⬜ |
-| REQ 3 | Compromisso da equipe técnica obtido | Ata/registro de compromisso | PROJ | Registros | ⬜ |
-| REQ 4 | Rastreabilidade bidirecional | **Matriz de Rastreabilidade** | TPL + PROJ | Template→Registros | ⬜ |
-| REQ 5 | Planos/produtos revisados vs. requisitos | Registro de revisão de consistência | PROJ | Registros | ⬜ |
-| REQ 6 | Requisitos analisados (necessários e suficientes) | Registro de análise de requisitos | PROJ | Registros | ⬜ |
-| REQ 7 | Requisitos validados | Registro de validação de requisitos | PROJ | Registros | ⬜ |
+| REQ 1 | Necessidades das partes interessadas identificadas + entendimento confirmado | **Documento de Requisitos** | TPL + PROJ | Template→Registros | ✅ |
+| REQ 2+ | Requisitos especificados, priorizados, alocados | (no Documento de Requisitos) | PROJ | Registros | ✅ |
+| REQ 3 | Compromisso da equipe técnica obtido | Ata/registro de compromisso | PROJ | Registros | ✅ |
+| REQ 4 | Rastreabilidade bidirecional | **Matriz de Rastreabilidade** | TPL + PROJ | Template→Registros | ✅ |
+| REQ 5 | Planos/produtos revisados vs. requisitos | Registro de revisão de consistência | PROJ | Registros | ✅ |
+| REQ 6 | Requisitos analisados (necessários e suficientes) | Registro de análise de requisitos | PROJ | Registros | ✅ |
+| REQ 7 | Requisitos validados | Registro de validação de requisitos | PROJ | Registros | ✅ |
 
 ### PCP — Projeto e Construção do Produto
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
