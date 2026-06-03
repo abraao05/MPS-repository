@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.19 (rascunho) |
+| **Versão** | 0.21 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -59,7 +59,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.19 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.21 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
@@ -82,6 +82,11 @@ MPS-Nivel-C/
 | TPL-REQ-002 | Template de Matriz de Rastreabilidade | 1.0 | REQ 4 (template) | Aprovado |
 | PRO-PCP-001 | Processo de Projeto e Construção do Produto | 1.0 | PCP 1-3 | Aprovado |
 | TPL-PCP-001 | Template de Documento de Design | 1.0 | PCP (template) | Aprovado |
+| PRO-ITP-001 | Processo de Integração do Produto | 1.0 | ITP 1-6 | Aprovado |
+| TPL-ITP-001 | Template de Estratégia de Integração | 1.0 | ITP (template) | Aprovado |
+| PRO-VV-001 | Processo de Verificação e Validação | 1.1 | VV 1-5 | Aprovado |
+| TPL-VV-001 | Template de Plano de V&V | 1.1 | VV (template) | Aprovado |
+| TPL-VV-002 | Template de Registro de Revisão por Pares | 1.0 | VV 2 (template) | Aprovado |
 
 ---
 
@@ -221,21 +226,21 @@ MPS-Nivel-C/
 ### ITP — Integração do Produto
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| ITP 1+ | Estratégia de integração + interfaces | **Estratégia/Plano de Integração** | TPL + PROJ | Template→Registros | ⬜ |
-| ITP 2 | Ambiente de integração estabelecido | Definição do ambiente de integração | PROJ | Azure DevOps | ⬜ |
-| ITP 3+ | Componentes avaliados antes de integrar | Registro de prontidão de componente | PROJ | Registros | ⬜ |
-| ITP 4 | Componentes integrados conforme estratégia | Registro de integração | PROJ | Azure DevOps | ⬜ |
-| ITP 5+ | Produto integrado testado | Registro de testes de integração | PROJ | Registros | ⬜ |
-| ITP 6 | Produto e material de apoio entregues | Registro de entrega + material de apoio | PROJ | Registros | ⬜ |
+| ITP 1+ | Estratégia de integração + interfaces | **Estratégia/Plano de Integração** | TPL + PROJ | Template→Registros | ✅ |
+| ITP 2 | Ambiente de integração estabelecido | Definição do ambiente de integração | PROJ | Azure DevOps | ✅ |
+| ITP 3+ | Componentes avaliados antes de integrar | Registro de prontidão de componente | PROJ | Registros | ✅ |
+| ITP 4 | Componentes integrados conforme estratégia | Registro de integração | PROJ | Azure DevOps | ✅ |
+| ITP 5+ | Produto integrado testado | Registro de testes de integração | PROJ | Registros | ✅ |
+| ITP 6 | Produto e material de apoio entregues | Registro de entrega + material de apoio | PROJ | Registros | ✅ |
 
 ### VV — Verificação e Validação
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| VV 1 | Produtos a verificar/validar selecionados (testes + revisão por pares) | **Plano de V&V** | TPL + PROJ | Template→Registros | ⬜ |
-| VV 2 | Procedimentos e material p/ revisão por pares | **Template de Revisão por Pares** | TPL + PROJ | Template→Registros | ⬜ |
-| VV 3+ | Métodos, critérios e ambientes de V&V | (no Plano de V&V) | PROJ | Registros | ⬜ |
-| VV 4 | Atividades de V&V realizadas + problemas tratados | Registros de teste + revisão por pares | PROJ | Registros | ⬜ |
-| VV 5 | Resultados analisados, registrados e comunicados | Relatório de V&V | PROJ | Registros | ⬜ |
+| VV 1 | Produtos a verificar/validar selecionados (testes + revisão por pares) | **Plano de V&V** | TPL + PROJ | Template→Registros | ✅ |
+| VV 2 | Procedimentos e material p/ revisão por pares | **Template de Revisão por Pares** | TPL + PROJ | Template→Registros | ✅ |
+| VV 3+ | Métodos, critérios e ambientes de V&V | (no Plano de V&V) | PROJ | Registros | ✅ |
+| VV 4 | Atividades de V&V realizadas + problemas tratados | Registros de teste + revisão por pares | PROJ | Registros | ✅ |
+| VV 5 | Resultados analisados, registrados e comunicados | Relatório de V&V | PROJ | Registros | ✅ |
 
 > **V&V — nota de ferramenta (v0.2):** testes registrados em **Azure Test Plans + Jira/Xray**. Fluxo aceito: casos de teste começam em planilha e depois são importados para a ferramenta — documentar isso explicitamente no Plano de V&V para o avaliador entender que é intencional. Revisão por pares pode ser evidenciada via pull request (Git/Azure) + registro de revisão.
 
