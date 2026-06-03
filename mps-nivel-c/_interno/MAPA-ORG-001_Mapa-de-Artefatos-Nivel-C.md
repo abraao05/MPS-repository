@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.10 (rascunho) |
+| **Versão** | 0.12 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -56,15 +56,17 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.10 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.12 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
 | GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.0 | GPC 2 | Aprovado |
-| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.0 | GPC 3; CP (iv,v,vi) | Aprovado |
-| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.0 | GPC 6 | Aprovado |
-| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.0 | GPC 7 | Aprovado |
-| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.1 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
+| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.1 | GPC 3; CP (iv,v,vi) | Aprovado |
+| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.1 | GPC 6 | Aprovado |
+| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.1 | GPC 7 | Aprovado |
+| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.2 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
+| PRO-OSW-001 | Governança Organizacional de Processos | 1.1 | OSW 2, 3, 4, 5, 6, 7 | Aprovado |
+| PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.1 | OSW 8, 9, 10 | Aprovado |
 
 ---
 
@@ -76,15 +78,15 @@ MPS-Nivel-C/
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
 | OSW 1 | Diretrizes de definição/melhoria de desempenho definidas e comunicadas | **POL-ORG-001 — Política Organizacional de Processos** | DEF/ORG | Confluence | ✅ |
-| OSW 2 | Recursos e treinamento garantidos pela gerência | Registro de alocação de recursos / orçamento de processos | ORG | Confluence | ⬜ |
-| OSW 3 | Informações de governança identificadas e usadas | Painel/relatório de governança de processos | ORG | Jira/Confluence | ⬜ |
-| OSW 4+ | Autoridade, competências e colaboradores alinhados aos objetivos | Matriz de papéis e responsabilidades organizacional | DEF/ORG | Confluence | ⬜ |
-| OSW 5+ | Riscos/oportunidades organizacionais geridos | Registro de riscos organizacionais | ORG | Jira | ⬜ |
-| OSW 6 | Coleta/análise/uso de medidas organizacionais garantidos | (ver MED) Relatório de desempenho organizacional | ORG | Jira | ⬜ |
-| OSW 7 | Alinhamento dos processos aos objetivos garantido | Ata de análise crítica pela gerência | ORG | Confluence | ⬜ |
-| OSW 8 | Oportunidades de negócio/investimentos priorizados (portfólio) | Critérios e registro de priorização de portfólio | DEF/ORG | Confluence | ⬜ |
-| OSW 9 | Recursos/orçamento/autoridade do portfólio estabelecidos | Plano/registro de gestão de portfólio + **quadro de capacity** | ORG | Confluence | ⬜ |
-| OSW 10 | Projetos do portfólio mantidos/tratados conforme acordos | Registro de acompanhamento do portfólio | ORG | Confluence | ⬜ |
+| OSW 2 | Recursos e treinamento garantidos pela gerência | **PRO-OSW-001 §3** | ORG | Confluence | ✅ |
+| OSW 3 | Informações de governança identificadas e usadas | **PRO-OSW-001 §6** | ORG | Jira/Confluence | ✅ |
+| OSW 4+ | Autoridade, competências e colaboradores alinhados aos objetivos | **PRO-OSW-001 §4** | DEF/ORG | Confluence | ✅ |
+| OSW 5+ | Riscos/oportunidades organizacionais geridos | **PRO-OSW-001 §5** + EST-GPC-002 | ORG | Jira | ✅ |
+| OSW 6 | Coleta/análise/uso de medidas organizacionais garantidos | **PRO-OSW-001 §6** (+ MED) | ORG | Jira | 🟨 |
+| OSW 7 | Alinhamento dos processos aos objetivos garantido | **PRO-OSW-001 §7** — análise crítica trimestral | ORG | Confluence | ✅ |
+| OSW 8 | Oportunidades de negócio/investimentos priorizados (portfólio) | **PRO-OSW-002 §3** | DEF/ORG | Confluence | ✅ |
+| OSW 9 | Recursos/orçamento/autoridade do portfólio estabelecidos | **PRO-OSW-002 §4** + quadro de capacity | ORG | Confluence | ✅ |
+| OSW 10 | Projetos do portfólio mantidos/tratados conforme acordos | **PRO-OSW-002 §5** | ORG | Confluence | ✅ |
 
 > **OSW 8/9/10 — CONFIRMADOS NO ESCOPO (v0.2).** A TIMEWARE gerencia portfólio: recursos compartilhados entre projetos (tech lead, arquiteto, PO) com gestão de capacity; quando necessário, puxa recursos de fora da unidade ou contrata. Já existe um quadro/registro de capacity informal — será formalizado como evidência principal de OSW 9/10.
 

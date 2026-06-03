@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | EST-GPC-002 — Estratégia de Gerência de Riscos e Oportunidades |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
@@ -90,7 +90,8 @@ Além dos riscos de projeto, a Timeware acompanha riscos de natureza organizacio
 | **Gerente de Projeto** | Conduz a gerência de riscos no projeto; mantém o registro atualizado. |
 | **Equipe do Projeto** | Identifica riscos e executa as respostas planejadas. |
 | **Time de Melhoria Contínua** | Mantém esta estratégia; acompanha riscos organizacionais. |
-| **Founder e CEO** | Trata riscos organizacionais de maior exposição; decide sobre respostas que exigem autoridade da direção. |
+| **COO (Operações)** | Trata os riscos organizacionais; decide respostas no nível operacional; reporta ao CEO os de maior exposição. |
+| **Founder e CEO** | Decide sobre riscos organizacionais que exigem autoridade estratégica. |
 
 ## 8. Documentos relacionados
 
@@ -107,3 +108,4 @@ Além dos riscos de projeto, a Timeware acompanha riscos de natureza organizacio
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial da estratégia de gerência de riscos e oportunidades |
+| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão da camada COO no tratamento de riscos organizacionais |

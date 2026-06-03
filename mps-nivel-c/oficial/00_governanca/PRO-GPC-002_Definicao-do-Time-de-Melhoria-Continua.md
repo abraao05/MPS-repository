@@ -3,10 +3,10 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPC-002 — Definição do Time de Melhoria Contínua |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Aprovação** | Founder e CEO |
+| **Aprovação** | COO (Operações) |
 | **Processo MPS-SW relacionado** | GPC 6 (estrutura de apoio aos processos) |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -41,13 +41,15 @@ O Time de Melhoria Contínua é composto por um conjunto de colaboradores design
 |---|---|
 | **Coordenação do Time** | Conduz os trabalhos do Time, organiza a pauta, representa o grupo junto à direção. |
 | **Membros do Time** | Participam da definição, manutenção e melhoria dos processos; atuam como auditores da GQA em regime de rodízio. |
-| **Patrocínio (Founder e CEO)** | Garante recursos e autoridade ao Time; decide sobre impasses escalados. |
+| **Patrocínio operacional (COO)** | Responde operacionalmente pelos processos e pelo Time de Melhoria Contínua; garante recursos no dia a dia; decide impasses operacionais; reporta ao CEO. |
+| **Patrocínio estratégico (Founder e CEO)** | Patrocina os processos no nível estratégico; assegura o alinhamento aos objetivos de negócio. |
 
 A composição nominal do Time de Melhoria Contínua (nomes e cargos dos membros) é registrada em `<lista de membros — a designar>`.
 
 ## 5. Funcionamento
 
-- O Time de Melhoria Contínua reúne-se em **cadência mensal**, podendo realizar reuniões extraordinárias quando necessário.
+- O Time de Melhoria Contínua está vinculado às Operações (COO), que responde operacionalmente pelos processos e pelo escritório de portfólio de projetos.
+- O Time reúne-se em **cadência mensal**, podendo realizar reuniões extraordinárias quando necessário.
 - As reuniões tratam de: andamento da definição/melhoria de processos, resultados das verificações de qualidade, análise de indicadores, priorização de melhorias e encaminhamentos.
 - As decisões, pautas e encaminhamentos são registrados e mantidos no Confluence.
 
@@ -69,3 +71,4 @@ Embora a Garantia da Qualidade de Processo seja uma função do Time de Melhoria
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do Time de Melhoria Contínua |
+| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão da estrutura de patrocínio (CEO estratégico / COO operacional) e vínculo às Operações |

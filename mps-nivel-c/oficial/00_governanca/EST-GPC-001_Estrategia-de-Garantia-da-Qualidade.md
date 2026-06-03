@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | EST-GPC-001 — Estratégia de Garantia da Qualidade (GQA) |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
@@ -75,7 +75,7 @@ Quando um desvio identificado pela GQA **não é corrigido** pelos responsáveis
 
 1. **Nível 1 — Equipe do projeto:** a GQA trata o achado diretamente com a equipe e o gerente do projeto.
 2. **Nível 2 — Time de Melhoria Contínua:** desvios não resolvidos no projeto são levados ao Time de Melhoria Contínua.
-3. **Nível 3 — Direção (CEO):** impasses que permanecem sem resolução são escalados à direção da organização, que decide.
+3. **Nível 3 — COO (Operações):** impasses que permanecem sem resolução são escalados ao COO, responsável operacional pelos processos, que decide. Casos de natureza estratégica são reportados pelo COO ao CEO.
 
 Este caminho garante que a GQA tenha autoridade efetiva, independentemente de quem é auditado.
 
@@ -99,3 +99,4 @@ A GQA é uma fonte de oportunidades de melhoria. Desvios recorrentes, dificuldad
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial da estratégia de garantia da qualidade de processo |
+| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Ajuste do escalonamento de impasses para o COO (estrutura organizacional) |

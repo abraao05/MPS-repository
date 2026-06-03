@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-GPC-001 — Plano de Gestão e Melhoria de Processos |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | `<dd/mm/aaaa>` |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
@@ -96,7 +96,8 @@ Após a implementação de uma melhoria, o Time de Melhoria Contínua avalia sua
 |---|---|
 | **Time de Melhoria Contínua** | Mantém o inventário e os ambientes; conduz implantação, melhoria e avaliação de efetividade. |
 | **Equipes de Projeto** | Utilizam os ativos e ambientes; contribuem com sugestões e lições aprendidas. |
-| **Founder e CEO** | Garante recursos para a melhoria; prioriza melhorias de impacto organizacional. |
+| **COO (Operações)** | Garante recursos operacionais para a melhoria; prioriza melhorias de impacto operacional; reporta ao CEO. |
+| **Founder e CEO** | Patrocina a melhoria no nível estratégico; assegura alinhamento aos objetivos de negócio. |
 
 ## 8. Documentos relacionados
 
@@ -114,3 +115,4 @@ Após a implementação de uma melhoria, o Time de Melhoria Contínua avalia sua
 |---|---|---|---|
 | 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do plano de gestão e melhoria de processos |
 | 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão do Registro de Oportunidades de Melhoria (GPC 4) na seção 5 |
+| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão da camada COO nos papéis |
