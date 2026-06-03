@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.3 (rascunho) |
+| **Versão** | 0.10 (rascunho) |
 | **Data** | 02/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -56,9 +56,15 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.3 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.10 | GPC 1 (rastreabilidade) | Rascunho |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
+| PRO-GPC-001 | Processo-Padrão Organizacional | 1.0 | GPC 2 | Aprovado |
+| GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.0 | GPC 2 | Aprovado |
+| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.0 | GPC 3; CP (iv,v,vi) | Aprovado |
+| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.0 | GPC 6 | Aprovado |
+| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.0 | GPC 7 | Aprovado |
+| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.1 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
 
 ---
 
@@ -87,17 +93,17 @@ MPS-Nivel-C/
 
 | Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
 |---|---|---|---|---|---|
-| GPC 1 | Ativos de processo necessários identificados | Inventário de ativos de processo | DEF/ORG | Confluence | ⬜ |
-| GPC 2+ | Estratégia de arquitetura de processos + biblioteca + diretrizes de adaptação | **Processo-Padrão Organizacional + Guia de Adaptação (Tailoring)** | DEF/ORG | Confluence | ⬜ |
-| GPC 3 | Estratégia e plano(s) de garantia da qualidade | **Estratégia/Plano de Garantia da Qualidade (GQA)** | DEF/ORG | Confluence | ⬜ |
-| GPC 4+ | Oportunidades de melhoria identificadas e mantidas | Registro de oportunidades de melhoria | ORG | Jira | ⬜ |
-| GPC 5+ | Plano de implementação de melhorias | Plano de Melhoria de Processos | ORG | Confluence | ⬜ |
-| GPC 6 | Estrutura de apoio (SEPG/grupo de processos) estabelecida | Definição do grupo de processos / mentoria | DEF/ORG | Confluence | ⬜ |
-| GPC 7 | Estratégia de gerência de riscos e oportunidades | **Estratégia de Gerência de Riscos** | DEF/ORG | Confluence | ⬜ |
-| GPC 8 | Ambientes padrão de trabalho estabelecidos | Definição dos ambientes-padrão | DEF/ORG | Confluence | ⬜ |
+| GPC 1 | Ativos de processo necessários identificados | **PLA-GPC-001 §2** — Inventário de ativos | DEF/ORG | Confluence | ✅ |
+| GPC 2+ | Estratégia de arquitetura de processos + biblioteca + diretrizes de adaptação | **PRO-GPC-001 Processo-Padrão Organizacional** (✅) + **GUIA-GPC-001 Guia de Adaptação** (✅) | DEF/ORG | Confluence | ✅ |
+| GPC 3 | Estratégia e plano(s) de garantia da qualidade | **EST-GPC-001 — Estratégia de Garantia da Qualidade** | DEF/ORG | Confluence | ✅ |
+| GPC 4+ | Oportunidades de melhoria identificadas e mantidas | **PLA-GPC-001 §5.1** — Registro de Oportunidades de Melhoria | ORG | Jira | ✅ |
+| GPC 5+ | Plano de implementação de melhorias | **PLA-GPC-001 §5** | ORG | Confluence | ✅ |
+| GPC 6 | Estrutura de apoio (SEPG/grupo de processos) estabelecida | **PRO-GPC-002 — Definição do Time de Melhoria Contínua** | DEF/ORG | Confluence | ✅ |
+| GPC 7 | Estratégia de gerência de riscos e oportunidades | **EST-GPC-002 — Estratégia de Gerência de Riscos** | DEF/ORG | Confluence | ✅ |
+| GPC 8 | Ambientes padrão de trabalho estabelecidos | **PLA-GPC-001 §3** | DEF/ORG | Confluence | ✅ |
 | GPC 9 | Repositório organizacional de medidas + garantia da qualidade de medidas | (ver MED) Definição do repositório de medidas | DEF/ORG | Jira | ⬜ |
-| GPC 10 | Processos-padrão implantados na organização | Registro de implantação / comunicação | ORG | Confluence | ⬜ |
-| GPC 11 | Efetividade das melhorias avaliada e relatada | Relatório de avaliação de melhorias | ORG | Confluence | ⬜ |
+| GPC 10 | Processos-padrão implantados na organização | **PLA-GPC-001 §4** | ORG | Confluence | ✅ |
+| GPC 11 | Efetividade das melhorias avaliada e relatada | **PLA-GPC-001 §6** | ORG | Confluence | ✅ |
 
 ---
 
