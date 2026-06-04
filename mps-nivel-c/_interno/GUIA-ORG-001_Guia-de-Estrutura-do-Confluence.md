@@ -4,6 +4,7 @@
 |---|---|
 | **Documento** | GUIA-ORG-001 — Guia de Estrutura do Confluence |
 | **Versão** | 1.0 |
+| **Data** | 12/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Classificação** | Interno (apoio à organização da documentação) |
 | **Finalidade** | Orientar a montagem dos espaços e páginas do Confluence para a avaliação MPS-SW Nível C |
@@ -144,4 +145,4 @@ PROJETOS
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do guia de estrutura do Confluence |
+| 1.0 | 12/11/2025 | Time de Melhoria Contínua | Definição inicial do guia de estrutura do Confluence |
