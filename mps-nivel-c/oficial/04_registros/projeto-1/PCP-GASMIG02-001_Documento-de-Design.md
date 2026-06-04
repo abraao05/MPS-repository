@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PCP-GASMIG02-001 |
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-001 |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 29/04/2026 |
 | **Responsáveis** | Cézar Hiraki (Tech Lead / Arquiteto) / Abraão Oliveira (GP/PO) |
 
@@ -125,46 +125,52 @@ APIM Service
 |---|---|---|---|
 | Instância APIM única vs. múltiplas instâncias | (A) APIM único centralizado; (B) APIM separado por cliente | **A — APIM único.** Reduz custo operacional, centraliza a governança e é o padrão Microsoft recomendado para o caso de uso. O isolamento por cliente é obtido nativamente via workspaces. | — |
 | Isolamento por cliente: workspaces vs. produtos separados | (A) Workspaces dedicados; (B) Produtos com políticas diferenciadas | **A — Workspaces.** Workspaces oferecem isolamento de ciclo de vida (APIs, políticas, assinaturas independentes por cliente). Produtos compartilham o escopo global, sem isolamento real. | — |
-| Sandbox: produto separado vs. instância APIM separada | (A) Produto `prod-sandbox` na mesma instância; (B) Instância APIM dedicada para sandbox | **A — Produto separado.** Custo-benefício superior; segregação suficiente para o objetivo de testes e validações pré-produção. Uma instância APIM separada seria justificada apenas para compliance ou SLA diferenciado, que não é o caso. | — |
+| Sandbox: produto separado vs. instância APIM separada | (A) Produto `prod-sandbox` na mesma instância; (B) Instância APIM dedicada para sandbox | **A — Produto separado.** Custo-benefício superior; segregação suficiente para o objetivo de testes e validações pré-produção. | — |
 | IaC: Bicep vs. ARM templates | (A) Bicep; (B) ARM JSON | **A — Bicep.** Sintaxe mais legível, suporte nativo da Microsoft, facilita manutenção futura pela equipe GASMIG. | — |
 | Controle de carga: named values vs. valores hard-coded nas políticas | (A) Named values parametrizáveis; (B) Hard-coded nas políticas | **A — Named values.** Permite alterar thresholds de rate limiting e throttling sem editar as políticas diretamente. Alinhado ao requisito de escalabilidade (RNF-04). | — |
 
 ## 3. Design de produto (UX/UI)
 
-**Não aplicável.** Conforme Registro de Adaptação (ADAP-GASMIG02-001), este é um projeto de infraestrutura e configuração cloud sem desenvolvimento de interface de usuário pela Timeware. O portal do desenvolvedor é um componente nativo do Azure API Management que será configurado (não desenvolvido).
+**Não aplicável.** Conforme ADAP-GASMIG02-001, este é um projeto de infraestrutura e configuração cloud sem desenvolvimento de interface de usuário pela Timeware. O portal do desenvolvedor é um componente nativo do Azure API Management que será configurado (não desenvolvido).
 
 ## 4. Rastreabilidade requisito → design
 
 | Requisito (ID) | Elemento de design |
 |---|---|
 | RF-01 — Governança corporativa APIM | Named values, policy fragments, políticas globais, estrutura de produtos e grupos |
-| RF-02 — Controle de acesso / ciclo de vida | Configuração de TTL de subscription keys; políticas de renovação; grupos de usuários |
+| RF-02 — Controle de acesso / ciclo de vida | TTL de subscription keys; políticas de renovação; grupos de usuários |
 | RF-03 — Segurança acesso interno | Política de restrição de IP no `prod-gasmig-interno` — IPs da rede corporativa GASMIG |
 | RF-04 — Segurança acesso externo | Política de validação de credenciais no `prod-gasmig-externo`; IP restrictions para parceiros |
 | RF-05 — Sandbox | Produto `prod-gasmig-sandbox` com APIs de exemplo; isolamento lógico do ambiente produtivo |
-| RF-06 — Catálogo corporativo | Portal do desenvolvedor configurado: layout GASMIG, visibilidade por grupo (interno/externo) |
+| RF-06 — Catálogo corporativo | Portal do desenvolvedor: layout GASMIG, visibilidade por grupo (interno/externo) |
 | RF-07 — Workspace ArcelorMittal | `ws-arcelormittal`: produtos, assinaturas e políticas dedicadas |
 | RF-08 — Workspace Usiminas | `ws-usiminas`: produtos, assinaturas e políticas dedicadas |
 | RF-09 — Rate limiting por workspace | Named values `nv-ratelimit-arcelormittal`, `nv-ratelimit-usiminas`; policy fragment `pf-ratelimit` |
 | RF-10 — Throttling por workspace | Named values `nv-throttle-arcelormittal`, `nv-throttle-usiminas`; policy fragment `pf-throttle` |
-| RNF-01 — Boas práticas Microsoft | Arquitetura auditável vs. Azure Well-Architected Framework — Security e Operational Excellence pilars |
+| RNF-01 — Boas práticas Microsoft | Arquitetura auditável vs. Azure Well-Architected Framework |
 | RNF-02 — 100% Azure | Todos os recursos provisionados no Azure (tenant GASMIG) |
 | RNF-03 — SSO SAML / Entra ID | Configuração do portal do desenvolvedor com provedor de identidade Entra ID (SAML 2.0) |
 | RNF-04 — Escalabilidade | Named values parametrizáveis; workspaces independentes; políticas modulares por fragmento |
 | RNF-05 — IaC / versionamento | Scripts Bicep/ARM exportados e armazenados no Azure DevOps GASMIG |
 
-Matriz completa com casos de teste: ver `RASTR-GASMIG02-001_Matriz-de-Rastreabilidade.md`.
+Matriz completa: ver `RASTR-GASMIG02-001_Matriz-de-Rastreabilidade.md`.
 
-## 5. Avaliação do design (PCP 2)
+## 5. Verificação técnica do design (PCP 2)
 
-Revisão por pares a ser realizada por Cézar Hiraki antes da sessão de aceite (~13/05/2026). O registro de revisão seguirá o template TPL-VV-002 e será arquivado nesta pasta.
+> Em projetos de configuração de ferramenta, a avaliação do design é uma verificação técnica realizada pelo Tech Lead antes da execução e antes da sessão de aceite com o cliente.
 
-| Item avaliado | Avaliador | Problema encontrado | Tratamento |
+A verificação técnica do design e da configuração será realizada por Cézar Hiraki em 13/05/2026, cobrindo:
+- Topologia APIM e estrutura de workspaces (aderência a esta seção 2)
+- Políticas de segurança (IP restrictions, validação de credenciais)
+- Configuração SSO Entra ID
+- Scripts IaC (Bicep/ARM) — completude e idempotência
+
+| Item verificado | Verificador | Resultado | Data |
 |---|---|---|---|
-| Topologia APIM e estrutura de workspaces | Cézar Hiraki | — | A realizar em 13/05/2026 |
-| Políticas de segurança (IP, credenciais) | Cézar Hiraki | — | A realizar em 13/05/2026 |
-| Configuração SSO Entra ID | Cézar Hiraki | — | A realizar em 13/05/2026 |
-| Scripts IaC (Bicep/ARM) | Cézar Hiraki | — | A realizar em 13/05/2026 |
+| Topologia APIM e estrutura de workspaces | Cézar Hiraki | A verificar | 13/05/2026 |
+| Políticas de segurança (IP, credenciais) | Cézar Hiraki | A verificar | 13/05/2026 |
+| Configuração SSO Entra ID | Cézar Hiraki | A verificar | 13/05/2026 |
+| Scripts IaC (Bicep/ARM) | Cézar Hiraki | A verificar | 13/05/2026 |
 
 ---
 
@@ -172,4 +178,5 @@ Revisão por pares a ser realizada por Cézar Hiraki antes da sessão de aceite 
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 29/04/2026 | Cézar Hiraki / Abraão Oliveira | Versão inicial — design arquitetural da OS-PARCELA-001 |
+| 1.0 | 29/04/2026 | Cézar Hiraki / Abraão Oliveira | Versão inicial |
+| 1.1 | 04/06/2026 | Abraão Oliveira | Seção 5 ajustada: avaliação do design como verificação técnica (não revisão de código); adequação ao tipo de projeto de configuração de ferramenta |
