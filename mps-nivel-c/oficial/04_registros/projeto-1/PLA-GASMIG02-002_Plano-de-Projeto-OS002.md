@@ -6,8 +6,8 @@
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-002 |
 | **Cliente** | GASMIG — Companhia de Gás de Minas Gerais |
 | **Contrato** | Governança de APIs GASMIG |
-| **Versão** | 1.0 |
-| **Data** | 26/05/2026 |
+| **Versão** | 1.1 |
+| **Data** | 04/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -52,27 +52,31 @@ Ver `ADAP-GASMIG02-002_Registro-de-Adaptacao-OS002.md`. Mesmas decisões da OS-0
 
 ## 5. Cronograma e marcos (GPR 5)
 
-| Marco | Data prevista |
-|---|---|
-| Kickoff OS-PARCELA-002 | 26/05/2026 |
-| Azure Key Vault provisionado e integrado ao APIM | 29/05/2026 |
-| OAuth 2.0 (Entra ID + APIM) funcional | 02/06/2026 |
-| API Keys com controle granular configuradas | 03/06/2026 |
-| Versionamento + ciclo de vida + CORS + payload validation | 06/06/2026 |
-| Application Insights integrado + dashboards configurados | 09/06/2026 |
-| Alertas configurados e validados | 09/06/2026 |
-| Verificação técnica Cézar Hiraki | 09/06/2026 |
-| Sessão de homologação end-to-end com time técnico GASMIG | ~10/06/2026 |
-| Encerramento OS-PARCELA-002 | 10/06/2026 |
+> **Convenção de sprint:** a sprint é encerrada na sexta-feira (freeze de configuração); a entrega formal ao cliente e a verificação técnica ocorrem na segunda-feira seguinte; sessão de homologação e encerramento na terça.
+
+| Marco | Data prevista | Responsável |
+|---|---|---|
+| Kickoff OS-PARCELA-002 | 26/05/2026 (seg) | Abraão Oliveira |
+| Azure Key Vault provisionado e integrado ao APIM | 29/05/2026 (qui) | Fernando Oliveira — revisão: Cézar Hiraki |
+| OAuth 2.0 (Entra ID + APIM) funcional | 02/06/2026 (ter) | Henry — revisão: Cézar Hiraki |
+| API Keys com controle granular configuradas | 03/06/2026 (qua) | Fernando Oliveira |
+| Versionamento + ciclo de vida configurados | 04/06/2026 (qui) | Henry |
+| CORS + validação de payload configurados | 05/06/2026 (qui) | Fernando Oliveira |
+| Application Insights integrado + dashboards configurados | 06/06/2026 (sex) | Fernando Oliveira |
+| Alertas configurados e validados | 06/06/2026 (sex) | Henry |
+| **Freeze de configuração — encerramento da sprint** | **06/06/2026 (sex)** | **Time OS-002** |
+| Verificação técnica Cézar Hiraki + entrega formal ao cliente | 09/06/2026 (seg) | Cézar Hiraki / Abraão Oliveira |
+| Sessão de homologação end-to-end com time técnico GASMIG | 10/06/2026 (ter) | Abraão Oliveira / Cézar Hiraki |
+| Encerramento OS-PARCELA-002 | 10/06/2026 (ter) | Abraão Oliveira |
 
 ## 6. Recursos (GPR 6, 7)
 
-| Papel | Responsável | Dedicação |
-|---|---|---|
-| Gerente de Projeto / PO | Abraão Oliveira | Parcial |
-| Tech Lead / Arquiteto / GCO | Cézar Hiraki | Parcial (foco reforçado em Key Vault e OAuth 2.0) |
-| Engenheiro Azure | Fernando Oliveira | Integral |
-| Engenheiro Azure | João Victor Cruz Silva | Integral |
+| Papel | Responsável | Dedicação | Foco principal na OS-002 |
+|---|---|---|---|
+| Gerente de Projeto / PO | Abraão Oliveira | Parcial | Coordenação, comunicação com GASMIG, encerramento |
+| Tech Lead / Arquiteto / GCO | Cézar Hiraki | Parcial | Revisão de Key Vault, OAuth 2.0, alertas; verificação técnica 09/06 |
+| Engenheiro Azure | Fernando Oliveira | Integral | RF-11 (Key Vault), RF-13 (API Keys), RF-18 (CORS + payload), RF-16 (dashboards) |
+| Engenheiro Azure | Henry | Integral | RF-12 (OAuth 2.0), RF-14 (versionamento), RF-15 (ciclo de vida), RF-17 (alertas) |
 
 **Ambiente e ferramentas:** mesmos da OS-001 + Azure Key Vault + Application Insights + Azure Monitor.
 
@@ -111,3 +115,4 @@ Projeto viável. A equipe executa em continuidade à OS-001, com ambiente já co
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 26/05/2026 | Abraão Oliveira | Versão inicial — baseline aprovada no kickoff da OS-002 |
+| 1.1 | 04/06/2026 | Abraão Oliveira | Atualização de recursos (Fernando Oliveira e Henry como engenheiros executores); cronograma detalhado com responsáveis por marco e convenção de sprint (freeze sexta / entrega segunda) |
