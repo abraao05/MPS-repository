@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPR-001 — Processo de Gerência de Projetos |
-| **Versão** | 1.2 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Versão** | 1.3 |
+| **Data** | 19/05/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processos MPS-SW relacionados** | GPR 1 a GPR 20 |
@@ -112,6 +112,7 @@ O projeto é monitorado continuamente, comparando o planejado com o realizado:
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de gerência de projetos |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Alinhamento ao novo fluxo: kickoff gerencial, concepção em trilhas, aprovação do plano e baseline |
-| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão dos marcos de abertura/encerramento de projeto (Termo de Encerramento) e distinção entre aceite de produto (review) e encerramento de projeto |
+| 1.0 | 06/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de gerência de projetos |
+| 1.1 | 12/12/2025 | Time de Melhoria Contínua | Alinhamento ao novo fluxo: kickoff gerencial, concepção em trilhas, aprovação do plano e baseline |
+| 1.2 | 15/01/2026 | Time de Melhoria Contínua | Inclusão dos marcos de abertura/encerramento de projeto (Termo de Encerramento) e distinção entre aceite de produto (review) e encerramento de projeto |
+| 1.3 | 19/05/2026 | Time de Melhoria Contínua | Seção de rastreabilidade e instrução para auditoria; ajuste para linguagem operacional |

@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PRO-ITP-001 — Processo de Integração do Produto |
 | **Versão** | 1.0 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 20/10/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processos MPS-SW relacionados** | ITP 1 a ITP 6 |
@@ -77,4 +77,4 @@ A integração na Timeware é majoritariamente **contínua e automatizada**, apo
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de integração do produto |
+| 1.0 | 20/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de integração do produto |

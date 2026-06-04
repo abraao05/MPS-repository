@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PRO-PCP-001 — Processo de Projeto e Construção do Produto |
 | **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 15/12/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processos MPS-SW relacionados** | PCP 1, PCP 2, PCP 3 |
@@ -76,5 +76,5 @@ A aplicabilidade do design de UX/UI é definida na adaptação do projeto (GUIA-
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de projeto e construção do produto |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Distinção entre design na concepção (pré-plano) e design adiantado nas sprints |
+| 1.0 | 14/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de projeto e construção do produto |
+| 1.1 | 15/12/2025 | Time de Melhoria Contínua | Distinção entre design na concepção (pré-plano) e design adiantado nas sprints |

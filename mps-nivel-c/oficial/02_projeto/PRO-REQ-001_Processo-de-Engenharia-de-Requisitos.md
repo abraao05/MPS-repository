@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PRO-REQ-001 — Processo de Engenharia de Requisitos |
 | **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 15/12/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processos MPS-SW relacionados** | REQ 1 a REQ 7 |
@@ -83,5 +83,5 @@ Mudanças de requisito são avaliadas quanto ao impacto (escopo, prazo, design),
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de engenharia de requisitos |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Contextualização do Discovery no novo fluxo (após kickoff gerencial; alimenta a concepção) |
+| 1.0 | 09/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de engenharia de requisitos |
+| 1.1 | 15/12/2025 | Time de Melhoria Contínua | Contextualização do Discovery no novo fluxo (após kickoff gerencial; alimenta a concepção) |
