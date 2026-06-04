@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-MED-001 — Plano de Medição |
-| **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Versão** | 1.2 |
+| **Data** | 14/05/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações), com patrocínio do Founder e CEO |
 | **Processos MPS-SW relacionados** | MED 1 a MED 7; GPC 9; OSW 6 |
@@ -144,5 +144,6 @@ O repositório organizacional de medidas é avaliado periodicamente para assegur
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do plano de medição |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Detalhamento da captura do indicador de retrabalho (subtarefas de bug no Jira) |
+| 1.0 | 08/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de medição |
+| 1.1 | 20/01/2026 | Time de Melhoria Contínua | Detalhamento da captura do indicador de retrabalho (subtarefas de bug no Jira) |
+| 1.2 | 14/05/2026 | Time de Melhoria Contínua | Revisão das definições operacionais dos indicadores |

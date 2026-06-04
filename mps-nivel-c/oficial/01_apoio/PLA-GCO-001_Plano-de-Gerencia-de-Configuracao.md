@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PLA-GCO-001 — Plano de Gerência de Configuração |
 | **Versão** | 1.0 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 12/09/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processos MPS-SW relacionados** | GCO 1 a GCO 5 |
@@ -115,4 +115,4 @@ As auditorias de configuração são conduzidas no contexto da Garantia da Quali
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do plano de gerência de configuração |
+| 1.0 | 12/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de gerência de configuração |

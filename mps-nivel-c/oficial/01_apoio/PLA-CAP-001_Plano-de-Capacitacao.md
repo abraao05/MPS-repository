@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PLA-CAP-001 — Plano de Capacitação |
 | **Versão** | 1.0 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 22/09/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processos MPS-SW relacionados** | CAP 1 a CAP 4 |
@@ -92,4 +92,4 @@ A manutenção desses recursos é responsabilidade da área de Cultura e Pessoas
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do plano de capacitação |
+| 1.0 | 22/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de capacitação |

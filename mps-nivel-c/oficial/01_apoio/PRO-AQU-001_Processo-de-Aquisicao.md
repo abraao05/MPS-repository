@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PRO-AQU-001 — Processo de Aquisição |
 | **Versão** | 1.0 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 26/09/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processos MPS-SW relacionados** | AQU 1 a AQU 4 |
@@ -81,4 +81,4 @@ As entregas do fornecedor passam por **revisão técnica**, verificando a aderê
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de aquisição |
+| 1.0 | 26/09/2025 | Time de Melhoria Contínua | Definição inicial do processo de aquisição |
