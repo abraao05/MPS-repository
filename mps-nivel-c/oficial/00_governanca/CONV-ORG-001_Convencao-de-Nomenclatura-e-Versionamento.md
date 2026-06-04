@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | CONV-ORG-001 — Convenção de Nomenclatura e Versionamento |
-| **Versão** | 1.0 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Versão** | 1.1 |
+| **Data** | 19/05/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Processo MPS-SW relacionado** | GCO 1, GCO 4 — Gerência de Configuração |
@@ -134,4 +134,5 @@ Todo documento da Timeware inicia com um cabeçalho de identificação contendo,
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição da convenção de nomenclatura e versionamento |
+| 1.0 | 14/07/2025 | Time de Melhoria Contínua | Definição da convenção de nomenclatura e versionamento |
+| 1.1 | 19/05/2026 | Time de Melhoria Contínua | Siglas com leitura organizacional e coluna de correspondência ao modelo (instrução para auditoria) |

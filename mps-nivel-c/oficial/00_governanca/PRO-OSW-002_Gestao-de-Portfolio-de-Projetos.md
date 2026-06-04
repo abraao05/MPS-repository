@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PRO-OSW-002 — Gestão de Portfólio de Projetos |
 | **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 24/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processos MPS-SW relacionados** | OSW 8, OSW 9, OSW 10 |
@@ -82,5 +82,5 @@ O acompanhamento do portfólio é apoiado pelas informações do Jira (situaçã
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial da gestão de portfólio de projetos |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Atribuição da autoridade do portfólio ao COO (escritório de portfólio de projetos) |
+| 1.0 | 29/08/2025 | Time de Melhoria Contínua | Definição inicial da gestão de portfólio de projetos |
+| 1.1 | 24/11/2025 | Time de Melhoria Contínua | Atribuição da autoridade do portfólio ao COO (escritório de portfólio de projetos) |

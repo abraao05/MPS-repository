@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | EST-GPC-001 — Estratégia de Garantia da Qualidade (GQA) |
 | **Versão** | 1.2 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 17/12/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Processo MPS-SW relacionado** | GPC 3; atributos de capacidade (iv), (v), (vi) |
@@ -99,6 +99,6 @@ A GQA é uma fonte de oportunidades de melhoria. Desvios recorrentes, dificuldad
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial da estratégia de garantia da qualidade de processo |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Ajuste do escalonamento de impasses para o COO (estrutura organizacional) |
-| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Atualização dos marcos de verificação conforme o novo fluxo (kickoff gerencial, concepção, aprovação do plano) |
+| 1.0 | 12/08/2025 | Time de Melhoria Contínua | Definição inicial da estratégia de garantia da qualidade de processo |
+| 1.1 | 21/11/2025 | Time de Melhoria Contínua | Ajuste do escalonamento de impasses para o COO (estrutura organizacional) |
+| 1.2 | 17/12/2025 | Time de Melhoria Contínua | Atualização dos marcos de verificação conforme o novo fluxo (kickoff gerencial, concepção, aprovação do plano) |

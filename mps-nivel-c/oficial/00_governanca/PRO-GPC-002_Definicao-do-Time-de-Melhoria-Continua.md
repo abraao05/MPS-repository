@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PRO-GPC-002 — Definição do Time de Melhoria Contínua |
 | **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 21/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processo MPS-SW relacionado** | GPC 6 (estrutura de apoio aos processos) |
@@ -70,5 +70,5 @@ Embora a Garantia da Qualidade de Processo seja uma função do Time de Melhoria
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do Time de Melhoria Contínua |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão da estrutura de patrocínio (CEO estratégico / COO operacional) e vínculo às Operações |
+| 1.0 | 15/08/2025 | Time de Melhoria Contínua | Definição inicial do Time de Melhoria Contínua |
+| 1.1 | 21/11/2025 | Time de Melhoria Contínua | Inclusão da estrutura de patrocínio (CEO estratégico / COO operacional) e vínculo às Operações |

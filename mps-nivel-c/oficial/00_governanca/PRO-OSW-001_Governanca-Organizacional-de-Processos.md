@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PRO-OSW-001 — Governança Organizacional de Processos |
 | **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 24/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações), com patrocínio do Founder e CEO |
 | **Processos MPS-SW relacionados** | OSW 2, OSW 3, OSW 4, OSW 5, OSW 6, OSW 7 |
@@ -98,5 +98,5 @@ As decisões e encaminhamentos da análise crítica são registrados (ata mantid
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial da governança organizacional de processos |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão da camada COO na autoridade; análise crítica conduzida pelo COO com reporte ao CEO |
+| 1.0 | 27/08/2025 | Time de Melhoria Contínua | Definição inicial da governança organizacional de processos |
+| 1.1 | 24/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO na autoridade; análise crítica conduzida pelo COO com reporte ao CEO |

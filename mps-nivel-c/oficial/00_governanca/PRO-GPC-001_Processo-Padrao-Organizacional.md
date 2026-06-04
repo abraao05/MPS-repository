@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPC-001 — Processo-Padrão Organizacional |
-| **Versão** | 2.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Versão** | 2.2 |
+| **Data** | 12/05/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Processo MPS-SW relacionado** | GPC 2 (processo-padrão e arquitetura de processos) |
@@ -226,6 +226,7 @@ Este processo-padrão é adaptado a cada projeto conforme as diretrizes do Guia 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo-padrão organizacional de desenvolvimento de software sob medida |
-| 2.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Reestruturação do fluxo: inclusão do Escritório de Projetos, kickoff como marco gerencial, fase de concepção em trilhas paralelas e aprovação do plano (baseline). Sete fases. |
-| 2.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição dos quatro ambientes (dev, QA, homologação, stage); distinção entre homologação e stage; encerramento de projeto vs. review de sprint |
+| 1.0 | 04/08/2025 | Time de Melhoria Contínua | Definição inicial do processo-padrão organizacional de desenvolvimento de software sob medida |
+| 2.0 | 12/12/2025 | Time de Melhoria Contínua | Reestruturação do fluxo: inclusão do Escritório de Projetos, kickoff como marco gerencial, fase de concepção em trilhas paralelas e aprovação do plano (baseline). Sete fases. |
+| 2.1 | 15/01/2026 | Time de Melhoria Contínua | Definição dos quatro ambientes (dev, QA, homologação, stage); distinção entre homologação e stage; encerramento de projeto vs. review de sprint |
+| 2.2 | 12/05/2026 | Time de Melhoria Contínua | Revisão de consistência geral e alinhamento de terminologia |

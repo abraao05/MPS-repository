@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | GUIA-GPC-001 — Guia de Adaptação do Processo-Padrão (Tailoring) |
 | **Versão** | 1.2 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 19/01/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Processo MPS-SW relacionado** | GPC 2 (diretrizes de adaptação do processo-padrão) |
@@ -117,6 +117,6 @@ A decisão e a justificativa ("projeto sem front-end — UX/UI não se aplica") 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do guia de adaptação do processo-padrão |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Ajuste de nomenclatura de fase conforme o novo fluxo |
-| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão do eixo de adaptação de cadência de entrega e ambiente de stage |
+| 1.0 | 08/08/2025 | Time de Melhoria Contínua | Definição inicial do guia de adaptação do processo-padrão |
+| 1.1 | 16/12/2025 | Time de Melhoria Contínua | Ajuste de nomenclatura de fase conforme o novo fluxo |
+| 1.2 | 19/01/2026 | Time de Melhoria Contínua | Inclusão do eixo de adaptação de cadência de entrega e ambiente de stage |
