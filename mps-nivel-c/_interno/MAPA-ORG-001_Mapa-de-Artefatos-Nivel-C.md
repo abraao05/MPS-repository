@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.27 (rascunho) |
+| **Versão** | 0.28 (rascunho) |
 | **Data** | 03/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -59,7 +59,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende | Situação |
 |---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.27 | GPC 1 (rastreabilidade) | Rascunho |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.28 | GPC 1 (rastreabilidade) | Rascunho |
 | GUIA-ORG-001 | Guia de Estrutura do Confluence [INTERNO] | 1.0 | — (apoio) | Aprovado |
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, GCO 4 | Aprovado |
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
@@ -96,6 +96,8 @@ MPS-Nivel-C/
 | TPL-GDE-001 | Template de Registro de Análise de Decisão (RAD) | 1.0 | GDE (template) | Aprovado |
 | TPL-ORG-001 | Template de Ata de Reunião | 1.0 | — (apoio, multiuso) | Aprovado |
 | GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | 1.0 | — (apoio) | Aprovado |
+| README | README do repositório [INTERNO] | 1.0 | — (apoio/navegação) | Aprovado |
+| TREINO-* | Materiais de Treinamento do time (apostilas por papel) [INTERNO] | — | — (apoio à preparação para a avaliação) | Criados em conversa dedicada do projeto |
 | DIAG-GPC-001 | Diagrama do Fluxo do Processo-Padrão (figura) | 1.0 | GPC 2 (ilustra PRO-GPC-001) | A atualizar (grooming/ambientes) |
 | MAPA-CAP-001 | Mapa de Capacidade dos Processos | 1.0 | CP-E/D/C (rastreabilidade) | Aprovado |
 
