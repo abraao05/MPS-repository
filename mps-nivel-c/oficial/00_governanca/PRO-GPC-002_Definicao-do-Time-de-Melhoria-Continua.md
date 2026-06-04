@@ -7,7 +7,7 @@
 | **Data** | 21/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
-| **Processo MPS-SW relacionado** | GPC 6 (estrutura de apoio aos processos) |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -63,6 +63,16 @@ Embora a Garantia da Qualidade de Processo seja uma função do Time de Melhoria
 - PRO-GPC-001 — Processo-Padrão Organizacional
 - EST-GPC-001 — Estratégia de Garantia da Qualidade
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
+
+## 8. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde ao resultado **GPC 6** do processo **Gerência de Processos (GPC)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| GPC 6 — grupo responsável pelos processos (estrutura de apoio à melhoria) definido, com responsabilidades e recursos | Seções 1 a 6 |
 
 ---
 

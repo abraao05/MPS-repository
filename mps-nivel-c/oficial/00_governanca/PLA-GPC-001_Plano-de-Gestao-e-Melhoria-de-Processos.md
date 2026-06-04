@@ -7,7 +7,7 @@
 | **Data** | 26/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
-| **Processos MPS-SW relacionados** | GPC 1, GPC 4, GPC 5, GPC 8, GPC 10, GPC 11 |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -16,14 +16,7 @@
 
 Este plano define como a Timeware mantém o conjunto de ativos de processo da organização, estabelece os ambientes-padrão de trabalho, implanta os processos nas equipes e conduz a melhoria contínua dos processos a partir das avaliações de seus resultados.
 
-> **Mapa de resultados atendidos neste documento:**
-> - Seção 2 → **GPC 1** (ativos de processo identificados)
-> - Seção 3 → **GPC 8** (ambientes-padrão de trabalho)
-> - Seção 4 → **GPC 10** (processos implantados na organização)
-> - Seção 5 → **GPC 4** (oportunidades de melhoria identificadas e mantidas) e **GPC 5** (plano de implementação de melhorias)
-> - Seção 6 → **GPC 11** (efetividade das melhorias avaliada)
-
-## 2. Inventário de ativos de processo (GPC 1)
+## 2. Inventário de ativos de processo
 
 A Timeware mantém uma **biblioteca de ativos de processo**, no Confluence, contendo todos os ativos necessários à definição, execução, verificação e melhoria dos seus processos. O inventário abaixo identifica os ativos da organização:
 
@@ -40,7 +33,7 @@ A Timeware mantém uma **biblioteca de ativos de processo**, no Confluence, cont
 
 O inventário é mantido atualizado pelo Time de Melhoria Contínua à medida que novos ativos são criados ou revisados (processos de apoio, templates e registros são incorporados ao inventário conforme produzidos).
 
-## 3. Ambientes-padrão de trabalho (GPC 8)
+## 3. Ambientes-padrão de trabalho
 
 A Timeware define ambientes-padrão de trabalho que apoiam a execução consistente dos processos:
 
@@ -54,7 +47,7 @@ A Timeware define ambientes-padrão de trabalho que apoiam a execução consiste
 
 Esses ambientes constituem a infraestrutura padrão dos projetos e são adaptados conforme a necessidade de cada projeto.
 
-## 4. Implantação dos processos (GPC 10)
+## 4. Implantação dos processos
 
 A implantação dos processos-padrão nas equipes é conduzida pelo Time de Melhoria Contínua e compreende:
 
@@ -65,11 +58,11 @@ A implantação dos processos-padrão nas equipes é conduzida pelo Time de Melh
 
 A adoção dos processos pelos projetos é verificada pela Garantia da Qualidade (EST-GPC-001).
 
-## 5. Identificação e melhoria de processos (GPC 4 e GPC 5)
+## 5. Identificação e melhoria de processos
 
 A melhoria de processos é contínua e baseada em evidências.
 
-### 5.1. Identificação e registro de oportunidades (GPC 4)
+### 5.1. Identificação e registro de oportunidades
 
 As **fontes de oportunidades de melhoria** são:
 
@@ -82,11 +75,11 @@ Todas as oportunidades identificadas são mantidas em um **Registro de Oportunid
 
 O Registro é mantido atualizado pelo Time de Melhoria Contínua, que revisa as oportunidades em suas reuniões mensais, garantindo que nenhuma seja perdida e que o status de cada uma esteja sempre visível.
 
-### 5.2. Planejamento e implementação das melhorias (GPC 5)
+### 5.2. Planejamento e implementação das melhorias
 
 As oportunidades registradas são analisadas e **priorizadas** pelo Time de Melhoria Contínua conforme sua contribuição aos objetivos de negócio. As melhorias priorizadas são planejadas — com responsável, prazo e resultado esperado — e implementadas, com o progresso acompanhado no mesmo registro.
 
-## 6. Avaliação da efetividade das melhorias (GPC 11)
+## 6. Avaliação da efetividade das melhorias
 
 Após a implementação de uma melhoria, o Time de Melhoria Contínua avalia sua **efetividade**, verificando se o resultado esperado foi alcançado — por exemplo, comparando indicadores antes e depois da mudança. O resultado da avaliação é registrado e comunicado, e realimenta o ciclo de melhoria: melhorias efetivas são consolidadas no processo-padrão; melhorias que não atingiram o esperado são reavaliadas.
 
@@ -106,6 +99,21 @@ Após a implementação de uma melhoria, o Time de Melhoria Contínua avalia sua
 - PRO-GPC-002 — Definição do Time de Melhoria Contínua
 - EST-GPC-001 — Estratégia de Garantia da Qualidade
 - Plano de Medição (MED) e Plano de Capacitação (CAP)
+
+## 9. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde a **vários resultados** do processo **Gerência de Processos (GPC)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| GPC 1 — ativos de processo necessários identificados (inventário de ativos) | Seção 2 |
+| GPC 4 — oportunidades de melhoria identificadas e mantidas | Seção 5.1 |
+| GPC 5 — plano de implementação das melhorias de processo | Seção 5.2 |
+| GPC 8 — ambientes padrão de trabalho estabelecidos | Seção 3 |
+| GPC 10 — processos-padrão implantados/acompanhados na organização | Seção 4 |
+| GPC 11 — efetividade das melhorias avaliada e relatada | Seção 6 |
 
 ---
 

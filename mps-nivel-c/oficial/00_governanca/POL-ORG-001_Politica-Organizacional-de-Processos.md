@@ -7,7 +7,7 @@
 | **Data** | 07/07/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação / Patrocínio** | Tiago Barbosa Nascimento — Founder e CEO |
-| **Processo MPS-SW relacionado** | OSW 1 — Gerência Organizacional de Software |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -68,7 +68,7 @@ A Timeware adota uma separação clara entre quem **define** os processos, quem 
 | Papel | Responsabilidade em relação à Política |
 |---|---|
 | **Founder e CEO** | Aprovar e patrocinar a Política; garantir recursos; revisar periodicamente o alinhamento dos processos aos objetivos de negócio. |
-| **Time de Melhoria Contínua** (Grupo de Processos da organização — SEPG no modelo MPS-SW) | **Definir** e manter os processos-padrão, templates e materiais de apoio; disponibilizá-los na biblioteca de ativos; apoiar os projetos no uso dos processos e conduzir sua melhoria contínua. |
+| **Time de Melhoria Contínua** (Grupo de Processos da organização) | **Definir** e manter os processos-padrão, templates e materiais de apoio; disponibilizá-los na biblioteca de ativos; apoiar os projetos no uso dos processos e conduzir sua melhoria contínua. |
 | **Garantia da Qualidade de Processo (GQA)** | **Verificar** objetivamente se os projetos e equipes executam o trabalho de acordo com os processos definidos e se os produtos de trabalho atendem aos padrões, de forma independente em relação a quem executou o trabalho avaliado. |
 | **Gerentes de Projeto** | **Executar** o planejamento e o acompanhamento dos projetos conforme os processos, adaptando-os ao contexto de cada projeto. |
 | **Equipes de Engenharia / Projeto (Scrum)** | **Executar** o trabalho técnico utilizando os processos, templates e materiais definidos, ao longo das sprints. |
@@ -76,12 +76,12 @@ A Timeware adota uma separação clara entre quem **define** os processos, quem 
 
 ## 6. Documentos relacionados
 
-- Processo-Padrão Organizacional e Guia de Adaptação (GPC 2+)
-- Estratégia e Plano de Garantia da Qualidade (GPC 3)
-- Plano de Capacitação (CAP)
-- Plano de Medição (MED)
-- Estratégia de Gerência de Riscos e Oportunidades (GPC 7)
-- Plano de Melhoria de Processos (GPC 5)
+- Processo-Padrão Organizacional e Guia de Adaptação
+- Estratégia e Plano de Garantia da Qualidade
+- Plano de Capacitação
+- Plano de Medição
+- Estratégia de Gerência de Riscos e Oportunidades
+- Plano de Melhoria de Processos
 
 ## 7. Aprovação
 
@@ -92,6 +92,16 @@ A Timeware adota uma separação clara entre quem **define** os processos, quem 
 | Cargo | Founder e CEO |
 | Data | 07/07/2025 |
 | Assinatura | __________________________________ |
+
+## 8. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde ao resultado **OSW 1** do processo **Gerência Organizacional de Software (OSW)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| OSW 1 — comprometimento e patrocínio da alta direção com a definição, o uso, a medição e a melhoria dos processos | Seções 1, 2 e 4 (diretrizes e compromissos da direção); seção 7 (aprovação e patrocínio do CEO) |
 
 ---
 

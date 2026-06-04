@@ -7,7 +7,7 @@
 | **Data** | 24/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações), com patrocínio do Founder e CEO |
-| **Processos MPS-SW relacionados** | OSW 2, OSW 3, OSW 4, OSW 5, OSW 6, OSW 7 |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -16,18 +16,11 @@
 
 Este documento define como a direção da Timeware governa seus processos: como garante recursos, estabelece autoridade e competências, gerencia riscos organizacionais, utiliza medidas e informações de governança, e analisa criticamente o alinhamento dos processos aos objetivos de negócio.
 
-> **Mapa de resultados atendidos neste documento:**
-> - Seção 3 → **OSW 2** (recursos e treinamento garantidos)
-> - Seção 4 → **OSW 4** (autoridade, competências e colaboradores alinhados)
-> - Seção 5 → **OSW 5** (riscos e oportunidades organizacionais geridos)
-> - Seção 6 → **OSW 3** (informações de governança) e **OSW 6** (medidas organizacionais)
-> - Seção 7 → **OSW 7** (alinhamento dos processos aos objetivos — análise crítica pela direção)
-
 ## 2. Objetivos de negócio
 
 Os processos da Timeware existem para servir ao objetivo central de **crescer com qualidade e previsibilidade**: entregar software conforme o acordado, dentro de prazos e custos planejados, de forma sustentável ao crescimento da organização. Toda a governança de processos descrita aqui é orientada a esse objetivo.
 
-## 3. Garantia de recursos (OSW 2)
+## 3. Garantia de recursos
 
 A direção da Timeware garante os recursos necessários para definir, executar, verificar e melhorar os processos, incluindo:
 
@@ -38,7 +31,7 @@ A direção da Timeware garante os recursos necessários para definir, executar,
 
 A provisão de recursos é tratada pela direção e revisada nas análises críticas (seção 7).
 
-## 4. Autoridade, competências e papéis (OSW 4)
+## 4. Autoridade, competências e papéis
 
 A organização define a autoridade e as competências necessárias para a operação dos processos:
 
@@ -52,13 +45,13 @@ A organização define a autoridade e as competências necessárias para a opera
 
 As competências necessárias a cada papel são desenvolvidas por meio da capacitação (CAP), alinhando os colaboradores aos objetivos da organização.
 
-## 5. Riscos e oportunidades organizacionais (OSW 5)
+## 5. Riscos e oportunidades organizacionais
 
 A Timeware gerencia riscos e oportunidades de natureza organizacional — que afetam a empresa além de um projeto isolado, como concorrência de recursos entre projetos do portfólio, dependência de pessoas-chave e riscos de negócio.
 
 Esses riscos são tratados conforme a Estratégia de Gerência de Riscos e Oportunidades (EST-GPC-002), com acompanhamento pela direção e pelo Time de Melhoria Contínua. Riscos de maior exposição são levados à análise crítica pela direção.
 
-## 6. Informações de governança e medidas organizacionais (OSW 3 e OSW 6)
+## 6. Informações de governança e medidas organizacionais
 
 A direção identifica e utiliza informações de governança para acompanhar o desempenho da organização e dos seus processos. As principais fontes são:
 
@@ -68,7 +61,7 @@ A direção identifica e utiliza informações de governança para acompanhar o 
 
 Essas informações são consolidadas e usadas como base para as decisões da direção e para a análise crítica.
 
-## 7. Análise crítica pela direção (OSW 7)
+## 7. Análise crítica pela direção
 
 A direção da Timeware realiza, **trimestralmente**, uma **análise crítica dos processos**, com o objetivo de verificar se eles continuam alinhados aos objetivos de negócio e se estão produzindo os resultados esperados.
 
@@ -91,6 +84,21 @@ As decisões e encaminhamentos da análise crítica são registrados (ata mantid
 - PLA-GPC-001 — Plano de Gestão e Melhoria de Processos
 - Plano de Medição (MED) e Plano de Capacitação (CAP)
 - PRO-OSW-002 — Gestão de Portfólio de Projetos
+
+## 9. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados **OSW 2 a OSW 7** do processo **Gerência Organizacional de Software (OSW)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| OSW 2 — recursos e treinamento garantidos pela gerência | Seção 3 |
+| OSW 3 — informações de governança identificadas e usadas | Seção 6 |
+| OSW 4 — autoridade, responsabilidades e competências definidas e alinhadas aos objetivos | Seção 4 |
+| OSW 5 — riscos e oportunidades organizacionais geridos | Seção 5 |
+| OSW 6 — coleta, análise e uso de medidas organizacionais garantidos | Seção 6 |
+| OSW 7 — alinhamento dos processos aos objetivos garantido (análise crítica) | Seção 7 |
 
 ---
 

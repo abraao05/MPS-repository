@@ -7,7 +7,7 @@
 | **Data** | 17/12/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
-| **Processo MPS-SW relacionado** | GPC 3; atributos de capacidade (iv), (v), (vi) |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -92,6 +92,16 @@ A GQA é uma fonte de oportunidades de melhoria. Desvios recorrentes, dificuldad
 - Processo de Verificação e Validação (VV)
 - Plano de Medição (MED)
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
+
+## 9. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde ao resultado **GPC 3** do processo **Gerência de Processos (GPC)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| GPC 3 — estratégia e plano de garantia da qualidade, com verificação de aderência ao processo e avaliação de produtos de trabalho por função independente | Seções 1 a 7 |
 
 ---
 
