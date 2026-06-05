@@ -12,7 +12,7 @@
 > **Legenda:** ✅ OK = existe e completo · 🟨 PARCIAL = existe com lacuna · ❌ FALTA = não há · NA = não se aplica.
 > Cada item foi comparado com a seção exigida pelo template Timeware correspondente para julgar a completude.
 
-**Resultado geral: 28 ✅ OK · 11 🟨 PARCIAL · 1 ❌ FALTA (40 itens).** Conformidade estrutural alta; as lacunas são de evidência operacional (acompanhamento contínuo, controle formal de mudanças, formalização de revisão por pares e evidências "vivas" de CI/integridade).
+**Resultado geral: 28 ✅ OK · 12 🟨 PARCIAL · 0 ❌ FALTA (40 itens).** Conformidade estrutural alta; as lacunas são de evidência operacional (acompanhamento contínuo, formalização do controle de mudanças e da revisão por pares, e evidências "vivas" de CI/integridade).
 
 ---
 
@@ -38,11 +38,11 @@
 | R48 Backlog / requisitos (épicos, histórias) | REQ-FRUKI01-001/002 §4–5 | ✅ OK |
 | R49 Critérios de aceite + envolvimento de stakeholders | REQ §4/5/7 | ✅ OK |
 | R50 Confirmação/aprovação do entendimento | REQ §8; ATA-002/003 | ✅ OK |
-| R51 Change requests / controle de mudança | — | ❌ FALTA |
+| R51 Change requests / controle de mudança | GCO §4 (CM-01..03); GDE-001; TAP-002 | 🟨 PARCIAL |
 | R52 Matriz de rastreabilidade | RASTR-FRUKI01-001/002 (cobertura 100%) | ✅ OK |
 | R53 Registro de validação dos requisitos | REQ §7; PCP §5 | 🟨 PARCIAL |
 
-**Lacunas:** **único FALTA do projeto** — não há Change Request formal (TPL-GPR-006). Os TAE declaram "sem CR", mas o atraso da API Rota PDV e a renomeação "Caixa Preta → Regra de Ouro" foram tratados ad-hoc (GDE/atas), sem evidência de que o controle de mudanças do GPR esteja em operação. A validação dos requisitos é narrativa, sem métricas (% validado, defeitos pós-validação).
+**Lacunas:** R51 — o controle de mudança **está evidenciado** em `GCO §4` (CM-01..CM-03, com solicitante/aprovador/data/rastreabilidade) e em `GDE-001`, inclusive uma **ampliação de escopo** (CM-03 — módulo Regra de Ouro, fora da proposta original, aprovado por Leandro+Tiago e formalizado via novo TAP-002). Por isso **não é FALTA**. Fica PARCIAL por dois motivos: (a) não se usou o formulário de Change Request (TPL-GPR-006) — a mudança foi tratada via novo pacote/TAP; (b) **inconsistência a corrigir**: `TAE-002 §3` afirma "não houve change requests nem expansão de escopo", contradizendo o `GCO CM-03`. A validação dos requisitos (R53) é narrativa, sem métricas (% validado, defeitos pós-validação).
 
 ---
 
@@ -146,7 +146,7 @@
 - Ciclo de qualidade efetivo: testes Gherkin, piloto com vendedores reais, contenção de 100% dos defeitos.
 
 **Lacunas priorizadas**
-1. **Controle formal de mudanças (R51 — FALTA):** adotar Change Request (TPL-GPR-006) mesmo para registrar atraso de API e renomeações, evidenciando o processo em operação.
+1. **Controle de mudanças (R51 — PARCIAL):** o controle existe (GCO §4 + GDE + TAP-002 para a ampliação CM-03). Corrigir a inconsistência do `TAE-002 §3` ("sem expansão de escopo" × CM-03 "ampliação de escopo") e, idealmente, formalizar mudanças via Change Request (TPL-GPR-006) além do log de GCO.
 2. **Acompanhamento contínuo (R44/R46):** produzir status report por sprint/mês também para o Pacote 1; hoje só o PacoteFinal24 tem RAC parcial.
 3. **Formalizar revisão por pares (R65/R67):** registrar cada PR no padrão TPL-VV-002 (apontamentos, severidade, situação).
 4. **Evidências "vivas" (R61/R72/R74):** referenciar logs de CI/commit, git log e hash/checksum do pacote de entrega.
