@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-GCO-001 — Plano de Gerência de Configuração |
-| **Versão** | 1.0 |
-| **Data** | 12/09/2025 |
+| **Versão** | 1.1 |
+| **Data** | 15/01/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -35,6 +35,24 @@ A Timeware coloca sob controle de configuração os seguintes itens:
 | Artefatos de build e release | Azure DevOps (Pipelines/Artifacts) | Controle automatizado |
 
 O **nível de controle** define o rigor aplicado a cada item: itens críticos (código, baselines, documentos aprovados) exigem aprovação formal para mudança; itens em elaboração têm controle mais leve até serem aprovados.
+
+### 3.1. Itens de configuração mínimos por projeto
+
+Todo projeto da Timeware mantém, no mínimo, os seguintes ICs sob controle de configuração:
+
+| IC mínimo | Obrigatório para |
+|---|---|
+| Repositório de código-fonte (Git) | Todos os projetos |
+| Plano de Projeto (TPL-GPR-001) | Todos os projetos |
+| Documento de Requisitos (TPL-REQ-001 ou backlog estruturado) | Todos os projetos |
+| Documento de Design (TPL-PCP-001) | Projetos com componente técnico significativo |
+| Estratégia de Integração (TPL-ITP-001) | Projetos com integração com sistemas externos |
+| Plano de V&V (TPL-VV-001) | Todos os projetos |
+| Registros de revisão por pares (TPL-VV-002) | Todos os projetos |
+| Baselines de release (tags Git) | Todos os projetos |
+| Registros de GQA (TPL-GPC-001) | Todos os projetos |
+
+O Gerente de Projeto confirma, no início do projeto, quais ICs se aplicam e registra no Registro de Adaptação do Processo (TPL-GPR-003).
 
 ## 4. Sistema de gerência de configuração e controle de mudanças
 
@@ -123,3 +141,4 @@ Este documento corresponde aos resultados do processo **Gerência de Configuraç
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 12/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de gerência de configuração |
+| 1.1 | 15/01/2026 | Time de Melhoria Contínua | Adição da lista mínima de itens de configuração por projeto (§3.1) |

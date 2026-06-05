@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-MED-001 — Plano de Medição |
-| **Versão** | 1.2 |
-| **Data** | 14/05/2026 |
+| **Versão** | 1.3 |
+| **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações), com patrocínio do Founder e CEO |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -86,6 +86,26 @@ As medidas abaixo são derivadas dos objetivos de medição e possuem definiçã
 - O **repositório organizacional de medidas** é mantido pelo Time de Melhoria Contínua, que consolida as medidas dos projetos em uma **planilha/dashboard organizacional**, permitindo a visão histórica e comparativa entre projetos.
 - Antes de serem consolidadas, as medidas são **verificadas** quanto à integridade e à consistência (ver seção 8).
 
+### 4.1. Estrutura do repositório organizacional de medidas
+
+O repositório organizacional é mantido pelo Time de Melhoria Contínua em uma planilha/dashboard (Confluence ou Google Sheets), com a seguinte estrutura mínima:
+
+| Campo | Descrição |
+|---|---|
+| Projeto | Identificação do projeto |
+| Medida | Código e nome da medida (M1–M7, conforme §3) |
+| Período | Sprint ou mês de referência |
+| Valor coletado | Valor apurado na ferramenta de origem |
+| Valor de referência | Meta ou baseline para comparação, quando definida |
+| Situação | Dentro do esperado · Atenção · Desvio |
+| Observação | Nota de qualidade do dado ou desvio relevante |
+
+**Frequência de consolidação:** mensal, após o fechamento das sprints do mês.
+
+**Acesso:** Time de Melhoria Contínua (manutenção e análise), COO e Gerentes de Projeto (leitura).
+
+**Localização:** Confluence, espaço organizacional, seção "Repositório de Medidas".
+
 ## 5. Análise do desempenho organizacional
 
 - O Time de Melhoria Contínua **analisa as medidas mensalmente**, em sua reunião, identificando tendências, desvios e necessidades de melhoria.
@@ -156,3 +176,4 @@ Este documento também sustenta o repositório organizacional de medidas (GPC 9)
 | 1.0 | 08/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de medição |
 | 1.1 | 20/01/2026 | Time de Melhoria Contínua | Detalhamento da captura do indicador de retrabalho (subtarefas de bug no Jira) |
 | 1.2 | 14/05/2026 | Time de Melhoria Contínua | Revisão das definições operacionais dos indicadores |
+| 1.3 | 05/06/2026 | Time de Melhoria Contínua | Especificação da estrutura do repositório organizacional de medidas (§4.1): campos, frequência, acesso e localização |

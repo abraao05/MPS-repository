@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-ITP-001 — Processo de Integração do Produto |
-| **Versão** | 1.0 |
-| **Data** | 20/10/2025 |
+| **Versão** | 1.1 |
+| **Data** | 15/03/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -41,6 +41,18 @@ A integração na Timeware é majoritariamente **contínua e automatizada**, apo
 
 - O **produto integrado** é testado quanto ao funcionamento em conjunto — testes de integração e validação do comportamento end-to-end, conforme o processo de Verificação e Validação (VV).
 - Problemas identificados são registrados e tratados antes da entrega.
+
+Os testes do produto integrado consideram os seguintes critérios de conclusão:
+
+| Critério | Descrição |
+|---|---|
+| Build sem erros | Pipeline de build executado sem erros ou falhas críticas |
+| Testes automatizados passando | Suíte de testes (unitários e de integração) dentro do limiar definido no Plano de V&V |
+| Testes de regressão | Funcionalidades existentes verificadas para garantir que a integração não introduziu regressões |
+| Interfaces verificadas | Interfaces com sistemas externos testadas nas condições representativas de uso |
+| Defeitos críticos zerados | Nenhum defeito de severidade crítica em aberto antes do avanço para homologação |
+
+Defeitos encontrados na integração são registrados no Jira e tratados antes do avanço para a etapa de homologação.
 
 ## 8. Entrega e material de apoio
 
@@ -85,3 +97,4 @@ Este documento corresponde aos resultados do processo **Integração do Produto 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 20/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de integração do produto |
+| 1.1 | 15/03/2026 | Time de Melhoria Contínua | Adição dos critérios de conclusão da integração com checklist de qualidade (§7) |

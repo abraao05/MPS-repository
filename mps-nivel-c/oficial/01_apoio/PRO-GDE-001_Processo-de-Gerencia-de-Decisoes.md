@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GDE-001 — Processo de Gerência de Decisões |
-| **Versão** | 1.0 |
-| **Data** | 17/09/2025 |
+| **Versão** | 1.1 |
+| **Data** | 12/02/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -28,7 +28,7 @@ Uma decisão deve seguir o processo formal quando atende a **pelo menos um** dos
 |---|---|
 | **Decisão de arquitetura ou técnica relevante** | Escolha de padrão arquitetural, estrutura de dados estruturante, estratégia de integração. |
 | **Escolha de tecnologia, ferramenta ou fornecedor** | Adoção de framework, linguagem, serviço de terceiro, plataforma. |
-| **Alto impacto, risco ou custo** | Decisão que afeta significativamente prazo, custo, qualidade ou que carrega risco elevado. |
+| **Alto impacto, risco ou custo** | Decisão que afeta prazo ou custo em mais de 10% do planejado; ou que altera itens críticos de qualidade/arquitetura; ou que envolve risco com exposição Alta (conforme EST-GPC-002). |
 | **Irreversibilidade** | Decisão difícil ou custosa de reverter depois de tomada. |
 
 Quando uma decisão **não** atende a nenhum gatilho, ela é tomada no fluxo normal, sem necessidade de registro formal — cabendo ao Gerente de Projeto ou Tech Lead o bom senso de elevar ao processo formal um caso limítrofe.
@@ -102,3 +102,4 @@ Este documento corresponde aos resultados do processo **Gerência de Decisões (
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 17/09/2025 | Time de Melhoria Contínua | Definição inicial do processo de gerência de decisões |
+| 1.1 | 12/02/2026 | Time de Melhoria Contínua | Refinamento do gatilho de alto impacto com limiar orientativo de 10% sobre prazo/custo (§3) |

@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-OSW-002 — Gestão de Portfólio de Projetos |
-| **Versão** | 1.1 |
-| **Data** | 24/11/2025 |
+| **Versão** | 1.2 |
+| **Data** | 20/03/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -41,6 +41,24 @@ Quando a demanda excede a capacidade disponível, a organização atua de duas f
 
 - **realoca recursos** de colaboradores da Timeware de fora da unidade, quando disponíveis;
 - **contrata** novos recursos, quando necessário.
+
+#### Estrutura do quadro de capacity
+
+O quadro de capacity é mantido no Jira (ou página estruturada no Confluence), com os seguintes campos mínimos:
+
+| Campo | Descrição |
+|---|---|
+| Colaborador | Nome/papel do recurso compartilhado (Tech Lead, Arquiteto, PO) |
+| Projeto | Projeto(s) ao(s) qual(is) está alocado |
+| Alocação (%) | Percentual da capacidade dedicado a cada projeto no período |
+| Período | Sprint ou mês de referência |
+| Status | Disponível · Alocado · Sobrecarregado |
+
+**Cadência de atualização:** o quadro é revisado antes do início de cada sprint e sempre que ocorre mudança de alocação.
+
+**Responsável pela manutenção:** COO (Operações), com apoio dos Gerentes de Projeto.
+
+**Critério de escalada:** quando um recurso compartilhado ultrapassa 100% de alocação por duas sprints consecutivas, o COO convoca reunião de repriorização com os GPs envolvidos para ajustar escopo ou prazos.
 
 ### 4.2. Autoridade
 
@@ -91,3 +109,4 @@ Este documento corresponde aos resultados **OSW 8, 9, 10** do processo **Gerênc
 |---|---|---|---|
 | 1.0 | 29/08/2025 | Time de Melhoria Contínua | Definição inicial da gestão de portfólio de projetos |
 | 1.1 | 24/11/2025 | Time de Melhoria Contínua | Atribuição da autoridade do portfólio ao COO (escritório de portfólio de projetos) |
+| 1.2 | 20/03/2026 | Time de Melhoria Contínua | Detalhamento da estrutura e cadência do quadro de capacity (§4.1): campos, responsável e critério de escalada |

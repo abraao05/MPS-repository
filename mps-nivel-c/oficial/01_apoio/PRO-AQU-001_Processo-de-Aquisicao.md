@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-AQU-001 — Processo de Aquisição |
-| **Versão** | 1.0 |
-| **Data** | 26/09/2025 |
+| **Versão** | 1.1 |
+| **Data** | 15/03/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -36,6 +36,15 @@ Antes de adquirir, a Timeware estabelece os **critérios de avaliação de forne
 - prazo de entrega;
 - qualidade e referências;
 - aderência aos requisitos técnicos e de segurança.
+
+Independentemente das características do fornecimento, qualquer fornecedor deve atender às seguintes condições mínimas de qualificação antes da seleção:
+
+| Critério mínimo | Descrição |
+|---|---|
+| Capacidade técnica comprovada | Apresentar portfólio ou referências de entregas equivalentes ou superiores ao escopo da aquisição |
+| Regularidade comercial | Empresa regularmente constituída, com CNPJ ativo (ou equivalente para pessoa física) |
+| Conformidade com requisitos técnicos | Capacidade demonstrada de atender aos requisitos técnicos e de segurança do fornecimento |
+| Acordo com os critérios de aceitação | Anuência expressa com os critérios de aceite antes da formalização do acordo |
 
 Com base nos critérios, é elaborada a **solicitação de proposta**, descrevendo o que se pretende adquirir, os requisitos e as condições.
 
@@ -91,3 +100,4 @@ A aplicabilidade deste processo aos projetos da avaliação está sujeita a conf
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 26/09/2025 | Time de Melhoria Contínua | Definição inicial do processo de aquisição |
+| 1.1 | 15/03/2026 | Time de Melhoria Contínua | Adição dos critérios mínimos de qualificação de fornecedores (§3) |
