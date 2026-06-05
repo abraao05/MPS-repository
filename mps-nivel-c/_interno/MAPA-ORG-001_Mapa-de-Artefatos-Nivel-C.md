@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.33 (rascunho) |
+| **Versão** | 0.34 (rascunho) |
 | **Data** | 05/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -16,6 +16,8 @@
 > **Alterações v0.30 (05/06/2026):** criado TPL-GPC-001 (Template de Registro de Verificação de GQA); PLA-GPC-001 atualizado para v1.3 com inventário completo de ativos (§2). Ambas as lacunas identificadas na análise de cobertura da camada de definição.
 
 > **Alterações v0.33 (05/06/2026):** §2.1 reescrito como inventário completo e organizado por categoria — versão única de referência de todos os documentos existentes.
+
+> **Alterações v0.34 (05/06/2026):** adição do inventário de registros de projetos ao §2.1 — FTGASMIG (24 documentos, OS-001 encerrada + OS-002 em andamento) confirmado como primeiro projeto da avaliação; estrutura dos demais projetos criada (AASP ×3, PROFARMA). Correção da independência da GQA no FTGASMIG (auditor: COO). Criação do GDE-GASMIG02-001 (registro de decisão arquitetural). Pendência 3 (seleção dos 4 projetos) atualizada.
 
 > **Alterações v0.32 (05/06/2026):** criado GUIA-GCO-001 (Guia de Nomenclaturas Técnicas v1.0) com padrões técnicos de nomenclatura para repositórios, código, BD, recursos Azure, pipelines e Key Vault. PLA-GPC-001 atualizado para v1.4 (adição ao inventário). PLA-GCO-001 v1.1 referencia o novo guia.
 
@@ -124,6 +126,50 @@ MPS-Nivel-C/
 | TPL-GDE-001 | Template de Registro de Análise de Decisão (RAD) | GDE 6 |
 | TPL-ORG-001 | Template de Ata de Reunião | multiuso |
 
+### Registros de projetos (`oficial/04_registros/`)
+
+**FTGASMIG — Governança de APIs** · Cliente: GASMIG · GP: Abraão Oliveira
+
+*OS-001 encerrada (aceite 26/05/2026) · OS-002 em andamento (encerramento previsto 10/06/2026)*
+
+| Código | Documento | Versão | Evidência |
+|---|---|---|---|
+| TAP-GASMIG02-001 | Termo de Abertura — OS-001 | 1.0 | GPR 1, 13 |
+| PLA-GASMIG02-001 | Plano de Projeto — OS-001 | 1.1 | GPR 3–12 |
+| REQ-GASMIG02-001 | Documento de Requisitos — OS-001 | 1.0 | REQ 1–7 |
+| PCP-GASMIG02-001 | Documento de Design — OS-001 | 1.1 | PCP 1–3 |
+| VV-GASMIG02-001 | Plano de V&V — OS-001 | 1.0 | VV 1–5 |
+| RASTR-GASMIG02-001 | Matriz de Rastreabilidade — OS-001 | 1.0 | REQ 4 |
+| ADAP-GASMIG02-001 | Registro de Adaptação — OS-001 | 1.2 | GPR 2 / CP-C |
+| GDE-GASMIG02-001 | Registro de Análise de Decisão | 1.0 | GDE 2–6 |
+| REV-GASMIG02-001 | Registro de Verificação Técnica — OS-001 | 1.0 | PCP 2 / VV 4 |
+| ATA-GASMIG02-001 | Ata de Kickoff | 1.0 | GPR 13 |
+| ATA-GASMIG02-002 | Ata de Aceite — OS-001 | 1.0 | GPR (aceite) |
+| TAE-GASMIG02-001 | Termo de Encerramento — OS-001 | 1.0 | GPR (encerramento) |
+| LI-GASMIG02-001 | Lições Aprendidas | 1.0 | GPR 20 / GPC 4 |
+| CAP-GASMIG02-001 | Registro de Capacitação da Equipe | 1.0 | CAP 2 |
+| GQA-GASMIG02-001 | Registro de GQA (OS-001 + OS-002 parcial) | 1.2 | GPC 3 / CP (iv, v) |
+| TAP-GASMIG02-002 | Termo de Abertura — OS-002 | 1.0 | GPR 1, 13 |
+| PLA-GASMIG02-002 | Plano de Projeto — OS-002 | 1.1 | GPR 3–12 |
+| REQ-GASMIG02-002 | Documento de Requisitos — OS-002 | 1.0 | REQ 1–7 |
+| PCP-GASMIG02-002 | Documento de Design — OS-002 | 1.0 | PCP 1–3 |
+| VV-GASMIG02-002 | Plano de V&V — OS-002 | 1.0 | VV 1–5 |
+| RASTR-GASMIG02-002 | Matriz de Rastreabilidade — OS-002 | 1.0 | REQ 4 |
+| ADAP-GASMIG02-002 | Registro de Adaptação — OS-002 | 1.0 | GPR 2 / CP-C |
+
+*3 artefatos pendentes (encerramento OS-002): REV-GASMIG02-002, ATA-GASMIG02-003, TAE-GASMIG02-002 — previstos para 09–10/06/2026.*
+
+**Outros projetos — estrutura criada, documentação a produzir**
+
+| Pasta | Cliente | Status |
+|---|---|---|
+| AASP_Andamento-Processuais | AASP | ⬜ A documentar |
+| AASP_Automacao-Governanca | AASP | ⬜ A documentar |
+| AASP_CNJ | AASP | ⬜ A documentar |
+| PROFARMA_Cadastro-de-Clientes | Profarma | ⬜ A documentar |
+
+---
+
 ### Capacidade (`oficial/05_capacidade/`)
 
 | Código | Documento | Versão | Atende |
@@ -134,7 +180,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Observação |
 |---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.33 | Rascunho de gestão |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.34 | Rascunho de gestão |
 | GUIA-ORG-001 | Guia de Estrutura do Confluence | 1.0 | Apoio à navegação no Confluence |
 
 ### Pendentes / A produzir
@@ -324,7 +370,7 @@ MPS-Nivel-C/
 |---|---|---|---|
 | 1 | **Portfólio (OSW 8/9/10)** | ✅ Resolvido | **No escopo.** TIMEWARE gerencia portfólio: recursos compartilhados (tech lead, arquiteto, PO) + gestão de capacity. Há quadro de capacity informal a formalizar. |
 | 2 | **Aquisição (AQU)** | ✅ Resolvido (com ação) | **Último a produzir / candidato a não-aplicável.** Nenhum dos 4 projetos tem aquisição. Confirmar não-aplicabilidade com o avaliador líder da ASR. |
-| 3 | **Os 4 projetos** | 🟨 Adiado p/ Fase 3 | Ainda não definidos. Não bloqueia a produção organizacional (Fases 1 e 2). Definir antes da Fase 3. Precisam permitir evidenciar o ciclo completo (requisito → design → construção → integração → V&V). |
+| 3 | **Os 4 projetos** | 🟨 Em andamento | FTGASMIG (Governança de APIs — GASMIG) confirmado: 22 documentos produzidos, OS-001 encerrada, OS-002 em andamento. Faltam 3 projetos adicionais: AASP_Andamento-Processuais, AASP_Automacao-Governanca, AASP_CNJ e/ou PROFARMA_Cadastro-de-Clientes — pastas criadas, documentação a produzir. |
 | 4 | **Ferramentas** | ✅ Resolvido | Jira (gestão de projeto, riscos, ações, repositório de medidas) · Git + Azure DevOps (código, baselines, integração/CI-CD) · Azure Test Plans + Jira/Xray (testes) · Confluence (definições/registros). |
 | 5 | **Garantia da Qualidade (GQA)** | ✅ Resolvido | Pessoa/área de GQA existe na TIMEWARE. Detalhar nome/papel ao produzir a Estratégia de GQA (GPC 3). |
 
@@ -337,9 +383,12 @@ MPS-Nivel-C/
 
 ## 4. Próximos passos sugeridos
 
-1. ✅ **Mapa de Artefatos** (este documento) — v0.2, pendências de escopo resolvidas
-2. ⬜ Iniciar **FASE 1**: começar pelo **GPC 2+ (Processo-Padrão Organizacional + Guia de Adaptação)** — espinha dorsal que tudo referencia
-3. ⬜ Em seguida: **Política Organizacional (OSW 1)** e **Estratégia de Garantia da Qualidade (GPC 3)**
-4. ⬜ Ao chegar na Fase 3: definir os 4 projetos e confirmar AQU com a ASR
+1. ✅ **Fase 1 — Governança:** todos os documentos prontos (OSW, GPC)
+2. ✅ **Fase 2 — Apoio organizacional:** todos os documentos prontos (MED, CAP, GDE, GCO, AQU)
+3. ✅ **Fase 3 — Processos de projeto (camada organizacional):** definições e templates prontos
+4. 🟨 **Fase 3 — Evidências de projeto:** FTGASMIG documentado; faltam 3 projetos adicionais
+5. ⬜ **Selecionar os 3 projetos restantes** (AASP e/ou PROFARMA) e produzir a documentação de cada
+6. ⬜ **Confirmar AQU** com o avaliador líder da ASR (não-aplicabilidade ou versão enxuta)
+7. ⬜ **Planilha-mestre de evidências** para entrega à ASR antes da avaliação inicial
 
 > **Observação de auditoria:** este mapa também serve de evidência para GPC 1 (identificação de ativos de processo) e como rastreabilidade entre resultados esperados e artefatos — algo que a ASR vai querer ver logo no início.
