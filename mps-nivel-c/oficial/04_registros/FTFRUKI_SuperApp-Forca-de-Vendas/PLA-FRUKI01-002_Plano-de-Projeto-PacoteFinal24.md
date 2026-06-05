@@ -15,7 +15,7 @@
 
 ## 1. Identificação e objetivo do projeto
 
-Desenvolver três novos módulos no SuperApp Fruki (React Native / Expo) como continuação do Pacote 1: Pedidos Não Alocados, Regra de Ouro (Caixa Preta) e PDV / Rota PDV. O resultado fecha o roadmap 2024 da Fruki com entregas incrementais mensais e encerramento formal em janeiro de 2025.
+Desenvolver três novos módulos no SuperApp Fruki (React Native / Expo) como continuação do Pacote 1: Pedidos Não Alocados, Regra de Ouro (Caixa Preta) e PDV / Rota PDV. O resultado fecha o roadmap 2025 da Fruki com entregas incrementais mensais e encerramento formal em janeiro de 2026.
 
 Detalhamento de escopo: ver `REQ-FRUKI01-002_Documento-de-Requisitos.md`.
 
@@ -52,44 +52,44 @@ Detalhamento completo em `ADAP-FRUKI01-002_Registro-de-Adaptacao.md`. Resumo:
 | **Total** | | **~75 SP** |
 
 - **Velocity de referência:** ~25 SP/sprint (equipe de 2 devs front-end + 1 UX; sprints de 2 semanas; velocidade observada no Pacote 1)
-- **Esforço/prazo estimado:** ~3 sprints / 3 meses (out/2024 – jan/2025)
+- **Esforço/prazo estimado:** ~3 sprints / 3 meses (out/2025 – jan/2026)
 - **Base histórica:** Velocity observada no Pacote 1 (Metas/RV) do próprio SuperApp Fruki
 
 ## 5. Cronograma e marcos (GPR 5)
 
 | Marco | Data prevista / realizada |
 |---|---|
-| Apresentação da proposta ao cliente | 26/09/2024 |
-| Kickoff formal / aprovação da proposta | 09/10/2024 |
-| Sprint 1 — Pedidos Não Alocados | Out/2024 |
-| Entrega PR #57 — Módulo Pedidos Não Alocados | 25/10/2024 |
-| Sprint 2 — Regra de Ouro (Caixa Preta) | Nov/2024 |
-| Alinhamento técnico e PDV | 02/12/2024 e 04/12/2024 |
-| Sprint 3 — PDV / Rota PDV | Dez/2024 |
-| Status report parcial | 27/12/2024 |
-| Entrega final e aceite via Microsoft Teams | 15/01/2025 |
+| Apresentação da proposta ao cliente | 26/09/2025 |
+| Kickoff formal / aprovação da proposta | 09/10/2025 |
+| Sprint 1 — Pedidos Não Alocados | Out/2025 |
+| Entrega PR #57 — Módulo Pedidos Não Alocados | 25/10/2025 |
+| Sprint 2 — Regra de Ouro (Caixa Preta) | Nov/2025 |
+| Alinhamento técnico e PDV | 02/12/2025 e 04/12/2025 |
+| Sprint 3 — PDV / Rota PDV | Dez/2025 |
+| Status report parcial | 27/12/2025 |
+| Entrega final e aceite via Microsoft Teams | 15/01/2026 |
 
 **Detalhamento por sprint:**
 
-*Sprint 1 (out/2024) — Pedidos Não Alocados:*
+*Sprint 1 (out/2025) — Pedidos Não Alocados:*
 - Levantamento de requisitos com Cecília (regras de não alocação, filtros, mensageria)
 - Protótipo e validação com cliente
 - Desenvolvimento: painel, cards (nome fantasia, localização, número do pedido), filtros por data e cliente
 - Normalização de dados de pedidos não alocados no front-end
 - Entrega via PR #57 no Azure DevOps
 
-*Sprint 2 (nov/2024) — Regra de Ouro:*
+*Sprint 2 (nov/2025) — Regra de Ouro:*
 - Levantamento das regras de composição de RV por perfil (Cecília)
 - Prototipagem e validação (reuniões 22/10 e 13/11)
 - Desenvolvimento: tela da Regra de Ouro com gráficos circulares, indicadores por SKU/família, pesquisa de SKU
 - Integração com API da Regra de Ouro (Jardel)
 
-*Sprint 3 (dez/2024 – jan/2025) — PDV / Rota PDV:*
-- Levantamento do formulário de PDV com Alexsandro (Alinhamento PDV 04/12/2024)
+*Sprint 3 (dez/2025 – jan/2026) — PDV / Rota PDV:*
+- Levantamento do formulário de PDV com Alexsandro (Alinhamento PDV 04/12/2025)
 - Desenvolvimento: formulário digital de pesquisa de PDV com geolocalização
-- Integração com API Rota PDV (recebida de Jardel em 08/01/2025)
+- Integração com API Rota PDV (recebida de Jardel em 08/01/2026)
 - Geração de AAB para Play Store; versionamento 2.0
-- Aceite final via Microsoft Teams — 15/01/2025
+- Aceite final via Microsoft Teams — 15/01/2026
 
 ## 6. Recursos (GPR 6, 7)
 
@@ -113,7 +113,7 @@ Detalhamento completo em `ADAP-FRUKI01-002_Registro-de-Adaptacao.md`. Resumo:
 | APIs REST Fruki (`https://api.fruki.com.br/comercial/v1/`) | Pedidos não alocados, Rota PDV |
 | Expo APK / AAB | Builds de teste e publicação Play Store |
 | Google Meet | Reuniões quinzenais de alinhamento de negócio e backlog |
-| Microsoft Teams | Reunião de aceite final (15/01/2025) |
+| Microsoft Teams | Reunião de aceite final (15/01/2026) |
 | WhatsApp (grupo do projeto) | Comunicação ágil de alinhamentos técnicos |
 | E-mail corporativo | Comunicações formais, status reports |
 
@@ -121,10 +121,10 @@ Detalhamento completo em `ADAP-FRUKI01-002_Registro-de-Adaptacao.md`. Resumo:
 
 | Parte interessada | Interesse | Comunicação |
 |---|---|---|
-| Leandro Lottermann (Fruki) | Aprovação e aceite formal de entregas | E-mail formal de status; presença no aceite final (Teams 15/01/2025) |
+| Leandro Lottermann (Fruki) | Aprovação e aceite formal de entregas | E-mail formal de status; presença no aceite final (Teams 15/01/2026) |
 | Cecília Ribeiro (Fruki) | Validação de negócio, protótipos e regras de RV | Reuniões quinzenais recorrentes (quarta 15h) |
 | Jardel Dargas Silva (Fruki) | Integração técnica das APIs | Reuniões técnicas ad hoc; e-mail e WhatsApp |
-| Alexsandro de Vargas Braga (Fruki) | Requisitos do formulário de PDV | Reunião específica para levantamento (ago/2024) e alinhamento PDV (dez/2024) |
+| Alexsandro de Vargas Braga (Fruki) | Requisitos do formulário de PDV | Reunião específica para levantamento (ago/2025) e alinhamento PDV (dez/2025) |
 | Brenda Chrystie (Timeware) | Design e validação de UX | Daily interno; revisão de protótipos |
 | Luca Watson / Thiago Gomes (Timeware) | Desenvolvimento | Daily interno; alinhamento técnico com Jardel |
 
@@ -139,7 +139,7 @@ Código entregue via Pull Request ao repositório Azure DevOps da Fruki, revisad
 | R-01 | APIs da Fruki não disponibilizadas no prazo, bloqueando o desenvolvimento | 3 | 3 | Trabalhar com mock de dados; solicitar prazo formal no início de cada sprint; escalar via Leandro |
 | R-02 | Atraso na validação de protótipos por Cecília | 2 | 2 | Enviar protótipos com 1 semana de antecedência; reuniões quinzenais mantidas |
 | R-03 | Mudança de escopo durante a sprint | 2 | 2 | Registrar via e-mail; avaliar impacto no prazo antes de aceitar |
-| R-04 | Problema de agenda para aceite final (Teams 15/01/2025) | 2 | 2 | Agendar sessão de aceite com antecedência mínima de 2 semanas |
+| R-04 | Problema de agenda para aceite final (Teams 15/01/2026) | 2 | 2 | Agendar sessão de aceite com antecedência mínima de 2 semanas |
 
 ## 10. Viabilidade (GPR 11)
 
@@ -147,12 +147,12 @@ Viável dentro do escopo e prazo: equipe com familiaridade na base de código do
 
 ## 11. Aprovação do Plano (GPR 13)
 
-Plano apresentado na reunião de Apresentação da Proposta em 26/09/2024 e aprovado formalmente por Leandro Lottermann em 09/10/2024.
+Plano apresentado na reunião de Apresentação da Proposta em 26/09/2025 e aprovado formalmente por Leandro Lottermann em 09/10/2025.
 
 | Envolvido | Papel | Aceite | Data | Ref. |
 |---|---|---|---|---|
-| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Aprovado (proposta aceita via e-mail) | 09/10/2024 | Proposta Comercial - FRUKI - Pacote final 24 v1.1; e-mail 09/10/2024 |
-| Abraão Oliveira | Gerente de Projeto — Timeware | Confirmado | 09/10/2024 | Fireflies ID: HWwWGbMe3glWfXgl |
+| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Aprovado (proposta aceita via e-mail) | 09/10/2025 | Proposta Comercial - FRUKI - Pacote final 24 v1.1; e-mail 09/10/2025 |
+| Abraão Oliveira | Gerente de Projeto — Timeware | Confirmado | 09/10/2025 | Fireflies ID: HWwWGbMe3glWfXgl |
 
 ---
 
@@ -160,4 +160,4 @@ Plano apresentado na reunião de Apresentação da Proposta em 26/09/2024 e apro
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2024–jan/2025) |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |

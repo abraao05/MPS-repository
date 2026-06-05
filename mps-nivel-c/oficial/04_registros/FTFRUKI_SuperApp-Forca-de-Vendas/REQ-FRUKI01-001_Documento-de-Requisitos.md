@@ -72,17 +72,17 @@ A solução envolve: UX/UI com protótipos validados por Cecília antes do desen
 
 | Requisito / conjunto | Forma de validação | Data | Resultado |
 |---|---|---|---|
-| RF-01 a RF-04 — Metas/RV | Reunião "Levantamento demanda Metas" com Leandro e Cecília | 25/06/2024 | Validado — regras de negócio levantadas; APIs e acesso ao repositório fornecidos |
-| RF-01 a RF-04 — Metas/RV | Piloto com vendedores selecionados (APK de teste via Expo) | 05/08/2024 | Validado com ajustes — identificado problema de duplicação de famílias e cálculos; corrigido antes do aceite |
-| RF-04 — Perfis de vendedor | Validação com Cecília Ribeiro via reuniões de alinhamento | Ago/2024 | Validado — composição de RV por perfil confirmada |
+| RF-01 a RF-04 — Metas/RV | Reunião "Levantamento demanda Metas" com Leandro e Cecília | 25/06/2025 | Validado — regras de negócio levantadas; APIs e acesso ao repositório fornecidos |
+| RF-01 a RF-04 — Metas/RV | Piloto com vendedores selecionados (APK de teste via Expo) | 05/08/2025 | Validado com ajustes — identificado problema de duplicação de famílias e cálculos; corrigido antes do aceite |
+| RF-04 — Perfis de vendedor | Validação com Cecília Ribeiro via reuniões de alinhamento | Ago/2025 | Validado — composição de RV por perfil confirmada |
 
 ## 8. Confirmação de entendimento e compromisso
 
 | Envolvido | Papel | Confirmação | Data |
 |---|---|---|---|
-| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Entendimento confirmado — acesso ao repositório e APIs fornecidos | 26/06/2024 |
-| Cecília Ribeiro | Analista Digital / PO cliente — Fruki | Entendimento confirmado — regras de negócio levantadas e validadas | 25/06/2024 |
-| Abraão Oliveira | Gerente de Projeto — Timeware | Compromisso assumido | 26/06/2024 |
+| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Entendimento confirmado — acesso ao repositório e APIs fornecidos | 26/06/2025 |
+| Cecília Ribeiro | Analista Digital / PO cliente — Fruki | Entendimento confirmado — regras de negócio levantadas e validadas | 25/06/2025 |
+| Abraão Oliveira | Gerente de Projeto — Timeware | Compromisso assumido | 26/06/2025 |
 
 ---
 

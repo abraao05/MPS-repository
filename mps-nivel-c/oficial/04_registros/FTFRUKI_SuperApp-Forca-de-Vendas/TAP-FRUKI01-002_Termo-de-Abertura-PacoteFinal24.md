@@ -7,18 +7,18 @@
 | **Cliente** | Fruki Bebidas S.A. |
 | **Contrato** | Pacote Final 24 |
 | **Versão** | 1.0 |
-| **Data de abertura** | 09/10/2024 |
+| **Data de abertura** | 09/10/2025 |
 | **Gerente de Projeto** | Abraão Oliveira |
 
 ---
 
 ## 1. Objetivo do projeto
 
-Desenvolver novas funcionalidades no SuperApp Fruki como continuação do Pacote 1 (Módulo Metas/RV), entregando ao time comercial de campo: rastreabilidade de pedidos não alocados, visualização detalhada da Regra de Ouro (composição da RV), e execução digital de PDV com geolocalização e integração à API de Rota PDV. O Pacote Final 24 encerra o roadmap acordado pela Fruki para o ano de 2024, com entregas incrementais mensais.
+Desenvolver novas funcionalidades no SuperApp Fruki como continuação do Pacote 1 (Módulo Metas/RV), entregando ao time comercial de campo: rastreabilidade de pedidos não alocados, visualização detalhada da Regra de Ouro (composição da RV), e execução digital de PDV com geolocalização e integração à API de Rota PDV. O Pacote Final 24 encerra o roadmap acordado pela Fruki para o ano de 2025, com entregas incrementais mensais.
 
 ## 2. Escopo macro
 
-Conforme proposta "Pacote Final 24" apresentada em 26/09/2024 e aprovada por Leandro Lottermann em 09/10/2024.
+Conforme proposta "Pacote Final 24" apresentada em 26/09/2025 e aprovada por Leandro Lottermann em 09/10/2025.
 
 - **Incluído:**
   - Módulo Pedidos Não Alocados: painel com cards por cliente, filtros por data, geolocalização e mensageria; integração com API de pedidos não alocados
@@ -57,22 +57,22 @@ Conforme proposta "Pacote Final 24" apresentada em 26/09/2024 e aprovada por Lea
 
 | Marco | Data-alvo |
 |---|---|
-| Apresentação da proposta ao cliente | 26/09/2024 |
-| Kickoff formal / aprovação da proposta | 09/10/2024 |
-| Entendimento Demanda Caixa Preta | 09/10/2024 |
-| Entrega Módulo Pedidos Não Alocados (PR #57) | 25/10/2024 |
-| Alinhamento de protótipos Regra de Ouro e PDV | Nov/2024 |
-| Desenvolvimento e entrega Regra de Ouro e PDV | Dez/2024 |
-| Entrega final — aceite via Teams | 15/01/2025 |
+| Apresentação da proposta ao cliente | 26/09/2025 |
+| Kickoff formal / aprovação da proposta | 09/10/2025 |
+| Entendimento Demanda Caixa Preta | 09/10/2025 |
+| Entrega Módulo Pedidos Não Alocados (PR #57) | 25/10/2025 |
+| Alinhamento de protótipos Regra de Ouro e PDV | Nov/2025 |
+| Desenvolvimento e entrega Regra de Ouro e PDV | Dez/2025 |
+| Entrega final — aceite via Teams | 15/01/2026 |
 
 ## 6. Agenda das próximas atividades
 
 - Reuniões quinzenais recorrentes de Alinhamento de Negócio e Backlog (toda quarta 15h — Timeware e Fruki)
 - Reuniões técnicas com Jardel para integração das novas APIs
-- Entregas mensais: Pedidos Não Alocados (out/2024) → Regra de Ouro (nov/2024) → PDV (dez/2024)
+- Entregas mensais: Pedidos Não Alocados (out/2025) → Regra de Ouro (nov/2025) → PDV (dez/2025)
 - Validação de protótipos de UX com Cecília antes de cada sprint de desenvolvimento
 - Emissão de Nota Fiscal por parcela de entrega
-- Sessão de aceite final via Microsoft Teams — 15/01/2025
+- Sessão de aceite final via Microsoft Teams — 15/01/2026
 
 ## 7. Premissas e restrições iniciais
 
@@ -80,10 +80,10 @@ Conforme proposta "Pacote Final 24" apresentada em 26/09/2024 e aprovada por Lea
 - A Fruki disponibiliza as APIs de cada módulo com antecedência mínima de 1 semana antes do início de cada sprint
 - Cecília Ribeiro valida protótipos de UX antes do desenvolvimento de cada módulo
 - Leandro Lottermann é a autoridade de aprovação e aceite formal das entregas
-- A Regra de Ouro (Caixa Preta) foi incluída no escopo sem custo adicional, conforme alinhamento de 09/10/2024
+- A Regra de Ouro (Caixa Preta) foi incluída no escopo sem custo adicional, conforme alinhamento de 09/10/2025
 
 **Restrições:**
-- Prazo máximo para entrega: 15/01/2025 (aceite via Teams)
+- Prazo máximo para entrega: 15/01/2026 (aceite via Teams)
 - Tecnologia: React Native / Expo (arquitetura existente)
 - APIs são de responsabilidade exclusiva da Fruki
 - Mudanças de escopo fora do Pacote Final 24 requerem nova proposta comercial
@@ -94,9 +94,9 @@ Conforme proposta "Pacote Final 24" apresentada em 26/09/2024 e aprovada por Lea
 
 | Reunião de kickoff realizada em | Ref. da autorização |
 |---|---|
-| 26/09/2024 | Reunião "Apresentação Proposta - Não Alocados - Fruki" — Fireflies ID: ZXGua1cMVMBiRQ5s |
-| 09/10/2024 | Reunião "Parceria Fruki <> Timeware" — Fireflies ID: HWwWGbMe3glWfXgl |
-| 09/10/2024 | Reunião "Entendimento Demanda Caixa Preta" — Fireflies ID: gOI5CeLpUr7VPiyf |
+| 26/09/2025 | Reunião "Apresentação Proposta - Não Alocados - Fruki" — Fireflies ID: ZXGua1cMVMBiRQ5s |
+| 09/10/2025 | Reunião "Parceria Fruki <> Timeware" — Fireflies ID: HWwWGbMe3glWfXgl |
+| 09/10/2025 | Reunião "Entendimento Demanda Caixa Preta" — Fireflies ID: gOI5CeLpUr7VPiyf |
 
 ---
 
@@ -104,4 +104,4 @@ Conforme proposta "Pacote Final 24" apresentada em 26/09/2024 e aprovada por Lea
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — abertura retroativa (projeto executado out/2024–jan/2025) |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — abertura retroativa (projeto executado out/2025–jan/2026) |

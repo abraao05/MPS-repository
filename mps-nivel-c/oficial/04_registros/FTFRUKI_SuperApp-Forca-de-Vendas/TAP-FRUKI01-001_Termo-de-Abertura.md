@@ -7,7 +7,7 @@
 | **Cliente** | Fruki Bebidas S.A. |
 | **Contrato** | Pacote 1 — Metas/RV |
 | **Versão** | 1.1 |
-| **Data de abertura** | 05/06/2024 |
+| **Data de abertura** | 05/06/2025 |
 | **Gerente de Projeto** | Abraão Oliveira |
 
 ---
@@ -18,7 +18,7 @@ Desenvolver o Módulo de Metas e Remuneração Variável (RV) no SuperApp Fruki 
 
 ## 2. Escopo macro
 
-Conforme proposta comercial "Pacote 1 — Metas/RV" acordada em junho de 2024 com Leandro Lottermann.
+Conforme proposta comercial "Pacote 1 — Metas/RV" acordada em junho de 2025 com Leandro Lottermann.
 
 - **Incluído:**
   - Módulo Metas/RV: telas de indicadores de volume, cobertura, drop size, positivação e acompanhamento de metas por família de produtos e por item (SKU)
@@ -55,12 +55,12 @@ Conforme proposta comercial "Pacote 1 — Metas/RV" acordada em junho de 2024 co
 
 | Marco | Data-alvo |
 |---|---|
-| Proposta comercial / Kickoff | 05/06/2024 |
-| Acesso ao repositório Azure DevOps e APIs Fruki | 26/06/2024 |
-| Levantamento demanda Metas (reunião formal) | 25/06/2024 |
-| Desenvolvimento e entregas incrementais | Jul/2024 |
-| Piloto com vendedores selecionados | 05/08/2024 |
-| Aceite e encerramento do Pacote 1 | Ago/Set 2024 |
+| Proposta comercial / Kickoff | 05/06/2025 |
+| Acesso ao repositório Azure DevOps e APIs Fruki | 26/06/2025 |
+| Levantamento demanda Metas (reunião formal) | 25/06/2025 |
+| Desenvolvimento e entregas incrementais | Jul/2025 |
+| Piloto com vendedores selecionados | 05/08/2025 |
+| Aceite e encerramento do Pacote 1 | Ago/Set 2025 |
 
 ## 6. Agenda das próximas atividades
 
@@ -80,7 +80,7 @@ Conforme proposta comercial "Pacote 1 — Metas/RV" acordada em junho de 2024 co
 **Restrições:**
 - Tecnologia obrigatória: React Native / Expo (arquitetura existente do SuperApp)
 - APIs são de responsabilidade exclusiva da Fruki (Jardel/Renan)
-- Prazo de entrega: piloto concluído até agosto de 2024
+- Prazo de entrega: piloto concluído até agosto de 2025
 
 ---
 
@@ -88,8 +88,8 @@ Conforme proposta comercial "Pacote 1 — Metas/RV" acordada em junho de 2024 co
 
 | Reunião de kickoff realizada em | Ref. da autorização |
 |---|---|
-| 05/06/2024 | Reunião "Proposta Comercial - Fruki <> Timeware" — Fireflies ID: IhH8wQEDaiMe4o4b |
-| 25/06/2024 | Reunião "Levantamento demanda Metas" — Fireflies ID: mo3xiqhyv46qvkkb |
+| 05/06/2025 | Reunião "Proposta Comercial - Fruki <> Timeware" — Fireflies ID: IhH8wQEDaiMe4o4b |
+| 25/06/2025 | Reunião "Levantamento demanda Metas" — Fireflies ID: mo3xiqhyv46qvkkb |
 
 ---
 

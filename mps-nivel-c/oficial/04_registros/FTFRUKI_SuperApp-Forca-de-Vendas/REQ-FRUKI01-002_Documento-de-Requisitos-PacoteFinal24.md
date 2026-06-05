@@ -13,7 +13,7 @@
 
 ## 1. Contexto e objetivo
 
-Continuação do Pacote 1 (Módulo Metas/RV, jun–ago/2024). Com o módulo de metas em operação, a Fruki identificou três novas demandas prioritárias para fechar o roadmap 2024: (1) rastreabilidade de pedidos não alocados, que geravam retrabalho sem visibilidade para o vendedor em campo; (2) visualização detalhada da Regra de Ouro, a composição da caixa preta da remuneração variável; e (3) execução digital da pesquisa de PDV, substituindo formulários físicos por um processo digitalizado com geolocalização.
+Continuação do Pacote 1 (Módulo Metas/RV, jun–ago/2025). Com o módulo de metas em operação, a Fruki identificou três novas demandas prioritárias para fechar o roadmap 2025: (1) rastreabilidade de pedidos não alocados, que geravam retrabalho sem visibilidade para o vendedor em campo; (2) visualização detalhada da Regra de Ouro, a composição da caixa preta da remuneração variável; e (3) execução digital da pesquisa de PDV, substituindo formulários físicos por um processo digitalizado com geolocalização.
 
 ## 2. Partes interessadas
 
@@ -22,7 +22,7 @@ Continuação do Pacote 1 (Módulo Metas/RV, jun–ago/2024). Com o módulo de m
 | Vendedores (representantes) | Visualizar pedidos não alocados, Regra de Ouro e executar pesquisa de PDV no celular, em campo |
 | Supervisores de vendas | Acompanhar a execução de PDV por rota |
 | Cecília Ribeiro (Analista Digital — Fruki) | Validar regras de negócio de RV, Regra de Ouro e fluxo de não alocados |
-| Leandro Lottermann (Coordenador de Sistemas — Fruki) | Encerrar o roadmap 2024 no prazo e dentro do escopo acordado |
+| Leandro Lottermann (Coordenador de Sistemas — Fruki) | Encerrar o roadmap 2025 no prazo e dentro do escopo acordado |
 | Jardel / Renan (Devs — Fruki) | Disponibilizar APIs de não alocados, Regra de Ouro e Rota PDV |
 | Alexsandro de Vargas Braga (Responsável PDV — Fruki) | Digitalizar a pesquisa de execução de PDV com o formulário correto de perguntas |
 
@@ -72,7 +72,7 @@ Três novos módulos no SuperApp Fruki (React Native / Expo), integrados às API
 **Restrições:**
 - Tecnologia: React Native / Expo
 - APIs são de responsabilidade exclusiva da Fruki; Timeware não altera backend
-- Prazo máximo: aceite via Microsoft Teams em 15/01/2025
+- Prazo máximo: aceite via Microsoft Teams em 15/01/2026
 - Código sempre em branches separadas; merge somente após revisão do Jardel
 
 **Premissas:**
@@ -85,20 +85,20 @@ Três novos módulos no SuperApp Fruki (React Native / Expo), integrados às API
 
 | Requisito / conjunto | Forma de validação | Data | Resultado |
 |---|---|---|---|
-| RF-05 a RF-08 — Pedidos Não Alocados | Reunião "Entendimento novas demandas Fruki" + Apresentação Proposta Não Alocados | 19/09/2024 e 26/09/2024 | Validado — Leandro aprovou proposta; Cecília confirmou requisitos |
-| RF-05 a RF-08 — Pedidos Não Alocados | Entrega via PR #57 no Azure DevOps | 25/10/2024 | Aceito pelo Jardel via merge da PR |
-| RF-09 a RF-11 — Regra de Ouro | Reunião "Entendimento Demanda Caixa Preta" + prototipagem e revisão com Cecília | 09/10/2024 e 22/10/2024 | Validado — regras de composição de RV fornecidas; protótipo revisado |
-| RF-12 a RF-14 — PDV / Rota PDV | Reunião "Demandas Fruki Bebidas" (Alexsandro) + Alinhamento PDV | 21/08/2024 e 04/12/2024 | Validado — formulário de perguntas confirmado; API Rota PDV recebida em 08/01/2025 |
-| Todos os módulos — entrega final | Aceite via Microsoft Teams | 15/01/2025 | Aceito formalmente pelo cliente |
+| RF-05 a RF-08 — Pedidos Não Alocados | Reunião "Entendimento novas demandas Fruki" + Apresentação Proposta Não Alocados | 19/09/2025 e 26/09/2025 | Validado — Leandro aprovou proposta; Cecília confirmou requisitos |
+| RF-05 a RF-08 — Pedidos Não Alocados | Entrega via PR #57 no Azure DevOps | 25/10/2025 | Aceito pelo Jardel via merge da PR |
+| RF-09 a RF-11 — Regra de Ouro | Reunião "Entendimento Demanda Caixa Preta" + prototipagem e revisão com Cecília | 09/10/2025 e 22/10/2025 | Validado — regras de composição de RV fornecidas; protótipo revisado |
+| RF-12 a RF-14 — PDV / Rota PDV | Reunião "Demandas Fruki Bebidas" (Alexsandro) + Alinhamento PDV | 21/08/2025 e 04/12/2025 | Validado — formulário de perguntas confirmado; API Rota PDV recebida em 08/01/2026 |
+| Todos os módulos — entrega final | Aceite via Microsoft Teams | 15/01/2026 | Aceito formalmente pelo cliente |
 
 ## 8. Confirmação de entendimento e compromisso
 
 | Envolvido | Papel | Confirmação | Data |
 |---|---|---|---|
-| Leandro Lottermann | Gestor do Contrato — Fruki | Entendimento confirmado — proposta aprovada e aceite final via Teams | 09/10/2024 e 15/01/2025 |
-| Cecília Ribeiro | Analista Digital / PO cliente — Fruki | Entendimento confirmado — validou protótipos e regras de cada módulo | Reuniões recorrentes out/2024–jan/2025 |
-| Abraão Oliveira | Gerente de Projeto — Timeware | Compromisso assumido | 09/10/2024 |
-| Brenda Chrystie | UX/Analista — Timeware | Compromisso assumido | 09/10/2024 |
+| Leandro Lottermann | Gestor do Contrato — Fruki | Entendimento confirmado — proposta aprovada e aceite final via Teams | 09/10/2025 e 15/01/2026 |
+| Cecília Ribeiro | Analista Digital / PO cliente — Fruki | Entendimento confirmado — validou protótipos e regras de cada módulo | Reuniões recorrentes out/2025–jan/2026 |
+| Abraão Oliveira | Gerente de Projeto — Timeware | Compromisso assumido | 09/10/2025 |
+| Brenda Chrystie | UX/Analista — Timeware | Compromisso assumido | 09/10/2025 |
 
 ---
 
@@ -106,4 +106,4 @@ Três novos módulos no SuperApp Fruki (React Native / Expo), integrados às API
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2024–jan/2025) |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |

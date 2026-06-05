@@ -4,7 +4,7 @@
 |---|---|
 | **Reunião** | Kickoff — Apresentação de Proposta Comercial |
 | **Projeto / contexto** | SuperApp Fruki — Novas Features Força de Vendas |
-| **Data** | 05/06/2024 |
+| **Data** | 05/06/2025 |
 | **Local / meio** | Videoconferência (Google Meet) |
 | **Responsável pela ata** | Abraão Oliveira |
 
@@ -52,22 +52,22 @@
 
 | Decisão / aceite | Responsável | Data |
 |---|---|---|
-| Aprovação da proposta comercial para início do projeto | Leandro Lottermann | 05/06/2024 |
-| Metodologia de entrega incremental com mock-up antes do dev | Timeware + Fruki | 05/06/2024 |
-| Início do projeto em 7–10 dias após aprovação formal | Tiago Nascimento | 05/06/2024 |
+| Aprovação da proposta comercial para início do projeto | Leandro Lottermann | 05/06/2025 |
+| Metodologia de entrega incremental com mock-up antes do dev | Timeware + Fruki | 05/06/2025 |
+| Início do projeto em 7–10 dias após aprovação formal | Tiago Nascimento | 05/06/2025 |
 
 ## 5. Ações (follow-up)
 
 | Ação | Responsável | Prazo |
 |---|---|---|
-| Assinar a proposta para formalizar o início do projeto | Leandro Lottermann | 12/06/2024 |
-| Agendar reunião de levantamento de demandas (Metas) | Tiago Nascimento | 10/06/2024 |
+| Assinar a proposta para formalizar o início do projeto | Leandro Lottermann | 12/06/2025 |
+| Agendar reunião de levantamento de demandas (Metas) | Tiago Nascimento | 10/06/2025 |
 | Incluir supervisores de vendas na validação do mock-up | Leandro Lottermann | Na abertura |
 | Criar acesso ao repositório Azure DevOps para equipe Timeware | Renan / equipe Fruki | Início do desenvolvimento |
 
 ## 6. Próximos passos
 
 - Formalização contratual e assinatura da proposta
-- Reunião de levantamento de demanda — Módulo Metas (agendada para 25/06/2024)
+- Reunião de levantamento de demanda — Módulo Metas (agendada para 25/06/2025)
 - Envio da documentação da API (Swagger) pela Fruki para a equipe Timeware
 - Criação de usuário no Azure DevOps para acesso ao repositório do SuperApp

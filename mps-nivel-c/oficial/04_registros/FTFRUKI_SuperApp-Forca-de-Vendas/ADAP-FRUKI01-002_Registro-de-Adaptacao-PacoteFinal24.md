@@ -19,7 +19,7 @@
 | Porte do projeto | Médio — nível de documentação padrão | Três módulos entregues em ~3 meses; equipe de 5 pessoas; continuidade do Pacote 1 |
 | Equipe e papéis (acúmulo) | Abraão: GP + PO; Brenda: UX + analista de negócio | Mesma configuração do Pacote 1; equipe enxuta; viável dado o porte e familiaridade com o projeto |
 | Criticidade e regulação | Padrão | Aplicativo comercial interno; sem regulação específica |
-| Cadência de entrega ao cliente | Por módulo — entrega incremental mensal | Pedidos Não Alocados (out/2024) → Regra de Ouro (nov/2024) → PDV (dez/jan 2025); entregas via PR no Azure DevOps e APK para testes |
+| Cadência de entrega ao cliente | Por módulo — entrega incremental mensal | Pedidos Não Alocados (out/2025) → Regra de Ouro (nov/2025) → PDV (dez/2025–jan/2026); entregas via PR no Azure DevOps e APK para testes |
 | Ambiente de stage | Adotado — Expo APK + branch feature no Azure DevOps | Builds de teste gerados via Expo antes de cada merge; revisão técnica do Jardel antes do merge na branch principal |
 
 ## 2. Etapas aplicáveis e não aplicáveis
@@ -41,7 +41,7 @@
 - [x] Plano de Projeto aprovado pelo cliente (baseline)
 - [x] Definição de Pronto aplicada
 - [x] Verificação e validação realizadas
-- [x] Encerramento formal com aceite (Microsoft Teams — 15/01/2025)
+- [x] Encerramento formal com aceite (Microsoft Teams — 15/01/2026)
 
 ---
 
@@ -49,4 +49,4 @@
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2024–jan/2025) |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |

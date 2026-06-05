@@ -52,30 +52,30 @@ Detalhamento completo em `ADAP-FRUKI01-001_Registro-de-Adaptacao.md`. Resumo:
 | **Total** | | **~60 SP** |
 
 - **Velocity de referência:** ~30 SP/sprint (equipe de 2 devs front-end + 1 UX; sprints de 2 semanas)
-- **Esforço/prazo estimado:** ~2 sprints / 6–8 semanas (jun–ago/2024)
+- **Esforço/prazo estimado:** ~2 sprints / 6–8 semanas (jun–ago/2025)
 - **Base histórica:** Projetos anteriores de desenvolvimento React Native na Timeware
 
 ## 5. Cronograma e marcos (GPR 5)
 
 | Marco | Data prevista / realizada |
 |---|---|
-| Kickoff / proposta comercial | 05/06/2024 |
-| Levantamento demanda Metas | 25/06/2024 |
-| Acesso ao repositório Azure DevOps e APIs Fruki | 26/06/2024 |
-| Desenvolvimento Módulo Metas/RV — Sprint 1 | Jul/2024 |
-| Piloto com vendedores selecionados (APK de teste) | 05/08/2024 |
-| Ajustes pós-piloto (duplicação de famílias, cálculos) | Ago/2024 |
-| Aceite e encerramento do Pacote 1 | Ago/Set 2024 |
+| Kickoff / proposta comercial | 05/06/2025 |
+| Levantamento demanda Metas | 25/06/2025 |
+| Acesso ao repositório Azure DevOps e APIs Fruki | 26/06/2025 |
+| Desenvolvimento Módulo Metas/RV — Sprint 1 | Jul/2025 |
+| Piloto com vendedores selecionados (APK de teste) | 05/08/2025 |
+| Ajustes pós-piloto (duplicação de famílias, cálculos) | Ago/2025 |
+| Aceite e encerramento do Pacote 1 | Ago/Set 2025 |
 
 **Detalhamento das atividades:**
 
-*Jun/2024:*
+*Jun/2025:*
 - Reunião de levantamento de demanda com Leandro e Cecília (25/06)
 - Recebimento de acesso ao Azure DevOps e documentação das APIs (26/06)
 - Criação de branch `feature/novos-recursos-superapp` no repositório Fruki
 - Início da integração com APIs de metas
 
-*Jul–Ago/2024:*
+*Jul–Ago/2025:*
 - Desenvolvimento das telas de indicadores (volume, cobertura, drop size, positivação)
 - Desenvolvimento da tela de metas por família de produtos e por SKU
 - Geração de APK de teste via Expo para piloto com vendedores selecionados
@@ -136,12 +136,12 @@ Viável dentro do escopo e prazo: tecnologia conhecida (React Native), APIs docu
 
 ## 11. Aprovação do Plano (GPR 13)
 
-Plano acordado na reunião de kickoff em 05/06/2024 e formalizado com o envio de acesso ao repositório em 26/06/2024.
+Plano acordado na reunião de kickoff em 05/06/2025 e formalizado com o envio de acesso ao repositório em 26/06/2025.
 
 | Envolvido | Papel | Aceite | Data | Ref. |
 |---|---|---|---|---|
-| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Aprovado (e-mail — início formalizado) | 26/06/2024 | E-mail "ENC: Instruções para Acesso ao Repositório..." 26/06/2024 |
-| Abraão Oliveira | Gerente de Projeto — Timeware | Confirmado | 26/06/2024 | ATA-FRUKI01-001 |
+| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Aprovado (e-mail — início formalizado) | 26/06/2025 | E-mail "ENC: Instruções para Acesso ao Repositório..." 26/06/2025 |
+| Abraão Oliveira | Gerente de Projeto — Timeware | Confirmado | 26/06/2025 | ATA-FRUKI01-001 |
 
 ---
 
