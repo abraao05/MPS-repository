@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-GPC-001 — Plano de Gestão e Melhoria de Processos |
-| **Versão** | 1.2 |
-| **Data** | 26/11/2025 |
+| **Versão** | 1.3 |
+| **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -18,7 +18,9 @@ Este plano define como a Timeware mantém o conjunto de ativos de processo da or
 
 ## 2. Inventário de ativos de processo
 
-A Timeware mantém uma **biblioteca de ativos de processo**, no Confluence, contendo todos os ativos necessários à definição, execução, verificação e melhoria dos seus processos. O inventário abaixo identifica os ativos da organização:
+A Timeware mantém uma **biblioteca de ativos de processo**, no Confluence, contendo todos os ativos necessários à definição, execução, verificação e melhoria dos seus processos.
+
+**Governança**
 
 | Código | Ativo | Tipo |
 |---|---|---|
@@ -26,12 +28,61 @@ A Timeware mantém uma **biblioteca de ativos de processo**, no Confluence, cont
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | Convenção |
 | PRO-GPC-001 | Processo-Padrão Organizacional | Processo |
 | GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | Guia |
-| PRO-GPC-002 | Definição do Time de Melhoria Contínua | Processo |
 | EST-GPC-001 | Estratégia de Garantia da Qualidade | Estratégia |
+| PRO-GPC-002 | Definição do Time de Melhoria Contínua | Processo |
 | EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | Estratégia |
 | PLA-GPC-001 | Plano de Gestão e Melhoria de Processos (este documento) | Plano |
+| PRO-OSW-001 | Governança Organizacional de Processos | Processo |
+| PRO-OSW-002 | Gestão de Portfólio de Projetos | Processo |
 
-O inventário é mantido atualizado pelo Time de Melhoria Contínua à medida que novos ativos são criados ou revisados (processos de apoio, templates e registros são incorporados ao inventário conforme produzidos).
+**Apoio organizacional**
+
+| Código | Ativo | Tipo |
+|---|---|---|
+| PLA-MED-001 | Plano de Medição | Plano |
+| PLA-GCO-001 | Plano de Gerência de Configuração | Plano |
+| PRO-GDE-001 | Processo de Gerência de Decisões | Processo |
+| PLA-CAP-001 | Plano de Capacitação | Plano |
+| PRO-AQU-001 | Processo de Aquisição | Processo |
+
+**Processos de projeto**
+
+| Código | Ativo | Tipo |
+|---|---|---|
+| PRO-GPR-001 | Processo de Gerência de Projetos | Processo |
+| PRO-REQ-001 | Processo de Engenharia de Requisitos | Processo |
+| PRO-PCP-001 | Processo de Projeto e Construção do Produto | Processo |
+| PRO-ITP-001 | Processo de Integração do Produto | Processo |
+| PRO-VV-001 | Processo de Verificação e Validação | Processo |
+| GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | Guia |
+
+**Templates**
+
+| Código | Ativo | Tipo |
+|---|---|---|
+| TPL-GPR-001 | Template de Plano de Projeto | Template |
+| TPL-GPR-002 | Template de Termo de Abertura do Projeto | Template |
+| TPL-GPR-003 | Template de Registro de Adaptação do Processo | Template |
+| TPL-GPR-004 | Template de Termo de Encerramento e Aceite | Template |
+| TPL-GPR-005 | Template de Relatório de Acompanhamento | Template |
+| TPL-GPR-006 | Template de Change Request | Template |
+| TPL-REQ-001 | Template de Documento de Requisitos | Template |
+| TPL-REQ-002 | Template de Matriz de Rastreabilidade | Template |
+| TPL-PCP-001 | Template de Documento de Design | Template |
+| TPL-ITP-001 | Template de Estratégia de Integração | Template |
+| TPL-VV-001 | Template de Plano de V&V | Template |
+| TPL-VV-002 | Template de Registro de Revisão por Pares | Template |
+| TPL-GPC-001 | Template de Registro de Verificação de GQA | Template |
+| TPL-GDE-001 | Template de Registro de Análise de Decisão | Template |
+| TPL-ORG-001 | Template de Ata de Reunião | Template |
+
+**Referência de capacidade**
+
+| Código | Ativo | Tipo |
+|---|---|---|
+| MAPA-CAP-001 | Mapa de Capacidade dos Processos | Mapa |
+
+O inventário é mantido atualizado pelo Time de Melhoria Contínua.
 
 ## 3. Ambientes-padrão de trabalho
 
@@ -124,3 +175,4 @@ Este documento corresponde a **vários resultados** do processo **Gerência de P
 | 1.0 | 25/08/2025 | Time de Melhoria Contínua | Definição inicial do plano de gestão e melhoria de processos |
 | 1.1 | 19/11/2025 | Time de Melhoria Contínua | Inclusão do Registro de Oportunidades de Melhoria (GPC 4) na seção 5 |
 | 1.2 | 26/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO nos papéis |
+| 1.3 | 05/06/2026 | Time de Melhoria Contínua | Expansão do inventário de ativos (§2) com todos os documentos da biblioteca: processos, planos, guias e templates |
