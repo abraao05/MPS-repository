@@ -7,7 +7,7 @@
 | **Data** | 26/09/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
-| **Processos MPS-SW relacionados** | AQU 1 a AQU 4 |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -27,13 +27,7 @@ A aquisição ocorre quando a Timeware **contrata um terceiro para entregar part
 
 Este processo é aplicado **somente aos projetos em que há aquisição** conforme definido acima. Em projetos sem aquisição, o processo é registrado como não aplicável na adaptação do processo do projeto (GUIA-GPC-001).
 
-> **Mapa de resultados atendidos neste documento:**
-> - Seção 3 → **AQU 1** (critérios de seleção e pedidos de proposta)
-> - Seção 4 → **AQU 2** (avaliação das respostas e seleção)
-> - Seção 5 → **AQU 3** (acordo e monitoramento do fornecedor)
-> - Seção 6 → **AQU 4** (revisão técnica das entregas)
-
-## 3. Critérios de seleção e solicitação de propostas (AQU 1)
+## 3. Critérios de seleção e solicitação de propostas
 
 Antes de adquirir, a Timeware estabelece os **critérios de avaliação de fornecedores**, que podem incluir:
 
@@ -45,17 +39,17 @@ Antes de adquirir, a Timeware estabelece os **critérios de avaliação de forne
 
 Com base nos critérios, é elaborada a **solicitação de proposta**, descrevendo o que se pretende adquirir, os requisitos e as condições.
 
-## 4. Avaliação e seleção do fornecedor (AQU 2)
+## 4. Avaliação e seleção do fornecedor
 
 As propostas recebidas são avaliadas segundo os critérios definidos, de forma objetiva (recomenda-se o uso do processo de Gerência de Decisões — PRO-GDE-001 — para a comparação das alternativas). O fornecedor selecionado e a justificativa da escolha são registrados.
 
-## 5. Acordo e monitoramento do fornecedor (AQU 3)
+## 5. Acordo e monitoramento do fornecedor
 
 Com o fornecedor selecionado, estabelece-se um **acordo** (contrato) que define escopo, entregas, prazos, critérios de aceitação e responsabilidades.
 
 Durante a vigência, o desempenho do fornecedor é **monitorado** quanto ao cumprimento do acordo — prazos, escopo e qualidade das entregas —, com registro do acompanhamento. Desvios são tratados conforme o acordo.
 
-## 6. Revisão técnica das entregas (AQU 4)
+## 6. Revisão técnica das entregas
 
 As entregas do fornecedor passam por **revisão técnica**, verificando a aderência aos requisitos e aos critérios de aceitação antes de serem incorporadas ao produto. A revisão é documentada, e problemas identificados são tratados com o fornecedor até a conformidade.
 
@@ -74,6 +68,21 @@ As entregas do fornecedor passam por **revisão técnica**, verificando a aderê
 - GUIA-GPC-001 — Guia de Adaptação do Processo-Padrão
 - PRO-GDE-001 — Processo de Gerência de Decisões
 - EST-GPC-002 — Estratégia de Gerência de Riscos e Oportunidades
+
+## 9. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados do processo **Aquisição (AQU)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| AQU 1 — necessidades de aquisição e critérios de seleção de fornecedores definidos | Seção 3 |
+| AQU 2 — fornecedor selecionado a partir da avaliação das propostas | Seção 4 |
+| AQU 3 — acordo/contrato estabelecido e desempenho do fornecedor monitorado | Seção 5 |
+| AQU 4 — entregas do fornecedor revisadas tecnicamente e aceitas | Seção 6 |
+
+A aplicabilidade deste processo aos projetos da avaliação está sujeita a confirmação com a equipe avaliadora; o documento é mantido na biblioteca de processos da organização.
 
 ---
 

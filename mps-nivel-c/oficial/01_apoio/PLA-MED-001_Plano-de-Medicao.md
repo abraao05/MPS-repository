@@ -7,7 +7,7 @@
 | **Data** | 14/05/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações), com patrocínio do Founder e CEO |
-| **Processos MPS-SW relacionados** | MED 1 a MED 7; GPC 9; OSW 6 |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -16,16 +16,7 @@
 
 Este plano define como a Timeware coleta, verifica, armazena, analisa e comunica medidas relacionadas aos seus projetos e processos, de forma a apoiar decisões e o alcance dos objetivos de negócio.
 
-> **Mapa de resultados atendidos neste documento:**
-> - Seção 2 → **MED 1** (objetivos de medição)
-> - Seção 3 → **MED 2** (medidas com definições operacionais — catálogo)
-> - Seção 4 → **MED 3** (coleta, verificação e armazenamento) e **GPC 9** (repositório de medidas)
-> - Seção 5 → **MED 4** (análise do desempenho organizacional) e **OSW 6** (uso de medidas na governança)
-> - Seção 6 → **MED 5** (ações corretivas)
-> - Seção 7 → **MED 6** (comunicação dos resultados)
-> - Seção 8 → **MED 7** e **GPC 9** (garantia da qualidade das medidas)
-
-## 2. Objetivos de medição (MED 1)
+## 2. Objetivos de medição
 
 Os objetivos de medição da Timeware derivam do objetivo de negócio central — **crescer com qualidade e previsibilidade** — e das necessidades de informação da gestão. São eles:
 
@@ -38,7 +29,7 @@ Os objetivos de medição da Timeware derivam do objetivo de negócio central �
 
 Os objetivos de medição são revisados na análise crítica trimestral (PRO-OSW-001), garantindo que permaneçam alinhados aos objetivos de negócio.
 
-## 3. Catálogo de medidas (MED 2)
+## 3. Catálogo de medidas
 
 As medidas abaixo são derivadas dos objetivos de medição e possuem definição operacional. Todas são coletáveis a partir das ferramentas em uso (Jira, Azure DevOps, Xray).
 
@@ -88,24 +79,24 @@ As medidas abaixo são derivadas dos objetivos de medição e possuem definiçã
 
 > O *burndown* da sprint é utilizado pelas equipes como ferramenta de acompanhamento diário, não constituindo medida organizacional consolidada.
 
-## 4. Coleta, verificação e armazenamento (MED 3 / GPC 9)
+## 4. Coleta, verificação e armazenamento
 
 - As medidas são **coletadas continuamente** ao longo das sprints, a partir do Jira e demais ferramentas, conforme as definições operacionais do catálogo.
 - Os dados de cada projeto ficam registrados no **Jira** (repositório por projeto).
 - O **repositório organizacional de medidas** é mantido pelo Time de Melhoria Contínua, que consolida as medidas dos projetos em uma **planilha/dashboard organizacional**, permitindo a visão histórica e comparativa entre projetos.
 - Antes de serem consolidadas, as medidas são **verificadas** quanto à integridade e à consistência (ver seção 8).
 
-## 5. Análise do desempenho organizacional (MED 4 / OSW 6)
+## 5. Análise do desempenho organizacional
 
 - O Time de Melhoria Contínua **analisa as medidas mensalmente**, em sua reunião, identificando tendências, desvios e necessidades de melhoria.
 - A análise compara o desempenho com os objetivos de medição e entre projetos.
-- Os resultados consolidados constituem as **informações de governança** utilizadas pela direção (OSW 6), sendo levados à **análise crítica trimestral** (PRO-OSW-001) para apoiar decisões organizacionais.
+- Os resultados consolidados constituem as **informações de governança** utilizadas pela direção, sendo levados à **análise crítica trimestral** (PRO-OSW-001) para apoiar decisões organizacionais.
 
-## 6. Ações corretivas (MED 5)
+## 6. Ações corretivas
 
 Quando a análise das medidas indica desvios em relação aos objetivos, são definidas **ações corretivas**, com responsável e prazo, acompanhadas como itens rastreáveis no Jira até a conclusão. Ações que impliquem mudança de processo são encaminhadas ao ciclo de melhoria (PLA-GPC-001).
 
-## 7. Comunicação dos resultados (MED 6)
+## 7. Comunicação dos resultados
 
 Os resultados de desempenho são comunicados periodicamente à organização:
 
@@ -113,7 +104,7 @@ Os resultados de desempenho são comunicados periodicamente à organização:
 - **Trimestralmente**, integram a análise crítica pela direção.
 - Resultados relevantes a um projeto específico são comunicados à respectiva equipe.
 
-## 8. Garantia da qualidade das medidas (MED 7 / GPC 9)
+## 8. Garantia da qualidade das medidas
 
 O repositório organizacional de medidas é avaliado periodicamente para assegurar a qualidade dos dados:
 
@@ -137,6 +128,24 @@ O repositório organizacional de medidas é avaliado periodicamente para assegur
 - PLA-GPC-001 — Plano de Gestão e Melhoria de Processos
 - EST-GPC-001 — Estratégia de Garantia da Qualidade
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
+
+## 11. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados do processo **Medição (MED)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| MED 1 — objetivos de medição derivados dos objetivos de negócio | Seção 2 |
+| MED 2 — medidas definidas com definições operacionais | Seção 3 |
+| MED 3 — procedimentos de coleta e armazenamento das medidas | Seção 4 |
+| MED 4 — procedimentos de análise das medidas | Seção 5 |
+| MED 5 — coleta e análise realizadas; ações a partir das medidas | Seções 4, 5 e 6 |
+| MED 6 — resultados comunicados aos interessados | Seção 7 |
+| MED 7 — repositório de medidas avaliado periodicamente (qualidade das medidas) | Seção 8 |
+
+Este documento também sustenta o repositório organizacional de medidas (GPC 9) e o uso de medidas pela governança (OSW 6).
 
 ---
 
