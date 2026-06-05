@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.32 (rascunho) |
+| **Versão** | 0.33 (rascunho) |
 | **Data** | 05/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -14,6 +14,8 @@
 > **Alterações v0.2 (02/06/2026):** resolução das 5 pendências de escopo. OSW 8/9/10 confirmados no escopo (há gestão de portfólio). AQU mantido, mas movido para o fim da fila (candidato a não-aplicável, a confirmar com a ASR). Ferramentas definidas (Jira, Git, Azure DevOps, Azure Test Plans/Xray, Confluence). Papel de GQA confirmado. Ver seção 3 para detalhes.
 
 > **Alterações v0.30 (05/06/2026):** criado TPL-GPC-001 (Template de Registro de Verificação de GQA); PLA-GPC-001 atualizado para v1.3 com inventário completo de ativos (§2). Ambas as lacunas identificadas na análise de cobertura da camada de definição.
+
+> **Alterações v0.33 (05/06/2026):** §2.1 reescrito como inventário completo e organizado por categoria — versão única de referência de todos os documentos existentes.
 
 > **Alterações v0.32 (05/06/2026):** criado GUIA-GCO-001 (Guia de Nomenclaturas Técnicas v1.0) com padrões técnicos de nomenclatura para repositórios, código, BD, recursos Azure, pipelines e Key Vault. PLA-GPC-001 atualizado para v1.4 (adição ao inventário). PLA-GCO-001 v1.1 referencia o novo guia.
 
@@ -61,53 +63,86 @@ MPS-Nivel-C/
 
 ---
 
-## 2.1 Documentos já produzidos
+## 2.1 Inventário completo de documentos
 
-| Código | Documento | Versão | Atende | Situação |
-|---|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação | 0.29 | GPC 1 (rastreabilidade) | Rascunho |
-| GUIA-ORG-001 | Guia de Estrutura do Confluence [INTERNO] | 1.0 | — (apoio) | Aprovado |
-| CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.1 | GCO 1, GCO 4 | Aprovado |
-| POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 | Aprovado |
-| PRO-GPC-001 | Processo-Padrão Organizacional | 2.2 | GPC 2 | Aprovado |
-| GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.2 | GPC 2 | Aprovado |
-| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.2 | GPC 3; CP (iv,v,vi) | Aprovado |
-| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.1 | GPC 6 | Aprovado |
-| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.1 | GPC 7 | Aprovado |
-| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.4 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
-| PRO-OSW-001 | Governança Organizacional de Processos | 1.2 | OSW 2, 3, 4, 5, 6, 7 | Aprovado |
-| PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.2 | OSW 8, 9, 10 | Aprovado |
-| PLA-MED-001 | Plano de Medição | 1.3 | MED 1-7; GPC 9; OSW 6 | Aprovado |
-| PLA-GCO-001 | Plano de Gerência de Configuração | 1.1 | GCO 1-5 | Aprovado |
-| GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | 1.0 | GCO 1, 2; GPC 8 | Aprovado |
-| PRO-GDE-001 | Processo de Gerência de Decisões | 1.1 | GDE 1-6 | Aprovado |
-| PLA-CAP-001 | Plano de Capacitação | 1.1 | CAP 1-4 | Aprovado |
-| PRO-AQU-001 | Processo de Aquisição | 1.1 | AQU 1-4 | Aprovado (a confirmar aplicabilidade c/ ASR) |
-| PRO-GPR-001 | Processo de Gerência de Projetos | 1.3 | GPR 1-20 | Aprovado |
-| TPL-GPR-001 | Template de Plano de Projeto | 1.0 | GPR (template) | Aprovado |
-| PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.1 | REQ 1-7 | Aprovado |
-| TPL-REQ-001 | Template de Documento de Requisitos | 1.0 | REQ (template) | Aprovado |
-| TPL-REQ-002 | Template de Matriz de Rastreabilidade | 1.0 | REQ 4 (template) | Aprovado |
-| PRO-PCP-001 | Processo de Projeto e Construção do Produto | 1.1 | PCP 1-3 | Aprovado |
-| TPL-PCP-001 | Template de Documento de Design | 1.0 | PCP (template) | Aprovado |
-| PRO-ITP-001 | Processo de Integração do Produto | 1.1 | ITP 1-6 | Aprovado |
-| TPL-ITP-001 | Template de Estratégia de Integração | 1.0 | ITP (template) | Aprovado |
-| PRO-VV-001 | Processo de Verificação e Validação | 1.2 | VV 1-5 | Aprovado |
-| TPL-VV-001 | Template de Plano de V&V | 1.1 | VV (template) | Aprovado |
-| TPL-VV-002 | Template de Registro de Revisão por Pares | 1.0 | VV 2 (template) | Aprovado |
-| TPL-GPR-002 | Template de Termo de Abertura do Projeto | 1.0 | GPR (template) | Aprovado |
-| TPL-GPR-003 | Template de Registro de Adaptação do Processo | 1.0 | GPR 2 / CP-C (template) | Aprovado |
-| TPL-GPR-004 | Template de Termo de Encerramento e Aceite | 1.0 | GPR (template) | Aprovado |
-| TPL-GPR-005 | Template de Relatório de Acompanhamento | 1.0 | GPR 14 (template) | Aprovado |
-| TPL-GPR-006 | Template de Change Request | 1.0 | GPR / GCO (template) | Aprovado |
-| TPL-GDE-001 | Template de Registro de Análise de Decisão (RAD) | 1.0 | GDE (template) | Aprovado |
-| TPL-ORG-001 | Template de Ata de Reunião | 1.0 | — (apoio, multiuso) | Aprovado |
-| TPL-GPC-001 | Template de Registro de Verificação de GQA | 1.0 | GPC 3 (template) | Aprovado |
-| GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | 1.0 | — (apoio) | Aprovado |
-| README | README do repositório [INTERNO] | 1.0 | — (apoio/navegação) | Aprovado |
-| TREINO-* | Materiais de Treinamento do time (apostilas por papel) [INTERNO] | — | — (apoio à preparação para a avaliação) | Criados em conversa dedicada do projeto |
-| DIAG-GPC-001 | Diagrama do Fluxo do Processo-Padrão (figura) | 1.0 | GPC 2 (ilustra PRO-GPC-001) | A atualizar (grooming/ambientes) |
-| MAPA-CAP-001 | Mapa de Capacidade dos Processos | 1.1 | CP-E/D/C (rastreabilidade) | Aprovado |
+*Atualizado em 05/06/2026 — versão de referência de todos os ativos de processo produzidos.*
+
+### Governança organizacional (`oficial/00_governanca/`)
+
+| Código | Documento | Versão | Atende |
+|---|---|---|---|
+| POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 |
+| CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.1 | GCO 1, 4 |
+| PRO-GPC-001 | Processo-Padrão Organizacional | 2.2 | GPC 2 |
+| GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.2 | GPC 2 |
+| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.1 | GPC 6 |
+| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.2 | GPC 3; CP (iv, v, vi) |
+| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.1 | GPC 7 |
+| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.4 | GPC 1, 4, 5, 8, 10, 11 |
+| PRO-OSW-001 | Governança Organizacional de Processos | 1.2 | OSW 2, 3, 4, 5, 6, 7 |
+| PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.2 | OSW 8, 9, 10 |
+
+### Apoio organizacional (`oficial/01_apoio/`)
+
+| Código | Documento | Versão | Atende |
+|---|---|---|---|
+| PLA-MED-001 | Plano de Medição | 1.3 | MED 1–7; GPC 9; OSW 6 |
+| PLA-GCO-001 | Plano de Gerência de Configuração | 1.1 | GCO 1–5 |
+| GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | 1.0 | GCO 1, 2; GPC 8 |
+| PRO-GDE-001 | Processo de Gerência de Decisões | 1.1 | GDE 1–6 |
+| PLA-CAP-001 | Plano de Capacitação | 1.1 | CAP 1–4 |
+| PRO-AQU-001 | Processo de Aquisição | 1.1 | AQU 1–4 *(aplicabilidade a confirmar com ASR)* |
+
+### Processos de projeto (`oficial/02_projeto/`)
+
+| Código | Documento | Versão | Atende |
+|---|---|---|---|
+| PRO-GPR-001 | Processo de Gerência de Projetos | 1.3 | GPR 1–20 |
+| GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | 1.0 | apoio ao GPR |
+| PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.1 | REQ 1–7 |
+| PRO-PCP-001 | Processo de Projeto e Construção do Produto | 1.1 | PCP 1–3 |
+| PRO-ITP-001 | Processo de Integração do Produto | 1.1 | ITP 1–6 |
+| PRO-VV-001 | Processo de Verificação e Validação | 1.2 | VV 1–5 |
+
+### Templates (`oficial/03_templates/`)
+
+| Código | Documento | Atende |
+|---|---|---|
+| TPL-GPR-001 | Template de Plano de Projeto | GPR 12 |
+| TPL-GPR-002 | Template de Termo de Abertura do Projeto | GPR 1 |
+| TPL-GPR-003 | Template de Registro de Adaptação do Processo | GPR 2 / CP-C |
+| TPL-GPR-004 | Template de Termo de Encerramento e Aceite | GPR |
+| TPL-GPR-005 | Template de Relatório de Acompanhamento | GPR 14 |
+| TPL-GPR-006 | Template de Change Request | GPR / GCO |
+| TPL-REQ-001 | Template de Documento de Requisitos | REQ 1–2 |
+| TPL-REQ-002 | Template de Matriz de Rastreabilidade | REQ 4 |
+| TPL-PCP-001 | Template de Documento de Design | PCP 1–2 |
+| TPL-ITP-001 | Template de Estratégia de Integração | ITP 1 |
+| TPL-VV-001 | Template de Plano de V&V | VV 1, 3 |
+| TPL-VV-002 | Template de Registro de Revisão por Pares | VV 2 |
+| TPL-GPC-001 | Template de Registro de Verificação de GQA | GPC 3 / CP (iv, v) |
+| TPL-GDE-001 | Template de Registro de Análise de Decisão (RAD) | GDE 6 |
+| TPL-ORG-001 | Template de Ata de Reunião | multiuso |
+
+### Capacidade (`oficial/05_capacidade/`)
+
+| Código | Documento | Versão | Atende |
+|---|---|---|---|
+| MAPA-CAP-001 | Mapa de Capacidade dos Processos (CP-E/D/C) | 1.1 | CP-E, CP-D, CP-C (rastreabilidade) |
+
+### Internos (`_interno/`) — não auditados pela ASR
+
+| Código | Documento | Versão | Observação |
+|---|---|---|---|
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.33 | Rascunho de gestão |
+| GUIA-ORG-001 | Guia de Estrutura do Confluence | 1.0 | Apoio à navegação no Confluence |
+
+### Pendentes / A produzir
+
+| Código | Documento | Prioridade | Observação |
+|---|---|---|---|
+| DIAG-GPC-001 | Diagrama do Fluxo do Processo-Padrão (figura) | Média | Ilustra PRO-GPC-001; a atualizar com ambientes |
+| TREINO-* | Apostilas de treinamento por papel | Baixa | Apoio à preparação da equipe — não é evidência MPS |
 
 ---
 
