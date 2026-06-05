@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PLA-GPC-001 — Plano de Gestão e Melhoria de Processos |
 | **Versão** | 1.2 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 26/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Processos MPS-SW relacionados** | GPC 1, GPC 4, GPC 5, GPC 8, GPC 10, GPC 11 |
@@ -113,6 +113,6 @@ Após a implementação de uma melhoria, o Time de Melhoria Contínua avalia sua
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do plano de gestão e melhoria de processos |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão do Registro de Oportunidades de Melhoria (GPC 4) na seção 5 |
-| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão da camada COO nos papéis |
+| 1.0 | 25/08/2025 | Time de Melhoria Contínua | Definição inicial do plano de gestão e melhoria de processos |
+| 1.1 | 19/11/2025 | Time de Melhoria Contínua | Inclusão do Registro de Oportunidades de Melhoria (GPC 4) na seção 5 |
+| 1.2 | 26/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO nos papéis |

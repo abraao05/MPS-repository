@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | EST-GPC-002 — Estratégia de Gerência de Riscos e Oportunidades |
 | **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 25/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Processo MPS-SW relacionado** | GPC 7 (estratégia de gerência de riscos) |
@@ -107,5 +107,5 @@ Além dos riscos de projeto, a Timeware acompanha riscos de natureza organizacio
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial da estratégia de gerência de riscos e oportunidades |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão da camada COO no tratamento de riscos organizacionais |
+| 1.0 | 20/08/2025 | Time de Melhoria Contínua | Definição inicial da estratégia de gerência de riscos e oportunidades |
+| 1.1 | 25/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO no tratamento de riscos organizacionais |

@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | POL-ORG-001 — Política Organizacional de Processos |
 | **Versão** | 1.0 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 07/07/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação / Patrocínio** | Tiago Barbosa Nascimento — Founder e CEO |
 | **Processo MPS-SW relacionado** | OSW 1 — Gerência Organizacional de Software |
@@ -90,7 +90,7 @@ A Timeware adota uma separação clara entre quem **define** os processos, quem 
 | Elaborado por | Time de Melhoria Contínua |
 | Aprovado por | Tiago Barbosa Nascimento |
 | Cargo | Founder e CEO |
-| Data | `<dd/mm/aaaa>` |
+| Data | 07/07/2025 |
 | Assinatura | __________________________________ |
 
 ---
@@ -99,4 +99,4 @@ A Timeware adota uma separação clara entre quem **define** os processos, quem 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Formalização da Política Organizacional de Processos |
+| 1.0 | 07/07/2025 | Time de Melhoria Contínua | Formalização da Política Organizacional de Processos |
