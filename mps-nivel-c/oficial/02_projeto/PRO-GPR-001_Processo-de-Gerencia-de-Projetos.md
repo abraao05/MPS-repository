@@ -7,7 +7,7 @@
 | **Data** | 19/05/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
-| **Processos MPS-SW relacionados** | GPR 1 a GPR 20 |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -17,15 +17,6 @@
 Este processo define como a Timeware planeja, monitora e controla seus projetos de software sob medida, garantindo que o escopo, as estimativas, os recursos, os riscos e os compromissos sejam estabelecidos, acompanhados e ajustados ao longo do ciclo de vida do projeto.
 
 Este processo opera em conjunto com o Processo-Padrão Organizacional (PRO-GPC-001), que descreve o fluxo de fases do projeto, e é adaptado a cada projeto conforme o Guia de Adaptação (GUIA-GPC-001).
-
-> **Mapa de resultados atendidos neste documento:**
-> - Seção 4 → **GPR 1** (escopo), **GPR 2** (adaptação do processo)
-> - Seção 5 → **GPR 3, 4** (estimativas), **GPR 5** (orçamento e cronograma)
-> - Seção 6 → **GPR 6, 7** (recursos), **GPR 8** (transição), **GPR 9** (partes interessadas)
-> - Seção 7 → **GPR 10** (riscos), **GPR 11** (viabilidade)
-> - Seção 8 → **GPR 12, 13** (plano integrado e compromisso)
-> - Seção 9 → **GPR 14 a 18** (monitoramento e ações corretivas)
-> - Seção 10 → **GPR 19, 20** (análise de causas e melhoria)
 
 ## 2. Planejamento ágil e o plano de projeto
 
@@ -44,12 +35,12 @@ O Plano de Projeto é registrado no template TPL-GPR-001.
 | **Tech Lead / Arquiteto** | Apoia estimativas técnicas e decisões; conduz o time tecnicamente. |
 | **Equipe** | Participa das estimativas (planning poker) e executa o trabalho. |
 
-## 4. Escopo e adaptação (GPR 1, GPR 2)
+## 4. Escopo e adaptação
 
 - O **escopo** do projeto parte do escopo macro do contrato, é formalizado no **Termo de Abertura** (kickoff gerencial) e detalhado no trabalho de requisitos (REQ) e na concepção, sendo mantido atualizado conforme mudanças aprovadas (change request sobre a baseline).
 - No início, o processo-padrão é **adaptado** ao projeto conforme o Guia de Adaptação (GUIA-GPC-001), e a adaptação é registrada (Registro de Adaptação do Processo). A adaptação define, por exemplo, se há etapa de UX/UI, o nível de formalidade da documentação e a combinação de papéis.
 
-## 5. Estimativas, orçamento e cronograma (GPR 3, 4, 5)
+## 5. Estimativas, orçamento e cronograma
 
 - **Estimativa de tamanho:** os itens são estimados em **story points**, por meio de *planning poker*, durante o refinamento.
 - **Estimativa de esforço, prazo e custo:** derivada do tamanho com base na **velocity histórica** das sprints e em dados de projetos anteriores (mantidos pela Medição — PLA-MED-001). As estimativas são registradas no Jira.
@@ -57,19 +48,19 @@ O Plano de Projeto é registrado no template TPL-GPR-001.
 
 As estimativas baseadas em histórico aumentam a previsibilidade e são posteriormente comparadas com o realizado (estimado × real), realimentando a base histórica.
 
-## 6. Recursos, transição e partes interessadas (GPR 6, 7, 8, 9)
+## 6. Recursos, transição e partes interessadas
 
-- **Recursos humanos (GPR 6):** definidos no planejamento, considerando a alocação dos recursos compartilhados conforme a gestão de portfólio (PRO-OSW-002).
-- **Recursos materiais e ambiente (GPR 7):** ambientes e ferramentas necessários (conforme ambientes-padrão, PLA-GPC-001).
-- **Transição (GPR 8):** quando aplicável, planeja-se a transição para operação/sustentação, que é assumida por unidade de negócio específica.
-- **Partes interessadas (GPR 9):** identificadas, com um plano de comunicação e envolvimento ao longo do projeto.
+- **Recursos humanos:** definidos no planejamento, considerando a alocação dos recursos compartilhados conforme a gestão de portfólio (PRO-OSW-002).
+- **Recursos materiais e ambiente:** ambientes e ferramentas necessários (conforme ambientes-padrão, PLA-GPC-001).
+- **Transição:** quando aplicável, planeja-se a transição para operação/sustentação, que é assumida por unidade de negócio específica.
+- **Partes interessadas:** identificadas, com um plano de comunicação e envolvimento ao longo do projeto.
 
-## 7. Riscos e viabilidade (GPR 10, 11)
+## 7. Riscos e viabilidade
 
-- **Riscos (GPR 10):** identificados, analisados e tratados conforme a Estratégia de Gerência de Riscos (EST-GPC-002), registrados e acompanhados no Jira.
-- **Viabilidade (GPR 11):** a viabilidade do projeto é avaliada, considerando escopo, estimativas, recursos e riscos, antes da assunção dos compromissos.
+- **Riscos:** identificados, analisados e tratados conforme a Estratégia de Gerência de Riscos (EST-GPC-002), registrados e acompanhados no Jira.
+- **Viabilidade:** a viabilidade do projeto é avaliada, considerando escopo, estimativas, recursos e riscos, antes da assunção dos compromissos.
 
-## 8. Plano integrado e compromisso (GPR 12, 13)
+## 8. Plano integrado e compromisso
 
 - O **Plano de Projeto** integra escopo, estimativas, cronograma, recursos, riscos e comunicação em um documento coerente (TPL-GPR-001), mantido atualizado.
 - O plano é **revisado com as partes interessadas** e o **compromisso** da equipe e dos envolvidos é obtido e registrado.
@@ -83,19 +74,19 @@ A gestão do projeto delimita-se por dois marcos formais, distintos das entregas
 
 Estes marcos pertencem à camada de **gestão de projetos** e não se confundem com o aceite das entregas de **produto**, que ocorre incrementalmente nas Reviews de sprint (e, em épicos grandes, pode ocorrer história a história).
 
-## 10. Monitoramento e controle (GPR 14 a 18)
+## 10. Monitoramento e controle
 
 O projeto é monitorado continuamente, comparando o planejado com o realizado:
 
-- **Acompanhamento (GPR 14):** realizado a cada sprint (planning, review, retrospectiva) e nos marcos, registrado em Relatório de Acompanhamento. Indicadores do projeto (prazo, esforço, escopo, defeitos) são acompanhados conforme a Medição.
-- **Partes interessadas e transição (GPR 15, 16):** o envolvimento das partes interessadas e a transição são monitorados.
-- **Riscos (GPR 17):** monitorados e comunicados continuamente.
-- **Ações corretivas (GPR 18):** desvios identificados geram ações corretivas, acompanhadas até a conclusão (Jira).
+- **Acompanhamento:** realizado a cada sprint (planning, review, retrospectiva) e nos marcos, registrado em Relatório de Acompanhamento. Indicadores do projeto (prazo, esforço, escopo, defeitos) são acompanhados conforme a Medição.
+- **Partes interessadas e transição:** o envolvimento das partes interessadas e a transição são monitorados.
+- **Riscos:** monitorados e comunicados continuamente.
+- **Ações corretivas:** desvios identificados geram ações corretivas, acompanhadas até a conclusão (Jira).
 
-## 11. Análise de causas e melhoria (GPR 19, 20)
+## 11. Análise de causas e melhoria
 
-- **Análise (GPR 19):** resultados significativos (positivos ou negativos) têm suas causas analisadas, especialmente na retrospectiva e no encerramento.
-- **Melhoria (GPR 20):** mudanças e lições aprendidas eficazes são encaminhadas como oportunidades de melhoria à organização (alimentando o ciclo de melhoria de processos, PLA-GPC-001).
+- **Análise:** resultados significativos (positivos ou negativos) têm suas causas analisadas, especialmente na retrospectiva e no encerramento.
+- **Melhoria:** mudanças e lições aprendidas eficazes são encaminhadas como oportunidades de melhoria à organização (alimentando o ciclo de melhoria de processos, PLA-GPC-001).
 
 ## 12. Documentos e artefatos relacionados
 
@@ -105,6 +96,32 @@ O projeto é monitorado continuamente, comparando o planejado com o realizado:
 - EST-GPC-002 — Estratégia de Gerência de Riscos
 - PLA-MED-001 — Plano de Medição
 - PRO-OSW-002 — Gestão de Portfólio de Projetos
+
+## 13. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados **GPR 1 a GPR 20** do processo **Gerência de Projetos (GPR)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| GPR 1 — escopo do projeto estabelecido e mantido | Seção 4 |
+| GPR 2 — adaptação do processo ao projeto | Seção 4 |
+| GPR 3 e GPR 4 — estimativas de tamanho e de esforço, prazo e custo | Seção 5 |
+| GPR 5 — orçamento e cronograma | Seção 5 |
+| GPR 6 e GPR 7 — recursos (humanos, materiais e ambiente) | Seção 6 |
+| GPR 8 — transição | Seção 6 |
+| GPR 9 — partes interessadas | Seção 6 |
+| GPR 10 — riscos | Seção 7 |
+| GPR 11 — viabilidade | Seção 7 |
+| GPR 12 — plano integrado | Seção 8 |
+| GPR 13 — compromisso | Seção 8 |
+| GPR 14 — acompanhamento (monitoramento) | Seção 10 |
+| GPR 15 e GPR 16 — monitoramento das partes interessadas e da transição | Seção 10 |
+| GPR 17 — monitoramento de riscos | Seção 10 |
+| GPR 18 — ações corretivas | Seção 10 |
+| GPR 19 — análise de causas | Seção 11 |
+| GPR 20 — melhoria | Seção 11 |
 
 ---
 

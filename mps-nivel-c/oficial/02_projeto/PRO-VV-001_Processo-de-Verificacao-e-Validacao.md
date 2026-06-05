@@ -7,7 +7,7 @@
 | **Data** | 16/01/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
-| **Processos MPS-SW relacionados** | VV 1 a VV 5 |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -16,30 +16,23 @@
 
 Este processo define como a Timeware verifica e valida seus produtos de software, assegurando que sejam construídos corretamente (verificação) e que atendam às necessidades do cliente (validação), por meio de testes e revisão por pares.
 
-> **Mapa de resultados atendidos neste documento:**
-> - Seção 3 → **VV 1** (produtos a verificar/validar e métodos)
-> - Seção 4 → **VV 2** (revisão por pares)
-> - Seção 5 → **VV 3** (métodos, critérios e ambientes)
-> - Seção 6 → **VV 4** (atividades realizadas e problemas tratados)
-> - Seção 7 → **VV 5** (resultados analisados e comunicados)
-
 ## 2. Conceitos
 
 - **Verificação:** o produto está sendo construído **corretamente**, conforme requisitos e padrões (testes, revisão por pares).
 - **Validação:** o produto **atende à necessidade real** do cliente (validação de requisitos, homologação com o cliente).
 
-## 3. Seleção e planejamento (VV 1)
+## 3. Seleção e planejamento
 
 - Para cada projeto, define-se **o que** será verificado e validado e por **quais métodos**, registrado no **Plano de V&V** (TPL-VV-001).
 - Os métodos combinam, no mínimo: **testes** (executados por QA e desenvolvimento) e **revisão por pares** (code review).
 
-## 4. Revisão por pares (VV 2)
+## 4. Revisão por pares
 
 - O código passa por **revisão por pares (code review)** antes do merge, via Pull Request (Git/Azure DevOps), conforme a Definição de Pronto e a Gerência de Configuração (PLA-GCO-001).
 - A revisão verifica aderência aos padrões, aos requisitos e à qualidade técnica; os apontamentos são tratados antes da aprovação.
 - O registro da revisão é o próprio Pull Request (revisores, comentários, aprovação) e/ou o template TPL-VV-002.
 
-## 5. Métodos, critérios e ambientes (VV 3)
+## 5. Métodos, critérios e ambientes
 
 - **Desenvolvimento:** o desenvolvedor testa o que produziu conforme os **critérios de aceite** definidos.
 - **QA:** aplica metodologias de teste sobre o produto (teste exploratório guiado pelos requisitos, testes funcionais, de integração e outros aplicáveis), documentando os cenários com evidências e formalizando-os em **Gherkin** (`Dado/Quando/Então`) para reúso e eventual automação.
@@ -59,7 +52,7 @@ A decisão de elaborar ou não o mapa de teste segue esta orientação e é regi
 
 **Teste em itens não testáveis de forma real:** quando não é possível executar um teste real sobre o item (por exemplo, determinadas integrações), **não se realiza teste simulado (mocado) como substituto** — um teste mocado não constitui evidência de teste. Nesses casos, a limitação é registrada e a verificação se dá pelos meios aplicáveis (revisão, validação indireta).
 
-## 6. Execução e tratamento de problemas (VV 4)
+## 6. Execução e tratamento de problemas
 
 As atividades de verificação e validação são **executadas** conforme o plano. O fluxo de teste conduzido pelo QA é:
 
@@ -75,7 +68,7 @@ Os **defeitos** identificados são registrados (Jira/Xray), priorizados e **trat
 
 > A automação de testes não é obrigatória em todos os projetos: os cenários Gherkin mantêm o conhecimento de teste documentado e reaproveitável, e a automação é adotada quando a equipe avalia que compensa.
 
-## 7. Análise e comunicação dos resultados (VV 5)
+## 7. Análise e comunicação dos resultados
 
 - Os resultados de V&V são **analisados** (cobertura, defeitos encontrados, defeitos que escaparam para produção) e **registrados**.
 - São **comunicados** aos envolvidos e alimentam os indicadores de qualidade da Medição (PLA-MED-001): densidade de defeitos, defeitos homologação × produção, retrabalho.
@@ -97,6 +90,20 @@ Os **defeitos** identificados são registrados (Jira/Xray), priorizados e **trat
 - PLA-GCO-001 — Plano de Gerência de Configuração
 - PLA-MED-001 — Plano de Medição
 - PRO-REQ-001 — Processo de Engenharia de Requisitos
+
+## 10. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados do processo **Verificação e Validação (VV)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| VV 1 — produtos a verificar/validar e métodos (seleção e planejamento) | Seção 3 |
+| VV 2 — revisão por pares | Seção 4 |
+| VV 3 — métodos, critérios e ambientes | Seção 5 |
+| VV 4 — atividades realizadas e problemas tratados (execução e tratamento de problemas) | Seção 6 |
+| VV 5 — resultados analisados e comunicados | Seção 7 |
 
 ---
 
