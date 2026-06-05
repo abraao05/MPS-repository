@@ -24,9 +24,9 @@
 |---|---|---|---|
 | Processo-Padrão Organizacional | PRO-GPC-001 | 2.2 | ✅ Produzido |
 | Guia de Adaptação do Processo-Padrão | GUIA-GPC-001 | 1.2 | ✅ Produzido |
-| Definição do Time de Melhoria Contínua | PRO-GPC-002 | 1.1 | ✅ Produzido |
-| Estratégia de Garantia da Qualidade | EST-GPC-001 | 1.2 | ✅ Produzido |
-| Estratégia de Gerência de Riscos e Oportunidades | EST-GPC-002 | 1.1 | ✅ Produzido |
+| Definição do Time de Melhoria Contínua | PRO-GPC-002 | 1.2 | ✅ Produzido |
+| Estratégia de Garantia da Qualidade | EST-GPC-001 | 1.3 | ✅ Produzido |
+| Estratégia de Gerência de Riscos e Oportunidades | EST-GPC-002 | 1.2 | ✅ Produzido |
 | Plano de Gestão e Melhoria de Processos | PLA-GPC-001 | 1.4 | ✅ Produzido |
 | Convenção de Nomenclatura e Versionamento | CONV-ORG-001 | 1.1 | ✅ Produzido |
 
@@ -94,7 +94,7 @@
 
 | Documento | Código | Versão | Situação |
 |---|---|---|---|
-| Processo de Gerência de Decisões | PRO-GDE-001 | 1.1 | ✅ Produzido |
+| Processo de Gerência de Decisões | PRO-GDE-001 | 1.2 | ✅ Produzido |
 | Template de Registro de Análise de Decisão | TPL-GDE-001 | 1.0 | ✅ Produzido |
 
 ### GCO — Gerência de Configuração
@@ -114,8 +114,8 @@
 
 | Documento | Código | Versão | Situação |
 |---|---|---|---|
-| Processo de Gerência de Projetos | PRO-GPR-001 | 1.3 | ✅ Produzido |
-| Template de Plano de Projeto | TPL-GPR-001 | 1.0 | ✅ Produzido |
+| Processo de Gerência de Projetos | PRO-GPR-001 | 1.4 | ✅ Produzido |
+| Template de Plano de Projeto | TPL-GPR-001 | 1.1 | ✅ Produzido |
 | Template de Termo de Abertura do Projeto | TPL-GPR-002 | 1.0 | ✅ Produzido |
 | Template de Registro de Adaptação do Processo | TPL-GPR-003 | 1.0 | ✅ Produzido |
 | Template de Termo de Encerramento e Aceite | TPL-GPR-004 | 1.0 | ✅ Produzido |
@@ -157,7 +157,7 @@
 | Documento | Código | Versão | Situação |
 |---|---|---|---|
 | Mapa de Capacidade dos Processos | MAPA-CAP-001 | 1.1 | ✅ Produzido |
-| Template de Registro de Verificação de GQA | TPL-GPC-001 | 1.0 | ✅ Produzido |
+| Template de Registro de Verificação de GQA | TPL-GPC-001 | 1.1 | ✅ Produzido |
 
 ---
 

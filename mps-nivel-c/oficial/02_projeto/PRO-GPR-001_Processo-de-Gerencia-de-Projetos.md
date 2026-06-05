@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPR-001 — Processo de Gerência de Projetos |
-| **Versão** | 1.3 |
-| **Data** | 19/05/2026 |
+| **Versão** | 1.4 |
+| **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -123,6 +123,13 @@ Este documento corresponde aos resultados **GPR 1 a GPR 20** do processo **Gerê
 | GPR 19 — análise de causas | Seção 11 |
 | GPR 20 — melhoria | Seção 11 |
 
+**Nomenclatura equivalente — templates MPS do consultor de avaliação**
+
+| Artefato Timeware | Código Timeware | Equivalente nos templates MPS (consultor) |
+|---|---|---|
+| Registro de riscos do projeto (§9 do Plano) | TPL-GPR-001 §9 | `TMP_Risco` — planilha "GP Planejamento de Risco" com Exposição = Probabilidade × Impacto |
+| Processo de Gerência de Projetos | PRO-GPR-001 | `PRO-Ger.Projetos` |
+
 ---
 
 ## Histórico de revisões
@@ -133,3 +140,4 @@ Este documento corresponde aos resultados **GPR 1 a GPR 20** do processo **Gerê
 | 1.1 | 12/12/2025 | Time de Melhoria Contínua | Alinhamento ao novo fluxo: kickoff gerencial, concepção em trilhas, aprovação do plano e baseline |
 | 1.2 | 15/01/2026 | Time de Melhoria Contínua | Inclusão dos marcos de abertura/encerramento de projeto (Termo de Encerramento) e distinção entre aceite de produto (review) e encerramento de projeto |
 | 1.3 | 19/05/2026 | Time de Melhoria Contínua | Seção de rastreabilidade e instrução para auditoria; ajuste para linguagem operacional |
+| 1.4 | 05/06/2026 | Time de Melhoria Contínua | Adição de tabela de nomenclatura equivalente MPS (TMP_Risco, PRO-Ger.Projetos) na seção de rastreabilidade |
