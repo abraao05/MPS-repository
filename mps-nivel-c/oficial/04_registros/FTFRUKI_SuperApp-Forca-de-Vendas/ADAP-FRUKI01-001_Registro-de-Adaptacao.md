@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | ADAP-FRUKI01-001 |
 | **Projeto** | SuperApp Fruki — Pacote 1 — Módulo Metas e Remuneração Variável |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 05/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira |
 
@@ -29,11 +29,11 @@
 | Design de UX/UI | Sim | Protótipos criados em Figma por Brenda Chrystie e validados por Cecília Ribeiro antes de cada sprint de desenvolvimento |
 | Documento de Requisitos | Sim | Levantamento formal das features por módulo, com regras de negócio fornecidas pela Fruki |
 | Plano de V&V | Sim | Testes funcionais via APK com cliente e verificação técnica via revisão de PR |
-| Estratégia de integração | Aplicável — simplificada | Integração com APIs REST da Fruki via endpoints documentados; versionamento de branches no Azure DevOps |
+| Estratégia de integração | Aplicável — simplificada | Integração com 4 APIs REST da Fruki via endpoints documentados; versionamento de branches no Azure DevOps. Ver `ITP-FRUKI01-001_Estrategia-de-Integracao.md` |
 | Mapa de rastreabilidade | Sim | Requisitos rastreados aos módulos entregues e às PRs no Azure DevOps |
 | Revisão por pares | Sim | Revisão técnica das PRs pelo Jardel (Fruki) antes do merge; revisão interna de código pela equipe Timeware |
 | Registro de capacitação | Não aplicável | Não há treinamento formal de usuários no escopo deste projeto; a equipe técnica da Fruki acessa o repositório e as APIs diretamente |
-| Gestão de decisões arquiteturais (GDE) | Simplificada | Decisões técnicas registradas em e-mails e atas de reunião; arquitetura React Native já estabelecida — não há decisão arquitetural de alto impacto neste projeto |
+| Gestão de decisões arquiteturais (GDE) | Aplicável — simplificada | Decisão técnica de tratamento de latência e normalização no front-end registrada em `GDE-FRUKI01-001_Registro-de-Decisao.md` |
 
 ## 3. Pontos de controle obrigatórios (não adaptáveis)
 
@@ -50,3 +50,4 @@
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado jun/2025–set/2025) |
+| 1.1 | 05/06/2026 | Abraão Oliveira | ITP e GDE referenciados explicitamente na tabela de etapas |

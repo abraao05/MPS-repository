@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | ADAP-FRUKI01-002 |
 | **Projeto** | SuperApp Fruki — Pacote Final 24 |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 05/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira |
 
@@ -29,11 +29,11 @@
 | Design de UX/UI | Sim | Protótipos para cada módulo (Não Alocados, Regra de Ouro, PDV) criados por Brenda e validados por Cecília antes de cada sprint |
 | Documento de Requisitos | Sim | REQ-FRUKI01-002 — 10 RF e 5 RNF, levantados nas reuniões de entendimento de demanda |
 | Plano de V&V | Sim | Testes funcionais via APK com cliente; verificação técnica via revisão de PR pelo Jardel |
-| Estratégia de integração | Aplicável — simplificada | Integração com APIs REST da Fruki via endpoints documentados; versionamento de branches no Azure DevOps |
+| Estratégia de integração | Aplicável — simplificada | Integração com APIs REST da Fruki via endpoints documentados; versionamento de branches no Azure DevOps. Ver `ITP-FRUKI01-002_Estrategia-de-Integracao-PacoteFinal24.md` |
 | Mapa de rastreabilidade | Sim | Requisitos rastreados aos módulos entregues e às PRs no Azure DevOps |
 | Revisão por pares | Sim | Revisão técnica das PRs pelo Jardel (Fruki) antes do merge; revisão interna pela equipe Timeware |
 | Registro de capacitação | Não aplicável | Sem treinamento formal de usuários no escopo |
-| Gestão de decisões arquiteturais (GDE) | Simplificada | Decisões técnicas registradas em e-mails e atas; arquitetura React Native já estabelecida no Pacote 1 |
+| Gestão de decisões arquiteturais (GDE) | Aplicável — simplificada | Decisão de renomeação "Caixa Preta" → "Regra de Ouro" registrada em `GDE-FRUKI01-001_Registro-de-Decisao.md` — Decisão 2; arquitetura React Native já estabelecida no Pacote 1 |
 
 ## 3. Pontos de controle obrigatórios (não adaptáveis)
 
@@ -50,3 +50,4 @@
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
+| 1.1 | 05/06/2026 | Abraão Oliveira | ITP-FRUKI01-002 e GDE-FRUKI01-001 referenciados explicitamente na tabela de etapas |
