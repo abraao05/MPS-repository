@@ -76,11 +76,11 @@
 
 ## 9. Riscos (GPR 10)
 
-*[Registre os principais riscos identificados. O acompanhamento detalhado é feito no Jira conforme EST-GPC-002.]*
+*[Registre os principais riscos identificados. O acompanhamento detalhado é feito no Jira conforme EST-GPC-002. Exposição = Probabilidade × Impacto; escala 1–3 em cada dimensão (resultado 1–9). Ver faixas de criticidade em EST-GPC-002 §4.]*
 
-| Risco | Prob. | Impacto | Resposta |
-|---|---|---|---|
-| [risco] | [1-3] | [1-3] | [mitigar/evitar/...] |
+| Risco | Prob. (1–3) | Impacto (1–3) | Exposição (P×I) | Resposta |
+|---|---|---|---|---|
+| [risco] | [1–3] | [1–3] | [1–9] | [mitigar / evitar / aceitar / transferir] |
 
 ## 10. Viabilidade (GPR 11)
 

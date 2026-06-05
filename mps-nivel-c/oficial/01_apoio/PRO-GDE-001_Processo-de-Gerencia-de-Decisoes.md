@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GDE-001 — Processo de Gerência de Decisões |
-| **Versão** | 1.1 |
-| **Data** | 12/02/2026 |
+| **Versão** | 1.2 |
+| **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -95,6 +95,12 @@ Este documento corresponde aos resultados do processo **Gerência de Decisões (
 | GDE 5 — alternativas avaliadas conforme critérios e métodos | Seção 4 |
 | GDE 6 — decisão registrada e comunicada | Seção 5 |
 
+**Nomenclatura equivalente — templates MPS do consultor de avaliação**
+
+| Artefato Timeware | Código Timeware | Equivalente nos templates MPS (consultor) |
+|---|---|---|
+| Registro de Análise de Decisão | TPL-GDE-001 | `TDA-Tomada_Decisao_Arquitetural` |
+
 ---
 
 ## Histórico de revisões
@@ -103,3 +109,4 @@ Este documento corresponde aos resultados do processo **Gerência de Decisões (
 |---|---|---|---|
 | 1.0 | 17/09/2025 | Time de Melhoria Contínua | Definição inicial do processo de gerência de decisões |
 | 1.1 | 12/02/2026 | Time de Melhoria Contínua | Refinamento do gatilho de alto impacto com limiar orientativo de 10% sobre prazo/custo (§3) |
+| 1.2 | 05/06/2026 | Time de Melhoria Contínua | Adição de tabela de nomenclatura equivalente MPS (TDA-Tomada_Decisao_Arquitetural) na seção de rastreabilidade |
