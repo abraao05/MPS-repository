@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAT-CAP-020 — Trilha QA |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 15/02/2026 |
 | **Papel** | QA |
 | **Processos cobertos** | VV (Verificação e Validação) |
 
@@ -119,4 +119,6 @@ Você gera os principais dados de **qualidade** do PLA-MED-001. Você registra, 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada no processo VV |
+| 1.0 | 10/03/2025 | Time de Melhoria Contínua | Versão inicial — baseada no processo VV |
+| 1.1 | 22/09/2025 | Time de Melhoria Contínua | Inclusão de Gherkin como prática obrigatória, após dúvidas identificadas no REL-CAP-001 |
+| 1.2 | 15/02/2026 | Time de Melhoria Contínua | Atualização conforme PRO-VV-001 v1.2 |

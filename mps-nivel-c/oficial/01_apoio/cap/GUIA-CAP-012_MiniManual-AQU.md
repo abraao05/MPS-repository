@@ -1,5 +1,14 @@
 # Mini-manual — Aquisição
 
+| Campo | Valor |
+|---|---|
+| **Documento** | GUIA-CAP-012 — Mini-manual AQU |
+| **Versão** | 1.0 |
+| **Data** | 15/01/2026 |
+
+---
+
+
 **O que é.** O processo que governa a contratação de fornecedores e a aquisição de produtos ou serviços externos. Garante que o que é adquirido atende aos requisitos e que o fornecedor cumpre os compromissos acordados.
 
 **O que ele garante.** Que (1) há critérios definidos para selecionar fornecedores; (2) os requisitos e expectativas são acordados formalmente antes do início; (3) o desempenho do fornecedor é monitorado ao longo do engajamento; (4) os produtos ou serviços entregues são aceitos com base em critérios claros; (5) o encerramento é formal.
@@ -14,3 +23,11 @@
 5. Monitore o desempenho ao longo do contrato e registre os aceites com base nos critérios definidos.
 
 **Erro comum a evitar.** Tratar contratos como formalidade jurídica e não como referência operacional. Os critérios de aceite do contrato são os mesmos que guiam o monitoramento durante a execução — se estiverem vagos no contrato, o monitoramento não tem base.
+
+---
+
+## Histórico de revisões
+
+| Versão | Data | Autor | Descrição |
+|---|---|---|---|
+| 1.0 | 15/01/2026 | Time de Melhoria Contínua | Versão inicial |

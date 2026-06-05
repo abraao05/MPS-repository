@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAT-CAP-022 — Trilha Responsável de Medição |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 10/01/2026 |
 | **Papel** | Responsável de Medição (operação) |
 | **Processos cobertos** | MED (Medição — operação) |
 
@@ -99,4 +99,5 @@ Você opera a medição; quem usa para decidir é a análise crítica trimestral
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada no processo MED |
+| 1.0 | 05/08/2025 | Time de Melhoria Contínua | Versão inicial — baseada no processo MED |
+| 1.1 | 10/01/2026 | Time de Melhoria Contínua | Alinhamento com PLA-MED-001 v1.3 e atualização dos exemplos |

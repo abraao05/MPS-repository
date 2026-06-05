@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAT-CAP-021 — Trilha GCO Baseline / Auditoria |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 22/09/2025 |
 | **Papel** | GCO — Baseline / Auditoria de Configuração |
 | **Processos cobertos** | GCO (Gerência de Configuração) |
 
@@ -101,4 +101,5 @@ Você não alimenta os 7 indicadores de projeto. O que você observa é a **inte
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada no processo GCO |
+| 1.0 | 10/03/2025 | Time de Melhoria Contínua | Versão inicial — baseada no processo GCO |
+| 1.1 | 22/09/2025 | Time de Melhoria Contínua | Revisão da fronteira de papéis DevOps × GCO Baseline |

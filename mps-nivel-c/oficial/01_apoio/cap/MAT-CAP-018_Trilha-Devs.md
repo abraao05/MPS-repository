@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAT-CAP-018 — Trilha Desenvolvedores |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 10/01/2026 |
 | **Papel** | Desenvolvedores |
 | **Processos cobertos** | PCP (Projeto e Construção do Produto) |
 
@@ -93,4 +93,6 @@ Você gera dados de **previsibilidade** e **qualidade**. Você registra, não ca
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada no processo PCP |
+| 1.0 | 10/12/2024 | Time de Melhoria Contínua | Versão inicial — baseada no processo PCP |
+| 1.1 | 15/04/2025 | Time de Melhoria Contínua | Clarificação sobre dados a registrar no Jira para indicadores de medição |
+| 1.2 | 10/01/2026 | Time de Melhoria Contínua | Atualização conforme PRO-PCP-001 v1.1 |

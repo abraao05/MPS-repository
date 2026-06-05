@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAT-CAP-017 — Trilha PO / PM |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 10/01/2026 |
 | **Papel** | PO / PM (papel acumulável) |
 | **Processos cobertos** | REQ (Engenharia de Requisitos) |
 
@@ -88,4 +88,6 @@ Você contribui com um dado de previsibilidade: **itens entregues × planejados*
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada no processo REQ |
+| 1.0 | 10/12/2024 | Time de Melhoria Contínua | Versão inicial — baseada no processo REQ |
+| 1.1 | 15/04/2025 | Time de Melhoria Contínua | Inclusão de exemplos de critérios de aceite e rastreabilidade |
+| 1.2 | 10/01/2026 | Time de Melhoria Contínua | Revisão conforme PRO-REQ-001 v1.1 |

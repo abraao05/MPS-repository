@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | AVA-CAP-005 — Avaliação Trilha GPC / MED / CAP |
 | **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Data** | 05/08/2025 |
 | **Aplicação** | Time de Melhoria Contínua, RH/Pessoas, Responsável de Medição |
 | **Pré-requisito** | AVA-CAP-001 aprovado |
 | **Referência** | PLA-CAP-001 §4; MAT-CAP-013, MAT-CAP-014, MAT-CAP-015, MAT-CAP-022; GUIA-CAP-008, 009, 011 |
@@ -104,4 +104,4 @@ A pontuação é normalizada para 100 com base nas questões aplicáveis ao pape
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial |
+| 1.0 | 05/08/2025 | Time de Melhoria Contínua | Versão inicial |

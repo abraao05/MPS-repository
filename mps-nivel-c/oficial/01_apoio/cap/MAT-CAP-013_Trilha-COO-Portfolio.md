@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAT-CAP-013 — Trilha COO / Portfólio |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 10/01/2026 |
 | **Papel** | COO / Portfólio |
 | **Processos cobertos** | OSW (Gerência Organizacional de Software), MED (uso / análise crítica) |
 
@@ -110,4 +110,5 @@ Você não alimenta os 7 indicadores de projeto diretamente. O que você mede é
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada nos processos OSW e MED |
+| 1.0 | 05/08/2025 | Time de Melhoria Contínua | Versão inicial |
+| 1.1 | 10/01/2026 | Time de Melhoria Contínua | Atualização após revisão dos processos PRO-OSW-001 e PRO-OSW-002 |
