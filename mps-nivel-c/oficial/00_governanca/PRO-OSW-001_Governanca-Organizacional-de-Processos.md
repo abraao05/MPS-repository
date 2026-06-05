@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-OSW-001 — Governança Organizacional de Processos |
-| **Versão** | 1.1 |
-| **Data** | 24/11/2025 |
+| **Versão** | 1.2 |
+| **Data** | 12/03/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações), com patrocínio do Founder e CEO |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -44,6 +44,34 @@ A organização define a autoridade e as competências necessárias para a opera
 | Execução | Equipes de Engenharia / QA | Executam o trabalho conforme os processos e padrões. |
 
 As competências necessárias a cada papel são desenvolvidas por meio da capacitação (CAP), alinhando os colaboradores aos objetivos da organização.
+
+### 4.1. Competências por papel
+
+A tabela abaixo descreve as competências esperadas de cada papel para a operação dos processos, alinhadas ao objetivo de negócio de crescer com qualidade e previsibilidade:
+
+| Papel | Competências esperadas |
+|---|---|
+| Founder e CEO | Liderança estratégica; tomada de decisão orientada a resultados; compreensão do negócio e do mercado de software. |
+| COO (Operações) | Gestão de operações e portfólio; leitura de indicadores de processo; tomada de decisão baseada em dados; gestão de pessoas e recursos. |
+| Time de Melhoria Contínua | Conhecimento do modelo MPS-SW e dos processos da Timeware; análise e melhoria de processos; elaboração de planos e documentação; facilitação de grupos. |
+| Gerente de Projeto | Planejamento e controle de projetos; gestão de riscos e partes interessadas; comunicação com o cliente; uso das ferramentas (Jira, Confluence); conhecimento dos processos organizacionais. |
+| Equipes de Engenharia / QA | Engenharia de software e/ou qualidade; uso das ferramentas (Git, Azure DevOps, Jira, Xray); seguimento dos processos e padrões; colaboração em equipe. |
+
+O desenvolvimento dessas competências é planejado e acompanhado conforme o Plano de Capacitação (PLA-CAP-001).
+
+### 4.2. Matriz RACI das atividades-chave de governança
+
+A matriz abaixo indica a responsabilidade de cada papel nas principais atividades de governança dos processos. Legenda: **R** = Responsável pela execução · **A** = Autoridade (aprova/decide) · **C** = Consultado · **I** = Informado.
+
+| Atividade | CEO | COO | TMC | GP | Equipes |
+|---|---|---|---|---|---|
+| Definir e manter processos-padrão | I | A | R | C | I |
+| Garantir recursos para os processos | A | R | C | — | — |
+| Conduzir análise crítica dos processos | I | R/A | C | I | — |
+| Verificar aderência dos projetos (GQA) | — | I | R | C | C |
+| Planejar e conduzir capacitação | I | A | C | C | — |
+| Priorizar e implementar melhorias | A | R | R | C | C |
+| Gerenciar portfólio e alocar recursos | I | R/A | C | C | — |
 
 ## 5. Riscos e oportunidades organizacionais
 
@@ -108,3 +136,4 @@ Este documento corresponde aos resultados **OSW 2 a OSW 7** do processo **Gerên
 |---|---|---|---|
 | 1.0 | 27/08/2025 | Time de Melhoria Contínua | Definição inicial da governança organizacional de processos |
 | 1.1 | 24/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO na autoridade; análise crítica conduzida pelo COO com reporte ao CEO |
+| 1.2 | 12/03/2026 | Time de Melhoria Contínua | Adição da tabela de competências por papel (§4.1) e da matriz RACI das atividades-chave de governança (§4.2) |

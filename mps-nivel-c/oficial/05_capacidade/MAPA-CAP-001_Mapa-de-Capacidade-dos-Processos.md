@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-CAP-001 — Mapa de Capacidade dos Processos |
-| **Versão** | 1.0 |
-| **Data** | 10/11/2025 |
+| **Versão** | 1.1 |
+| **Data** | 20/02/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C (atributos de capacidade CP-E, CP-D, CP-C) |
@@ -65,6 +65,13 @@ Para cada um, a capacidade é demonstrada da seguinte forma:
 - **Verificado e avaliado:** aderência e produtos verificados pela GQA (EST-GPC-001).
 - **Melhorado e compartilhado:** oportunidades de melhoria (GPC) e informações disponibilizadas na biblioteca de processos e no repositório de medidas.
 
+Após o primeiro ciclo de implantação (Q4/2025–Q1/2026), o Time de Melhoria Contínua realizou uma **revisão da correspondência** deste mapa, verificando que:
+- todos os 12 processos no escopo possuem o ativo organizacional correspondente a cada RAP;
+- os ativos transversais (POL-ORG-001, PRO-GPC-001, EST-GPC-001, PLA-CAP-001, PLA-GCO-001, PLA-MED-001) cobrem sistematicamente os RAP de capacidade para todos os processos;
+- o Registro de Adaptação (TPL-GPR-003) está disponível como mecanismo de adaptação por projeto.
+
+A correspondência foi confirmada. A comprovação objetiva da capacidade permanece dependente das evidências de execução dos projetos avaliados.
+
 ## 5. Comprovação na avaliação
 
 Este mapa demonstra que a **definição** da capacidade está estabelecida. A **comprovação objetiva** ocorre quando, nos projetos selecionados para a avaliação, evidencia-se que cada processo foi:
@@ -97,3 +104,4 @@ A camada de evidências dos projetos é, portanto, o complemento necessário des
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 10/11/2025 | Time de Melhoria Contínua | Definição inicial do mapa de capacidade dos processos |
+| 1.1 | 20/02/2026 | Time de Melhoria Contínua | Inclusão do resultado da revisão de correspondência após o primeiro ciclo de implantação (§4) |
