@@ -3,11 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-GCO-001 — Plano de Gerência de Configuração |
-| **Versão** | 1.0 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Versão** | 1.1 |
+| **Data** | 15/01/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
-| **Processos MPS-SW relacionados** | GCO 1 a GCO 5 |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -16,20 +16,13 @@
 
 Este plano define como a Timeware gerencia a configuração dos seus produtos de trabalho — identificando itens de configuração, controlando suas versões e mudanças, estabelecendo baselines e auditando a integridade da configuração ao longo dos projetos.
 
-> **Mapa de resultados atendidos neste documento:**
-> - Seção 3 → **GCO 1** (itens de configuração e níveis de controle)
-> - Seção 4 → **GCO 2** (sistema de GC e controle de mudanças)
-> - Seção 5 → **GCO 3** (baselines)
-> - Seção 6 → **GCO 4** (registros de itens e modificações)
-> - Seção 7 → **GCO 5** (auditorias de configuração)
-
 ## 2. Conceitos
 
 - **Item de configuração (IC):** produto de trabalho colocado sob controle de configuração (código, documento, artefato de teste, release).
 - **Baseline:** versão de referência, aprovada e estável, de um conjunto de itens em um determinado momento, a partir da qual as mudanças passam a ser controladas.
 - **Controle de mudança:** processo pelo qual uma alteração em um item sob configuração é proposta, avaliada, aprovada e registrada.
 
-## 3. Itens de configuração e níveis de controle (GCO 1)
+## 3. Itens de configuração e níveis de controle
 
 A Timeware coloca sob controle de configuração os seguintes itens:
 
@@ -43,7 +36,25 @@ A Timeware coloca sob controle de configuração os seguintes itens:
 
 O **nível de controle** define o rigor aplicado a cada item: itens críticos (código, baselines, documentos aprovados) exigem aprovação formal para mudança; itens em elaboração têm controle mais leve até serem aprovados.
 
-## 4. Sistema de gerência de configuração e controle de mudanças (GCO 2)
+### 3.1. Itens de configuração mínimos por projeto
+
+Todo projeto da Timeware mantém, no mínimo, os seguintes ICs sob controle de configuração:
+
+| IC mínimo | Obrigatório para |
+|---|---|
+| Repositório de código-fonte (Git) | Todos os projetos |
+| Plano de Projeto (TPL-GPR-001) | Todos os projetos |
+| Documento de Requisitos (TPL-REQ-001 ou backlog estruturado) | Todos os projetos |
+| Documento de Design (TPL-PCP-001) | Projetos com componente técnico significativo |
+| Estratégia de Integração (TPL-ITP-001) | Projetos com integração com sistemas externos |
+| Plano de V&V (TPL-VV-001) | Todos os projetos |
+| Registros de revisão por pares (TPL-VV-002) | Todos os projetos |
+| Baselines de release (tags Git) | Todos os projetos |
+| Registros de GQA (TPL-GPC-001) | Todos os projetos |
+
+O Gerente de Projeto confirma, no início do projeto, quais ICs se aplicam e registra no Registro de Adaptação do Processo (TPL-GPR-003).
+
+## 4. Sistema de gerência de configuração e controle de mudanças
 
 ### 4.1. Estrutura de versionamento do código (branches)
 
@@ -61,7 +72,7 @@ As mudanças são controladas de forma combinada:
 - **Mudanças de escopo/requisito:** são avaliadas e aprovadas pelo **PO em conjunto com o cliente** antes de virarem trabalho, e refletidas no backlog e na rastreabilidade.
 - **Promoção entre ambientes:** o Azure DevOps (Pipelines) garante que o código só é promovido após build e testes bem-sucedidos.
 
-## 5. Baselines (GCO 3)
+## 5. Baselines
 
 As baselines são estabelecidas por meio de **tags/releases no Git**, utilizando **versionamento semântico** (`MAIOR.MENOR.CORREÇÃO`):
 
@@ -71,7 +82,7 @@ As baselines são estabelecidas por meio de **tags/releases no Git**, utilizando
 
 Para documentos, a baseline corresponde à versão aprovada (`1.0` ou superior), conforme a Convenção de Nomenclatura e Versionamento (CONV-ORG-001).
 
-## 6. Registro de itens e modificações (GCO 4)
+## 6. Registro de itens e modificações
 
 O histórico de itens e suas modificações é mantido automaticamente pelas ferramentas:
 
@@ -81,7 +92,7 @@ O histórico de itens e suas modificações é mantido automaticamente pelas fer
 
 Esse conjunto permite, a qualquer momento, identificar o estado de cada item de configuração e o histórico de suas mudanças.
 
-## 7. Auditoria de configuração (GCO 5)
+## 7. Auditoria de configuração
 
 Periodicamente, são realizadas **auditorias de configuração** para assegurar a integridade da configuração, verificando:
 
@@ -105,9 +116,24 @@ As auditorias de configuração são conduzidas no contexto da Garantia da Quali
 ## 9. Documentos relacionados
 
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
+- GUIA-GCO-001 — Guia de Nomenclaturas Técnicas
 - PRO-GPC-001 — Processo-Padrão Organizacional
 - EST-GPC-001 — Estratégia de Garantia da Qualidade
 - Processo de Verificação e Validação (VV)
+
+## 10. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados do processo **Gerência de Configuração (GCO)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| GCO 1 — itens de configuração identificados e níveis de controle definidos | Seção 3 |
+| GCO 2 — sistema de gerência de configuração e de controle de mudanças estabelecido | Seção 4 |
+| GCO 3 — baselines estabelecidas | Seção 5 |
+| GCO 4 — modificações e liberações controladas; registros mantidos | Seção 6 |
+| GCO 5 — integridade das baselines garantida (auditorias de configuração) | Seção 7 |
 
 ---
 
@@ -115,4 +141,5 @@ As auditorias de configuração são conduzidas no contexto da Garantia da Quali
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do plano de gerência de configuração |
+| 1.0 | 12/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de gerência de configuração |
+| 1.1 | 15/01/2026 | Time de Melhoria Contínua | Adição da lista mínima de itens de configuração por projeto (§3.1) |

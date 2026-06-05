@@ -4,10 +4,10 @@
 |---|---|
 | **Documento** | EST-GPC-002 — Estratégia de Gerência de Riscos e Oportunidades |
 | **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 25/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
-| **Processo MPS-SW relacionado** | GPC 7 (estratégia de gerência de riscos) |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -101,11 +101,21 @@ Além dos riscos de projeto, a Timeware acompanha riscos de natureza organizacio
 - Gerência Organizacional de Software (OSW)
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
 
+## 9. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde a **um resultado** do processo **Gerência de Processos (GPC)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| GPC 7 — estratégia organizacional de gerência de riscos e oportunidades (categorias, parâmetros, responsabilidades) | Seções 3 (categorias), 4 (parâmetros de análise e ciclo), 5 (registro), 6 (riscos organizacionais) e 7 (responsabilidades) |
+
 ---
 
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial da estratégia de gerência de riscos e oportunidades |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Inclusão da camada COO no tratamento de riscos organizacionais |
+| 1.0 | 20/08/2025 | Time de Melhoria Contínua | Definição inicial da estratégia de gerência de riscos e oportunidades |
+| 1.1 | 25/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO no tratamento de riscos organizacionais |

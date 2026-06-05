@@ -4,10 +4,10 @@
 |---|---|
 | **Documento** | PRO-PCP-001 — Processo de Projeto e Construção do Produto |
 | **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 15/12/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
-| **Processos MPS-SW relacionados** | PCP 1, PCP 2, PCP 3 |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -15,11 +15,6 @@
 ## 1. Propósito
 
 Este processo define como a Timeware projeta (design) e constrói o produto de software, a partir dos requisitos, garantindo que a solução seja desenhada com base em critérios, avaliada antes da construção, e implementada conforme o design — com rastreabilidade entre requisitos, design e código.
-
-> **Mapa de resultados atendidos neste documento:**
-> - Seção 3 → **PCP 1** (design desenvolvido, baseado em critérios e rastreável)
-> - Seção 4 → **PCP 2** (design avaliado e problemas tratados)
-> - Seção 5 → **PCP 3** (produto implementado conforme o design)
 
 ## 2. Visão geral
 
@@ -30,20 +25,20 @@ O design ocorre em dois momentos distintos: (a) na **concepção** (antes da con
 
 A aplicabilidade do design de UX/UI é definida na adaptação do projeto (GUIA-GPC-001): projetos sem front-end (APIs, serviços) mantêm apenas o design técnico.
 
-## 3. Desenvolvimento do design (PCP 1)
+## 3. Desenvolvimento do design
 
 - O design é desenvolvido a partir dos **requisitos** (PRO-REQ-001), buscando uma solução adequada com base em **critérios** (atendimento ao requisito, viabilidade técnica, manutenibilidade, desempenho, segurança).
 - Quando há mais de uma alternativa de solução relevante, a escolha pode seguir o processo de **Gerência de Decisões** (PRO-GDE-001).
 - O design é documentado no **Documento de Design** (TPL-PCP-001), abrangendo, conforme aplicável: arquitetura, modelo de dados, integrações e, quando houver UX/UI, telas/protótipos.
 - É mantida a **rastreabilidade** entre requisitos e elementos de design (registrada na Matriz de Rastreabilidade — TPL-REQ-002).
 
-## 4. Avaliação do design (PCP 2)
+## 4. Avaliação do design
 
 - O design é **avaliado antes da construção**, verificando aderência aos requisitos, consistência e viabilidade.
 - Quando há UX/UI, o protótipo é **validado com o cliente**; o design técnico é revisado pela equipe técnica (Arquiteto/Tech Lead).
 - Problemas identificados na avaliação são **tratados** antes de a construção do item correspondente iniciar.
 
-## 5. Construção do produto (PCP 3)
+## 5. Construção do produto
 
 - O produto é **implementado conforme o design** validado, em sprints, seguindo o fluxo do processo-padrão (PRO-GPC-001).
 - O código é versionado e controlado conforme a Gerência de Configuração (PLA-GCO-001).
@@ -70,11 +65,23 @@ A aplicabilidade do design de UX/UI é definida na adaptação do projeto (GUIA-
 - PRO-GDE-001 — Processo de Gerência de Decisões
 - Processo de Verificação e Validação (VV)
 
+## 8. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados do processo **Projeto e Construção do Produto (PCP)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| PCP 1 — design desenvolvido, baseado em critérios e rastreável | Seção 3 |
+| PCP 2 — design avaliado e problemas tratados | Seção 4 |
+| PCP 3 — produto implementado conforme o design | Seção 5 |
+
 ---
 
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de projeto e construção do produto |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Distinção entre design na concepção (pré-plano) e design adiantado nas sprints |
+| 1.0 | 14/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de projeto e construção do produto |
+| 1.1 | 15/12/2025 | Time de Melhoria Contínua | Distinção entre design na concepção (pré-plano) e design adiantado nas sprints |

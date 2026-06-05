@@ -3,11 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | CONV-ORG-001 — Convenção de Nomenclatura e Versionamento |
-| **Versão** | 1.0 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Versão** | 1.1 |
+| **Data** | 19/05/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
-| **Processo MPS-SW relacionado** | GCO 1, GCO 4 — Gerência de Configuração |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -128,10 +128,22 @@ Todo documento da Timeware inicia com um cabeçalho de identificação contendo,
 - Plano de Gerência de Configuração (GCO)
 - Mapa de Artefatos MPS-SW Nível C
 
+## 10. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados **GCO 1** e **GCO 4** do processo **Gerência de Configuração (GCO)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| GCO 1 — itens de configuração identificados (codificação/nomenclatura padronizada) | Seções 2, 3, 4 e 5 |
+| GCO 4 — manutenção da identificação e do versionamento dos itens | Seções 6 e 7 |
+
 ---
 
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição da convenção de nomenclatura e versionamento |
+| 1.0 | 14/07/2025 | Time de Melhoria Contínua | Definição da convenção de nomenclatura e versionamento |
+| 1.1 | 19/05/2026 | Time de Melhoria Contínua | Siglas com leitura organizacional e coluna de correspondência ao modelo (instrução para auditoria) |

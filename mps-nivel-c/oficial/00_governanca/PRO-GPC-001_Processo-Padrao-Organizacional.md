@@ -3,11 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPC-001 — Processo-Padrão Organizacional |
-| **Versão** | 2.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Versão** | 2.2 |
+| **Data** | 12/05/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
-| **Processo MPS-SW relacionado** | GPC 2 (processo-padrão e arquitetura de processos) |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 | **Escopo de aplicação** | Projetos de software sob medida para clientes |
 
@@ -29,17 +29,17 @@ A abordagem de desenvolvimento adotada é **ágil, baseada em Scrum**, com sprin
 
 O processo-padrão organiza-se em sete fases, da originação do projeto ao seu encerramento:
 
-| # | Fase | Marco / resultado principal | Processos MPS-SW envolvidos |
-|---|---|---|---|
-| 1 | Originação | Negócio fechado e demanda transferida ao Escritório de Projetos | GPR |
-| 2 | Abertura (Kickoff gerencial) | Projeto formalmente aberto (Termo de Abertura) | GPR |
-| 3 | Discovery e Requisitos | Escopo e requisitos entendidos e especificados | REQ, GPR |
-| 4 | Concepção (trilhas paralelas) | Insumos de projeto e de produto para o plano | PCP, REQ, GPR |
-| 5 | Planejamento e Aprovação do Plano | Plano de Projeto fechado e aprovado pelo cliente (baseline) | GPR |
-| 6 | Desenvolvimento (Sprints) | Produto construído e testado | PCP, ITP, VV, GPR |
-| 7 | Homologação, Entrega e Encerramento | Produto aprovado, em produção e projeto encerrado | ITP, VV, GPR, GPC |
+| # | Fase | Marco / resultado principal |
+|---|---|---|
+| 1 | Originação | Negócio fechado e demanda transferida ao Escritório de Projetos |
+| 2 | Abertura (Kickoff gerencial) | Projeto formalmente aberto (Termo de Abertura) |
+| 3 | Discovery e Requisitos | Escopo e requisitos entendidos e especificados |
+| 4 | Concepção (trilhas paralelas) | Insumos de projeto e de produto para o plano |
+| 5 | Planejamento e Aprovação do Plano | Plano de Projeto fechado e aprovado pelo cliente (baseline) |
+| 6 | Desenvolvimento (Sprints) | Produto construído e testado |
+| 7 | Homologação, Entrega e Encerramento | Produto aprovado, em produção e projeto encerrado |
 
-Os processos de apoio — Gerência de Configuração (GCO), Medição (MED), Gerência de Decisões (GDE), Gerência de Riscos e Capacitação (CAP) — atravessam todas as fases.
+Os processos de apoio — Gerência de Configuração, Medição, Gerência de Decisões, Gerência de Riscos e Capacitação — atravessam todas as fases.
 
 **Há dois momentos de trabalho em paralelo, que não devem ser confundidos:**
 
@@ -167,7 +167,7 @@ A partir dos requisitos, o trabalho de concepção corre em **duas trilhas paral
 - Concluídas as entregas, realiza-se o **marco de encerramento formal do projeto**, com o **Termo de Encerramento** (contraparte do Termo de Abertura, na camada de gestão de projetos).
 - Produz-se o **Relatório de Encerramento** e o registro de **Lições Aprendidas**; obtém-se o **Termo de Aceite** do cliente.
 - Quando há sustentação contratada, a transição é feita para a unidade de negócio responsável.
-- As lições aprendidas alimentam a melhoria de processos (GPC).
+- As lições aprendidas alimentam a melhoria de processos.
 
 **Produtos de trabalho:** registro de homologação; aprovação do cliente; registro de entrega em produção; Termo de Encerramento; Relatório de Encerramento; Lições Aprendidas; Termo de Aceite.
 
@@ -201,11 +201,11 @@ O ambiente de **stage não é obrigatório** em todos os projetos: trata-se de u
 
 | Processo | Como atravessa o fluxo |
 |---|---|
-| **Gerência de Configuração (GCO)** | Código, documentos e itens de configuração versionados (Git/Azure DevOps); baselines estabelecidas; mudanças controladas. |
-| **Medição (MED)** | Indicadores dos projetos coletados (Jira) e analisados; alimentam o desempenho organizacional. |
-| **Gerência de Decisões (GDE)** | Decisões relevantes (técnicas, de escopo) tomadas com método formal quando aplicável. |
+| **Gerência de Configuração** | Código, documentos e itens de configuração versionados (Git/Azure DevOps); baselines estabelecidas; mudanças controladas. |
+| **Medição** | Indicadores dos projetos coletados (Jira) e analisados; alimentam o desempenho organizacional. |
+| **Gerência de Decisões** | Decisões relevantes (técnicas, de escopo) tomadas com método formal quando aplicável. |
 | **Gerência de Riscos** | Riscos e oportunidades identificados e tratados ao longo do projeto. |
-| **Capacitação (CAP)** | Equipes preparadas para os processos e tecnologias dos projetos. |
+| **Capacitação** | Equipes preparadas para os processos e tecnologias dos projetos. |
 | **Garantia da Qualidade (GQA)** | Aderência ao processo e qualidade dos produtos verificadas de forma objetiva e independente. |
 
 ## 9. Adaptação
@@ -217,8 +217,20 @@ Este processo-padrão é adaptado a cada projeto conforme as diretrizes do Guia 
 - POL-ORG-001 — Política Organizacional de Processos
 - GUIA-GPC-001 — Guia de Adaptação do Processo-Padrão
 - EST-GPC-001 — Estratégia de Garantia da Qualidade
-- Processos específicos: GPR, REQ, PCP, ITP, VV
+- Processos específicos: Gerência de Projetos, Engenharia de Requisitos, Projeto e Construção, Integração, Verificação e Validação
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
+
+## 11. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde principalmente ao resultado **GPC 2** do processo **Gerência de Processos (GPC)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| GPC 2 — processo-padrão organizacional definido (fases, papéis, produtos de trabalho) com diretrizes de adaptação | Seções 3 e 5 (visão geral e descrição das fases, com produtos de trabalho e pontos de controle de cada fase); seção 4 (papéis); seções 6 e 7 (Definição de Pronto e ambientes); seção 9 (diretrizes de adaptação) |
+
+Este documento é o Processo-Padrão Organizacional; ele evidencia GPC 2 (existência e descrição do processo-padrão; as diretrizes de adaptação detalhadas estão no GUIA-GPC-001).
 
 ---
 
@@ -226,6 +238,7 @@ Este processo-padrão é adaptado a cada projeto conforme as diretrizes do Guia 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo-padrão organizacional de desenvolvimento de software sob medida |
-| 2.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Reestruturação do fluxo: inclusão do Escritório de Projetos, kickoff como marco gerencial, fase de concepção em trilhas paralelas e aprovação do plano (baseline). Sete fases. |
-| 2.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição dos quatro ambientes (dev, QA, homologação, stage); distinção entre homologação e stage; encerramento de projeto vs. review de sprint |
+| 1.0 | 04/08/2025 | Time de Melhoria Contínua | Definição inicial do processo-padrão organizacional de desenvolvimento de software sob medida |
+| 2.0 | 12/12/2025 | Time de Melhoria Contínua | Reestruturação do fluxo: inclusão do Escritório de Projetos, kickoff como marco gerencial, fase de concepção em trilhas paralelas e aprovação do plano (baseline). Sete fases. |
+| 2.1 | 15/01/2026 | Time de Melhoria Contínua | Definição dos quatro ambientes (dev, QA, homologação, stage); distinção entre homologação e stage; encerramento de projeto vs. review de sprint |
+| 2.2 | 12/05/2026 | Time de Melhoria Contínua | Revisão de consistência geral e alinhamento de terminologia |

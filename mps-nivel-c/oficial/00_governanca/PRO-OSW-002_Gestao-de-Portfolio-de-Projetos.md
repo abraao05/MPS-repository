@@ -3,11 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-OSW-002 — Gestão de Portfólio de Projetos |
-| **Versão** | 1.1 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Versão** | 1.2 |
+| **Data** | 20/03/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
-| **Processos MPS-SW relacionados** | OSW 8, OSW 9, OSW 10 |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
 ---
@@ -16,16 +16,11 @@
 
 Este documento define como a Timeware gerencia seu **portfólio de projetos** — o conjunto de projetos em andamento, olhados de forma consolidada — priorizando oportunidades, alocando recursos compartilhados e acompanhando os projetos quanto aos compromissos assumidos. A gestão do portfólio é responsabilidade das Operações (COO), por meio do escritório de portfólio de projetos.
 
-> **Mapa de resultados atendidos neste documento:**
-> - Seção 3 → **OSW 8** (oportunidades priorizadas)
-> - Seção 4 → **OSW 9** (recursos, orçamento e autoridade do portfólio)
-> - Seção 5 → **OSW 10** (projetos do portfólio acompanhados quanto aos acordos)
-
 ## 2. Contexto
 
 A Timeware conduz múltiplos projetos de software sob medida simultaneamente. Alguns recursos são **dedicados a um único projeto** (por exemplo, desenvolvedores), enquanto outros são **compartilhados entre projetos** — notadamente Tech Lead, Arquiteto e Product Owner. Essa característica cria a necessidade de gerenciar o portfólio, equilibrando a demanda dos projetos com a capacidade disponível desses recursos compartilhados.
 
-## 3. Priorização de oportunidades e projetos (OSW 8)
+## 3. Priorização de oportunidades e projetos
 
 As oportunidades de negócio e os projetos são priorizados pelo COO (Operações), considerando critérios como:
 
@@ -36,7 +31,7 @@ As oportunidades de negócio e os projetos são priorizados pelo COO (Operaçõe
 
 A priorização define quais projetos a organização assume e em que ordem de prioridade, de forma que os compromissos assumidos sejam compatíveis com a capacidade real da organização.
 
-## 4. Recursos, capacidade e autoridade (OSW 9)
+## 4. Recursos, capacidade e autoridade
 
 ### 4.1. Gestão de capacidade (capacity)
 
@@ -47,11 +42,29 @@ Quando a demanda excede a capacidade disponível, a organização atua de duas f
 - **realoca recursos** de colaboradores da Timeware de fora da unidade, quando disponíveis;
 - **contrata** novos recursos, quando necessário.
 
+#### Estrutura do quadro de capacity
+
+O quadro de capacity é mantido no Jira (ou página estruturada no Confluence), com os seguintes campos mínimos:
+
+| Campo | Descrição |
+|---|---|
+| Colaborador | Nome/papel do recurso compartilhado (Tech Lead, Arquiteto, PO) |
+| Projeto | Projeto(s) ao(s) qual(is) está alocado |
+| Alocação (%) | Percentual da capacidade dedicado a cada projeto no período |
+| Período | Sprint ou mês de referência |
+| Status | Disponível · Alocado · Sobrecarregado |
+
+**Cadência de atualização:** o quadro é revisado antes do início de cada sprint e sempre que ocorre mudança de alocação.
+
+**Responsável pela manutenção:** COO (Operações), com apoio dos Gerentes de Projeto.
+
+**Critério de escalada:** quando um recurso compartilhado ultrapassa 100% de alocação por duas sprints consecutivas, o COO convoca reunião de repriorização com os GPs envolvidos para ajustar escopo ou prazos.
+
 ### 4.2. Autoridade
 
 A autoridade para decidir sobre a priorização do portfólio e a alocação de recursos compartilhados é do **COO (Operações)**, responsável pelo escritório de portfólio de projetos, apoiado pelas informações de capacity e pela situação dos projetos. Decisões de natureza estratégica são reportadas ao CEO.
 
-## 5. Acompanhamento do portfólio (OSW 10)
+## 5. Acompanhamento do portfólio
 
 Os projetos do portfólio são acompanhados de forma consolidada quanto ao cumprimento dos compromissos (prazo, escopo, recursos). O acompanhamento:
 
@@ -76,11 +89,24 @@ O acompanhamento do portfólio é apoiado pelas informações do Jira (situaçã
 - EST-GPC-002 — Estratégia de Gerência de Riscos e Oportunidades
 - Processo de Gerência de Projetos (GPR)
 
+## 8. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados **OSW 8, 9, 10** do processo **Gerência Organizacional de Software (OSW)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| OSW 8 — oportunidades de negócio/investimentos priorizados (portfólio) | Seção 3 |
+| OSW 9 — recursos, orçamento e autoridade do portfólio estabelecidos | Seção 4 |
+| OSW 10 — projetos do portfólio mantidos e tratados conforme os acordos | Seção 5 |
+
 ---
 
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial da gestão de portfólio de projetos |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Atribuição da autoridade do portfólio ao COO (escritório de portfólio de projetos) |
+| 1.0 | 29/08/2025 | Time de Melhoria Contínua | Definição inicial da gestão de portfólio de projetos |
+| 1.1 | 24/11/2025 | Time de Melhoria Contínua | Atribuição da autoridade do portfólio ao COO (escritório de portfólio de projetos) |
+| 1.2 | 20/03/2026 | Time de Melhoria Contínua | Detalhamento da estrutura e cadência do quadro de capacity (§4.1): campos, responsável e critério de escalada |

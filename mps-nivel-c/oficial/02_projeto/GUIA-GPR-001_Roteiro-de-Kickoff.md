@@ -4,6 +4,7 @@
 |---|---|
 | **Documento** | GUIA-GPR-001 — Roteiro de Apresentação de Kickoff |
 | **Versão** | 1.0 |
+| **Data** | 13/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Classificação** | Apoio (orientação para o time) |
 | **Finalidade** | Padronizar o conteúdo da reunião/apresentação de kickoff gerencial (Fase 2 do PRO-GPC-001) |
@@ -45,4 +46,4 @@ A apresentação em si é material de apoio. A **evidência do kickoff** para fi
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do roteiro de kickoff |
+| 1.0 | 13/11/2025 | Time de Melhoria Contínua | Definição inicial do roteiro de kickoff |
