@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | GCO-FRUKI01-001 |
 | **Projeto** | SuperApp Fruki — Força de Vendas (Pacote 1 + Pacote Final 24) |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 05/06/2026 |
 | **Responsável** | Abraão Oliveira |
 | **Referência organizacional** | PLA-GCO-001 — Plano de Gerência de Configuração |
@@ -30,6 +30,7 @@ Conforme PLA-GCO-001 seção 3.1, os seguintes itens de configuração foram ide
 | ATAs (ATA-FRUKI01-001 a ATA-FRUKI01-007) | Idem | Idem |
 | GQA-FRUKI01-001 | Idem | Idem |
 | GDE-FRUKI01-001 | Idem | Idem |
+| CR-FRUKI01-001 | Idem | Idem — mudança de escopo aprovada antes do início da execução |
 | MED-FRUKI01-001 | Idem | Idem |
 | LI-FRUKI01-001 | Idem | Idem |
 | RAC-FRUKI01-001 | Idem | Idem |
@@ -70,7 +71,7 @@ Conforme PLA-GCO-001 seção 3.1, os seguintes itens de configuração foram ide
 |---|---|---|---|---|---|---|
 | CM-01 | Renomeação da funcionalidade "Caixa Preta" para "Regra de Ouro" em toda a interface | Mudança de nomenclatura de UX (sem impacto no escopo técnico) | Cecília Ribeiro | Abraão Oliveira | 22/10/2025 | GDE-FRUKI01-001 — Decisão 2 |
 | CM-02 | Normalização de dados de pedidos não alocados implementada no front-end (em vez de solicitar correção da API) | Decisão técnica de implementação | Abraão Oliveira / Luca Watson | Abraão Oliveira | Out/2025 | GDE-FRUKI01-001 — Decisão 1 |
-| CM-03 | Adição do módulo Regra de Ouro sem custo adicional (estava fora do escopo original da proposta) | Ampliação de escopo sem impacto comercial | Leandro Lottermann | Abraão Oliveira / Tiago Nascimento | 09/10/2025 | TAP-FRUKI01-002; Fireflies ID: HWwWGbMe3glWfXgl |
+| CM-03 | Adição do módulo Regra de Ouro sem custo adicional (estava fora do escopo original da proposta) | Ampliação de escopo sem impacto comercial | Leandro Lottermann | Abraão Oliveira / Tiago Nascimento | 09/10/2025 | CR-FRUKI01-001; TAP-FRUKI01-002; Fireflies ID: HWwWGbMe3glWfXgl |
 
 ---
 
@@ -92,3 +93,4 @@ Conforme PLA-GCO-001 seção 3.1, os seguintes itens de configuração foram ide
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — Pacote 1 (ICs, branches, baselines, mudanças) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | Inclusão do Pacote Final 24 — branches, baselines BL-02 a BL-05, mudanças CM-01 a CM-03 |
 | 1.2 | 05/06/2026 | Abraão Oliveira | Atualização da lista de ICs: ATAs expandidas de ATA-003 para ATA-007 (atas de validação de sprint e piloto) |
+| 1.3 | 05/06/2026 | Abraão Oliveira | CR-FRUKI01-001 adicionado à lista de ICs; CM-03 atualizado com referência ao CR formal |

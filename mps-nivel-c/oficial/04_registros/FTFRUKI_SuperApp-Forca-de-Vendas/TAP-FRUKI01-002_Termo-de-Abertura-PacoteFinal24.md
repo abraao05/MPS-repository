@@ -6,7 +6,7 @@
 | **Projeto** | SuperApp Fruki — Pacote Final 24 |
 | **Cliente** | Fruki Bebidas S.A. |
 | **Contrato** | Pacote Final 24 |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data de abertura** | 09/10/2025 |
 | **Gerente de Projeto** | Abraão Oliveira |
 
@@ -80,7 +80,7 @@ Conforme proposta "Pacote Final 24" apresentada em 26/09/2025 e aprovada por Lea
 - A Fruki disponibiliza as APIs de cada módulo com antecedência mínima de 1 semana antes do início de cada sprint
 - Cecília Ribeiro valida protótipos de UX antes do desenvolvimento de cada módulo
 - Leandro Lottermann é a autoridade de aprovação e aceite formal das entregas
-- A Regra de Ouro (Caixa Preta) foi incluída no escopo sem custo adicional, conforme alinhamento de 09/10/2025
+- A Regra de Ouro (Caixa Preta) foi incluída no escopo sem custo adicional, conforme alinhamento de 09/10/2025 — formalizada em `CR-FRUKI01-001_Solicitacao-de-Mudanca-RegraDeOuro.md`
 
 **Restrições:**
 - Prazo máximo para entrega: 15/01/2026 (aceite via Teams)
@@ -105,3 +105,4 @@ Conforme proposta "Pacote Final 24" apresentada em 26/09/2025 e aprovada por Lea
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — abertura retroativa (projeto executado out/2025–jan/2026) |
+| 1.1 | 05/06/2026 | Abraão Oliveira | §7 Premissas: referência explícita a CR-FRUKI01-001 para inclusão da Regra de Ouro |

@@ -5,7 +5,7 @@
 | **Documento** | TAE-FRUKI01-002 |
 | **Projeto** | SuperApp Fruki — Pacote Final 24 |
 | **Cliente** | Fruki Bebidas S.A. |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data de encerramento** | 15/01/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 
@@ -34,7 +34,7 @@ O projeto foi executado de outubro de 2025 a janeiro de 2026, com kickoff em 09/
 
 ## 3. Escopo: planejado × realizado
 
-Todos os itens previstos no PLA-FRUKI01-002 foram entregues. Não houve change requests durante a execução.
+Todos os itens previstos no PLA-FRUKI01-002 foram entregues. Houve uma solicitação de mudança de escopo (`CR-FRUKI01-001`) aprovada em 09/10/2025 — antes do início da execução — para inclusão do Módulo Regra de Ouro, que estava fora do escopo original da proposta de 26/09/2025. A mudança foi aprovada sem custo adicional e formalizada no TAP-FRUKI01-002. Não houve novas change requests durante a execução dos sprints.
 
 | Item de escopo | Planejado | Realizado | Observação |
 |---|---|---|---|
@@ -91,3 +91,4 @@ O código dos três módulos foi entregue via Pull Requests revisadas e mergeada
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
+| 1.1 | 05/06/2026 | Abraão Oliveira | §3 corrigido: referência à CR-FRUKI01-001 (mudança de escopo aprovada em 09/10/2025 antes do início da execução) |
