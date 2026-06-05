@@ -3,11 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | DIAG-ORG-001 — Diagnóstico do Checklist de Documentação e Evidências [INTERNO] |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 05/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
-| **Base de comparação** | Checklist_MPS_SW_NivelC_Timeware.xlsx (avaliadora ASR) × repositório de processos (git) |
-| **Saída** | `Checklist_MPS_SW_NivelC_Timeware_preenchido.xlsx` |
+| **Base de comparação** | Checklist_MPS_SW_NivelC_Timeware.xlsx + MPS_SW_2024_Diagnostico_ate_C.xlsx (avaliadora ASR) × repositório de processos (git) |
+| **Saídas** | `Checklist_MPS_SW_NivelC_Timeware_preenchido.xlsx` · `MPS_SW_2024_Diagnostico_ate_C_preenchido.xlsx` |
 
 > **Nota:** documento de apoio interno (não é evidência MPS, não auditável pela ASR). Compara o set mínimo do checklist com o que existe hoje no repositório e aponta o que falta. Nenhum status foi inventado: cada classificação aponta o artefato de origem no git ou registra a ausência.
 
@@ -120,7 +120,45 @@ A planilha `Checklist_MPS_SW_NivelC_Timeware_preenchido.xlsx` foi preenchida com
 
 ---
 
+## 7. Diagnóstico por Resultado Esperado (RE) — planilha MPS_SW_2024
+
+Segunda planilha, **por RE** (116 resultados esperados, níveis G→C), preenchida com o mesmo critério empírico (status **T/L/P/N/NA**; o Painel recalcula automaticamente ao abrir no Excel).
+
+**Critério de classificação (coerente com a seção 1):**
+- **T** — o artefato de definição existe e é, ele próprio, a evidência exigida pelo RE (política, estratégia, processo-padrão, plano, catálogo, inventário, estrutura de apoio).
+- **L** — definido, mas com lacuna conhecida (ex.: ambientes-padrão sem IaC; papéis sem organograma/RACI consolidado).
+- **P** — definição/processo/template prontos, **mas sem registro de execução** (todos os REs de projeto — GPR, REQ, PCP, ITP, VV — e os REs organizacionais que dependem de registros de uso).
+- **N** — não há evidência e o meio também não está pronto (consolidação de indicadores; uso dos processos nos projetos).
+- **NA** — Aquisição (candidato a NA; confirmar com a ASR).
+
+**Resultado por processo (T/L/P/N/NA):**
+
+| Proc. | n | T | L | P | N | NA | % impl. (T+L) |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| GPR | 31 | 0 | 0 | 31 | 0 | 0 | 0% |
+| REQ | 8 | 0 | 0 | 8 | 0 | 0 | 0% |
+| PCP | 5 | 0 | 0 | 5 | 0 | 0 | 0% |
+| ITP | 9 | 0 | 0 | 9 | 0 | 0 | 0% |
+| VV | 6 | 0 | 0 | 6 | 0 | 0 | 0% |
+| GCO | 5 | 2 | 2 | 1 | 0 | 0 | 80% |
+| AQU | 6 | 0 | 0 | 0 | 0 | 6 | — (NA) |
+| MED | 9 | 2 | 0 | 6 | 1 | 0 | 22% |
+| GDE | 6 | 1 | 0 | 5 | 0 | 0 | 17% |
+| CAP | 5 | 1 | 1 | 3 | 0 | 0 | 40% |
+| GPC | 14 | 6 | 1 | 6 | 1 | 0 | 50% |
+| OSW | 12 | 1 | 1 | 10 | 0 | 0 | 17% |
+| **Total** | **116** | **13** | **5** | **90** | **2** | **6** | **16%** |
+
+**Leitura:** o % de "implementado" (T+L) fica baixo **por construção** — a planilha mede *evidência empírica*, e a Timeware tem a **definição pronta** mas ainda **não produziu a evidência de uso** (projetos não selecionados; ciclos de medição/auditoria/treinamento não rodados). Não é regressão: é o mesmo retrato da seção 2, agora por RE. Os 90 "P" são, em sua maioria, "prontos para evidenciar".
+
+**Os 2 únicos N (gargalos reais):**
+- **MED 4+** — análise de desempenho organizacional (falta a camada de consolidação de indicadores).
+- **GPC 10** — processos-padrão implantados/em uso (falta evidência de uso nos projetos da amostra).
+
+---
+
 ## Histórico de revisões
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Criação do diagnóstico a partir da comparação checklist × repositório. |
+| 1.1 | 05/06/2026 | Time de Melhoria Contínua | Adicionada a seção 7 (diagnóstico por RE) e a planilha MPS_SW_2024 preenchida. |
