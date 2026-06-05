@@ -7,7 +7,7 @@
 | **Data** | 19/01/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
-| **Processo MPS-SW relacionado** | GPC 2 (diretrizes de adaptação do processo-padrão) |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 | **Documento de referência** | PRO-GPC-001 — Processo-Padrão Organizacional |
 
@@ -110,6 +110,16 @@ A decisão e a justificativa ("projeto sem front-end — UX/UI não se aplica") 
 - POL-ORG-001 — Política Organizacional de Processos
 - Processo de Gerência de Projetos (GPR) e seu Registro de Adaptação
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
+
+## 8. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento apoia o resultado **GPC 2** do processo **Gerência de Processos (GPC)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| GPC 2 — diretrizes de adaptação do processo-padrão organizacional | Seção 2 (princípio da adaptação / regra de tailoring); Seção 3 (pontos de controle obrigatórios não adaptáveis); Seção 4 (eixos de adaptação); Seção 5 (registro da adaptação no projeto) |
 
 ---
 
