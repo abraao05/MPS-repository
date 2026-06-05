@@ -12,35 +12,35 @@
 
 ### OSW — Gerência Organizacional de Software
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Política Organizacional de Processos | POL-ORG-001 | 1.0 | ✅ Produzido |
-| Governança Organizacional de Processos | PRO-OSW-001 | 1.2 | ✅ Produzido |
-| Gestão de Portfólio de Projetos | PRO-OSW-002 | 1.2 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Política Organizacional de Processos | POL-ORG-001 | ✅ Produzido |
+| Governança Organizacional de Processos | PRO-OSW-001 | ✅ Produzido |
+| Gestão de Portfólio de Projetos | PRO-OSW-002 | ✅ Produzido |
 
 ### GPC — Gerência de Processos
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Processo-Padrão Organizacional | PRO-GPC-001 | 2.2 | ✅ Produzido |
-| Guia de Adaptação do Processo-Padrão | GUIA-GPC-001 | 1.2 | ✅ Produzido |
-| Definição do Time de Melhoria Contínua | PRO-GPC-002 | 1.2 | ✅ Produzido |
-| Estratégia de Garantia da Qualidade | EST-GPC-001 | 1.3 | ✅ Produzido |
-| Estratégia de Gerência de Riscos e Oportunidades | EST-GPC-002 | 1.2 | ✅ Produzido |
-| Plano de Gestão e Melhoria de Processos | PLA-GPC-001 | 1.4 | ✅ Produzido |
-| Convenção de Nomenclatura e Versionamento | CONV-ORG-001 | 1.1 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Processo-Padrão Organizacional | PRO-GPC-001 | ✅ Produzido |
+| Guia de Adaptação do Processo-Padrão | GUIA-GPC-001 | ✅ Produzido |
+| Definição do Time de Melhoria Contínua | PRO-GPC-002 | ✅ Produzido |
+| Estratégia de Garantia da Qualidade | EST-GPC-001 | ✅ Produzido |
+| Estratégia de Gerência de Riscos e Oportunidades | EST-GPC-002 | ✅ Produzido |
+| Plano de Gestão e Melhoria de Processos | PLA-GPC-001 | ✅ Produzido |
+| Convenção de Nomenclatura e Versionamento | CONV-ORG-001 | ✅ Produzido |
 
 ### MED — Medição
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Plano de Medição | PLA-MED-001 | 1.3 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Plano de Medição | PLA-MED-001 | ✅ Produzido |
 
 ### CAP — Capacitação
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Plano de Capacitação | PLA-CAP-001 | 1.1 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Plano de Capacitação | PLA-CAP-001 | ✅ Produzido |
 
 **Mini-manuais por processo**
 
@@ -61,102 +61,102 @@
 
 **Trilhas de treinamento por papel**
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Trilha COO / Portfólio | MAT-CAP-013 | 1.0 | ✅ Produzido |
-| Trilha Time de Melhoria Contínua / SEPG | MAT-CAP-014 | 1.0 | ✅ Produzido |
-| Trilha RH / Pessoas | MAT-CAP-015 | 1.0 | ✅ Produzido |
-| Trilha Tech Lead / Arquiteto | MAT-CAP-016 | 1.0 | ✅ Produzido |
-| Trilha PO / PM | MAT-CAP-017 | 1.0 | ✅ Produzido |
-| Trilha Desenvolvedores | MAT-CAP-018 | 1.0 | ✅ Produzido |
-| Trilha DevOps | MAT-CAP-019 | 1.0 | ✅ Produzido |
-| Trilha QA | MAT-CAP-020 | 1.0 | ✅ Produzido |
-| Trilha GCO Baseline / Auditoria de Configuração | MAT-CAP-021 | 1.0 | ✅ Produzido |
-| Trilha Responsável de Medição | MAT-CAP-022 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Trilha COO / Portfólio | MAT-CAP-013 | ✅ Produzido |
+| Trilha Time de Melhoria Contínua / SEPG | MAT-CAP-014 | ✅ Produzido |
+| Trilha RH / Pessoas | MAT-CAP-015 | ✅ Produzido |
+| Trilha Tech Lead / Arquiteto | MAT-CAP-016 | ✅ Produzido |
+| Trilha PO / PM | MAT-CAP-017 | ✅ Produzido |
+| Trilha Desenvolvedores | MAT-CAP-018 | ✅ Produzido |
+| Trilha DevOps | MAT-CAP-019 | ✅ Produzido |
+| Trilha QA | MAT-CAP-020 | ✅ Produzido |
+| Trilha GCO Baseline / Auditoria de Configuração | MAT-CAP-021 | ✅ Produzido |
+| Trilha Responsável de Medição | MAT-CAP-022 | ✅ Produzido |
 
 **Avaliações de capacitação**
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Avaliação — Processo-Padrão Geral | AVA-CAP-001 | 1.0 | ✅ Produzido |
-| Avaliação — Trilha GP / PO | AVA-CAP-002 | 1.0 | ✅ Produzido |
-| Avaliação — Trilha Técnica (Tech Lead / Devs / QA) | AVA-CAP-003 | 1.0 | ✅ Produzido |
-| Avaliação — Trilha GCO / ITP (DevOps / GCO Baseline) | AVA-CAP-004 | 1.0 | ✅ Produzido |
-| Avaliação — Trilha GPC / MED / CAP (TMC / RH / Resp. Medição) | AVA-CAP-005 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Avaliação — Processo-Padrão Geral | AVA-CAP-001 | ✅ Produzido |
+| Avaliação — Trilha GP / PO | AVA-CAP-002 | ✅ Produzido |
+| Avaliação — Trilha Técnica (Tech Lead / Devs / QA) | AVA-CAP-003 | ✅ Produzido |
+| Avaliação — Trilha GCO / ITP (DevOps / GCO Baseline) | AVA-CAP-004 | ✅ Produzido |
+| Avaliação — Trilha GPC / MED / CAP (TMC / RH / Resp. Medição) | AVA-CAP-005 | ✅ Produzido |
 
 **Template**
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Template de Registro de Sessão de Treinamento | TPL-CAP-001 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Template de Registro de Sessão de Treinamento | TPL-CAP-001 | ✅ Produzido |
 
 ### GDE — Gerência de Decisões
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Processo de Gerência de Decisões | PRO-GDE-001 | 1.2 | ✅ Produzido |
-| Template de Registro de Análise de Decisão | TPL-GDE-001 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Processo de Gerência de Decisões | PRO-GDE-001 | ✅ Produzido |
+| Template de Registro de Análise de Decisão | TPL-GDE-001 | ✅ Produzido |
 
 ### GCO — Gerência de Configuração
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Plano de Gerência de Configuração | PLA-GCO-001 | 1.1 | ✅ Produzido |
-| Guia de Nomenclaturas Técnicas | GUIA-GCO-001 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Plano de Gerência de Configuração | PLA-GCO-001 | ✅ Produzido |
+| Guia de Nomenclaturas Técnicas | GUIA-GCO-001 | ✅ Produzido |
 
 ### AQU — Aquisição
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Processo de Aquisição | PRO-AQU-001 | 1.1 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Processo de Aquisição | PRO-AQU-001 | ✅ Produzido |
 
 ### GPR — Gerência de Projetos
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Processo de Gerência de Projetos | PRO-GPR-001 | 1.4 | ✅ Produzido |
-| Template de Plano de Projeto | TPL-GPR-001 | 1.1 | ✅ Produzido |
-| Template de Termo de Abertura do Projeto | TPL-GPR-002 | 1.0 | ✅ Produzido |
-| Template de Registro de Adaptação do Processo | TPL-GPR-003 | 1.0 | ✅ Produzido |
-| Template de Termo de Encerramento e Aceite | TPL-GPR-004 | 1.0 | ✅ Produzido |
-| Template de Relatório de Acompanhamento | TPL-GPR-005 | 1.0 | ✅ Produzido |
-| Template de Change Request | TPL-GPR-006 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Processo de Gerência de Projetos | PRO-GPR-001 | ✅ Produzido |
+| Template de Plano de Projeto | TPL-GPR-001 | ✅ Produzido |
+| Template de Termo de Abertura do Projeto | TPL-GPR-002 | ✅ Produzido |
+| Template de Registro de Adaptação do Processo | TPL-GPR-003 | ✅ Produzido |
+| Template de Termo de Encerramento e Aceite | TPL-GPR-004 | ✅ Produzido |
+| Template de Relatório de Acompanhamento | TPL-GPR-005 | ✅ Produzido |
+| Template de Change Request | TPL-GPR-006 | ✅ Produzido |
 
 ### REQ — Engenharia de Requisitos
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Processo de Engenharia de Requisitos | PRO-REQ-001 | 1.1 | ✅ Produzido |
-| Template de Documento de Requisitos | TPL-REQ-001 | 1.0 | ✅ Produzido |
-| Template de Matriz de Rastreabilidade | TPL-REQ-002 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Processo de Engenharia de Requisitos | PRO-REQ-001 | ✅ Produzido |
+| Template de Documento de Requisitos | TPL-REQ-001 | ✅ Produzido |
+| Template de Matriz de Rastreabilidade | TPL-REQ-002 | ✅ Produzido |
 
 ### PCP — Projeto e Construção do Produto
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Processo de Projeto e Construção do Produto | PRO-PCP-001 | 1.1 | ✅ Produzido |
-| Template de Documento de Design | TPL-PCP-001 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Processo de Projeto e Construção do Produto | PRO-PCP-001 | ✅ Produzido |
+| Template de Documento de Design | TPL-PCP-001 | ✅ Produzido |
 
 ### ITP — Integração do Produto
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Processo de Integração do Produto | PRO-ITP-001 | 1.1 | ✅ Produzido |
-| Template de Estratégia de Integração | TPL-ITP-001 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Processo de Integração do Produto | PRO-ITP-001 | ✅ Produzido |
+| Template de Estratégia de Integração | TPL-ITP-001 | ✅ Produzido |
 
 ### VV — Verificação e Validação
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Processo de Verificação e Validação | PRO-VV-001 | 1.2 | ✅ Produzido |
-| Template de Plano de V&V | TPL-VV-001 | 1.1 | ✅ Produzido |
-| Template de Registro de Revisão por Pares | TPL-VV-002 | 1.0 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Processo de Verificação e Validação | PRO-VV-001 | ✅ Produzido |
+| Template de Plano de V&V | TPL-VV-001 | ✅ Produzido |
+| Template de Registro de Revisão por Pares | TPL-VV-002 | ✅ Produzido |
 
 ### Capacidade (CP-E/D/C — transversal)
 
-| Documento | Código | Versão | Situação |
-|---|---|---|---|
-| Mapa de Capacidade dos Processos | MAPA-CAP-001 | 1.1 | ✅ Produzido |
-| Template de Registro de Verificação de GQA | TPL-GPC-001 | 1.1 | ✅ Produzido |
+| Documento | Código | Situação |
+|---|---|---|
+| Mapa de Capacidade dos Processos | MAPA-CAP-001 | ✅ Produzido |
+| Template de Registro de Verificação de GQA | TPL-GPC-001 | ✅ Produzido |
 
 ---
