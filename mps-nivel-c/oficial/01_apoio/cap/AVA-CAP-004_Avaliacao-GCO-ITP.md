@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | AVA-CAP-004 — Avaliação Trilha GCO / ITP |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 22/09/2025 |
 | **Aplicação** | DevOps, GCO Baseline/Auditoria |
 | **Pré-requisito** | AVA-CAP-001 aprovado |
 | **Referência** | PLA-CAP-001 §4; MAT-CAP-019, MAT-CAP-021; GUIA-CAP-005, GUIA-CAP-006 |
@@ -106,4 +106,5 @@ A pontuação é normalizada para 100 com base nas questões aplicáveis ao pape
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial |
+| 1.0 | 10/03/2025 | Time de Melhoria Contínua | Versão inicial |
+| 1.1 | 22/09/2025 | Time de Melhoria Contínua | Revisão após resultados da segunda turma: maior detalhamento nas questões de auditoria |

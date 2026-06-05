@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | AVA-CAP-001 — Avaliação Processo-Padrão Geral |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 15/01/2026 |
 | **Aplicação** | Todos os papéis — base obrigatória antes das trilhas específicas |
 | **Referência** | PLA-CAP-001 §4; GUIA-CAP-001 a 012 |
 
@@ -124,4 +124,6 @@ Corte de aprovação: **70 pontos**.
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial |
+| 1.0 | 10/12/2024 | Time de Melhoria Contínua | Versão inicial — cobrindo processo-padrão e nomenclatura |
+| 1.1 | 10/03/2025 | Time de Melhoria Contínua | Inclusão dos blocos de medição e GQA para segunda onda de treinamento |
+| 1.2 | 15/01/2026 | Time de Melhoria Contínua | Revisão completa com todos os blocos (processo-padrão, MED, GQA, GCO) |

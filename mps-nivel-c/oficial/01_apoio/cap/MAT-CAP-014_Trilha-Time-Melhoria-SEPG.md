@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAT-CAP-014 — Trilha Time de Melhoria Contínua / SEPG |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 10/01/2026 |
 | **Papel** | Time de Melhoria Contínua / SEPG (inclui função de GQA em rodízio) |
 | **Processos cobertos** | GPC (Gerência de Processos), GQA (Garantia da Qualidade) |
 
@@ -116,4 +116,5 @@ Vocês não geram os 7 indicadores de projeto diretamente, mas **mantêm o repos
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada nos processos GPC e GQA |
+| 1.0 | 05/08/2025 | Time de Melhoria Contínua | Versão inicial |
+| 1.1 | 10/01/2026 | Time de Melhoria Contínua | Inclusão do bloco de GQA de produto (GQA 2) e exemplos práticos |

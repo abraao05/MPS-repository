@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | TPL-CAP-001 — Registro de Sessão de Treinamento |
 | **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Data** | 15/01/2026 |
 | **Tipo** | Template |
 | **Referência** | PLA-CAP-001 §5 (registros de capacitação) |
 
@@ -79,4 +79,4 @@ _Registre dúvidas frequentes, pontos que precisam de reforço, ou participantes
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial |
+| 1.0 | 15/01/2026 | Time de Melhoria Contínua | Versão inicial |

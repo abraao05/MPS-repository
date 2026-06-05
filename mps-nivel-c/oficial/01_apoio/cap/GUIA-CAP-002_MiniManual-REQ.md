@@ -1,5 +1,14 @@
 # Mini-manual — Especificação de Requisitos
 
+| Campo | Valor |
+|---|---|
+| **Documento** | GUIA-CAP-002 — Mini-manual REQ |
+| **Versão** | 1.2 |
+| **Data** | 10/01/2026 |
+
+---
+
+
 **O que é.** O processo que define, organiza e mantém os requisitos do produto — desde a necessidade crua da parte interessada até o requisito especificado, priorizado e rastreável à implementação.
 
 **O que ele garante (o que "mede").** Que (1) as necessidades certas foram ouvidas das pessoas certas, (2) viraram requisitos claros e priorizados, (3) há rastreabilidade nos dois sentidos entre requisito e implementação, e (4) inconsistências entre requisitos, planos e produto são detectadas e tratadas. Não é uma métrica numérica — é cobertura e consistência: todo requisito tem origem, e toda implementação tem requisito.
@@ -15,3 +24,13 @@
 6. Periodicamente, rode a verificação de órfãos — é o que mantém o documento honesto.
 
 **Erro comum a evitar.** Tratar a rastreabilidade como burocracia preenchida no fim. Ela só funciona se for mantida durante a construção (o ID do requisito viaja com a tarefa e o commit), não reconstruída depois.
+
+---
+
+## Histórico de revisões
+
+| Versão | Data | Autor | Descrição |
+|---|---|---|---|
+| 1.0 | 10/12/2024 | Time de Melhoria Contínua | Versão inicial |
+| 1.1 | 15/04/2025 | Time de Melhoria Contínua | Clarificação sobre rastreabilidade e critérios de aceite |
+| 1.2 | 10/01/2026 | Time de Melhoria Contínua | Atualização conforme PRO-REQ-001 v1.1 |

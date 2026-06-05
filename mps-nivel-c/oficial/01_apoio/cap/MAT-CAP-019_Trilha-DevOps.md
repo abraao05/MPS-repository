@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAT-CAP-019 — Trilha DevOps |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 22/09/2025 |
 | **Papel** | DevOps |
 | **Processos cobertos** | ITP (Integração do Produto), GCO (Configuração — operação) |
 
@@ -91,4 +91,5 @@ Você contribui com um dado de **qualidade**: defeitos em homologação × produ
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada nos processos ITP e GCO |
+| 1.0 | 10/03/2025 | Time de Melhoria Contínua | Versão inicial — baseada nos processos ITP e GCO |
+| 1.1 | 22/09/2025 | Time de Melhoria Contínua | Revisão após dúvidas recorrentes sobre o fluxo de promoção entre ambientes |

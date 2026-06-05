@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | AVA-CAP-003 — Avaliação Trilha Técnica |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 10/03/2025 |
 | **Aplicação** | Tech Lead, Desenvolvedores, QA |
 | **Pré-requisito** | AVA-CAP-001 aprovado |
 | **Referência** | PLA-CAP-001 §4; MAT-CAP-016, MAT-CAP-017, MAT-CAP-018, MAT-CAP-020; GUIA-CAP-002, 003, 004 |
@@ -111,4 +111,5 @@ A pontuação final é normalizada para 100 com base nas questões aplicáveis a
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial |
+| 1.0 | 10/12/2024 | Time de Melhoria Contínua | Versão inicial — cobrindo REQ e PCP |
+| 1.1 | 10/03/2025 | Time de Melhoria Contínua | Inclusão das questões de VV para a segunda onda de treinamento |

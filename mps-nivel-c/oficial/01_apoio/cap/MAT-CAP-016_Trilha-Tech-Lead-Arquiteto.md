@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAT-CAP-016 — Trilha Tech Lead / Arquiteto |
-| **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 15/02/2026 |
 | **Papel** | Tech Lead / Arquiteto |
 | **Processos cobertos** | REQ, PCP, ITP, GDE, GCO (operação) |
 
@@ -166,4 +166,6 @@ Você gera dado que alimenta indicadores de **qualidade** (PLA-MED-001). Você r
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada nos processos REQ, PCP, ITP, GDE, GCO |
+| 1.0 | 10/03/2025 | Time de Melhoria Contínua | Versão inicial |
+| 1.1 | 22/09/2025 | Time de Melhoria Contínua | Inclusão da seção GDE e revisão da seção GCO |
+| 1.2 | 15/02/2026 | Time de Melhoria Contínua | Atualização das seções ITP e VV conforme revisões dos processos |

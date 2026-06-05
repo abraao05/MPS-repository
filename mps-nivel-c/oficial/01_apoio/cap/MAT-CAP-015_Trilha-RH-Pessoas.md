@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | MAT-CAP-015 — Trilha RH / Pessoas |
 | **Versão** | 1.0 |
-| **Data** | 01/06/2026 |
+| **Data** | 15/01/2026 |
 | **Papel** | RH / Pessoas |
 | **Processos cobertos** | CAP (Capacitação) |
 
@@ -94,4 +94,4 @@ O que você mede é a **efetividade da capacitação** (CAP 3): cobertura de tre
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 01/06/2026 | Time de Melhoria Contínua | Versão inicial — baseada no processo CAP |
+| 1.0 | 15/01/2026 | Time de Melhoria Contínua | Versão inicial |
