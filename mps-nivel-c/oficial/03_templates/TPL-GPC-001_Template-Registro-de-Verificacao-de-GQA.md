@@ -52,5 +52,6 @@
 | Campo | Valor |
 |---|---|
 | **Resultado geral** | [Conforme · Conforme com ressalvas · Não conforme] |
+| **% de conformidade** | [itens conformes ÷ itens aplicáveis × 100] |
 | **Achados abertos** | [N] |
 | **Oportunidades de melhoria identificadas** | [...] *(ou "Nenhuma")* |

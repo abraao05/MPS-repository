@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPC-002 — Definição do Time de Melhoria Contínua |
-| **Versão** | 1.1 |
-| **Data** | 21/11/2025 |
+| **Versão** | 1.2 |
+| **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -74,6 +74,12 @@ Este documento corresponde ao resultado **GPC 6** do processo **Gerência de Pro
 |---|---|
 | GPC 6 — grupo responsável pelos processos (estrutura de apoio à melhoria) definido, com responsabilidades e recursos | Seções 1 a 6 |
 
+**Nomenclatura equivalente — templates MPS do consultor de avaliação**
+
+| Artefato Timeware | Código Timeware | Equivalente nos templates MPS (consultor) |
+|---|---|---|
+| Ata de reunião do Time de Melhoria Contínua / EPG | TPL-ORG-001 | `ATA-AAAAMMDD-Reunião_EPG` — inclui log de pontos de melhoria e plano de ação |
+
 ---
 
 ## Histórico de revisões
@@ -82,3 +88,4 @@ Este documento corresponde ao resultado **GPC 6** do processo **Gerência de Pro
 |---|---|---|---|
 | 1.0 | 15/08/2025 | Time de Melhoria Contínua | Definição inicial do Time de Melhoria Contínua |
 | 1.1 | 21/11/2025 | Time de Melhoria Contínua | Inclusão da estrutura de patrocínio (CEO estratégico / COO operacional) e vínculo às Operações |
+| 1.2 | 05/06/2026 | Time de Melhoria Contínua | Adição de tabela de nomenclatura equivalente MPS (ATA-Reunião_EPG) na seção de rastreabilidade |

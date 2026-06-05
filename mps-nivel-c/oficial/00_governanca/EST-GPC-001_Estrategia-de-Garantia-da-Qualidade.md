@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | EST-GPC-001 — Estratégia de Garantia da Qualidade (GQA) |
-| **Versão** | 1.2 |
-| **Data** | 17/12/2025 |
+| **Versão** | 1.3 |
+| **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -103,6 +103,15 @@ Este documento corresponde ao resultado **GPC 3** do processo **Gerência de Pro
 |---|---|
 | GPC 3 — estratégia e plano de garantia da qualidade, com verificação de aderência ao processo e avaliação de produtos de trabalho por função independente | Seções 1 a 7 |
 
+**Nomenclatura equivalente — templates MPS do consultor de avaliação**
+
+O quadro abaixo relaciona os artefatos de GQA da Timeware à nomenclatura utilizada nos templates MPS adotados pela ASR/consultor de avaliação.
+
+| Artefato Timeware | Código Timeware | Equivalente nos templates MPS (consultor) |
+|---|---|---|
+| Registro de Verificação de GQA — projetos | TPL-GPC-001 | `CHK-Auditoria de Projetos` — checklists por fase (Planejamento / Acompanhamento / Desenvolvimento / Configuração / Entrega), com `% de Aderência` por fase |
+| Registro de Verificação de GQA — organização | TPL-GPC-001 (adaptado) | `CHK-Auditoria Organizacional` — checklist por área de processo (MED / GPC / ORG / GDE / GRH), com `Percentual de Aderência por Processo` |
+
 ---
 
 ## Histórico de revisões
@@ -112,3 +121,4 @@ Este documento corresponde ao resultado **GPC 3** do processo **Gerência de Pro
 | 1.0 | 12/08/2025 | Time de Melhoria Contínua | Definição inicial da estratégia de garantia da qualidade de processo |
 | 1.1 | 21/11/2025 | Time de Melhoria Contínua | Ajuste do escalonamento de impasses para o COO (estrutura organizacional) |
 | 1.2 | 17/12/2025 | Time de Melhoria Contínua | Atualização dos marcos de verificação conforme o novo fluxo (kickoff gerencial, concepção, aprovação do plano) |
+| 1.3 | 05/06/2026 | Time de Melhoria Contínua | Adição de tabela de nomenclatura equivalente MPS (CHK-Auditoria de Projetos / CHK-Auditoria Organizacional) na seção de rastreabilidade |
