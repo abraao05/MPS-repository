@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.34 (rascunho) |
+| **Versão** | 0.35 (rascunho) |
 | **Data** | 05/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -16,6 +16,8 @@
 > **Alterações v0.30 (05/06/2026):** criado TPL-GPC-001 (Template de Registro de Verificação de GQA); PLA-GPC-001 atualizado para v1.3 com inventário completo de ativos (§2). Ambas as lacunas identificadas na análise de cobertura da camada de definição.
 
 > **Alterações v0.33 (05/06/2026):** §2.1 reescrito como inventário completo e organizado por categoria — versão única de referência de todos os documentos existentes.
+
+> **Alterações v0.35 (05/06/2026):** inclusão dos 28 materiais de capacitação oficiais (`oficial/01_apoio/cap/`) no inventário §2.1: 12 mini-manuais por processo (GUIA-CAP-001~012), 10 trilhas de treinamento por papel (MAT-CAP-013~022), 5 avaliações de capacitação (AVA-CAP-001~005) e 1 template de registro de sessão (TPL-CAP-001).
 
 > **Alterações v0.34 (05/06/2026):** adição do inventário de registros de projetos ao §2.1 — FTGASMIG (24 documentos, OS-001 encerrada + OS-002 em andamento) confirmado como primeiro projeto da avaliação; estrutura dos demais projetos criada (AASP ×3, PROFARMA). Correção da independência da GQA no FTGASMIG (auditor: COO). Criação do GDE-GASMIG02-001 (registro de decisão arquitetural). Pendência 3 (seleção dos 4 projetos) atualizada.
 
@@ -93,6 +95,34 @@ MPS-Nivel-C/
 | GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | 1.0 | GCO 1, 2; GPC 8 |
 | PRO-GDE-001 | Processo de Gerência de Decisões | 1.1 | GDE 1–6 |
 | PLA-CAP-001 | Plano de Capacitação | 1.1 | CAP 1–4 |
+| GUIA-CAP-001 | Mini-manual — Gerência de Projetos | — | CAP 2 (material de apoio) |
+| GUIA-CAP-002 | Mini-manual — Especificação de Requisitos | — | CAP 2 |
+| GUIA-CAP-003 | Mini-manual — Projeto e Construção do Produto | — | CAP 2 |
+| GUIA-CAP-004 | Mini-manual — Verificação e Validação | — | CAP 2 |
+| GUIA-CAP-005 | Mini-manual — Gerência de Configuração | — | CAP 2 |
+| GUIA-CAP-006 | Mini-manual — Integração do Produto | — | CAP 2 |
+| GUIA-CAP-007 | Mini-manual — Gerência de Decisões | — | CAP 2 |
+| GUIA-CAP-008 | Mini-manual — Medição | — | CAP 2 |
+| GUIA-CAP-009 | Mini-manual — Gerência de Processos | — | CAP 2 |
+| GUIA-CAP-010 | Mini-manual — Gerência Organizacional de Software | — | CAP 2 |
+| GUIA-CAP-011 | Mini-manual — Capacitação | — | CAP 2 |
+| GUIA-CAP-012 | Mini-manual — Aquisição | — | CAP 2 |
+| MAT-CAP-013 | Trilha COO / Portfólio | 1.0 | CAP 1–2 |
+| MAT-CAP-014 | Trilha Time de Melhoria Contínua / SEPG | 1.0 | CAP 1–2 |
+| MAT-CAP-015 | Trilha RH / Pessoas | 1.0 | CAP 1–2 |
+| MAT-CAP-016 | Trilha Tech Lead / Arquiteto | 1.0 | CAP 1–2 |
+| MAT-CAP-017 | Trilha PO / PM | 1.0 | CAP 1–2 |
+| MAT-CAP-018 | Trilha Desenvolvedores | 1.0 | CAP 1–2 |
+| MAT-CAP-019 | Trilha DevOps | 1.0 | CAP 1–2 |
+| MAT-CAP-020 | Trilha QA | 1.0 | CAP 1–2 |
+| MAT-CAP-021 | Trilha GCO Baseline / Auditoria de Configuração | 1.0 | CAP 1–2 |
+| MAT-CAP-022 | Trilha Responsável de Medição | 1.0 | CAP 1–2 |
+| AVA-CAP-001 | Avaliação — Processo-Padrão Geral | 1.0 | CAP 3 |
+| AVA-CAP-002 | Avaliação — Trilha GP / PO | 1.0 | CAP 3 |
+| AVA-CAP-003 | Avaliação — Trilha Técnica (Tech Lead / Devs / QA) | 1.0 | CAP 3 |
+| AVA-CAP-004 | Avaliação — Trilha GCO / ITP | 1.0 | CAP 3 |
+| AVA-CAP-005 | Avaliação — Trilha GPC / MED / CAP | 1.0 | CAP 3 |
+| TPL-CAP-001 | Template de Registro de Sessão de Treinamento | 1.0 | CAP 2 (template) |
 | PRO-AQU-001 | Processo de Aquisição | 1.1 | AQU 1–4 *(aplicabilidade a confirmar com ASR)* |
 
 ### Processos de projeto (`oficial/02_projeto/`)
@@ -180,7 +210,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Observação |
 |---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.34 | Rascunho de gestão |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.35 | Rascunho de gestão |
 | GUIA-ORG-001 | Guia de Estrutura do Confluence | 1.0 | Apoio à navegação no Confluence |
 
 ### Pendentes / A produzir

@@ -42,6 +42,54 @@
 |---|---|---|---|
 | Plano de Capacitação | PLA-CAP-001 | 1.1 | ✅ Produzido |
 
+**Mini-manuais por processo**
+
+| Documento | Código | Situação |
+|---|---|---|
+| Mini-manual — Gerência de Projetos | GUIA-CAP-001 | ✅ Produzido |
+| Mini-manual — Especificação de Requisitos | GUIA-CAP-002 | ✅ Produzido |
+| Mini-manual — Projeto e Construção do Produto | GUIA-CAP-003 | ✅ Produzido |
+| Mini-manual — Verificação e Validação | GUIA-CAP-004 | ✅ Produzido |
+| Mini-manual — Gerência de Configuração | GUIA-CAP-005 | ✅ Produzido |
+| Mini-manual — Integração do Produto | GUIA-CAP-006 | ✅ Produzido |
+| Mini-manual — Gerência de Decisões | GUIA-CAP-007 | ✅ Produzido |
+| Mini-manual — Medição | GUIA-CAP-008 | ✅ Produzido |
+| Mini-manual — Gerência de Processos | GUIA-CAP-009 | ✅ Produzido |
+| Mini-manual — Gerência Organizacional de Software | GUIA-CAP-010 | ✅ Produzido |
+| Mini-manual — Capacitação | GUIA-CAP-011 | ✅ Produzido |
+| Mini-manual — Aquisição | GUIA-CAP-012 | ✅ Produzido |
+
+**Trilhas de treinamento por papel**
+
+| Documento | Código | Versão | Situação |
+|---|---|---|---|
+| Trilha COO / Portfólio | MAT-CAP-013 | 1.0 | ✅ Produzido |
+| Trilha Time de Melhoria Contínua / SEPG | MAT-CAP-014 | 1.0 | ✅ Produzido |
+| Trilha RH / Pessoas | MAT-CAP-015 | 1.0 | ✅ Produzido |
+| Trilha Tech Lead / Arquiteto | MAT-CAP-016 | 1.0 | ✅ Produzido |
+| Trilha PO / PM | MAT-CAP-017 | 1.0 | ✅ Produzido |
+| Trilha Desenvolvedores | MAT-CAP-018 | 1.0 | ✅ Produzido |
+| Trilha DevOps | MAT-CAP-019 | 1.0 | ✅ Produzido |
+| Trilha QA | MAT-CAP-020 | 1.0 | ✅ Produzido |
+| Trilha GCO Baseline / Auditoria de Configuração | MAT-CAP-021 | 1.0 | ✅ Produzido |
+| Trilha Responsável de Medição | MAT-CAP-022 | 1.0 | ✅ Produzido |
+
+**Avaliações de capacitação**
+
+| Documento | Código | Versão | Situação |
+|---|---|---|---|
+| Avaliação — Processo-Padrão Geral | AVA-CAP-001 | 1.0 | ✅ Produzido |
+| Avaliação — Trilha GP / PO | AVA-CAP-002 | 1.0 | ✅ Produzido |
+| Avaliação — Trilha Técnica (Tech Lead / Devs / QA) | AVA-CAP-003 | 1.0 | ✅ Produzido |
+| Avaliação — Trilha GCO / ITP (DevOps / GCO Baseline) | AVA-CAP-004 | 1.0 | ✅ Produzido |
+| Avaliação — Trilha GPC / MED / CAP (TMC / RH / Resp. Medição) | AVA-CAP-005 | 1.0 | ✅ Produzido |
+
+**Template**
+
+| Documento | Código | Versão | Situação |
+|---|---|---|---|
+| Template de Registro de Sessão de Treinamento | TPL-CAP-001 | 1.0 | ✅ Produzido |
+
 ### GDE — Gerência de Decisões
 
 | Documento | Código | Versão | Situação |
