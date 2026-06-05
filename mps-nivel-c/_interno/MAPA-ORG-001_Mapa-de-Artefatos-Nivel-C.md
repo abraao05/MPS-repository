@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.35 (rascunho) |
+| **Versão** | 0.36 (rascunho) |
 | **Data** | 05/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -16,6 +16,8 @@
 > **Alterações v0.30 (05/06/2026):** criado TPL-GPC-001 (Template de Registro de Verificação de GQA); PLA-GPC-001 atualizado para v1.3 com inventário completo de ativos (§2). Ambas as lacunas identificadas na análise de cobertura da camada de definição.
 
 > **Alterações v0.33 (05/06/2026):** §2.1 reescrito como inventário completo e organizado por categoria — versão única de referência de todos os documentos existentes.
+
+> **Alterações v0.36 (05/06/2026):** versões atualizadas no §2.1 conforme ajustes de compliance MPS: PRO-GPC-002 v1.2, EST-GPC-001 v1.3, EST-GPC-002 v1.2, PRO-GDE-001 v1.2, PRO-GPR-001 v1.4 (seções de rastreabilidade com nomenclatura equivalente ASR); TPL-GPR-001 v1.1 (+coluna Exposição); TPL-GPC-001 v1.1 (+% conformidade).
 
 > **Alterações v0.35 (05/06/2026):** inclusão dos 28 materiais de capacitação oficiais (`oficial/01_apoio/cap/`) no inventário §2.1: 12 mini-manuais por processo (GUIA-CAP-001~012), 10 trilhas de treinamento por papel (MAT-CAP-013~022), 5 avaliações de capacitação (AVA-CAP-001~005) e 1 template de registro de sessão (TPL-CAP-001).
 
@@ -79,9 +81,9 @@ MPS-Nivel-C/
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.1 | GCO 1, 4 |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 2.2 | GPC 2 |
 | GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.2 | GPC 2 |
-| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.1 | GPC 6 |
-| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.2 | GPC 3; CP (iv, v, vi) |
-| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.1 | GPC 7 |
+| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.2 | GPC 6 |
+| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.3 | GPC 3; CP (iv, v, vi) |
+| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.2 | GPC 7 |
 | PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.4 | GPC 1, 4, 5, 8, 10, 11 |
 | PRO-OSW-001 | Governança Organizacional de Processos | 1.2 | OSW 2, 3, 4, 5, 6, 7 |
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.2 | OSW 8, 9, 10 |
@@ -93,7 +95,7 @@ MPS-Nivel-C/
 | PLA-MED-001 | Plano de Medição | 1.3 | MED 1–7; GPC 9; OSW 6 |
 | PLA-GCO-001 | Plano de Gerência de Configuração | 1.1 | GCO 1–5 |
 | GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | 1.0 | GCO 1, 2; GPC 8 |
-| PRO-GDE-001 | Processo de Gerência de Decisões | 1.1 | GDE 1–6 |
+| PRO-GDE-001 | Processo de Gerência de Decisões | 1.2 | GDE 1–6 |
 | PLA-CAP-001 | Plano de Capacitação | 1.1 | CAP 1–4 |
 | GUIA-CAP-001 | Mini-manual — Gerência de Projetos | — | CAP 2 (material de apoio) |
 | GUIA-CAP-002 | Mini-manual — Especificação de Requisitos | — | CAP 2 |
@@ -129,7 +131,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende |
 |---|---|---|---|
-| PRO-GPR-001 | Processo de Gerência de Projetos | 1.3 | GPR 1–20 |
+| PRO-GPR-001 | Processo de Gerência de Projetos | 1.4 | GPR 1–20 |
 | GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | 1.0 | apoio ao GPR |
 | PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.1 | REQ 1–7 |
 | PRO-PCP-001 | Processo de Projeto e Construção do Produto | 1.1 | PCP 1–3 |
@@ -210,7 +212,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Observação |
 |---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.35 | Rascunho de gestão |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.36 | Rascunho de gestão |
 | GUIA-ORG-001 | Guia de Estrutura do Confluence | 1.0 | Apoio à navegação no Confluence |
 
 ### Pendentes / A produzir
