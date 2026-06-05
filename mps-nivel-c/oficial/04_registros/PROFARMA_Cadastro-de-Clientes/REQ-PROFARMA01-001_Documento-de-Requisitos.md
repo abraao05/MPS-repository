@@ -5,7 +5,7 @@
 | **Documento** | REQ-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 05/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | REQ (evidência de projeto) |
@@ -177,6 +177,25 @@ Registrar os requisitos funcionais e não funcionais do sistema de Cadastro de C
 
 ---
 
+## 8. Confirmação de entendimento dos requisitos
+
+| Envolvido | Papel | Forma de confirmação | Data |
+|---|---|---|---|
+| Armando Junior | Tech Lead D1000 | Revisão de design (REV-001, 09/05/2025) + aprovação das decisões arquiteturais GDE-001/GDE-002 | 09/05/2025 |
+| Helena Moreira | Coordenadora de Projeto D1000 | Participação nas Sprint Reviews + aceites parciais por e-mail (Sprints 1–17) | Contínuo Sprints 1–17 |
+| Julielle Santos | QA D1000 | Aprovação dos roteiros de teste (VV §5) + execução UAT + aceite de homologação | Set/2025–Jan/2026 |
+| Humberto Erler | Gerente de TI D1000 | Aceite formal do projeto (ATA-PROFARMA01-002, 29/01/2026) | 29/01/2026 |
+
+Os requisitos foram revisados e confirmados de forma iterativa ao longo do projeto:
+
+- **Versão 1.0 (RF-01 a RF-10, RNF-01 a RNF-08):** confirmados na Sprint Review da Fase 1 (Junho/2025) com presença de Armando Junior e Helena Moreira.
+- **Change requests CR-01 a CR-12:** cada requisito adicionado ou alterado foi confirmado com aprovação formal antes da implementação, evidenciado na RASTR-PROFARMA01-001 §5 e auditado na GQA-P02 (10/10/2025).
+- **Confirmação final:** aceite formal de Humberto Erler em 29/01/2026 (ATA-PROFARMA01-002), atestando que todos os 19 RF e 14 RNF foram atendidos conforme os critérios de saída verificados.
+
+A GQA-P01 registrou NC-01 (requisitos documentados retroativamente para os Sprints 1–3); a ação corretiva foi executada até 30/06/2025 e confirmada como resolvida na GQA-P02.
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
@@ -184,3 +203,4 @@ Registrar os requisitos funcionais e não funcionais do sistema de Cadastro de C
 | 1.0 | 28/04/2025 | Time de Melhoria Contínua | Versão inicial — requisitos RF-01 a RF-10, RNF-01 a RNF-08 |
 | 1.1 | 15/08/2025 | Time de Melhoria Contínua | Adição de RF-15, RF-16 (BlueSoft e CloseUp), RF-17 (worker expurgo LGPD), RNF-09 a RNF-14 |
 | 1.2 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — reconstituída com base nas entregas, change requests e transcrições do período 04/2025–01/2026 |
+| 1.3 | 05/06/2026 | Time de Melhoria Contínua | Adição da seção §8 (Confirmação de entendimento dos requisitos) para conformidade com MPS-SW REQ |
