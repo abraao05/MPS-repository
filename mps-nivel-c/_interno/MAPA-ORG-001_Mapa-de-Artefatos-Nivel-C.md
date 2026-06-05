@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.31 (rascunho) |
+| **Versão** | 0.32 (rascunho) |
 | **Data** | 05/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
@@ -14,6 +14,8 @@
 > **Alterações v0.2 (02/06/2026):** resolução das 5 pendências de escopo. OSW 8/9/10 confirmados no escopo (há gestão de portfólio). AQU mantido, mas movido para o fim da fila (candidato a não-aplicável, a confirmar com a ASR). Ferramentas definidas (Jira, Git, Azure DevOps, Azure Test Plans/Xray, Confluence). Papel de GQA confirmado. Ver seção 3 para detalhes.
 
 > **Alterações v0.30 (05/06/2026):** criado TPL-GPC-001 (Template de Registro de Verificação de GQA); PLA-GPC-001 atualizado para v1.3 com inventário completo de ativos (§2). Ambas as lacunas identificadas na análise de cobertura da camada de definição.
+
+> **Alterações v0.32 (05/06/2026):** criado GUIA-GCO-001 (Guia de Nomenclaturas Técnicas v1.0) com padrões técnicos de nomenclatura para repositórios, código, BD, recursos Azure, pipelines e Key Vault. PLA-GPC-001 atualizado para v1.4 (adição ao inventário). PLA-GCO-001 v1.1 referencia o novo guia.
 
 > **Alterações v0.31 (05/06/2026):** fechamento de lacunas de definição identificadas no diagnóstico MPS. Grupo 1 (conteúdo): PRO-OSW-001 v1.2 (+RACI e competências §4); PRO-OSW-002 v1.2 (+estrutura do quadro de capacity §4.1); PLA-MED-001 v1.3 (+estrutura do repositório organizacional §4.1); PLA-GCO-001 v1.1 (+lista mínima de ICs por projeto §3.1); PLA-CAP-001 v1.1 (+tabela de fontes e responsáveis §3). Grupo 2 (maturidade): PRO-GDE-001 v1.1 (+limiar orientativo de alto impacto); PRO-AQU-001 v1.1 (+critérios mínimos de qualificação); PRO-ITP-001 v1.1 (+critérios de conclusão da integração); MAPA-CAP-001 v1.1 (+revisão de correspondência pós-primeiro ciclo).
 
@@ -72,11 +74,12 @@ MPS-Nivel-C/
 | EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.2 | GPC 3; CP (iv,v,vi) | Aprovado |
 | PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.1 | GPC 6 | Aprovado |
 | EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.1 | GPC 7 | Aprovado |
-| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.3 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
+| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.4 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
 | PRO-OSW-001 | Governança Organizacional de Processos | 1.2 | OSW 2, 3, 4, 5, 6, 7 | Aprovado |
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.2 | OSW 8, 9, 10 | Aprovado |
 | PLA-MED-001 | Plano de Medição | 1.3 | MED 1-7; GPC 9; OSW 6 | Aprovado |
 | PLA-GCO-001 | Plano de Gerência de Configuração | 1.1 | GCO 1-5 | Aprovado |
+| GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | 1.0 | GCO 1, 2; GPC 8 | Aprovado |
 | PRO-GDE-001 | Processo de Gerência de Decisões | 1.1 | GDE 1-6 | Aprovado |
 | PLA-CAP-001 | Plano de Capacitação | 1.1 | CAP 1-4 | Aprovado |
 | PRO-AQU-001 | Processo de Aquisição | 1.1 | AQU 1-4 | Aprovado (a confirmar aplicabilidade c/ ASR) |

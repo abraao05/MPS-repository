@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-GPC-001 — Plano de Gestão e Melhoria de Processos |
-| **Versão** | 1.3 |
+| **Versão** | 1.4 |
 | **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
@@ -41,6 +41,7 @@ A Timeware mantém uma **biblioteca de ativos de processo**, no Confluence, cont
 |---|---|---|
 | PLA-MED-001 | Plano de Medição | Plano |
 | PLA-GCO-001 | Plano de Gerência de Configuração | Plano |
+| GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | Guia |
 | PRO-GDE-001 | Processo de Gerência de Decisões | Processo |
 | PLA-CAP-001 | Plano de Capacitação | Plano |
 | PRO-AQU-001 | Processo de Aquisição | Processo |
@@ -176,3 +177,4 @@ Este documento corresponde a **vários resultados** do processo **Gerência de P
 | 1.1 | 19/11/2025 | Time de Melhoria Contínua | Inclusão do Registro de Oportunidades de Melhoria (GPC 4) na seção 5 |
 | 1.2 | 26/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO nos papéis |
 | 1.3 | 05/06/2026 | Time de Melhoria Contínua | Expansão do inventário de ativos (§2) com todos os documentos da biblioteca: processos, planos, guias e templates |
+| 1.4 | 05/06/2026 | Time de Melhoria Contínua | Adição do GUIA-GCO-001 (Guia de Nomenclaturas Técnicas) ao inventário de ativos (§2) |

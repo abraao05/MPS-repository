@@ -116,6 +116,7 @@ As auditorias de configuração são conduzidas no contexto da Garantia da Quali
 ## 9. Documentos relacionados
 
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
+- GUIA-GCO-001 — Guia de Nomenclaturas Técnicas
 - PRO-GPC-001 — Processo-Padrão Organizacional
 - EST-GPC-001 — Estratégia de Garantia da Qualidade
 - Processo de Verificação e Validação (VV)
