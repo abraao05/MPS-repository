@@ -45,7 +45,7 @@ Todos os itens planejados para a fase foram entregues dentro do período previst
 
 | ID | Descrição | Referência |
 |---|---|---|
-| NC-01 (GQA) | Requisitos documentados retroativamente — Sprints 1–3 sem documento formal de requisitos no início | GQA-PROFARMA01-001 |
+| NC-01 (GQA) | Requisitos documentados retroativamente — Sprints 1–3 iniciados sem documento formal de requisitos | GQA-PROFARMA01-001 |
 | NC-02 (GQA) | Rastreabilidade no Jira inexistente nos Sprints 1–3 | GQA-PROFARMA01-001 |
 
 **Riscos materializados**
@@ -86,7 +86,7 @@ Todos os itens planejados para a fase foram entregues dentro do período previst
 
 | Descrição | Impacto |
 |---|---|
-| Contratos de API do VTEX e Call Center entregues pela D1000 com 3 semanas de atraso em relação ao previsto | Início das integrações RF-12 e RF-13 postergado; absorção de BlueSoft e CloseUp deslocada para Sprints 8–10 |
+| Contratos de API do VTEX e Call Center entregues pela D1000 com 3 semanas de atraso em relação ao previsto (risco R-02 materializado) | Início das integrações RF-12 e RF-13 postergado; absorção de BlueSoft e CloseUp deslocada para os Sprints 8–10 |
 
 **Change Requests absorvidos na fase**
 
@@ -132,7 +132,7 @@ Todos os itens planejados para a fase foram entregues dentro do período previst
 
 | Descrição | Impacto |
 |---|---|
-| Ambiente de homologação AKS indisponível durante a fase | Desenvolvimento continuou localmente com Docker Compose; início dos testes formais de homologação postergado para Setembro/2025 |
+| Ambiente de homologação AKS indisponível durante a fase (risco R-01 materializado) | Desenvolvimento continuou localmente com Docker Compose; início dos testes formais de homologação postergado para Setembro/2025 |
 
 **Riscos materializados**
 
@@ -170,7 +170,7 @@ Todos os itens planejados para a fase foram entregues dentro do período previst
 
 | Descrição | Impacto |
 |---|---|
-| Carga inicial da base legada levou 3 semanas além do estimado | Inconsistências na base legada (CPFs inválidos, máscaras divergentes, registros duplicados) exigiram múltiplos ciclos de extração, validação e correção |
+| Carga inicial da base legada levou 3 semanas além do estimado (risco R-06 materializado) | Inconsistências na base legada — CPFs inválidos, máscaras divergentes e registros duplicados — exigiram múltiplos ciclos de extração, validação e correção |
 
 **Change Requests absorvidos na fase**
 
@@ -282,9 +282,7 @@ Nenhum risco materializado nesta fase.
 
 **Ações corretivas tomadas**
 
-Não aplicável — fase concluída sem desvios.
-
-O projeto foi encerrado em 29/01/2026 sem pendências de escopo contratado.
+Não aplicável — fase concluída sem desvios. O projeto foi encerrado em 29/01/2026 sem pendências de escopo contratado.
 
 ---
 
