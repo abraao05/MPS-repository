@@ -58,12 +58,12 @@ Ver `ADAP-GASMIG02-002_Registro-de-Adaptacao-OS002.md`. Mesmas decisões da OS-0
 |---|---|---|
 | Kickoff OS-PARCELA-002 | 26/05/2026 (seg) | Abraão Oliveira |
 | Azure Key Vault provisionado e integrado ao APIM | 29/05/2026 (qui) | Fernando Oliveira — revisão: Cézar Hiraki |
-| OAuth 2.0 (Entra ID + APIM) funcional | 02/06/2026 (ter) | Henry — revisão: Cézar Hiraki |
+| OAuth 2.0 (Entra ID + APIM) funcional | 02/06/2026 (ter) | Henry Komatsu — revisão: Cézar Hiraki |
 | API Keys com controle granular configuradas | 03/06/2026 (qua) | Fernando Oliveira |
-| Versionamento + ciclo de vida configurados | 04/06/2026 (qui) | Henry |
+| Versionamento + ciclo de vida configurados | 04/06/2026 (qui) | Henry Komatsu |
 | CORS + validação de payload configurados | 05/06/2026 (qui) | Fernando Oliveira |
 | Application Insights integrado + dashboards configurados | 06/06/2026 (sex) | Fernando Oliveira |
-| Alertas configurados e validados | 06/06/2026 (sex) | Henry |
+| Alertas configurados e validados | 06/06/2026 (sex) | Henry Komatsu |
 | **Freeze de configuração — encerramento da sprint** | **06/06/2026 (sex)** | **Time OS-002** |
 | Verificação técnica Cézar Hiraki + entrega formal ao cliente | 09/06/2026 (seg) | Cézar Hiraki / Abraão Oliveira |
 | Sessão de homologação end-to-end com time técnico GASMIG | 10/06/2026 (ter) | Abraão Oliveira / Cézar Hiraki |
@@ -76,7 +76,7 @@ Ver `ADAP-GASMIG02-002_Registro-de-Adaptacao-OS002.md`. Mesmas decisões da OS-0
 | Gerente de Projeto / PO | Abraão Oliveira | Parcial | Coordenação, comunicação com GASMIG, encerramento |
 | Tech Lead / Arquiteto / GCO | Cézar Hiraki | Parcial | Revisão de Key Vault, OAuth 2.0, alertas; verificação técnica 09/06 |
 | Engenheiro Azure | Fernando Oliveira | Integral | RF-11 (Key Vault), RF-13 (API Keys), RF-18 (CORS + payload), RF-16 (dashboards) |
-| Engenheiro Azure | Henry | Integral | RF-12 (OAuth 2.0), RF-14 (versionamento), RF-15 (ciclo de vida), RF-17 (alertas) |
+| Engenheiro Azure | Henry Komatsu | Integral | RF-12 (OAuth 2.0), RF-14 (versionamento), RF-15 (ciclo de vida), RF-17 (alertas) |
 
 **Ambiente e ferramentas:** mesmos da OS-001 + Azure Key Vault + Application Insights + Azure Monitor.
 
@@ -115,4 +115,4 @@ Projeto viável. A equipe executa em continuidade à OS-001, com ambiente já co
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 26/05/2026 | Abraão Oliveira | Versão inicial — baseline aprovada no kickoff da OS-002 |
-| 1.1 | 04/06/2026 | Abraão Oliveira | Atualização de recursos (Fernando Oliveira e Henry como engenheiros executores); cronograma detalhado com responsáveis por marco e convenção de sprint (freeze sexta / entrega segunda) |
+| 1.1 | 04/06/2026 | Abraão Oliveira | Atualização de recursos (Fernando Oliveira e Henry Komatsu como engenheiros executores); cronograma detalhado com responsáveis por marco e convenção de sprint (freeze sexta / entrega segunda) |
