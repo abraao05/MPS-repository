@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PRO-VV-001 — Processo de Verificação e Validação |
 | **Versão** | 1.2 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 16/01/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Processos MPS-SW relacionados** | VV 1 a VV 5 |
@@ -104,6 +104,6 @@ Os **defeitos** identificados são registrados (Jira/Xray), priorizados e **trat
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do processo de verificação e validação |
-| 1.1 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Detalhamento do fluxo do QA (teste exploratório, evidências, cenários Gherkin) |
-| 1.2 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Critério de mapa de teste; teste mocado não é evidência; ambientes (homologação/stage); registro de bugs/retrabalho via subtarefas |
+| 1.0 | 24/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de verificação e validação |
+| 1.1 | 05/12/2025 | Time de Melhoria Contínua | Detalhamento do fluxo do QA (teste exploratório, evidências, cenários Gherkin) |
+| 1.2 | 16/01/2026 | Time de Melhoria Contínua | Critério de mapa de teste; teste mocado não é evidência; ambientes (homologação/stage); registro de bugs/retrabalho via subtarefas |
