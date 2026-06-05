@@ -6,8 +6,8 @@
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-001 |
 | **Cliente** | GASMIG — Companhia de Gás de Minas Gerais |
 | **Contrato** | Governança de APIs GASMIG |
-| **Versão** | 1.0 |
-| **Data** | 29/04/2026 |
+| **Versão** | 1.1 |
+| **Data** | 05/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -103,7 +103,7 @@ Detalhamento completo em `ADAP-GASMIG02-001_Registro-de-Adaptacao.md`. Resumo:
 | Tech Lead / Arquiteto / GCO | Cézar Hiraki | Parcial (decisões técnicas, revisão, configuração crítica) |
 | Engenheiro Azure | Fernando Oliveira | Integral (execução da configuração) |
 | Engenheiro Azure | João Victor Cruz Silva | Integral (execução da configuração) |
-| GQA | A definir | Parcial (auditorias de processo) |
+| GQA | COO (Operações) | Parcial (auditorias de processo) |
 
 **Ambiente e ferramentas:**
 
@@ -170,3 +170,4 @@ O plano é apresentado ao cliente na sessão de kickoff / comunicação formal d
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 29/04/2026 | Abraão Oliveira | Versão inicial — baseline aprovada no kickoff |
+| 1.1 | 05/06/2026 | Abraão Oliveira | Definição do papel de GQA como COO (Operações) no §6, conforme designação realizada antes da primeira auditoria |

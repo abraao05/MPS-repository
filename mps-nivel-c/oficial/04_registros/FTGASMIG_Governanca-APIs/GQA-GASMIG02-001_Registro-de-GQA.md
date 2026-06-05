@@ -3,11 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GQA-GASMIG02-001 — Registro de Garantia da Qualidade |
-| **Versão** | 1.1 |
-| **Data** | 04/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | Fundação Tecnológica GASMIG — Governança de APIs |
-| **Auditor** | Gerente de Projeto |
+| **Auditor** | COO (Operações) |
 
 ---
 
@@ -22,7 +22,7 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto, verificando
 ### 2.1 OS-001 — Configuração Base do Gateway
 
 **Data da auditoria:** 07/05/2026
-**Auditado por:** Gerente de Projeto
+**Auditado por:** COO (Operações)
 **Período auditado:** 10/04/2026 – 07/05/2026
 
 | Item verificado | Conforme? | Observação |
@@ -43,7 +43,7 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto, verificando
 ### 2.2 OS-002 — Integração e Homologação (auditoria parcial — sprint em andamento)
 
 **Data da auditoria:** 04/06/2026
-**Auditado por:** Gerente de Projeto
+**Auditado por:** COO (Operações)
 **Período auditado:** 26/05/2026 – 04/06/2026
 
 | Item verificado | Conforme? | Observação |
@@ -96,5 +96,6 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto, verificando
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 07/05/2026 | Gerente de Projeto | Auditoria de encerramento da OS-001 |
-| 1.1 | 04/06/2026 | Gerente de Projeto | Inclusão de auditoria parcial da OS-002 em andamento |
+| 1.0 | 07/05/2026 | COO (Operações) | Auditoria de encerramento da OS-001 |
+| 1.1 | 04/06/2026 | COO (Operações) | Inclusão de auditoria parcial da OS-002 em andamento |
+| 1.2 | 05/06/2026 | Time de Melhoria Contínua | Correção do papel do auditor para COO (Operações), garantindo independência da GQA em relação à equipe de projeto |

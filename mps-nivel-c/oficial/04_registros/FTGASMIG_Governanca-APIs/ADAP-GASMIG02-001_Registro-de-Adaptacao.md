@@ -4,8 +4,8 @@
 |---|---|
 | **Documento** | ADAP-GASMIG02-001 |
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-001 |
-| **Versão** | 1.1 |
-| **Data** | 29/04/2026 |
+| **Versão** | 1.2 |
+| **Data** | 05/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira |
 
 ---
@@ -22,7 +22,7 @@
 | Cadência de entrega ao cliente | Por marco — aceite único ao final da OS | Não há sprints com entregas parciais. A entrega é a OS completa, validada em sessão de apresentação ao time técnico GASMIG. |
 | Ambiente de stage | Sandbox é parte do escopo da entrega | O ambiente de sandbox não é pré-requisito externo; sua configuração é um dos itens de entrega desta OS. |
 | Verificação e Validação (VV) | Checklist de verificação de configuração + smoke checks HTTP + verificação técnica por Cézar Hiraki | Projeto de configuração de ferramenta: não há código desenvolvido. Testes de software (unitários, integração, BDD/Gherkin) não se aplicam. A verificação é realizada por checklist estruturado e navegação no portal Azure. Ver VV-GASMIG02-001. |
-| GQA | Responsável a definir | Será designado antes da primeira auditoria de processo. |
+| GQA | COO (Operações) | Designado antes da primeira auditoria de processo, garantindo independência em relação à equipe de projeto. |
 
 ## 2. Etapas aplicáveis e não aplicáveis
 
@@ -57,3 +57,4 @@
 |---|---|---|---|
 | 1.0 | 29/04/2026 | Abraão Oliveira | Versão inicial |
 | 1.1 | 04/06/2026 | Abraão Oliveira | Adicionada adaptação explícita de VV: testes de software não aplicáveis; verificação por checklist de configuração e smoke checks HTTP; revisão técnica substitui revisão de código |
+| 1.2 | 05/06/2026 | Abraão Oliveira | Definição do papel de GQA como COO (Operações), garantindo independência em relação à equipe de projeto |
