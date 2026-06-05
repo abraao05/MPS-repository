@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.29 (rascunho) |
-| **Data** | 04/06/2026 |
+| **Versão** | 0.30 (rascunho) |
+| **Data** | 05/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
 | **Fonte de escopo** | PlanilhaIndicadores_SW_2024__NivelC.xlsx |
@@ -12,6 +12,8 @@
 | **Responsável (ponto focal)** | Abraão Oliveira |
 
 > **Alterações v0.2 (02/06/2026):** resolução das 5 pendências de escopo. OSW 8/9/10 confirmados no escopo (há gestão de portfólio). AQU mantido, mas movido para o fim da fila (candidato a não-aplicável, a confirmar com a ASR). Ferramentas definidas (Jira, Git, Azure DevOps, Azure Test Plans/Xray, Confluence). Papel de GQA confirmado. Ver seção 3 para detalhes.
+
+> **Alterações v0.30 (05/06/2026):** criado TPL-GPC-001 (Template de Registro de Verificação de GQA); PLA-GPC-001 atualizado para v1.3 com inventário completo de ativos (§2). Ambas as lacunas identificadas na análise de cobertura da camada de definição.
 
 > **Como usar este mapa:** é o painel de controle da implantação. Cada processo tem seus resultados esperados (o que a avaliação verifica) e os artefatos que servem de evidência. A coluna **Status** é atualizada conforme avançamos. A coluna **Local** indica onde o artefato vai viver (Confluence, template, ferramenta, registro por projeto).
 >
@@ -68,7 +70,7 @@ MPS-Nivel-C/
 | EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.2 | GPC 3; CP (iv,v,vi) | Aprovado |
 | PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.1 | GPC 6 | Aprovado |
 | EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.1 | GPC 7 | Aprovado |
-| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.2 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
+| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.3 | GPC 1, 4, 5, 8, 10, 11 | Aprovado |
 | PRO-OSW-001 | Governança Organizacional de Processos | 1.1 | OSW 2, 3, 4, 5, 6, 7 | Aprovado |
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.1 | OSW 8, 9, 10 | Aprovado |
 | PLA-MED-001 | Plano de Medição | 1.2 | MED 1-7; GPC 9; OSW 6 | Aprovado |
@@ -95,6 +97,7 @@ MPS-Nivel-C/
 | TPL-GPR-006 | Template de Change Request | 1.0 | GPR / GCO (template) | Aprovado |
 | TPL-GDE-001 | Template de Registro de Análise de Decisão (RAD) | 1.0 | GDE (template) | Aprovado |
 | TPL-ORG-001 | Template de Ata de Reunião | 1.0 | — (apoio, multiuso) | Aprovado |
+| TPL-GPC-001 | Template de Registro de Verificação de GQA | 1.0 | GPC 3 (template) | Aprovado |
 | GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | 1.0 | — (apoio) | Aprovado |
 | README | README do repositório [INTERNO] | 1.0 | — (apoio/navegação) | Aprovado |
 | TREINO-* | Materiais de Treinamento do time (apostilas por papel) [INTERNO] | — | — (apoio à preparação para a avaliação) | Criados em conversa dedicada do projeto |
