@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | MAPA-CAP-001 — Mapa de Capacidade dos Processos |
 | **Versão** | 1.0 |
-| **Data** | `<dd/mm/aaaa>` |
+| **Data** | 10/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C (atributos de capacidade CP-E, CP-D, CP-C) |
@@ -96,4 +96,4 @@ A camada de evidências dos projetos é, portanto, o complemento necessário des
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | `<dd/mm/aaaa>` | Time de Melhoria Contínua | Definição inicial do mapa de capacidade dos processos |
+| 1.0 | 10/11/2025 | Time de Melhoria Contínua | Definição inicial do mapa de capacidade dos processos |
