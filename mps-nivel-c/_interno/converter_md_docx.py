@@ -21,6 +21,31 @@ GRAY  = RGBColor(0x55, 0x55, 0x55)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 
 # ── Mapa processo ──────────────────────────────────────────────────────────────
+# Tipos de documentos de evidência de projeto → área de processo
+TYPE_TO_PROCESS = {
+    'PLA':    'GPR',   # Plano de Projeto
+    'TAP':    'GPR',   # Termo de Abertura
+    'TAE':    'GPR',   # Termo de Encerramento
+    'ADAP':   'GPR',   # Registro de Adaptação
+    'RAC':    'GPR',   # Relatório de Acompanhamento
+    'CR':     'GPR',   # Change Request
+    'LI':     'GPR',   # Lições Aprendidas
+    'ATA':    'ORG',   # Ata de Reunião
+    'GCO':    'GCO',
+    'GDE':    'GDE',
+    'GQA':    'GPC',   # Garantia da Qualidade
+    'ITP':    'ITP',
+    'MED':    'MED',
+    'PCP':    'PCP',
+    'RASTR':  'REQ',   # Matriz de Rastreabilidade
+    'REQ':    'REQ',
+    'VV':     'VV',
+    'REV':    'VV',    # Revisão Técnica
+    'CTQ':    'VV',    # Cenários de Teste
+    'REL':    'VV',    # Relatório V&V
+    'CAP':    'CAP',
+}
+
 PROCESS = {
     'ORG': 'Governança Organizacional',
     'OSW': 'Gerência Organizacional de Software',
@@ -172,12 +197,21 @@ def extract_meta(md_text):
     return meta
 
 def code_to_process(code):
-    """PRO-GDE-001 → 'GDE' → 'Gerência de Decisões'"""
+    """
+    PRO-GDE-001  → 'GDE' → 'Gerência de Decisões'
+    PLA-FRUKI01-001 → tipo 'PLA' → GPR → 'Gerência de Projetos'
+    """
     parts = code.split('-')
+    # 1) procura sigla de processo diretamente nas partes
     for part in parts:
         if part in PROCESS:
             return part, PROCESS[part]
-    return 'ORG', 'Timeware MPS-SW'
+    # 2) mapeia pelo tipo do documento (primeira parte)
+    doc_type = parts[0].upper() if parts else ''
+    if doc_type in TYPE_TO_PROCESS:
+        proc_key = TYPE_TO_PROCESS[doc_type]
+        return proc_key, PROCESS.get(proc_key, 'Evidência de Projeto')
+    return 'ORG', 'Evidência de Projeto'
 
 # ── Construtor de tabela ────────────────────────────────────────────────────────
 def build_table(doc, md_lines, is_meta=False):
