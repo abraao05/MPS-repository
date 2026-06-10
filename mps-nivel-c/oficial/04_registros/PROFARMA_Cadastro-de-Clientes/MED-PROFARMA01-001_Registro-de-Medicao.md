@@ -5,8 +5,8 @@
 | **Documento** | MED-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 10/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | MED (evidência de projeto) |
 
@@ -39,6 +39,9 @@ Registrar as medidas coletadas ao longo do projeto Cadastro de Clientes — Rede
 | Total de sprints | ~14 sprints | 19 sprints |
 | Duração média por sprint | ~2 semanas | ~2 semanas |
 | Sprints adicionais (expansão de escopo) | — | +5 sprints (CRs e bloqueios de ambiente) |
+| Story Points totais | 573 SP | 564 SP |
+| Desvio de Story Points | — | −9 SP (−1,6%) |
+| Velocity média por sprint | — | ~30 SP/sprint (pico: 42 SP no Sprint 16) |
 
 ---
 
@@ -123,3 +126,4 @@ Não foram identificados desvios de produtividade ou qualidade de execução que
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — registro de medição consolidado do projeto Cadastro de Clientes — Rede D1000 |
+| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo das métricas de Story Points na §2.2 (573 SP plan / 564 SP real / −1,6%; velocity ~30 SP/sprint) para consistência com a planilha de gestão do projeto |

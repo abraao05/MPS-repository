@@ -6,8 +6,8 @@
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
 | **Contrato** | Squad D1000 Loja — alocação de 3 Dev Pleno |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 10/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -68,27 +68,28 @@ Detalhamento completo em `ADAP-PROFARMA01-001_Registro-de-Adaptacao.md`. Resumo:
 
 ### 5.2 Sprints de desenvolvimento
 
-| Sprint | Período (aprox.) | Principais entregas |
-|---|---|---|
-| Sprint 1 | 28/04–09/05/2025 | Arquitetura definida; Docker; DER v1; ambiente Azure inicial; dailys iniciadas |
-| Sprint 2 | 12/05–23/05/2025 | DER v2; fluxo ITEC (trigger/outbox); endpoints iniciais; pipelines DevOps |
-| Sprint 3 | 26/05–06/06/2025 | Regras de sanitização da base; testes automatizados (início); acesso JIRA liberado |
-| Sprint 4 | 09/06–20/06/2025 | Arquitetura API Gateway finalizada; VTEX no fluxo de cadastro; PostgreSQL sequencial único |
-| Sprint 5 | 23/06–04/07/2025 | Preparação apresentação Falcão; desenhos UML de arquitetura; checklist técnico pré-piloto |
-| Sprint 6 | 07/07–18/07/2025 | Apresentação formal do plano (17/07); 16 endpoints entregues; 273 testes unitários; piloto loja 9 definido |
-| Sprint 7 | 21/07–01/08/2025 | Alinhamento integridade dados (CPF como PK); modelo push; sanitização base legada |
-| Sprint 8 | 04/08–15/08/2025 | Configuração Prometheus/Grafana (observabilidade); CloudTree loja-backend; documentação endpoints |
-| Sprint 9 | 18/08–29/08/2025 | Ambiente homologação configurado; início carga de clientes |
-| Sprint 10 | 01/09–12/09/2025 | Carga parcial (1 M de 20 M registros); worker de expurgo aprovado |
-| Sprint 11 | 15/09–26/09/2025 | Preparação dailys de teste; Datadog configurado; mapping cenários de teste |
-| Sprint 12 | 29/09–10/10/2025 | Início testes homologação (<5% em 29/09 — aceleração exigida); status reports iniciados |
-| Sprint 13 | 13/10–24/10/2025 | Status reports 08/10, 14/10, 17/10; bloqueio acesso banco QA (14–21/10); retomada após desbloqueio |
-| Sprint 14 | 27/10–07/11/2025 | Plano de piloto (04–05/11); proposta de infra produtiva Azure (03/11); bug id_cliente sequencial (06/11) |
-| Sprint 15 | 10/11–21/11/2025 | Consolidação histórico tickets; daily 10/11 registrada; integração Propz CRM iniciada |
-| Sprint 16 | 24/11–05/12/2025 | Propz CRM concluído e disponível para testes (04/12); documentação Propz enviada |
-| Sprint 17 | 08/12–19/12/2025 | Versão 25.12.1.1 do loja-backend; ajuste campos fidelidade/opt-in/opt-out |
-| Sprint 18 | 06/01–17/01/2026 | Daily Teams criada por Armando (06/01); status conflituoso com cliente (09/01); ajuste loja-backend URL HttpClient |
-| Sprint 19 | 20/01–29/01/2026 | GMUD 2624117 (21/01); PR 10684 loja-backend; liberação para testes (22/01); versão 26.1.1.1; deploy (26/01); PRs finais (27–29/01) |
+| Sprint | Período (aprox.) | SP Planejado | Principais entregas |
+|---|---|---|---|
+| Sprint 1 | 28/04–09/05/2025 | 28 | Arquitetura definida; Docker; DER v1; ambiente Azure inicial; dailys iniciadas |
+| Sprint 2 | 12/05–23/05/2025 | 30 | DER v2; fluxo ITEC (trigger/outbox); endpoints iniciais; pipelines DevOps |
+| Sprint 3 | 26/05–06/06/2025 | 30 | Regras de sanitização da base; testes automatizados (início); acesso JIRA liberado |
+| Sprint 4 | 09/06–20/06/2025 | 32 | Arquitetura API Gateway finalizada; VTEX no fluxo de cadastro; PostgreSQL sequencial único |
+| Sprint 5 | 23/06–04/07/2025 | 30 | Preparação apresentação Falcão; desenhos UML de arquitetura; checklist técnico pré-piloto |
+| Sprint 6 | 07/07–18/07/2025 | 32 | Apresentação formal do plano (17/07); 16 endpoints entregues; 273 testes unitários; piloto loja 9 definido |
+| Sprint 7 | 21/07–01/08/2025 | 32 | Alinhamento integridade dados (CPF como PK); modelo push; sanitização base legada |
+| Sprint 8 | 04/08–15/08/2025 | 32 | Configuração Prometheus/Grafana (observabilidade); CloudTree loja-backend; documentação endpoints |
+| Sprint 9 | 18/08–29/08/2025 | 28 | Ambiente homologação configurado; início carga de clientes |
+| Sprint 10 | 01/09–12/09/2025 | 30 | Carga parcial (1 M de 20 M registros); worker de expurgo aprovado |
+| Sprint 11 | 15/09–26/09/2025 | 28 | Preparação dailys de teste; Datadog configurado; mapping cenários de teste |
+| Sprint 12 | 29/09–10/10/2025 | 28 | Início testes homologação (<5% em 29/09 — aceleração exigida); status reports iniciados |
+| Sprint 13 | 13/10–24/10/2025 | 28 | Status reports 08/10, 14/10, 17/10; bloqueio acesso banco QA (14–21/10); retomada após desbloqueio |
+| Sprint 14 | 27/10–07/11/2025 | 28 | Plano de piloto (04–05/11); proposta de infra produtiva Azure (03/11); bug id_cliente sequencial (06/11) |
+| Sprint 15 | 10/11–21/11/2025 | 32 | Consolidação histórico tickets; daily 10/11 registrada; integração Propz CRM iniciada |
+| Sprint 16 | 24/11–05/12/2025 | 35 | Propz CRM concluído e disponível para testes (04/12); documentação Propz enviada |
+| Sprint 17 | 08/12–19/12/2025 | 32 | Versão 25.12.1.1 do loja-backend; ajuste campos fidelidade/opt-in/opt-out |
+| Sprint 18 | 06/01–17/01/2026 | 28 | Daily Teams criada por Armando (06/01); status conflituoso com cliente (09/01); ajuste loja-backend URL HttpClient |
+| Sprint 19 | 20/01–29/01/2026 | 30 | GMUD 2624117 (21/01); PR 10684 loja-backend; liberação para testes (22/01); versão 26.1.1.1; deploy (26/01); PRs finais (27–29/01) |
+| **Total** | | **573** | |
 
 ### 5.3 Eventos e comunicações formais relevantes
 
@@ -202,3 +203,4 @@ O projeto foi viável e concluído em janeiro de 2026, com a entrega das correç
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em e-mails e transcrições Fireflies do período 03/2025–01/2026 |
+| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna SP Planejado na tabela §5.2 (573 SP totais) para consistência com a planilha de gestão do projeto |
