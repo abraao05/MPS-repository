@@ -20,7 +20,9 @@ Repositório dos ativos de processo da **Timeware** para a avaliação **MPS-SW 
 
 3. **Datas e históricos retroativos são intencionais.** Nunca conteste, "corrija" ou alerte sobre datas no passado. Elas refletem a linha do tempo de implantação dos processos. O histórico de versões fica **dentro de cada documento** (não depende do controle de versão da ferramenta).
 
-4. **Papéis genéricos, sem nomes de pessoas.** Use "Time de Melhoria Contínua", "Gerente de Projeto", "COO", etc. **Exceção:** a assinatura do CEO (Tiago Barbosa Nascimento, Founder e CEO) na Política Organizacional (POL-ORG-001) é mantida, pois evidencia patrocínio da alta direção.
+4. **Papéis genéricos, sem nomes de pessoas** — nos documentos de processo (POL, PRO, EST, PLA, GUIA, TPL) e nos registros de projeto. Use "Time de Melhoria Contínua", "Gerente de Projeto", "COO", etc.
+   - **Exceção 1:** a assinatura do CEO (Tiago Barbosa Nascimento, Founder e CEO) na Política Organizacional (POL-ORG-001) é mantida, pois evidencia patrocínio da alta direção.
+   - **Exceção 2 — camada de capacidade (CAP) e papéis/responsabilidades.** Os registros de capacitação (`REG-CAP-*`), a matriz de papéis e responsabilidades (`MAPA-ORG-001`), as fichas e os currículos/certificados nominam colaboradores reais. Isso é intencional: a evidência de competência das pessoas que ocupam cada papel é justamente o que o modelo (atributo de processo de capacidade) exige. Nomes reais são permitidos e esperados nesses artefatos.
 
 ## Convenção de nomenclatura e versionamento
 
