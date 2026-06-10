@@ -49,74 +49,74 @@ Mesmos métodos da OS-PARCELA-001. Adicionados:
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Azure Key Vault provisionado | Key Vault ativo no portal, no mesmo resource group do APIM | ☐ | — |
-| Managed Identity do APIM com acesso ao Key Vault | Permissão de leitura configurada; sem credenciais hard-coded | ☐ | — |
-| Named values como Key Vault references | Todos os valores sensíveis referenciados via Key Vault; auditoria sem hard-codes | ☐ | — |
+| Azure Key Vault provisionado | Key Vault ativo no portal, no mesmo resource group do APIM | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Managed Identity do APIM com acesso ao Key Vault | Permissão de leitura configurada; sem credenciais hard-coded | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Named values como Key Vault references | Todos os valores sensíveis referenciados via Key Vault; auditoria sem hard-codes | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
 
 **OAuth 2.0 (RF-12 / RNF-07)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| App Registration criada no Entra ID GASMIG | App visível no Entra ID com escopo APIM configurado | ☐ | — |
-| Política validate-jwt configurada no APIM | Política presente nas APIs/produtos configurados | ☐ | — |
-| Smoke check — token válido aceito (200) | Chamada com Bearer token válido: resposta 200 | ☐ | — |
-| Smoke check — sem token rejeitado (401) | Chamada sem Authorization header: resposta 401 | ☐ | — |
-| Smoke check — token inválido rejeitado (401) | Chamada com token expirado ou falsificado: resposta 401 | ☐ | — |
+| App Registration criada no Entra ID GASMIG | App visível no Entra ID com escopo APIM configurado | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Política validate-jwt configurada no APIM | Política presente nas APIs/produtos configurados | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Smoke check — token válido aceito (200) | Chamada com Bearer token válido: resposta 200 | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Smoke check — sem token rejeitado (401) | Chamada sem Authorization header: resposta 401 | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Smoke check — token inválido rejeitado (401) | Chamada com token expirado ou falsificado: resposta 401 | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
 
 **API Keys granulares (RF-13)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Controle de chave configurado por API onde aplicável | Política de subscription key em nível de operação configurada | ☐ | — |
-| Smoke check — chave válida aceita (200) | Chamada com chave correta: resposta 200 | ☐ | — |
-| Smoke check — chave inválida rejeitada (401) | Chamada com chave incorreta: resposta 401 | ☐ | — |
+| Controle de chave configurado por API onde aplicável | Política de subscription key em nível de operação configurada | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Smoke check — chave válida aceita (200) | Chamada com chave correta: resposta 200 | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Smoke check — chave inválida rejeitada (401) | Chamada com chave incorreta: resposta 401 | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
 
 **Versionamento (RF-14)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| APIM Versions configuradas (path-based) | URLs de versão criadas (`/v1/`, etc.); roteamento correto | ☐ | — |
-| APIM Revisions configuradas para minor changes | Revisões criadas; versão atual definida | ☐ | — |
+| APIM Versions configuradas (path-based) | URLs de versão criadas (`/v1/`, etc.); roteamento correto | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| APIM Revisions configuradas para minor changes | Revisões criadas; versão atual definida | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
 
 **Ciclo de vida (RF-15)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Estados de ciclo de vida documentados e aplicados | APIs com estado correto (Current, Preview, etc.) no portal | ☐ | — |
-| Deprecation header em APIs deprecated | Header de aviso presente em respostas de APIs deprecated | ☐ | — |
+| Estados de ciclo de vida documentados e aplicados | APIs com estado correto (Current, Preview, etc.) no portal | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Deprecation header em APIs deprecated | Header de aviso presente em respostas de APIs deprecated | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
 
 **Monitoramento — Application Insights e dashboards (RF-16 / RNF-08)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Application Insights integrado ao APIM | Logger configurado; telemetria visível no portal | ☐ | — |
-| Dashboards configurados no Azure Monitor | Dashboards de volumetria, latência e erros visíveis e com dados | ☐ | — |
-| Retenção ≥ 30 dias configurada | Política de retenção do Application Insights ≥ 30 dias | ☐ | — |
+| Application Insights integrado ao APIM | Logger configurado; telemetria visível no portal | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Dashboards configurados no Azure Monitor | Dashboards de volumetria, latência e erros visíveis e com dados | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Retenção ≥ 30 dias configurada | Política de retenção do Application Insights ≥ 30 dias | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
 
 **Alertas automatizados (RF-17 / RNF-09)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Regras de alerta criadas (latência, erros, indisponibilidade) | Regras ativas no Azure Monitor com thresholds definidos | ☐ | — |
-| Action Group com destinatários GASMIG configurado | E-mails/Teams webhook dos destinatários cadastrados | ☐ | — |
-| Frequência de avaliação ≤ 5 minutos | Configuração da regra: período de avaliação ≤ 5 min | ☐ | — |
-| Teste de disparo de alerta | Alerta disparado e notificação recebida pelos destinatários em ≤ 5 min | ☐ | — |
+| Regras de alerta criadas (latência, erros, indisponibilidade) | Regras ativas no Azure Monitor com thresholds definidos | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Action Group com destinatários GASMIG configurado | E-mails/Teams webhook dos destinatários cadastrados | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Frequência de avaliação ≤ 5 minutos | Configuração da regra: período de avaliação ≤ 5 min | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Teste de disparo de alerta | Alerta disparado e notificação recebida pelos destinatários em ≤ 5 min | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
 
 **CORS e validação de payload (RF-18)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Política CORS configurada por API | Origens permitidas definidas; política ativa | ☐ | — |
-| Smoke check — origem bloqueada (403/CORS error) | Chamada de origem não permitida: bloqueada | ☐ | — |
-| Política validate-content configurada | Validação de schema ativa nas APIs com payload | ☐ | — |
-| Smoke check — payload inválido rejeitado (400) | Payload malformado: resposta 400 antes de atingir backend | ☐ | — |
+| Política CORS configurada por API | Origens permitidas definidas; política ativa | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Smoke check — origem bloqueada (403/CORS error) | Chamada de origem não permitida: bloqueada | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Política validate-content configurada | Validação de schema ativa nas APIs com payload | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Smoke check — payload inválido rejeitado (400) | Payload malformado: resposta 400 antes de atingir backend | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
 
 **IaC atualizado (RNF-05 — continuidade)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Scripts Bicep/ARM atualizados com OS-002 | Configuração de Key Vault, OAuth, alertas exportada como IaC | ☐ | — |
-| Commits no Azure DevOps GASMIG | Histórico de commits com os novos recursos | ☐ | — |
+| Scripts Bicep/ARM atualizados com OS-002 | Configuração de Key Vault, OAuth, alertas exportada como IaC | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
+| Commits no Azure DevOps GASMIG | Histórico de commits com os novos recursos | ✅ | Verificado por Cézar Hiraki em 09/06/2026 |
 
 ## 5. Análise e comunicação dos resultados (VV 5)
 
@@ -132,3 +132,4 @@ Mesmos métodos da OS-PARCELA-001. Adicionados:
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 26/05/2026 | Abraão Oliveira / Cézar Hiraki | Versão inicial |
+| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Checklist preenchido com resultados da verificação técnica de 09/06/2026 (Cézar Hiraki — 28 itens ✅, 0 não conformidades) |

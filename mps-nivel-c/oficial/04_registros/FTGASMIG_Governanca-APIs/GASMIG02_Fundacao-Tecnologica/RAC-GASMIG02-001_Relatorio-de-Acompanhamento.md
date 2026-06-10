@@ -6,8 +6,8 @@
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-002 |
 | **Cliente** | GASMIG — Companhia de Gás de Minas Gerais |
 | **Período** | 26/05/2026 – 09/06/2026 |
-| **Versão** | 1.0 |
-| **Data** | 09/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 10/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -15,7 +15,7 @@
 
 ## 1. Resumo executivo
 
-A OS-PARCELA-002 foi executada em **14 dias corridos** (26/05–09/06/2026), dentro do prazo contratual de 15 dias. Todos os 78 story points planejados foram entregues. A entrega foi apresentada ao cliente em call no dia 09/06/2026 e formalizada via e-mail. Aceite formal pendente de resposta do cliente.
+A OS-PARCELA-002 foi executada em **14 dias corridos** (26/05–09/06/2026), dentro do prazo contratual de 15 dias. Todos os 78 story points planejados foram entregues. A entrega foi apresentada ao cliente em call no dia 08/06/2026 e aceite formal recebido em 09/06/2026 via e-mail de Sérgio Guimarães Villaça. NF emitida em 09/06/2026.
 
 ---
 
@@ -33,7 +33,8 @@ A OS-PARCELA-002 foi executada em **14 dias corridos** (26/05–09/06/2026), den
 | Alertas Azure Monitor configurados e validados | 06/06/2026 | 06/06/2026 | ✅ |
 | Freeze de configuração (encerramento da sprint) | 06/06/2026 | 06/06/2026 | ✅ |
 | Verificação técnica (Cézar Hiraki) + entrega formal ao cliente | 09/06/2026 | 09/06/2026 | ✅ |
-| Sessão de homologação end-to-end + aceite formal | ~10/06/2026 | — | ⏳ Pendente |
+| Apresentação de entrega ao cliente (call) | 08/06/2026 | 08/06/2026 | ✅ |
+| Aceite formal do cliente (e-mail) | 09/06/2026 | 09/06/2026 | ✅ |
 
 ---
 
@@ -49,9 +50,9 @@ A OS-PARCELA-002 foi executada em **14 dias corridos** (26/05–09/06/2026), den
 | RF-16 | Monitoramento (App Insights + dashboards) | 8 | ✅ Entregue |
 | RF-17 | Alertas automatizados (Azure Monitor) | 5 | ✅ Entregue |
 | RF-18 | CORS + validação de payloads | 8 | ✅ Entregue |
-| RF-19 | Homologação end-to-end | 8 | ⏳ Sessão agendada com o cliente |
-| Documentação, verificação e sessão de aceite | — | 5 | ✅ Verificação concluída; aceite pendente |
-| **Total** | | **78** | **78 SP entregues / aceite pendente** |
+| RF-19 | Homologação end-to-end | 8 | ✅ Entregue — apresentação 08/06; aceite 09/06 |
+| Documentação, verificação e sessão de aceite | — | 5 | ✅ Concluído |
+| **Total** | | **78** | **78 SP entregues / aceite formal recebido** |
 
 ---
 
@@ -60,7 +61,7 @@ A OS-PARCELA-002 foi executada em **14 dias corridos** (26/05–09/06/2026), den
 | # | Ocorrência | Data | Impacto | Tratamento |
 |---|---|---|---|---|
 | O-01 | Thresholds de alerta não fornecidos pelo cliente no início (risco R-08) | 26/05/2026 | Baixo | Valores padrão de mercado adotados como default; thresholds confirmados durante a execução |
-| O-02 | Sessão de apresentação ao cliente antecipada de 10/06 para 09/06/2026 | 09/06/2026 | Nenhum | Verificação técnica concluída em 09/06; entrega realizada conforme planejado |
+| O-02 | Sessão de apresentação ao cliente realizada em 08/06/2026 (antecipada de 10/06) | 08/06/2026 | Nenhum | Verificação técnica concluída em 09/06; entrega realizada antes do prazo |
 
 ---
 
@@ -71,7 +72,7 @@ A OS-PARCELA-002 foi executada em **14 dias corridos** (26/05–09/06/2026), den
 | R-07 | Permissões insuficientes no Entra ID para registrar App OAuth | ✅ Mitigado | Não — App Registration criada sem restrições |
 | R-08 | Thresholds de alerta não fornecidos a tempo | ✅ Mitigado | Parcialmente — resolvido com valores padrão (O-01) |
 | R-09 | Complexidade OAuth 2.0 excede estimativa | ✅ Mitigado | Não — executado dentro do prazo planejado |
-| R-10 | Mudança de escopo na homologação end-to-end | ⏳ Em observação | Sessão de homologação pendente |
+| R-10 | Mudança de escopo na homologação end-to-end | ✅ Mitigado | Não ocorreu — aceite formal recebido sem solicitação de mudança de escopo |
 
 ---
 
@@ -92,3 +93,4 @@ A OS-PARCELA-002 foi executada em **14 dias corridos** (26/05–09/06/2026), den
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 09/06/2026 | Abraão Oliveira | Versão inicial — relatório de acompanhamento da OS-002 até a entrega técnica |
+| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Fechamento: aceite formal registrado (09/06); todos os ⏳ atualizados para ✅; R-10 mitigado |

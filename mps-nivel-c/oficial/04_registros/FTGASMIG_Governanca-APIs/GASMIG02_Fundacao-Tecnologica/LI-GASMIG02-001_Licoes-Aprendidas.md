@@ -3,10 +3,10 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | LI-GASMIG02-001 — Lições Aprendidas e Oportunidades de Melhoria |
-| **Versão** | 1.0 |
-| **Data** | 07/05/2026 |
+| **Versão** | 1.1 |
+| **Data** | 10/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Projeto** | Fundação Tecnológica GASMIG — Governança de APIs (OS-001) |
+| **Projeto** | Fundação Tecnológica GASMIG — Governança de APIs (OS-001 e OS-002) |
 | **Aprovação** | Gerente de Projeto |
 
 ---
@@ -57,8 +57,36 @@ As oportunidades OM-01 a OM-04 serão endereçadas no ciclo de melhoria de proce
 
 ---
 
+## 6. Lições aprendidas — OS-002
+
+### 6.1 O que funcionou bem
+
+| # | Lição | Impacto |
+|---|---|---|
+| LE-08 | A aplicação prévia das lições LE-05 e OM-01 (credenciais e permissões Entra ID solicitadas com antecedência) eliminou o atraso de acesso que ocorreu na OS-001 | Alto — sprint iniciada no primeiro dia sem bloqueios de acesso |
+| LE-09 | A continuidade da equipe entre OS-001 e OS-002 eliminou a curva de aprendizado sobre o ambiente Azure da GASMIG; o contexto técnico foi transferido sem overhead | Alto — velocity da OS-002 (5,6 SP/dia) reproduziu exatamente a da OS-001 |
+| LE-10 | A adoção de valores padrão de mercado para thresholds de alerta (Azure Monitor), sem aguardar definição formal do cliente, permitiu seguir o cronograma e os thresholds foram confirmados durante a execução | Médio — risco R-08 mitigado sem impacto no prazo |
+| LE-11 | A antecipação da sessão de apresentação (de 10/06 para 08/06) foi absorvida sem impacto porque a verificação técnica já estava concluída; a flexibilidade de agenda favoreceu o aceite mais rápido | Médio — aceite obtido 1 dia antes do prazo contratual |
+
+### 6.2 O que pode melhorar
+
+| # | Lição | Causa-raiz | Impacto |
+|---|---|---|---|
+| LE-12 | A homologação end-to-end (RF-19) foi realizada via apresentação em call sem roteiro formal de aceitação; o aceite veio por e-mail sem um protocolo de sign-off estruturado | Ausência de template de ata de aceite formal pré-preenchido para o cliente assinar | Baixo (aceite obtido sem questionamentos) |
+| LE-13 | A documentação de thresholds definitivos do Azure Monitor ficou dispersa em e-mails; não há um artefato único consolidando os valores acordados | Falta de seção específica no PCP para parâmetros de monitoramento | Baixo |
+
+### 6.3 Oportunidades de melhoria geradas pela OS-002
+
+| # | Oportunidade | Área afetada | Prioridade |
+|---|---|---|---|
+| OM-05 | Criar template de ata de aceite pré-preenchido (check-list de entregáveis + campo de assinatura/e-mail de DE ACORDO) para uso padrão em projetos de configuração | Encerramento de projetos | Alta |
+| OM-06 | Incluir seção de parâmetros de monitoramento e alertas no template de PCP para projetos Azure, consolidando os thresholds acordados com o cliente antes da sprint | Design de projeto | Média |
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 07/05/2026 | Gerente de Projeto | Lições aprendidas da OS-001; oportunidades de melhoria identificadas |
+| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Adição das lições da OS-002 (§6) após encerramento do projeto |

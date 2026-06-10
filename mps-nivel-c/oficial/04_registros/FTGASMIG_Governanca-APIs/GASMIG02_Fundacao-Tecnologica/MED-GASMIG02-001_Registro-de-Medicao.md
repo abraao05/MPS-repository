@@ -5,8 +5,8 @@
 | **Documento** | MED-GASMIG02-001 |
 | **Projeto** | Fundação Tecnológica GASMIG — Governança de APIs GASMIG |
 | **Cliente** | GASMIG — Companhia de Gás de Minas Gerais |
-| **Versão** | 1.0 |
-| **Data** | 09/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 10/06/2026 |
 | **Responsável pela medição** | Abraão Oliveira |
 | **Processo MPS-SW** | MED (evidência de projeto) |
 
@@ -34,7 +34,7 @@ Registrar os resultados medidos ao longo do projeto para avaliar o desempenho da
 
 ---
 
-## 3. Indicadores OS-PARCELA-002 — resultados parciais (aceite formal pendente)
+## 3. Indicadores OS-PARCELA-002 — resultados finais
 
 | Código | Indicador | Resultado | Meta Org. | Status |
 |---|---|---|---|---|
@@ -43,10 +43,10 @@ Registrar os resultados medidos ao longo do projeto para avaliar o desempenho da
 | M3 | SP entregues vs. planejados | 78/78 = 100% | ≥ 90% | ✅ |
 | M4 | Velocity média | 78 SP em 14 dias (≈ 5,6 SP/dia · equipe de 2 engenheiros integrais) | Referência interna | ✅ |
 | M5 | Taxa de defeitos na verificação técnica | 0 — checklist executado por Cézar Hiraki em 09/06/2026 sem itens não conformes | ≤ 5% | ✅ |
-| M6 | Defeitos escapados (pós-aceite) | — (aceite formal pendente) | 0 | ⏳ |
+| M6 | Defeitos escapados (pós-aceite) | 0 — nenhum incidente registrado após aceite de 09/06/2026 | 0 | ✅ |
 | M7 | % Requisitos com rastreabilidade completa | 100% — RF-11 a RF-19 e RNF-06 a RNF-09 rastreados em RASTR-GASMIG02-002 | ≥ 95% | ✅ |
-| M8 | % Conformidade GQA | 100% — auditoria parcial em 04/06/2026 sem não conformidades (GQA-GASMIG02-001 §2.2) | ≥ 90% | ✅ |
-| M9 | Satisfação do cliente | — (a registrar após aceite formal) | Satisfatório | ⏳ |
+| M8 | % Conformidade GQA | 100% — auditorias de processo sem não conformidades (GQA-GASMIG02-001) | ≥ 90% | ✅ |
+| M9 | Satisfação do cliente | Positivo — aceite formal concedido via e-mail 09/06/2026; NF emitida em 09/06/2026 | Satisfatório | ✅ |
 
 ---
 
@@ -77,3 +77,4 @@ Estes dados alimentam a base histórica de projetos de configuração Azure da T
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 09/06/2026 | Abraão Oliveira | Versão inicial — indicadores finais OS-001 e parciais OS-002 (aceite pendente) |
+| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Finalização dos indicadores OS-002: M6 e M9 confirmados após aceite formal de 09/06/2026 |

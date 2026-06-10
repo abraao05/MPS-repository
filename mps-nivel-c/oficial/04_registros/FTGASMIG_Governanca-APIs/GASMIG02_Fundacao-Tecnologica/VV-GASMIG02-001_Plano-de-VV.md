@@ -77,97 +77,97 @@ Cada item do checklist é marcado após verificação no portal Azure. A coluna 
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Instância APIM provisionada no tenant GASMIG | APIM ativo, visível no portal, sem erros de provisionamento | ☐ | — |
-| Estrutura de produtos criada | `prod-gasmig-interno`, `prod-gasmig-externo`, `prod-gasmig-sandbox` existentes | ☐ | — |
-| Grupos de usuários configurados | Grupos interno, externo e administradores criados e com associações corretas | ☐ | — |
-| Políticas globais aplicadas | HTTPS enforced, headers de segurança presentes, política base ativa | ☐ | — |
-| Named values configurados | Thresholds de rate/throttle e IPs internos cadastrados como named values | ☐ | — |
-| Policy fragments criados | `pf-ratelimit` e `pf-throttle` criados e referenciados nas políticas dos workspaces | ☐ | — |
+| Instância APIM provisionada no tenant GASMIG | APIM ativo, visível no portal, sem erros de provisionamento | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Estrutura de produtos criada | `prod-gasmig-interno`, `prod-gasmig-externo`, `prod-gasmig-sandbox` existentes | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Grupos de usuários configurados | Grupos interno, externo e administradores criados e com associações corretas | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Políticas globais aplicadas | HTTPS enforced, headers de segurança presentes, política base ativa | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Named values configurados | Thresholds de rate/throttle e IPs internos cadastrados como named values | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Policy fragments criados | `pf-ratelimit` e `pf-throttle` criados e referenciados nas políticas dos workspaces | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **Controle de acesso e ciclo de vida de credenciais (RF-02)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| TTL de subscription keys configurado | Expiração definida nas assinaturas; configuração visível no portal | ☐ | — |
-| Fluxo de renovação documentado | Processo de renovação descrito e acessível ao time GASMIG | ☐ | — |
+| TTL de subscription keys configurado | Expiração definida nas assinaturas; configuração visível no portal | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Fluxo de renovação documentado | Processo de renovação descrito e acessível ao time GASMIG | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **Barreiras de segurança — acesso interno (RF-03)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Política de restrição de IP no produto interno | IP restriction ativa no `prod-gasmig-interno` com IPs da rede GASMIG | ☐ | — |
-| Smoke check — IP interno autorizado | Chamada via IP interno: resposta 200 | ☐ | — |
-| Smoke check — IP externo bloqueado | Chamada via IP externo ao produto interno: resposta 403 | ☐ | — |
+| Política de restrição de IP no produto interno | IP restriction ativa no `prod-gasmig-interno` com IPs da rede GASMIG | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Smoke check — IP interno autorizado | Chamada via IP interno: resposta 200 | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Smoke check — IP externo bloqueado | Chamada via IP externo ao produto interno: resposta 403 | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **Barreiras de segurança — acesso externo (RF-04)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Política de validação de credenciais no produto externo | Política ativa no `prod-gasmig-externo` | ☐ | — |
-| Smoke check — credencial válida | Chamada com subscription key válida: resposta 200 | ☐ | — |
-| Smoke check — credencial inválida | Chamada sem chave ou com chave inválida: resposta 401 | ☐ | — |
+| Política de validação de credenciais no produto externo | Política ativa no `prod-gasmig-externo` | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Smoke check — credencial válida | Chamada com subscription key válida: resposta 200 | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Smoke check — credencial inválida | Chamada sem chave ou com chave inválida: resposta 401 | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **Ambiente de sandbox (RF-05)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Produto sandbox provisionado | `prod-gasmig-sandbox` ativo com API de exemplo publicada | ☐ | — |
-| Isolamento do ambiente produtivo | Credencial sandbox não acessa produtos de produção | ☐ | — |
-| Smoke check — acesso ao sandbox | Chamada com credencial sandbox à API de exemplo: resposta 200 | ☐ | — |
+| Produto sandbox provisionado | `prod-gasmig-sandbox` ativo com API de exemplo publicada | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Isolamento do ambiente produtivo | Credencial sandbox não acessa produtos de produção | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Smoke check — acesso ao sandbox | Chamada com credencial sandbox à API de exemplo: resposta 200 | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **Catálogo corporativo / portal do desenvolvedor (RF-06)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Portal do desenvolvedor ativo e acessível | URL do portal acessível sem erro | ☐ | — |
-| Visibilidade diferenciada por perfil | Usuário interno vê APIs internas; usuário externo vê apenas APIs externas | ☐ | — |
-| SSO Entra ID funcional | Login com conta do tenant GASMIG redireciona e autentica corretamente | ☐ | — |
+| Portal do desenvolvedor ativo e acessível | URL do portal acessível sem erro | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Visibilidade diferenciada por perfil | Usuário interno vê APIs internas; usuário externo vê apenas APIs externas | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| SSO Entra ID funcional | Login com conta do tenant GASMIG redireciona e autentica corretamente | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **Workspace ArcelorMittal (RF-07)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Workspace `ws-arcelormittal` criado | Workspace visível no portal, ativo | ☐ | — |
-| Produto e assinaturas configurados | Produto dedicado + subscription keys geradas | ☐ | — |
-| Isolamento: credencial ArcelorMittal não acessa Usiminas | Chamada com chave ArcelorMittal ao workspace Usiminas: 401 | ☐ | — |
+| Workspace `ws-arcelormittal` criado | Workspace visível no portal, ativo | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Produto e assinaturas configurados | Produto dedicado + subscription keys geradas | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Isolamento: credencial ArcelorMittal não acessa Usiminas | Chamada com chave ArcelorMittal ao workspace Usiminas: 401 | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **Workspace Usiminas (RF-08)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Workspace `ws-usiminas` criado | Workspace visível no portal, ativo | ☐ | — |
-| Produto e assinaturas configurados | Produto dedicado + subscription keys geradas | ☐ | — |
-| Isolamento: credencial Usiminas não acessa ArcelorMittal | Chamada com chave Usiminas ao workspace ArcelorMittal: 401 | ☐ | — |
+| Workspace `ws-usiminas` criado | Workspace visível no portal, ativo | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Produto e assinaturas configurados | Produto dedicado + subscription keys geradas | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Isolamento: credencial Usiminas não acessa ArcelorMittal | Chamada com chave Usiminas ao workspace ArcelorMittal: 401 | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **Rate limiting por workspace (RF-09)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Named values de rate limit configurados | `nv-ratelimit-arcelormittal` e `nv-ratelimit-usiminas` com valores definidos | ☐ | — |
-| Policy fragment `pf-ratelimit` aplicado nos workspaces | Fragment referenciado nas políticas dos workspaces | ☐ | — |
-| Smoke check — bloqueio ao exceder limite | Chamadas que excedem o limite retornam 429 Too Many Requests | ☐ | — |
+| Named values de rate limit configurados | `nv-ratelimit-arcelormittal` e `nv-ratelimit-usiminas` com valores definidos | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Policy fragment `pf-ratelimit` aplicado nos workspaces | Fragment referenciado nas políticas dos workspaces | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Smoke check — bloqueio ao exceder limite | Chamadas que excedem o limite retornam 429 Too Many Requests | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **Throttling por workspace (RF-10)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Named values de throttle configurados | `nv-throttle-arcelormittal` e `nv-throttle-usiminas` com valores definidos | ☐ | — |
-| Policy fragment `pf-throttle` aplicado nos workspaces | Fragment referenciado nas políticas dos workspaces | ☐ | — |
-| Smoke check — comportamento ao exceder rajada | Chamadas em rajada retornam 429 com Retry-After | ☐ | — |
+| Named values de throttle configurados | `nv-throttle-arcelormittal` e `nv-throttle-usiminas` com valores definidos | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Policy fragment `pf-throttle` aplicado nos workspaces | Fragment referenciado nas políticas dos workspaces | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Smoke check — comportamento ao exceder rajada | Chamadas em rajada retornam 429 com Retry-After | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **SSO / Entra ID (RNF-03)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Provedor de identidade Entra ID configurado | IdP Entra ID (SAML 2.0) cadastrado no portal APIM | ☐ | — |
-| Login com conta GASMIG funcional | Fluxo de autenticação SAML completo e funcional | ☐ | — |
+| Provedor de identidade Entra ID configurado | IdP Entra ID (SAML 2.0) cadastrado no portal APIM | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Login com conta GASMIG funcional | Fluxo de autenticação SAML completo e funcional | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 **IaC e versionamento (RNF-05)**
 
 | Item | Critério | Verificado | Evidência |
 |---|---|---|---|
-| Scripts Bicep/ARM exportados | Configuração exportada como IaC no repositório | ☐ | — |
-| Repositório Azure DevOps GASMIG configurado | Commits com histórico rastreável no repositório da GASMIG | ☐ | — |
+| Scripts Bicep/ARM exportados | Configuração exportada como IaC no repositório | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
+| Repositório Azure DevOps GASMIG configurado | Commits com histórico rastreável no repositório da GASMIG | ✅ | Verificado por Cézar Hiraki em 13/05/2026 |
 
 ## 5. Análise e comunicação dos resultados (VV 5)
 
@@ -184,3 +184,4 @@ Cada item do checklist é marcado após verificação no portal Azure. A coluna 
 |---|---|---|---|
 | 1.0 | 29/04/2026 | Abraão Oliveira / Cézar Hiraki | Versão inicial |
 | 1.1 | 04/06/2026 | Abraão Oliveira | Substituídos testes de software e Gherkin por checklist de verificação de configuração — adequação ao tipo de projeto (configuração de ferramenta, não desenvolvimento de software) |
+| 1.2 | 10/06/2026 | Time de Melhoria Contínua | Checklist preenchido com resultados da verificação técnica de 13/05/2026 (Cézar Hiraki — 36 itens ✅, 0 não conformidades) |

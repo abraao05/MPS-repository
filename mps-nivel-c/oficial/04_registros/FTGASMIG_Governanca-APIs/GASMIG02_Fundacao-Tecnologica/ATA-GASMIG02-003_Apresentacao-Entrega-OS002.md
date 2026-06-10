@@ -5,7 +5,7 @@
 | **Documento** | ATA-GASMIG02-003 |
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-002 |
 | **Tipo de reunião** | Apresentação de Entrega |
-| **Data** | 09/06/2026 |
+| **Data** | 08/06/2026 |
 | **Canal** | Microsoft Teams |
 | **Versão** | 1.0 |
 
@@ -52,10 +52,24 @@ Após a call, foi enviado e-mail formal de entrega a Sérgio Guimarães Villaça
 
 ## Encaminhamentos
 
-| Ação | Responsável | Prazo |
-|---|---|---|
-| Analisar o pacote de entrega recebido por e-mail e emitir aceite formal | Sérgio Guimarães Villaça (GASMIG) | A definir |
-| Aguardar retorno do cliente e registrar aceite em ATA complementar | Abraão Oliveira (Timeware) | Após resposta do cliente |
+| Ação | Responsável | Prazo | Status |
+|---|---|---|---|
+| Analisar o pacote de entrega recebido por e-mail e emitir aceite formal | Sérgio Guimarães Villaça (GASMIG) | A definir | ✅ Concluído — aceite formal emitido em 09/06/2026 |
+| Registrar aceite formal e emitir NF | Abraão Oliveira (Timeware) | Após resposta do cliente | ✅ Concluído — aceite registrado; NF emitida em 09/06/2026 |
+
+## Aceite formal
+
+Aceite recebido em 09/06/2026 às 11:30 por e-mail de Sérgio Guimarães Villaça:
+
+> **De:** SÉRGIO GUIMARÃES VILLAÇA \<sergio.villaca@gasmig.com.br\>  
+> **Data:** 09/06/2026 11:30  
+>
+> Prezados, bom dia!
+>
+> @abraao.oliveira, a entrega da fase 2 está aprovada.  
+> Favor enviar a NF.
+
+NF enviada por Abraão Oliveira em 09/06/2026 às 11:53. Encerramento formal registrado em TAE-GASMIG02-002.
 
 ---
 
@@ -63,4 +77,5 @@ Após a call, foi enviado e-mail formal de entrega a Sérgio Guimarães Villaça
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 09/06/2026 | Abraão Oliveira | Versão inicial — registro da apresentação de entrega da OS-002 |
+| 1.0 | 08/06/2026 | Abraão Oliveira | Versão inicial — registro da apresentação de entrega da OS-002 |
+| 1.1 | 09/06/2026 | Abraão Oliveira | Registro do aceite formal recebido; encaminhamentos encerrados |
