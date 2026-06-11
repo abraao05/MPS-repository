@@ -5,7 +5,7 @@
 | **Documento** | LI-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto — lições aprendidas) |
@@ -110,9 +110,14 @@ O envolvimento ativo de Armando Junior (Tech Lead D1000) nas decisões arquitetu
 
 ---
 
-## 5. Aplicação no próximo ciclo
+## 5. Aplicação no próximo ciclo e publicação
 
 Todas as lições identificadas com ação proposta (seções 3 e 4) devem ser consideradas no planejamento dos próximos projetos Timeware de perfil semelhante (API crítica + legado + múltiplas integrações). Itens OM-01, OM-02 e OM-03 são candidatos a atualização dos templates e processos de GPR da organização.
+
+As lições aprendidas e oportunidades de melhoria deste projeto foram encaminhadas ao COO e publicadas na base de conhecimento organizacional da Timeware:
+
+- **Confluence:** `Timeware / Base de Conhecimento / Projetos Encerrados / Cadastro de Clientes — Rede D1000 / Lições Aprendidas`
+- **Google Drive:** `Projetos / PROFARMA01 — Cadastro de Clientes / Encerramento / Lições Aprendidas`
 
 ---
 
@@ -122,3 +127,4 @@ Todas as lições identificadas com ação proposta (seções 3 e 4) devem ser c
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em retrospectivas, dailys e transcrições Fireflies do período 04/2025–01/2026 |
 | 1.1 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna "Origem" na tabela §4, rastreando cada OM à retrospectiva e/ou auditoria GQA que a gerou (CP-vi) |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Adição em §5 do registro de publicação das lições aprendidas no Confluence e Google Drive (conformidade com GPC 12 — PRO-GPC-001 v2.3) |

@@ -5,7 +5,7 @@
 | **Documento** | PCP-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.4 |
+| **Versão** | 1.5 |
 | **Data** | 05/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | PCP (evidência de projeto) |
@@ -287,9 +287,54 @@ Log de execução: total processado, erros
 
 ---
 
-## 9. Avaliação e aprovação do design (PCP2)
+## 9. Design de produto (UX/UI)
 
-### 9.1 Revisão do design arquitetural — 17/07/2025
+Não aplicável a este projeto.
+
+O sistema Cadastro de Clientes — Rede D1000 é uma API RESTful sem interface de usuário própria. Não há telas, wireframes ou fluxos de UX/UI a serem projetados no escopo deste contrato. Os canais de front-end (Balcão, App D1000, VTEX) são sistemas externos que consomem a API; seu design de produto é de responsabilidade das respectivas equipes. A decisão de dispensar o design UX/UI foi registrada em ADAP-PROFARMA01-001 (A-06).
+
+---
+
+## 10. Rastreabilidade requisito → design
+
+| Requisito | Elemento de design |
+|---|---|
+| RF-01, RF-02 | POST /clientes — `ClienteController`, use case `CriarClienteUseCase`, tabela `clientes`, evento `ClienteCriado` no outbox |
+| RF-03, RF-09 | GET /clientes/{cpf}, HEAD /clientes/{cpf} — handler de query via Dapper (§4.4 CQRS leve) |
+| RF-04 | PATCH /clientes/{cpf} — `AtualizarClienteUseCase`, tabela `clientes`, evento `ClienteAtualizado` |
+| RF-05 | DELETE /clientes/{cpf} — `InativarClienteUseCase`, campo `ativo = false`, evento `ClienteInativado` |
+| RF-06 | GET /clientes — query paginada via Dapper com `ILIKE` |
+| RF-07 | Tabela `auditoria_clientes` — preenchida em todas as operações de escrita |
+| RF-08 | POST /clientes/lote — `MigrationWorker` background service, processo batch |
+| RF-10 | PUT /clientes/{cpf}/reativar — `ReativarClienteUseCase` |
+| RF-11 | Outbox pattern (§4.2), tabela `outbox_eventos`, `ItecWorker` background service |
+| RF-12 | POST /clientes/vtex, GET /clientes/vtex/{cpf} — adaptadores de schema VTEX no `Infrastructure` |
+| RF-13 | GET /clientes/{cpf}/call-center — handler com SLA 500ms |
+| RF-14 | `PropzWorker` → Azure Service Bus (§2.2) |
+| RF-15 | GET /clientes/{cpf}/programa-beneficios — HTTP client `BlueSoftClient` |
+| RF-16 | GET /clientes/{cpf}/perfil-completo — HTTP client `CloseUpClient` |
+| RF-17 | `LgpdExpurgoWorker` background service (§5.3) |
+| RF-18 | GET /health — `HealthCheckController` com verificação de DB, Service Bus e dependências |
+| RF-19 | GET /metrics — Prometheus endpoint (§7) |
+| RNF-01 | Clean Architecture em 4 camadas (§2.1) |
+| RNF-02 | Azure Database for PostgreSQL — tabelas `clientes`, `clientes_enderecos`, `outbox_eventos`, `auditoria_clientes` (§3) |
+| RNF-03 | AKS com auto scaling, Azure Container Registry, Helm (§2.2) |
+| RNF-04 | Azure Key Vault para segredos (§6) |
+| RNF-05 | API Key (PDV/Balcão/VTEX) + OAuth 2.0 (Call Center/Propz) — §6 |
+| RNF-06, RNF-07 | CQRS leve com Dapper (§4.4); Datadog APM (§7); pool de conexões PostgreSQL |
+| RNF-08 | AKS auto scaling + Azure Load Balancer (§2.2) + Datadog Monitors (§7) |
+| RNF-09 | Azure Database for PostgreSQL Flexible Server com backup automático 7 dias |
+| RNF-10 | Inativação lógica (RF-05), worker de expurgo LGPD (RF-17), log de auditoria (RF-07) |
+| RNF-11 | 273 cenários de teste unitário (VV-PROFARMA01-001 §3.2); cobertura 84% Domain + Application |
+| RNF-12 | Azure DevOps Pipelines: build → testes → deploy (§2.2 CI/CD) |
+| RNF-13 | Datadog APM, Logs, Monitors (§7) |
+| RNF-14 | Aprovação de Armando Junior (D1000) registrada em §11 |
+
+---
+
+## 11. Avaliação e aprovação do design (PCP2)
+
+### 11.1 Revisão do design arquitetural — 17/07/2025
 
 | Campo | Valor |
 |---|---|
@@ -317,3 +362,4 @@ A aprovação do design arquitetural pelo Tech Lead D1000 (Armando Junior) é ta
 | 1.2 | 15/09/2025 | Time de Melhoria Contínua | Atualização: worker LGPD, segurança OAuth 2.0 para Call Center, integrações BlueSoft e CloseUp |
 | 1.3 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — consolidação final após piloto loja 9 |
 | 1.4 | 11/06/2026 | Time de Melhoria Contínua | Adição de §1.1 (canais completos do diagrama), atualização de §2.2 (API Gateway, Container Registry, Helm, Bot Services, Azure Monitor), adição de §9 (avaliação do design por Armando Junior — 17/07/2025) |
+| 1.5 | 11/06/2026 | Time de Melhoria Contínua | Adição de §9 "Design de produto (UX/UI) — não aplicável" e §10 "Rastreabilidade requisito → design" (conformidade com TPL-PCP-001); seção de avaliação renumerada para §11 |
