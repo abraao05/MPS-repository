@@ -7,7 +7,7 @@
 | **Código do projeto** | AASPCNJ01 |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 11/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza a produção das evidências do projeto; **não é, ele próprio, evidência auditável pela ASR**. |
 | **Fonte consolidada** | `AASP_CNJ_Registro_de_Projeto` v1.0 (08/06/2026) |
@@ -29,36 +29,38 @@
 
 A produção segue três ondas, da maior para a menor prontidão de insumo.
 
-**Legenda de status:** 🟢 pronto para gerar (insumo forte) · 🟡 gerável com montagem ou dado extra · 🔵 aguardando encerramento · ⚪ opcional · 🔴 não se aplica.
+**Legenda de status:** ✅ gerado (11/06/2026) · 🔵 aguardando encerramento · 🔴 não se aplica.
+
+> **Atualização v1.1 (11/06/2026):** Ondas 1 e 2 geradas — **18 registros** em `.md` na pasta do projeto. Pendente: Onda 3 (encerramento) e a planilha de gestão (GEST). Os documentos usam **papéis genéricos** (sem nomes) — substituição por nomes reais pendente do envio do roster.
 
 ### Onda 1 — Núcleo de execução (insumo forte)
 
 | # | Código do artefato | Documento | Processo | Seção-fonte | Status |
 |---|---|---|---|---|---|
-| 1 | TAP-AASPCNJ01-001 | Termo de Abertura | GPR | 1 | 🟢 |
-| 2 | PLA-AASPCNJ01-001 | Plano de Projeto | GPR | 1, 3 | 🟢 |
-| 3 | REQ-AASPCNJ01-001 | Documento de Requisitos | REQ | 2 | 🟢 |
-| 4 | PCP-AASPCNJ01-001 | Documento de Design | PCP | 4 | 🟢 |
+| 1 | TAP-AASPCNJ01-001 | Termo de Abertura | GPR | 1 | ✅ |
+| 2 | PLA-AASPCNJ01-001 | Plano de Projeto | GPR | 1, 3 | ✅ |
+| 3 | REQ-AASPCNJ01-001 | Documento de Requisitos | REQ | 2 | ✅ |
+| 4 | PCP-AASPCNJ01-001 | Documento de Design | PCP | 4 | ✅ |
 
 ### Onda 2 — Restante da execução
 
 | # | Código do artefato | Documento | Processo | Seção-fonte | Status |
 |---|---|---|---|---|---|
-| 5 | ADAP-AASPCNJ01-001 | Registro de Adaptação do Processo | GPR | — | 🟡 |
-| 6 | ITP-AASPCNJ01-001 | Estratégia de Integração | ITP | 6 | 🟢 |
-| 7 | VV-AASPCNJ01-001 | Plano de Verificação e Validação | VV | 7.1–7.3 | 🟢 |
-| 8 | REL-VV-AASPCNJ01-001 | Relatório de Execução de Testes | VV | 7.2, 7.4 | 🟢 |
-| 9 | GCO-AASPCNJ01-001 | Registro de Gerência de Configuração | GCO | 5 | 🟢 |
-| 10 | GDE-AASPCNJ01-001 | Registro de Análise de Decisão | GDE | 12 | 🟢 |
-| 11 | MED-AASPCNJ01-001 | Registro de Medição | MED | 8 | 🟢 |
-| 12 | RASTR-AASPCNJ01-001 | Matriz de Rastreabilidade | REQ | 2.3 + 4 + 7 | 🟡 |
-| 13 | RAC-AASPCNJ01-001 | Relatório de Acompanhamento | GPR | 3.2, 8.2 | 🟢 |
-| 14 | CR-AASPCNJ01-001 | Change Request (pausa da 2ª instância EPROC) | GPR | 5.3, D06 | 🟡 |
-| 15 | ATA-AASPCNJ01-001 | Ata de Kickoff | ORG | 9.1 | 🟡 |
-| 16 | GQA-AASPCNJ01-001 | Registro de GQA | GPC | 9 | 🟡 |
-| 17 | GEST-AASPCNJ01 | Planilha de Gestão do Projeto (xlsx) | GPR | 3.2, 3.4, 8 | 🟡 |
-| 18 | CAP-AASPCNJ01-001 | Registro de Capacitação da Equipe | CAP | 11 | ⚪ |
-| 19 | REV-AASPCNJ01-001 | Registro de Revisão Técnica / por Pares | VV | 9.1, 11 | ⚪ |
+| 5 | ADAP-AASPCNJ01-001 | Registro de Adaptação do Processo | GPR | — | ✅ |
+| 6 | ITP-AASPCNJ01-001 | Estratégia de Integração | ITP | 6 | ✅ |
+| 7 | VV-AASPCNJ01-001 | Plano de Verificação e Validação | VV | 7.1–7.3 | ✅ |
+| 8 | REL-VV-AASPCNJ01-001 | Relatório de Execução de Testes | VV | 7.2, 7.4 | ✅ |
+| 9 | GCO-AASPCNJ01-001 | Registro de Gerência de Configuração | GCO | 5 | ✅ |
+| 10 | GDE-AASPCNJ01-001 | Registro de Análise de Decisão | GDE | 12 | ✅ |
+| 11 | MED-AASPCNJ01-001 | Registro de Medição | MED | 8 | ✅ |
+| 12 | RASTR-AASPCNJ01-001 | Matriz de Rastreabilidade | REQ | 2.3 + 4 + 7 | ✅ |
+| 13 | RAC-AASPCNJ01-001 | Relatório de Acompanhamento | GPR | 3.2, 8.2 | ✅ |
+| 14 | CR-AASPCNJ01-001 | Change Request (pausa da 2ª instância EPROC) | GPR | 5.3, D06 | ✅ |
+| 15 | ATA-AASPCNJ01-001 | Ata de Alinhamento — Fluxo API CNJ (07/04/2026) | ORG | 9.1 | ✅ |
+| 16 | GQA-AASPCNJ01-001 | Registro de GQA | GPC | 9 | ✅ |
+| 17 | GEST-AASPCNJ01 | Planilha de Gestão do Projeto (xlsx) | GPR | 3.2, 3.4, 8 | 🔵 a produzir |
+| 18 | CAP-AASPCNJ01-001 | Registro de Capacitação da Equipe | CAP | 11 | ✅ |
+| 19 | REV-AASPCNJ01-001 | Registro de Revisão por Pares | VV | 9.1, 11 | ✅ |
 
 ### Onda 3 — Encerramento (aguardar aceite formal ~30/06/2026)
 
@@ -114,3 +116,4 @@ A produção segue três ondas, da maior para a menor prontidão de insumo.
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 11/06/2026 | Time de Melhoria Contínua | Criação do índice-mestre de registros do projeto AASPCNJ01 a partir do documento-fonte consolidado v1.0. Estrutura definida; conteúdo dos registros a produzir. |
+| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Ondas 1 e 2 geradas (18 registros .md). Status atualizado para ✅. Pendentes: planilha de gestão (GEST) e Onda 3 (encerramento). Documentos com papéis genéricos — substituição por nomes reais pendente. |
