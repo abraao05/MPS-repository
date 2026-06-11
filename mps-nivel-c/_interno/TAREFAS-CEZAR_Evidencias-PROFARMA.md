@@ -1,9 +1,9 @@
-# Tarefas de Captura de Evidências — Tiago Nascimento
+# Tarefas de Captura de Evidências — Cezar
 # Projeto Cadastro de Clientes (PROFARMA01)
 
 | Campo | Valor |
 |---|---|
-| **Para** | Tiago Nascimento (Tech Lead / DevOps) |
+| **Para** | Cezar (Tech Lead / DevOps) |
 | **De** | Abraão Oliveira |
 | **Data** | 11/06/2026 |
 | **Objetivo** | Capturar evidências das ferramentas para fechar os gaps MPS-SW identificados pelo consultor Renato (ASR) |
@@ -27,7 +27,7 @@ Ao capturar, enviar os arquivos organizados em pastas por ferramenta (ver §5).
 | Responsável | O que tem |
 |---|---|
 | **Abraão** | Print do WhatsApp 17/07/2025 com Armando Junior (aprovação design); e-mails de status report Out/2025; e-mails de aceite de sprint da Helena Moreira |
-| **Tiago** | Acesso ao Azure DevOps, Jira, Datadog, GanttPro — tudo listado abaixo |
+| **Cezar** | Acesso ao Azure DevOps, Jira, Datadog, GanttPro — tudo listado abaixo |
 
 ---
 
@@ -193,7 +193,7 @@ Salvar output como `git-tags-baselines.txt`.
 Entregar os arquivos na seguinte estrutura de pasta:
 
 ```
-evidencias-profarma-tiago/
+evidencias-profarma-cezar/
 ├── ganttPro/
 │   └── ganttPro-cronograma-fases-profarma.pdf          ← G1
 ├── azure-devops/
