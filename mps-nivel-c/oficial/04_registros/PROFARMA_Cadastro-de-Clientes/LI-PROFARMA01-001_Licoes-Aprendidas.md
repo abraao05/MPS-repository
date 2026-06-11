@@ -5,8 +5,8 @@
 | **Documento** | LI-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto — lições aprendidas) |
 
@@ -100,13 +100,13 @@ O envolvimento ativo de Armando Junior (Tech Lead D1000) nas decisões arquitetu
 
 ## 4. Oportunidades de melhoria para a organização
 
-| # | Oportunidade | Área de processo | Ação proposta |
-|---|---|---|---|
-| OM-01 | Checklist de discovery para projetos de integração com legados | GPR / REQ | Criar checklist padronizado com itens: mapeamento de sistemas satélites, disponibilidade de documentação legada, contratos de API de integrações, acesso a ambientes |
-| OM-02 | Template de estimativa incluindo lead time GMUD | GPR | Adicionar ao template de planejamento de sprint um campo para "lead time de aprovação do processo de change management do cliente" |
-| OM-03 | Registro de change requests mesmo em contratos de squad | GPR | Incluir na rotina de gestão o registro de CRs com esforço estimado, mesmo quando não há impacto financeiro direto |
-| OM-04 | Protocolo de migration de base legada | PCP | Criar guia técnico para projetos com carga inicial de dados legados: extração, validação, saneamento, carga em lotes, rollback |
-| OM-05 | Replicar outbox pattern como padrão Timeware | PCP | Documentar o outbox pattern implementado neste projeto como padrão arquitetural recomendado para integrações com sistemas legados sem garantia de disponibilidade |
+| # | Oportunidade | Área de processo | Ação proposta | Origem |
+|---|---|---|---|---|
+| OM-01 | Checklist de discovery para projetos de integração com legados | GPR / REQ | Criar checklist padronizado com itens: mapeamento de sistemas satélites, disponibilidade de documentação legada, contratos de API de integrações, acesso a ambientes | GQA-P01 NC-01 (20/06/2025) + Retrospectiva Sprint 6 (§3.1) |
+| OM-02 | Template de estimativa incluindo lead time GMUD | GPR | Adicionar ao template de planejamento de sprint um campo para "lead time de aprovação do processo de change management do cliente" | Retrospectiva Sprints 17–19 (§3.3) |
+| OM-03 | Registro de change requests mesmo em contratos de squad | GPR | Incluir na rotina de gestão o registro de CRs com esforço estimado, mesmo quando não há impacto financeiro direto | Retrospectiva (§3.5) + GQA-P02 (10/10/2025) |
+| OM-04 | Protocolo de migration de base legada | PCP | Criar guia técnico para projetos com carga inicial de dados legados: extração, validação, saneamento, carga em lotes, rollback | Retrospectiva Sprint 10 (§3.6) |
+| OM-05 | Replicar outbox pattern como padrão Timeware | PCP | Documentar o outbox pattern implementado neste projeto como padrão arquitetural recomendado para integrações com sistemas legados sem garantia de disponibilidade | Boa prática identificada Sprint 3 (§2.2) |
 
 ---
 
@@ -121,3 +121,4 @@ Todas as lições identificadas com ação proposta (seções 3 e 4) devem ser c
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em retrospectivas, dailys e transcrições Fireflies do período 04/2025–01/2026 |
+| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna "Origem" na tabela §4, rastreando cada OM à retrospectiva e/ou auditoria GQA que a gerou (CP-vi) |
