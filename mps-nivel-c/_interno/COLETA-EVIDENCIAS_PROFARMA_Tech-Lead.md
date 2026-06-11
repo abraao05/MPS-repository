@@ -6,184 +6,305 @@
 | **Para** | Tiago Nascimento (Tech Lead) |
 | **De** | Abraão Oliveira (GP / Responsável MPS-SW) |
 | **Data** | 11/06/2026 |
-| **Ref.** | Avaliação MPS-SW Nível C — evidências técnicas do projeto PROFARMA01 |
+| **Avaliador ASR** | Renato Ferraz Machado |
+| **Ref.** | Relatório de Ajustes 2024 — itens REQUERIDO referentes ao projeto PROFARMA01 |
 | **Prazo sugerido** | 5 dias úteis |
 
 ---
 
 ## Contexto
 
-O consultor da ASR Consultoria apontou que os documentos do projeto estão bem estruturados, mas há **evidências técnicas que precisam ser complementadas com capturas diretas das ferramentas** (Azure DevOps, Datadog, GMUD). Esses itens não podem ser gerados retroativamente — precisam vir do projeto real.
+O consultor Renato Ferraz Machado (ASR Consultoria) identificou uma série de itens REQUERIDO que não puderam ser evidenciados na avaliação anterior. Para cada item abaixo, está indicado o **código do processo** que ele citou, **o que faltou** e **exatamente o que você precisa exportar ou capturar**.
 
-Precisamos da sua ajuda para coletar e organizar essas evidências antes da avaliação.
-
----
-
-## O que precisa ser coletado
-
-### 1. Azure DevOps — Pipeline CI/CD
-
-**Por que é necessário:** o plano e os documentos descrevem o pipeline, mas o avaliador quer ver que ele realmente rodou com status verde.
-
-**O que coletar:**
-
-| # | Item | Como exportar / capturar |
-|---|---|---|
-| 1.1 | Print de um run de pipeline bem-sucedido no branch `main` ou `release/*` | Azure DevOps → Pipelines → `loja-backend` → último run verde → Print da tela com todas as etapas (Build / Test / Publish) em verde |
-| 1.2 | Print do sumário de testes unitários dentro do pipeline | No mesmo run → aba "Tests" → print mostrando 273 testes passando e cobertura ≥ 80% |
-| 1.3 | Print do histórico de runs dos últimos 3 sprints (lista com status) | Pipelines → `loja-backend` → lista de runs → print mostrando datas e status |
+Os documentos de texto do projeto (PLA, REQ, PCP, VV, GCO etc.) já estão prontos. O que falta é a **evidência das ferramentas reais**: Jira, Azure DevOps, Datadog.
 
 ---
 
-### 2. Azure DevOps — Pull Requests e Revisão de Código
+## 1. Gerência de Projetos (GPR)
 
-**Por que é necessário:** evidência de peer review (processo VV/GCO). Os documentos mencionam PRs aprovados — o avaliador quer ver ao menos 2 ou 3 exemplos reais.
+### GPR3 — Estimativas de dimensão (distribuição nas sprints)
 
-**O que coletar:**
+**O que o consultor disse:** "Não foi possível verificar as estimativas de dimensão (distribuição nas tarefas nas sprints)."
 
-| # | Item | Como exportar / capturar |
-|---|---|---|
-| 2.1 | Print de um PR com aprovação do Armando Junior | Repos → `loja-backend` → Pull Requests → buscar PRs de mudança arquitetural (ex.: outbox, VTEX) → print mostrando aprovador, comentários e status "Completed" |
-| 2.2 | Print de um PR de funcionalidade com aprovação de pelo menos 1 revisor | Qualquer PR de feature — o importante é ver: autor, revisor, aprovação, data de merge |
-| 2.3 | Print do PR 10684 (última correção S2 antes do aceite) | Repos → PR 10684 → print completo com título, commits e aprovação |
+**O que precisa:**
+- Export do Jira com as histórias/tarefas dos sprints, mostrando story points (ou pontos de função) por sprint
+- Se não tiver export, print do backlog do Jira ordenado por sprint, com coluna de estimativa visível
+
+**Como exportar no Jira:**
+`Board → Backlog → selecionar todos os sprints → Export to CSV` (ou `Reports → Sprint Report` por cada sprint-chave)
+
+**Arquivo sugerido:** `jira-backlog-sprints-estimativas.csv` ou prints por fase (Sprints 1–3, 4–7, 8–13, 14–19)
 
 ---
 
-### 3. Azure DevOps — Tags e Baselines
+### GPR4 — Estimativas de esforço
 
-**Por que é necessário:** evidência de controle de configuração (GCO). As tags `25.12.1.1` e `26.1.1.1` são as baselines declaradas — precisamos comprovar que existem no repositório.
+**O que o consultor disse:** "Não foi possível evidenciar as estimativas de esforço."
 
-**O que coletar:**
+**O que precisa:**
+- Documento ou planilha que mostre o esforço estimado por sprint ou por história (em horas ou story points)
+- Pode ser a própria planilha de planejamento de sprint, se existir
 
-| # | Item | Como exportar / capturar |
-|---|---|---|
-| 3.1 | Print da lista de tags do repositório `loja-backend` | Repos → `loja-backend` → Tags → print mostrando as tags com data e commit associado |
-| 3.2 | Print da tag `26.1.1.1` (baseline do piloto) | Clicar na tag → print mostrando hash do commit, data e autor |
-| 3.3 | Print da tag `25.12.1.1` (baseline de homologação) | Idem |
+**Observação:** Se as estimativas estão só em story points no Jira, é suficiente. O importante é mostrar que existe racional de estimativa — não precisa ser horas exatas.
 
-**Alternativa via Git (se preferir linha de comando):**
+---
+
+### GPR5 — Orçamento total em horas do projeto
+
+**O que o consultor disse:** "Não foi possível evidenciar orçamento total em horas do projeto."
+
+**O que precisa:**
+- Um número: total de horas alocadas ao projeto (3 devs pleno × N horas/mês × N meses)
+- Pode ser extraído do contrato, de uma planilha interna ou calculado a partir da alocação declarada no TAP/PLA
+
+**Sugestão rápida:** `3 devs × 160h/mês × 10 meses = 4.800h` — mas confirme o número real com o Abraão, que tem o contrato.
+
+---
+
+### GPR15 — Status reports do projeto
+
+**O que o consultor disse:** "Não foi possível evidenciar os dados de status report do projeto."
+
+**O que precisa:**
+- Os e-mails de status report que foram enviados durante o projeto (os de 08/10, 14/10, 17/10/2025 existem — o Abraão tem)
+- Se houver outros, encaminhar todos
+
+**Ação:** Abraão localiza os e-mails de status e exporta como PDF. Não é necessidade do Tech Lead — só de saber onde estão.
+
+---
+
+### GPR16 — Monitoramento pós-implantação
+
+**O que o consultor disse:** "Não foi possível evidenciar o monitoramento pós-implantação."
+
+**O que precisa:**
+- Print do Datadog mostrando que o monitoramento continua ativo na loja 9 após o aceite (Janeiro/2026 em diante)
+- Basta um print do dashboard APM com data recente e o serviço `clientes-api` aparecendo
+
+**Como capturar:**
+`Datadog → APM → Services → clientes-api → trocar período para últimas semanas → print`
+
+---
+
+## 2. Engenharia de Requisitos (REQ)
+
+### REQ2+ — Refinamento dos requisitos
+
+**O que o consultor disse:** "Não foi possível evidenciar o refinamento dos requisitos."
+
+**O que precisa:**
+- Print do Jira mostrando histórias com critérios de aceite escritos (os campos "Acceptance Criteria" ou descrição detalhada das histórias)
+- Não precisa de todas — 3 a 5 histórias representativas são suficientes
+
+**Como capturar:**
+`Jira → Issues → abrir qualquer história de Sprint 4 em diante → print mostrando: título, descrição, critérios de aceite, sprint e status`
+
+---
+
+### REQ4 — Rastreabilidade entre requisitos e código
+
+**O que o consultor disse:** "Não foi possível evidenciar a rastreabilidade entre requisitos e com código."
+
+**O que precisa:**
+- Evidência de que os commits ou branches referenciam o requisito/história do Jira
+- Exemplo: se os branches se chamam `feature/PROFARMA-123-endpoint-head-cpf`, isso já é rastreabilidade
+
+**Como capturar:**
+- Print da lista de branches no Azure DevOps mostrando a convenção de nomenclatura
+- OU print de um commit no Azure DevOps que referencia um item do Jira no comentário
+- OU print de um PR linkado a uma história do Jira
+
+**Alternativa via git:**
 ```bash
-git log --tags --simplify-by-decoration --pretty="format:%ai %d %H" | grep -E "25\.|26\."
+git log --oneline -30 | head -30
 ```
-Copiar o output e salvar como `git-tags-baseline.txt`.
+Se os commits referenciam IDs do Jira (ex.: `PFRM-45: implementa RF-09 HEAD endpoint`), salvar o output como `git-log-rastreabilidade.txt`.
 
 ---
 
-### 4. Azure DevOps — Jira / Boards (Sprint Backlog e Bugs)
+### REQ7 — Aprovação formal dos requisitos pelo cliente
 
-**Por que é necessário:** evidência de rastreabilidade de histórias e gestão de defeitos.
+**O que o consultor disse:** "Não foi possível evidenciar a aprovação formal dos requisitos."
 
-**O que coletar:**
+**O que precisa:**
+- E-mail ou print de Teams onde o cliente (Armando Junior ou Helena Moreira) aprova formalmente os requisitos ou a entrega de uma sprint/fase
+- O aceite de cada sprint por e-mail (Helena Moreira) já cobre isso — o Abraão tem esses e-mails
 
-| # | Item | Como exportar / capturar |
-|---|---|---|
-| 4.1 | Export do board de um sprint da fase de homologação (Sprint 14–17) | Jira → Sprint → Export to CSV ou print do quadro Kanban/Scrum com colunas Done |
-| 4.2 | Print do bug BAL-B03 ou PDV-B01 (S1) no Jira — mostrando abertura, assignee e resolução | Jira → Issues → buscar por BAL-B03 ou "sala de guerra" → print da issue completa |
-| 4.3 | Print do PBI-26 (bug CC-B01 Call Center) | Jira ou Azure DevOps Work Items → PBI-26 → print com título, descrição, resolução |
-| 4.4 | Velocity chart ou burn-down de qualquer sprint (evidência de monitoramento) | Jira → Reports → Velocity Chart → print |
+**Ação:** Abraão localiza os e-mails de aceite de sprint de Helena Moreira e exporta como PDF.
 
 ---
 
-### 5. Datadog — Performance e Monitoramento
+## 3. Projeto e Construção do Produto (PCP)
 
-**Por que é necessário:** os resultados de performance (p95 = 142ms, disponibilidade ≥ 99,5%) estão declarados nos documentos. O avaliador quer ver a evidência do dado.
+### PCP2 — Evidência da avaliação do design
 
-**O que coletar:**
+**O que o consultor disse:** "Não foi possível evidenciar a avaliação do design. Evidenciar o aceite do design arquitetônico pelo time ou pelo líder técnico."
 
-| # | Item | Como exportar / capturar |
-|---|---|---|
-| 5.1 | Dashboard APM — latência p95 do endpoint `GET /clientes/{cpf}` | Datadog → APM → Services → `clientes-api` → aba Latency → filtrar por p95 → print mostrando o valor ≤ 200ms |
-| 5.2 | Dashboard de disponibilidade (uptime ≥ 99,5%) | Datadog → Monitors ou SLOs → print mostrando uptime no período de piloto (Jan/2026) |
-| 5.3 | Print de um alerta configurado (ex.: alerta de latência ou erro 5xx) | Datadog → Monitors → listar os alertas ativos do projeto → print da lista |
-| 5.4 | Screenshot do dashboard principal do projeto (visão geral APM) | Datadog → Dashboards → dashboard do projeto → print mostrando request rate, latência, errors |
+**O que precisa:**
+- Print da revisão do design no Azure DevOps — especificamente o PR onde o Armando Junior aprovou a arquitetura em 09/05/2025
+- Se não houver PR específico de design, um e-mail de Armando Junior aprovando a arquitetura serve
 
----
+**Temos:** o documento REV-PROFARMA01-001 descreve a REV-001 (09/05/2025). O que falta é a evidência do sistema: o PR ou e-mail original.
 
-### 6. Registro de GMUD
-
-**Por que é necessário:** o documento GCO e o ITP citam o GMUD 2624117 como aprovação do deploy para produção. O avaliador pode pedir o comprovante.
-
-**O que coletar:**
-
-| # | Item | Como exportar / capturar |
-|---|---|---|
-| 6.1 | Print ou PDF do GMUD 2624117 | Sistema de GMUD da D1000 (Rede D1000 ops) → buscar GMUD 2624117 → print ou exportar PDF mostrando: número, solicitante, data de aprovação, janela de deploy e status |
-| 6.2 | Se não tiver acesso direto | Solicitar ao Fagner Pereira (Operações D1000) um print/PDF do registro |
+**Como capturar:**
+`Azure DevOps → Repos → Pull Requests → filtrar por data 09/05/2025 ou por "arquitetura/design" → print do PR com aprovação do Armando Junior`
 
 ---
 
-### 7. E-mail de Aceite Formal
+### PCP3+ — Produto desenvolvido conforme o design
 
-**Por que é necessário:** o aceite de Humberto Erler está declarado nos documentos (ATA-PROFARMA01-002 e TAE), mas o avaliador quer o e-mail original de domínio externo (@profarma.com.br ou @d1000.com.br) como evidência.
+**O que o consultor disse:** "Não foi possível evidenciar que o produto foi desenvolvido conforme o design."
 
-**O que coletar:**
+**O que precisa:**
+- Print do resultado de cobertura de testes do pipeline (273 testes, 84% cobertura) — isso mostra que o código foi desenvolvido e testado
+- Print da estrutura de pastas do repositório mostrando as camadas Clean Architecture (Domain, Application, Infrastructure, API)
 
-| # | Item | Como exportar / capturar |
-|---|---|---|
-| 7.1 | E-mail de aceite enviado por Humberto Erler em 29/01/2026 | Abraão — verificar na caixa do seu e-mail corporativo (@timeware.com.br) por e-mail de humberto.erler@... com data 29/01/2026 → exportar como PDF (Gmail: Print → Save as PDF) |
-| 7.2 | Alternativamente: e-mail de confirmação via Teams | Se o aceite foi pelo Teams, tirar print da conversa mostrando remetente, data e texto de aceite |
-
----
-
-### 8. Azure Infrastructure — Evidências de Ambiente
-
-**Por que é necessário:** confirmar que a infraestrutura foi provisionada conforme descrito (AKS, PostgreSQL, Key Vault).
-
-**O que coletar (screenshots rápidos do portal Azure):**
-
-| # | Item | Como exportar / capturar |
-|---|---|---|
-| 8.1 | AKS — cluster em execução | Portal Azure → Kubernetes Service → cluster D1000 → print mostrando status "Running" e número de nós |
-| 8.2 | PostgreSQL Flexible Server | Portal Azure → Azure Database for PostgreSQL → instância D1000 → print mostrando status, tier e região |
-| 8.3 | Azure Key Vault em uso | Portal Azure → Key Vault → instância D1000 → print mostrando secrets cadastrados (nomes, sem valores) |
-| 8.4 | Azure Service Bus (fila Propz) | Portal Azure → Service Bus → namespace D1000 → print mostrando as filas/tópicos configurados |
+**Como capturar:**
+- Azure DevOps → Pipeline → último run → aba Tests → print
+- Azure DevOps → Repos → `loja-backend/src/` → print da estrutura de pastas mostrando as 4 camadas
 
 ---
 
-## Como organizar e entregar
+## 4. Integração do Produto (ITP)
 
-**Formato:** uma pasta (zip ou OneDrive) com subpastas nomeadas conforme os grupos acima:
+### ITP2 / ITP4 / ITP5 — Integrações prontas para testes no ambiente de homologação
+
+**O que o consultor disse:** "Não foi possível evidenciar que as integrações estão prontas para testes em ambiente de testes e homologação."
+
+**O que precisa:**
+- Print do ambiente `d1000_homologacao` no AKS mostrando os pods/serviços rodando
+- Print de um teste de integração sendo executado (ou resultado) no ambiente de homologação
+
+**Como capturar:**
+`Portal Azure → Kubernetes Service → cluster de homologação → Workloads → print mostrando os pods da API em Running`
+
+---
+
+### ITP3 — Cenários de testes de integração no plano de testes
+
+**O que o consultor disse:** "Não foi possível evidenciar os cenários de testes de integrações no plano de testes."
+
+**Já temos:** CTQ-PROFARMA01-001 tem os cenários T-ITEC-01..04, T-VTEX-01..03, PROPZ-01..13 e REL-VV-PROFARMA01-001 tem os resultados.
+
+**O que ainda falta:** evidência de que esses cenários foram executados no Jira (bugs linkados a cenários de teste). Se os bugs BAL-B03, PDV-B01 etc. estão registrados no Jira, mostrar esses tickets já evidencia a execução.
+
+---
+
+### ITP6 — Documentação do produto entregue (APIs, manuais)
+
+**O que o consultor disse:** "Não foi possível evidenciar a documentação dos componentes entregues (documentos de APIs, manuais de instalação, etc.)."
+
+**O que precisa:**
+- Print ou export do Swagger/OpenAPI da API (a documentação automática do .NET que fica em `/swagger`)
+- Se houver PDF ou Word com os endpoints exportado, esse arquivo
+
+**Como capturar:**
+- Acessar o ambiente de homologação em `https://<url-api>/swagger` → print ou salvar como PDF
+- OU exportar o `openapi.json` do endpoint `/swagger/v1/swagger.json` e renomear para `api-documentation-openapi.json`
+
+---
+
+## 5. Verificação e Validação (VV)
+
+### VV1 / VV4 / VV5 — Resultados de testes e registro de bugs
+
+**O que o consultor disse:** "Não foi possível evidenciar os resultados de testes. Mostrar os resultados de testes ou bugs de testes no Jira."
+
+**O que precisa:**
+- Export ou print dos bugs registrados no Jira durante a homologação (BAL-B03, PDV-B01, CC-B01 — PBI-26, API-B01, BAL-B01, BAL-B02)
+- Print de pelo menos 2 bugs mostrando: título, descrição, severidade, responsável, status (resolved/done)
+
+**Como capturar:**
+`Jira → Issues → filtrar por tipo Bug + projeto PROFARMA → Export to CSV` ou prints individuais dos bugs mais críticos
+
+---
+
+### VV2 — Aprovações de Pull Requests (code review)
+
+**O que o consultor disse:** "Não foi possível evidenciar que as Pull Requests foram aprovadas. Evidência de code review."
+
+**O que precisa:**
+- Print de 2 a 3 PRs aprovados no Azure DevOps, mostrando: autor, revisor, aprovação, comentários e status merged
+- Um dos PRs deve ter aprovação do Armando Junior (mudança arquitetural)
+
+**Como capturar:**
+`Azure DevOps → Repos → Pull Requests → filtrar Completed → print de 2 PRs`
+
+---
+
+### VV3 — Ambientes de testes e homologação
+
+**O que o consultor disse:** "Não foi possível evidenciar os ambientes de testes e homologação."
+
+**O que precisa:**
+- Print do ambiente `d1000_homologacao` (AKS ou Azure Portal) mostrando o ambiente rodando
+- Print do pipeline com o stage de deploy para homologação (se o pipeline tiver stages: build → test → deploy-hom)
+
+---
+
+## 6. Gerência de Configuração (GCO)
+
+### GCO3 — Baselines geradas no projeto
+
+**O que o consultor disse:** "Não foi possível evidenciar as baselines geradas nos projetos. Mostrar A EVIDÊNCIA DAS BASELINES GERADAS."
+
+**O que precisa:**
+- Print da lista de tags no repositório `loja-backend` mostrando `25.12.1.1` e `26.1.1.1` com datas
+
+**Como capturar:**
+`Azure DevOps → Repos → Tags → print mostrando as tags com data e commit`
+
+**Alternativa via git:**
+```bash
+git tag -l --sort=-version:refname | head -10
+git show 26.1.1.1 --stat | head -10
+```
+
+---
+
+## 7. Resumo — O que é prioridade máxima
+
+Se o prazo for curto, foque nestes 7 itens que têm maior peso na avaliação:
+
+| # | Item | Onde buscar | Esforço |
+|---|---|---|---|
+| 1 | VV2 — PRs aprovados (code review) | Azure DevOps → Pull Requests | 5 min |
+| 2 | GCO3 — Tags de baseline | Azure DevOps → Repos → Tags | 5 min |
+| 3 | PCP2 — Aprovação de design pelo Armando Junior | Azure DevOps → PR de arquitetura / e-mail | 10 min |
+| 4 | PCP3 — Cobertura de testes no pipeline | Azure DevOps → Pipeline → Tests | 5 min |
+| 5 | ITP6 — Swagger/OpenAPI da API | `https://<url>/swagger` → print/PDF | 5 min |
+| 6 | VV1 — Bugs no Jira (homologação) | Jira → Issues → tipo Bug | 10 min |
+| 7 | GPR16 — Datadog pós-implantação | Datadog → APM → print com data atual | 5 min |
+
+---
+
+## 8. Como organizar e entregar
+
+Pasta sugerida:
 
 ```
 evidencias-tecnicas-profarma/
-├── 01_azure-devops-pipeline/
-│   ├── pipeline-run-verde.png
-│   ├── test-summary-273.png
-│   └── pipeline-historico.png
-├── 02_pull-requests/
-│   ├── pr-armando-aprovacao.png
-│   ├── pr-feature-exemplo.png
-│   └── pr-10684.png
-├── 03_tags-baselines/
-│   ├── tags-lista.png
-│   ├── tag-26.1.1.1.png
-│   └── tag-25.12.1.1.png
-├── 04_jira-backlog/
-│   ├── sprint-board.png
-│   ├── bug-bal-b03.png
-│   └── pbi-26.png
-├── 05_datadog/
-│   ├── apm-latencia-p95.png
-│   ├── uptime-sla.png
-│   └── alertas.png
-├── 06_gmud/
-│   └── gmud-2624117.pdf
-├── 07_aceite-formal/
-│   └── email-aceite-humberto-29jan2026.pdf
-└── 08_azure-infra/
-    ├── aks-running.png
-    ├── postgresql.png
-    ├── keyvault.png
-    └── servicebus.png
+├── GPR/
+│   ├── jira-backlog-sprints.csv          (GPR3/4)
+│   ├── esforco-total-projeto.txt         (GPR5)
+│   └── datadog-monitoramento-pos-go-live.png  (GPR16)
+├── REQ/
+│   ├── jira-historia-com-criterios-aceite.png (REQ2)
+│   └── azuredevops-branches-nomenclatura.png  (REQ4)
+├── PCP/
+│   ├── pr-aprovacao-armando-design.png   (PCP2)
+│   ├── pipeline-cobertura-273-testes.png (PCP3)
+│   └── repo-estrutura-clean-arch.png     (PCP3)
+├── ITP/
+│   ├── aks-ambiente-homologacao.png      (ITP2/4/5)
+│   └── api-swagger-openapi.pdf           (ITP6)
+├── VV/
+│   ├── pr-aprovado-1.png                 (VV2)
+│   ├── pr-aprovado-2.png                 (VV2)
+│   ├── jira-bugs-homologacao.csv         (VV1)
+│   └── aks-ambiente-homologacao-vv3.png  (VV3)
+└── GCO/
+    └── azuredevops-tags-baselines.png    (GCO3)
 ```
 
-**Prioridade:** se o prazo for curto, priorize nessa ordem:
-1. **Alta:** pipeline verde com testes (1.1 + 1.2), PR com aprovação do Armando (2.1), e-mail de aceite (7.1)
-2. **Média:** tags (3.x), Datadog p95 (5.1), GMUD (6.1)
-3. **Baixa:** Jira boards (4.x), infra Azure (8.x)
-
----
-
-## Dúvidas
-
-Qualquer dúvida sobre o que exatamente tirar print ou exportar, me chama. O avaliador da ASR está focado principalmente em ver que o **pipeline CI rodou de verdade**, que houve **revisão de código real**, e que os **dados de performance existem no Datadog**.
+Qualquer dúvida sobre onde encontrar algum item específico, me chama diretamente.
