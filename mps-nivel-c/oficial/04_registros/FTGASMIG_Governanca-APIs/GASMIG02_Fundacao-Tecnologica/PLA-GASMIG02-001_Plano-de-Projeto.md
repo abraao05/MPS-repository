@@ -6,7 +6,7 @@
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-001 |
 | **Cliente** | GASMIG — Companhia de Gás de Minas Gerais |
 | **Contrato** | Governança de APIs GASMIG |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
@@ -145,14 +145,14 @@ A transição para a OS-PARCELA-002 ocorre automaticamente após o aceite formal
 
 ## 9. Riscos (GPR 10)
 
-| # | Risco | Prob. | Impacto | Resposta |
-|---|---|---|---|---|
-| R-01 | GASMIG demora a provisionar o acesso ao Azure, comprimindo o prazo de execução | 2 | 3 | Escalada imediata via Abraão → Sérgio Villaça; provisionar acesso como primeira ação; monitorar na virada do dia 1 |
-| R-02 | Tenant Entra ID da GASMIG tem restrições de licenciamento que impedem o SSO/SAML no portal APIM | 2 | 2 | Verificar pré-condições técnicas na semana 1; documentar como limitação do ambiente cliente se não viável; propor alternativa |
-| R-03 | Parâmetros de rede (IPs de whitelist, VNet, firewall) para barreiras interno/externo não fornecidos pela GASMIG a tempo | 3 | 2 | Solicitar formalmente por e-mail no dia 1; usar placeholder configurável e não bloquear demais entregas; ajustar quando recebido |
-| R-04 | Solicitação de mudança de escopo durante a execução dos 15 dias | 2 | 3 | Formalizar qualquer mudança via Change Request (TPL-GPR-006); esclarecer ao cliente que mudanças de escopo requerem revisão formal de prazo |
-| R-05 | GASMIG tem políticas internas de nomenclatura de recursos Azure não comunicadas, gerando retrabalho | 2 | 2 | Solicitar policy de nomenclatura no dia 1; usar convenção Timeware como padrão aprovado até receber o contrário |
-| R-06 | Dificuldade de agenda para a sessão de aceite com o time técnico GASMIG dentro do prazo | 2 | 3 | Agendar sessão de aceite com antecedência mínima de 5 dias úteis (até 07/05); confirmar presença de Eduardo Yasuda e José Geraldo |
+| # | Categoria | Risco | Prob. | Impacto | Resposta |
+|---|---|---|---|---|---|
+| R-01 | Externo/Cliente | GASMIG demora a provisionar o acesso ao Azure, comprimindo o prazo de execução | 2 | 3 | Escalada imediata via Abraão → Sérgio Villaça; provisionar acesso como primeira ação; monitorar na virada do dia 1 |
+| R-02 | Técnico | Tenant Entra ID da GASMIG tem restrições de licenciamento que impedem o SSO/SAML no portal APIM | 2 | 2 | Verificar pré-condições técnicas na semana 1; documentar como limitação do ambiente cliente se não viável; propor alternativa |
+| R-03 | Externo/Cliente | Parâmetros de rede (IPs de whitelist, VNet, firewall) para barreiras interno/externo não fornecidos pela GASMIG a tempo | 3 | 2 | Solicitar formalmente por e-mail no dia 1; usar placeholder configurável e não bloquear demais entregas; ajustar quando recebido |
+| R-04 | Externo/Cliente | Solicitação de mudança de escopo durante a execução dos 15 dias | 2 | 3 | Formalizar qualquer mudança via Change Request (TPL-GPR-006); esclarecer ao cliente que mudanças de escopo requerem revisão formal de prazo |
+| R-05 | Externo/Cliente | GASMIG tem políticas internas de nomenclatura de recursos Azure não comunicadas, gerando retrabalho | 2 | 2 | Solicitar policy de nomenclatura no dia 1; usar convenção Timeware como padrão aprovado até receber o contrário |
+| R-06 | Prazo | Dificuldade de agenda para a sessão de aceite com o time técnico GASMIG dentro do prazo | 2 | 3 | Agendar sessão de aceite com antecedência mínima de 5 dias úteis (até 07/05); confirmar presença de Eduardo Yasuda e José Geraldo |
 
 ## 10. Viabilidade (GPR 11)
 
@@ -184,3 +184,4 @@ O plano é apresentado ao cliente na sessão de kickoff / comunicação formal d
 | 1.0 | 29/04/2026 | Abraão Oliveira | Versão inicial — baseline aprovada no kickoff |
 | 1.1 | 05/06/2026 | Abraão Oliveira | Definição do papel de GQA como COO (Operações) no §6, conforme designação realizada antes da primeira auditoria |
 | 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 306 h totais estimadas; título do §4 atualizado para refletir GPR 3 e GPR 4 |
+| 1.3 | 11/06/2026 | Time de Melhoria Contínua | Tabela de riscos atualizada com coluna Categoria conforme EST-GPC-002 v1.2 (categorias: Técnico, Prazo, Custo, Recursos, Externo/Cliente) |

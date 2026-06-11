@@ -4,9 +4,11 @@
 |---|---|
 | **Documento** | ADAP-GASMIG02-002 |
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-002 |
-| **Versão** | 1.0 |
-| **Data** | 26/05/2026 |
+| **Versão** | 1.1 |
+| **Data** | 11/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira |
+| **Processo-padrão de referência** | PRO-GPC-001 v2.2 |
+| **Guia de adaptação de referência** | GUIA-GPC-001 v1.2 |
 
 > As mesmas decisões de adaptação da OS-PARCELA-001 (ADAP-GASMIG02-001) se mantêm nesta OS, com os ajustes anotados abaixo.
 
@@ -24,7 +26,7 @@
 | Cadência de entrega | Por marco — aceite único ao final da OS | Igual à OS-001. |
 | Ambiente de stage | Sandbox já entregue na OS-001 | O sandbox é utilizado na homologação desta OS, não provisionado aqui. |
 | Verificação e Validação (VV) | Checklist de verificação de configuração + smoke checks + verificação técnica Cézar Hiraki | Mesma abordagem da OS-001. Adicionado: verificação de fluxo OAuth 2.0 end-to-end e validação de secrets no Key Vault. |
-| GQA | Responsável a definir | Mantido da OS-001. |
+| GQA | COO (Operações) | Mantido da OS-001. Independência em relação à equipe de projeto garantida. |
 
 ## 2. Etapas aplicáveis e não aplicáveis
 
@@ -45,11 +47,14 @@
 
 ## 3. Pontos de controle obrigatórios (não adaptáveis)
 
-- [x] Requisitos especificados e validados
-- [x] Plano de Projeto aprovado pelo cliente (baseline)
-- [ ] Definição de Pronto aplicada (checklist de verificação — VV-GASMIG02-002)
-- [ ] Verificação e validação realizadas (verificação técnica + sessão de homologação GASMIG)
-- [ ] Encerramento formal com aceite
+Conforme GUIA-GPC-001 v1.2, os seis pontos a seguir são obrigatórios e não passíveis de supressão em nenhum projeto.
+
+- [x] Abertura — Termo de Abertura elaborado e aprovado antes do início das atividades (TAP-GASMIG02-002)
+- [x] Requisitos — Requisitos especificados, rastreáveis e validados antes da configuração (REQ-GASMIG02-002)
+- [x] Design — Documento de Design técnico elaborado e aprovado antes do deploy (PCP-GASMIG02-002)
+- [x] Verificação — Checklist de verificação de configuração executado e resultados registrados (VV-GASMIG02-002)
+- [x] Homologação — Sessão de homologação end-to-end com o cliente realizada e registrada (ATA-GASMIG02-003)
+- [x] Encerramento — Termo de Encerramento emitido com aceite formal (TAE-GASMIG02-002)
 
 ---
 
@@ -58,3 +63,4 @@
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 26/05/2026 | Abraão Oliveira | Versão inicial — adaptações da OS-PARCELA-002 |
+| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Adicionada referência ao processo-padrão base (PRO-GPC-001 v2.2) e ao guia de adaptação (GUIA-GPC-001 v1.2); GQA atualizado para COO (Operações); pontos de controle expandidos para os 6 obrigatórios do GUIA-GPC-001 v1.2; todos marcados como concluídos (OS-002 encerrada em 09/06/2026) |

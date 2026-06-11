@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | CAP-GASMIG02-001 — Registro de Capacitação da Equipe |
-| **Versão** | 1.0 |
-| **Data** | 30/05/2026 |
+| **Versão** | 1.1 |
+| **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | Fundação Tecnológica GASMIG — Governança de APIs (OS-001 / OS-002) |
 | **Aprovação** | Gerente de Projeto |
@@ -68,7 +68,17 @@ Antes do início das atividades de configuração, a equipe realizou:
 
 Toda a equipe já havia atuado em projetos Azure anteriores da Timeware, dispensando treinamento formal específico para as tecnologias core do engajamento. As atividades de preparo foram focadas no contexto e nas particularidades do ambiente da Fundação Tecnológica GASMIG.
 
-O Plano de Capacitação Organizacional aplicável a esta equipe está registrado em `PLA-CAP-001`.
+O Plano de Capacitação Organizacional aplicável a esta equipe está registrado em `PLA-CAP-001 v1.1`.
+
+## 6. Registros de treinamento MPS
+
+Confirmação de que os membros da equipe alocada para este projeto estão cobertos pelos registros de treinamento organizacional conforme PLA-CAP-001 v1.1:
+
+| Membro | Papel | Registros de treinamento MPS |
+|---|---|---|
+| Cézar Hiraki | Tech Lead / Arquiteto | REG-CAP-001 (dez/2024); REG-CAP-007 (jan/2026); REG-CAP-008 (fev/2026); REG-CAP-009 (mar/2026) |
+| Fernando Oliveira | Engenheiro de Configuração | REG-CAP-001 (dez/2024); REG-CAP-001B (jan/2025); REG-CAP-002 (mar/2025); REG-CAP-005 (mai/2026) |
+| Henry Komatsu | Engenheiro de Configuração | REG-CAP-001 (dez/2024); REG-CAP-002 (mar/2025); REG-CAP-005 (mai/2026) |
 
 ---
 
@@ -77,3 +87,4 @@ O Plano de Capacitação Organizacional aplicável a esta equipe está registrad
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 30/05/2026 | Gerente de Projeto | Registro inicial de capacitação da equipe |
+| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Referência ao PLA-CAP-001 atualizada para v1.1; adicionada seção 6 com mapeamento dos registros de treinamento MPS de cada membro (REG-CAP-001 a REG-CAP-009) |
