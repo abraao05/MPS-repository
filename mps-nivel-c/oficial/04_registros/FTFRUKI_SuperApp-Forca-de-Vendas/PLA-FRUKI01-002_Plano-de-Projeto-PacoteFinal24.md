@@ -147,12 +147,12 @@ Viável dentro do escopo e prazo: equipe com familiaridade na base de código do
 
 ## 11. Aprovação do Plano (GPR 13)
 
-Plano apresentado na reunião de Apresentação da Proposta em 26/09/2025 e aprovado formalmente por Leandro Lottermann em 09/10/2025.
+Plano apresentado e aprovado na reunião de Kickoff do Pacote Final 24 em 09/10/2025. O aceite foi registrado na ata da reunião (ATA-FRUKI01-008). A partir deste ponto, o plano constitui a baseline do Pacote Final 24 e mudanças de escopo seguem o fluxo de change request.
 
-| Envolvido | Papel | Aceite | Data | Ref. |
+| Envolvido | Papel | Aceite | Data | Ref. da ata |
 |---|---|---|---|---|
-| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Aprovado (proposta aceita via e-mail) | 09/10/2025 | Proposta Comercial - FRUKI - Pacote final 24 v1.1; e-mail 09/10/2025 |
-| Abraão Oliveira | Gerente de Projeto — Timeware | Confirmado | 09/10/2025 | Fireflies ID: HWwWGbMe3glWfXgl |
+| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Aprovado | 09/10/2025 | ATA-FRUKI01-008 — Ata de Kickoff e Aprovação do Plano (09/10/2025) |
+| Abraão Oliveira | Gerente de Projeto — Timeware | Confirmado | 09/10/2025 | ATA-FRUKI01-008 — Ata de Kickoff e Aprovação do Plano (09/10/2025) |
 
 ---
 
@@ -161,3 +161,4 @@ Plano apresentado na reunião de Apresentação da Proposta em 26/09/2025 e apro
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
+| 1.1 | 05/06/2026 | Abraão Oliveira | §11 corrigido: aprovação do plano referenciada em ATA-FRUKI01-008 (ata de kickoff e aprovação do plano) em vez de e-mail |

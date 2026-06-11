@@ -136,12 +136,12 @@ Viável dentro do escopo e prazo: tecnologia conhecida (React Native), APIs docu
 
 ## 11. Aprovação do Plano (GPR 13)
 
-Plano acordado na reunião de kickoff em 05/06/2025 e formalizado com o envio de acesso ao repositório em 26/06/2025.
+Plano apresentado e aprovado na reunião de kickoff em 05/06/2025. O aceite foi registrado na ata da reunião (ATA-FRUKI01-001); o envio de acesso ao repositório em 26/06/2025 confirmou o início formal das atividades técnicas.
 
-| Envolvido | Papel | Aceite | Data | Ref. |
+| Envolvido | Papel | Aceite | Data | Ref. da ata |
 |---|---|---|---|---|
-| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Aprovado (e-mail — início formalizado) | 26/06/2025 | E-mail "ENC: Instruções para Acesso ao Repositório..." 26/06/2025 |
-| Abraão Oliveira | Gerente de Projeto — Timeware | Confirmado | 26/06/2025 | ATA-FRUKI01-001 |
+| Leandro Lottermann | Coordenador de Sistemas / Gestor — Fruki | Aprovado | 05/06/2025 | ATA-FRUKI01-001 — Ata de Kickoff (05/06/2025) |
+| Abraão Oliveira | Gerente de Projeto — Timeware | Confirmado | 05/06/2025 | ATA-FRUKI01-001 — Ata de Kickoff (05/06/2025) |
 
 ---
 
@@ -151,3 +151,4 @@ Plano acordado na reunião de kickoff em 05/06/2025 e formalizado com o envio de
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo |
 | 1.1 | 05/06/2026 | Abraão Oliveira | Rescopo para Pacote 1 (Metas/RV apenas); e-mail Thiago Gomes corrigido; valores comerciais removidos |
+| 1.2 | 05/06/2026 | Abraão Oliveira | §11 corrigido: aprovação do plano referenciada em ATA-FRUKI01-001 (ata de kickoff) em vez de e-mail |

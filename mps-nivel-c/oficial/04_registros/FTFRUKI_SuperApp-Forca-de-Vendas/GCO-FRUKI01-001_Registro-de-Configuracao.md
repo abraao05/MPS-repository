@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | GCO-FRUKI01-001 |
 | **Projeto** | SuperApp Fruki — Força de Vendas (Pacote 1 + Pacote Final 24) |
-| **Versão** | 1.3 |
+| **Versão** | 1.4 |
 | **Data** | 05/06/2026 |
 | **Responsável** | Abraão Oliveira |
 | **Referência organizacional** | PLA-GCO-001 — Plano de Gerência de Configuração |
@@ -27,7 +27,8 @@ Conforme PLA-GCO-001 seção 3.1, os seguintes itens de configuração foram ide
 | VV-FRUKI01-001 e VV-FRUKI01-002 | Idem | Idem |
 | RASTR-FRUKI01-001 e RASTR-FRUKI01-002 | Idem | Idem |
 | TAE-FRUKI01-001 e TAE-FRUKI01-002 | Idem | Idem |
-| ATAs (ATA-FRUKI01-001 a ATA-FRUKI01-007) | Idem | Idem |
+| ATAs (ATA-FRUKI01-001 a ATA-FRUKI01-008) | Idem | Idem |
+| RAC-FRUKI01-001 e RAC-FRUKI01-002 | Idem | Idem |
 | GQA-FRUKI01-001 | Idem | Idem |
 | GDE-FRUKI01-001 | Idem | Idem |
 | CR-FRUKI01-001 | Idem | Idem — mudança de escopo aprovada antes do início da execução |
@@ -94,3 +95,4 @@ Conforme PLA-GCO-001 seção 3.1, os seguintes itens de configuração foram ide
 | 1.1 | 05/06/2026 | Abraão Oliveira | Inclusão do Pacote Final 24 — branches, baselines BL-02 a BL-05, mudanças CM-01 a CM-03 |
 | 1.2 | 05/06/2026 | Abraão Oliveira | Atualização da lista de ICs: ATAs expandidas de ATA-003 para ATA-007 (atas de validação de sprint e piloto) |
 | 1.3 | 05/06/2026 | Abraão Oliveira | CR-FRUKI01-001 adicionado à lista de ICs; CM-03 atualizado com referência ao CR formal |
+| 1.4 | 05/06/2026 | Abraão Oliveira | ICs expandidos: ATAs até ATA-008, RAC-001 e RAC-002 adicionados |
