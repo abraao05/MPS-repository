@@ -6,7 +6,7 @@
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
 | **Contrato** | Squad D1000 Loja — alocação de 3 Dev Pleno |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
@@ -200,6 +200,43 @@ Ao final da fase de piloto (loja 9), o sistema é promovido para rollout geral n
 
 A operação e sustentação pós-piloto são objeto de contrato separado de sustentação. A documentação técnica e de arquitetura (`PCP-PROFARMA01-001`) é entregue à Rede D1000 como parte da base de conhecimento para a equipe interna.
 
+### 8.2 Checklist de go-live (pré-produção)
+
+| Item | Atendido | Responsável |
+|---|---|---|
+| Homologação aprovada pelo cliente | Sim — aceite Helena Moreira (e-mail, Sprints 1–17) | QA D1000 (Julielle Santos) |
+| Documentação de entrega completa (PCP, API docs) | Sim — PCP-PROFARMA01-001 + Swagger | Tech Lead |
+| Testes de regressão executados sem falhas S1 | Sim — Sprints 18–19, zero S1 em aberto | QA Timeware (Lucas Batista) |
+| Baseline de configuração registrada (tag/release) | Sim — tag `26.1.1.1` (Azure DevOps) | DevOps |
+| GMUD aprovada pelo cliente (processo de mudança) | Sim — GMUD 2624117 aprovada por Humberto Erler | Gerente de Projeto |
+| Credenciais e permissões de produção confirmadas | Sim — Azure Key Vault configurado; acessos AKS liberados | DevOps |
+
+### 8.3 Suporte e monitoramento pós-go-live
+
+| Item | Descrição |
+|---|---|
+| **Período de suporte pós-go-live** | 2 semanas a partir do deploy de 21/01/2026 (até 04/02/2026) |
+| **Responsável pela sustentação** | Tech Lead + Gerente de Projeto |
+| **Canal de atendimento** | Microsoft Teams — canal `#d1000-suporte` |
+| **SLA de resposta (S1)** | Resposta em 2h; resolução em 24h |
+| **SLA de resposta (S2/S3)** | Resposta em 1 dia útil; resolução em 3 dias úteis |
+
+| Indicador | Fonte | Resultado no período |
+|---|---|---|
+| Incidentes em produção (S1) | Jira / canal Teams | 0 incidentes S1 no piloto (loja 9) |
+| Latência p95 — GET /clientes/{cpf} | Datadog APM | 142ms (meta: ≤ 200ms) ✓ |
+| Disponibilidade do serviço | Datadog Monitor / AKS | ≥ 99,5% ✓ |
+| Erros de integração outbox | Datadog Logs | 0 eventos perdidos no período |
+
+### 8.4 Critério de encerramento do suporte pós-go-live
+
+O período de suporte intensivo encerrou em 29/01/2026 com o aceite formal de Humberto Erler (ATA-PROFARMA01-002), após:
+- Período de 8 dias de operação no piloto (loja 9) sem incidentes S1;
+- Todos os canais (PDV, Balcão, OMNI) operando dentro do SLA;
+- Zero defeitos S1 ou S2 em aberto.
+
+O projeto passou formalmente ao encerramento. Incidentes subsequentes são tratados via contrato de sustentação separado.
+
 ## 9. Riscos (GPR 10)
 
 | # | Risco | Prob. | Impacto | Resposta / O que ocorreu |
@@ -234,3 +271,4 @@ O projeto foi viável e concluído em janeiro de 2026, com a entrega das correç
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em e-mails e transcrições Fireflies do período 03/2025–01/2026 |
 | 1.1 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna SP Planejado na tabela §5.2 (573 SP totais) para consistência com a planilha de gestão do projeto |
 | 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 5.789 h totais estimadas; ampliação do §8 (GPR 8) com estratégia de transição para produção, fluxo de GMUD e responsáveis pelo deploy |
+| 1.3 | 11/06/2026 | Time de Melhoria Contínua | Adição de §8.2 (checklist go-live), §8.3 (suporte pós-go-live com SLAs e indicadores Datadog) e §8.4 (critério de encerramento do suporte) — conformidade com TPL-GPR-001 v1.2 (GPR 8 / GPR 16) |
