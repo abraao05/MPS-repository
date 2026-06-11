@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-GPC-001 — Plano de Gestão e Melhoria de Processos |
-| **Versão** | 1.5 |
+| **Versão** | 1.7 |
 | **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
@@ -35,6 +35,7 @@ A Timeware mantém uma **biblioteca de ativos de processo**, no Confluence, cont
 | PRO-OSW-001 | Governança Organizacional de Processos | Processo |
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | Processo |
 | REG-GPC-001 | Registro de Melhorias de Processo | Registro |
+| GQA-ORG-001 | Auditoria de GQA Organizacional | Registro |
 
 **Apoio organizacional**
 
@@ -42,6 +43,7 @@ A Timeware mantém uma **biblioteca de ativos de processo**, no Confluence, cont
 |---|---|---|
 | PLA-MED-001 | Plano de Medição | Plano |
 | PRO-MED-001 | Processo de Medição | Processo |
+| REG-MED-001 | Repositório Organizacional de Medidas | Registro |
 | PLA-GCO-001 | Plano de Gerência de Configuração | Plano |
 | PRO-GCO-001 | Processo de Gerência de Configuração | Processo |
 | GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | Guia |
@@ -184,3 +186,5 @@ Este documento corresponde a **vários resultados** do processo **Gerência de P
 | 1.3 | 05/06/2026 | Time de Melhoria Contínua | Expansão do inventário de ativos (§2) com todos os documentos da biblioteca: processos, planos, guias e templates |
 | 1.4 | 05/06/2026 | Time de Melhoria Contínua | Adição do GUIA-GCO-001 (Guia de Nomenclaturas Técnicas) ao inventário de ativos (§2) |
 | 1.5 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo de PRO-GCO-001, PRO-MED-001 e PRO-CAP-001 ao inventário de ativos (§2); criação e adição do REG-GPC-001 ao inventário; atualização de §5.1 para referenciar REG-GPC-001 como registro formal de OMs; atualização de §8 |
+| 1.6 | 11/06/2026 | Time de Melhoria Contínua | Adição do REG-MED-001 (Repositório Organizacional de Medidas) ao inventário de ativos (§2) |
+| 1.7 | 11/06/2026 | Time de Melhoria Contínua | Adição do GQA-ORG-001 (Auditoria de GQA Organizacional) ao inventário de ativos (§2) |
