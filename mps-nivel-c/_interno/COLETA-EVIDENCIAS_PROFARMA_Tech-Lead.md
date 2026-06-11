@@ -26,14 +26,20 @@ Os documentos de texto do projeto (PLA, REQ, PCP, VV, GCO etc.) já estão pront
 
 **O que o consultor disse:** "Não foi possível verificar as estimativas de dimensão (distribuição nas tarefas nas sprints)."
 
-**O que precisa:**
-- Export do Jira com as histórias/tarefas dos sprints, mostrando story points (ou pontos de função) por sprint
-- Se não tiver export, print do backlog do Jira ordenado por sprint, com coluna de estimativa visível
+**Você já tem parte desta evidência:** o projeto foi planejado no GanttPro. O link do projeto foi compartilhado com Armando Junior em 08/08/2025 após alinhamento com Helena Moreira:
+`https://app.ganttPro.com/shared/token/27dcf78b2c39382b705b2c7e15a192a46783fd0ea91b2c527893832abbebae88/1838981`
 
-**Como exportar no Jira:**
-`Board → Backlog → selecionar todos os sprints → Export to CSV` (ou `Reports → Sprint Report` por cada sprint-chave)
+**O que precisa (dois caminhos — escolha um):**
 
-**Arquivo sugerido:** `jira-backlog-sprints-estimativas.csv` ou prints por fase (Sprints 1–3, 4–7, 8–13, 14–19)
+**Caminho A — GanttPro (mais rápido):**
+- Acesse o link acima e exporte o Gantt como PDF ou PNG com as fases e datas visíveis
+- Ou tire print da visão de linha do tempo com as sprints mapeadas
+
+**Caminho B — Jira (mais detalhado):**
+- Export do Jira com as histórias/tarefas dos sprints, mostrando story points por sprint
+- `Board → Backlog → selecionar todos os sprints → Export to CSV` (ou `Reports → Sprint Report` por cada sprint-chave)
+
+**Arquivo sugerido:** `ganttPro-planejamento-fases.pdf` OU `jira-backlog-sprints-estimativas.csv`
 
 ---
 
@@ -41,9 +47,11 @@ Os documentos de texto do projeto (PLA, REQ, PCP, VV, GCO etc.) já estão pront
 
 **O que o consultor disse:** "Não foi possível evidenciar as estimativas de esforço."
 
+**Você já tem parte desta evidência:** o GanttPro mencionado em GPR3 mostra o esforço por fase/sprint. Se o export incluir duração e recursos por tarefa, isso cobre GPR4 também.
+
 **O que precisa:**
-- Documento ou planilha que mostre o esforço estimado por sprint ou por história (em horas ou story points)
-- Pode ser a própria planilha de planejamento de sprint, se existir
+- O mesmo export do GanttPro (GPR3) já pode cobrir este item se mostrar duração estimada por sprint
+- Ou o export do Jira com story points por história (mesma extração do GPR3)
 
 **Observação:** Se as estimativas estão só em story points no Jira, é suficiente. O importante é mostrar que existe racional de estimativa — não precisa ser horas exatas.
 
@@ -140,14 +148,17 @@ Se os commits referenciam IDs do Jira (ex.: `PFRM-45: implementa RF-09 HEAD endp
 
 **O que o consultor disse:** "Não foi possível evidenciar a avaliação do design. Evidenciar o aceite do design arquitetônico pelo time ou pelo líder técnico."
 
+**Você já tem esta evidência:** em 17/07/2025, o Gerente de Projeto enviou o diagrama completo de arquitetura Azure para o Armando Junior via WhatsApp. O Armando Junior confirmou o recebimento e o aceite do design na mesma conversa.
+
 **O que precisa:**
-- Print da revisão do design no Azure DevOps — especificamente o PR onde o Armando Junior aprovou a arquitetura em 09/05/2025
-- Se não houver PR específico de design, um e-mail de Armando Junior aprovando a arquitetura serve
+- O print do WhatsApp de 17/07/2025 mostrando: a mensagem enviando o diagrama de arquitetura + a resposta de confirmação do Armando Junior
+- Certifique-se que a data, o nome do contato (Armando Junior) e a mensagem de confirmação estão visíveis no print
 
-**Temos:** o documento REV-PROFARMA01-001 descreve a REV-001 (09/05/2025). O que falta é a evidência do sistema: o PR ou e-mail original.
+**Ação:** Abraão localiza a conversa do WhatsApp com Armando Junior de 17/07/2025 e tira print. Nomear como `whatsapp-armando-aceite-design-arquitetura-17072025.png`.
 
-**Como capturar:**
-`Azure DevOps → Repos → Pull Requests → filtrar por data 09/05/2025 ou por "arquitetura/design" → print do PR com aprovação do Armando Junior`
+**Alternativa (se preferir evidência formal):**
+- Print ou PDF do e-mail de Armando Junior aprovando a arquitetura (se houver e-mail complementar da mesma data)
+- OU print do PR no Azure DevOps de 09/05/2025 se houver PR de arquitetura nessa data
 
 ---
 

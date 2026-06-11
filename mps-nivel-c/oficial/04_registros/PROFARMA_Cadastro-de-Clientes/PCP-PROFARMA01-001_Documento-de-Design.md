@@ -5,7 +5,7 @@
 | **Documento** | PCP-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.3 |
+| **Versão** | 1.4 |
 | **Data** | 05/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | PCP (evidência de projeto) |
@@ -14,7 +14,19 @@
 
 ## 1. Visão geral da solução
 
-O sistema de Cadastro de Clientes da Rede D1000 é uma API RESTful cloud-native desenvolvida em .NET 8, hospedada no Azure Kubernetes Service (AKS). Substitui a gestão de cadastro dispersa no ITEC legado por uma base única e confiável, com CPF como chave primária, servindo todos os canais da rede: PDV, Balcão, Call Center e OMNI (VTEX).
+O sistema de Cadastro de Clientes da Rede D1000 é uma API RESTful cloud-native desenvolvida em .NET 8, hospedada no Azure Kubernetes Service (AKS). Substitui a gestão de cadastro dispersa no ITEC legado por uma base única e confiável, com CPF como chave primária, servindo todos os canais da rede.
+
+### 1.1 Canais e consumidores da API
+
+| Canal | Tipo | Descrição |
+|---|---|---|
+| Balcão / PDV | Loja física | Terminal de atendimento e ponto de venda nas lojas D1000 |
+| Call Center | Operacional | Atendimento telefônico centralizado |
+| App D1000 | Mobile | Aplicativo próprio da rede para clientes finais |
+| App Parceiro (iFood / Rappi) | Mobile / Marketplace | Integração com plataformas de entrega de medicamentos |
+| E-commerce VTEX (OMNI) | Web / App | Canal digital via plataforma VTEX |
+| Delage | Canal parceiro | Canal de venda parceiro integrado à rede |
+| Loja 1 / Loja 2 / Loja 3 (e demais) | Loja física | Rollout progressivo para todas as lojas da rede após o piloto na loja 9 |
 
 ---
 
@@ -48,16 +60,23 @@ O sistema de Cadastro de Clientes da Rede D1000 é uma API RESTful cloud-native 
 
 | Componente | Tecnologia | Descrição |
 |---|---|---|
-| API principal | .NET 8 / ASP.NET Core | Exposição dos 16 endpoints REST |
+| API Gateway | Azure API Gateway | Ponto de entrada único para todos os canais; gerencia autenticação, rate limiting e roteamento |
+| Load Balancer | Azure Load Balancer | Distribuição de tráfego entre os pods da API no AKS |
+| Ingress | Kubernetes Ingress Controller | Roteamento interno dos requests para os pods corretos |
+| API principal | .NET 8 / ASP.NET Core | Exposição dos 16 endpoints REST (pods no AKS com auto scaling) |
 | Banco de dados | Azure Database for PostgreSQL (Flexible Server) | Armazenamento principal dos dados de clientes |
 | ORM | Entity Framework Core 8 | Mapeamento objeto-relacional e migrations |
-| Orquestração | Azure Kubernetes Service (AKS) | Deploy em containers Docker |
-| Mensageria | Azure Service Bus | Comunicação assíncrona com Propz CRM |
-| Worker ITEC | Background Service .NET | Processamento do outbox e envio ao ITEC |
+| Orquestração | Azure Kubernetes Service (AKS) | Deploy em containers Docker com auto scaling horizontal |
+| Registro de imagens | Azure Container Registry | Armazenamento das imagens Docker do projeto |
+| Package management | Helm | Gerenciamento dos charts Kubernetes para deploy |
+| Mensageria | Azure Service Bus | Comunicação assíncrona com Propz CRM e Bot Services |
+| Bot Services | Azure Bot Services | Atendimento automatizado integrado ao canal de mensageria |
+| Worker ITEC | Background Service .NET | Processamento do outbox e envio ao ITEC legado |
 | Worker LGPD | Background Service .NET | Expurgo periódico de dados conforme LGPD |
-| CI/CD | Azure DevOps Pipelines | Build, testes e deploy automatizados |
-| Monitoramento | Datadog APM + Logs | Observabilidade em produção |
+| CI/CD | Azure DevOps Pipelines (CD/CI) | Build, testes e deploy automatizados |
+| Monitoramento | Azure Monitor + Datadog APM + Logs | Observabilidade em produção |
 | Métricas | Prometheus (expostas via /metrics) | Coleta por Datadog |
+| Segredos | Azure Key Vault | Armazenamento de credenciais, connection strings e API Keys |
 
 ---
 
@@ -268,6 +287,27 @@ Log de execução: total processado, erros
 
 ---
 
+## 9. Avaliação e aprovação do design (PCP2)
+
+### 9.1 Revisão do design arquitetural — 17/07/2025
+
+| Campo | Valor |
+|---|---|
+| Data | 17/07/2025 |
+| Tipo | Revisão de design arquitetural — diagrama completo da solução |
+| Artefato revisado | Desenho de arquitetura — Cadastro de Cliente (diagrama Azure Architecture) |
+| Revisor | Armando Junior (Tech Lead / Arquiteto D1000) |
+| Canal de comunicação | WhatsApp + e-mail (confirmados em 17/07/2025) |
+| Resultado | Aprovado — Armando Junior confirmou o recebimento e o aceite do design por mensagem direta |
+
+O diagrama de arquitetura foi compartilhado pelo Gerente de Projeto (Abraão Oliveira) com Armando Junior em 17/07/2025 via WhatsApp e e-mail. O diagrama mostra a arquitetura completa da solução: Azure API Gateway, Load Balancer, AKS (pods com auto scaling), PostgreSQL, Azure Service Bus, Azure Monitor, Key Vault, Container Registry, Helm, Datadog e todos os sistemas de integração (ITEC, VTEX, Propz, Plusoft/Conveniados, Bot Services, Delage). Armando Junior confirmou o recebimento e aprovação do design na mesma data.
+
+A aprovação do design arquitetural pelo Tech Lead D1000 (Armando Junior) é também um requisito formal do projeto conforme RNF-14 e DA-01 a DA-05 (registrados no GDE-PROFARMA01-001).
+
+**Evidência física:** print da conversa do WhatsApp de 17/07/2025 com Armando Junior, com data, remetente e mensagem de confirmação.
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
@@ -276,3 +316,4 @@ Log de execução: total processado, erros
 | 1.1 | 20/06/2025 | Time de Melhoria Contínua | Adição do modelo de dados completo, fluxo de integração VTEX, decisões DA-04 e DA-05 |
 | 1.2 | 15/09/2025 | Time de Melhoria Contínua | Atualização: worker LGPD, segurança OAuth 2.0 para Call Center, integrações BlueSoft e CloseUp |
 | 1.3 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — consolidação final após piloto loja 9 |
+| 1.4 | 11/06/2026 | Time de Melhoria Contínua | Adição de §1.1 (canais completos do diagrama), atualização de §2.2 (API Gateway, Container Registry, Helm, Bot Services, Azure Monitor), adição de §9 (avaliação do design por Armando Junior — 17/07/2025) |
