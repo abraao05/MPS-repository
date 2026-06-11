@@ -3,12 +3,12 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.37 (rascunho) |
+| **Versão** | 0.38 (rascunho) |
 | **Data** | 05/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
 | **Fonte de escopo** | PlanilhaIndicadores_SW_2024__NivelC.xlsx |
-| **Nº de projetos na avaliação** | 4+ (3 documentados: FTGASMIG, FTFRUKI, PROFARMA/D1000 · AASP a documentar) |
+| **Nº de projetos na avaliação** | 4+ (4 documentados: FTGASMIG, FTFRUKI, PROFARMA/D1000, MILHASFACIL/Hub de Milhas · AASP a documentar) |
 | **Responsável (ponto focal)** | Abraão Oliveira |
 
 > **Alterações v0.2 (02/06/2026):** resolução das 5 pendências de escopo. OSW 8/9/10 confirmados no escopo (há gestão de portfólio). AQU mantido, mas movido para o fim da fila (candidato a não-aplicável, a confirmar com a ASR). Ferramentas definidas (Jira, Git, Azure DevOps, Azure Test Plans/Xray, Confluence). Papel de GQA confirmado. Ver seção 3 para detalhes.
@@ -17,6 +17,8 @@
 
 > **Alterações v0.33 (05/06/2026):** §2.1 reescrito como inventário completo e organizado por categoria — versão única de referência de todos os documentos existentes.
 
+> **Alterações v0.38 (11/06/2026):** §2.1 Registros de projetos atualizado com inventário completo de MILHASFACIL_Plataforma-Milhas3 (17 docs — projeto Milhas3, cliente Hub de Milhas, encerrado 16/11/2025). Quarto projeto real documentado; mínimo de 4 projetos da avaliação atingido. Pendência 3 e próximos passos atualizados.
+>
 > **Alterações v0.37 (05/06/2026):** §2.1 Registros de projetos atualizado com inventário completo de FTFRUKI_SuperApp-Forca-de-Vendas (32 docs — Pacote 1 encerrado Set/2025 e Pacote Final 24 encerrado Jan/2026) e PROFARMA_Cadastro-de-Clientes (18 docs — encerrado 29/01/2026, cliente Rede D1000). Pendência 3 e próximos passos atualizados.
 
 > **Alterações v0.36 (05/06/2026):** versões atualizadas no §2.1 conforme ajustes de compliance MPS: PRO-GPC-002 v1.2, EST-GPC-001 v1.3, EST-GPC-002 v1.2, PRO-GDE-001 v1.2, PRO-GPR-001 v1.4 (seções de rastreabilidade com nomenclatura equivalente ASR); TPL-GPR-001 v1.1 (+coluna Exposição); TPL-GPC-001 v1.1 (+% conformidade).
@@ -273,6 +275,32 @@ MPS-Nivel-C/
 
 ---
 
+**MILHASFACIL — Plataforma Milhas3 · Busca e Monitoramento de Milhas** · Cliente: Hub de Milhas (Felipe) · GP: Abraão Oliveira
+
+*Encerrado 16/11/2025 · 17 documentos · projeto único (sem pacotes/OS) · aceite formal em ATA-MILHASFACIL01-002*
+
+| Código | Documento | Versão | Evidência |
+|---|---|---|---|
+| TAP-MILHASFACIL01-001 | Termo de Abertura | 1.0 | GPR 1, 13 |
+| PLA-MILHASFACIL01-001 | Plano de Projeto | 1.0 | GPR 3–12 |
+| ADAP-MILHASFACIL01-001 | Registro de Adaptação | 1.0 | GPR 2 / CP-C |
+| REQ-MILHASFACIL01-001 | Documento de Requisitos | 1.0 | REQ 1–7 |
+| PCP-MILHASFACIL01-001 | Documento de Design | 1.0 | PCP 1–3 |
+| ITP-MILHASFACIL01-001 | Estratégia de Integração | 1.0 | ITP 1–6 |
+| RASTR-MILHASFACIL01-001 | Matriz de Rastreabilidade | 1.0 | REQ 4 |
+| VV-MILHASFACIL01-001 | Plano de V&V | 1.0 | VV 1–5 |
+| GDE-MILHASFACIL01-001 | Registro de Análise de Decisão | 1.0 | GDE 2–6 |
+| GCO-MILHASFACIL01-001 | Registro de Configuração | 1.0 | GCO 1–5 |
+| GQA-MILHASFACIL01-001 | Registro de GQA | 1.0 | GPC 3 / CP (iv, v) |
+| MED-MILHASFACIL01-001 | Registro de Medição | 1.0 | MED 3–4 |
+| ATA-MILHASFACIL01-001 | Ata de Kickoff | 1.0 | GPR 13 |
+| ATA-MILHASFACIL01-002 | Ata de Aceite Final | 1.0 | GPR (aceite) |
+| RAC-MILHASFACIL01-001 | Relatório de Acompanhamento | 1.0 | GPR 14 |
+| LI-MILHASFACIL01-001 | Lições Aprendidas | 1.0 | GPR 20 / GPC 4 |
+| TAE-MILHASFACIL01-001 | Termo de Encerramento | 1.0 | GPR (encerramento) |
+
+---
+
 **Projetos AASP — estrutura criada, documentação a produzir**
 
 | Pasta | Cliente | Status |
@@ -293,7 +321,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Observação |
 |---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.36 | Rascunho de gestão |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.38 | Rascunho de gestão |
 | GUIA-ORG-001 | Guia de Estrutura do Confluence | 1.0 | Apoio à navegação no Confluence |
 
 ### Pendentes / A produzir
@@ -483,7 +511,7 @@ MPS-Nivel-C/
 |---|---|---|---|
 | 1 | **Portfólio (OSW 8/9/10)** | ✅ Resolvido | **No escopo.** TIMEWARE gerencia portfólio: recursos compartilhados (tech lead, arquiteto, PO) + gestão de capacity. Há quadro de capacity informal a formalizar. |
 | 2 | **Aquisição (AQU)** | ✅ Resolvido (com ação) | **Último a produzir / candidato a não-aplicável.** Nenhum dos 4 projetos tem aquisição. Confirmar não-aplicabilidade com o avaliador líder da ASR. |
-| 3 | **Os 4 projetos** | 🟨 Em andamento | 3 projetos documentados: FTGASMIG (22 docs — OS-001 encerrada, OS-002 em andamento), FTFRUKI (32 docs — Pacote 1 encerrado Set/2025 + Pacote Final 24 encerrado Jan/2026), PROFARMA/Rede D1000 (18 docs — encerrado Jan/2026). AASP (3 projetos) ainda a documentar. |
+| 3 | **Os 4 projetos** | 🟨 Em andamento | 4 projetos documentados: FTGASMIG (22 docs — OS-001 encerrada, OS-002 em andamento), FTFRUKI (32 docs — Pacote 1 encerrado Set/2025 + Pacote Final 24 encerrado Jan/2026), PROFARMA/Rede D1000 (18 docs — encerrado Jan/2026), MILHASFACIL/Hub de Milhas (17 docs — encerrado 16/11/2025). Mínimo de 4 projetos atingido; AASP (3 projetos) segue como adicional/opcional. |
 | 4 | **Ferramentas** | ✅ Resolvido | Jira (gestão de projeto, riscos, ações, repositório de medidas) · Git + Azure DevOps (código, baselines, integração/CI-CD) · Azure Test Plans + Jira/Xray (testes) · Confluence (definições/registros). |
 | 5 | **Garantia da Qualidade (GQA)** | ✅ Resolvido | Pessoa/área de GQA existe na TIMEWARE. Detalhar nome/papel ao produzir a Estratégia de GQA (GPC 3). |
 
@@ -499,8 +527,8 @@ MPS-Nivel-C/
 1. ✅ **Fase 1 — Governança:** todos os documentos prontos (OSW, GPC)
 2. ✅ **Fase 2 — Apoio organizacional:** todos os documentos prontos (MED, CAP, GDE, GCO, AQU)
 3. ✅ **Fase 3 — Processos de projeto (camada organizacional):** definições e templates prontos
-4. 🟨 **Fase 3 — Evidências de projeto:** 3 projetos documentados (FTGASMIG, FTFRUKI, PROFARMA/D1000); faltam 3 projetos AASP
-5. ⬜ **Documentar projetos AASP** (Andamento-Processuais, Automacao-Governanca, CNJ) para fechar os 4+ projetos exigidos pela avaliação
+4. 🟨 **Fase 3 — Evidências de projeto:** 4 projetos documentados (FTGASMIG, FTFRUKI, PROFARMA/D1000, MILHASFACIL/Hub de Milhas) — mínimo de 4 da avaliação atingido
+5. ⬜ **Documentar projetos AASP** (Andamento-Processuais, Automacao-Governanca, CNJ) — adicional/opcional; o mínimo de 4 projetos já é atendido (FTGASMIG, FTFRUKI, PROFARMA, MILHASFACIL)
 6. ⬜ **Confirmar AQU** com o avaliador líder da ASR (não-aplicabilidade ou versão enxuta)
 7. ⬜ **Planilha-mestre de evidências** para entrega à ASR antes da avaliação inicial
 
