@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GQA-GASMIG02-001 — Registro de Garantia da Qualidade |
-| **Versão** | 1.3 |
-| **Data** | 10/06/2026 |
+| **Versão** | 1.4 |
+| **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | Fundação Tecnológica GASMIG — Governança de APIs |
 | **Auditor** | COO (Operações) |
@@ -35,6 +35,9 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto, verificando
 | Rastreabilidade mantida entre requisitos, design e verificação | ✅ Sim | RASTR-GASMIG02-001 v1.0 |
 | Papéis e responsabilidades seguidos conforme planejado | ✅ Sim | Conforme PLA-GASMIG02-001, seção 6 |
 | Encerramento formal realizado com aceite do cliente | ✅ Sim | ATA-GASMIG02-002 + TAE-GASMIG02-001 |
+| **GCO-1** — ICs identificados e controlados com convenção de versão adotada | ✅ Sim | Azure DevOps com Git Flow e naming convention de IaC/policies documentados em GCO-GASMIG02-001 |
+| **GCO-2** — Baseline estabelecida ao encerramento da OS-001 | ✅ Sim | Tag `v1.0.0-os001` e snapshot dos Named Values + policies exportados (GCO-GASMIG02-001 §3) |
+| **GCO-3** — Auditoria de configuração realizada: ICs íntegros e consistentes | ✅ Sim | GCO-GASMIG02-001 §4 — auditoria ao encerramento da OS-001; ICs verificados, nenhuma inconsistência |
 
 **Resultado OS-001:** Sem não conformidades.
 
@@ -54,6 +57,9 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto, verificando
 | Adaptações ao processo formalizadas | ✅ Sim | ADAP-GASMIG02-002 v1.0 |
 | Cronograma sendo seguido conforme planejado | ✅ Sim | Sprint encerrada 06/06/2026 conforme planejado |
 | Verificação técnica e encerramento formal | ✅ Sim | REV executada 09/06/2026; aceite em 09/06/2026; TAE-GASMIG02-002 emitido |
+| **GCO-1** — ICs identificados e controlados com convenção de versão adotada | ✅ Sim | Reutiliza repositório e convenção da OS-001; novos recursos OS-002 controlados sob tag `v1.0.0-os002` |
+| **GCO-2** — Baseline de sprint estabelecida | ✅ Sim | Baseline intermediária documentada antes do deploy do lote OS-002 (GCO-GASMIG02-001 §3) |
+| **GCO-3** — Auditoria de configuração realizada | ✅ Sim | Checklist técnico REV-GASMIG02-001 inclui verificação de ICs (Named Values, policies) — 0 inconsistências |
 
 **Resultado OS-002 (parcial):** Sem não conformidades.
 
@@ -72,6 +78,7 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto, verificando
 | Encerramento formal documentado | ✅ Sim | TAE-GASMIG02-002 emitido em 09/06/2026 |
 | Lições aprendidas registradas | ✅ Sim | LI-GASMIG02-001 atualizado com seção OS-002 |
 | Medição finalizada | ✅ Sim | MED-GASMIG02-001 atualizado — todos os indicadores M1–M9 OS-002 confirmados |
+| **GCO-3** — Auditoria de configuração de encerramento realizada | ✅ Sim | GCO-GASMIG02-001 §4 — todos os ICs auditados ao encerramento da OS-002; baseline final `v1.0.0-os002` intacta e rastreável |
 
 **Resultado encerramento OS-002:** Sem não conformidades. Projeto encerrado com 100% dos artefatos de processo em conformidade.
 
@@ -118,3 +125,4 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto, verificando
 | 1.1 | 04/06/2026 | COO (Operações) | Inclusão de auditoria parcial da OS-002 em andamento |
 | 1.2 | 05/06/2026 | Time de Melhoria Contínua | Correção do papel do auditor para COO (Operações), garantindo independência da GQA em relação à equipe de projeto |
 | 1.3 | 10/06/2026 | COO (Operações) | Fechamento da auditoria parcial OS-002; adição da auditoria de encerramento (§2.3); artefatos ⏳ atualizados para ✅ |
+| 1.4 | 11/06/2026 | Time de Melhoria Contínua | Adição de itens GCO-1 a GCO-3 nas três auditorias (OS-001, OS-002 parcial e OS-002 encerramento) — GCO 5 |

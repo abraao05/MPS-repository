@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Mapa de Artefatos MPS-SW Nível C — Timeware</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  body { font-family: Calibri, sans-serif; background:#f5f7fa; margin:0; padding:16px; }
+  h1 { color:#003366; font-size:1.3em; margin-bottom:4px; }
+  p.sub { color:#555; font-size:.85em; margin-top:0 }
+  .legend { display:flex; gap:12px; flex-wrap:wrap; margin:12px 0 16px; }
+  .leg { display:flex; align-items:center; gap:6px; font-size:.8em; }
+  .dot { width:14px;height:14px;border-radius:3px; }
+  .mermaid { background:#fff; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,.1); padding:12px; }
+</style>
+</head>
+<body>
+<h1>Mapa de Artefatos MPS-SW Nível C — Timeware Brasil</h1>
+<p class="sub">Gerado em 11/06/2026 &nbsp;·&nbsp; ~120 documentos nas pastas <code>oficial/</code></p>
+<div class="legend">
+  <div class="leg"><div class="dot" style="background:#FF8C00"></div>Modificado hoje (11/06)</div>
+  <div class="leg"><div class="dot" style="background:#FFC107"></div>Modificado recentemente (09-10/06)</div>
+  <div class="leg"><div class="dot" style="background:#90C695"></div>Criado/mod. neste ciclo (05-08/06)</div>
+  <div class="leg"><div class="dot" style="background:#B0C4DE"></div>Versão anterior (antes de jun/2026)</div>
+  <div class="leg"><div class="dot" style="background:#D8D8D8"></div>Template (sem data fixa)</div>
+</div>
+<div class="mermaid">
+%%{init: {"theme": "base", "themeVariables": {"fontSize":"11px","fontFamily":"Calibri"}}}%%
+graph TB
+
+classDef hoje fill:#FF8C00,stroke:#cc6600,color:#fff,font-weight:bold
+classDef recente fill:#FFC107,stroke:#cc9900,color:#222
+classDef ciclo fill:#90C695,stroke:#5a9a5e,color:#111
+classDef antigo fill:#B0C4DE,stroke:#7090A0,color:#222
+classDef tpl fill:#D8D8D8,stroke:#999,color:#444
+classDef projeto fill:#EEF6FF,stroke:#4477AA,color:#111
+
+%% ─────────────── GOVERNANÇA ───────────────
+subgraph GOV["🏛  00 · GOVERNANÇA"]
+  direction TB
+  POL["POL-ORG-001
+Política Org.
+v1.0 · 07/07/25"]:::antigo
+  CONV["CONV-ORG-001
+Convenção Nome./Versão.
+v1.1 · 19/05/26"]:::antigo
+  PRO_GPC1["PRO-GPC-001
+Processo-Padrão Org.
+v2.3 · 11/06/26 ★"]:::hoje
+  PRO_GPC2["PRO-GPC-002
+Time MC
+v1.2 · 05/06/26"]:::ciclo
+  PRO_OSW1["PRO-OSW-001
+Gov. Org. Processos
+v1.2 · 12/03/26"]:::antigo
+  PRO_OSW2["PRO-OSW-002
+Gestão Portfólio
+v1.2 · 20/03/26"]:::antigo
+  GUIA_GPC["GUIA-GPC-001
+Guia Adaptação
+v2.0 · 10/06/26"]:::recente
+  EST_GPC1["EST-GPC-001
+Estratégia GQA
+v1.3 · 05/06/26"]:::ciclo
+  EST_GPC2["EST-GPC-002
+Estratégia Riscos
+v1.2 · 05/06/26"]:::ciclo
+  PLA_GPC["PLA-GPC-001
+Plano Gestão MC
+v1.5 · 11/06/26 ★"]:::hoje
+  REG_GPC["REG-GPC-001
+Registro Melhorias
+v1.0 · 11/06/26 ★ NOVO"]:::hoje
+end
+
+%% ─────────────── APOIO ORGANIZACIONAL ───────────────
+subgraph APOIO["🔧  01 · APOIO ORGANIZACIONAL"]
+  direction TB
+  PLA_GCO["PLA-GCO-001
+Plano GCO
+v1.1 · 15/01/26"]:::antigo
+  PRO_GCO["PRO-GCO-001
+Processo GCO
+v1.0 · 10/06/26 ★ NOVO"]:::recente
+  GUIA_GCO["GUIA-GCO-001
+Guia Nomencl. Técnicas
+v1.0 · 15/11/25"]:::antigo
+  PLA_MED["PLA-MED-001
+Plano Medição
+v1.3 · 05/06/26"]:::ciclo
+  PRO_MED["PRO-MED-001
+Processo Medição
+v1.0 · 10/06/26 ★ NOVO"]:::recente
+  PRO_GDE["PRO-GDE-001
+Processo Decisões
+v1.2 · 05/06/26"]:::ciclo
+  PLA_CAP["PLA-CAP-001
+Plano Capacitação
+v1.1 · 10/02/26"]:::antigo
+  PRO_CAP["PRO-CAP-001
+Processo Capacitação
+v1.0 · 10/06/26 ★ NOVO"]:::recente
+  PRO_AQU["PRO-AQU-001
+Processo Aquisição
+v1.1 · 15/03/26"]:::antigo
+end
+
+%% ─────────────── PROCESSOS DE PROJETO ───────────────
+subgraph PROJP["⚙️  02 · PROCESSOS DE PROJETO"]
+  direction LR
+  PRO_GPR["PRO-GPR-001
+Gerência de Projetos
+v1.4 · 05/06/26"]:::ciclo
+  GUIA_GPR["GUIA-GPR-001
+Roteiro Kickoff
+v1.0 · 13/11/25"]:::antigo
+  PRO_REQ["PRO-REQ-001
+Engenharia Requisitos
+v1.1 · 15/12/25"]:::antigo
+  PRO_PCP["PRO-PCP-001
+Projeto e Construção
+v1.1 · 15/12/25"]:::antigo
+  PRO_ITP["PRO-ITP-001
+Integração Produto
+v1.1 · 15/03/26"]:::antigo
+  PRO_VV["PRO-VV-001
+Verif. e Validação
+v1.2 · 16/01/26"]:::antigo
+end
+
+%% ─────────────── TEMPLATES ───────────────
+subgraph TPLS["📋  03 · TEMPLATES"]
+  direction LR
+  TPL1["TPL-GPR-001
+Plano Projeto
+v1.1 · 10/06/26"]:::ciclo
+  TPL2["TPL-GPR-002
+Termo Abertura"]:::tpl
+  TPL3["TPL-GPR-003
+Registro Adaptação"]:::tpl
+  TPL4["TPL-GPR-004
+Termo Encerramento"]:::tpl
+  TPL5["TPL-GPR-005
+Rel. Acompanhamento"]:::tpl
+  TPL6["TPL-GPR-006
+Change Request"]:::tpl
+  TPL7["TPL-REQ-001/002
+Requisitos + RASTR"]:::tpl
+  TPL8["TPL-PCP-001
+Documento Design"]:::tpl
+  TPL9["TPL-ITP-001
+Estratégia Integração"]:::tpl
+  TPL10["TPL-VV-001/002
+Plano VV + Revisão"]:::tpl
+  TPL11["TPL-GPC-001
+Registro GQA
+(inclui CHK-Auditoria Org)"]:::tpl
+  TPL12["TPL-GDE-001
+Análise Decisão"]:::tpl
+  TPL13["TPL-ORG-001
+Ata Reunião"]:::tpl
+end
+
+%% ─────────────── CAPACIDADE ───────────────
+subgraph CAPAC["🎓  CAP · CAPACIDADE E CAPACITAÇÃO"]
+  direction TB
+  MAPA_CAP["MAPA-CAP-001
+Mapa Capacidade
+v1.1 · 20/02/26"]:::antigo
+  MAPA_ORG["MAPA-ORG-001
+Matriz Papéis e Resp.
+v1.0 · 10/06/26 ★ NOVO"]:::recente
+  REG_CAP["REG-CAP-001 → 013
++ REG-CAP-CV-001
+(fichas de capacitação
+nominais por colaborador)"]:::ciclo
+  AVA_CAP["AVA-CAP-001 → 005
+(Avaliações de Capacidade
+por área de processo)"]:::antigo
+  GUIA_CAP["GUIA-CAP-001 → 012
+(Guias de Capacitação
+por trilha/papel)"]:::antigo
+  MAT_CAP["MAT-CAP-013 → 023
+(Materiais de Capacitação)"]:::antigo
+  TPL_CAP["TPL-CAP-001/002
+Ficha Capacitação + Avaliação"]:::tpl
+  REL_CAP["REL-CAP-001
+Relatório Capacitação"]:::antigo
+end
+
+%% ─────────────── PROJETO PROFARMA ───────────────
+subgraph PF["📁  PROFARMA · Cadastro de Clientes · Rede D1000
+(abr/2025 – jan/2026)"]
+  direction TB
+  TAP_PF["TAP-PROFARMA01-001
+Termo Abertura
+v1.0"]:::ciclo
+  PLA_PF["PLA-PROFARMA01-001
+Plano de Projeto
+v1.2 · 11/06/26 ★
+5.789 h · 19 sprints"]:::hoje
+  ADAP_PF["ADAP-PROFARMA01-001
+Registro Adaptação
+v1.0 · 05/06/26"]:::ciclo
+  REQ_PF["REQ-PROFARMA01-001
+Documento Requisitos
+v1.4 · 10/06/26"]:::recente
+  PCP_PF["PCP-PROFARMA01-001
+Documento Design
+v1.3 · 05/06/26"]:::ciclo
+  ITP_PF["ITP-PROFARMA01-001
+Estratégia Integração
+v1.0 · 05/06/26"]:::ciclo
+  VV_PF["VV-PROFARMA01-001
+Plano V&V
+v1.1 · 05/06/26"]:::ciclo
+  CTQ_PF["CTQ-PROFARMA01-001
+Cenários Teste Hom.
+v1.0 · 05/06/26"]:::ciclo
+  REV_PF["REV-PROFARMA01-001
+Revisão Técnica
+v1.0 · 05/06/26"]:::ciclo
+  REL_VV_PF["REL-VV-PROFARMA01-001
+Relatório Execução Testes
+v1.0 · 05/06/26"]:::ciclo
+  RASTR_PF["RASTR-PROFARMA01-001
+Matriz Rastreabilidade
+v1.1 · 05/06/26"]:::ciclo
+  GCO_PF["GCO-PROFARMA01-001
+Gerência Configuração
+v1.0 · 05/06/26"]:::ciclo
+  GDE_PF["GDE-PROFARMA01-001
+Análise de Decisão
+v1.0 · 05/06/26"]:::ciclo
+  GQA_PF["GQA-PROFARMA01-001
+Registro GQA
+v1.0 · 05/06/26
+3 auditorias · 2 NCs"]:::ciclo
+  MED_PF["MED-PROFARMA01-001
+Registro Medição
+v1.1 · 10/06/26"]:::recente
+  CR_PF["CR-PROFARMA01-001
+Change Requests (12 CRs)
+v1.0 · 05/06/26"]:::ciclo
+  RAC_PF["RAC-PROFARMA01-001
+Rel. Acompanhamento
+v1.0 · 05/06/26"]:::ciclo
+  LI_PF["LI-PROFARMA01-001
+Lições Aprendidas
+v1.1 · 11/06/26 ★
+5 OMs + coluna Origem"]:::hoje
+  ATA1_PF["ATA-PROFARMA01-001
+Ata Kickoff
+v1.0 · 28/04/25"]:::antigo
+  ATA2_PF["ATA-PROFARMA01-002
+Ata Aceite Final
+v1.0 · 29/01/26"]:::antigo
+  TAE_PF["TAE-PROFARMA01-001
+Termo Encerramento
+v1.0"]:::ciclo
+end
+
+%% ─────────────── PROJETO GASMIG ───────────────
+subgraph GM["📁  GASMIG · Fundação Tecnológica · Governança APIs
+(abr–jun/2026)"]
+  direction TB
+  subgraph OS1["OS-001 (abr–maio/2026)"]
+    TAP_G1["TAP-GASMIG02-001
+Termo Abertura
+v1.0"]:::antigo
+    PLA_G1["PLA-GASMIG02-001
+Plano de Projeto
+v1.2 · 11/06/26 ★
+306 h · 1,5 sprints"]:::hoje
+    ADAP_G1["ADAP-GASMIG02-001
+Registro Adaptação
+v1.2 · 05/06/26"]:::ciclo
+    REQ_G1["REQ-GASMIG02-001
+Documento Requisitos
+v1.0 · 29/04/26"]:::antigo
+    PCP_G1["PCP-GASMIG02-001
+Documento Design
+v1.1 · 29/04/26"]:::antigo
+    VV_G1["VV-GASMIG02-001
+Plano V&V
+v1.1 · 29/04/26"]:::antigo
+    RASTR_G1["RASTR-GASMIG02-001
+Matriz Rastreabilidade
+v1.0 · 29/04/26"]:::antigo
+    ATA1_G["ATA-GASMIG02-001
+Ata Kickoff"]:::antigo
+    ATA2_G["ATA-GASMIG02-002
+Ata Aceite OS-001"]:::ciclo
+    TAE_G1["TAE-GASMIG02-001
+Termo Encerramento OS-001
+v1.0"]:::ciclo
+  end
+  subgraph OS2["OS-002 (maio–jun/2026)"]
+    TAP_G2["TAP-GASMIG02-002
+Termo Abertura
+v1.0"]:::antigo
+    PLA_G2["PLA-GASMIG02-002
+Plano de Projeto
+v1.2 · 11/06/26 ★
+274 h · 1,4 sprints"]:::hoje
+    ADAP_G2["ADAP-GASMIG02-002
+Registro Adaptação
+v1.0 · 26/05/26"]:::antigo
+    REQ_G2["REQ-GASMIG02-002
+Documento Requisitos
+v1.0 · 26/05/26"]:::antigo
+    PCP_G2["PCP-GASMIG02-002
+Documento Design
+v1.0 · 26/05/26"]:::antigo
+    VV_G2["VV-GASMIG02-002
+Plano V&V
+v1.0 · 26/05/26"]:::antigo
+    ITP_G2["ITP-GASMIG02-002
+Estratégia Integração
+v1.0 · 09/06/26"]:::recente
+    RASTR_G2["RASTR-GASMIG02-002
+Matriz Rastreabilidade
+v1.0 · 26/05/26"]:::antigo
+    ATA3_G["ATA-GASMIG02-003
+Ata Apresentação/Aceite OS-002
+v1.0 · 08/06/26"]:::recente
+    TAE_G2["TAE-GASMIG02-002
+Termo Encerramento OS-002
+v1.0"]:::ciclo
+    REV_G["REV-GASMIG02-001
+Verificação Técnica
+v1.0"]:::ciclo
+  end
+  GQA_G["GQA-GASMIG02-001
+Registro GQA
+v1.3 · 10/06/26
+3 auditorias · 0 NCs"]:::recente
+  MED_G["MED-GASMIG02-001
+Registro Medição
+v1.1 · 10/06/26
+M1-M9"]:::recente
+  GCO_G["GCO-GASMIG02-001
+Gerência Configuração
+v1.0 · 09/06/26"]:::recente
+  GDE_G["GDE-GASMIG02-001
+Análise de Decisão
+v1.0 · 14/04/26"]:::antigo
+  RAC_G["RAC-GASMIG02-001
+Rel. Acompanhamento
+v1.1 · 10/06/26"]:::recente
+  LI_G["LI-GASMIG02-001
+Lições Aprendidas
+v1.2 · 11/06/26 ★
+6 OMs + coluna Origem"]:::hoje
+  CAP_G["CAP-GASMIG02-001
+Registro Capacitação Equipe
+v1.0 · 30/05/26"]:::antigo
+end
+
+%% ─────────────── PROJETO FRUKI ───────────────
+subgraph FK["📁  FRUKI · (2 sub-projetos)"]
+  direction TB
+  subgraph FK1["Fruki 01"]
+    PLA_FK1["PLA-FRUKI01-001
+Plano de Projeto
+v1.1 · 05/06/26"]:::ciclo
+    REQ_FK1["REQ-FRUKI01-001
+Documento Requisitos
+v1.1 · 05/06/26"]:::ciclo
+    PCP_FK1["PCP-FRUKI01-001
+Documento Design
+v1.0 · 05/06/26"]:::ciclo
+    ITP_FK1["ITP-FRUKI01-001
+Estratégia Integração
+v1.0 · 05/06/26"]:::ciclo
+    VV_FK1["VV-FRUKI01-001
+Plano V&V
+v1.0 · 05/06/26"]:::ciclo
+  end
+  subgraph FK2["Fruki 02"]
+    PLA_FK2["PLA-FRUKI01-002
+Plano de Projeto
+v1.0 · 05/06/26"]:::ciclo
+    REQ_FK2["REQ-FRUKI01-002
+Documento Requisitos
+v1.0 · 05/06/26"]:::ciclo
+    PCP_FK2["PCP-FRUKI01-002
+Documento Design
+v1.0 · 05/06/26"]:::ciclo
+    ITP_FK2["ITP-FRUKI01-002
+Estratégia Integração
+v1.0 · 05/06/26"]:::ciclo
+    VV_FK2["VV-FRUKI01-002
+Plano V&V
+v1.0 · 05/06/26"]:::ciclo
+  end
+  ADAP_FK["ADAP-FRUKI01-001/002
+Registros Adaptação"]:::ciclo
+  RASTR_FK["RASTR-FRUKI01-001/002
+Matrizes Rastreabilidade"]:::ciclo
+  GQA_FK["GQA-FRUKI01-001
+Registro GQA
+v1.1 · 05/06/26"]:::ciclo
+  LI_FK["LI-FRUKI01-001
+Lições Aprendidas
+v1.0 · 05/06/26"]:::ciclo
+  MED_FK["MED-FRUKI01-001
+Registro Medição
+v1.0 · 05/06/26"]:::ciclo
+  GCO_FK["GCO-FRUKI01-001
+Gerência Configuração
+v1.3 · 05/06/26"]:::ciclo
+  GDE_FK["GDE-FRUKI01-001
+Análise de Decisão"]:::ciclo
+  CR_FK["CR-FRUKI01-001
+Change Requests"]:::ciclo
+  ATA_FK["ATAs-FRUKI01 (004-007)
+Atas de Reunião"]:::antigo
+  TAP_FK["TAP-FRUKI01-001/002
+Termos Abertura"]:::ciclo
+  TAE_FK["TAE-FRUKI01-001/002
+Termos Encerramento"]:::ciclo
+end
+
+%% ─────────────── DEPENDÊNCIAS PRINCIPAIS ───────────────
+
+POL --> PRO_GPC1
+POL --> PLA_GPC
+CONV --> PRO_GPC1
+
+PRO_GPC1 --> GUIA_GPC
+PRO_GPC1 --> PRO_GPR
+PRO_GPC1 --> PRO_REQ
+PRO_GPC1 --> PRO_PCP
+PRO_GPC1 --> PRO_ITP
+PRO_GPC1 --> PRO_VV
+
+PLA_GPC --> PRO_GCO
+PLA_GPC --> PRO_MED
+PLA_GPC --> PRO_CAP
+PLA_GPC --> REG_GPC
+
+GUIA_GPC --> ADAP_PF
+GUIA_GPC --> ADAP_G1
+GUIA_GPC --> ADAP_G2
+GUIA_GPC --> ADAP_FK
+
+EST_GPC1 --> GQA_PF
+EST_GPC1 --> GQA_G
+EST_GPC1 --> GQA_FK
+
+PRO_GPR --> PLA_PF
+PRO_GPR --> PLA_G1
+PRO_GPR --> PLA_G2
+PRO_GPR --> PLA_FK1
+
+TPL1 --> PLA_PF
+TPL1 --> PLA_G1
+TPL1 --> PLA_G2
+TPL1 --> PLA_FK1
+
+GQA_PF --> LI_PF
+GQA_G --> LI_G
+GQA_FK --> LI_FK
+
+LI_PF --> REG_GPC
+LI_G --> REG_GPC
+LI_FK --> REG_GPC
+
+MAPA_ORG --> PRO_GPR
+MAPA_ORG --> PRO_REQ
+MAPA_ORG --> PRO_PCP
+MAPA_ORG --> PRO_ITP
+MAPA_ORG --> PRO_VV
+
+PLA_MED --> MED_PF
+PLA_MED --> MED_G
+PLA_MED --> MED_FK
+
+PLA_GCO --> GCO_PF
+PLA_GCO --> GCO_G
+PLA_GCO --> GCO_FK
+</div>
+<script>mermaid.initialize({startOnLoad:true, theme:"base", flowchart:{curve:"basis",useMaxWidth:true}});</script>
+</body>
+</html>
