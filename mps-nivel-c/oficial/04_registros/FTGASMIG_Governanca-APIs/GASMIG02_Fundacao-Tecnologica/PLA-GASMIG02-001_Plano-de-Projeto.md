@@ -6,8 +6,8 @@
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-001 |
 | **Cliente** | GASMIG — Companhia de Gás de Minas Gerais |
 | **Contrato** | Governança de APIs GASMIG |
-| **Versão** | 1.1 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -36,7 +36,7 @@ Detalhamento completo em `ADAP-GASMIG02-001_Registro-de-Adaptacao.md`. Resumo:
 | Combinação de papéis | Cézar Hiraki acumula Tech Lead + Arquiteto + GCO | Equipe enxuta; viável dado o porte |
 | Cadência de entrega | Por marco (aceite único da OS) | Não há sprints com entregas parciais ao cliente |
 
-## 4. Estimativas (GPR 3, 4)
+## 4. Estimativas e orçamento de horas (GPR 3, 4)
 
 > **Nota:** O valor comercial (UST) é definido pelo setor comercial da Timeware e não deriva diretamente das estimativas de story points. As estimativas abaixo sustentam o planejamento de capacidade e prazo da equipe técnica.
 
@@ -62,6 +62,18 @@ Detalhamento completo em `ADAP-GASMIG02-001_Registro-de-Adaptacao.md`. Resumo:
 - **Velocity de referência:** 56 SP/sprint (equipe de 2 engenheiros em regime integral + tech lead em dedicação parcial — base histórica de projetos de infraestrutura Azure Timeware)
 - **Esforço/prazo estimado:** ~1,5 sprints / 15 dias corridos
 - **Base histórica utilizada:** Projetos internos de configuração Azure da Timeware (infraestrutura cloud); velocity organizacional de referência para equipe de porte equivalente
+
+**Orçamento de horas por papel:**
+
+*Referência: 168 h/mês disponíveis por pessoa → ~140 h/mês efetivas (~70 h/sprint) após dedução de cerimônias e reuniões (~15%). Dedicação parcial proporcional.*
+
+| Papel | Pessoas | Dedicação | h efetivas/sprint | Nº sprints | **h estimadas** |
+|---|---|---|---|---|---|
+| Gerente de Projeto / PO | 1 | 30% | 21 h | 1,5 | 32 h |
+| Tech Lead / Arquiteto / GCO | 1 | 50% | 35 h | 1,5 | 53 h |
+| Engenheiro Azure | 2 | 100% | 70 h | 1,5 | 210 h |
+| GQA / COO | 1 | 10% | 7 h | 1,5 | 11 h |
+| **Total** | | | | | **306 h** |
 
 ## 5. Cronograma e marcos (GPR 5)
 
@@ -171,3 +183,4 @@ O plano é apresentado ao cliente na sessão de kickoff / comunicação formal d
 |---|---|---|---|
 | 1.0 | 29/04/2026 | Abraão Oliveira | Versão inicial — baseline aprovada no kickoff |
 | 1.1 | 05/06/2026 | Abraão Oliveira | Definição do papel de GQA como COO (Operações) no §6, conforme designação realizada antes da primeira auditoria |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 306 h totais estimadas; título do §4 atualizado para refletir GPR 3 e GPR 4 |

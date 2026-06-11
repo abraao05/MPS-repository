@@ -6,8 +6,8 @@
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-002 |
 | **Cliente** | GASMIG — Companhia de Gás de Minas Gerais |
 | **Contrato** | Governança de APIs GASMIG |
-| **Versão** | 1.1 |
-| **Data** | 04/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -28,7 +28,7 @@ Detalhamento: ver `REQ-GASMIG02-002_Documento-de-Requisitos-OS002.md`.
 
 Ver `ADAP-GASMIG02-002_Registro-de-Adaptacao-OS002.md`. Mesmas decisões da OS-001 com atenção reforçada em segurança (Key Vault, OAuth 2.0).
 
-## 4. Estimativas (GPR 3, 4)
+## 4. Estimativas e orçamento de horas (GPR 3, 4)
 
 - **Tamanho estimado:** 78 story points
 
@@ -49,6 +49,18 @@ Ver `ADAP-GASMIG02-002_Registro-de-Adaptacao-OS002.md`. Mesmas decisões da OS-0
 - **Velocity de referência:** 56 SP/sprint (mesma base da OS-001 — equipe e configuração equivalentes)
 - **Esforço/prazo estimado:** ~1,4 sprints / 15 dias corridos
 - **Base histórica:** OS-PARCELA-001 (velocity observada: 84 SP em 15 dias com a mesma equipe)
+
+**Orçamento de horas por papel:**
+
+*Referência: 168 h/mês disponíveis por pessoa → ~140 h/mês efetivas (~70 h/sprint) após dedução de cerimônias e reuniões (~15%). Dedicação parcial proporcional.*
+
+| Papel | Pessoas | Dedicação | h efetivas/sprint | Nº sprints | **h estimadas** |
+|---|---|---|---|---|---|
+| Gerente de Projeto / PO | 1 | 30% | 21 h | 1,4 | 29 h |
+| Tech Lead / Arquiteto / GCO | 1 | 50% | 35 h | 1,4 | 49 h |
+| Engenheiro Azure (Fernando Oliveira) | 1 | 100% | 70 h | 1,4 | 98 h |
+| Engenheiro Azure (Henry Komatsu) | 1 | 100% | 70 h | 1,4 | 98 h |
+| **Total** | | | | | **274 h** |
 
 ## 5. Cronograma e marcos (GPR 5)
 
@@ -116,3 +128,4 @@ Projeto viável. A equipe executa em continuidade à OS-001, com ambiente já co
 |---|---|---|---|
 | 1.0 | 26/05/2026 | Abraão Oliveira | Versão inicial — baseline aprovada no kickoff da OS-002 |
 | 1.1 | 04/06/2026 | Abraão Oliveira | Atualização de recursos (Fernando Oliveira e Henry Komatsu como engenheiros executores); cronograma detalhado com responsáveis por marco e convenção de sprint (freeze sexta / entrega segunda) |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 274 h totais estimadas; título do §4 atualizado para refletir GPR 3 e GPR 4 |

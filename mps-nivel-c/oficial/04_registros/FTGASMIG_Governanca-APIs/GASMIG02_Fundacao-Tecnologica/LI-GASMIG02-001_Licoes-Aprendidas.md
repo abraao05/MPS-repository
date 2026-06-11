@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | LI-GASMIG02-001 — Lições Aprendidas e Oportunidades de Melhoria |
-| **Versão** | 1.1 |
-| **Data** | 10/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | Fundação Tecnológica GASMIG — Governança de APIs (OS-001 e OS-002) |
 | **Aprovação** | Gerente de Projeto |
@@ -40,12 +40,12 @@ Consolidar as lições aprendidas ao longo da OS-001 e identificar oportunidades
 
 ## 4. Oportunidades de melhoria para processos organizacionais
 
-| # | Oportunidade | Área afetada | Prioridade |
-|---|---|---|---|
-| OM-01 | Criar checklist de pré-engajamento para projetos Azure cobrindo: acesso ao tenant, permissões mínimas, naming convention de recursos, ambientes disponíveis | Planejamento de projetos | Alta |
-| OM-02 | Incluir métricas de referência para configuração de alertas e monitoramento Azure na base de estimativas organizacional | Estimativas e medição | Média |
-| OM-03 | Elaborar template padrão de naming convention para recursos Azure a ser preenchido durante o kickoff com o cliente | Design / kickoff | Média |
-| OM-04 | Incluir no checklist de verificação a validação explícita de Named Values configurados antes de qualquer deploy para ambiente de produção | Verificação técnica | Baixa |
+| # | Oportunidade | Área afetada | Prioridade | Origem |
+|---|---|---|---|---|
+| OM-01 | Criar checklist de pré-engajamento para projetos Azure cobrindo: acesso ao tenant, permissões mínimas, naming convention de recursos, ambientes disponíveis | Planejamento de projetos | Alta | LE-05 — Retrospectiva OS-001 (GQA-GASMIG02-001 §2.1, 07/05/2026) |
+| OM-02 | Incluir métricas de referência para configuração de alertas e monitoramento Azure na base de estimativas organizacional | Estimativas e medição | Média | LE-06 — Retrospectiva OS-001 (GQA-GASMIG02-001 §2.1, 07/05/2026) |
+| OM-03 | Elaborar template padrão de naming convention para recursos Azure a ser preenchido durante o kickoff com o cliente | Design / kickoff | Média | LE-07 — Retrospectiva OS-001 |
+| OM-04 | Incluir no checklist de verificação a validação explícita de Named Values configurados antes de qualquer deploy para ambiente de produção | Verificação técnica | Baixa | LE-03 — Boa prática identificada OS-001 (§2) |
 
 ---
 
@@ -77,10 +77,10 @@ As oportunidades OM-01 a OM-04 serão endereçadas no ciclo de melhoria de proce
 
 ### 6.3 Oportunidades de melhoria geradas pela OS-002
 
-| # | Oportunidade | Área afetada | Prioridade |
-|---|---|---|---|
-| OM-05 | Criar template de ata de aceite pré-preenchido (check-list de entregáveis + campo de assinatura/e-mail de DE ACORDO) para uso padrão em projetos de configuração | Encerramento de projetos | Alta |
-| OM-06 | Incluir seção de parâmetros de monitoramento e alertas no template de PCP para projetos Azure, consolidando os thresholds acordados com o cliente antes da sprint | Design de projeto | Média |
+| # | Oportunidade | Área afetada | Prioridade | Origem |
+|---|---|---|---|---|
+| OM-05 | Criar template de ata de aceite pré-preenchido (check-list de entregáveis + campo de assinatura/e-mail de DE ACORDO) para uso padrão em projetos de configuração | Encerramento de projetos | Alta | LE-12 — Retrospectiva OS-002 (GQA-GASMIG02-001 §2.3, 10/06/2026) |
+| OM-06 | Incluir seção de parâmetros de monitoramento e alertas no template de PCP para projetos Azure, consolidando os thresholds acordados com o cliente antes da sprint | Design de projeto | Média | LE-13 — Retrospectiva OS-002 (GQA-GASMIG02-001 §2.3, 10/06/2026) |
 
 ---
 
@@ -90,3 +90,4 @@ As oportunidades OM-01 a OM-04 serão endereçadas no ciclo de melhoria de proce
 |---|---|---|---|
 | 1.0 | 07/05/2026 | Gerente de Projeto | Lições aprendidas da OS-001; oportunidades de melhoria identificadas |
 | 1.1 | 10/06/2026 | Time de Melhoria Contínua | Adição das lições da OS-002 (§6) após encerramento do projeto |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna "Origem" nas tabelas §4 e §6.3, rastreando cada OM à retrospectiva e/ou auditoria GQA que a gerou (CP-vi) |

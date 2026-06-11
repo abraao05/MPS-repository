@@ -6,8 +6,8 @@
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
 | **Contrato** | Squad D1000 Loja — alocação de 3 Dev Pleno |
-| **Versão** | 1.1 |
-| **Data** | 10/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -36,13 +36,15 @@ Detalhamento completo em `ADAP-PROFARMA01-001_Registro-de-Adaptacao.md`. Resumo:
 | Rastreabilidade de defeitos | Planilha de tickets (Gustavo Mathias) + Azure DevOps | Histórico completo exportado em 07/11/2025 |
 | Viagens presenciais | Previstas quando ambiente travado ou pontos críticos | Custo médio R$ 5.000 por deslocamento (4 pessoas) |
 
-## 4. Estimativas (GPR 3, 4)
+## 4. Estimativas e orçamento de horas (GPR 3, 4)
 
-- **Recursos alocados:** 3 Dev Pleno (Timeware) + Tech Lead parcial + PM
-- **Duração total:** ~10 meses (março/2025 a janeiro/2026)
+- **Tamanho estimado:** 573 story points (total realizado; ver tabela §5.2)
+- **Duração total:** 19 sprints / ~10 meses (março/2025 a janeiro/2026)
 - **Modelo de contratação:** alocação mensalizada (squad dedicado)
 
-| Módulo / entregável | Sprints estimados | Observações |
+**Distribuição por entregável:**
+
+| Módulo / entregável | Sprints | Observações |
 |---|---|---|
 | Design de arquitetura e modelo de dados | 2 | Sprints 1–2 |
 | API core (endpoints cadastro/consulta) | 3 | Sprints 2–4; 16 endpoints, 273 testes unitários |
@@ -52,6 +54,22 @@ Detalhamento completo em `ADAP-PROFARMA01-001_Registro-de-Adaptacao.md`. Resumo:
 | Integração Propz CRM | 2 | Sprints 13–14 (nov/2025) |
 | Testes de homologação e bug fixes | 5+ | Sprints 9–15 (set–jan) |
 | Configuração de ambiente produtivo (Azure) | 1 | Sprint 14 |
+
+**Orçamento de horas por papel:**
+
+*Referência: 168 h/mês disponíveis por pessoa → ~140 h/mês efetivas (~70 h/sprint) após dedução de cerimônias e reuniões (~15%). Dedicação parcial proporcional.*
+
+| Papel | Pessoas | Dedicação | h efetivas/sprint | Sprints | **h estimadas** |
+|---|---|---|---|---|---|
+| Gerente de Projeto | 1 | 30% | 21 h | 19 | 399 h |
+| Tech Lead | 1 | 50% | 35 h | 19 | 665 h |
+| Dev Principal / Arquiteto | 1 | 100% | 70 h | 11 | 770 h |
+| Dev Backend (Gustavo, Renan) | 2 | 100% | 70 h | 19 | 2.660 h |
+| Dev Backend (Cézar — a partir Sprint 8) | 1 | 100% | 70 h | 12 | 840 h |
+| Dev Backend (João — a partir Sprint 13, 50%) | 1 | 50% | 35 h | 7 | 245 h |
+| DevOps (Sprint 14) | 1 | 100% | 70 h | 1 | 70 h |
+| QA / Automação (Sprints 15–19, 40%) | 1 | 40% | 28 h | 5 | 140 h |
+| **Total** | | | | | **5.789 h** |
 
 ## 5. Cronograma e marcos (GPR 5)
 
@@ -169,7 +187,18 @@ Detalhamento completo em `ADAP-PROFARMA01-001_Registro-de-Adaptacao.md`. Resumo:
 
 ## 8. Transição (GPR 8)
 
-Ao final da fase de piloto (loja 9), o sistema é promovido para rollout geral nas demais lojas da Rede D1000. A operação e sustentação pós-piloto são objeto de contrato separado de sustentação. A documentação técnica e de arquitetura (`PCP-PROFARMA01-001`) é entregue à Rede D1000 como parte da base de conhecimento para a equipe interna.
+Ao final da fase de piloto (loja 9), o sistema é promovido para rollout geral nas demais lojas da Rede D1000.
+
+**Estratégia de promoção para produção:**
+
+- **Fluxo de ambientes:** desenvolvimento (local/feature branch) → homologação (Azure AKS — ambiente D1000) → produção (Azure AKS — produção Profarma)
+- **GMUD obrigatória:** qualquer promoção ao ambiente de produção da Rede D1000 requer abertura formal de Gerenciamento de Mudança (GMUD) com janela de mudança definida, rollback plan documentado e aprovação do Gerente de TI D1000 (Humberto Erler)
+- **Execução do deploy em produção:** responsabilidade de Fagner Pereira (Operações/Deploy — Rede D1000), após aprovação da GMUD
+- **Suporte pós-deploy:** a Timeware mantém canais de suporte ao vivo (Teams) durante o período de estabilização do piloto para atendimento a incidentes
+
+*Evidência: GMUD 2624117 executada em 21/01/2026 — deploy da versão final no ambiente produtivo, após aprovação formal.*
+
+A operação e sustentação pós-piloto são objeto de contrato separado de sustentação. A documentação técnica e de arquitetura (`PCP-PROFARMA01-001`) é entregue à Rede D1000 como parte da base de conhecimento para a equipe interna.
 
 ## 9. Riscos (GPR 10)
 
@@ -204,3 +233,4 @@ O projeto foi viável e concluído em janeiro de 2026, com a entrega das correç
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em e-mails e transcrições Fireflies do período 03/2025–01/2026 |
 | 1.1 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna SP Planejado na tabela §5.2 (573 SP totais) para consistência com a planilha de gestão do projeto |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 5.789 h totais estimadas; ampliação do §8 (GPR 8) com estratégia de transição para produção, fluxo de GMUD e responsáveis pelo deploy |

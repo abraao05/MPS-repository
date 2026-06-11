@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-GPC-001 — Plano de Gestão e Melhoria de Processos |
-| **Versão** | 1.4 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.5 |
+| **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -34,16 +34,20 @@ A Timeware mantém uma **biblioteca de ativos de processo**, no Confluence, cont
 | PLA-GPC-001 | Plano de Gestão e Melhoria de Processos (este documento) | Plano |
 | PRO-OSW-001 | Governança Organizacional de Processos | Processo |
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | Processo |
+| REG-GPC-001 | Registro de Melhorias de Processo | Registro |
 
 **Apoio organizacional**
 
 | Código | Ativo | Tipo |
 |---|---|---|
 | PLA-MED-001 | Plano de Medição | Plano |
+| PRO-MED-001 | Processo de Medição | Processo |
 | PLA-GCO-001 | Plano de Gerência de Configuração | Plano |
+| PRO-GCO-001 | Processo de Gerência de Configuração | Processo |
 | GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | Guia |
 | PRO-GDE-001 | Processo de Gerência de Decisões | Processo |
 | PLA-CAP-001 | Plano de Capacitação | Plano |
+| PRO-CAP-001 | Processo de Capacitação | Processo |
 | PRO-AQU-001 | Processo de Aquisição | Processo |
 
 **Processos de projeto**
@@ -123,7 +127,7 @@ As **fontes de oportunidades de melhoria** são:
 - lições aprendidas registradas no encerramento dos projetos;
 - sugestões das equipes.
 
-Todas as oportunidades identificadas são mantidas em um **Registro de Oportunidades de Melhoria**, no Jira, que funciona como repositório vivo. Cada oportunidade contém, no mínimo: identificação, origem (fonte), descrição, data de identificação, prioridade, responsável e situação (identificada, em análise, planejada, em implementação, implementada, descartada).
+Todas as oportunidades identificadas são mantidas no **REG-GPC-001 (Registro de Melhorias de Processo)** e espelhadas no Jira (projeto TMC). Cada oportunidade contém, no mínimo: identificação, projeto de origem, área de processo, descrição, origem (fonte), prioridade, responsável e status (em análise, planejada, em implementação, implementada).
 
 O Registro é mantido atualizado pelo Time de Melhoria Contínua, que revisa as oportunidades em suas reuniões mensais, garantindo que nenhuma seja perdida e que o status de cada uma esteja sempre visível.
 
@@ -150,6 +154,7 @@ Após a implementação de uma melhoria, o Time de Melhoria Contínua avalia sua
 - PRO-GPC-001 — Processo-Padrão Organizacional
 - PRO-GPC-002 — Definição do Time de Melhoria Contínua
 - EST-GPC-001 — Estratégia de Garantia da Qualidade
+- REG-GPC-001 — Registro de Melhorias de Processo
 - Plano de Medição (MED) e Plano de Capacitação (CAP)
 
 ## 9. Rastreabilidade e instrução para auditoria
@@ -178,3 +183,4 @@ Este documento corresponde a **vários resultados** do processo **Gerência de P
 | 1.2 | 26/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO nos papéis |
 | 1.3 | 05/06/2026 | Time de Melhoria Contínua | Expansão do inventário de ativos (§2) com todos os documentos da biblioteca: processos, planos, guias e templates |
 | 1.4 | 05/06/2026 | Time de Melhoria Contínua | Adição do GUIA-GCO-001 (Guia de Nomenclaturas Técnicas) ao inventário de ativos (§2) |
+| 1.5 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo de PRO-GCO-001, PRO-MED-001 e PRO-CAP-001 ao inventário de ativos (§2); criação e adição do REG-GPC-001 ao inventário; atualização de §5.1 para referenciar REG-GPC-001 como registro formal de OMs; atualização de §8 |
