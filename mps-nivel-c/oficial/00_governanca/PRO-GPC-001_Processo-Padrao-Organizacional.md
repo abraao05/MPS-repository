@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPC-001 — Processo-Padrão Organizacional |
-| **Versão** | 2.2 |
-| **Data** | 12/05/2026 |
+| **Versão** | 2.3 |
+| **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -40,6 +40,18 @@ O processo-padrão organiza-se em sete fases, da originação do projeto ao seu 
 | 7 | Homologação, Entrega e Encerramento | Produto aprovado, em produção e projeto encerrado |
 
 Os processos de apoio — Gerência de Configuração, Medição, Gerência de Decisões, Gerência de Riscos e Capacitação — atravessam todas as fases.
+
+**Entradas e saídas do processo-padrão:**
+
+| Item | Tipo |
+|---|---|
+| Oportunidade de negócio formalizada pelo Comercial | Entrada |
+| Necessidades e requisitos do cliente | Entrada |
+| Recursos da organização: equipe capacitada, ambientes, ferramentas e processos de apoio | Entrada |
+| Software entregue e aprovado em produção | Saída |
+| Artefatos de projeto (plano, requisitos, design, testes, lições aprendidas, termo de encerramento) | Saída |
+| Lições aprendidas e oportunidades de melhoria para o ciclo de melhoria contínua | Saída |
+| Registros de GQA, medição e gerência de configuração | Saída |
 
 **Há dois momentos de trabalho em paralelo, que não devem ser confundidos:**
 
@@ -222,15 +234,22 @@ Este processo-padrão é adaptado a cada projeto conforme as diretrizes do Guia 
 
 ## 11. Rastreabilidade e instrução para auditoria
 
-*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento — e dos demais ativos de processo e evidências da Timeware — aos resultados esperados do modelo de referência MR-MPS-SW:2024 para o processo GPC (Gerência de Processos e Capacidade). No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
 
-Este documento corresponde principalmente ao resultado **GPC 2** do processo **Gerência de Processos (GPC)** do MR-MPS-SW:2024.
-
-| Resultado | Onde é atendido neste documento |
-|---|---|
-| GPC 2 — processo-padrão organizacional definido (fases, papéis, produtos de trabalho) com diretrizes de adaptação | Seções 3 e 5 (visão geral e descrição das fases, com produtos de trabalho e pontos de controle de cada fase); seção 4 (papéis); seções 6 e 7 (Definição de Pronto e ambientes); seção 9 (diretrizes de adaptação) |
-
-Este documento é o Processo-Padrão Organizacional; ele evidencia GPC 2 (existência e descrição do processo-padrão; as diretrizes de adaptação detalhadas estão no GUIA-GPC-001).
+| Resultado GPC | Descrição resumida | Como é atendido | Evidências principais |
+|---|---|---|---|
+| GPC 1 | Inventário de ativos de processo organizacional estabelecido | Inventário mantido e atualizado pelo Time de Melhoria Contínua | PLA-GPC-001 §2 (inventário completo de ativos); este documento (PRO-GPC-001) é o ativo central |
+| GPC 2 | Processo-padrão organizacional definido (fases, papéis, produtos de trabalho, diretrizes de adaptação) | Seções 3 e 5 (fases, papéis, produtos de trabalho, pontos de controle); seção 4 (papéis); seções 6 e 7 (Definição de Pronto e ambientes); seção 9 (adaptação) | PRO-GPC-001 (este documento); GUIA-GPC-001 |
+| GPC 3 | Adaptações ao processo-padrão documentadas em cada projeto | Seção 9 define as diretrizes; cada projeto registra formalmente suas adaptações no documento de adaptação | GUIA-GPC-001; ADAP-PROFARMA01-001; ADAP-GASMIG02-001; ADAP-GASMIG02-002 |
+| GPC 4 | Oportunidades de melhoria identificadas a partir da execução dos projetos | Projetos produzem documentos de Lições Aprendidas com OMs; consolidados no ciclo de melhoria | LI-PROFARMA01-001 §4; LI-GASMIG02-001 §4 e §6.3; PLA-GPC-001 §5.1 |
+| GPC 5 | Melhorias planejadas e implementadas no processo-padrão | Ciclo: OMs → planejamento de melhoria → implementação → verificação de efetividade | PLA-GPC-001 §5.2; REG-GPC-001 |
+| GPC 6 | Estratégia de GQA definida e documentada | GQA listada como processo transversal na seção 8 deste documento; estratégia detalhada em documento específico | EST-GPC-001 |
+| GPC 7 | Verificação de aderência ao processo conduzida nos projetos (GQA) | Seção 8 (GQA como processo transversal); §5 (pontos de controle de cada fase verificados) | GQA-PROFARMA01-001; GQA-GASMIG02-001 |
+| GPC 8 | Ambientes de trabalho definidos | Seção 7 deste documento descreve os quatro ambientes de referência (dev, QA, homologação, stage) | PRO-GPC-001 §7; PLA-GPC-001 §3 |
+| GPC 9 | Repositório de medidas organizacional estabelecido | Medição listada como processo transversal na seção 8; processo e indicadores em documentos específicos | PLA-MED-001; MED-PROFARMA01-001; MED-GASMIG02-001 |
+| GPC 10 | Processo-padrão implantado nos projetos | Todos os projetos avaliados seguem o processo-padrão com adaptação formalmente registrada | PLA-GPC-001 §4; ADAP-* de cada projeto (PROFARMA, GASMIG02 OS-001 e OS-002) |
+| GPC 11 | Efetividade dos processos avaliada | Consolidação de indicadores e avaliação de efetividade no ciclo de melhoria contínua | PLA-GPC-001 §6; REG-GPC-001 |
+| GPC 12 | Experiências de projeto armazenadas e disponibilizadas | Lições aprendidas registradas ao final de cada projeto e publicadas na base de conhecimento organizacional | LI-PROFARMA01-001; LI-GASMIG02-001; Confluence (biblioteca de conhecimento Timeware) |
 
 ---
 
@@ -242,3 +261,4 @@ Este documento é o Processo-Padrão Organizacional; ele evidencia GPC 2 (exist�
 | 2.0 | 12/12/2025 | Time de Melhoria Contínua | Reestruturação do fluxo: inclusão do Escritório de Projetos, kickoff como marco gerencial, fase de concepção em trilhas paralelas e aprovação do plano (baseline). Sete fases. |
 | 2.1 | 15/01/2026 | Time de Melhoria Contínua | Definição dos quatro ambientes (dev, QA, homologação, stage); distinção entre homologação e stage; encerramento de projeto vs. review de sprint |
 | 2.2 | 12/05/2026 | Time de Melhoria Contínua | Revisão de consistência geral e alinhamento de terminologia |
+| 2.3 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo de tabela de entradas/saídas do processo em §3 (CP-ii GPC); expansão do §11 de GPC 2 para cobertura explícita de todos os 12 resultados GPC do MR-MPS-SW:2024 |

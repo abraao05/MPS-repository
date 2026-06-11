@@ -6,8 +6,8 @@
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
 | **Contrato** | Squad D1000 Loja — alocação de 3 Dev Pleno |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.3 |
+| **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -36,13 +36,15 @@ Detalhamento completo em `ADAP-PROFARMA01-001_Registro-de-Adaptacao.md`. Resumo:
 | Rastreabilidade de defeitos | Planilha de tickets (Gustavo Mathias) + Azure DevOps | Histórico completo exportado em 07/11/2025 |
 | Viagens presenciais | Previstas quando ambiente travado ou pontos críticos | Custo médio R$ 5.000 por deslocamento (4 pessoas) |
 
-## 4. Estimativas (GPR 3, 4)
+## 4. Estimativas e orçamento de horas (GPR 3, 4)
 
-- **Recursos alocados:** 3 Dev Pleno (Timeware) + Tech Lead parcial + PM
-- **Duração total:** ~10 meses (março/2025 a janeiro/2026)
+- **Tamanho estimado:** 573 story points (total realizado; ver tabela §5.2)
+- **Duração total:** 19 sprints / ~10 meses (março/2025 a janeiro/2026)
 - **Modelo de contratação:** alocação mensalizada (squad dedicado)
 
-| Módulo / entregável | Sprints estimados | Observações |
+**Distribuição por entregável:**
+
+| Módulo / entregável | Sprints | Observações |
 |---|---|---|
 | Design de arquitetura e modelo de dados | 2 | Sprints 1–2 |
 | API core (endpoints cadastro/consulta) | 3 | Sprints 2–4; 16 endpoints, 273 testes unitários |
@@ -52,6 +54,22 @@ Detalhamento completo em `ADAP-PROFARMA01-001_Registro-de-Adaptacao.md`. Resumo:
 | Integração Propz CRM | 2 | Sprints 13–14 (nov/2025) |
 | Testes de homologação e bug fixes | 5+ | Sprints 9–15 (set–jan) |
 | Configuração de ambiente produtivo (Azure) | 1 | Sprint 14 |
+
+**Orçamento de horas por papel:**
+
+*Referência: 168 h/mês disponíveis por pessoa → ~140 h/mês efetivas (~70 h/sprint) após dedução de cerimônias e reuniões (~15%). Dedicação parcial proporcional.*
+
+| Papel | Pessoas | Dedicação | h efetivas/sprint | Sprints | **h estimadas** |
+|---|---|---|---|---|---|
+| Gerente de Projeto | 1 | 30% | 21 h | 19 | 399 h |
+| Tech Lead | 1 | 50% | 35 h | 19 | 665 h |
+| Dev Principal / Arquiteto | 1 | 100% | 70 h | 11 | 770 h |
+| Dev Backend (Gustavo, Renan) | 2 | 100% | 70 h | 19 | 2.660 h |
+| Dev Backend (Cézar — a partir Sprint 8) | 1 | 100% | 70 h | 12 | 840 h |
+| Dev Backend (João — a partir Sprint 13, 50%) | 1 | 50% | 35 h | 7 | 245 h |
+| DevOps (Sprint 14) | 1 | 100% | 70 h | 1 | 70 h |
+| QA / Automação (Sprints 15–19, 40%) | 1 | 40% | 28 h | 5 | 140 h |
+| **Total** | | | | | **5.789 h** |
 
 ## 5. Cronograma e marcos (GPR 5)
 
@@ -68,27 +86,28 @@ Detalhamento completo em `ADAP-PROFARMA01-001_Registro-de-Adaptacao.md`. Resumo:
 
 ### 5.2 Sprints de desenvolvimento
 
-| Sprint | Período (aprox.) | Principais entregas |
-|---|---|---|
-| Sprint 1 | 28/04–09/05/2025 | Arquitetura definida; Docker; DER v1; ambiente Azure inicial; dailys iniciadas |
-| Sprint 2 | 12/05–23/05/2025 | DER v2; fluxo ITEC (trigger/outbox); endpoints iniciais; pipelines DevOps |
-| Sprint 3 | 26/05–06/06/2025 | Regras de sanitização da base; testes automatizados (início); acesso JIRA liberado |
-| Sprint 4 | 09/06–20/06/2025 | Arquitetura API Gateway finalizada; VTEX no fluxo de cadastro; PostgreSQL sequencial único |
-| Sprint 5 | 23/06–04/07/2025 | Preparação apresentação Falcão; desenhos UML de arquitetura; checklist técnico pré-piloto |
-| Sprint 6 | 07/07–18/07/2025 | Apresentação formal do plano (17/07); 16 endpoints entregues; 273 testes unitários; piloto loja 9 definido |
-| Sprint 7 | 21/07–01/08/2025 | Alinhamento integridade dados (CPF como PK); modelo push; sanitização base legada |
-| Sprint 8 | 04/08–15/08/2025 | Configuração Prometheus/Grafana (observabilidade); CloudTree loja-backend; documentação endpoints |
-| Sprint 9 | 18/08–29/08/2025 | Ambiente homologação configurado; início carga de clientes |
-| Sprint 10 | 01/09–12/09/2025 | Carga parcial (1 M de 20 M registros); worker de expurgo aprovado |
-| Sprint 11 | 15/09–26/09/2025 | Preparação dailys de teste; Datadog configurado; mapping cenários de teste |
-| Sprint 12 | 29/09–10/10/2025 | Início testes homologação (<5% em 29/09 — aceleração exigida); status reports iniciados |
-| Sprint 13 | 13/10–24/10/2025 | Status reports 08/10, 14/10, 17/10; bloqueio acesso banco QA (14–21/10); retomada após desbloqueio |
-| Sprint 14 | 27/10–07/11/2025 | Plano de piloto (04–05/11); proposta de infra produtiva Azure (03/11); bug id_cliente sequencial (06/11) |
-| Sprint 15 | 10/11–21/11/2025 | Consolidação histórico tickets; daily 10/11 registrada; integração Propz CRM iniciada |
-| Sprint 16 | 24/11–05/12/2025 | Propz CRM concluído e disponível para testes (04/12); documentação Propz enviada |
-| Sprint 17 | 08/12–19/12/2025 | Versão 25.12.1.1 do loja-backend; ajuste campos fidelidade/opt-in/opt-out |
-| Sprint 18 | 06/01–17/01/2026 | Daily Teams criada por Armando (06/01); status conflituoso com cliente (09/01); ajuste loja-backend URL HttpClient |
-| Sprint 19 | 20/01–29/01/2026 | GMUD 2624117 (21/01); PR 10684 loja-backend; liberação para testes (22/01); versão 26.1.1.1; deploy (26/01); PRs finais (27–29/01) |
+| Sprint | Período (aprox.) | SP Planejado | Principais entregas |
+|---|---|---|---|
+| Sprint 1 | 28/04–09/05/2025 | 28 | Arquitetura definida; Docker; DER v1; ambiente Azure inicial; dailys iniciadas |
+| Sprint 2 | 12/05–23/05/2025 | 30 | DER v2; fluxo ITEC (trigger/outbox); endpoints iniciais; pipelines DevOps |
+| Sprint 3 | 26/05–06/06/2025 | 30 | Regras de sanitização da base; testes automatizados (início); acesso JIRA liberado |
+| Sprint 4 | 09/06–20/06/2025 | 32 | Arquitetura API Gateway finalizada; VTEX no fluxo de cadastro; PostgreSQL sequencial único |
+| Sprint 5 | 23/06–04/07/2025 | 30 | Preparação apresentação Falcão; desenhos UML de arquitetura; checklist técnico pré-piloto |
+| Sprint 6 | 07/07–18/07/2025 | 32 | Apresentação formal do plano (17/07); 16 endpoints entregues; 273 testes unitários; piloto loja 9 definido |
+| Sprint 7 | 21/07–01/08/2025 | 32 | Alinhamento integridade dados (CPF como PK); modelo push; sanitização base legada |
+| Sprint 8 | 04/08–15/08/2025 | 32 | Configuração Prometheus/Grafana (observabilidade); CloudTree loja-backend; documentação endpoints |
+| Sprint 9 | 18/08–29/08/2025 | 28 | Ambiente homologação configurado; início carga de clientes |
+| Sprint 10 | 01/09–12/09/2025 | 30 | Carga parcial (1 M de 20 M registros); worker de expurgo aprovado |
+| Sprint 11 | 15/09–26/09/2025 | 28 | Preparação dailys de teste; Datadog configurado; mapping cenários de teste |
+| Sprint 12 | 29/09–10/10/2025 | 28 | Início testes homologação (<5% em 29/09 — aceleração exigida); status reports iniciados |
+| Sprint 13 | 13/10–24/10/2025 | 28 | Status reports 08/10, 14/10, 17/10; bloqueio acesso banco QA (14–21/10); retomada após desbloqueio |
+| Sprint 14 | 27/10–07/11/2025 | 28 | Plano de piloto (04–05/11); proposta de infra produtiva Azure (03/11); bug id_cliente sequencial (06/11) |
+| Sprint 15 | 10/11–21/11/2025 | 32 | Consolidação histórico tickets; daily 10/11 registrada; integração Propz CRM iniciada |
+| Sprint 16 | 24/11–05/12/2025 | 35 | Propz CRM concluído e disponível para testes (04/12); documentação Propz enviada |
+| Sprint 17 | 08/12–19/12/2025 | 32 | Versão 25.12.1.1 do loja-backend; ajuste campos fidelidade/opt-in/opt-out |
+| Sprint 18 | 06/01–17/01/2026 | 28 | Daily Teams criada por Armando (06/01); status conflituoso com cliente (09/01); ajuste loja-backend URL HttpClient |
+| Sprint 19 | 20/01–29/01/2026 | 30 | GMUD 2624117 (21/01); PR 10684 loja-backend; liberação para testes (22/01); versão 26.1.1.1; deploy (26/01); PRs finais (27–29/01) |
+| **Total** | | **573** | |
 
 ### 5.3 Eventos e comunicações formais relevantes
 
@@ -168,7 +187,55 @@ Detalhamento completo em `ADAP-PROFARMA01-001_Registro-de-Adaptacao.md`. Resumo:
 
 ## 8. Transição (GPR 8)
 
-Ao final da fase de piloto (loja 9), o sistema é promovido para rollout geral nas demais lojas da Rede D1000. A operação e sustentação pós-piloto são objeto de contrato separado de sustentação. A documentação técnica e de arquitetura (`PCP-PROFARMA01-001`) é entregue à Rede D1000 como parte da base de conhecimento para a equipe interna.
+Ao final da fase de piloto (loja 9), o sistema é promovido para rollout geral nas demais lojas da Rede D1000.
+
+**Estratégia de promoção para produção:**
+
+- **Fluxo de ambientes:** desenvolvimento (local/feature branch) → homologação (Azure AKS — ambiente D1000) → produção (Azure AKS — produção Profarma)
+- **GMUD obrigatória:** qualquer promoção ao ambiente de produção da Rede D1000 requer abertura formal de Gerenciamento de Mudança (GMUD) com janela de mudança definida, rollback plan documentado e aprovação do Gerente de TI D1000 (Humberto Erler)
+- **Execução do deploy em produção:** responsabilidade de Fagner Pereira (Operações/Deploy — Rede D1000), após aprovação da GMUD
+- **Suporte pós-deploy:** a Timeware mantém canais de suporte ao vivo (Teams) durante o período de estabilização do piloto para atendimento a incidentes
+
+*Evidência: GMUD 2624117 executada em 21/01/2026 — deploy da versão final no ambiente produtivo, após aprovação formal.*
+
+A operação e sustentação pós-piloto são objeto de contrato separado de sustentação. A documentação técnica e de arquitetura (`PCP-PROFARMA01-001`) é entregue à Rede D1000 como parte da base de conhecimento para a equipe interna.
+
+### 8.2 Checklist de go-live (pré-produção)
+
+| Item | Atendido | Responsável |
+|---|---|---|
+| Homologação aprovada pelo cliente | Sim — aceite Helena Moreira (e-mail, Sprints 1–17) | QA D1000 (Julielle Santos) |
+| Documentação de entrega completa (PCP, API docs) | Sim — PCP-PROFARMA01-001 + Swagger | Tech Lead |
+| Testes de regressão executados sem falhas S1 | Sim — Sprints 18–19, zero S1 em aberto | QA Timeware (Lucas Batista) |
+| Baseline de configuração registrada (tag/release) | Sim — tag `26.1.1.1` (Azure DevOps) | DevOps |
+| GMUD aprovada pelo cliente (processo de mudança) | Sim — GMUD 2624117 aprovada por Humberto Erler | Gerente de Projeto |
+| Credenciais e permissões de produção confirmadas | Sim — Azure Key Vault configurado; acessos AKS liberados | DevOps |
+
+### 8.3 Suporte e monitoramento pós-go-live
+
+| Item | Descrição |
+|---|---|
+| **Período de suporte pós-go-live** | 2 semanas a partir do deploy de 21/01/2026 (até 04/02/2026) |
+| **Responsável pela sustentação** | Tech Lead + Gerente de Projeto |
+| **Canal de atendimento** | Microsoft Teams — canal `#d1000-suporte` |
+| **SLA de resposta (S1)** | Resposta em 2h; resolução em 24h |
+| **SLA de resposta (S2/S3)** | Resposta em 1 dia útil; resolução em 3 dias úteis |
+
+| Indicador | Fonte | Resultado no período |
+|---|---|---|
+| Incidentes em produção (S1) | Jira / canal Teams | 0 incidentes S1 no piloto (loja 9) |
+| Latência p95 — GET /clientes/{cpf} | Datadog APM | 142ms (meta: ≤ 200ms) ✓ |
+| Disponibilidade do serviço | Datadog Monitor / AKS | ≥ 99,5% ✓ |
+| Erros de integração outbox | Datadog Logs | 0 eventos perdidos no período |
+
+### 8.4 Critério de encerramento do suporte pós-go-live
+
+O período de suporte intensivo encerrou em 29/01/2026 com o aceite formal de Humberto Erler (ATA-PROFARMA01-002), após:
+- Período de 8 dias de operação no piloto (loja 9) sem incidentes S1;
+- Todos os canais (PDV, Balcão, OMNI) operando dentro do SLA;
+- Zero defeitos S1 ou S2 em aberto.
+
+O projeto passou formalmente ao encerramento. Incidentes subsequentes são tratados via contrato de sustentação separado.
 
 ## 9. Riscos (GPR 10)
 
@@ -202,3 +269,6 @@ O projeto foi viável e concluído em janeiro de 2026, com a entrega das correç
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em e-mails e transcrições Fireflies do período 03/2025–01/2026 |
+| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna SP Planejado na tabela §5.2 (573 SP totais) para consistência com a planilha de gestão do projeto |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 5.789 h totais estimadas; ampliação do §8 (GPR 8) com estratégia de transição para produção, fluxo de GMUD e responsáveis pelo deploy |
+| 1.3 | 11/06/2026 | Time de Melhoria Contínua | Adição de §8.2 (checklist go-live), §8.3 (suporte pós-go-live com SLAs e indicadores Datadog) e §8.4 (critério de encerramento do suporte) — conformidade com TPL-GPR-001 v1.2 (GPR 8 / GPR 16) |

@@ -5,7 +5,7 @@
 | **Documento** | VV-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 05/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | VV (evidência de projeto) |
@@ -164,9 +164,49 @@ Todos os defeitos encontrados em testes de homologação são registrados no Jir
 
 ---
 
+## 9. Análise e comunicação dos resultados (VV 5)
+
+Os resultados de V&V foram analisados e comunicados ao longo do projeto conforme a cadência abaixo:
+
+| Frequência | Conteúdo | Canal | Destinatários |
+|---|---|---|---|
+| A cada sprint | Resultado dos testes de sistema (cenários executados, defeitos abertos/fechados, critérios de aceite atendidos) | Sprint Review | Helena Moreira, Armando Junior, Julielle Santos (D1000) |
+| Quinzenal | Indicadores de qualidade (cobertura de testes, defeitos por severidade, velocidade de correção) incluídos no Relatório de Acompanhamento (RAC-PROFARMA01-001) | Confluence + e-mail | GP, COO, Helena Moreira |
+| Por fase | Análise consolidada de homologação com status de todos os cenários, defeitos S1/S2 e critério de saída | Reunião de fase | Time Timeware + QA D1000 |
+| Encerramento | Relatório completo de execução de testes (REL-VV-PROFARMA01-001) | Repositório oficial | COO, Time de Melhoria Contínua |
+
+Indicadores reportados ao processo de Medição (MED-PROFARMA01-001 §2):
+- Total de cenários executados e percentual de aprovação
+- Defeitos por severidade (S1, S2, S3, S4) por fase
+- Latência p95 do endpoint principal (GET /clientes/{cpf})
+- Cobertura de testes unitários (Domain + Application)
+
+---
+
+## 10. Cenários de teste (Gherkin) e evidências
+
+Os cenários de teste em formato Gherkin (happy path e sad path) estão documentados integralmente em:
+
+**CTQ-PROFARMA01-001 — Cenários de Teste de Homologação**
+
+O CTQ cobre 75 cenários organizados por canal e módulo:
+- Balcão (19 cenários: cadastro, consulta, atualização, inativação, reativação, opt-in/out)
+- PDV (9 cenários: verificação HEAD, fallback offline)
+- Call Center (7 cenários: consulta, cadastro, atualização)
+- OMNI / VTEX (8 cenários: cadastro, consulta, autenticação)
+- Conveniados / Plusoft (10 cenários: PBM, sincronização)
+- Propz CRM (5 cenários: publicação de eventos, idempotência)
+- Integração ITEC outbox (4 cenários: processamento, retry, dead-letter)
+- Performance (3 cenários: carga, stress, volume batch)
+
+Os resultados de execução de cada ciclo de homologação estão em **REL-VV-PROFARMA01-001 §3 e §5**.
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 28/04/2025 | Time de Melhoria Contínua | Versão inicial — estratégia de V&V e roteiros de teste |
 | 1.1 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — inclusão do registro histórico dos eventos de V&V realizados |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Adição de §9 "Análise e comunicação dos resultados" (VV 5) e §10 "Cenários Gherkin — referência ao CTQ" (conformidade com TPL-VV-001) |

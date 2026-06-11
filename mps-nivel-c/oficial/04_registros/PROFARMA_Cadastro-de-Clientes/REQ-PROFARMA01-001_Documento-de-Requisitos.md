@@ -5,8 +5,8 @@
 | **Documento** | REQ-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.2 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.4 |
+| **Data** | 10/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | REQ (evidência de projeto) |
 
@@ -39,42 +39,42 @@ Registrar os requisitos funcionais e não funcionais do sistema de Cadastro de C
 
 ### 3.1 Cadastro e gerenciamento de clientes
 
-| ID | Requisito | Prioridade | Sprint de origem |
-|---|---|---|---|
-| RF-01 | O sistema deve permitir o cadastro de um novo cliente com CPF como chave primária única. Os campos obrigatórios são: CPF, nome completo, data de nascimento, telefone e e-mail. | Alta | Sprint 1 |
-| RF-02 | O sistema deve rejeitar cadastro de CPF já existente na base, retornando erro HTTP 409 com mensagem descritiva. | Alta | Sprint 1 |
-| RF-03 | O sistema deve permitir a consulta de cliente por CPF via endpoint GET, retornando todos os dados cadastrais ativos. | Alta | Sprint 1 |
-| RF-04 | O sistema deve permitir a atualização parcial (PATCH) dos dados cadastrais de um cliente existente (nome, endereço, telefone, e-mail, dados complementares). | Alta | Sprint 2 |
-| RF-05 | O sistema deve permitir a inativação lógica de um cliente (LGPD — direito ao esquecimento), preservando integridade referencial e registrando o motivo e data da inativação. | Alta | Sprint 3 |
-| RF-06 | O sistema deve permitir a consulta de cliente por nome parcial (search) com paginação de resultados. | Média | Sprint 2 |
-| RF-07 | O sistema deve registrar log de auditoria para toda operação de criação, atualização e inativação, com identificação do operador, canal de origem e timestamp. | Alta | Sprint 3 |
-| RF-08 | O sistema deve suportar a carga inicial de aproximadamente 7 milhões de CPFs saneados da base legada ITEC, via worker batch dedicado. | Alta | Sprint 4 |
-| RF-09 | O sistema deve expor endpoint de verificação de existência de CPF (HEAD /clientes/{cpf}) para uso do PDV sem retornar dados pessoais completos. | Média | Sprint 2 |
-| RF-10 | O sistema deve permitir a reativação de um cliente previamente inativado, mediante registro de motivo. | Média | Sprint 4 |
+| ID | Requisito | Prioridade | Sprint de origem | SP Est. |
+|---|---|---|---|---|
+| RF-01 | O sistema deve permitir o cadastro de um novo cliente com CPF como chave primária única. Os campos obrigatórios são: CPF, nome completo, data de nascimento, telefone e e-mail. | Alta | Sprint 1 | 20 |
+| RF-02 | O sistema deve rejeitar cadastro de CPF já existente na base, retornando erro HTTP 409 com mensagem descritiva. | Alta | Sprint 1 | 5 |
+| RF-03 | O sistema deve permitir a consulta de cliente por CPF via endpoint GET, retornando todos os dados cadastrais ativos. | Alta | Sprint 1 | 10 |
+| RF-04 | O sistema deve permitir a atualização parcial (PATCH) dos dados cadastrais de um cliente existente (nome, endereço, telefone, e-mail, dados complementares). | Alta | Sprint 2 | 12 |
+| RF-05 | O sistema deve permitir a inativação lógica de um cliente (LGPD — direito ao esquecimento), preservando integridade referencial e registrando o motivo e data da inativação. | Alta | Sprint 3 | 15 |
+| RF-06 | O sistema deve permitir a consulta de cliente por nome parcial (search) com paginação de resultados. | Média | Sprint 2 | 10 |
+| RF-07 | O sistema deve registrar log de auditoria para toda operação de criação, atualização e inativação, com identificação do operador, canal de origem e timestamp. | Alta | Sprint 3 | 12 |
+| RF-08 | O sistema deve suportar a carga inicial de aproximadamente 7 milhões de CPFs saneados da base legada ITEC, via worker batch dedicado. | Alta | Sprint 4 | 18 |
+| RF-09 | O sistema deve expor endpoint de verificação de existência de CPF (HEAD /clientes/{cpf}) para uso do PDV sem retornar dados pessoais completos. | Média | Sprint 2 | 5 |
+| RF-10 | O sistema deve permitir a reativação de um cliente previamente inativado, mediante registro de motivo. | Média | Sprint 4 | 8 |
 
 ### 3.2 Integrações
 
-| ID | Requisito | Prioridade | Sprint de origem |
-|---|---|---|---|
-| RF-11 | O sistema deve publicar eventos de criação/atualização/inativação de cliente no outbox do banco de dados (PostgreSQL), consumidos pelo worker de integração com o ITEC legado. A consistência é eventual e tolerante a falhas transientes. | Alta | Sprint 3 |
-| RF-12 | O sistema deve expor os endpoints de cadastro e consulta de cliente compatíveis com o contrato de API consumido pela plataforma VTEX (canal OMNI). | Alta | Sprint 5 |
-| RF-13 | O sistema deve expor os endpoints necessários para o Call Center consultar e cadastrar clientes em tempo real (SLA de resposta: 95% das requisições em até 500ms). | Alta | Sprint 5 |
-| RF-14 | O sistema deve notificar o Propz CRM de eventos de criação e atualização de cliente via Azure Service Bus, seguindo o schema de mensagem definido pela Propz. | Média | Sprint 7 |
-| RF-15 | O sistema deve integrar-se com a BlueSoft para sincronização de dados de endereço e score de crédito do cliente, quando disponíveis. | Baixa | Sprint 8 |
-| RF-16 | O sistema deve integrar-se com a CloseUp para consulta de histórico de compras do cliente, retornando dados agregados no endpoint de perfil completo. | Baixa | Sprint 9 |
+| ID | Requisito | Prioridade | Sprint de origem | SP Est. |
+|---|---|---|---|---|
+| RF-11 | O sistema deve publicar eventos de criação/atualização/inativação de cliente no outbox do banco de dados (PostgreSQL), consumidos pelo worker de integração com o ITEC legado. A consistência é eventual e tolerante a falhas transientes. | Alta | Sprint 3 | 35 |
+| RF-12 | O sistema deve expor os endpoints de cadastro e consulta de cliente compatíveis com o contrato de API consumido pela plataforma VTEX (canal OMNI). | Alta | Sprint 5 | 20 |
+| RF-13 | O sistema deve expor os endpoints necessários para o Call Center consultar e cadastrar clientes em tempo real (SLA de resposta: 95% das requisições em até 500ms). | Alta | Sprint 5 | 18 |
+| RF-14 | O sistema deve notificar o Propz CRM de eventos de criação e atualização de cliente via Azure Service Bus, seguindo o schema de mensagem definido pela Propz. | Média | Sprint 7 | 35 |
+| RF-15 | O sistema deve integrar-se com a BlueSoft para sincronização de dados de endereço e score de crédito do cliente, quando disponíveis. | Baixa | Sprint 8 | 22 |
+| RF-16 | O sistema deve integrar-se com a CloseUp para consulta de histórico de compras do cliente, retornando dados agregados no endpoint de perfil completo. | Baixa | Sprint 9 | 18 |
 
 ### 3.3 Worker de expurgo (LGPD)
 
-| ID | Requisito | Prioridade | Sprint de origem |
-|---|---|---|---|
-| RF-17 | O sistema deve incluir um worker de expurgo que anonimize dados pessoais de clientes inativados há mais de 5 anos, conforme política LGPD, gerando log de auditoria de cada registro processado. | Média | Sprint 6 |
+| ID | Requisito | Prioridade | Sprint de origem | SP Est. |
+|---|---|---|---|---|
+| RF-17 | O sistema deve incluir um worker de expurgo que anonimize dados pessoais de clientes inativados há mais de 5 anos, conforme política LGPD, gerando log de auditoria de cada registro processado. | Média | Sprint 6 | 18 |
 
 ### 3.4 Administração e operação
 
-| ID | Requisito | Prioridade | Sprint de origem |
-|---|---|---|---|
-| RF-18 | O sistema deve expor endpoint de health check (GET /health) retornando status dos componentes: banco de dados, filas e dependências externas críticas. | Alta | Sprint 1 |
-| RF-19 | O sistema deve expor métricas no formato Prometheus para coleta pelo Datadog. | Média | Sprint 5 |
+| ID | Requisito | Prioridade | Sprint de origem | SP Est. |
+|---|---|---|---|---|
+| RF-18 | O sistema deve expor endpoint de health check (GET /health) retornando status dos componentes: banco de dados, filas e dependências externas críticas. | Alta | Sprint 1 | 5 |
+| RF-19 | O sistema deve expor métricas no formato Prometheus para coleta pelo Datadog. | Média | Sprint 5 | 8 |
 
 ---
 
@@ -177,6 +177,25 @@ Registrar os requisitos funcionais e não funcionais do sistema de Cadastro de C
 
 ---
 
+## 8. Confirmação de entendimento dos requisitos
+
+| Envolvido | Papel | Forma de confirmação | Data |
+|---|---|---|---|
+| Armando Junior | Tech Lead D1000 | Revisão de design (REV-001, 09/05/2025) + aprovação das decisões arquiteturais GDE-001/GDE-002 | 09/05/2025 |
+| Helena Moreira | Coordenadora de Projeto D1000 | Participação nas Sprint Reviews + aceites parciais por e-mail (Sprints 1–17) | Contínuo Sprints 1–17 |
+| Julielle Santos | QA D1000 | Aprovação dos roteiros de teste (VV §5) + execução UAT + aceite de homologação | Set/2025–Jan/2026 |
+| Humberto Erler | Gerente de TI D1000 | Aceite formal do projeto (ATA-PROFARMA01-002, 29/01/2026) | 29/01/2026 |
+
+Os requisitos foram revisados e confirmados de forma iterativa ao longo do projeto:
+
+- **Versão 1.0 (RF-01 a RF-10, RNF-01 a RNF-08):** confirmados na Sprint Review da Fase 1 (Junho/2025) com presença de Armando Junior e Helena Moreira.
+- **Change requests CR-01 a CR-12:** cada requisito adicionado ou alterado foi confirmado com aprovação formal antes da implementação, evidenciado na RASTR-PROFARMA01-001 §5 e auditado na GQA-P02 (10/10/2025).
+- **Confirmação final:** aceite formal de Humberto Erler em 29/01/2026 (ATA-PROFARMA01-002), atestando que todos os 19 RF e 14 RNF foram atendidos conforme os critérios de saída verificados.
+
+A GQA-P01 registrou NC-01 (requisitos documentados retroativamente para os Sprints 1–3); a ação corretiva foi executada até 30/06/2025 e confirmada como resolvida na GQA-P02.
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
@@ -184,3 +203,5 @@ Registrar os requisitos funcionais e não funcionais do sistema de Cadastro de C
 | 1.0 | 28/04/2025 | Time de Melhoria Contínua | Versão inicial — requisitos RF-01 a RF-10, RNF-01 a RNF-08 |
 | 1.1 | 15/08/2025 | Time de Melhoria Contínua | Adição de RF-15, RF-16 (BlueSoft e CloseUp), RF-17 (worker expurgo LGPD), RNF-09 a RNF-14 |
 | 1.2 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — reconstituída com base nas entregas, change requests e transcrições do período 04/2025–01/2026 |
+| 1.3 | 05/06/2026 | Time de Melhoria Contínua | Adição da seção §8 (Confirmação de entendimento dos requisitos) para conformidade com MPS-SW REQ |
+| 1.4 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna SP Est. nas tabelas de RF (RF-01 a RF-19, total 294 SP) para consistência com a planilha de gestão do projeto |

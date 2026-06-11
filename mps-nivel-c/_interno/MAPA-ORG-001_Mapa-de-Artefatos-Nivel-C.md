@@ -3,12 +3,12 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.35 (rascunho) |
+| **Versão** | 0.37 (rascunho) |
 | **Data** | 05/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
 | **Fonte de escopo** | PlanilhaIndicadores_SW_2024__NivelC.xlsx |
-| **Nº de projetos na avaliação** | 4 (a definir quais — Fase 3) |
+| **Nº de projetos na avaliação** | 4+ (3 documentados: FTGASMIG, FTFRUKI, PROFARMA/D1000 · AASP a documentar) |
 | **Responsável (ponto focal)** | Abraão Oliveira |
 
 > **Alterações v0.2 (02/06/2026):** resolução das 5 pendências de escopo. OSW 8/9/10 confirmados no escopo (há gestão de portfólio). AQU mantido, mas movido para o fim da fila (candidato a não-aplicável, a confirmar com a ASR). Ferramentas definidas (Jira, Git, Azure DevOps, Azure Test Plans/Xray, Confluence). Papel de GQA confirmado. Ver seção 3 para detalhes.
@@ -16,6 +16,10 @@
 > **Alterações v0.30 (05/06/2026):** criado TPL-GPC-001 (Template de Registro de Verificação de GQA); PLA-GPC-001 atualizado para v1.3 com inventário completo de ativos (§2). Ambas as lacunas identificadas na análise de cobertura da camada de definição.
 
 > **Alterações v0.33 (05/06/2026):** §2.1 reescrito como inventário completo e organizado por categoria — versão única de referência de todos os documentos existentes.
+
+> **Alterações v0.37 (05/06/2026):** §2.1 Registros de projetos atualizado com inventário completo de FTFRUKI_SuperApp-Forca-de-Vendas (32 docs — Pacote 1 encerrado Set/2025 e Pacote Final 24 encerrado Jan/2026) e PROFARMA_Cadastro-de-Clientes (18 docs — encerrado 29/01/2026, cliente Rede D1000). Pendência 3 e próximos passos atualizados.
+
+> **Alterações v0.36 (05/06/2026):** versões atualizadas no §2.1 conforme ajustes de compliance MPS: PRO-GPC-002 v1.2, EST-GPC-001 v1.3, EST-GPC-002 v1.2, PRO-GDE-001 v1.2, PRO-GPR-001 v1.4 (seções de rastreabilidade com nomenclatura equivalente ASR); TPL-GPR-001 v1.1 (+coluna Exposição); TPL-GPC-001 v1.1 (+% conformidade).
 
 > **Alterações v0.35 (05/06/2026):** inclusão dos 28 materiais de capacitação oficiais (`oficial/01_apoio/cap/`) no inventário §2.1: 12 mini-manuais por processo (GUIA-CAP-001~012), 10 trilhas de treinamento por papel (MAT-CAP-013~022), 5 avaliações de capacitação (AVA-CAP-001~005) e 1 template de registro de sessão (TPL-CAP-001).
 
@@ -79,9 +83,9 @@ MPS-Nivel-C/
 | CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.1 | GCO 1, 4 |
 | PRO-GPC-001 | Processo-Padrão Organizacional | 2.2 | GPC 2 |
 | GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.2 | GPC 2 |
-| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.1 | GPC 6 |
-| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.2 | GPC 3; CP (iv, v, vi) |
-| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.1 | GPC 7 |
+| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.2 | GPC 6 |
+| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.3 | GPC 3; CP (iv, v, vi) |
+| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.2 | GPC 7 |
 | PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.4 | GPC 1, 4, 5, 8, 10, 11 |
 | PRO-OSW-001 | Governança Organizacional de Processos | 1.2 | OSW 2, 3, 4, 5, 6, 7 |
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.2 | OSW 8, 9, 10 |
@@ -93,7 +97,7 @@ MPS-Nivel-C/
 | PLA-MED-001 | Plano de Medição | 1.3 | MED 1–7; GPC 9; OSW 6 |
 | PLA-GCO-001 | Plano de Gerência de Configuração | 1.1 | GCO 1–5 |
 | GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | 1.0 | GCO 1, 2; GPC 8 |
-| PRO-GDE-001 | Processo de Gerência de Decisões | 1.1 | GDE 1–6 |
+| PRO-GDE-001 | Processo de Gerência de Decisões | 1.2 | GDE 1–6 |
 | PLA-CAP-001 | Plano de Capacitação | 1.1 | CAP 1–4 |
 | GUIA-CAP-001 | Mini-manual — Gerência de Projetos | — | CAP 2 (material de apoio) |
 | GUIA-CAP-002 | Mini-manual — Especificação de Requisitos | — | CAP 2 |
@@ -129,7 +133,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Atende |
 |---|---|---|---|
-| PRO-GPR-001 | Processo de Gerência de Projetos | 1.3 | GPR 1–20 |
+| PRO-GPR-001 | Processo de Gerência de Projetos | 1.4 | GPR 1–20 |
 | GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | 1.0 | apoio ao GPR |
 | PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.1 | REQ 1–7 |
 | PRO-PCP-001 | Processo de Projeto e Construção do Produto | 1.1 | PCP 1–3 |
@@ -189,14 +193,93 @@ MPS-Nivel-C/
 
 *3 artefatos pendentes (encerramento OS-002): REV-GASMIG02-002, ATA-GASMIG02-003, TAE-GASMIG02-002 — previstos para 09–10/06/2026.*
 
-**Outros projetos — estrutura criada, documentação a produzir**
+**FTFRUKI — SuperApp Fruki · Força de Vendas** · Cliente: Fruki Bebidas S.A. · GP: Abraão Oliveira
+
+*Pacote 1 (Módulo Metas e RV) encerrado Set/2025 · Pacote Final 24 encerrado 15/01/2026 · 32 documentos*
+
+*Pacote 1 — Módulo Metas e Remuneração Variável*
+
+| Código | Documento | Versão | Evidência |
+|---|---|---|---|
+| TAP-FRUKI01-001 | Termo de Abertura — Pacote 1 | 1.1 | GPR 1, 13 |
+| PLA-FRUKI01-001 | Plano de Projeto — Pacote 1 | 1.1 | GPR 3–12 |
+| REQ-FRUKI01-001 | Documento de Requisitos — Pacote 1 | 1.1 | REQ 1–7 |
+| PCP-FRUKI01-001 | Documento de Design — Pacote 1 | 1.0 | PCP 1–3 |
+| VV-FRUKI01-001 | Plano de V&V — Pacote 1 | 1.0 | VV 1–5 |
+| ITP-FRUKI01-001 | Estratégia de Integração — Pacote 1 | 1.0 | ITP 1 |
+| RASTR-FRUKI01-001 | Matriz de Rastreabilidade — Pacote 1 | 1.0 | REQ 4 |
+| ADAP-FRUKI01-001 | Registro de Adaptação — Pacote 1 | 1.1 | GPR 2 / CP-C |
+| ATA-FRUKI01-001 | Ata de Kickoff | 1.0 | GPR 13 |
+| ATA-FRUKI01-002 | Ata de Levantamento de Metas | 1.0 | REQ 1 |
+| ATA-FRUKI01-007 | Ata de Piloto — Módulo Metas e RV | 1.0 | VV 5 |
+| TAE-FRUKI01-001 | Termo de Encerramento — Pacote 1 | 1.0 | GPR (encerramento) |
+
+*Pacote Final 24*
+
+| Código | Documento | Versão | Evidência |
+|---|---|---|---|
+| TAP-FRUKI01-002 | Termo de Abertura — Pacote Final 24 | 1.1 | GPR 1, 13 |
+| PLA-FRUKI01-002 | Plano de Projeto — Pacote Final 24 | 1.0 | GPR 3–12 |
+| REQ-FRUKI01-002 | Documento de Requisitos — Pacote Final 24 | 1.0 | REQ 1–7 |
+| PCP-FRUKI01-002 | Documento de Design — Pacote Final 24 | 1.0 | PCP 1–3 |
+| VV-FRUKI01-002 | Plano de V&V — Pacote Final 24 | 1.0 | VV 1–5 |
+| ITP-FRUKI01-002 | Estratégia de Integração — Pacote Final 24 | 1.0 | ITP 1 |
+| RASTR-FRUKI01-002 | Matriz de Rastreabilidade — Pacote Final 24 | 1.0 | REQ 4 |
+| ADAP-FRUKI01-002 | Registro de Adaptação — Pacote Final 24 | 1.1 | GPR 2 / CP-C |
+| CR-FRUKI01-001 | Solicitação de Mudança — Regra de Ouro | 1.0 | GPR / GCO |
+| RAC-FRUKI01-001 | Relatório de Acompanhamento | 1.0 | GPR 14 |
+| ATA-FRUKI01-003 | Ata de Aceite Final | 1.0 | GPR (aceite) |
+| ATA-FRUKI01-004 | Ata de Validação Sprint 1 | 1.0 | VV 5 |
+| ATA-FRUKI01-005 | Ata de Validação Sprint 2 | 1.0 | VV 5 |
+| ATA-FRUKI01-006 | Ata de Validação Sprint 3 | 1.0 | VV 5 |
+| TAE-FRUKI01-002 | Termo de Encerramento — Pacote Final 24 | 1.1 | GPR (encerramento) |
+
+*Compartilhados (ambos os pacotes)*
+
+| Código | Documento | Versão | Evidência |
+|---|---|---|---|
+| GDE-FRUKI01-001 | Registro de Análise de Decisão | 1.0 | GDE 2–6 |
+| GQA-FRUKI01-001 | Registro de GQA | 1.1 | GPC 3 / CP (iv, v) |
+| GCO-FRUKI01-001 | Registro de Configuração | 1.3 | GCO 4 |
+| LI-FRUKI01-001 | Lições Aprendidas | 1.0 | GPR 20 / GPC 4 |
+| MED-FRUKI01-001 | Registro de Medição | 1.0 | MED 3–4 |
+
+---
+
+**PROFARMA — Cadastro de Clientes · Rede D1000** · Cliente: Profarma S.A. / Rede D1000 · GP: Abraão Oliveira
+
+*Encerrado 29/01/2026 · 18 documentos*
+
+| Código | Documento | Versão | Evidência |
+|---|---|---|---|
+| TAP-PROFARMA01-001 | Termo de Abertura | 1.0 | GPR 1, 13 |
+| PLA-PROFARMA01-001 | Plano de Projeto | 1.0 | GPR 3–12 |
+| REQ-PROFARMA01-001 | Documento de Requisitos | 1.2 | REQ 1–7 |
+| PCP-PROFARMA01-001 | Documento de Design | 1.3 | PCP 1–3 |
+| VV-PROFARMA01-001 | Plano de V&V | 1.1 | VV 1–5 |
+| RASTR-PROFARMA01-001 | Matriz de Rastreabilidade | 1.1 | REQ 4 |
+| ADAP-PROFARMA01-001 | Registro de Adaptação | 1.0 | GPR 2 / CP-C |
+| GDE-PROFARMA01-001 | Registro de Análise de Decisão | 1.0 | GDE 2–6 |
+| CTQ-PROFARMA01-001 | Cenários de Teste de Homologação | 1.0 | VV 3 |
+| REV-PROFARMA01-001 | Registro de Revisão Técnica | 1.0 | PCP 2 / VV 4 |
+| REL-VV-PROFARMA01-001 | Relatório de Execução de Testes | 1.0 | VV 4–5 |
+| RAC-PROFARMA01-001 | Relatório de Acompanhamento | 1.0 | GPR 14 |
+| ATA-PROFARMA01-001 | Ata de Kickoff | 1.0 | GPR 13 |
+| ATA-PROFARMA01-002 | Ata de Aceite Final | 1.0 | GPR (aceite) |
+| GQA-PROFARMA01-001 | Registro de GQA | 1.0 | GPC 3 / CP (iv, v) |
+| MED-PROFARMA01-001 | Registro de Medição | 1.0 | MED 3–4 |
+| LI-PROFARMA01-001 | Lições Aprendidas | 1.0 | GPR 20 / GPC 4 |
+| TAE-PROFARMA01-001 | Termo de Encerramento | 1.0 | GPR (encerramento) |
+
+---
+
+**Projetos AASP — estrutura criada, documentação a produzir**
 
 | Pasta | Cliente | Status |
 |---|---|---|
 | AASP_Andamento-Processuais | AASP | ⬜ A documentar |
 | AASP_Automacao-Governanca | AASP | ⬜ A documentar |
 | AASP_CNJ | AASP | ⬜ A documentar |
-| PROFARMA_Cadastro-de-Clientes | Profarma | ⬜ A documentar |
 
 ---
 
@@ -210,7 +293,7 @@ MPS-Nivel-C/
 
 | Código | Documento | Versão | Observação |
 |---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.35 | Rascunho de gestão |
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.36 | Rascunho de gestão |
 | GUIA-ORG-001 | Guia de Estrutura do Confluence | 1.0 | Apoio à navegação no Confluence |
 
 ### Pendentes / A produzir
@@ -400,7 +483,7 @@ MPS-Nivel-C/
 |---|---|---|---|
 | 1 | **Portfólio (OSW 8/9/10)** | ✅ Resolvido | **No escopo.** TIMEWARE gerencia portfólio: recursos compartilhados (tech lead, arquiteto, PO) + gestão de capacity. Há quadro de capacity informal a formalizar. |
 | 2 | **Aquisição (AQU)** | ✅ Resolvido (com ação) | **Último a produzir / candidato a não-aplicável.** Nenhum dos 4 projetos tem aquisição. Confirmar não-aplicabilidade com o avaliador líder da ASR. |
-| 3 | **Os 4 projetos** | 🟨 Em andamento | FTGASMIG (Governança de APIs — GASMIG) confirmado: 22 documentos produzidos, OS-001 encerrada, OS-002 em andamento. Faltam 3 projetos adicionais: AASP_Andamento-Processuais, AASP_Automacao-Governanca, AASP_CNJ e/ou PROFARMA_Cadastro-de-Clientes — pastas criadas, documentação a produzir. |
+| 3 | **Os 4 projetos** | 🟨 Em andamento | 3 projetos documentados: FTGASMIG (22 docs — OS-001 encerrada, OS-002 em andamento), FTFRUKI (32 docs — Pacote 1 encerrado Set/2025 + Pacote Final 24 encerrado Jan/2026), PROFARMA/Rede D1000 (18 docs — encerrado Jan/2026). AASP (3 projetos) ainda a documentar. |
 | 4 | **Ferramentas** | ✅ Resolvido | Jira (gestão de projeto, riscos, ações, repositório de medidas) · Git + Azure DevOps (código, baselines, integração/CI-CD) · Azure Test Plans + Jira/Xray (testes) · Confluence (definições/registros). |
 | 5 | **Garantia da Qualidade (GQA)** | ✅ Resolvido | Pessoa/área de GQA existe na TIMEWARE. Detalhar nome/papel ao produzir a Estratégia de GQA (GPC 3). |
 
@@ -416,8 +499,8 @@ MPS-Nivel-C/
 1. ✅ **Fase 1 — Governança:** todos os documentos prontos (OSW, GPC)
 2. ✅ **Fase 2 — Apoio organizacional:** todos os documentos prontos (MED, CAP, GDE, GCO, AQU)
 3. ✅ **Fase 3 — Processos de projeto (camada organizacional):** definições e templates prontos
-4. 🟨 **Fase 3 — Evidências de projeto:** FTGASMIG documentado; faltam 3 projetos adicionais
-5. ⬜ **Selecionar os 3 projetos restantes** (AASP e/ou PROFARMA) e produzir a documentação de cada
+4. 🟨 **Fase 3 — Evidências de projeto:** 3 projetos documentados (FTGASMIG, FTFRUKI, PROFARMA/D1000); faltam 3 projetos AASP
+5. ⬜ **Documentar projetos AASP** (Andamento-Processuais, Automacao-Governanca, CNJ) para fechar os 4+ projetos exigidos pela avaliação
 6. ⬜ **Confirmar AQU** com o avaliador líder da ASR (não-aplicabilidade ou versão enxuta)
 7. ⬜ **Planilha-mestre de evidências** para entrega à ASR antes da avaliação inicial
 

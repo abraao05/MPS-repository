@@ -5,8 +5,8 @@
 | **Documento** | GQA-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GQA (evidência de projeto) |
 
@@ -79,6 +79,9 @@ Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do pr
 | SLA de correção de defeitos S1 e S2 cumprido | Conforme | Nenhum S1 aberto há mais de 24h; S2 dentro do prazo de 3 dias |
 | Aceites parciais de sprint documentados | Conforme | Emails de aceite arquivados por Helena Moreira |
 | Change requests formalizados antes da implementação | Conforme | 12 CRs registrados; todos com aprovação antes da implementação |
+| **GCO-1** — ICs identificados e controlados com convenção de versão adotada | Conforme | Azure DevOps com Git Flow; tags YY.MM.N.PATCH documentadas em GCO-PROFARMA01-001 |
+| **GCO-2** — Baseline de homologação estabelecida | Conforme | Tag `25.10.0.1` criada no branch release antes do início da homologação |
+| **GCO-3** — Auditoria de configuração: ICs íntegros e consistentes com documentos | Conforme | GCO-PROFARMA01-001 §4 — ICs verificados; nenhuma inconsistência identificada |
 
 ---
 
@@ -105,6 +108,9 @@ Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do pr
 | Termo de encerramento (TAE) disponível | Conforme | TAE-PROFARMA01-001 |
 | Aceite formal do cliente documentado | Conforme | Registrado no TAE |
 | Lições aprendidas comunicadas à organização | Conforme | Oportunidades de melhoria identificadas e encaminhadas ao COO |
+| **GCO-1** — ICs identificados e controlados em repositório | Conforme | Azure DevOps com branches e tags controlados; documentados em GCO-PROFARMA01-001 |
+| **GCO-2** — Baseline final (produção) estabelecida | Conforme | Tag `26.1.1.1` vinculada à GMUD 2624117 executada em 21/01/2026 |
+| **GCO-3** — Auditoria de configuração realizada | Conforme | GCO-PROFARMA01-001 §4 — ICs auditados no encerramento; todos íntegros e rastreáveis |
 
 ---
 
@@ -132,3 +138,4 @@ O projeto Cadastro de Clientes — Rede D1000 atendeu aos requisitos do processo
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída consolidando as três auditorias realizadas ao longo do projeto |
+| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Adição de itens GCO-1 a GCO-3 nas auditorias GQA-P02 e GQA-P03 (verificação de aderência à GCO — GCO 5) |

@@ -5,8 +5,8 @@
 | **Documento** | MED-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | MED (evidência de projeto) |
 
@@ -39,6 +39,9 @@ Registrar as medidas coletadas ao longo do projeto Cadastro de Clientes — Rede
 | Total de sprints | ~14 sprints | 19 sprints |
 | Duração média por sprint | ~2 semanas | ~2 semanas |
 | Sprints adicionais (expansão de escopo) | — | +5 sprints (CRs e bloqueios de ambiente) |
+| Story Points totais | 573 SP | 564 SP |
+| Desvio de Story Points | — | −9 SP (−1,6%) |
+| Velocity média por sprint | — | ~30 SP/sprint (pico: 42 SP no Sprint 16) |
 
 ---
 
@@ -118,8 +121,37 @@ Não foram identificados desvios de produtividade ou qualidade de execução que
 
 ---
 
+## 6. Ações corretivas registradas
+
+Conforme PLA-MED-001 §6, desvios identificados pela análise de medição geram ações corretivas com responsável e prazo.
+
+| Variância | Ação corretiva | Responsável | Data | Resultado |
+|---|---|---|---|---|
+| SPI 0,91 — desvio de prazo acumulado de 4 meses | Revisão formal do cronograma com absorção dos 12 CRs aprovados; comunicação à Profarma S.A. do novo prazo baseado no escopo expandido | Gerente de Projeto | Out/2025 | Aceite formal do novo prazo obtido; projeto encerrado dentro do prazo revisado em 29/01/2026 |
+| Fase 5 com +3 sprints por bloqueio AKS | Solicitação formal de escalação à equipe de infraestrutura da Rede D1000; cronograma ajustado | Gerente de Projeto | Set/2025 | AKS disponibilizado; sprint de homologação iniciada em Out/2025 |
+| Saneamento da base legada acima do estimado (+3 semanas) | Inclusão do saneamento adicional como atividade formal no plano; adição ao CR-08 | Gerente de Projeto | Ago/2025 | Saneamento concluído; base de 7M CPFs carregada em Sprint 10 |
+
+Nenhuma ação corretiva resultou em desvio de qualidade; todos os 16 endpoints entregues atenderam os SLAs definidos.
+
+---
+
+## 7. Comunicação dos resultados
+
+Conforme PLA-MED-001 §7, os resultados de medição foram comunicados:
+
+| Periodicidade | Canal | Destinatários | Período coberto |
+|---|---|---|---|
+| Por sprint (quinzenal) | Relatório de Acompanhamento (RAC) publicado no Confluence | Gerente de Projeto, COO, cliente (Helena Moreira) | Sprints 1–19 (abr/2025–jan/2026) |
+| Por marco / fase | E-mail de status + aceite parcial | Helena Moreira (D1000), Armando Junior (D1000) | Marcos de entrega das Fases 1–5 |
+| Encerramento | TAE-PROFARMA01-001 + LI-PROFARMA01-001 | COO, Time de Melhoria Contínua | Jan/2026 |
+| Consolidação organizacional | REG-MED-001 (repositório organizacional) | COO, Time de Melhoria Contínua | Jun/2026 |
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — registro de medição consolidado do projeto Cadastro de Clientes — Rede D1000 |
+| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo das métricas de Story Points na §2.2 (573 SP plan / 564 SP real / −1,6%; velocity ~30 SP/sprint) para consistência com a planilha de gestão do projeto |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Adição de §6 Ações Corretivas e §7 Comunicação dos Resultados (evidência de MED 5 e MED 6) |

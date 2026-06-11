@@ -27,6 +27,9 @@
 | 3 | [...] | [...] | [...] |
 | 4 | [...] | [...] | [...] |
 | 5 | [...] | [...] | [...] |
+| GCO-1 | Itens de configuração identificados e controlados em repositório com convenção de versão adotada | [...] | PRO-GCO-001 §2; PLA-GCO-001 |
+| GCO-2 | Baseline estabelecida no marco verificado (ou equivalente documentado) | [...] | PRO-GCO-001 §3; GCO-[PROJ]-001 |
+| GCO-3 | Auditoria de configuração realizada: ICs confirmados íntegros e consistentes com os documentos de projeto | [...] | PRO-GCO-001 §4 |
 
 ## 3. Verificação de produtos de trabalho
 
@@ -55,3 +58,12 @@
 | **% de conformidade** | [itens conformes ÷ itens aplicáveis × 100] |
 | **Achados abertos** | [N] |
 | **Oportunidades de melhoria identificadas** | [...] *(ou "Nenhuma")* |
+
+---
+
+## Histórico de revisões do template
+
+| Versão | Data | Autor | Descrição |
+|---|---|---|---|
+| 1.0 | 12/08/2025 | Time de Melhoria Contínua | Versão inicial do template |
+| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Adição de itens GCO-1 a GCO-3 na seção 2 (verificação de aderência à gerência de configuração — GCO 5) |

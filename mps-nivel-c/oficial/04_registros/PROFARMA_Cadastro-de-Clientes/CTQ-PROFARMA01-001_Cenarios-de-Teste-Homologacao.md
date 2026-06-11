@@ -175,17 +175,19 @@ Documentação da integração entregue em 04/12/2025. Defeito de documentação
 
 ## 9. Registro de defeitos identificados na homologação
 
-### 9.1 Bugs confirmados (com referência nos status reports)
+### 9.1 Bugs confirmados
 
-| ID Bug | Canal | Descrição | Identificado por | Data | Status final |
-|---|---|---|---|---|---|
-| BAL-B01 | Balcão | Código do cliente retornado pelo Balcão diverge do `id_cliente` na API | Fagner Pereira | 15/10/2025 | Corrigido (deploy sprint final) |
-| BAL-B02 | Balcão | Consulta após truncate da base envia UPDATE para todos os clientes consultados (comportamento incorreto — deveria ser somente leitura) | Fagner Pereira | 15/10/2025 | Corrigido |
-| BAL-B03 | Balcão | Realizar opt-out não atualiza a flag `fidelidade` para false; cliente permanece com fidelidade = true | Fagner Pereira | 15/10/2025 | Corrigido |
-| PDV-B01 | PDV | Tentativa de cadastro falhou, mas cliente foi persistido com `opt_in = true`; ao consultar o CPF, cliente não é encontrado (inconsistência: registro parcial "fantasma") | Fagner Pereira | 15/10/2025 | Corrigido |
-| CC-B01 | Call Center | Erro ao cadastrar cliente: "Ocorreu um erro ao tentar cadastrar ou atualizar o registro na base do Gestão" (PBI-26) | Equipe D1000 | 21/10/2025 | Corrigido |
-| API-B01 | API | Erro no front ao cadastrar cliente via PDV/Balcão (erro exibido no front, mas cadastro é concluído no banco) — comportamento silencioso | Equipe Timeware | 14/10/2025 | Corrigido (deploy 14/10) |
-| PROPZ-B01 | Propz CRM | Códigos das bandeiras Tamoio e Rosário invertidos na documentação (correto: 3=Tamoio, 4=Rosário) | Julielle Santos | 05/12/2025 | Corrigido na documentação |
+O registro definitivo e autoritativo dos defeitos está em **REL-VV-PROFARMA01-001 §5**. A tabela abaixo é consistente com esse documento.
+
+| ID Bug | Canal | Descrição | Severidade | Identificado por | Data abertura | Data fechamento |
+|---|---|---|---|---|---|---|
+| BAL-B01 | Balcão | Código de opt-in exibido na tela diverge do registrado no banco de dados | S2 | Fagner Pereira | 15/10/2025 | 22/10/2025 |
+| BAL-B02 | Balcão | Opt-out não reseta pontos de fidelidade no Propz | S2 | Fagner Pereira | 15/10/2025 | 28/11/2025 |
+| BAL-B03 | Balcão | Consulta após truncate da tabela de sessão gera UPDATE em vez de INSERT | S1 | Equipe Timeware/D1000 | 02/10/2025 | 03/10/2025 |
+| PDV-B01 | PDV | Cadastro via PDV persiste parcialmente — endereço não é salvo | S1 | Equipe Timeware/D1000 | 02/10/2025 | 04/10/2025 |
+| CC-B01 | Call Center | Erro "Ocorreu um erro ao tentar cadastrar ou atualizar o registro na base do Gestão" (PBI-26) | S2 | Equipe D1000 | 21/10/2025 | 05/11/2025 |
+| API-B01 | Geral | Frontend exibe mensagem de erro mas cadastro é concluído na API (falso negativo por timeout de rede) | S2 | Equipe Timeware | 14/10/2025 | 20/10/2025 |
+| PROPZ-B01 | Propz CRM | Documentação interna com códigos de loja Tamoio (3) e Rosário (4) invertidos | S3 | Julielle Santos | 05/12/2025 | 10/12/2025 |
 
 ### 9.2 Itens de melhoria identificados (não bugs)
 
