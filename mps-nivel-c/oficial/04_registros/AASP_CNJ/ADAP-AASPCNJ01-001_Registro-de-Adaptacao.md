@@ -20,7 +20,7 @@ Adaptação do processo-padrão (PRO-GPC-001) a este projeto, conforme o GUIA-GP
 | Origem dos requisitos e do design | Timeware elabora; AASP valida e homologa | Os requisitos derivam de problemas operacionais da captura; o cliente valida resultados e aceita as entregas |
 | Porte do projeto | Médio → formalidade padrão | ~586 h estimadas, ~9 meses, dois projetos correlatos (id 213 EPROC e id 256 CNJ) |
 | Equipe e papéis (acúmulo) | Dev Sênior acumulou execução de testes nas fases iniciais; GP acumulou responsável por GCO | Equipe enxuta; Analista de Testes dedicado a partir da Fase 5 |
-| Estimativa e cadência | Estimativa e acompanhamento por horas e cards no ClickUp (não por story points/Scrum) | Modelo de gestão por atividades adotado para este projeto |
+| Estimativa e cadência | Execução acompanhada por horas/cards no ClickUp; backlog modelado retroativamente em sprints e story points para evidência e carga no Jira | Concilia a gestão real com a rastreabilidade ágil (ver GEST-AASPCNJ01) |
 | Cadência de entrega ao cliente | Por marco/fase, com devolutivas ao cliente | Acordada com a AASP; resultados comunicados por fase |
 | Ambiente de stage | Não adotado — homologação por amostragem | Não havia ambiente de Elasticsearch dedicado para testes; validação por repetição do mesmo processo na fila sem impacto no índice de produção |
 

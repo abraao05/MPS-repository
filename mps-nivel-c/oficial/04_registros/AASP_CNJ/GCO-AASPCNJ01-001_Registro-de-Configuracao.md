@@ -37,6 +37,7 @@ Registrar o gerenciamento de configuração do projeto: itens de configuração 
 | IC-04 | Banco de dados | Scripts DDL / migrations | Azure DevOps — pasta `/db` do repositório correspondente |
 | IC-05 | Artefato de implantação | Pacotes de publicação (GMUD) | Servidor de artefatos interno |
 | IC-06 | Documentação de API | Coleções Postman da API CNJ | Azure DevOps — pasta `/docs` |
+| IC-07 | Artefato de gestão | Planilha de gestão (backlog, sprints, tarefas) — base para carga no Jira | GEST-AASPCNJ01_Planilha-de-Gestao-do-Projeto.xlsx |
 
 ## 4. Baselines estabelecidas
 

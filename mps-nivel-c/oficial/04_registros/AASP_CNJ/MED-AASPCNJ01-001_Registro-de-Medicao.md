@@ -38,6 +38,8 @@ Registrar as medidas coletadas ao longo do projeto, conforme o PLA-MED-001, para
 | Fase 6 — Implantação (parcial) | 46 | Em apuração (~23 h) | Raony / Abraão Oliveira |
 | **Total** | **586** | **~624 (parcial)** | |
 
+> Para a gestão ágil e a futura carga no Jira, o esforço foi também modelado retroativamente em **155 SP** distribuídos em **Discovery + 11 sprints** (velocity média ~14 SP/sprint), conciliado com as horas reais — ver GEST-AASPCNJ01 (abas Backlog, Tarefas e Acompanhamento).
+
 ## 4. Resultado financeiro da migração
 
 | Modelo | Custo unitário | Volume (instâncias/mês) | Custo mensal |

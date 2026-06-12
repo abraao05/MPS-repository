@@ -33,6 +33,7 @@ A integração CNJ está concluída e validada (sucesso, fallback e erro parcial
 | Esforço total realizado (parcial) | ~624 h |
 | Economia mensal projetada | ~R$ 14.670 |
 | Fases concluídas | 5 de 6 |
+| Sprints (backlog Jira) | 10 concluídas + 1 em andamento — ver GEST-AASPCNJ01 |
 
 ## 3. Entregas realizadas no período
 

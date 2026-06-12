@@ -31,12 +31,12 @@ O processo-padrão (PRO-GPC-001) foi adaptado a este projeto conforme o GUIA-GPC
 |---|---|---|
 | Design UX/UI | Não aplicável | Projeto de back-end/worker, sem interface de usuário |
 | Nível de documentação | Padrão | Projeto de médio porte, integração crítica de operação |
-| Estimativa e cadência | Por horas e cards (ClickUp), não por story points/Scrum | Modelo de gestão por atividades adotado para este projeto |
+| Estimativa e cadência | Execução por horas/cards (ClickUp); backlog modelado em sprints e story points (retroativo) para evidência e carga no Jira | Concilia a gestão real por atividades com a rastreabilidade ágil (ver GEST-AASPCNJ01) |
 | Combinação de papéis | Dev Sênior acumulou execução de testes nas fases iniciais; GP acumulou responsável por GCO | Equipe enxuta; Analista de Testes dedicado a partir da Fase 5 |
 
 ## 4. Estimativas (GPR 3, 4)
 
-O projeto foi estimado e acompanhado por **horas de esforço** registradas no sistema de gestão (ClickUp), somando as atividades dos projetos id 213 (EPROC/ESAJ) e id 256 (CNJ). Não foi utilizada estimativa por story points/velocity (ver ADAP-AASPCNJ01-001).
+O projeto foi estimado e acompanhado por **horas de esforço** registradas no sistema de gestão (ClickUp), somando as atividades dos projetos id 213 (EPROC/ESAJ) e id 256 (CNJ). Para a evidência de gestão ágil e a carga no Jira, o backlog foi **modelado retroativamente** em **20 histórias (155 SP)** derivadas dos requisitos (RF/RNF), distribuídas em **Discovery + 11 sprints** (velocity média ~14 SP/sprint) e conciliadas com as horas reais. Detalhamento em GEST-AASPCNJ01-001 (abas Backlog, Tarefas e Acompanhamento) e em ADAP-AASPCNJ01-001.
 
 **Esforço estimado × realizado por fase**
 

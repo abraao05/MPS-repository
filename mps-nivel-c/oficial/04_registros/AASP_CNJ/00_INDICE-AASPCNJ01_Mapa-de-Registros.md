@@ -7,7 +7,7 @@
 | **Código do projeto** | AASPCNJ01 |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 11/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza a produção das evidências do projeto; **não é, ele próprio, evidência auditável pela ASR**. |
 | **Fonte consolidada** | `AASP_CNJ_Registro_de_Projeto` v1.0 (08/06/2026) |
@@ -58,7 +58,7 @@ A produção segue três ondas, da maior para a menor prontidão de insumo.
 | 14 | CR-AASPCNJ01-001 | Change Request (pausa da 2ª instância EPROC) | GPR | 5.3, D06 | ✅ |
 | 15 | ATA-AASPCNJ01-001 | Ata de Alinhamento — Fluxo API CNJ (07/04/2026) | ORG | 9.1 | ✅ |
 | 16 | GQA-AASPCNJ01-001 | Registro de GQA | GPC | 9 | ✅ |
-| 17 | GEST-AASPCNJ01 | Planilha de Gestão do Projeto (xlsx) | GPR | 3.2, 3.4, 8 | 🔵 a produzir |
+| 17 | GEST-AASPCNJ01 | Planilha de Gestão do Projeto (xlsx) — 11 abas; backlog 20 histórias/155 SP + 48 tarefas | GPR | 3.2, 3.4, 8 | ✅ |
 | 18 | CAP-AASPCNJ01-001 | Registro de Capacitação da Equipe | CAP | 11 | ✅ |
 | 19 | REV-AASPCNJ01-001 | Registro de Revisão por Pares | VV | 9.1, 11 | ✅ |
 
@@ -121,3 +121,4 @@ A produção segue três ondas, da maior para a menor prontidão de insumo.
 | 1.0 | 11/06/2026 | Time de Melhoria Contínua | Criação do índice-mestre de registros do projeto AASPCNJ01 a partir do documento-fonte consolidado v1.0. Estrutura definida; conteúdo dos registros a produzir. |
 | 1.1 | 11/06/2026 | Time de Melhoria Contínua | Ondas 1 e 2 geradas (18 registros .md). Status atualizado para ✅. Pendentes: planilha de gestão (GEST) e Onda 3 (encerramento). Documentos com papéis genéricos — substituição por nomes reais pendente. |
 | 1.2 | 12/06/2026 | Time de Melhoria Contínua | Nomes reais aplicados aos 18 registros (Abraão Oliveira, Cézar, Raony, Levi, Jonatan, David, Carlos Alves; auditor GQA Wilson Yamada) — 71 substituições nos campos de identificação/responsável. Pendentes: planilha de gestão (GEST) e Onda 3 (encerramento). |
+| 1.3 | 12/06/2026 | Time de Melhoria Contínua | Planilha GEST-AASPCNJ01 gerada (11 abas; backlog de 20 histórias/155 SP e 48 tarefas derivados dos requisitos, com sprints — base para Jira). PLA/ADAP/MED/GCO/RASTR/RAC atualizados com o modelo de sprints/SP e referência à planilha. Pendente: Onda 3 (encerramento). |
