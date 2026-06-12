@@ -20,7 +20,7 @@ Registrar a composição da equipe e as práticas de transferência de conhecime
 | Membro (papel) | Período de atuação | Fases |
 |---|---|---|
 | Abraão Oliveira — Gerente de Projeto / Tech Lead | Out/2025 – Jun/2026 | Todas |
-| Cézar — Arquiteto de Software | Out/2025 – Mar/2026 | 1, 2, 3 |
+| Cézar Hiraki — Arquiteto de Software | Out/2025 – Mar/2026 | 1, 2, 3 |
 | Raony Chagas — Desenvolvedor Sênior (Principal) | Dez/2025 – Jun/2026 | 2, 3, 4, 5, 6 |
 | Levi Santos — Desenvolvedor (Suporte) | Abr/2026 – Jun/2026 | 4, 5 |
 | Jonatan — Analista de Testes | Mai/2026 – Jun/2026 | 5 |

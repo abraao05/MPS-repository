@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 11/06/2026 |
-| **Responsáveis (Discovery)** | Abraão Oliveira (GP / Tech Lead) · Cézar (Arquiteto) |
+| **Responsáveis (Discovery)** | Abraão Oliveira (GP / Tech Lead) · Cézar Hiraki (Arquiteto) |
 
 ---
 

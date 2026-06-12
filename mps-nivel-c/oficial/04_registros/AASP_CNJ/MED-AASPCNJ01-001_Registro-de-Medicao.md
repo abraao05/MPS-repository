@@ -30,7 +30,7 @@ Registrar as medidas coletadas ao longo do projeto, conforme o PLA-MED-001, para
 
 | Fase | Esforço estimado (h) | Esforço realizado (h) | Responsável principal |
 |---|---|---|---|
-| Fase 1 — Análise e Arquitetura | 60 | ~80 | Cézar / Abraão Oliveira |
+| Fase 1 — Análise e Arquitetura | 60 | ~80 | Cézar Hiraki / Abraão Oliveira |
 | Fase 2 — Desenvolvimento EPROC/ESAJ | 120 | ~124 | Raony Chagas |
 | Fase 3 — Estabilização EPROC/ESAJ | 80 | ~93 | Raony Chagas |
 | Fase 4 — Desenvolvimento CNJ | 200 | ~195 | Raony Chagas / Levi Santos |
