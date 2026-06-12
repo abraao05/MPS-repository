@@ -7,7 +7,7 @@
 | **Código do projeto** | AASPCNJ01 |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.3 |
+| **Versão** | 1.4 |
 | **Data** | 11/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza a produção das evidências do projeto; **não é, ele próprio, evidência auditável pela ASR**. |
 | **Fonte consolidada** | `AASP_CNJ_Registro_de_Projeto` v1.0 (08/06/2026) |
@@ -85,14 +85,14 @@ A produção segue três ondas, da maior para a menor prontidão de insumo.
 **Pessoas (papéis → nomes reais) — ✅ aplicado (v1.2):**
 - Gerente de Projeto / Tech Lead → **Abraão Oliveira**
 - Arquiteto de Software → **Cézar**
-- Desenvolvedor Sênior (Principal) → **Raony**
-- Desenvolvedor (Suporte) → **Levi**
+- Desenvolvedor Sênior (Principal) → **Raony Chagas**
+- Desenvolvedor (Suporte) → **Levi Santos**
 - Analista de Testes (QA) → **Jonatan**
 - Infraestrutura / DevOps → **David**
 - Representante / sponsor da AASP → **Carlos Alves**
 - Auditor de GQA (independente) → **Wilson Yamada**
 
-> A confirmar: sobrenomes para padronização (ex.: "Cézar" = Cézar Hiraki, do FTGASMIG?) e composição do "Time de Desenvolvimento" (hoje = Raony + Levi).
+> A confirmar: sobrenomes para padronização (ex.: "Cézar" = Cézar Hiraki, do FTGASMIG?) e composição do "Time de Desenvolvimento" (hoje = Raony Chagas + Levi Santos).
 
 **Outros dados:**
 - Contrato / forma de contratação com a AASP (TAP) — ex.: alocação de squad, OS, contrato fechado.
@@ -120,5 +120,6 @@ A produção segue três ondas, da maior para a menor prontidão de insumo.
 |---|---|---|---|
 | 1.0 | 11/06/2026 | Time de Melhoria Contínua | Criação do índice-mestre de registros do projeto AASPCNJ01 a partir do documento-fonte consolidado v1.0. Estrutura definida; conteúdo dos registros a produzir. |
 | 1.1 | 11/06/2026 | Time de Melhoria Contínua | Ondas 1 e 2 geradas (18 registros .md). Status atualizado para ✅. Pendentes: planilha de gestão (GEST) e Onda 3 (encerramento). Documentos com papéis genéricos — substituição por nomes reais pendente. |
-| 1.2 | 12/06/2026 | Time de Melhoria Contínua | Nomes reais aplicados aos 18 registros (Abraão Oliveira, Cézar, Raony, Levi, Jonatan, David, Carlos Alves; auditor GQA Wilson Yamada) — 71 substituições nos campos de identificação/responsável. Pendentes: planilha de gestão (GEST) e Onda 3 (encerramento). |
+| 1.2 | 12/06/2026 | Time de Melhoria Contínua | Nomes reais aplicados aos 18 registros (Abraão Oliveira, Cézar, Raony Chagas, Levi Santos, Jonatan, David, Carlos Alves; auditor GQA Wilson Yamada) — 71 substituições nos campos de identificação/responsável. Pendentes: planilha de gestão (GEST) e Onda 3 (encerramento). |
 | 1.3 | 12/06/2026 | Time de Melhoria Contínua | Planilha GEST-AASPCNJ01 gerada (11 abas; backlog de 20 histórias/155 SP e 48 tarefas derivados dos requisitos, com sprints — base para Jira). PLA/ADAP/MED/GCO/RASTR/RAC atualizados com o modelo de sprints/SP e referência à planilha. Pendente: Onda 3 (encerramento). |
+| 1.4 | 12/06/2026 | Time de Melhoria Contínua | Sobrenomes aplicados (Raony Chagas, Levi Santos) nos .md e na planilha; .docx regenerados. Criado COLETA-EVIDENCIAS_AASPCNJ (interno) para levantamento de evidências técnicas com o Tech Lead/Dev. |

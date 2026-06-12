@@ -86,8 +86,8 @@ Matriz completa em RASTR-AASPCNJ01-001.
 | Item avaliado | Avaliador | Problema encontrado | Tratamento |
 |---|---|---|---|
 | Fluxo de captura CNJ e roteamento | Time de desenvolvimento | Campos do modelo CNJ com dados do TJSP hardcoded | Parametrização por tribunal (BUG-07) |
-| Modelo de gravação no Elasticsearch | Raony | Alinhamento de campos CNJ com `IModelElastic` | Ajuste do mapeamento (Abr/2026) |
-| Concorrência de token | Cézar / Raony | Risco de renovações paralelas | Token compartilhado em `PonteAPI` (D04) |
+| Modelo de gravação no Elasticsearch | Raony Chagas | Alinhamento de campos CNJ com `IModelElastic` | Ajuste do mapeamento (Abr/2026) |
+| Concorrência de token | Cézar / Raony Chagas | Risco de renovações paralelas | Token compartilhado em `PonteAPI` (D04) |
 
 A decisão pela DataJud/CNJ como fonte primária foi formalizada na reunião de alinhamento técnico de 06/04/2026.
 

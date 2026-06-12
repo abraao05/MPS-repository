@@ -17,7 +17,7 @@ A revisão por pares é conduzida via Pull Request no Azure DevOps. O merge de b
 
 | Papel | Identificação |
 |---|---|
-| Autor | Raony / Levi |
+| Autor | Raony Chagas / Levi Santos |
 | Revisor(es) | Membro da equipe distinto do autor (mínimo 1) |
 
 ## 3. Itens revisados (representativos)

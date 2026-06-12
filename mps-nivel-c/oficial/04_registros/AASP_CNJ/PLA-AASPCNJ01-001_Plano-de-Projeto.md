@@ -84,7 +84,7 @@ O projeto foi estimado e acompanhado por **horas de esforço** registradas no si
 
 ## 6. Recursos (GPR 6, 7)
 
-- **Equipe:** Abraão Oliveira (Gerente de Projeto / Tech Lead, todas as fases); Cézar (Arquiteto de Software, Fases 1–3); Raony (Desenvolvedor Sênior, Fases 2–6); Levi (Desenvolvedor de Suporte, Fases 4–5); Jonatan (Analista de Testes, Fase 5); David (Infraestrutura/DevOps, Fases 1 e 6).
+- **Equipe:** Abraão Oliveira (Gerente de Projeto / Tech Lead, todas as fases); Cézar (Arquiteto de Software, Fases 1–3); Raony Chagas (Desenvolvedor Sênior, Fases 2–6); Levi Santos (Desenvolvedor de Suporte, Fases 4–5); Jonatan (Analista de Testes, Fase 5); David (Infraestrutura/DevOps, Fases 1 e 6).
 - **Ambiente e ferramentas:** Azure DevOps (código e CI/CD), AWS (hospedagem dos workers e APIs internas), RabbitMQ, Elasticsearch, ClickUp (gestão de atividades). Ver GCO-AASPCNJ01-001.
 
 ## 7. Partes interessadas e comunicação (GPR 9)
@@ -111,7 +111,7 @@ O projeto foi estimado e acompanhado por **horas de esforço** registradas no si
 
 | Critério | Obrigatório? | Verificado por |
 |---|---|---|
-| Fluxo de captura validado (sucesso, fallback e erro parcial) | Sim | Raony / Jonatan |
+| Fluxo de captura validado (sucesso, fallback e erro parcial) | Sim | Raony Chagas / Jonatan |
 | Persistência de movimentações validada | Sim | Jonatan |
 | Baseline de configuração registrada (tag de versão) | Sim | David (DevOps) / Abraão Oliveira (GCO) |
 | Pacote GMUD montado e agendado | Sim | Abraão Oliveira / David |
@@ -121,7 +121,7 @@ O projeto foi estimado e acompanhado por **horas de esforço** registradas no si
 | Item | Descrição |
 |---|---|
 | Monitoramento | Monitoramento ativo da fila RabbitMQ e dos logs de captura por instância |
-| Responsável | Raony + Abraão Oliveira |
+| Responsável | Raony Chagas + Abraão Oliveira |
 | O que monitorar | Travamentos de fila (meta: zero travamentos manuais/mês); erros por instância nas tabelas de controle |
 
 ## 9. Riscos (GPR 10)

@@ -46,8 +46,8 @@ Reconstruir o modelo de captura de andamentos processuais da plataforma de monit
 |---|---|
 | Gerente de Projeto / Tech Lead | Abraão Oliveira |
 | Arquiteto de Software | Cézar |
-| Desenvolvedor Sênior (Principal) | Raony |
-| Desenvolvedor (Suporte) | Levi (incorporado em abr/2026) |
+| Desenvolvedor Sênior (Principal) | Raony Chagas |
+| Desenvolvedor (Suporte) | Levi Santos (incorporado em abr/2026) |
 | Analista de Testes | Jonatan (a partir da Fase 5) |
 | Infraestrutura / DevOps | David |
 
