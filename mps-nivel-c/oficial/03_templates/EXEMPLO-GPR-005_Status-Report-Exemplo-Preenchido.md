@@ -1,6 +1,6 @@
 # Relatório de Acompanhamento (Status Report) — Cadastro de Clientes · Rede D1000
 
-> **EXEMPLO DE PREENCHIMENTO (acompanha TPL-GPR-005 v2.1).** Modelo de referência que demonstra como preencher o template de status report no padrão executivo. Os indicadores (SPI, velocity, latência, defeitos, nº de CRs) refletem dados reais do projeto PROFARMA registrados em MED-PROFARMA01-001; as datas finas de sprint e os itens de decisão são ilustrativos, para fins de demonstração do formato. O §2.1 (dailys internas) é seção interna — não é enviada ao cliente. Não é evidência de projeto — é material de apoio à adoção do template.
+> **EXEMPLO DE PREENCHIMENTO (acompanha TPL-GPR-005).** Modelo de referência que demonstra como preencher o template de status report no padrão executivo. Os indicadores (SPI, velocity, latência, defeitos, nº de CRs) refletem dados reais do projeto PROFARMA registrados em MED-PROFARMA01-001; as datas finas de sprint e os itens de decisão são ilustrativos, para fins de demonstração do formato. Não é evidência de projeto — é material de apoio à adoção do template.
 
 | Campo | Valor |
 |---|---|
@@ -34,34 +34,6 @@ Na Sprint 16 a equipe atingiu o pico de produtividade do projeto (42 SP), conclu
 | Entregas concluídas | 3 |
 | Avanço do projeto (acumulado) | ~88% |
 | Story Points na sprint | 42 SP (pico do projeto) |
-
-### 2.1 Registro de dailys internas
-
-> *Seção interna — presença da equipe Timeware e temas tratados nas dailys da sprint. Não inclusa na versão enviada ao cliente.*
-
-**Presenças por daily:**
-
-| Data | Equipe presente | Ausência / motivo |
-|---|---|---|
-| 13/10 (seg) | Gerente de Projeto, Tech Lead, Dev 1, Dev 2, QA | — |
-| 14/10 (ter) | Gerente de Projeto, Tech Lead, Dev 1, Dev 2, QA | — |
-| 15/10 (qua) | Tech Lead, Dev 1, Dev 2, QA | GP em reunião com cliente (AKS) |
-| 16/10 (qui) | Gerente de Projeto, Tech Lead, Dev 1, Dev 2, QA | — |
-| 17/10 (sex) | Gerente de Projeto, Tech Lead, Dev 1, QA | Dev 2 ausente — justificado |
-| 20/10 (seg) | Gerente de Projeto, Tech Lead, Dev 1, Dev 2, QA | — |
-| 21/10 (ter) | Gerente de Projeto, Tech Lead, Dev 1, Dev 2, QA | — |
-| 22/10 (qua) | Gerente de Projeto, Tech Lead, Dev 1, Dev 2, QA | — |
-| 23/10 (qui) | Tech Lead, Dev 1, Dev 2, QA | GP em reunião interna de portfólio |
-| 24/10 (sex) | Gerente de Projeto, Tech Lead, Dev 1, Dev 2, QA | — |
-
-**Resumo semanal:**
-
-| Semana | Principais tópicos e decisões internas |
-|---|---|
-| 13/10 – 17/10 | Ajustes finais da consolidação de vendas (ID legado ITEC + CPF); alinhamento sobre o ambiente AKS disponibilizado parcialmente em 15/10; decisão de iniciar testes técnicos no AKS sem aguardar ambiente completo; worker LGPD em finalização pelo Dev 2 |
-| 20/10 – 24/10 | Identificação de volume maior de duplicidades na base legada (saneamento +5 dias); abertura do CR-08; ciclo de GMUD confirmado para 11/11 — alinhamento interno sobre impacto de +3 dias úteis; sprint fechada com 42 SP (pico do projeto); revisão do planejamento para Sprint 17 com foco em homologação funcional |
-
----
 
 ## 3. Entregas realizadas no período
 
