@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 11/06/2026 |
-| **Gerente de Projeto** | Gerente de Projeto / Tech Lead |
+| **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | MED (evidência de projeto) |
 
 ---
@@ -30,12 +30,12 @@ Registrar as medidas coletadas ao longo do projeto, conforme o PLA-MED-001, para
 
 | Fase | Esforço estimado (h) | Esforço realizado (h) | Responsável principal |
 |---|---|---|---|
-| Fase 1 — Análise e Arquitetura | 60 | ~80 | Arquiteto / GP |
-| Fase 2 — Desenvolvimento EPROC/ESAJ | 120 | ~124 | Desenvolvedor Sênior |
-| Fase 3 — Estabilização EPROC/ESAJ | 80 | ~93 | Desenvolvedor Sênior |
-| Fase 4 — Desenvolvimento CNJ | 200 | ~195 | Dev Sênior / Dev Suporte |
-| Fase 5 — Testes e Validação | 80 | ~109 | Dev Sênior / Analista de Testes |
-| Fase 6 — Implantação (parcial) | 46 | Em apuração (~23 h) | Dev Sênior / GP |
+| Fase 1 — Análise e Arquitetura | 60 | ~80 | Cézar / Abraão Oliveira |
+| Fase 2 — Desenvolvimento EPROC/ESAJ | 120 | ~124 | Raony |
+| Fase 3 — Estabilização EPROC/ESAJ | 80 | ~93 | Raony |
+| Fase 4 — Desenvolvimento CNJ | 200 | ~195 | Raony / Levi |
+| Fase 5 — Testes e Validação | 80 | ~109 | Raony / Jonatan |
+| Fase 6 — Implantação (parcial) | 46 | Em apuração (~23 h) | Raony / Abraão Oliveira |
 | **Total** | **586** | **~624 (parcial)** | |
 
 ## 4. Resultado financeiro da migração

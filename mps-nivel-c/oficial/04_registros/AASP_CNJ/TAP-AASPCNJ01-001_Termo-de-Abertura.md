@@ -8,7 +8,7 @@
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Versão** | 1.0 |
 | **Data de abertura** | 01/10/2025 |
-| **Gerente de Projeto** | Gerente de Projeto / Tech Lead |
+| **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
 ---
@@ -34,22 +34,22 @@ Reconstruir o modelo de captura de andamentos processuais da plataforma de monit
 
 ## 3. Partes interessadas
 
-| Parte interessada | Papel | Organização |
+| Parte interessada | Responsabilidade | Organização |
 |---|---|---|
-| Representante do Cliente | Validação de requisitos, homologação e aceite das entregas | AASP |
-| Gerente de Projeto / Tech Lead | Alinhamento com o cliente, decisões técnicas e gestão das entregas | Timeware Brasil |
+| Carlos Alves (Representante do Cliente) | Validação de requisitos, homologação e aceite das entregas | AASP |
+| Abraão Oliveira (Gerente de Projeto / Tech Lead) | Alinhamento com o cliente, decisões técnicas e gestão das entregas | Timeware Brasil |
 | Patrocinador interno | Patrocínio do projeto e priorização de portfólio | Timeware Brasil |
 
 ## 4. Equipe do projeto
 
 | Papel | Responsável |
 |---|---|
-| Gerente de Projeto / Tech Lead | Gerente de Projeto / Tech Lead |
-| Arquiteto de Software | Arquiteto de Software |
-| Desenvolvedor Sênior (Principal) | Desenvolvedor Sênior |
-| Desenvolvedor (Suporte) | Desenvolvedor (incorporado em abr/2026) |
-| Analista de Testes | Analista de Testes (a partir da Fase 5) |
-| Infraestrutura / DevOps | Equipe de Infraestrutura |
+| Gerente de Projeto / Tech Lead | Abraão Oliveira |
+| Arquiteto de Software | Cézar |
+| Desenvolvedor Sênior (Principal) | Raony |
+| Desenvolvedor (Suporte) | Levi (incorporado em abr/2026) |
+| Analista de Testes | Jonatan (a partir da Fase 5) |
+| Infraestrutura / DevOps | David |
 
 ## 5. Macroplanejamento (datas-alvo)
 

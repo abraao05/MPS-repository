@@ -7,7 +7,7 @@
 | **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | AASP_CNJ — WorkerAndamentos: Agente de Captura de Andamentos Processuais |
-| **Aprovação** | Gerente de Projeto / Tech Lead |
+| **Aprovação** | Abraão Oliveira |
 
 ---
 
@@ -17,18 +17,18 @@ Registrar a composição da equipe e as práticas de transferência de conhecime
 
 ## 2. Equipe alocada
 
-| Papel | Período de atuação | Fases |
+| Membro (papel) | Período de atuação | Fases |
 |---|---|---|
-| Gerente de Projeto / Tech Lead | Out/2025 – Jun/2026 | Todas |
-| Arquiteto de Software | Out/2025 – Mar/2026 | 1, 2, 3 |
-| Desenvolvedor Sênior (Principal) | Dez/2025 – Jun/2026 | 2, 3, 4, 5, 6 |
-| Desenvolvedor (Suporte) | Abr/2026 – Jun/2026 | 4, 5 |
-| Analista de Testes | Mai/2026 – Jun/2026 | 5 |
-| Infraestrutura / DevOps | Jan/2026 e Jun/2026 | 1, 6 |
+| Abraão Oliveira — Gerente de Projeto / Tech Lead | Out/2025 – Jun/2026 | Todas |
+| Cézar — Arquiteto de Software | Out/2025 – Mar/2026 | 1, 2, 3 |
+| Raony — Desenvolvedor Sênior (Principal) | Dez/2025 – Jun/2026 | 2, 3, 4, 5, 6 |
+| Levi — Desenvolvedor (Suporte) | Abr/2026 – Jun/2026 | 4, 5 |
+| Jonatan — Analista de Testes | Mai/2026 – Jun/2026 | 5 |
+| David — Infraestrutura / DevOps | Jan/2026 e Jun/2026 | 1, 6 |
 
 ## 3. Integração formal de membro ao time
 
-Em abril/2026, um desenvolvedor de suporte foi incorporado para auxiliar o Desenvolvedor Sênior nas atividades de maior volume da integração CNJ. A integração foi conduzida na reunião de alinhamento de 07/04/2026 (ATA-AASPCNJ01-001), na qual foram apresentados o funcionamento da API DataJud, a lógica de roteamento por `CodigoFonteAPI`, os mecanismos de fallback e o modelo de gravação no Elasticsearch.
+Em abril/2026, um desenvolvedor de suporte foi incorporado para auxiliar o Desenvolvedor Sênior (Raony) nas atividades de maior volume da integração CNJ. A integração foi conduzida na reunião de alinhamento de 07/04/2026 (ATA-AASPCNJ01-001), na qual foram apresentados o funcionamento da API DataJud, a lógica de roteamento por `CodigoFonteAPI`, os mecanismos de fallback e o modelo de gravação no Elasticsearch.
 
 ## 4. Práticas de transferência de conhecimento
 

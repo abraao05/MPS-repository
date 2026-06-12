@@ -6,8 +6,8 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Período de referência** | Junho/2026 — Fase 6 (Implantação e Complementos) |
 | **Data do relatório** | 11/06/2026 |
-| **Gerente de Projeto** | Gerente de Projeto / Tech Lead |
-| **Destinatários** | Representante do Cliente (AASP); Patrocinador interno (Timeware) |
+| **Gerente de Projeto** | Abraão Oliveira |
+| **Destinatários** | Carlos Alves (Representante do Cliente — AASP); Patrocinador interno (Timeware) |
 
 ---
 
@@ -86,7 +86,7 @@ A integração CNJ está concluída e validada (sucesso, fallback e erro parcial
 
 | Decisão necessária | Responsável | Prazo desejado |
 |---|---|---|
-| Confirmação da data de aceite formal e do go-live em produção | Representante do Cliente (AASP) | Jun/2026 |
+| Confirmação da data de aceite formal e do go-live em produção | Carlos Alves (AASP) | Jun/2026 |
 
 ---
 

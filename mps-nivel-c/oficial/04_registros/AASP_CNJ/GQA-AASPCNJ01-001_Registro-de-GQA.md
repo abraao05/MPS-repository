@@ -5,14 +5,14 @@
 | **Projeto** | AASP_CNJ — WorkerAndamentos: Agente de Captura de Andamentos Processuais |
 | **Marco / tipo de verificação** | Desenvolvimento / Homologação (execução) |
 | **Data** | 11/06/2026 |
-| **Auditor (GQA)** | COO (Garantia da Qualidade de Processo — independente da equipe do projeto) |
-| **Gerente de Projeto** | Gerente de Projeto / Tech Lead |
+| **Auditor (GQA)** | Wilson Yamada (Garantia da Qualidade de Processo — auditor independente da equipe do projeto) |
+| **Gerente de Projeto** | Abraão Oliveira |
 
 ---
 
 ## 1. Escopo da verificação
 
-Verificação de aderência ao processo-padrão (PRO-GPC-001) e de existência/completude dos produtos de trabalho do projeto na fase de execução, conforme EST-GPC-001. A independência da função de GQA é assegurada pela atuação do COO, fora da equipe de engenharia do projeto.
+Verificação de aderência ao processo-padrão (PRO-GPC-001) e de existência/completude dos produtos de trabalho do projeto na fase de execução, conforme EST-GPC-001. A independência da função de GQA é assegurada pela atuação de Wilson Yamada (Garantia da Qualidade de Processo), fora da equipe de engenharia do projeto.
 
 ## 2. Verificação de aderência ao processo
 
@@ -43,8 +43,8 @@ Verificação de aderência ao processo-padrão (PRO-GPC-001) e de existência/c
 
 | # | Desvio | Severidade | Recomendação | Responsável | Status |
 |---|---|---|---|---|---|
-| 1 | Auditoria de configuração e baseline de aprovação do plano pendentes | Baixa | Registrar no encerramento (TAE e baseline final) | Gerente de Projeto | Aberto |
-| 2 | Verificação de GQA conduzida de forma consolidada na execução | Baixa | Realizar verificação independente nos marcos restantes (homologação/encerramento) | COO (GQA) | Aberto |
+| 1 | Auditoria de configuração e baseline de aprovação do plano pendentes | Baixa | Registrar no encerramento (TAE e baseline final) | Abraão Oliveira | Aberto |
+| 2 | Verificação de GQA conduzida de forma consolidada na execução | Baixa | Realizar verificação independente nos marcos restantes (homologação/encerramento) | Wilson Yamada (GQA) | Aberto |
 
 ## 5. Resultado
 

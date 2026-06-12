@@ -6,7 +6,7 @@
 | **Projeto / contexto** | AASP_CNJ — WorkerAndamentos |
 | **Data** | 07/04/2026 |
 | **Local / meio** | Videoconferência |
-| **Responsável pela ata** | Gerente de Projeto / Tech Lead |
+| **Responsável pela ata** | Abraão Oliveira |
 
 ---
 
@@ -14,9 +14,9 @@
 
 | Nome | Papel | Organização |
 |---|---|---|
-| — | Gerente de Projeto / Tech Lead | Timeware |
-| — | Desenvolvedor Sênior (Principal) | Timeware |
-| — | Desenvolvedor (Suporte) | Timeware |
+| Abraão Oliveira | Gerente de Projeto / Tech Lead | Timeware |
+| Raony | Desenvolvedor Sênior (Principal) | Timeware |
+| Levi | Desenvolvedor (Suporte) | Timeware |
 | — | Time de Desenvolvimento | Timeware |
 
 ## 2. Pauta
@@ -33,10 +33,10 @@ O Gerente de Projeto apresentou o fluxo completo da nova arquitetura: funcioname
 
 | Decisão / aceite | Responsável | Data |
 |---|---|---|
-| Adotar a DataJud/CNJ como fonte primária universal (D02) | Gerente de Projeto / time | 07/04/2026 |
-| Unificar a fila RabbitMQ (D03) | Gerente de Projeto / time | 07/04/2026 |
-| Token Bearer compartilhado em `PonteAPI` (D04) | Desenvolvedor Sênior | 07/04/2026 |
-| Normalização do JSON CNJ no worker (D05) | Desenvolvedor Sênior | 07/04/2026 |
+| Adotar a DataJud/CNJ como fonte primária universal (D02) | Abraão Oliveira / time | 07/04/2026 |
+| Unificar a fila RabbitMQ (D03) | Abraão Oliveira / time | 07/04/2026 |
+| Token Bearer compartilhado em `PonteAPI` (D04) | Raony | 07/04/2026 |
+| Normalização do JSON CNJ no worker (D05) | Raony | 07/04/2026 |
 
 (Decisões detalhadas em GDE-AASPCNJ01-001.)
 
@@ -44,9 +44,9 @@ O Gerente de Projeto apresentou o fluxo completo da nova arquitetura: funcioname
 
 | Ação | Responsável | Prazo |
 |---|---|---|
-| Desenvolver o worker de requisição CNJ | Desenvolvedor Sênior | Abr/2026 |
+| Desenvolver o worker de requisição CNJ | Raony | Abr/2026 |
 | Implementar enfileiramento unificado com verificação de `CodigoFonteAPI` | Time de Desenvolvimento | Abr/2026 |
-| Onboarding do desenvolvedor de suporte no fluxo | Gerente de Projeto | Abr/2026 |
+| Onboarding do desenvolvedor de suporte no fluxo | Abraão Oliveira | Abr/2026 |
 
 ## 6. Próximos passos
 
