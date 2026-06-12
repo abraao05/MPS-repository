@@ -39,6 +39,25 @@
 | Avanço do projeto (acumulado) | [%] |
 | [outro indicador-chave do projeto] | [...] |
 
+### 2.1 Registro de dailys internas
+
+*[Seção interna — registra presença da equipe Timeware nas dailys e os principais temas tratados na sprint. Omita ou resuma na versão enviada ao cliente, se aplicável.]*
+
+**Presenças por daily:**
+
+| Data | Equipe presente | Ausência / motivo |
+|---|---|---|
+| [dd/mm] | [papéis presentes] | [motivo ou —] |
+
+**Resumo semanal:**
+
+| Semana | Principais tópicos e decisões internas |
+|---|---|
+| [dd/mm – dd/mm] | [...] |
+| [dd/mm – dd/mm] | [...] |
+
+---
+
 ## 3. Entregas realizadas no período
 
 *[O que foi concluído e o valor que gera para o cliente. Liste entregáveis, não tarefas. Quando houver entrega "além do contrato" ou cortesia, destaque — é informação executiva relevante.]*
@@ -128,3 +147,4 @@
 |---|---|---|---|
 | 1.0 | 10/09/2025 | Time de Melhoria Contínua | Versão inicial do template de relatório de acompanhamento |
 | 2.0 | 11/06/2026 | Time de Melhoria Contínua | Reestruturação completa para padrão executivo, incorporando os melhores padrões praticados pela Timeware: painel RAG de 4 dimensões com convenção de cores (§1), resumo do período com indicadores em destaque (§2), entregas com foco em valor (§3), diário de bordo com impacto em dias (§6), riscos no formato Ponto→Risco→Ação (§7), tabela de change requests com dias em aberto (§8), seção de decisões necessárias (§9) e definição de cadência de reporte |
+| 2.1 | 12/06/2026 | Time de Melhoria Contínua | Adição de §2.1 Registro de dailys internas: tabela de presenças por daily e resumo semanal de tópicos e decisões internas |
