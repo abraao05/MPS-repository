@@ -56,7 +56,7 @@ PROF = {
  'MED':['MED-PROFARMA01-001'],'GQA':['GQA-PROFARMA01-001'],'RAC':['RAC-PROFARMA01-001'],
  'ATAK':['ATA-PROFARMA01-001'],'ATAA':['ATA-PROFARMA01-002'],'CR':['CR-PROFARMA01-001'],
  'LI':['LI-PROFARMA01-001'],'TAE':['TAE-PROFARMA01-001'],'GEST':['GEST-PROFARMA01'],
- 'ITP':[],'ATA_METAS':[],'ATA_VAL':[],'CAP':[],
+ 'ITP':['ITP-PROFARMA01-001'],'ATA_METAS':[],'ATA_VAL':[],'CAP':[],
 }
 GAS = {
  'TAP':['TAP-GASMIG02-001','TAP-GASMIG02-002'],'PLA':['PLA-GASMIG02-001','PLA-GASMIG02-002'],
@@ -103,9 +103,6 @@ def proj_evidence_and_ratings(sheet, ind):
     roles = IND_ROLES[ind]
     lines = []; ratings = {}
     for pname, pmap in PROJECTS:
-        if sheet == 'ITP' and pname == 'PROFARMA':
-            ratings[pname] = ''      # PROFARMA sem fase de integracao
-            continue
         codes = []
         for r in roles:
             for c in pmap.get(r, []):
@@ -132,11 +129,11 @@ REGCAP=[(f'REG-CAP-{n}',None,None) for n in ['001','001B','002','002B','003','00
 AVACAP=[(f'AVA-CAP-{n}',None,None) for n in ['001','002','003','004','005']]
 
 ORG_EV = {
- # AQU - candidato a NAO-APLICAVEL (sem aquisicao nos projetos). Evidencia: processo definido.
- 'AQU 1':[('PRO-AQU-001','§3',None)],
- 'AQU 2':[('PRO-AQU-001','§4',None)],
- 'AQU 3+':[('PRO-AQU-001','§5',None)],
- 'AQU 4+':[('PRO-AQU-001','§6',None)],
+ # AQU - NAO APLICAVEL: nenhum dos projetos teve aquisicao/subcontratacao (equipe propria).
+ 'AQU 1':["Nao aplicavel — nenhum projeto da avaliacao teve aquisicao/subcontratacao de desenvolvimento (equipe propria Timeware). Processo organizacional definido e disponivel:",('PRO-AQU-001','§3',None)],
+ 'AQU 2':["Nao aplicavel (ver AQU 1). Processo definido:",('PRO-AQU-001','§4',None)],
+ 'AQU 3+':["Nao aplicavel (ver AQU 1). Processo definido:",('PRO-AQU-001','§5',None)],
+ 'AQU 4+':["Nao aplicavel (ver AQU 1). Processo definido:",('PRO-AQU-001','§6',None)],
  'AQU 5':[],  # nivel B - fora do escopo do nivel C
  # GCO
  'GCO 1':[('PLA-GCO-001','§3',None),('CONV-ORG-001',None,None)],
@@ -190,7 +187,8 @@ ORG_EV = {
  'OSW 9':[('PRO-OSW-002','§4',None),('REG-OSW-001',None,None)],
  'OSW 10':[('PRO-OSW-002','§5',None),('REG-OSW-001',None,None)],
 }
-ORG_NO_RATING = {'AQU 1','AQU 2','AQU 3+','AQU 4+','AQU 5'}  # AQU pendente decisao ASR
+ORG_RATING = {'AQU 1':'NA','AQU 2':'NA','AQU 3+':'NA','AQU 4+':'NA'}  # AQU = Nao Aplicavel
+ORG_NO_RATING = {'AQU 5'}  # nivel B - fora do escopo do nivel C
 
 # ============ WRITE ============
 wb = openpyxl.load_workbook(SRC)
@@ -233,8 +231,9 @@ for sheet in ['AQU','GCO','MED','GDE','CAP','GPC','OSW']:
         if ev:
             ws.cell(row=irow, column=2, value=ev).alignment=WRAP
         rr = lrow if lrow else irow
-        if code not in ORG_NO_RATING and ev:
-            ws.cell(row=rr, column=3, value='T').alignment=Alignment(horizontal='center',vertical='top')
+        rating = ORG_RATING.get(code, 'T' if (code not in ORG_NO_RATING and ev) else None)
+        if rating:
+            ws.cell(row=rr, column=3, value=rating).alignment=Alignment(horizontal='center',vertical='top')
 
 # ============ CP_Projeto (transversal aos processos de projeto) ============
 PLA_ALL=[('PLA-PROFARMA01-001',None,None),('PLA-GASMIG02-001',None,None),('PLA-GASMIG02-002',None,None),('PLA-FRUKI01-001',None,None),('PLA-FRUKI01-002',None,None)]
