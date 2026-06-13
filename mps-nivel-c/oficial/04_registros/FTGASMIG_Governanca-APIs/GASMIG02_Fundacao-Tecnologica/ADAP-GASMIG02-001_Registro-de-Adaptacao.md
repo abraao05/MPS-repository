@@ -4,8 +4,8 @@
 |---|---|
 | **Documento** | ADAP-GASMIG02-001 |
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-001 |
-| **Versão** | 1.3 |
-| **Data** | 11/06/2026 |
+| **Versão** | 1.4 |
+| **Data** | 13/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira |
 | **Processo-padrão de referência** | PRO-GPC-001 v2.2 |
 | **Guia de adaptação de referência** | GUIA-GPC-001 v1.2 |
@@ -42,6 +42,7 @@
 | Smoke checks HTTP | **Sim** | Chamadas HTTP via Postman/curl para confirmar que as políticas configuradas produzem o comportamento esperado (acesso permitido ou bloqueado). |
 | Change Request | **Sim, se acionado** | Qualquer alteração de escopo após baseline segue o fluxo de change request (TPL-GPR-006). |
 | Termo de Encerramento | **Sim** | Encerramento formal após aceite da sessão de apresentação. |
+| Aquisição (AQU) | **Não aplicável** | Não há subcontratação de terceiro responsável por entrega. Os serviços Azure (APIM, sandbox) são software de prateleira/infraestrutura, expressamente fora do escopo de AQU (PRO-AQU-001 §2). |
 
 ## 3. Pontos de controle obrigatórios (não adaptáveis)
 
@@ -64,3 +65,4 @@ Conforme GUIA-GPC-001 v1.2, os seis pontos a seguir são obrigatórios e não pa
 | 1.1 | 04/06/2026 | Abraão Oliveira | Adicionada adaptação explícita de VV: testes de software não aplicáveis; verificação por checklist de configuração e smoke checks HTTP; revisão técnica substitui revisão de código |
 | 1.2 | 05/06/2026 | Abraão Oliveira | Definição do papel de GQA como COO (Operações), garantindo independência em relação à equipe de projeto |
 | 1.3 | 11/06/2026 | Time de Melhoria Contínua | Adicionada referência ao processo-padrão base (PRO-GPC-001 v2.2) e ao guia de adaptação (GUIA-GPC-001 v1.2); pontos de controle obrigatórios expandidos para os 6 definidos no GUIA-GPC-001 v1.2 com artefatos produzidos |
+| 1.4 | 13/06/2026 | Time de Melhoria Contínua | Registrada explicitamente a não aplicabilidade do processo de Aquisição (AQU) neste projeto, conforme PRO-AQU-001 §2 |

@@ -4,8 +4,8 @@
 |---|---|
 | **Documento** | ADAP-GASMIG02-002 |
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-002 |
-| **Versão** | 1.1 |
-| **Data** | 11/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 13/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira |
 | **Processo-padrão de referência** | PRO-GPC-001 v2.2 |
 | **Guia de adaptação de referência** | GUIA-GPC-001 v1.2 |
@@ -44,6 +44,7 @@
 | Smoke checks HTTP | **Sim** | Verificação de fluxo OAuth 2.0 end-to-end e de alertas disparados. |
 | Change Request | **Sim, se acionado** | Mesmo fluxo da OS-001. |
 | Termo de Encerramento | **Sim** | Encerramento formal após sessão de homologação. |
+| Aquisição (AQU) | **Não aplicável** | Igual à OS-001: sem subcontratação de terceiro responsável por entrega; serviços Azure (APIM, Key Vault, Entra ID, Monitor) são software de prateleira/infraestrutura, fora do escopo de AQU (PRO-AQU-001 §2). |
 
 ## 3. Pontos de controle obrigatórios (não adaptáveis)
 
@@ -64,3 +65,4 @@ Conforme GUIA-GPC-001 v1.2, os seis pontos a seguir são obrigatórios e não pa
 |---|---|---|---|
 | 1.0 | 26/05/2026 | Abraão Oliveira | Versão inicial — adaptações da OS-PARCELA-002 |
 | 1.1 | 11/06/2026 | Time de Melhoria Contínua | Adicionada referência ao processo-padrão base (PRO-GPC-001 v2.2) e ao guia de adaptação (GUIA-GPC-001 v1.2); GQA atualizado para COO (Operações); pontos de controle expandidos para os 6 obrigatórios do GUIA-GPC-001 v1.2; todos marcados como concluídos (OS-002 encerrada em 09/06/2026) |
+| 1.2 | 13/06/2026 | Time de Melhoria Contínua | Registrada explicitamente a não aplicabilidade do processo de Aquisição (AQU) nesta OS, conforme PRO-AQU-001 §2 |

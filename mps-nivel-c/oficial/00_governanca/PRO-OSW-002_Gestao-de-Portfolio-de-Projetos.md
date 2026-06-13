@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-OSW-002 — Gestão de Portfólio de Projetos |
-| **Versão** | 1.2 |
-| **Data** | 20/03/2026 |
+| **Versão** | 1.3 |
+| **Data** | 13/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -72,7 +72,7 @@ Os projetos do portfólio são acompanhados de forma consolidada quanto ao cumpr
 - identifica projetos que se desviam dos acordos assumidos;
 - direciona o tratamento dos desvios — realocação de recursos, repriorização ou ações específicas no projeto.
 
-O acompanhamento do portfólio é apoiado pelas informações do Jira (situação dos projetos) e pelo quadro de capacity, e é tratado nas análises críticas pela direção (PRO-OSW-001).
+O acompanhamento do portfólio é apoiado pelas informações do Jira (situação dos projetos) e pelo quadro de capacity, e é tratado nas análises críticas pela direção (PRO-OSW-001). A consolidação periódica dessa operação, para fins de governança e auditoria, é registrada no **Painel de Portfólio (REG-OSW-001)**.
 
 ## 6. Papéis
 
@@ -87,6 +87,7 @@ O acompanhamento do portfólio é apoiado pelas informações do Jira (situaçã
 - POL-ORG-001 — Política Organizacional de Processos
 - PRO-OSW-001 — Governança Organizacional de Processos
 - EST-GPC-002 — Estratégia de Gerência de Riscos e Oportunidades
+- REG-OSW-001 — Painel de Portfólio de Projetos (registro consolidado)
 - Processo de Gerência de Projetos (GPR)
 
 ## 8. Rastreabilidade e instrução para auditoria
@@ -97,9 +98,9 @@ Este documento corresponde aos resultados **OSW 8, 9, 10** do processo **Gerênc
 
 | Resultado | Onde é atendido neste documento |
 |---|---|
-| OSW 8 — oportunidades de negócio/investimentos priorizados (portfólio) | Seção 3 |
-| OSW 9 — recursos, orçamento e autoridade do portfólio estabelecidos | Seção 4 |
-| OSW 10 — projetos do portfólio mantidos e tratados conforme os acordos | Seção 5 |
+| OSW 8 — oportunidades de negócio/investimentos priorizados (portfólio) | Seção 3; evidência consolidada em REG-OSW-001 §3–4 |
+| OSW 9 — recursos, orçamento e autoridade do portfólio estabelecidos | Seção 4; evidência consolidada em REG-OSW-001 §5 |
+| OSW 10 — projetos do portfólio mantidos e tratados conforme os acordos | Seção 5; evidência consolidada em REG-OSW-001 §7 |
 
 ---
 
@@ -110,3 +111,4 @@ Este documento corresponde aos resultados **OSW 8, 9, 10** do processo **Gerênc
 | 1.0 | 29/08/2025 | Time de Melhoria Contínua | Definição inicial da gestão de portfólio de projetos |
 | 1.1 | 24/11/2025 | Time de Melhoria Contínua | Atribuição da autoridade do portfólio ao COO (escritório de portfólio de projetos) |
 | 1.2 | 20/03/2026 | Time de Melhoria Contínua | Detalhamento da estrutura e cadência do quadro de capacity (§4.1): campos, responsável e critério de escalada |
+| 1.3 | 13/06/2026 | Time de Melhoria Contínua | Referência ao Painel de Portfólio (REG-OSW-001) como registro consolidado do acompanhamento (§5, §7 e §8 de rastreabilidade) |
