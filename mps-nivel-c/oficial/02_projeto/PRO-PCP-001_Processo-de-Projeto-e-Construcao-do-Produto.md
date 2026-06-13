@@ -1,0 +1,87 @@
+# Processo de Projeto e Construção do Produto — TIMEWARE
+
+| Campo | Valor |
+|---|---|
+| **Documento** | PRO-PCP-001 — Processo de Projeto e Construção do Produto |
+| **Versão** | 1.1 |
+| **Data** | 15/12/2025 |
+| **Organização** | Timeware Brasil Softwares e Serviços LTDA |
+| **Aprovação** | COO (Operações) |
+| **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
+| **Classificação** | Ativo de processo organizacional |
+
+---
+
+## 1. Propósito
+
+Este processo define como a Timeware projeta (design) e constrói o produto de software, a partir dos requisitos, garantindo que a solução seja desenhada com base em critérios, avaliada antes da construção, e implementada conforme o design — com rastreabilidade entre requisitos, design e código.
+
+## 2. Visão geral
+
+O design ocorre em dois momentos distintos: (a) na **concepção** (antes da construção), como parte das trilhas paralelas que geram insumo para o plano — define-se a arquitetura e, quando aplicável, o design de UX/UI validado com o cliente; e (b) durante o **desenvolvimento**, em que o design segue **adiantado** de uma a duas sprints à frente da construção. Em ambos, o design compreende duas dimensões:
+
+- **Design de produto (UX/UI):** aplicável a projetos com interface de usuário. Quando aplicável, parte de wireframes de baixa fidelidade validados com o cliente.
+- **Design técnico (arquitetura):** sempre aplicável. Arquitetura, modelo de dados e integrações, definidos pelo Arquiteto/Tech Lead.
+
+A aplicabilidade do design de UX/UI é definida na adaptação do projeto (GUIA-GPC-001): projetos sem front-end (APIs, serviços) mantêm apenas o design técnico.
+
+## 3. Desenvolvimento do design
+
+- O design é desenvolvido a partir dos **requisitos** (PRO-REQ-001), buscando uma solução adequada com base em **critérios** (atendimento ao requisito, viabilidade técnica, manutenibilidade, desempenho, segurança).
+- Quando há mais de uma alternativa de solução relevante, a escolha pode seguir o processo de **Gerência de Decisões** (PRO-GDE-001).
+- O design é documentado no **Documento de Design** (TPL-PCP-001), abrangendo, conforme aplicável: arquitetura, modelo de dados, integrações e, quando houver UX/UI, telas/protótipos.
+- É mantida a **rastreabilidade** entre requisitos e elementos de design (registrada na Matriz de Rastreabilidade — TPL-REQ-002).
+
+## 4. Avaliação do design
+
+- O design é **avaliado antes da construção**, verificando aderência aos requisitos, consistência e viabilidade.
+- Quando há UX/UI, o protótipo é **validado com o cliente**; o design técnico é revisado pela equipe técnica (Arquiteto/Tech Lead).
+- Problemas identificados na avaliação são **tratados** antes de a construção do item correspondente iniciar.
+
+## 5. Construção do produto
+
+- O produto é **implementado conforme o design** validado, em sprints, seguindo o fluxo do processo-padrão (PRO-GPC-001).
+- O código é versionado e controlado conforme a Gerência de Configuração (PLA-GCO-001).
+- Cada item segue a **Definição de Pronto**: critérios de aceite atendidos, code review aprovado, testes do QA executados, entrega em homologação/staging.
+- As informações de construção (código, documentação técnica) são mantidas e rastreáveis em relação ao design e aos requisitos.
+
+## 6. Papéis
+
+| Papel | Responsabilidade |
+|---|---|
+| **Arquiteto / Tech Lead** | Definem o design técnico; avaliam o design; lideram tecnicamente a construção. |
+| **UX/UI** | Elabora e valida o design de interface (quando aplicável). |
+| **Equipe de Desenvolvimento** | Implementa o produto conforme o design; realiza code review. |
+| **Product Owner** | Valida o design de produto com o cliente. |
+| **QA** | Verifica a implementação conforme a Definição de Pronto (ver VV). |
+
+## 7. Documentos e artefatos relacionados
+
+- PRO-GPC-001 — Processo-Padrão Organizacional
+- PRO-REQ-001 — Processo de Engenharia de Requisitos
+- TPL-PCP-001 — Template de Documento de Design
+- TPL-REQ-002 — Template de Matriz de Rastreabilidade
+- PLA-GCO-001 — Plano de Gerência de Configuração
+- PRO-GDE-001 — Processo de Gerência de Decisões
+- Processo de Verificação e Validação (VV)
+
+## 8. Rastreabilidade e instrução para auditoria
+
+*Esta seção é destinada à equipe de avaliação e relaciona o conteúdo deste documento aos resultados esperados do modelo de referência MR-MPS-SW. No corpo, o conteúdo é descrito na linguagem operacional da Timeware; o quadro abaixo indica onde cada resultado é atendido.*
+
+Este documento corresponde aos resultados do processo **Projeto e Construção do Produto (PCP)** do MR-MPS-SW:2024.
+
+| Resultado | Onde é atendido neste documento |
+|---|---|
+| PCP 1 — design desenvolvido, baseado em critérios e rastreável | Seção 3 |
+| PCP 2 — design avaliado e problemas tratados | Seção 4 |
+| PCP 3 — produto implementado conforme o design | Seção 5 |
+
+---
+
+## Histórico de revisões
+
+| Versão | Data | Autor | Descrição |
+|---|---|---|---|
+| 1.0 | 14/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de projeto e construção do produto |
+| 1.1 | 15/12/2025 | Time de Melhoria Contínua | Distinção entre design na concepção (pré-plano) e design adiantado nas sprints |

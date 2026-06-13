@@ -1,0 +1,76 @@
+﻿Issue Id,Issue Type,Summary,Epic Name,Epic Link,Parent Id,Story Points,Sprint,Status,Requisito,Start Date,Due Date,Labels
+EP-01,Epic,Captura EPROC/ESAJ (TJSP),Captura EPROC/ESAJ (TJSP),,,,,,,,,AASPCNJ01
+EP-02,Epic,Integração DataJud/CNJ (fonte primária),Integração DataJud/CNJ (fonte primária),,,,,,,,,AASPCNJ01
+EP-03,Epic,Fila unificada (RabbitMQ),Fila unificada (RabbitMQ),,,,,,,,,AASPCNJ01
+EP-04,Epic,Fallback e APIs parceiras,Fallback e APIs parceiras,,,,,,,,,AASPCNJ01
+EP-05,Epic,Segredo de justiça por instância,Segredo de justiça por instância,,,,,,,,,AASPCNJ01
+EP-06,Epic,Observabilidade e estabilidade,Observabilidade e estabilidade,,,,,,,,,AASPCNJ01
+EP-07,Epic,"Qualidade, testes e implantação","Qualidade, testes e implantação",,,,,,,,,AASPCNJ01
+US-01,Story,"Como operação, quero capturar processos do TJSP via engine EPROC/ESAJ para não depender de APIs privadas no maior tribunal",,Captura EPROC/ESAJ (TJSP),,13,S1,Done,RF-02,,,AASPCNJ01
+US-02,Story,"Como operação, quero contornar o captcha Cloudflare nos portais do TJSP para viabilizar a captura automatizada",,Captura EPROC/ESAJ (TJSP),,8,Discovery,Done,RF-02,,,AASPCNJ01
+US-03,Story,"Como operação, quero capturar a 1ª instância (EPROC) e os incidentes (ESAJ) do TJSP",,Captura EPROC/ESAJ (TJSP),,8,S3,Done,RF-02,,,AASPCNJ01
+US-19,Story,"Como operação, quero estabilizar o crawler EPROC (timeout pós-captcha, nullabilidade) para captura confiável",,Captura EPROC/ESAJ (TJSP),,8,S4,Done,RNF-02,,,AASPCNJ01
+US-20,Story,"Como operação, quero melhorar o desempenho do crawler e preparar o pacote de GMUD do EPROC",,Captura EPROC/ESAJ (TJSP),,5,S5,Done,RNF-01,,,AASPCNJ01
+US-04,Story,"Como operação, quero consultar a API DataJud/CNJ como fonte primária para NUPs com CodigoFonteAPI nulo",,Integração DataJud/CNJ (fonte primária),,13,S6,Done,RF-01,,,AASPCNJ01
+US-06,Story,"Como sistema, quero registrar o CodigoFonteAPI por processo para rastrear a fonte de cada captura",,Integração DataJud/CNJ (fonte primária),,3,S7,Done,RF-06,,,AASPCNJ01
+US-07,Story,"Como sistema, quero enviar os dados capturados ao webhook da API AndamentosProcessuais para indexação no Elasticsearch",,Integração DataJud/CNJ (fonte primária),,8,S7,Done,RF-11,,,AASPCNJ01
+US-05,Story,"Como sistema, quero gerenciar o token Bearer da CNJ de forma compartilhada com renovação automática",,Integração DataJud/CNJ (fonte primária),,8,S8,Done,RF-05,,,AASPCNJ01
+US-08,Story,"Como sistema, quero que o CapturaServer enfileire todos os NUPs no RabbitMQ de forma unificada",,Fila unificada (RabbitMQ),,5,S2,Done,RF-12,,,AASPCNJ01
+US-09,Story,"Como worker, quero ler a fila unificada independente do tribunal de origem",,Fila unificada (RabbitMQ),,5,S6,Done,RF-03,,,AASPCNJ01
+US-10,Story,"Como sistema, quero desligar o NUP nas APIs parceiras após captura via CNJ, registrando log",,Fallback e APIs parceiras,,8,S7,Done,RF-04,,,AASPCNJ01
+US-11,Story,"Como sistema, quero fazer fallback para as parceiras por ordem de prioridade quando CNJ e EPROC falham",,Fallback e APIs parceiras,,8,S8,Done,RF-07,,,AASPCNJ01
+US-12,Story,"Como sistema, quero tratar todos os retornos das parceiras (NUP inválido, vazio/aguardando, erro total e parcial)",,Fallback e APIs parceiras,,8,S8,Done,RF-08,,,AASPCNJ01
+US-13,Story,"Como operação, quero controlar o segredo de justiça por instância (campo Segredo) sem impactar instâncias não restritas",,Segredo de justiça por instância,,13,S9,Done,RF-10,,,AASPCNJ01
+US-14,Story,"Como operação, quero registrar erros detalhados por instância nas tabelas de controle",,Observabilidade e estabilidade,,5,S8,Done,RF-09,,,AASPCNJ01
+US-15,Story,"Como operação, quero que a fila se recupere de travamentos sem intervenção manual (incidente de 137 mil itens)",,Observabilidade e estabilidade,,8,S7,Done,RNF-02,,,AASPCNJ01
+US-16,Story,"Como QA, quero validar o fluxo completo (sucesso, fallback e erro parcial) por amostragem (E2E)",,"Qualidade, testes e implantação",,8,S10,Done,VV,,,AASPCNJ01
+US-17,Story,"Como sistema, quero retry no envio ao webhook para aumentar a resiliência da entrega ao Elasticsearch",,"Qualidade, testes e implantação",,5,S10,Done,RNF-02,,,AASPCNJ01
+US-18,Story,"Como operação, quero implantar via GMUD e retomar a captura de 2ª instância no EPROC",,"Qualidade, testes e implantação",,8,S11,In Progress,Fase 6,,,AASPCNJ01
+T-01,Sub-task,Estudo do captcha Cloudflare (TJSP),,,US-02,,Discovery,Done,,01/10/2025,31/01/2026,AASPCNJ01
+T-02,Sub-task,Criação e preparo dos ambientes de homologação,,,US-01,,S1,Done,,14/01/2026,15/01/2026,AASPCNJ01
+T-03,Sub-task,Criação do crawler EPROC TJSP,,,US-01,,S1,Done,,15/12/2025,09/02/2026,AASPCNJ01
+T-04,Sub-task,Criação do webhook de indexação EPROC TJSP,,,US-01,,S1,Done,,14/01/2026,04/02/2026,AASPCNJ01
+T-05,Sub-task,Alimentação da fila EprocTjsp na API AndamentosProcessuais,,,US-08,,S2,Done,,09/02/2026,14/02/2026,AASPCNJ01
+T-06,Sub-task,Análise e implementação do dispersor de proxy,,,US-01,,S3,Done,,12/02/2026,19/02/2026,AASPCNJ01
+T-07,Sub-task,Testes de desempenho no fluxo EPROC,,,US-20,,S3,Done,,13/02/2026,23/02/2026,AASPCNJ01
+T-08,Sub-task,Integração de endpoint para publicação no RabbitMQ,,,US-08,,S2,Done,,26/02/2026,27/02/2026,AASPCNJ01
+T-09,Sub-task,Correção de bugs de navegador no servidor,,,US-19,,S4,Done,,27/02/2026,03/03/2026,AASPCNJ01
+T-10,Sub-task,Correção de bug de timeout após captcha,,,US-19,,S4,Done,,03/03/2026,04/03/2026,AASPCNJ01
+T-11,Sub-task,Ajustes nos projetos relacionados ao EPROC,,,US-19,,S4,Done,,04/03/2026,09/03/2026,AASPCNJ01
+T-12,Sub-task,Melhoria no formato de inicialização dos navegadores,,,US-20,,S5,Done,,06/03/2026,16/03/2026,AASPCNJ01
+T-13,Sub-task,Implementação da captura de 1ª instância EPROC,,,US-03,,S3,Done,,12/03/2026,19/03/2026,AASPCNJ01
+T-14,Sub-task,Atualização de movimentações após captura EPROC,,,US-03,,S3,Done,,12/03/2026,12/03/2026,AASPCNJ01
+T-15,Sub-task,Correção do bug DataUltimaAtualizacao,,,US-19,,S4,Done,,13/03/2026,13/03/2026,AASPCNJ01
+T-16,Sub-task,Correção ProcessoCapturaLogin null / nullabilidade,,,US-19,,S4,Done,,19/03/2026,20/03/2026,AASPCNJ01
+T-17,Sub-task,Melhoria de desempenho no crawler EPROC,,,US-20,,S5,Done,,23/03/2026,23/03/2026,AASPCNJ01
+T-18,Sub-task,Finalização da captura de incidentes ESAJ,,,US-03,,S5,Done,,20/03/2026,20/03/2026,AASPCNJ01
+T-19,Sub-task,Validações e ajustes para GMUD (EPROC),,,US-20,,S5,Done,,25/03/2026,25/03/2026,AASPCNJ01
+T-20,Sub-task,Desenvolvimento do worker para requisição CNJ,,,US-04,,S6,Done,,26/03/2026,08/04/2026,AASPCNJ01
+T-21,Sub-task,Alinhamento e entendimento do fluxo CNJ (ATA),,,US-04,,S6,Done,,07/04/2026,07/04/2026,AASPCNJ01
+T-22,Sub-task,Enfileiramento unificado com verificação CodigoFonteAPI,,,US-09,,S6,Done,,06/04/2026,07/04/2026,AASPCNJ01
+T-23,Sub-task,Captura de processos CNJ no WorkerAndamentos,,,US-04,,S6,Done,,08/04/2026,16/04/2026,AASPCNJ01
+T-24,Sub-task,Fluxo de gravação via webhook (AndamentosProcessuais),,,US-07,,S7,Done,,08/04/2026,08/04/2026,AASPCNJ01
+T-25,Sub-task,Exclusão do NUP da API parceira e log de desligamento,,,US-10,,S7,Done,,09/04/2026,07/05/2026,AASPCNJ01
+T-26,Sub-task,Alinhamento de campos CNJ com modelo do Elasticsearch,,,US-07,,S7,Done,,15/04/2026,16/04/2026,AASPCNJ01
+T-27,Sub-task,Início do tratamento de falha na API CNJ (fallback),,,US-11,,S8,Done,,16/04/2026,22/04/2026,AASPCNJ01
+T-28,Sub-task,Implementação da nova lógica de registro de movimentações,,,US-07,,S7,Done,,13/04/2026,15/04/2026,AASPCNJ01
+T-29,Sub-task,Verificação nas tabelas das APIs parceiras,,,US-12,,S8,Done,,16/04/2026,07/05/2026,AASPCNJ01
+T-30,Sub-task,Refatoração da lógica de atualização do token,,,US-05,,S8,Done,,22/04/2026,27/04/2026,AASPCNJ01
+T-31,Sub-task,Refatoração do worker,,,US-05,,S8,Done,,23/04/2026,27/04/2026,AASPCNJ01
+T-32,Sub-task,Endpoint para atualização do CodigoFonteAPI,,,US-06,,S7,Done,,27/04/2026,28/04/2026,AASPCNJ01
+T-33,Sub-task,Merge na AndamentosProcessuais e correções no serviço de token,,,US-05,,S8,Done,,28/04/2026,28/04/2026,AASPCNJ01
+T-34,Sub-task,Prioridade de mensagem e correções BotMax,,,US-12,,S8,Done,,29/04/2026,29/04/2026,AASPCNJ01
+T-35,Sub-task,Organização do fluxo de exclusão e injeção de tokens,,,US-10,,S8,Done,,30/04/2026,30/04/2026,AASPCNJ01
+T-36,Sub-task,Alteração no método de consulta de processos para captura,,,US-09,,S9,Done,,06/05/2026,01/06/2026,AASPCNJ01
+T-37,Sub-task,Segredo de justiça por instância — detecção e registro,,,US-13,,S9,Done,,12/05/2026,01/06/2026,AASPCNJ01
+T-38,Sub-task,Desmembramento do método RunUpdater para priorização,,,US-13,,S9,Done,,12/05/2026,13/05/2026,AASPCNJ01
+T-39,Sub-task,Chamada para cadastro na API parceira (worker),,,US-12,,S9,Done,,12/05/2026,01/06/2026,AASPCNJ01
+T-40,Sub-task,Revisão da rotina EPROC/ESAJ p/ segredo em instância única,,,US-13,,S9,Done,,07/05/2026,01/06/2026,AASPCNJ01
+T-41,Sub-task,Alteração na tabela ProcessoCapturaLogin (homologação),,,US-14,,S9,Done,,18/05/2026,21/05/2026,AASPCNJ01
+T-42,Sub-task,Testes de fluxo do projeto de captura CNJ,,,US-16,,S10,Done,,25/05/2026,25/05/2026,AASPCNJ01
+T-43,Sub-task,Correção no fluxo de indexação e exclusão nas parceiras,,,US-12,,S10,Done,,25/05/2026,26/05/2026,AASPCNJ01
+T-44,Sub-task,Testes de persistência de movimentações,,,US-16,,S10,Done,,26/05/2026,27/05/2026,AASPCNJ01
+T-45,Sub-task,Implementação de retry para envio do webhook,,,US-17,,S10,Done,,27/05/2026,29/05/2026,AASPCNJ01
+T-46,Sub-task,Validação do fluxo de captura,,,US-16,,S10,Done,,29/05/2026,01/06/2026,AASPCNJ01
+T-47,Sub-task,Atividades de finalização do projeto,,,US-18,,S11,In Progress,,03/06/2026,,AASPCNJ01
+T-48,Sub-task,Implementação da captura de 2ª instância EPROC (retomada),,,US-18,,S11,In Progress,,03/06/2026,,AASPCNJ01
