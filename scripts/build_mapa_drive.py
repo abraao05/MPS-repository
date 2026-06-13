@@ -424,6 +424,10 @@ DATA = r"""
 05_capacidade|||MAPA-ORG-001_Matriz-de-Papeis-e-Responsabilidades.md|||1NHV3d4WHuUhUcTOtjtGi-uB1yR3BC6mL
 05_capacidade|||MAPA-CAP-001_Mapa-de-Capacidade-dos-Processos.docx|||1YaGYkBQnoCkiO6AygwtZCQKSxZkMIRNU
 05_capacidade|||MAPA-CAP-001_Mapa-de-Capacidade-dos-Processos.md|||1Cf81NchDsh8A185sbhMAt1NJTCks3snY
+01_apoio|||REGMED001_RepositorioOrganizacionaldeMedicao.docx|||1FOAiyoGlyqXioyDAXV4gCyqsJZvaJ1aB
+04_registros/FTFRUKI_SuperApp-Forca-de-Vendas|||ATAFRUKI01008_AtaKickoffPacoteFinal24.docx|||11alVpwlnsPjgd1_PO4OzMBXeJLRz6PXi
+03_templates|||EXEMPLOGPR005_StatusReportExemploPreenchido.docx|||1xdb1hYORBdN9jrAxuuqEunXIoDzptTBH
+04_registros/AASP_CNJ|||00_INDICEAASPCNJ01_MapadeRegistros.docx|||1kf3EdS_AsVImdD6P_03zCt-OF7_UHj6N
 """
 
 def main():
