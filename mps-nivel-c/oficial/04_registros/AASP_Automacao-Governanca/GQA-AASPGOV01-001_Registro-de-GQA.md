@@ -44,7 +44,7 @@ Verificação de aderência ao processo-padrão (PRO-GPC-001) e de existência, 
 
 | # | Produto de trabalho | Existe? | Completo? | Segue padrão? | Observação |
 |---|---|---|---|---|---|
-| 1 | `00_INDICE-AASPGOV01_Mapa-de-Registros.md` | Sim | Sim | Sim | Roteiro mestre com status de todos os 24 artefatos |
+| 1 | `00_INDICE-AASPGOV01_Mapa-de-Registros.md` | Sim | Sim | Sim | Roteiro mestre com status de todos os 23 artefatos |
 | 2 | `TAP-AASPGOV01-001_Termo-de-Abertura.md` | Sim | Sim | Sim | Aprovado por Marcos Correa Fernandez Turnes em 14/04/2026 |
 | 3 | `PLA-AASPGOV01-001_Plano-de-Projeto.md` | Sim | Sim | Sim | TPL-GPR-001 v1.2 completo — 11 seções |
 | 4 | `ADAP-AASPGOV01-001_Registro-de-Adaptacao.md` | Sim | Sim | Sim | 8 eixos de adaptação com justificativas |
@@ -66,6 +66,7 @@ Verificação de aderência ao processo-padrão (PRO-GPC-001) e de existência, 
 | 20 | `RAC-AASPGOV01-001_Relatorio-de-Acompanhamento.md` | Sim | Sim | Sim | TPL-GPR-005 v2.1 — RAG 4D, Sprint 0 a Sprint 3 |
 | 21 | `TAE-AASPGOV01-001_Termo-de-Encerramento.md` | Sim | Sim | Sim | Assinado por Marcos Correa Fernandez Turnes em 02/06/2026 |
 | 22 | `LI-AASPGOV01-001_Licoes-Aprendidas.md` | Sim | Sim | Sim | 7 lições + 5 oportunidades de melhoria |
+| 23 | `GEST-AASPGOV01_Planilha-de-Gestao-do-Projeto.xlsx` | Sim | Sim | Sim | Planilha de gestão (IC-06); 9 abas: Visão Geral, Cronograma, Backlog, Equipe, Acompanhamento, Riscos, Medição, GQA, V&V Testes |
 
 ---
 
@@ -80,7 +81,7 @@ Nenhum desvio identificado. Todos os produtos de trabalho verificados existem, e
 | Campo | Valor |
 |---|---|
 | **Resultado geral** | Conforme |
-| **% de conformidade** | 100% — 16 de 16 itens de processo conformes; 22 de 22 produtos de trabalho existentes, completos e aderentes ao padrão |
+| **% de conformidade** | 100% — 16 de 16 itens de processo conformes; 23 de 23 produtos de trabalho existentes, completos e aderentes ao padrão |
 | **Achados abertos** | 0 |
 | **Oportunidades de melhoria identificadas** | Antecipar verificações intermediárias de GQA por marco em projetos com duração superior a 8 semanas, mesmo que de pequeno porte, para identificar desvios antes do encerramento |
 
@@ -91,3 +92,4 @@ Nenhum desvio identificado. Todos os produtos de trabalho verificados existem, e
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de verificação de GQA de encerramento do projeto AASP_Automacao-Governanca, conduzido por Jonathan Alves (auditor independente). |
+| 1.1 | 13/06/2026 | Time de Melhoria Contínua | Adicionado item 23 (GEST-AASPGOV01 xlsx) à tabela de produtos de trabalho; atualizada contagem §3 item 1 de 24 para 23 artefatos (após remoção do CR — INTAKE-AASPGOV01 Bloco 10); atualizado resultado §5 de 22/22 para 23/23. |
