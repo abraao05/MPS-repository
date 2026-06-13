@@ -23,6 +23,12 @@ with open(CSV, encoding='utf-8-sig') as f:
         if tipo == 'md': continue
         LINKS.setdefault(doc.split('_',1)[0], {})[tipo] = (doc, link)
 
+# 4 novos links enviados ao Drive apos exportacao do CSV
+LINKS.setdefault('REG-MED-001', {})['docx'] = ('REG-MED-001', 'https://drive.google.com/file/d/1FOAiyoGlyqXioyDAXV4gCyqsJZvaJ1aB/view?usp=drivesdk')
+LINKS.setdefault('EXEMPLO-GPR-005', {})['docx'] = ('EXEMPLO-GPR-005', 'https://drive.google.com/file/d/1xdb1hYORBdN9jrAxuuqEunXIoDzptTBH/view?usp=drivesdk')
+LINKS.setdefault('ATA-FRUKI01-008', {})['docx'] = ('ATA-FRUKI01-008', 'https://drive.google.com/file/d/11alVpwlnsPjgd1_PO4OzMBXeJLRz6PXi/view?usp=drivesdk')
+LINKS.setdefault('INDICE-AASPCNJ01', {})['pdf'] = ('00_INDICE-AASPCNJ01', 'https://drive.google.com/file/d/1kf3EdS_AsVImdD6P_03zCt-OF7_UHj6N/view?usp=drivesdk')
+
 MISSING = set()
 def L(code, sec=None, ext=None):
     """Return 'filename [§sec] — url' or record missing."""
@@ -76,14 +82,24 @@ FRU = {
  'VV':['VV-FRUKI01-001','VV-FRUKI01-002'],'ITP':['ITP-FRUKI01-001','ITP-FRUKI01-002'],
  'GDE':['GDE-FRUKI01-001'],'GCO':['GCO-FRUKI01-001'],'MED':['MED-FRUKI01-001'],
  'GQA':['GQA-FRUKI01-001'],'RAC':['RAC-FRUKI01-001','RAC-FRUKI01-002'],'CR':['CR-FRUKI01-001'],
- 'LI':['LI-FRUKI01-001'],'ATAK':['ATA-FRUKI01-001'],'ATA_METAS':['ATA-FRUKI01-002'],
- 'ATAA':['ATA-FRUKI01-003'],'ATA_VAL':['ATA-FRUKI01-004','ATA-FRUKI01-005','ATA-FRUKI01-006','ATA-FRUKI01-007'],
+ 'LI':['LI-FRUKI01-001'],'ATAK':['ATA-FRUKI01-001','ATA-FRUKI01-008'],
+ 'ATA_METAS':['ATA-FRUKI01-002'],'ATAA':['ATA-FRUKI01-003'],
+ 'ATA_VAL':['ATA-FRUKI01-004','ATA-FRUKI01-005','ATA-FRUKI01-006','ATA-FRUKI01-007'],
  'TAE':['TAE-FRUKI01-001','TAE-FRUKI01-002'],'REV':[],'CTQ':[],'RELVV':[],'CAP':[],
 }
-PROJECTS = [('PROFARMA',PROF),('GASMIG',GAS),('FRUKI',FRU)]
-PCOL = {'PROFARMA':3,'GASMIG':4,'FRUKI':5}  # C,D,E
+AASP = {
+ 'TAP':['TAP-AASPCNJ01-001'],'PLA':['PLA-AASPCNJ01-001'],'ADAP':['ADAP-AASPCNJ01-001'],
+ 'REQ':['REQ-AASPCNJ01-001'],'RASTR':['RASTR-AASPCNJ01-001'],'PCP':['PCP-AASPCNJ01-001'],
+ 'ITP':['ITP-AASPCNJ01-001'],'VV':['VV-AASPCNJ01-001'],'RELVV':['REL-VV-AASPCNJ01-001'],
+ 'GCO':['GCO-AASPCNJ01-001'],'GDE':['GDE-AASPCNJ01-001'],'MED':['MED-AASPCNJ01-001'],
+ 'GQA':['GQA-AASPCNJ01-001'],'RAC':['RAC-AASPCNJ01-001'],'ATAK':['ATA-AASPCNJ01-001'],
+ 'CAP':['CAP-AASPCNJ01-001'],'CR':['CR-AASPCNJ01-001'],'GEST':['GEST-AASPCNJ01'],
+ 'REV':['REV-AASPCNJ01-001'],'LI':[],'CTQ':[],'ATAA':[],'ATA_METAS':[],'ATA_VAL':[],'TAE':[],
+}
+PROJECTS = [('PROFARMA',PROF),('GASMIG',GAS),('FRUKI',FRU),('AASP_CNJ',AASP)]
+PCOL = {'PROFARMA':3,'GASMIG':4,'FRUKI':5,'AASP_CNJ':6}  # C,D,E,F
 
-# indicator -> role list (applied to all 3 projects)
+# indicator -> role list (applied to all 4 projects)
 IND_ROLES = {
  'GPR 1':['TAP','PLA'],'GPR 2+':['ADAP'],'GPR 3+':['PLA'],'GPR 4+':['PLA'],
  'GPR 5':['PLA','GEST'],'GPR 6':['PLA'],'GPR 7+':['PLA'],'GPR 8':['PLA'],'GPR 9':['PLA'],
@@ -119,12 +135,12 @@ def proj_evidence_and_ratings(sheet, ind):
     return "\n".join(lines), ratings
 
 # ============ ORG SHEETS ============
-GCO_REG=[('GCO-PROFARMA01-001',None,None),('GCO-GASMIG02-001',None,None),('GCO-FRUKI01-001',None,None)]
-MED_REG=[('MED-PROFARMA01-001',None,None),('MED-GASMIG02-001',None,None),('MED-FRUKI01-001',None,None)]
-GDE_REG=[('GDE-PROFARMA01-001',None,None),('GDE-GASMIG02-001',None,None),('GDE-FRUKI01-001',None,None)]
-GQA_REG=[('GQA-PROFARMA01-001',None,None),('GQA-GASMIG02-001',None,None),('GQA-FRUKI01-001',None,None)]
+GCO_REG=[('GCO-PROFARMA01-001',None,None),('GCO-GASMIG02-001',None,None),('GCO-FRUKI01-001',None,None),('GCO-AASPCNJ01-001',None,None)]
+MED_REG=[('MED-PROFARMA01-001',None,None),('MED-GASMIG02-001',None,None),('MED-FRUKI01-001',None,None),('MED-AASPCNJ01-001',None,None)]
+GDE_REG=[('GDE-PROFARMA01-001',None,None),('GDE-GASMIG02-001',None,None),('GDE-FRUKI01-001',None,None),('GDE-AASPCNJ01-001',None,None)]
+GQA_REG=[('GQA-PROFARMA01-001',None,None),('GQA-GASMIG02-001',None,None),('GQA-FRUKI01-001',None,None),('GQA-AASPCNJ01-001',None,None)]
 LI_REG =[('LI-PROFARMA01-001',None,None),('LI-GASMIG02-001',None,None),('LI-FRUKI01-001',None,None)]
-ADAP_REG=[('ADAP-PROFARMA01-001',None,None),('ADAP-GASMIG02-001',None,None),('ADAP-GASMIG02-002',None,None),('ADAP-FRUKI01-001',None,None),('ADAP-FRUKI01-002',None,None)]
+ADAP_REG=[('ADAP-PROFARMA01-001',None,None),('ADAP-GASMIG02-001',None,None),('ADAP-GASMIG02-002',None,None),('ADAP-FRUKI01-001',None,None),('ADAP-FRUKI01-002',None,None),('ADAP-AASPCNJ01-001',None,None)]
 REGCAP=[(f'REG-CAP-{n}',None,None) for n in ['001','001B','002','002B','003','004','005','006','007','008','009','010','011','012','013']]
 AVACAP=[(f'AVA-CAP-{n}',None,None) for n in ['001','002','003','004','005']]
 
@@ -144,11 +160,11 @@ ORG_EV = {
  # MED
  'MED 1':[('PLA-MED-001','§2',None)],
  'MED 2':[('PLA-MED-001','§3',None)],
- 'MED 3+':[('PLA-MED-001','§4',None)]+MED_REG,
+ 'MED 3+':[('PLA-MED-001','§4',None),('REG-MED-001',None,None)]+MED_REG,
  'MED 4+':[('PLA-MED-001','§5',None)]+MED_REG,
  'MED 5':[('PLA-MED-001','§6',None)],
  'MED 6':[('PLA-MED-001','§7',None),('REG-OSW-001',None,None)],
- 'MED 7':[('PLA-MED-001','§8',None)],
+ 'MED 7':[('PLA-MED-001','§8',None),('REG-MED-001',None,None)],
  # GDE
  'GDE 1':[('PRO-GDE-001','§3',None)],
  'GDE 2':[('PRO-GDE-001','§4',None)]+GDE_REG,
@@ -158,7 +174,7 @@ ORG_EV = {
  'GDE 6':[('PRO-GDE-001','§5',None),('TPL-GDE-001',None,None)]+GDE_REG,
  # CAP
  'CAP 1+':[('PLA-CAP-001','§3',None)],
- 'CAP 2':[('PLA-CAP-001','§4',None),('TPL-CAP-001',None,None),('CAP-GASMIG02-001',None,None),
+ 'CAP 2':[('PLA-CAP-001','§4',None),('TPL-CAP-001',None,None),('CAP-GASMIG02-001',None,None),('CAP-AASPCNJ01-001',None,None),
           f"Mini-manuais por processo (GUIA-CAP-001 a 012) e trilhas por papel (MAT-CAP-013 a 022): {folder_url('cap')}"]+REGCAP,
  'CAP 3':[('PLA-CAP-001','§5',None),('REL-CAP-001',None,None)]+AVACAP,
  'CAP 4':[('PLA-CAP-001','§6',None),('REG-CAP-CV-001',None,None),
@@ -172,7 +188,7 @@ ORG_EV = {
  'GPC 6':[('PRO-GPC-002',None,None),('ATA-GPC-001',None,None)],
  'GPC 7':[('EST-GPC-002',None,None)],
  'GPC 8':[('PLA-GPC-001','§3',None),('GUIA-GCO-001',None,None)],
- 'GPC 9':[('PLA-MED-001','§4 e §8',None)],
+ 'GPC 9':[('PLA-MED-001','§4 e §8',None),('REG-MED-001',None,None)],
  'GPC 10':[('PLA-GPC-001','§4',None)]+ADAP_REG,
  'GPC 11':[('PLA-GPC-001','§6',None),('REG-GPC-002',None,None),('ATA-GPC-001',None,None)],
  # OSW
@@ -245,16 +261,17 @@ for sheet in ['AQU','GCO','MED','GDE','CAP','GPC','OSW']:
             ws.cell(row=rr, column=3, value=rating).alignment=Alignment(horizontal='center',vertical='top')
 
 # ============ CP_Projeto (transversal aos processos de projeto) ============
-PLA_ALL=[('PLA-PROFARMA01-001',None,None),('PLA-GASMIG02-001',None,None),('PLA-GASMIG02-002',None,None),('PLA-FRUKI01-001',None,None),('PLA-FRUKI01-002',None,None)]
-VV_ALL =[('VV-PROFARMA01-001',None,None),('VV-GASMIG02-001',None,None),('VV-FRUKI01-001',None,None)]
-REV_ALL=[('REV-PROFARMA01-001',None,None),('REV-GASMIG02-001',None,None)]
+PLA_ALL=[('PLA-PROFARMA01-001',None,None),('PLA-GASMIG02-001',None,None),('PLA-GASMIG02-002',None,None),
+         ('PLA-FRUKI01-001',None,None),('PLA-FRUKI01-002',None,None),('PLA-AASPCNJ01-001',None,None)]
+VV_ALL =[('VV-PROFARMA01-001',None,None),('VV-GASMIG02-001',None,None),('VV-FRUKI01-001',None,None),('VV-AASPCNJ01-001',None,None)]
+REV_ALL=[('REV-PROFARMA01-001',None,None),('REV-GASMIG02-001',None,None),('REV-AASPCNJ01-001',None,None)]
 REGCAP5=[(f'REG-CAP-{n}',None,None) for n in ['001','002','003','004','005']]
 
 CP_PROJ_ROWS = {4:'i',9:'ii',14:'iii',19:'iv',24:'v',29:'vi',33:'vii'}
 CP_PROJ_EV = {
- 'i':["Registros de execucao dos 3 projetos (evidencia detalhada nas abas GPR/REQ/PCP/ITP/VV). Ancoras:"]+PLA_ALL+VV_ALL,
+ 'i':["Registros de execucao dos 4 projetos (evidencia detalhada nas abas GPR/REQ/PCP/ITP/VV). Ancoras:"]+PLA_ALL+VV_ALL,
  'ii':["Adaptacao do processo-padrao por projeto:"]+ADAP_REG+[('PRO-GPC-001',None,None),('GUIA-GPC-001',None,None)],
- 'iii':[('PLA-CAP-001',None,None),('CAP-GASMIG02-001',None,None)]+REGCAP5,
+ 'iii':[('PLA-CAP-001',None,None),('CAP-GASMIG02-001',None,None),('CAP-AASPCNJ01-001',None,None)]+REGCAP5,
  'iv':[('EST-GPC-001',None,None),('TPL-GPC-001',None,None)]+GQA_REG,
  'v':GQA_REG+REV_ALL+[('TPL-GPC-001',None,None)],
  'vi':LI_REG+[('REG-GPC-001',None,None)],
