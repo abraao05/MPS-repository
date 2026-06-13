@@ -190,6 +190,15 @@ ORG_EV = {
 ORG_RATING = {'AQU 1':'NA','AQU 2':'NA','AQU 3+':'NA','AQU 4+':'NA'}  # AQU = Nao Aplicavel
 ORG_NO_RATING = {'AQU 5'}  # nivel B - fora do escopo do nivel C
 
+# --- Sincronizacao com MAPA-ORG-001 v0.40: docs de processo/auditoria adicionados ---
+for k in ['CAP 1+','CAP 2','CAP 3','CAP 4']: ORG_EV[k].append(('PRO-CAP-001',None,None))
+for k in ['GCO 1','GCO 2','GCO 3','GCO 4','GCO 5']: ORG_EV[k].append(('PRO-GCO-001',None,None))
+for k in ['MED 1','MED 2','MED 3+','MED 4+','MED 5','MED 6','MED 7']: ORG_EV[k].append(('PRO-MED-001',None,None))
+ORG_EV['GCO 1'].insert(1,('GUIA-GCO-001',None,None))
+ORG_EV['GPC 3'].append(('GQA-ORG-001',None,None))
+ORG_EV['GPC 6'].append(('REG-GPC-002',None,None))
+ORG_EV['GPC 7'].append(('ATA-GPC-001',None,None))
+
 # ============ WRITE ============
 wb = openpyxl.load_workbook(SRC)
 WRAP = Alignment(wrap_text=True, vertical='top')
@@ -251,6 +260,7 @@ CP_PROJ_EV = {
  'vi':LI_REG+[('REG-GPC-001',None,None)],
  'vii':[('PRO-GPC-001',None,None),('PLA-MED-001',None,None),('PLA-GPC-001',None,None)],
 }
+CP_PROJ_EV['iv'].append(('GQA-ORG-001',None,None))  # auditoria organizacional (v0.40)
 ws = wb['CP_Projeto']
 for row,att in CP_PROJ_ROWS.items():
     ev = block(CP_PROJ_EV[att])
@@ -284,6 +294,9 @@ CPO_III = {  # (iii) capacitacao por processo
  'GPC':[('PLA-CAP-001',None,None),('GUIA-CAP-009',None,None),('MAT-CAP-014',None,None),('AVA-CAP-005',None,None)],
  'OSW':[('PLA-CAP-001',None,None),('GUIA-CAP-010',None,None),('MAT-CAP-013',None,None)],
 }
+CPO_I['CAP'].insert(1,('PRO-CAP-001',None,None))
+CPO_I['GCO'].insert(1,('PRO-GCO-001',None,None))
+CPO_I['MED'].insert(1,('PRO-MED-001',None,None))
 ws = wb['CP_Organizacional']
 for proc,col in CPO_PROC_COL.items():
     for row,att in CPO_ROWS.items():
