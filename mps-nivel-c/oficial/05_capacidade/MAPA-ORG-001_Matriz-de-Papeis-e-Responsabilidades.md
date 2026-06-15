@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Matriz de Papéis e Responsabilidades |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 15/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
@@ -72,7 +72,6 @@ A matriz aplica-se aos 12 processos do escopo MPS-SW Nível C e cobre tanto os p
 | **Responsável de Medição** | MED (operação) | Coleta e consolidação de medidas; análise de indicadores; repositório de medição |
 | **RH / Capacitação** | CAP, AQU (apoio) | Identificação de necessidades de competência; planejamento de capacitação; avaliação de eficácia |
 | **COO** | OSW, GPC (autoridade), portfólio | Gestão de portfólio; governança organizacional; análise crítica de desempenho |
-| **Consultora de Processos (PJ)** | GPC (apoio à definição) | Lean Six Sigma; modelagem e melhoria de processos; mapeamento de fluxo de valor |
 
 ---
 
@@ -91,7 +90,6 @@ Esta seção nomina os titulares de cada papel e os demais membros da equipe que
 | **GCO Baseline / Auditoria** | — | Mariana Teixeira | REG-CAP-002 (GCO); REG-CAP-009 |
 | **GQA / Qualidade do Processo** | Flávio Fernandes | — | CV (Azure Architect Expert, TOGAF, COBIT, MBA FGV); REG-CAP-007/009 |
 | **Time de Melhoria Contínua / SEPG** | Abraão Oliveira, Flávio Fernandes, Silvio Baroni | Patricia Lima, Mariana Teixeira | CV Silvio (PM Sênior); REG-CAP-013 (desenho de processos); REG-CAP-003/006/009 |
-| **Consultora de Processos (PJ)** | — | Karen Wada | CV (Eng. UTFPR, Lean Six Sigma); REG-CAP-013 (consultoria de desenho de processos) |
 | **Responsável de Medição** | Wilson Yamada | Thiago Nunes | CV Wilson (FIAP, ITIL, 20+ anos gestão de TI); REG-CAP-003/009 (Thiago); AVA-CAP-005 |
 | **RH / Capacitação** | Guilherme Gomes | Camila Ferreira | REG-CAP-004/006/009; AVA-CAP-005 |
 | **Portfólio / OSW** | Wilson Yamada | — | CV (FIAP, ITIL, 20+ anos gestão de TI); REG-CAP-006/009 |
@@ -129,5 +127,6 @@ A matriz aplica-se a projetos (GPR, REQ, PCP, ITP, VV) e à organização (GCO, 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel "Consultora de Processos (PJ)" removido das seções 4 e 5 |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Seção 5 reestruturada: coluna "Equipe" adicionada; titulares corrigidos (Wilson Yamada = COO/Medição/Portfólio; Baroni = GP/PO; Flávio = MC/GQA; Guilherme = RH); equipe de projeto separada dos titulares |
 | 1.0 | 10/06/2026 | Time de Melhoria Contínua | Versão inicial — matriz consolidando RACI processo × papel, competências por papel e titulares com evidência de competência |
