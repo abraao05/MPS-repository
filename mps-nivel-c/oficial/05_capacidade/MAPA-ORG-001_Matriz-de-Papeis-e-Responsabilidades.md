@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Matriz de Papéis e Responsabilidades |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 15/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
@@ -82,18 +82,18 @@ Esta seção nomina os titulares de cada papel e os demais membros da equipe que
 
 | Papel | Titular | Equipe | Evidência de competência |
 |---|---|---|---|
-| **Gerente de Projeto** | Abraão Oliveira, Silvio Baroni | — | CV Silvio (PM Sênior); REG-CAP-001/003/004/005/009 (Abraão); REG-CAP-013 (Baroni); AVA-CAP-002 |
-| **Product Owner (PO)** | Abraão Oliveira, Silvio Baroni | — | REG-CAP-001/003/004/005/009 (Abraão); REG-CAP-003/006/009 (Baroni) |
+| **Gerente de Projeto** | Abraão Oliveira | — | REG-CAP-001/003/004/005/009 (Abraão); AVA-CAP-002 |
+| **Product Owner (PO)** | Abraão Oliveira | Silvio Baroni | REG-CAP-001/003/004/005/009 (Abraão); REG-CAP-003/006/009 (Baroni) |
 | **Tech Lead / Arquiteto** | Cézar Velázquez | — | CV (Fatec BS); REG-CAP-011 (Azure); REG-CAP-001/002/005/009 |
-| **Desenvolvedores** | — | Renan Kioshi, Raony Chagas, Fernando Oliveira, Henry Komatsu | REG-CAP-010 (onboarding técnico); REG-CAP-011 (Azure); REG-CAP-012 (testes) |
+| **Desenvolvedores** | — | Renan Kioshi, Raony Chagas, Mateus Veloso, Lucas Batista, Henry Komatsu, Allan Patrocínio, Felipe Siqueira | REG-CAP-010 (onboarding técnico); REG-CAP-011 (Azure); REG-CAP-012 (testes) |
 | **QA** | Caroline Jenifer (Carol) | Jonatan Silva, Letícia Moraes | CV Carol (FIAP, 7+ anos QA); REG-CAP-012 (automação de testes); REG-CAP-002/007/008/009 |
 | **DevOps** | — | Rafael Cunha | REG-CAP-010 (onboarding); REG-CAP-011 (Azure/IaC); REG-CAP-002/009 |
 | **GCO Baseline / Auditoria** | — | Mariana Teixeira | REG-CAP-002 (GCO); REG-CAP-009 |
-| **GQA / Qualidade do Processo** | Flávio Fernandes | — | CV (Azure Architect Expert, TOGAF, COBIT, MBA FGV); REG-CAP-007/009 |
-| **Time de Melhoria Contínua / SEPG** | Abraão Oliveira, Flávio Fernandes, Silvio Baroni | Patricia Lima, Mariana Teixeira | CV Silvio (PM Sênior); REG-CAP-013 (desenho de processos); REG-CAP-003/006/009 |
-| **Responsável de Medição** | Wilson Yamada | Thiago Nunes | CV Wilson (FIAP, ITIL, 20+ anos gestão de TI); REG-CAP-003/009 (Thiago); AVA-CAP-005 |
-| **RH / Capacitação** | Guilherme Gomes | Camila Ferreira | REG-CAP-004/006/009; AVA-CAP-005 |
-| **Portfólio / OSW** | Wilson Yamada | — | CV (FIAP, ITIL, 20+ anos gestão de TI); REG-CAP-006/009 |
+| **GQA / Qualidade do Processo** | Caroline Jenifer (Carol) | — | CV Carol (FIAP, 7+ anos QA); REG-CAP-012 (automação de testes); REG-CAP-007/008/009 |
+| **Time de Melhoria Contínua / SEPG** | Silvio Baroni (coordenador), Abraão Oliveira, Flávio Fernandes | Patricia Lima, Mariana Teixeira | CV Silvio (PM Sênior); REG-CAP-013 (desenho de processos); REG-CAP-003/006/009 |
+| **Responsável de Medição** | Silvio Baroni | Abraão Oliveira | CV Silvio (PM Sênior); REG-CAP-013; REG-CAP-003/006/009 |
+| **RH / Capacitação** | Guilherme Gomes | Klayton Roberto | REG-CAP-004/006/009; AVA-CAP-005 |
+| **Portfólio / OSW** | Wilson Yamada | Abraão Oliveira, Silvio Baroni | CV Wilson (FIAP, ITIL, 20+ anos gestão de TI); REG-CAP-006/009 |
 | **COO** | Wilson Yamada | — | REG-CAP-006; AVA-CAP-005 (trilha OSW) |
 | **CEO / Founder** | Tiago Barbosa Nascimento | — | Patrocínio formal (POL-ORG-001) |
 
@@ -128,6 +128,7 @@ A matriz aplica-se a projetos (GPR, REQ, PCP, ITP, VV) e à organização (GCO, 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Seção 5 atualizada: titulares e equipes revistos conforme distribuição de papéis para entrevistas MPS-SW — GQA passa para Caroline Jenifer; Medição passa para Silvio Baroni; GP fica só com Abraão Oliveira; PO adiciona Baroni como equipe; Devs expandidos (Mateus Veloso, Lucas Batista, Allan Patrocínio, Felipe Siqueira); RH equipe atualizado (Klayton Roberto); Portfólio/OSW adiciona Abraão e Baroni como equipe; Baroni identificado como coordenador do SEPG |
 | 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel "Consultora de Processos (PJ)" removido apenas da seção 5 (titulares/equipe); mantido na seção 4 (competências) |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Seção 5 reestruturada: coluna "Equipe" adicionada; titulares corrigidos (Wilson Yamada = COO/Medição/Portfólio; Baroni = GP/PO; Flávio = MC/GQA; Guilherme = RH); equipe de projeto separada dos titulares |
 | 1.0 | 10/06/2026 | Time de Melhoria Contínua | Versão inicial — matriz consolidando RACI processo × papel, competências por papel e titulares com evidência de competência |
