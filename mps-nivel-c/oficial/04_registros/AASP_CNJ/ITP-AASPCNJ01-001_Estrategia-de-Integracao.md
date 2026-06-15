@@ -61,3 +61,15 @@ A entrega em produção segue o rito de GMUD: montagem de pacote de publicação
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 11/06/2026 | Time de Melhoria Contínua | Estratégia de integração consolidada a partir do Registro de Projeto AASP_CNJ v1.0 (08/06/2026). |
+
+
+## Evidências
+
+- `itp-rabbitmq-fila.png` — Fila RabbitMQ unificada (WorkerAndamentos)
+- `itp-webhook-indexacao.png` — Webhook de indexação multi-fonte
+- `swagger_ui_1.png` — Swagger da API — visão 1
+- `swagger_ui_2.png` — Swagger da API — visão 2
+- `swagger_ui_3.png` — Swagger da API — visão 3
+- `swagger_ui_4.png` — Swagger da API — visão 4
+- `swagger_ui_full.png` — Swagger da API — completo
+- `itp-postman-cnj.json` — Coleção Postman da API CNJ (anexo)

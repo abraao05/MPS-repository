@@ -7,14 +7,14 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 11/06/2026 |
-| **Gerente de Projeto / Responsável GCO** | Abraão Oliveira |
+| **Gerente de Projeto / Responsável GCO** | Cezar Hiraki Velazquez |
 | **Processo MPS-SW** | GCO (evidência de projeto) |
 
 ---
 
 ## 1. Objetivo
 
-Registrar o gerenciamento de configuração do projeto: itens de configuração (ICs), estratégia de controle de versão, baselines e gestão de mudanças. Conforme ADAP-AASPCNJ01-001, o papel de responsável por GCO foi acumulado pelo Gerente de Projeto (Abraão Oliveira), dada a maturidade do controle de versão via Azure DevOps e GitFlow.
+Registrar o gerenciamento de configuração do projeto: itens de configuração (ICs), estratégia de controle de versão, baselines e gestão de mudanças. Conforme ADAP-AASPCNJ01-001, o papel de responsável por GCO foi acumulado pelo Gerente de Projeto (Cezar Hiraki Velazquez), dada a maturidade do controle de versão via Azure DevOps e GitFlow.
 
 ## 2. Estratégia de gerência de configuração
 
@@ -66,6 +66,18 @@ Registrar o gerenciamento de configuração do projeto: itens de configuração 
 > A auditoria de configuração de encerramento será registrada no fechamento do projeto.
 
 ---
+
+
+## Evidências
+
+- `devops_cnj_branches.png` — GitFlow no Azure DevOps — branches do repositório WorkersAndamentos
+- `devops_cnj_commits.png` — Histórico de commits (Azure DevOps)
+- `devops_cnj_tags.png` — Tags de baseline (v230/v240/v241)
+- `devops_cnj_estrutura.png` — Estrutura do repositório WorkersAndamentos
+- `estrutura_WorkerAndamentos.png` — Estrutura da solução WorkersAndamentos.sln
+- `gco-branches-gitflow.png` — Modelo de branching GitFlow
+- `devops_cnj_pipeline_ci.png` — Pipeline CI — testes e cobertura
+- `devops_cnj_pipeline_cicd.png` — Pipeline CI/CD
 
 ## Histórico de revisões
 

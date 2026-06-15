@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 11/06/2026 |
-| **Responsáveis (Discovery)** | Abraão Oliveira (GP / Tech Lead) · Cézar Hiraki (Arquiteto) |
+| **Responsáveis (Discovery)** | Cezar Hiraki Velazquez (GP / Tech Lead) · Cezar Hiraki Velazquez (Arquiteto) |
 
 ---
 
@@ -20,7 +20,7 @@ A AASP oferece a seus associados uma plataforma centralizada de monitoramento de
 | Parte interessada | Necessidade principal |
 |---|---|
 | Associados da AASP | Acompanhamento confiável e atualizado dos andamentos em todos os tribunais |
-| Carlos Alves (Representante do Cliente — AASP) | Cobertura ampla, custo reduzido e estabilidade da captura |
+| Marcos Correa Fernandez Turnes (Representante do Cliente — AASP) | Cobertura ampla, custo reduzido e estabilidade da captura |
 | Operação Timeware | Observabilidade, reprocessamento seletivo e escalonamento independente |
 
 ## 3. Visão geral da solução
@@ -77,7 +77,7 @@ Dois componentes coordenados: o **CapturaServer** (serviço Windows que identifi
 
 | Envolvido | Papel | Confirmação | Data |
 |---|---|---|---|
-| Carlos Alves | AASP | Entendimento dos objetivos de cobertura, custo e estabilidade | Out/2025 |
+| Marcos Correa Fernandez Turnes | AASP | Entendimento dos objetivos de cobertura, custo e estabilidade | Out/2025 |
 | Time de desenvolvimento | Timeware | Compromisso técnico assumido na apresentação do fluxo CNJ | 07/04/2026 |
 
 ---

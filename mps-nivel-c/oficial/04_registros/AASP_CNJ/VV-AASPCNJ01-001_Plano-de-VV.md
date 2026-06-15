@@ -46,7 +46,7 @@ A execução dos testes por fase e o registro de defeitos estão consolidados em
 
 ## 5. Análise e comunicação dos resultados (VV 5)
 
-Os resultados de validação foram analisados por Raony Chagas e por Abraão Oliveira e comunicados nas reuniões de alinhamento. Indicadores de qualidade (estabilidade da fila, erros por instância) alimentam a Medição (ver MED-AASPCNJ01-001).
+Os resultados de validação foram analisados por Raony Chagas e por Cezar Hiraki Velazquez e comunicados nas reuniões de alinhamento. Indicadores de qualidade (estabilidade da fila, erros por instância) alimentam a Medição (ver MED-AASPCNJ01-001).
 
 ## 6. Cenários de teste (Gherkin) e evidências
 

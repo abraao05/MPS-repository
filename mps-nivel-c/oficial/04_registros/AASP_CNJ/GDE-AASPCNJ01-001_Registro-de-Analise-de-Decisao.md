@@ -5,7 +5,7 @@
 | **Documento** | GDE-AASPCNJ01-001 |
 | **Projeto / contexto** | AASP_CNJ — WorkerAndamentos |
 | **Data** | 06/04/2026 |
-| **Responsável pela decisão** | Abraão Oliveira (com o time de desenvolvimento) |
+| **Responsável pela decisão** | Cezar Hiraki Velazquez (com o time de desenvolvimento) |
 
 ---
 

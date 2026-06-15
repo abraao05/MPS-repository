@@ -6,7 +6,7 @@
 | **Projeto** | AASP_CNJ — WorkerAndamentos: Agente de Captura de Andamentos Processuais |
 | **Versão** | 1.0 |
 | **Data** | 11/06/2026 |
-| **Responsáveis** | Cézar Hiraki (Arquiteto) · Abraão Oliveira (GP / Tech Lead) |
+| **Responsáveis** | Cezar Hiraki Velazquez (Arquiteto) · Cezar Hiraki Velazquez (GP / Tech Lead) |
 
 ---
 
@@ -87,7 +87,7 @@ Matriz completa em RASTR-AASPCNJ01-001.
 |---|---|---|---|
 | Fluxo de captura CNJ e roteamento | Time de desenvolvimento | Campos do modelo CNJ com dados do TJSP hardcoded | Parametrização por tribunal (BUG-07) |
 | Modelo de gravação no Elasticsearch | Raony Chagas | Alinhamento de campos CNJ com `IModelElastic` | Ajuste do mapeamento (Abr/2026) |
-| Concorrência de token | Cézar Hiraki / Raony Chagas | Risco de renovações paralelas | Token compartilhado em `PonteAPI` (D04) |
+| Concorrência de token | Cezar Hiraki Velazquez / Raony Chagas | Risco de renovações paralelas | Token compartilhado em `PonteAPI` (D04) |
 
 A decisão pela DataJud/CNJ como fonte primária foi formalizada na reunião de alinhamento técnico de 06/04/2026.
 
@@ -98,3 +98,13 @@ A decisão pela DataJud/CNJ como fonte primária foi formalizada na reunião de 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 11/06/2026 | Time de Melhoria Contínua | Documento de design consolidado a partir do Registro de Projeto AASP_CNJ v1.0 (08/06/2026) — seção 4 (rotulada "OSW" na fonte) reclassificada como PCP. |
+
+
+## Evidências
+
+- `cnj_arquitetura.svg` — Arquitetura da solução (WorkerAndamentos / DataJud-CNJ)
+- `ProcessoCapturaSchema.png` — Modelo de dados — ProcessoCaptura (CodigoFonteAPI)
+- `ProcessoCapturaLoginSchema.png` — Modelo de dados — ProcessoCapturaLogin (Observacao/Segredo)
+- `ProcessoCapturaMovimentacaoStatuSchema.png` — Modelo de dados — ProcessoCapturaMovimentacaoStatus
+- `FonteApiSchema.png` — Modelo de dados — Fonte/CodigoFonteAPI
+- `pcp-roteamento-codigofonteapi.png` — Roteamento de fonte por CodigoFonteAPI

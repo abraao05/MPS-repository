@@ -17,7 +17,7 @@ A revisão por pares é conduzida via Pull Request no Azure DevOps. O merge de b
 
 | Papel | Identificação |
 |---|---|
-| Autor | Raony Chagas / Levi Santos |
+| Autor | Raony Chagas / Renan Kiyoshi |
 | Revisor(es) | Membro da equipe distinto do autor (mínimo 1) |
 
 ## 3. Itens revisados (representativos)
@@ -42,6 +42,15 @@ A revisão por pares é conduzida via Pull Request no Azure DevOps. O merge de b
 | Aprovado (merges integrados em `develop` após revisão) | Abr–Mai/2026 | Revisor(es) da equipe |
 
 ---
+
+
+## Evidências
+
+- `devops_cnj_prs.png` — Pull Requests concluídos (code review)
+- `devops_cnj_pr_detail_1.png` — Detalhe de Pull Request aprovado (1)
+- `devops_cnj_pr_detail_2.png` — Detalhe de Pull Request aprovado (2)
+- `gco-pr-aprovado-1.png` — PR aprovado pelo revisor (1)
+- `gco-pr-aprovado-2.png` — PR aprovado pelo revisor (2)
 
 ## Histórico de revisões
 

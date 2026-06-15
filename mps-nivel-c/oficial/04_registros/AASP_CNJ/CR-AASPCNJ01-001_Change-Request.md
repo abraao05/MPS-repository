@@ -36,7 +36,7 @@ A integração CNJ tem maior impacto financeiro e operacional (cobertura univers
 
 | Situação | Responsável | Data | Ref. |
 |---|---|---|---|
-| Aprovada (acordada com o cliente) | Abraão Oliveira / Carlos Alves | Mai/2026 | Alinhamento registrado no ClickUp; GDE-AASPCNJ01-001 (D06) |
+| Aprovada (acordada com o cliente) | Cezar Hiraki Velazquez / Marcos Correa Fernandez Turnes | Mai/2026 | Alinhamento registrado no ClickUp; GDE-AASPCNJ01-001 (D06) |
 
 ## 6. Reflexo no projeto
 

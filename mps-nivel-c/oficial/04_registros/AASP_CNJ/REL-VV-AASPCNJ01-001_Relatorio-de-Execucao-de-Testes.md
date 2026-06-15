@@ -32,15 +32,9 @@ Registrar a execução dos testes do projeto e os defeitos identificados e trata
 
 | ID | Descrição | Fase | Resolução |
 |---|---|---|---|
-| BUG-01 | Timeout após o captcha Cloudflare no EPROC | Fase 3 | Ajuste no tempo de espera e no tratamento de resposta após autenticação |
-| BUG-02 | `ProcessoCapturaLogin` retornando null em certos processos | Fase 3 | Correção da condição de nulidade e criação do registro quando ausente |
-| BUG-03 | Nullabilidade em campos opcionais | Fase 3 | Verificações de nulo antes de operações de gravação |
-| BUG-04 | `DataUltimaAtualizacao` não atualizado corretamente | Fase 3 | Correção da lógica de atualização na rotina de movimentações |
-| BUG-05 | Fila RabbitMQ acumulando 137 mil itens não processados | Fase 4 | Correção na publicação com tratamento de exceção e logging; atualização do pacote AWS |
-| BUG-06 | Falha na publicação no RabbitMQ sem registro de erro | Fase 4 | `try/catch` na publicação com log detalhado |
-| BUG-07 | Campos do modelo CNJ com dados do TJSP hardcoded | Fase 4 | Remoção dos valores fixos e parametrização por tribunal |
-| BUG-08 | Erro de referências na solução AndamentosProcessuais após merge | Fase 5 | Correção das referências de projeto e recompilação |
-| BUG-09 | Falha no fluxo de indexação e exclusão nas APIs parceiras | Fase 5 | Correção na ordem de operações e validação do fluxo completo |
+| BUG-01 a BUG-04 | Defeitos da estabilização EPROC/ESAJ | Fase 3 | Correções de timeout/captcha, nullabilidade e DataUltimaAtualizacao |
+| BUG-05 a BUG-07 | Defeitos do desenvolvimento CNJ | Fase 4 | Correção da fila RabbitMQ (137 mil itens), publicação de mensagens e campos hardcoded do TJSP |
+| BUG-08, BUG-09 | Defeitos de E2E/regressão e parceiras | Fase 5 | Correção de referências pós-merge e do fluxo de indexação/exclusão nas APIs parceiras |
 
 **Resumo:** 9 defeitos identificados e **100% resolvidos** antes da validação final do fluxo.
 
@@ -69,3 +63,13 @@ Os testes cobriram os fluxos de captura (CNJ, EPROC/ESAJ e parceiras), fallback,
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 11/06/2026 | Time de Melhoria Contínua | Relatório de execução de testes consolidado a partir do Registro de Projeto AASP_CNJ v1.0 (08/06/2026). |
+
+
+## Evidências
+
+- `cnj_ca01.jpeg` — Critério de aceite CA01
+- `cnj_ca02.jpg` — Critério de aceite CA02
+- `cnj_ca03.jpeg` — Critério de aceite CA03
+- `cnj_ca05.jpeg` — Critério de aceite CA05
+- `cnj_ca07.jpg` — Critério de aceite CA07
+- `cnj_ca04.txt` — Critério de aceite CA04 (anexo)

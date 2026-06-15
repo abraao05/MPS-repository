@@ -8,7 +8,7 @@
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Versão** | 1.0 |
 | **Data de abertura** | 01/10/2025 |
-| **Gerente de Projeto** | Abraão Oliveira |
+| **Gerente de Projeto** | Cezar Hiraki Velazquez |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
 ---
@@ -36,20 +36,20 @@ Reconstruir o modelo de captura de andamentos processuais da plataforma de monit
 
 | Parte interessada | Responsabilidade | Organização |
 |---|---|---|
-| Carlos Alves (Representante do Cliente) | Validação de requisitos, homologação e aceite das entregas | AASP |
-| Abraão Oliveira (Gerente de Projeto / Tech Lead) | Alinhamento com o cliente, decisões técnicas e gestão das entregas | Timeware Brasil |
+| Marcos Correa Fernandez Turnes (Representante do Cliente) | Validação de requisitos, homologação e aceite das entregas | AASP |
+| Cezar Hiraki Velazquez (Gerente de Projeto / Tech Lead) | Alinhamento com o cliente, decisões técnicas e gestão das entregas | Timeware Brasil |
 | Patrocinador interno | Patrocínio do projeto e priorização de portfólio | Timeware Brasil |
 
 ## 4. Equipe do projeto
 
 | Papel | Responsável |
 |---|---|
-| Gerente de Projeto / Tech Lead | Abraão Oliveira |
-| Arquiteto de Software | Cézar Hiraki |
+| Gerente de Projeto / Tech Lead | Cezar Hiraki Velazquez |
+| Arquiteto de Software | Cezar Hiraki Velazquez |
 | Desenvolvedor Sênior (Principal) | Raony Chagas |
-| Desenvolvedor (Suporte) | Levi Santos (incorporado em abr/2026) |
-| Analista de Testes | Jonatan (a partir da Fase 5) |
-| Infraestrutura / DevOps | David |
+| Desenvolvedor (Suporte) | Renan Kiyoshi (incorporado em abr/2026) |
+| Analista de Testes | Caroline Sousa (a partir da Fase 5) |
+| Infraestrutura / DevOps | Lucas Batista |
 
 ## 5. Macroplanejamento (datas-alvo)
 

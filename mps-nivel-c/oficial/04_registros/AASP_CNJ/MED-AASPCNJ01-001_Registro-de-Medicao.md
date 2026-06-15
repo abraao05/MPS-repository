@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 11/06/2026 |
-| **Gerente de Projeto** | Abraão Oliveira |
+| **Gerente de Projeto** | Cezar Hiraki Velazquez |
 | **Processo MPS-SW** | MED (evidência de projeto) |
 
 ---
@@ -30,12 +30,12 @@ Registrar as medidas coletadas ao longo do projeto, conforme o PLA-MED-001, para
 
 | Fase | Esforço estimado (h) | Esforço realizado (h) | Responsável principal |
 |---|---|---|---|
-| Fase 1 — Análise e Arquitetura | 60 | ~80 | Cézar Hiraki / Abraão Oliveira |
+| Fase 1 — Análise e Arquitetura | 60 | ~80 | Cezar Hiraki Velazquez / Cezar Hiraki Velazquez |
 | Fase 2 — Desenvolvimento EPROC/ESAJ | 120 | ~124 | Raony Chagas |
 | Fase 3 — Estabilização EPROC/ESAJ | 80 | ~93 | Raony Chagas |
-| Fase 4 — Desenvolvimento CNJ | 200 | ~195 | Raony Chagas / Levi Santos |
-| Fase 5 — Testes e Validação | 80 | ~109 | Raony Chagas / Jonatan |
-| Fase 6 — Implantação (parcial) | 46 | Em apuração (~23 h) | Raony Chagas / Abraão Oliveira |
+| Fase 4 — Desenvolvimento CNJ | 200 | ~195 | Raony Chagas / Renan Kiyoshi |
+| Fase 5 — Testes e Validação | 80 | ~109 | Raony Chagas / Caroline Sousa |
+| Fase 6 — Implantação (parcial) | 46 | Em apuração (~23 h) | Raony Chagas / Cezar Hiraki Velazquez |
 | **Total** | **586** | **~624 (parcial)** | |
 
 > Para a gestão ágil e a futura carga no Jira, o esforço foi também modelado retroativamente em **155 SP** distribuídos em **Discovery + 11 sprints** (velocity média ~14 SP/sprint), conciliado com as horas reais — ver GEST-AASPCNJ01 (abas Backlog, Tarefas e Acompanhamento).

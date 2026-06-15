@@ -6,7 +6,7 @@
 | **Projeto / contexto** | AASP_CNJ — WorkerAndamentos |
 | **Data** | 07/04/2026 |
 | **Local / meio** | Videoconferência |
-| **Responsável pela ata** | Abraão Oliveira |
+| **Responsável pela ata** | Cezar Hiraki Velazquez |
 
 ---
 
@@ -14,9 +14,9 @@
 
 | Nome | Papel | Organização |
 |---|---|---|
-| Abraão Oliveira | Gerente de Projeto / Tech Lead | Timeware |
+| Cezar Hiraki Velazquez | Gerente de Projeto / Tech Lead | Timeware |
 | Raony Chagas | Desenvolvedor Sênior (Principal) | Timeware |
-| Levi Santos | Desenvolvedor (Suporte) | Timeware |
+| Renan Kiyoshi | Desenvolvedor (Suporte) | Timeware |
 | — | Time de Desenvolvimento | Timeware |
 
 ## 2. Pauta
@@ -33,8 +33,8 @@ O Gerente de Projeto apresentou o fluxo completo da nova arquitetura: funcioname
 
 | Decisão / aceite | Responsável | Data |
 |---|---|---|
-| Adotar a DataJud/CNJ como fonte primária universal (D02) | Abraão Oliveira / time | 07/04/2026 |
-| Unificar a fila RabbitMQ (D03) | Abraão Oliveira / time | 07/04/2026 |
+| Adotar a DataJud/CNJ como fonte primária universal (D02) | Cezar Hiraki Velazquez / time | 07/04/2026 |
+| Unificar a fila RabbitMQ (D03) | Cezar Hiraki Velazquez / time | 07/04/2026 |
 | Token Bearer compartilhado em `PonteAPI` (D04) | Raony Chagas | 07/04/2026 |
 | Normalização do JSON CNJ no worker (D05) | Raony Chagas | 07/04/2026 |
 
@@ -46,7 +46,7 @@ O Gerente de Projeto apresentou o fluxo completo da nova arquitetura: funcioname
 |---|---|---|
 | Desenvolver o worker de requisição CNJ | Raony Chagas | Abr/2026 |
 | Implementar enfileiramento unificado com verificação de `CodigoFonteAPI` | Time de Desenvolvimento | Abr/2026 |
-| Onboarding do desenvolvedor de suporte no fluxo | Abraão Oliveira | Abr/2026 |
+| Onboarding do desenvolvedor de suporte no fluxo | Cezar Hiraki Velazquez | Abr/2026 |
 
 ## 6. Próximos passos
 

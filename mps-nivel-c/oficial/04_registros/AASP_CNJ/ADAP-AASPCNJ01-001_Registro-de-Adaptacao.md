@@ -6,7 +6,7 @@
 | **Projeto** | AASP_CNJ — WorkerAndamentos: Agente de Captura de Andamentos Processuais |
 | **Versão** | 1.0 |
 | **Data** | 11/06/2026 |
-| **Responsável pela adaptação** | Abraão Oliveira |
+| **Responsável pela adaptação** | Cezar Hiraki Velazquez |
 
 ---
 

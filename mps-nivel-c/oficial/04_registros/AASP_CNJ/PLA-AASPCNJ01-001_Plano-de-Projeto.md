@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 11/06/2026 |
-| **Gerente de Projeto** | Abraão Oliveira |
+| **Gerente de Projeto** | Cezar Hiraki Velazquez |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
 ---
@@ -84,14 +84,14 @@ O projeto foi estimado e acompanhado por **horas de esforço** registradas no si
 
 ## 6. Recursos (GPR 6, 7)
 
-- **Equipe:** Abraão Oliveira (Gerente de Projeto / Tech Lead, todas as fases); Cézar Hiraki (Arquiteto de Software, Fases 1–3); Raony Chagas (Desenvolvedor Sênior, Fases 2–6); Levi Santos (Desenvolvedor de Suporte, Fases 4–5); Jonatan (Analista de Testes, Fase 5); David (Infraestrutura/DevOps, Fases 1 e 6).
+- **Equipe:** Cezar Hiraki Velazquez (Gerente de Projeto / Tech Lead, todas as fases); Cezar Hiraki Velazquez (Arquiteto de Software, Fases 1–3); Raony Chagas (Desenvolvedor Sênior, Fases 2–6); Renan Kiyoshi (Desenvolvedor de Suporte, Fases 4–5); Caroline Sousa (Analista de Testes, Fase 5); Lucas Batista (Infraestrutura/DevOps, Fases 1 e 6).
 - **Ambiente e ferramentas:** Azure DevOps (código e CI/CD), AWS (hospedagem dos workers e APIs internas), RabbitMQ, Elasticsearch, ClickUp (gestão de atividades). Ver GCO-AASPCNJ01-001.
 
 ## 7. Partes interessadas e comunicação (GPR 9)
 
 | Parte interessada | Interesse | Comunicação |
 |---|---|---|
-| Carlos Alves (Representante do Cliente — AASP) | Validação, homologação e aceite | Reuniões de alinhamento e devolutivas de resultado |
+| Marcos Correa Fernandez Turnes (Representante do Cliente — AASP) | Validação, homologação e aceite | Reuniões de alinhamento e devolutivas de resultado |
 | Patrocinador interno (Timeware) | Resultado financeiro e operacional | Acompanhamento por marco |
 | Time de desenvolvimento | Execução e decisões técnicas | Reuniões de alinhamento periódicas (ver ATA-AASPCNJ01-001) |
 
@@ -111,17 +111,17 @@ O projeto foi estimado e acompanhado por **horas de esforço** registradas no si
 
 | Critério | Obrigatório? | Verificado por |
 |---|---|---|
-| Fluxo de captura validado (sucesso, fallback e erro parcial) | Sim | Raony Chagas / Jonatan |
-| Persistência de movimentações validada | Sim | Jonatan |
-| Baseline de configuração registrada (tag de versão) | Sim | David (DevOps) / Abraão Oliveira (GCO) |
-| Pacote GMUD montado e agendado | Sim | Abraão Oliveira / David |
+| Fluxo de captura validado (sucesso, fallback e erro parcial) | Sim | Raony Chagas / Caroline Sousa |
+| Persistência de movimentações validada | Sim | Caroline Sousa |
+| Baseline de configuração registrada (tag de versão) | Sim | Lucas Batista (DevOps) / Cezar Hiraki Velazquez (GCO) |
+| Pacote GMUD montado e agendado | Sim | Cezar Hiraki Velazquez / Lucas Batista |
 
 ### 8.3 Suporte e monitoramento pós-go-live
 
 | Item | Descrição |
 |---|---|
 | Monitoramento | Monitoramento ativo da fila RabbitMQ e dos logs de captura por instância |
-| Responsável | Raony Chagas + Abraão Oliveira |
+| Responsável | Raony Chagas + Cezar Hiraki Velazquez |
 | O que monitorar | Travamentos de fila (meta: zero travamentos manuais/mês); erros por instância nas tabelas de controle |
 
 ## 9. Riscos (GPR 10)
@@ -145,7 +145,7 @@ O projeto é viável: a economia projetada (~R$ 180 mil/ano) supera amplamente o
 
 | Envolvido | Papel | Aceite | Data | Ref. da ata |
 |---|---|---|---|---|
-| Carlos Alves | AASP | — | — | A registrar no encerramento (Onda 3) |
+| Marcos Correa Fernandez Turnes | AASP | — | — | A registrar no encerramento (Onda 3) |
 
 > A baseline do projeto e o aceite final serão registrados no encerramento (TAE-AASPCNJ01-001), conforme o estágio atual do projeto (em execução).
 
