@@ -7,8 +7,10 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
+| **Auditor (GQA)** | Carol (Caroline) — Garantia da Qualidade de Processo (auditora independente, fora do DevOps; não codifica e não executa testes) |
+| **Marco / tipo de verificação** | Auditorias de processo por ciclo de sprints — S1–S4 (GQA-A01), S5–S8 (GQA-A02) e S9 / release v0.9.0 (GQA-A03), com auditoria de configuração no Azure DevOps |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | GQA / GPC (evidência de projeto) |
 
@@ -124,7 +126,37 @@ Os itens RF13, RF14 e MF-64 foram entregues e liberados em `main` na release v0.
 
 ---
 
-## 4. Resumo das não conformidades
+## 4. Verificação de produtos de trabalho
+
+Verificação de existência, completude e conformidade com o padrão (template correto, versionamento e campos obrigatórios preenchidos) dos produtos de trabalho do projeto MilhasFacil, conforme o índice de registros (00_INDICE-MILHASFACIL01) e TPL-GPC-001 §3. Todos os artefatos de execução existem na pasta de registros do projeto e seguem a convenção de nomenclatura `TIPO-MILHASFACIL01-NNN` (CONV-ORG-001).
+
+| # | Produto de trabalho | Existe? | Completo? | Segue padrão? | Observação |
+|---|---|---|---|---|---|
+| 1 | TAP-MILHASFACIL01-001 (Termo de Abertura) | ✅ | ✅ | ✅ | — |
+| 2 | PLA-MILHASFACIL01-001 (Plano de Projeto) | ✅ | ✅ | ✅ | — |
+| 3 | ADAP-MILHASFACIL01-001 (Adaptação do Processo) | ✅ | ✅ | ✅ | 10 adaptações (A-01 a A-10) justificadas |
+| 4 | REQ-MILHASFACIL01-001 (Documento de Requisitos) | ✅ | ✅ | ✅ | RF01–RF15 / RNF01–RNF05 |
+| 5 | RASTR-MILHASFACIL01-001 (Matriz de Rastreabilidade) | ✅ | ✅ | ✅ | RF → Jira → branch → PR → build |
+| 6 | PCP-MILHASFACIL01-001 (Documento de Design) | ✅ | ✅ | ✅ | — |
+| 7 | ITP-MILHASFACIL01-001 (Estratégia de Integração) | ✅ | ✅ | ✅ | — |
+| 8 | VV-MILHASFACIL01-001 (Plano de V&V) | ✅ | ✅ | ✅ | — |
+| 9 | REL-VV-MILHASFACIL01-001 (Relatório de Execução de Testes) | ✅ | ✅ | ✅ | CT-01 a CT-12 (validação manual da QA) |
+| 10 | REV-MILHASFACIL01-001 (Revisão por Pares) | ✅ | ✅ | ✅ | — |
+| 11 | GCO-MILHASFACIL01-001 (Gerência de Configuração) | ✅ | ✅ | ✅ | Baselines v0.1.0–v0.9.0 |
+| 12 | GDE-MILHASFACIL01-001 (Análise de Decisão) | ✅ | ✅ | ✅ | Decisões GDE-001 a GDE-005 |
+| 13 | MED-MILHASFACIL01-001 (Registro de Medição) | ✅ | ✅ | ✅ | Velocity, cobertura, bugs, NCs por sprint |
+| 14 | CAP-MILHASFACIL01-001 (Capacitação da Equipe) | ✅ | ✅ | ✅ | — |
+| 15 | CR-MILHASFACIL01-001 (Change Request CR-MF-001) | ✅ | ✅ | ✅ | Filtros antecipados S10→S9, aprovado pelo GP |
+| 16 | RAC-MILHASFACIL01-001 (Relatório de Acompanhamento) | ✅ | ✅ | ✅ | — |
+| 17 | ATA-MILHASFACIL01-001 (Ata de Kickoff) | ✅ | ✅ | ✅ | — |
+| 18 | ATA-MILHASFACIL01-002 (Aprovação de Arquitetura — Design Review) | ✅ | ✅ | ✅ | PO + Tech Lead |
+| 19 | Artefatos de encerramento (TAE, Lições Aprendidas, Ata de Aceite Final) | N/A | N/A | N/A | **Ressalva:** ainda não produzidos — projeto aberto (Sprint 9/12); Onda 3 aguarda o aceite formal (~26/07/2026) conforme 00_INDICE-MILHASFACIL01 |
+
+Todos os produtos de trabalho de execução (itens 1–18) existem, estão completos e aderem ao padrão. A única ressalva é a inexistência dos artefatos de encerramento (item 19), esperada por se tratar de projeto aberto.
+
+---
+
+## 5. Resumo das não conformidades
 
 | ID | Sprint/Fase | Categoria | Severidade | Status |
 |---|---|---|---|---|
@@ -138,7 +170,7 @@ Total em aberto: **0**
 
 ---
 
-## 5. Parecer final de GQA
+## 6. Parecer final de GQA
 
 O projeto MilhasFacil — Busca de Milhas atendeu aos requisitos do processo-padrão Timeware ao longo dos ciclos auditados pela GQA independente. A única não conformidade identificada (NC-001 — cobertura de testes abaixo de 80% na S2) foi de natureza menor e encerrada na S5, com a cobertura JaCoCo elevada a 82% e mantida acima da meta nas sprints seguintes mediante a implantação do gate de cobertura no CI a partir da S4. Considerando o ciclo S1–S4 (conforme com ressalva) e o ciclo S5–S8 (conforme, sem não conformidades), o **parecer consolidado dos Sprints S1–S8 é CONFORME**.
 
@@ -150,8 +182,20 @@ Na Sprint S9, os itens RF13, RF14 e MF-64 foram **entregues e liberados em `main
 
 ---
 
+## 7. Resultado da verificação (consolidado)
+
+| Campo | Valor |
+|---|---|
+| **Resultado geral** | Conforme com ressalva (ciclo S1–S4 conforme com ressalva — NC-001 encerrada; ciclos S5–S8 e S9 conformes; ressalva de auditoria de configuração com ação corretiva aplicada) |
+| **% de conformidade** | **95,5%** — 21 de 22 itens de checklist de processo conformes (GQA-A01: 7/8; GQA-A02: 8/8; GQA-A03: 6/6). A única não conformidade (NC-001 — cobertura < 80% na S2) foi encerrada na S5. Produtos de trabalho de execução: 18/18 existentes, completos e aderentes ao padrão (artefatos de encerramento N/A — projeto aberto) |
+| **Achados abertos** | **0 não conformidades abertas** (NC-001 encerrada). Permanece **1 ressalva** de auditoria de configuração (22 PRs históricos S1–S8 sem revisor na API — registros imutáveis), com ação corretiva já aplicada em 15/06/2026 (branch policy de revisor em `develop` nos 3 repositórios; 6 PRs da S9 com revisor; PR #29/MF-73 em revisão) |
+| **Oportunidades de melhoria identificadas** | Antecipar a verificação independente de GQA e a auditoria de configuração por marco de sprint, evitando a consolidação retroativa; integrar o tooling (Azure DevOps/Jira) desde a primeira sprint para que o histórico de PRs e transições de cards reflita a linha do tempo real |
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Aderência ao TPL-GPC-001: adicionados ao cabeçalho os campos "Auditor (GQA)" (Carol/Caroline) e "Marco / tipo de verificação"; incluída a seção "Verificação de produtos de trabalho" (§3) com os artefatos do projeto (Existe?/Completo?/Segue padrão?) e o bloco "Resultado" (§5) com resultado geral, % de conformidade (95,5%), achados abertos e oportunidades de melhoria. |

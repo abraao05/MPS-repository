@@ -7,7 +7,7 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
@@ -67,7 +67,7 @@ Os três repositórios do projeto (branch padrão `main`) são: **MilhasFacil_ap
 | feat/MF-69-csv-export / feat/MF-69-csv-ui | API #12 / Web #22 | RF14 |
 | feat/MF-64-airport-ilike | API #28 | MF-64 (busca de aeroportos) |
 | MF-73 (padronização de nomenclatura de BD) | API #29 (ativo) | Chore — migration V10 (`is_active` + índices), GUIA-GCO-001 |
-| fix/MF-42-estabilizacao | — | RF03 (estabilização de busca) |
+| fix/MF-42-estabilizacao | API #8 | RF03 (estabilização de busca) |
 
 ---
 
@@ -136,3 +136,4 @@ Os requisitos não funcionais RNF01–RNF05 são rastreados às suas evidências
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Preenchimento do PR da branch `fix/MF-42-estabilizacao` (RF03) na rastreabilidade backward com API #8 (conforme ITP-MILHASFACIL01-001 §5, Ordem 9 — estabilização da S6). |

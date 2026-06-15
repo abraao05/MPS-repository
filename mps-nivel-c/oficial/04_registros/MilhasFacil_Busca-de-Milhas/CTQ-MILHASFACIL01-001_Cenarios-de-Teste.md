@@ -5,7 +5,7 @@
 | **Documento** | CTQ-MILHASFACIL01-001 |
 | **Projeto** | MilhasFacil — Plataforma de Busca e Alerta de Passagens por Milhas |
 | **Cliente** | Hub de Milhas |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | VV (evidência de projeto — cenários de teste por card) |
@@ -527,7 +527,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 ### MF-45 — Tarefa — Backend: Flyway V4 migration tabela notifications + Flyway V5 subscriptions
 
-- **Verificação:** migrations `V4` (notifications) e `V5` (subscriptions) aplicadas com sucesso. Verificado por execução do Flyway no pipeline; responsável Felipe Santos. (Rastreabilidade corrigida: notifications = V4.)
+- **Verificação:** correção de rastreabilidade/numeração da migration de `notifications` (V7→V4), alinhando o versionamento Flyway — **não houve recriação da tabela**: a criação de `notifications` ocorreu na migration `V4` na Sprint 4 (MF-26). A migration `V5` (subscriptions) foi aplicada com sucesso. Verificado por execução do Flyway no pipeline; responsável Felipe Santos. (Rastreabilidade corrigida: notifications = V4.)
 
 ### MF-46 — Bug — Alerta WhatsApp sendo enviado múltiplas vezes (sentAt guard)
 
@@ -793,7 +793,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 ### MF-72 — Tarefa — INTAKE-MILHASFACIL01-001: Formulário de Levantamento MPS.BR Nível C (completo)
 
-- **Verificação:** formulário de intake MPS.BR Nível C (35 blocos ADF) registrado no Jira — trabalho de gestão do GP Abraão (assignee sob a conta legada Mateus Veloso, reatribuição pendente de provisionamento; prioridade High, status Backlog). Item documental de levantamento — verificado quanto à completude pelo Time de Melhoria Contínua; sem requisito funcional a validar.
+- **Verificação:** formulário de intake MPS.BR Nível C (35 blocos ADF) registrado no Jira — trabalho de gestão do GP Abraão (assignee **Abraão** — `abraao.oliveira`, reatribuição concluída; prioridade High, status Backlog). Item documental de levantamento — verificado quanto à completude pelo Time de Melhoria Contínua; sem requisito funcional a validar.
 
 ### MF-73 — Tarefa — Chore: Padronização de nomenclatura de BD (índices + is_active) conforme GUIA-GCO-001
 
@@ -862,3 +862,4 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | MF-72: assignee corrigido para Abraão (`abraao.oliveira`), reatribuição concluída. MF-45: esclarecido como correção de rastreabilidade/numeração da migration de notifications (V7→V4), sem recriação — criação na V4 (Sprint 4, MF-26). |

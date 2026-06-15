@@ -7,7 +7,7 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
@@ -49,7 +49,13 @@ A absorção do CR-MF-001 na Sprint 9 é evidenciada pela entrega de RF13: os PR
 
 ---
 
-## 4. Impacto consolidado
+## 4. Tipo de tratamento
+
+**Tipo de tratamento: Aditivo.** A mudança acrescenta esforço adicional ao projeto (+10 h, absorvidas na Sprint 9 — sprint de maior planejamento, 69 SP), caracterizando uma mudança aditiva conforme o modelo da Timeware (TPL-GPR-006 §4), e não uma troca de prioridade de mesmo tamanho nem um crédito ao cliente.
+
+---
+
+## 5. Impacto consolidado
 
 | Dimensão | Impacto |
 |---|---|
@@ -60,7 +66,7 @@ A absorção do CR-MF-001 na Sprint 9 é evidenciada pela entrega de RF13: os PR
 
 ---
 
-## 5. Rastreabilidade
+## 6. Rastreabilidade
 
 | Referência | Relação |
 |---|---|
@@ -76,3 +82,4 @@ A absorção do CR-MF-001 na Sprint 9 é evidenciada pela entrega de RF13: os PR
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Aderência ao TPL-GPR-006: inclusão da classificação explícita do tipo de tratamento (Aditivo, §4), com justificativa coerente ao impacto de +10 h. Renumeração das seções subsequentes. |

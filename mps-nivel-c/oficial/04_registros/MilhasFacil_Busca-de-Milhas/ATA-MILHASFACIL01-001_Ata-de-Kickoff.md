@@ -13,7 +13,7 @@
 | **Canal** | Microsoft Teams |
 | **Facilitador** | Abraão (Timeware) |
 | **Gerente de Projeto** | Abraão |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 
 ---
 
@@ -78,7 +78,7 @@ O escopo macro acordado abrange os requisitos RF01 a RF15:
 | RF07 | Perfil GET/PATCH `/users/me` | S4 |
 | RF08 | Alertas via Spring Scheduler | S4 |
 | RF09 | Notificação WhatsApp (Z-API) | S7 |
-| RF10 | Assinaturas BASIC/PREMIUM/ENTERPRISE | S5 |
+| RF10 | Assinaturas BASIC/PRO/ENTERPRISE | S5 |
 | RF11 | Refresh token rotation | S5 |
 | RF12 | Logout com blacklist Redis (jti) | S8 |
 | RF13 | Filtros avançados (maxMiles / cabinType) | S9 |
@@ -147,3 +147,4 @@ Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os aces
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção do nome do plano de assinatura no RF10 (PREMIUM → PRO), alinhando ao enum real do código e ao REQ/PCP. |

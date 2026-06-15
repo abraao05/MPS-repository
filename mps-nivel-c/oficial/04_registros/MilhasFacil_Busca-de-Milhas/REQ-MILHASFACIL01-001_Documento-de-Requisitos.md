@@ -7,7 +7,7 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
@@ -79,7 +79,7 @@ A solução é composta por três serviços independentes: **API** (Spring Boot 
 | RNF01 | A busca de voos deve concluir em até 30 segundos. | `SearchService` aplica timeout de 40 s por companhia, mas o tempo de resposta observado mantém-se dentro de 30 s (média medida de 8,3 s). | Performance | Atendido |
 | RNF02 | A cobertura de testes deve ser de no mínimo 80%. | Cobertura medida por JaCoCo (API), Karma (Web) e pytest (Crawler), com gate de CI ativo a partir da Sprint 4 (pipeline da API exige JaCoCo ≥ 80%). | Qualidade | Atendido |
 | RNF03 | A segurança deve combinar BCrypt, JWT, Redis e CORS. | Senhas em BCrypt; JWT HS256 stateless (access 30 min / refresh 7 dias); blacklist de logout em Redis; CORS do Crawler restrito à origem da API; `SecurityConfig` com CSRF desabilitado e sessão STATELESS. | Segurança | Atendido |
-| RNF04 | Toda entrega deve ser rastreável por convenção de branches. | Branches seguem o padrão `feat/` e `fix/` com o código do cartão Jira (`MF-XX`); PR obrigatório para `develop` com aprovação do GP e gate de CI (branch policy de revisor ativa nos 3 repositórios). | Rastreabilidade | Atendido |
+| RNF04 | Toda entrega deve ser rastreável por convenção de branches. | Branches seguem o padrão `feat/` e `fix/` com o código do cartão Jira (`MF-XX`); PR obrigatório para `develop` com aprovação do Tech Lead e gate de CI (branch policy de revisor ativa nos 3 repositórios). | Rastreabilidade | Atendido |
 | RNF05 | A solução deve ser disponibilizável via Docker Compose. | Os três serviços (API, Web, Crawler) sobem por Docker Compose; janela de indisponibilidade de 3 h registrada na Sprint 6. | Disponibilidade | Atendido |
 
 ---
@@ -173,3 +173,4 @@ A GQA registrou a NC-001 (cobertura de testes abaixo de 80% — JaCoCo 74% na S2
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção do aprovador de PR no RNF04 (aprovação do GP → aprovação do Tech Lead), alinhando ao papel de revisor de PR (Cézar Velazquez) descrito nos demais documentos. |
