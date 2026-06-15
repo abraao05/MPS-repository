@@ -6,7 +6,7 @@
 | **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data de abertura** | 14/04/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
@@ -39,7 +39,7 @@ Desenvolver e entregar o serviço SensrJiraSync — uma solução .NET 8 executa
 |---|---|---|
 | Marcos Correa Fernandez Turnes (Sponsor / Patrocinador) | Validação dos requisitos, homologação e aceite formal das entregas | AASP |
 | Abraão Oliveira (Gerente de Projeto) | Alinhamento com o cliente, gestão das entregas e comunicação | Timeware Brasil |
-| Cezar Hiraki (Tech Lead / Arquiteto) | Decisões técnicas, arquitetura da solução e aprovação do design | Timeware Brasil |
+| Cezar Hiraki (Tech Lead / DevOps / Arquiteto) | Decisões técnicas, arquitetura da solução, aprovação do design e infraestrutura | Timeware Brasil |
 | Caroline Sousa (GQA Independente) | Verificação de aderência ao processo MPS-SW | Timeware Brasil |
 
 ## 4. Equipe do projeto
@@ -51,7 +51,7 @@ Desenvolver e entregar o serviço SensrJiraSync — uma solução .NET 8 executa
 | Desenvolvedor | Henry |
 | Desenvolvedor | Allan Alves |
 | Desenvolvedor | Felipe |
-| QA | Jonatan |
+| QA | Jonathan |
 | GQA (Independente) | Caroline Sousa |
 
 ## 5. Macroplanejamento (datas-alvo)
@@ -103,4 +103,5 @@ O projeto foi formalmente aberto em 14/04/2026 com a reunião de kickoff entre o
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Termo de abertura consolidado a partir do Registro de Projeto AASP_GOV v2.0 (08/06/2026). |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização da equipe do projeto: Henry substituiu Raony Chagas, Cézar Hiraki absorveu DevOps, Jonatan como QA, Caroline Sousa como GQA Independente, Felipe adicionado como Desenvolvedor. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização da equipe do projeto: Henry substituiu Raony Chagas, Cézar Hiraki absorveu DevOps, Jonathan como QA, Caroline Sousa como GQA Independente, Felipe adicionado como Desenvolvedor. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel de Cezar Hiraki corrigido para Tech Lead / DevOps / Arquiteto na tabela de stakeholders; Jonathan (QA) corrigido de grafia anterior. |

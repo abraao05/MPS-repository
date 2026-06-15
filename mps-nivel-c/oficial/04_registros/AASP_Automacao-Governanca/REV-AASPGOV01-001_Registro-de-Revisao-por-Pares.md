@@ -5,7 +5,7 @@
 | **Documento / Referência** | REV-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
 | **Item revisado** | Código-fonte dos serviços SensrService, JiraService, SyncService, HtmlHelper, StatusMapper e correções dos defeitos BUG-01 a BUG-05 |
-| **Data** | 02/06/2026 |
+| **Data** | 15/06/2026 |
 
 ---
 
@@ -19,7 +19,7 @@ A revisão por pares no projeto AASP_Automacao-Governanca é conduzida exclusiva
 |---|---|
 | Autor principal | Henry (Desenvolvedor) |
 | Autor de suporte | Allan Alves (Desenvolvedor) |
-| Revisor principal | Cezar Hiraki (Tech Lead / Arquiteto) |
+| Revisor principal | Cezar Hiraki (Tech Lead / DevOps / Arquiteto) |
 | Revisor adicional | Membro da equipe distinto do autor (rotativo por PR) |
 
 ## 3. Itens revisados (representativos)
@@ -57,3 +57,4 @@ A revisão por pares no projeto AASP_Automacao-Governanca é conduzida exclusiva
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro da prática de revisão por pares consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Autores atualizados: Henry substituiu Raony Chagas como autor principal. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel de Cezar Hiraki atualizado para Tech Lead / DevOps / Arquiteto; Jonathan (QA) corrigido de grafia anterior. |

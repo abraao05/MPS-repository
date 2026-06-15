@@ -28,7 +28,7 @@ Verificação de aderência ao processo-padrão (PRO-GPC-001) e de existência, 
 | 5 | Decisões relevantes registradas com análise formal (gatilhos GDE) | ✅ Conforme | GDE-AASPGOV01-001 — D01 a D07 documentados |
 | 6 | Acompanhamento do projeto registrado | ✅ Conforme | RAC-AASPGOV01-001 — Sprint 0 a Sprint 3 |
 | 7 | Medição realizada e resultados comunicados conforme PLA-MED-001 | ✅ Conforme | MED-AASPGOV01-001 — M1 a M7 apuradas e comunicadas |
-| 8 | Capacitação e transferência de conhecimento documentadas | ✅ Conforme | CAP-AASPGOV01-001 — onboarding Allan Alves e Jonatan registrados |
+| 8 | Capacitação e transferência de conhecimento documentadas | ✅ Conforme | CAP-AASPGOV01-001 — onboarding Allan Alves e Jonathan registrados |
 | 9 | Estratégia de integração documentada e critérios de prontidão aplicados | ✅ Conforme | ITP-AASPGOV01-001 — ITP2 a ITP6 cobertos |
 | 10 | Revisão por pares realizada e registrada | ✅ Conforme | REV-AASPGOV01-001 — PRs revisados por Cezar Hiraki em todas as fases |
 | 11 | Aceite formal do cliente registrado em ata | ✅ Conforme | ATA-AASPGOV01-003 (29/05/2026) + ATA-AASPGOV01-004 (02/06/2026) |
@@ -93,4 +93,5 @@ Nenhum desvio identificado. Todos os produtos de trabalho verificados existem, e
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de verificação de GQA de encerramento do projeto AASP_Automacao-Governanca, conduzido por Jonathan Alves (auditor independente). |
 | 1.1 | 13/06/2026 | Time de Melhoria Contínua | Adicionado item 23 (GEST-AASPGOV01 xlsx) à tabela de produtos de trabalho; atualizada contagem §3 item 1 de 24 para 23 artefatos (após remoção do CR — INTAKE-AASPGOV01 Bloco 10); atualizado resultado §5 de 22/22 para 23/23. |
-| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Auditor GQA atualizado: Caroline Sousa (GQA Independente) substituiu Jonathan Alves; referência de onboarding atualizada para Jonatan (QA). |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Auditor GQA atualizado: Caroline Sousa (GQA Independente) substituiu Jonathan Alves; referência de onboarding atualizada para Jonathan (QA). |
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Jonathan (QA) corrigido de grafia anterior. |

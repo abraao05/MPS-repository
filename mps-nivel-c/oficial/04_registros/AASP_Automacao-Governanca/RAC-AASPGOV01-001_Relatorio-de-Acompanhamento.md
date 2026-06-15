@@ -59,7 +59,7 @@ Nas Sprints 1 e 2 (27/04 a 22/05), o time entregou o núcleo do serviço SensrJi
 | Item / marco | Data prevista | Observação |
 |---|---|---|
 | Início da Sprint 3 — Homologação | 25/05/2026 | Foco: validação E2E em ambiente real Sensr/Jira |
-| Validação dos critérios CA01–CA07 | 25/05 – 29/05/2026 | Jonatan (QA) entra a partir de 21/05 |
+| Validação dos critérios CA01–CA07 | 25/05 – 29/05/2026 | Jonathan (QA) entra a partir de 21/05 |
 | Reunião de validação de homologação | 29/05/2026 | Sponsor + QA + Tech Lead — ATA-AASPGOV01-003 prevista |
 | Aceite formal e encerramento | 02/06/2026 | TAE-AASPGOV01-001 + ATA-AASPGOV01-004 |
 
@@ -86,7 +86,7 @@ Nas Sprints 1 e 2 (27/04 a 22/05), o time entregou o núcleo do serviço SensrJi
 **Início da homologação em ambiente real** — 🟡 Médio
 - **Ponto:** Sprint 3 vai testar pela primeira vez o fluxo completo contra APIs reais do Sensr e do Jira.
 - **Risco:** identificação de incompatibilidades não previstas (campos opcionais, status indisponíveis no workspace, paginação em projetos grandes).
-- **Ação:** Jonatan (QA) iniciou em 21/05 com foco em rodadas de homologação em workspace de teste; Tech Lead em standby para correções rápidas; janela de 1 semana até a validação formal em 29/05.
+- **Ação:** Jonathan (QA) iniciou em 21/05 com foco em rodadas de homologação em workspace de teste; Tech Lead em standby para correções rápidas; janela de 1 semana até a validação formal em 29/05.
 
 **Identificação dos cards por `#ID` no summary** — 🟢 Baixo
 - **Ponto:** estratégia depende do summary começar com `#ID` — cards criados manualmente no Jira não terão esse prefixo.
@@ -124,4 +124,5 @@ Nas Sprints 1 e 2 (27/04 a 22/05), o time entregou o núcleo do serviço SensrJi
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 25/05/2026 | Time de Melhoria Contínua | Relatório de acompanhamento do ponto de controle Sprints 1+2 do projeto AASP_GOV, seguindo TPL-GPR-005 v2.1. |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos responsáveis: Jonatan substituiu Caroline Sousa como QA nas referências de acompanhamento. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos responsáveis: Jonathan substituiu Caroline Sousa como QA nas referências de acompanhamento. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Jonathan (QA) corrigido de grafia anterior. |

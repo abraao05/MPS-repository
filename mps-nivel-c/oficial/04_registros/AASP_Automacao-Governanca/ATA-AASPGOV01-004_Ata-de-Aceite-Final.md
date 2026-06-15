@@ -16,8 +16,8 @@
 |---|---|---|
 | Marcos Correa Fernandez Turnes | Sponsor / Patrocinador | AASP |
 | Abraão Oliveira | Gerente de Projeto | Timeware |
-| Cezar Hiraki | Tech Lead / Arquiteto | Timeware |
-| Jonatan | QA | Timeware |
+| Cezar Hiraki | Tech Lead / DevOps / Arquiteto | Timeware |
+| Jonathan | QA | Timeware |
 
 ## 2. Pauta
 
@@ -29,7 +29,7 @@
 
 ## 3. Discussões e definições
 
-O QA Jonatan apresentou os resultados da homologação executada nas últimas duas semanas: os 12 cenários de teste (CT-01 a CT-12, sendo 8 happy path e 4 sad path) foram executados em ambiente real Sensr e workspace Jira de teste da AASP, com 100% de aprovação após as correções da Sprint 3. O Tech Lead Cezar Hiraki demonstrou ao Sponsor, em tempo real, a execução do serviço SensrJiraSync em um projeto piloto: a primeira execução criou os Epics, Tasks e Subtasks correspondentes; a segunda execução, sem nenhuma mudança no Sensr, não criou nenhum card adicional (validando a idempotência); na terceira execução, após uma transição de status manual no Sensr (TODO → DOING), o card correspondente no Jira teve o status atualizado automaticamente para In Progress. O Sponsor verificou pessoalmente a fidelidade dos campos migrados (descrição, labels, responsáveis, histórico como comentários) e confirmou que o resultado atende plenamente à necessidade operacional da AASP.
+O QA Jonathan apresentou os resultados da homologação executada nas últimas duas semanas: os 12 cenários de teste (CT-01 a CT-12, sendo 8 happy path e 4 sad path) foram executados em ambiente real Sensr e workspace Jira de teste da AASP, com 100% de aprovação após as correções da Sprint 3. O Tech Lead Cezar Hiraki demonstrou ao Sponsor, em tempo real, a execução do serviço SensrJiraSync em um projeto piloto: a primeira execução criou os Epics, Tasks e Subtasks correspondentes; a segunda execução, sem nenhuma mudança no Sensr, não criou nenhum card adicional (validando a idempotência); na terceira execução, após uma transição de status manual no Sensr (TODO → DOING), o card correspondente no Jira teve o status atualizado automaticamente para In Progress. O Sponsor verificou pessoalmente a fidelidade dos campos migrados (descrição, labels, responsáveis, histórico como comentários) e confirmou que o resultado atende plenamente à necessidade operacional da AASP.
 
 ## 4. Decisões e aceites
 
@@ -63,4 +63,5 @@ Após a publicação em produção em 02/06/2026, inicia-se o período de suport
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata da reunião de aceite final do projeto AASP_GOV em 02/06/2026, com participação do Sponsor da AASP, do Gerente de Projeto, do Tech Lead e do QA. |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos participantes e responsáveis pelas ações: Jonatan substituiu Caroline Sousa como QA, Cézar Hiraki substituiu Lucas Batista nas ações de deploy, Caroline Sousa assume GQA Independente. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos participantes e responsáveis pelas ações: Jonathan substituiu Caroline Sousa como QA, Cézar Hiraki substituiu Lucas Batista nas ações de deploy, Caroline Sousa assume GQA Independente. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel de Cezar Hiraki atualizado para Tech Lead / DevOps / Arquiteto na tabela de participantes; Jonathan (QA) corrigido de grafia anterior. |

@@ -7,7 +7,7 @@
 | **Código do projeto** | AASPGOV01 |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 15/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza a produção das evidências do projeto; não é, ele próprio, evidência auditável pela ASR. |
 | **Fonte consolidada** | `AASP_AutomacaoGovernanca_Registro_de_Projeto` v2.0 (08/06/2026) |
@@ -90,7 +90,7 @@ A produção segue três ondas, da maior para a menor prontidão de insumo.
 | Desenvolvedor | Henry |
 | Desenvolvedor | Allan Alves |
 | Desenvolvedor | Felipe |
-| QA | Jonatan |
+| QA | Jonathan |
 | GQA (Independente) | Caroline Sousa |
 
 ### Cliente
@@ -128,4 +128,5 @@ A produção segue três ondas, da maior para a menor prontidão de insumo.
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Criação do índice-mestre de registros do projeto AASPGOV01 a partir do documento-fonte consolidado v2.0 (08/06/2026). Onda 1 parcial gerada (INDICE + TAP + PLA + ADAP); demais artefatos delegados ou em produção. |
 | 1.1 | 13/06/2026 | Time de Melhoria Contínua | Todos os 23 artefatos confirmados no repositório. CR removido do índice — INTAKE-AASPGOV01 (Bloco 10) confirma ausência de Change Request. Status geral atualizado para ✅. |
-| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Atualização da composição da equipe: Henry substituiu Raony Chagas, Cézar Hiraki absorveu papel de DevOps (excluindo Lucas Batista), Jonatan assume papel de QA, Caroline Sousa assume papel de GQA Independente, Felipe adicionado como Desenvolvedor. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Atualização da composição da equipe: Henry substituiu Raony Chagas, Cézar Hiraki absorveu papel de DevOps (excluindo Lucas Batista), Jonathan assume papel de QA, Caroline Sousa assume papel de GQA Independente, Felipe adicionado como Desenvolvedor. |
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Jonathan (QA) corrigido de grafia anterior em toda a documentação. |

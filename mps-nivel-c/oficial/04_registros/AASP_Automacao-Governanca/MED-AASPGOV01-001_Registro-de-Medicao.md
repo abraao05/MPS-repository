@@ -49,7 +49,7 @@ Indicadores complementares às medidas M1–M7, definidos em função dos objeti
 | Fase 1 — Arquitetura | 14/04 – 16/04/2026 | 16 | 16 | 0% | Cezar Hiraki |
 | Fase 2 — Mapeamento e Autenticação | 17/04 – 23/04/2026 | 40 | 44 | +10% | Henry / Allan Alves |
 | Fase 3 — Desenvolvimento dos Serviços | 24/04 – 20/05/2026 | 120 | 128 | +6,7% | Henry / Allan Alves |
-| Fase 4 — Homologação e Correções | 21/05 – 02/06/2026 | 40 | 48 | +20% | Henry / Jonatan |
+| Fase 4 — Homologação e Correções | 21/05 – 02/06/2026 | 40 | 48 | +20% | Henry / Jonathan |
 | **Total do projeto** | **14/04 – 02/06/2026** | **216** | **236** | **+9,3%** | — |
 
 O esforço foi modelado retroativamente em aproximadamente 59 Story Points distribuídos em 4 sprints (velocity média de 15 SP/sprint), para fins de gestão ágil e carga no Jira. Conversão aplicada: 1 SP = 4 h. Distribuição por sprint: Sprint 0 (15 SP) · Sprint 1 (16 SP) · Sprint 2 (16 SP) · Sprint 3 (12 SP). Referência: GEST-AASPGOV01_Planilha-de-Gestao-do-Projeto.xlsx (abas Backlog, Tarefas e Acompanhamento).
@@ -86,4 +86,5 @@ Conforme PLA-MED-001 §7, os resultados das medidas M1–M7 e os indicadores esp
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de medição consolidado a partir do Registro de Projeto AASP_GOV v2.0 e alinhado ao PLA-MED-001 v1.3 (05/06/2026). |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos responsáveis principais por fase: Henry substituiu Raony Chagas nas Fases 2, 3 e 4; Jonatan substituiu Caroline Sousa na Fase 4. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos responsáveis principais por fase: Henry substituiu Raony Chagas nas Fases 2, 3 e 4; Jonathan substituiu Caroline Sousa na Fase 4. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Jonathan (QA) corrigido de grafia anterior. |

@@ -15,7 +15,7 @@
 | Nome | Papel | Organização |
 |---|---|---|
 | Abraão Oliveira | Gerente de Projeto | Timeware |
-| Cezar Hiraki | Tech Lead / Arquiteto | Timeware |
+| Cezar Hiraki | Tech Lead / DevOps / Arquiteto | Timeware |
 | Henry | Desenvolvedor | Timeware |
 | Allan Alves | Desenvolvedor | Timeware |
 
@@ -50,7 +50,7 @@ Por fim, o Tech Lead confirmou que a API Jira v3 exige o uso do Atlassian Docume
 |---|---|---|
 | Implementar SensrService com mecanismo de login por desenvolvedor e gestão de tokens JWT | Henry | Mai/2026 |
 | Implementar JiraService incluindo método BuildAdfDocument para campos de texto rico | Henry / Allan Alves | Mai/2026 |
-| Preparar estrutura de testes e cenários para uso na Fase 4 de Homologação | Jonatan | Mai/2026 |
+| Preparar estrutura de testes e cenários para uso na Fase 4 de Homologação | Jonathan | Mai/2026 |
 | Provisionar ambiente de integração para execução dos serviços durante a Fase 3 | Cezar Hiraki | 24/04/2026 |
 
 ## 6. Próximos passos
@@ -64,4 +64,5 @@ Início da Fase 3 — Desenvolvimento dos Serviços (24/04 a 20/05/2026), com im
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata reconstituída a partir do Registro de Projeto AASP_GOV v2.0. |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos participantes e responsáveis pelas ações: Henry substituiu Raony Chagas, Cézar Hiraki substituiu Lucas Batista, Jonatan substituiu Caroline Sousa nas ações de preparação de testes. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos participantes e responsáveis pelas ações: Henry substituiu Raony Chagas, Cézar Hiraki substituiu Lucas Batista, Jonathan substituiu Caroline Sousa nas ações de preparação de testes. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel de Cezar Hiraki atualizado para Tech Lead / DevOps / Arquiteto na tabela de participantes; Jonathan (QA) corrigido de grafia anterior. |

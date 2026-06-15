@@ -15,7 +15,7 @@
 | Nome | Papel | Organização |
 |---|---|---|
 | Abraão Oliveira | Gerente de Projeto | Timeware |
-| Cezar Hiraki | Tech Lead / Arquiteto | Timeware |
+| Cezar Hiraki | Tech Lead / DevOps / Arquiteto | Timeware |
 | Marcos Correa Fernandez Turnes | Sponsor / Patrocinador | AASP |
 
 ## 2. Pauta
@@ -31,7 +31,7 @@ O Gerente de Projeto apresentou o escopo completo do SensrJiraSync: serviço .NE
 
 O Tech Lead Cezar Hiraki apresentou a proposta de arquitetura em três camadas — Core, Infrastructure e App —, fundamentada na necessidade de separar contratos e modelos de domínio da implementação concreta, permitindo substituição de serviços sem impacto na lógica de negócio (D01). O Sponsor validou a abordagem e manifestou concordância com a duração estimada de aproximadamente sete semanas, compreendendo quatro fases: Arquitetura (14/04–16/04), Mapeamento e Autenticação (17/04–23/04), Desenvolvimento dos Serviços (24/04–20/05) e Homologação e Correções (21/05–02/06/2026).
 
-A equipe Timeware foi formalmente apresentada ao Sponsor: além do Gerente de Projeto e do Tech Lead, compõem o time Henry (Desenvolvedor), Allan Alves (Desenvolvedor), Felipe (Desenvolvedor), Jonatan (QA) e Caroline Sousa (GQA Independente). O Sponsor declarou que o critério determinante para o aceite final será a fidelidade da migração e da sincronização de status verificada em ambiente real.
+A equipe Timeware foi formalmente apresentada ao Sponsor: além do Gerente de Projeto e do Tech Lead, compõem o time Henry (Desenvolvedor), Allan Alves (Desenvolvedor), Felipe (Desenvolvedor), Jonathan (QA) e Caroline Sousa (GQA Independente). O Sponsor declarou que o critério determinante para o aceite final será a fidelidade da migração e da sincronização de status verificada em ambiente real.
 
 ## 4. Decisões e aceites
 
@@ -62,3 +62,4 @@ Execução da Fase 1 — Arquitetura (14/04 a 16/04/2026), com entrega da estrut
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata reconstituída a partir do Registro de Projeto AASP_GOV v2.0. |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização da composição da equipe apresentada ao Sponsor e responsável pela ação de provisionamento de acessos. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel de Cezar Hiraki atualizado para Tech Lead / DevOps / Arquiteto na tabela de participantes; Jonathan (QA) corrigido de grafia anterior. |

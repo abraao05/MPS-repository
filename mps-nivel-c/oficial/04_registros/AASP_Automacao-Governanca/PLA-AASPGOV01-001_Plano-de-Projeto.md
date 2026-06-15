@@ -107,7 +107,7 @@ Referência de capacidade: 168 h/mês disponíveis por pessoa (21 dias × 8 h); 
 
 ## 6. Recursos (GPR 6, 7)
 
-- **Equipe:** Abraão Oliveira (Gerente de Projeto, todas as fases); Cezar Hiraki (Tech Lead/DevOps/Arquiteto, todas as fases); Henry (Desenvolvedor, todas as fases); Allan Alves (Desenvolvedor, Fases 2–4); Felipe (Desenvolvedor, Fases 2–4); Jonatan (QA, Fase 4); Caroline Sousa (GQA Independente, encerramento).
+- **Equipe:** Abraão Oliveira (Gerente de Projeto, todas as fases); Cezar Hiraki (Tech Lead/DevOps/Arquiteto, todas as fases); Henry (Desenvolvedor, todas as fases); Allan Alves (Desenvolvedor, Fases 2–4); Felipe (Desenvolvedor, Fases 2–4); Jonathan (QA, Fase 4); Caroline Sousa (GQA Independente, encerramento).
 - **Ambiente e ferramentas:**
   - **Controle de versão / CI/CD:** Azure DevOps (repositório `SensrJiraSync` + pipeline)
   - **Hospedagem do serviço:** Azure (Scheduled Job em ambiente Windows)
@@ -143,10 +143,10 @@ Referência de capacidade: 168 h/mês disponíveis por pessoa (21 dias × 8 h); 
 
 | Critério | Obrigatório? | Verificado por |
 |---|---|---|
-| Todos os defeitos críticos (S1) resolvidos | Sim | Jonatan (QA) / Abraão Oliveira |
+| Todos os defeitos críticos (S1) resolvidos | Sim | Jonathan (QA) / Abraão Oliveira |
 | Homologação aprovada pelo cliente | Sim | Marcos Correa Fernandez Turnes |
 | Documentação de entrega completa (appsettings, endpoints, troubleshooting) | Sim | Cezar Hiraki (Tech Lead) |
-| Cenários CT-01 a CT-12 aprovados | Sim | Jonatan (QA) |
+| Cenários CT-01 a CT-12 aprovados | Sim | Jonathan (QA) |
 | Baseline de configuração registrada (tag de versão) | Sim | Cezar Hiraki (DevOps) |
 | Credenciais e permissões de produção confirmadas | Sim | Cezar Hiraki (DevOps) |
 | Aceite formal do Sponsor registrado em ata | Sim | Abraão Oliveira (GP) |
@@ -212,4 +212,5 @@ O projeto é viável: o esforço estimado (216 h, ~59 SP) é compatível com a d
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Plano consolidado a partir do Registro de Projeto AASP_GOV v2.0 (08/06/2026), seguindo TPL-GPR-001 v1.2. |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização da equipe, responsáveis pelo deploy e critérios de prontidão: Henry substituiu Raony Chagas, Cézar Hiraki absorveu DevOps (Lucas Batista), Jonatan como QA, Caroline Sousa como GQA Independente, Felipe adicionado. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização da equipe, responsáveis pelo deploy e critérios de prontidão: Henry substituiu Raony Chagas, Cézar Hiraki absorveu DevOps (Lucas Batista), Jonathan como QA, Caroline Sousa como GQA Independente, Felipe adicionado. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Jonathan (QA) corrigido de grafia anterior. |

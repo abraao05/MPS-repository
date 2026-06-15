@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | CAP-AASPGOV01-001 — Registro de Capacitação da Equipe |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 15/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
@@ -24,14 +24,14 @@ Registrar a composição da equipe alocada ao projeto AASP_Automacao-Governanca,
 | Henry — Desenvolvedor | 14/04/2026 – 02/06/2026 | Todas |
 | Allan Alves — Desenvolvedor | 17/04/2026 – 02/06/2026 | 2, 3, 4 |
 | Felipe — Desenvolvedor | 17/04/2026 – 02/06/2026 | 2, 3, 4 |
-| Jonatan — QA | 21/05/2026 – 02/06/2026 | 4 |
+| Jonathan — QA | 21/05/2026 – 02/06/2026 | 4 |
 | Caroline Sousa — GQA (Independente) | 02/06/2026 | Auditoria final |
 
 ## 3. Integração formal de membros ao time
 
 Em **17/04/2026**, o Desenvolvedor Allan Alves foi incorporado ao time para auxiliar nas atividades de mapeamento de APIs e desenvolvimento, a partir da Fase 2. A integração foi conduzida na reunião de alinhamento técnico registrada em ATA-AASPGOV01-002, na qual foram apresentados a estrutura da solução em 3 camadas (Core / Infrastructure / App), o mapeamento completo dos endpoints das APIs Sensr e Jira v3, a estratégia de autenticação JWT por desenvolvedor (D02) e o modelo de mapeamento de entidades Sensr → Jira. O onboarding permitiu a atuação imediata de Allan Alves nas atividades de desenvolvimento da Fase 3 em parceria com Henry.
 
-Em **21/05/2026**, o QA Jonatan foi incorporado ao time para condução da Fase 4 de Homologação. O briefing de entrada cobriu os critérios de aceite CA01 a CA07, os 12 cenários de teste planejados no VV-AASPGOV01-001 (CT-01 a CT-12), e a estratégia de homologação executada diretamente em ambiente real Sensr / Jira (sem uso de mocks), conforme ADAP-AASPGOV01-001. A integração foi conduzida pelo Gerente de Projeto e pelo Tech Lead, garantindo plena capacidade de execução dos testes a partir do primeiro dia da Fase 4.
+Em **21/05/2026**, o QA Jonathan foi incorporado ao time para condução da Fase 4 de Homologação. O briefing de entrada cobriu os critérios de aceite CA01 a CA07, os 12 cenários de teste planejados no VV-AASPGOV01-001 (CT-01 a CT-12), e a estratégia de homologação executada diretamente em ambiente real Sensr / Jira (sem uso de mocks), conforme ADAP-AASPGOV01-001. A integração foi conduzida pelo Gerente de Projeto e pelo Tech Lead, garantindo plena capacidade de execução dos testes a partir do primeiro dia da Fase 4.
 
 ## 4. Práticas de transferência de conhecimento
 
@@ -54,4 +54,5 @@ A equipe já atuava com as tecnologias centrais do projeto (.NET 8, Azure DevOps
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de capacitação consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização da composição da equipe: Henry substituiu Raony Chagas, Cézar absorveu DevOps, Felipe adicionado como Desenvolvedor, Jonatan como QA, Caroline Sousa como GQA Independente. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização da composição da equipe: Henry substituiu Raony Chagas, Cézar absorveu DevOps, Felipe adicionado como Desenvolvedor, Jonathan como QA, Caroline Sousa como GQA Independente. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Jonathan (QA) corrigido de grafia anterior. |
