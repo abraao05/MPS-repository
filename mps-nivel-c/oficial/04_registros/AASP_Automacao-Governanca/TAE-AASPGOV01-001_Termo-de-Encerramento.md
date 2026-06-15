@@ -1,11 +1,11 @@
-# Termo de Encerramento e Aceite do Projeto — AASP_GOV · SensrJiraSync
+# Termo de Encerramento e Aceite do Projeto — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
 | **Documento** | TAE-AASPGOV01-001 |
-| **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
+| **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data de encerramento** | 02/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
@@ -14,7 +14,7 @@
 
 ## 1. Resumo do projeto
 
-O projeto AASP_GOV entregou o serviço **SensrJiraSync**: uma solução .NET 8 executada como Azure Scheduled Job que realiza migração automatizada de cards do Sensr para o Jira e mantém a sincronização incremental de status entre as duas plataformas durante o período de transição da AASP. O escopo cobriu 11 requisitos funcionais (RF-01 a RF-11) e 6 requisitos não funcionais (RNF-01 a RNF-06), executados em 4 sprints de 2 semanas (~59 SP), entre 14/04/2026 e 02/06/2026.
+O projeto AASP_Automacao-Governanca entregou o serviço **SensrJiraSync**: uma solução .NET 8 executada como Azure Scheduled Job que realiza migração automatizada de cards do Sensr para o Jira e mantém a sincronização incremental de status entre as duas plataformas durante o período de transição da AASP. O escopo cobriu 11 requisitos funcionais (RF-01 a RF-11) e 6 requisitos não funcionais (RNF-01 a RNF-06), executados em 4 sprints de 2 semanas (~59 SP), entre 14/04/2026 e 02/06/2026.
 
 A solução elimina o trabalho manual de migração de cards entre as duas ferramentas e garante a consistência de status durante a transição gradual, preservando hierarquia (Projeto → Epic, Atividade → Task, Sub-atividade → Subtask), descrição, status, responsáveis, labels e histórico de alterações.
 
@@ -40,7 +40,7 @@ A solução elimina o trabalho manual de migração de cards entre as duas ferra
 | Arquitetura em 3 camadas (RNF-04) | ✅ Concluída | Core / Infrastructure / App (Decisão D01) |
 | Segurança de credenciais (RNF-05) | ✅ Concluída | `appsettings.json` fora do repositório |
 | Compatibilidade .NET 8 / Azure (RNF-06) | ✅ Concluída | Publicação self-contained validada |
-| 12 cenários de teste Gherkin (CT-01 a CT-12) | ✅ Concluídos | 8 happy + 4 sad; 100% aprovados após correção dos 5 bugs |
+| 12 cenários de teste Gherkin (CT-01 a CT-12) | ✅ Concluídos | 9 happy + 3 sad; 100% aprovados após correção dos 5 bugs |
 | Documentação técnica de entrega (appsettings, endpoints, troubleshooting) | ✅ Concluída | Material de apoio entregue ao cliente |
 
 ## 3. Escopo: planejado × realizado
@@ -108,4 +108,5 @@ Detalhamento expandido das lições aprendidas em LI-AASPGOV01-001.
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Termo de Encerramento e Aceite do projeto AASP_GOV emitido em 02/06/2026 com aceite formal do Sponsor (Marcos Correa Fernandez Turnes), consolidado a partir do Registro de Projeto AASP_GOV v2.0 (08/06/2026). |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Termo de Encerramento e Aceite do projeto AASP_Automacao-Governanca emitido em 02/06/2026 com aceite formal do Sponsor (Marcos Correa Fernandez Turnes), consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção de consistência: contagem de cenários alinhada ao VV/REL-VV (9 happy + 3 sad); padronização do nome do projeto. |

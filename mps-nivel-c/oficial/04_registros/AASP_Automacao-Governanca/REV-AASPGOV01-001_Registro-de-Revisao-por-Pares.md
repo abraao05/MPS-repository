@@ -1,4 +1,4 @@
-# Registro de Revisão por Pares — AASP_GOV · SensrJiraSync
+# Registro de Revisão por Pares — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
@@ -55,4 +55,4 @@ A revisão por pares no projeto AASP_Automacao-Governanca é conduzida exclusiva
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro da prática de revisão por pares consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro da prática de revisão por pares consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |

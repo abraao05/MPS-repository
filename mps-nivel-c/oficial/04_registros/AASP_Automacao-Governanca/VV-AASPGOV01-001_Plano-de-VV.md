@@ -1,4 +1,4 @@
-# Plano de Verificação e Validação — AASP_GOV · SensrJiraSync
+# Plano de Verificação e Validação — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
@@ -177,4 +177,4 @@ Funcionalidade: Migração e sincronização de cards entre Sensr e Jira
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Plano de V&V consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Plano de V&V consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |

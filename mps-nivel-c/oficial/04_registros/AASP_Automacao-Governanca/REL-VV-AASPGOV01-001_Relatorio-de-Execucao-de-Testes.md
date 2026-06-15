@@ -1,4 +1,4 @@
-# Relatório de Execução de Testes — AASP_GOV · SensrJiraSync
+# Relatório de Execução de Testes — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
@@ -63,4 +63,4 @@ A validação com o Sponsor em ambiente real, com verificação direta de migra�
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Relatório de execução de testes consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Relatório de execução de testes consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |

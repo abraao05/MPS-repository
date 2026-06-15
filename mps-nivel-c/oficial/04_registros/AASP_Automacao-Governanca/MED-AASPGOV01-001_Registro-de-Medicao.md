@@ -1,4 +1,4 @@
-# Registro de Medição — AASP_GOV · SensrJiraSync
+# Registro de Medição — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
@@ -18,7 +18,7 @@ Registrar os resultados de medição do projeto AASP_Automacao-Governanca — Se
 
 ## 2. Indicadores M1–M7 do PLA-MED-001
 
-| Medida | Objetivo | Meta | Resultado AASP_GOV | Status |
+| Medida | Objetivo | Meta | Resultado AASP_Automacao-Governanca | Status |
 |---|---|---|---|---|
 | M1 — Aderência ao prazo | OM1 — Aumentar a previsibilidade de prazo e esforço | ≤ 5% de desvio | 0% — entregue em 02/06/2026 conforme data prevista no TAP-AASPGOV01-001 | Atingida |
 | M2 — Esforço estimado × realizado | OM1 | ≤ 10% de desvio | +9,3% — 216 h estimadas → 236 h realizadas | Atingida |
@@ -65,7 +65,7 @@ O esforço foi modelado retroativamente em aproximadamente 59 Story Points distr
 
 - **AC-01:** Adoção de fator de estimativa mais conservador (+30% sobre baseline) para a fase de mapeamento de APIs externas com formatos proprietários (ex.: ADF da Atlassian) em projetos futuros. Ação incorporada ao PLA-GPR-001 (Plano de Gerência de Projetos organizacional) como ajuste de template de estimativa para projetos de integração com APIs Atlassian.
 
-- **AC-02:** Inclusão de cenário de teste obrigatório para tratamento de HTML e sanitização de campos em projetos de migração ou integração com sistemas que armazenam conteúdo em HTML. Ação incorporada ao TPL-VV-001 §6 como cenário Gherkin de referência (modelo baseado em CT-05 e CT-10 do AASP_GOV).
+- **AC-02:** Inclusão de cenário de teste obrigatório para tratamento de HTML e sanitização de campos em projetos de migração ou integração com sistemas que armazenam conteúdo em HTML. Ação incorporada ao TPL-VV-001 §6 como cenário Gherkin de referência (modelo baseado em CT-05 e CT-10 do AASP_Automacao-Governanca).
 
 ## 7. Comunicação dos resultados
 
@@ -75,7 +75,7 @@ Conforme PLA-MED-001 §7, os resultados das medidas M1–M7 e os indicadores esp
 
 - **Ao cliente (Sponsor AASP):** na reunião de Validação de Homologação de 29/05/2026 (ATA-AASPGOV01-003), com apresentação dos resultados dos critérios de aceite CA01–CA07 e dos defeitos identificados e corrigidos; e no Termo de Aceite e Encerramento TAE-AASPGOV01-001 (02/06/2026), assinado por Marcos Correa Fernandez Turnes.
 
-- **À organização Timeware:** os indicadores M1–M7 do projeto AASP_GOV foram consolidados no REG-MED-001 (Repositório Organizacional de Medidas), alimentando a base de dados histórica de projetos para calibração de estimativas futuras.
+- **À organização Timeware:** os indicadores M1–M7 do projeto AASP_Automacao-Governanca foram consolidados no REG-MED-001 (Repositório Organizacional de Medidas), alimentando a base de dados histórica de projetos para calibração de estimativas futuras.
 
 - **Ao Auditor GQA:** os resultados foram disponibilizados para verificação independente pelo Auditor Jonathan Alves, registrados em GQA-AASPGOV01-001. A auditoria confirmou conformidade com o processo MED do MR-MPS-SW:2024 Nível C.
 
@@ -85,4 +85,4 @@ Conforme PLA-MED-001 §7, os resultados das medidas M1–M7 e os indicadores esp
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de medição consolidado a partir do Registro de Projeto AASP_GOV v2.0 e alinhado ao PLA-MED-001 v1.3 (05/06/2026). |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de medição consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 e alinhado ao PLA-MED-001 v1.3 (05/06/2026). |

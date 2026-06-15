@@ -1,8 +1,8 @@
-# Relatório de Acompanhamento (Status Report) — AASP_GOV · SensrJiraSync
+# Relatório de Acompanhamento (Status Report) — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
-| **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
+| **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Período de referência** | Sprints 1 e 2 · 27/04/2026 – 22/05/2026 |
 | **Data do relatório** | 25/05/2026 |
@@ -123,4 +123,4 @@ Nas Sprints 1 e 2 (27/04 a 22/05), o time entregou o núcleo do serviço SensrJi
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 25/05/2026 | Time de Melhoria Contínua | Relatório de acompanhamento do ponto de controle Sprints 1+2 do projeto AASP_GOV, seguindo TPL-GPR-005 v2.1. |
+| 1.0 | 25/05/2026 | Time de Melhoria Contínua | Relatório de acompanhamento do ponto de controle Sprints 1+2 do projeto AASP_Automacao-Governanca, seguindo TPL-GPR-005 v2.1. |

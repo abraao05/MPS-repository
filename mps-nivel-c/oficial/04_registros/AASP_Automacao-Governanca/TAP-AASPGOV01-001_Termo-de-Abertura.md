@@ -1,9 +1,9 @@
-# Termo de Abertura do Projeto — AASP_GOV · SensrJiraSync
+# Termo de Abertura do Projeto — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
 | **Documento** | TAP-AASPGOV01-001 |
-| **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
+| **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Versão** | 1.0 |
@@ -101,4 +101,4 @@ O projeto foi formalmente aberto em 14/04/2026 com a reunião de kickoff entre o
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Termo de abertura consolidado a partir do Registro de Projeto AASP_GOV v2.0 (08/06/2026). |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Termo de abertura consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026). |

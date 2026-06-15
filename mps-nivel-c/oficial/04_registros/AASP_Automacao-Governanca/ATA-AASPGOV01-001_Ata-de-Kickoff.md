@@ -60,4 +60,4 @@ Execução da Fase 1 — Arquitetura (14/04 a 16/04/2026), com entrega da estrut
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata reconstituída a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata reconstituída a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |

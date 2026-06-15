@@ -1,14 +1,14 @@
-# Índice de Registros do Projeto — AASP_GOV
+# Índice de Registros do Projeto — AASP_Automacao-Governanca
 
 | Campo | Valor |
 |---|---|
 | **Documento** | INDICE-AASPGOV01-001 |
-| **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
+| **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Código do projeto** | AASPGOV01 |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.1 |
-| **Data** | 13/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 15/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza a produção das evidências do projeto; não é, ele próprio, evidência auditável pela ASR. |
 | **Fonte consolidada** | `AASP_AutomacaoGovernanca_Registro_de_Projeto` v2.0 (08/06/2026) |
 
@@ -128,3 +128,4 @@ A produção segue três ondas, da maior para a menor prontidão de insumo.
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Criação do índice-mestre de registros do projeto AASPGOV01 a partir do documento-fonte consolidado v2.0 (08/06/2026). Onda 1 parcial gerada (INDICE + TAP + PLA + ADAP); demais artefatos delegados ou em produção. |
 | 1.1 | 13/06/2026 | Time de Melhoria Contínua | Todos os 23 artefatos confirmados no repositório. CR removido do índice — INTAKE-AASPGOV01 (Bloco 10) confirma ausência de Change Request. Status geral atualizado para ✅. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Passo de consistência interna: padronização do nome do projeto (AASP_Automacao-Governanca) em todos os registros; correções pontuais em TAE (contagem de cenários), ATA-002/GDE (data de D04), RASTR (critério RNF-05) e CAP (fases de Lucas Batista). Sem alteração de fatos do projeto. |

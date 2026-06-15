@@ -42,7 +42,7 @@ Por fim, o Tech Lead confirmou que a API Jira v3 exige o uso do Atlassian Docume
 |---|---|---|
 | Autenticação JWT individual por desenvolvedor no Sensr (D02) | Cezar Hiraki | 23/04/2026 |
 | Identificação de cards migrados via prefixo #ID no summary do Jira (D03) | Cezar Hiraki | 23/04/2026 |
-| Utilizar ADF (Atlassian Document Format) para campos de texto no Jira v3 (D04) | Raony Chagas | 23/04/2026 |
+| Necessidade de ADF confirmada para campos de texto no Jira v3 (D04 formalizada na Fase 3 — ver GDE-AASPGOV01-001) | Raony Chagas | 23/04/2026 |
 | Aprovação para início da Fase 3 — Desenvolvimento dos Serviços em 24/04/2026 | Abraão Oliveira | 23/04/2026 |
 
 ## 5. Ações (follow-up)
@@ -64,4 +64,5 @@ Início da Fase 3 — Desenvolvimento dos Serviços (24/04 a 20/05/2026), com im
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata reconstituída a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata reconstituída a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção de consistência: D04 registrada como necessidade confirmada em 23/04, com formalização na Fase 3 (GDE), eliminando conflito de data; padronização do nome. |
