@@ -72,3 +72,59 @@ _interno/                 ← apoio/gestão (NÃO vai para a avaliação)
 
 - Mostre/permita revisão do `git diff` antes de commits em massa.
 - Não commite alterações em lote sem o usuário revisar, especialmente em datas, versões e numeração.
+
+---
+
+## Planilha de indicadores ASR (auditoria MPS-SW)
+
+### Arquivos envolvidos
+
+| Arquivo | Descrição |
+|---|---|
+| `_interno/_fill_planilha.py` | Script Python que gera a planilha preenchida |
+| `_interno/PlanilhaIndicadores_SW_2024_NivelC_PREENCHIDA.xlsx` | Saída gerada — entregue à ASR |
+| `_interno/MAPADRIVE_IndicedeLinks.csv` (upload) | Índice de links do Google Drive (exportado antes de rodar) |
+| Template ASR `.xlsx` (upload) | Template original fornecido pela ASR |
+
+### Como gerar/atualizar a planilha
+
+1. Atualizar o CSV de links (`MAPADRIVE_IndicedeLinks.csv`) exportando o índice atual do Drive.
+2. Ajustar os dicionários de projeto no script (`PROF`, `GAS`, `FRU`, `AASP`) se novos documentos foram adicionados.
+3. Rodar: `python mps-nivel-c/_interno/_fill_planilha.py`
+4. A saída é `PlanilhaIndicadores_SW_2024_NivelC_PREENCHIDA.xlsx`.
+
+### Estrutura da planilha (como a ASR espera)
+
+Cada aba corresponde a um dos 12 processos MPS (GPR, REQ, PCP, ITP, VV, AQU, GCO, MED, GDE, CAP, GPC, OSW) + abas de capacidade (CP_Projeto, CP_Organizacional).
+
+Dentro de cada bloco de indicador (ex: GPR 1, GPR 2+...):
+- **Col A das linhas em branco** → nome do documento que evidencia aquele indicador (uma linha por tipo de doc)
+- **Cols C/D/E/F** (projetos) ou **col C** (ORG) da mesma linha → `x` com hyperlink para o Drive
+- **Linha `(T,L,P,N,NA)`** → autoavaliação: `T` (totalmente implementado) ou `NA` (não aplicável)
+- **Col B** e coluna **Final** → intocadas (o auditor da ASR preenche)
+
+### Projetos e colunas
+
+| Coluna | Projeto |
+|---|---|
+| C | Projeto 1 (PROFARMA / Rede D1000 — Cadastro de Clientes) |
+| D | Projeto 2 (GASMIG — Governança de APIs, fases 1 e 2) |
+| E | Projeto 3 (FRUKI — Super App Força de Vendas, fases 1 e 2) |
+| F | Projeto 4 (AASP_CNJ — Integração EPROC/ESAJ/CNJ) |
+| G | Final (auditor ASR — não preencher) |
+
+### AQU = Não Aplicável
+
+Nenhum dos 4 projetos teve subcontratação/aquisição de desenvolvimento externo (equipe própria Timeware). Todos os indicadores AQU recebem `NA`. O PRO-AQU-001 é referenciado como processo organizacional definido, mesmo sem instâncias de uso.
+
+### Atualizando para novos projetos ou documentos
+
+Para adicionar um 5º projeto:
+1. Criar novo dicionário de roles (ex: `NOVO = {'TAP':['TAP-NOVOPROJ01-001'], ...}`)
+2. Adicionar ao `PROJECTS` e ao `PCOL` com a coluna correta
+3. Adicionar os registros de projeto (GCO, MED, GDE, GQA, etc.) às listas `*_REG`
+
+Para adicionar um documento não presente no CSV:
+```python
+LINKS.setdefault('CODIGO-DO-DOC', {})['docx'] = ('CODIGO-DO-DOC', 'https://drive.google.com/...')
+```

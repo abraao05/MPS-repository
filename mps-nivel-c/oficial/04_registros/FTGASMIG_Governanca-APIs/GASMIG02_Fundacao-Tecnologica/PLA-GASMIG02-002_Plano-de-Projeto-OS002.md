@@ -6,7 +6,7 @@
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-002 |
 | **Cliente** | GASMIG — Companhia de Gás de Minas Gerais |
 | **Contrato** | Governança de APIs GASMIG |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
@@ -102,12 +102,12 @@ Ao encerramento desta OS, a Fundação Tecnológica GASMIG estará completa. Tod
 
 ## 9. Riscos (GPR 10)
 
-| # | Risco | Prob. | Impacto | Resposta |
-|---|---|---|---|---|
-| R-07 | Permissões insuficientes no Entra ID para registrar aplicações OAuth 2.0 | 2 | 3 | Verificar e solicitar as permissões necessárias na semana 1; escalar via Sérgio Villaça se necessário |
-| R-08 | Thresholds de alerta não definidos pelo time GASMIG a tempo, bloqueando a configuração do Azure Monitor | 3 | 2 | Usar valores padrão de mercado como default; solicitar definição formal na semana 1 |
-| R-09 | Complexidade do fluxo OAuth 2.0 com o Entra ID da GASMIG excede a estimativa | 2 | 2 | Iniciar pela validação do fluxo básico de token; reservar um dia adicional de buffer se necessário |
-| R-10 | Mudança de escopo na homologação end-to-end (cliente identifica necessidade de ajustes não previstos) | 2 | 3 | Delimitar claramente o critério de aceite antes da sessão; formalizar via Change Request se necessário |
+| # | Categoria | Risco | Prob. | Impacto | Resposta |
+|---|---|---|---|---|---|
+| R-07 | Externo/Cliente | Permissões insuficientes no Entra ID para registrar aplicações OAuth 2.0 | 2 | 3 | Verificar e solicitar as permissões necessárias na semana 1; escalar via Sérgio Villaça se necessário |
+| R-08 | Externo/Cliente | Thresholds de alerta não definidos pelo time GASMIG a tempo, bloqueando a configuração do Azure Monitor | 3 | 2 | Usar valores padrão de mercado como default; solicitar definição formal na semana 1 |
+| R-09 | Técnico | Complexidade do fluxo OAuth 2.0 com o Entra ID da GASMIG excede a estimativa | 2 | 2 | Iniciar pela validação do fluxo básico de token; reservar um dia adicional de buffer se necessário |
+| R-10 | Externo/Cliente | Mudança de escopo na homologação end-to-end (cliente identifica necessidade de ajustes não previstos) | 2 | 3 | Delimitar claramente o critério de aceite antes da sessão; formalizar via Change Request se necessário |
 
 ## 10. Viabilidade (GPR 11)
 
@@ -129,3 +129,4 @@ Projeto viável. A equipe executa em continuidade à OS-001, com ambiente já co
 | 1.0 | 26/05/2026 | Abraão Oliveira | Versão inicial — baseline aprovada no kickoff da OS-002 |
 | 1.1 | 04/06/2026 | Abraão Oliveira | Atualização de recursos (Fernando Oliveira e Henry Komatsu como engenheiros executores); cronograma detalhado com responsáveis por marco e convenção de sprint (freeze sexta / entrega segunda) |
 | 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 274 h totais estimadas; título do §4 atualizado para refletir GPR 3 e GPR 4 |
+| 1.3 | 11/06/2026 | Time de Melhoria Contínua | Tabela de riscos atualizada com coluna Categoria conforme EST-GPC-002 v1.2 (categorias: Técnico, Prazo, Custo, Recursos, Externo/Cliente) |

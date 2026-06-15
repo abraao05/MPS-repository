@@ -5,8 +5,8 @@
 | **Documento** | ADAP-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 13/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto — adaptação do processo padrão) |
 
@@ -58,8 +58,17 @@ Registrar as adaptações aplicadas ao processo-padrão de desenvolvimento Timew
 
 ---
 
+## 5. Processos não aplicáveis ao projeto
+
+| Processo | Aplicável? | Justificativa |
+|---|---|---|
+| Aquisição (AQU) | **Não aplicável** | Squad próprio Timeware; não há subcontratação de terceiro responsável por entrega. Os sistemas satélites (BlueSoft, CloseUp, PBM) e o ambiente AKS são integrações/insumos do cliente, tratados em ITP e Riscos, fora do escopo de AQU (PRO-AQU-001 §2). |
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base nas reuniões de planejamento e dailys do período 04/2025–01/2026 |
+| 1.1 | 13/06/2026 | Time de Melhoria Contínua | Adicionada a seção 5 (Processos não aplicáveis), registrando explicitamente a não aplicabilidade do processo de Aquisição (AQU), conforme PRO-AQU-001 §2 |

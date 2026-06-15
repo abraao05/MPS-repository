@@ -4,8 +4,8 @@
 |---|---|
 | **Documento** | VV-GASMIG02-001 |
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-001 |
-| **Versão** | 1.1 |
-| **Data** | 29/04/2026 |
+| **Versão** | 1.2 |
+| **Data** | 11/06/2026 |
 
 > **Nota de adaptação:** Este é um projeto de configuração de ferramenta (Azure API Management), não de desenvolvimento de software. A verificação é realizada por checklist de configuração e navegação no portal Azure, não por testes unitários, de integração ou cenários BDD/Gherkin. Conforme ADAP-GASMIG02-001.
 
@@ -174,7 +174,7 @@ Cada item do checklist é marcado após verificação no portal Azure. A coluna 
 - Resultado da verificação técnica (checklist preenchido) comunicado por Cézar Hiraki a Abraão Oliveira em 13/05/2026
 - Eventuais itens pendentes são corrigidos antes da sessão de aceite
 - Resultado da sessão de aceite com o cliente registrado em ATA-GASMIG02-002
-- Indicadores (itens verificados / total, pendências resolvidas) alimentam a medição do projeto conforme PLA-MED-001
+- Indicadores (itens verificados / total, pendências resolvidas) alimentam a medição do projeto conforme PLA-MED-001 v1.3
 
 ---
 
@@ -184,4 +184,5 @@ Cada item do checklist é marcado após verificação no portal Azure. A coluna 
 |---|---|---|---|
 | 1.0 | 29/04/2026 | Abraão Oliveira / Cézar Hiraki | Versão inicial |
 | 1.1 | 04/06/2026 | Abraão Oliveira | Substituídos testes de software e Gherkin por checklist de verificação de configuração — adequação ao tipo de projeto (configuração de ferramenta, não desenvolvimento de software) |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Referência de medição atualizada para PLA-MED-001 v1.3 |
 | 1.2 | 10/06/2026 | Time de Melhoria Contínua | Checklist preenchido com resultados da verificação técnica de 13/05/2026 (Cézar Hiraki — 36 itens ✅, 0 não conformidades) |

@@ -4,8 +4,8 @@
 |---|---|
 | **Documento** | ADAP-FRUKI01-001 |
 | **Projeto** | SuperApp Fruki — Pacote 1 — Módulo Metas e Remuneração Variável |
-| **Versão** | 1.1 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 13/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira |
 
 ---
@@ -34,6 +34,7 @@
 | Revisão por pares | Sim | Revisão técnica das PRs pelo Jardel (Fruki) antes do merge; revisão interna de código pela equipe Timeware |
 | Registro de capacitação | Não aplicável | Não há treinamento formal de usuários no escopo deste projeto; a equipe técnica da Fruki acessa o repositório e as APIs diretamente |
 | Gestão de decisões arquiteturais (GDE) | Aplicável — simplificada | Decisão técnica de tratamento de latência e normalização no front-end registrada em `GDE-FRUKI01-001_Registro-de-Decisao.md` |
+| Aquisição (AQU) | Não aplicável | Squad próprio Timeware; não há subcontratação de terceiro respondendo por entrega. As APIs e os dados fornecidos pela Fruki são insumos do cliente, fora do escopo de AQU (PRO-AQU-001 §2). |
 
 ## 3. Pontos de controle obrigatórios (não adaptáveis)
 
@@ -51,3 +52,4 @@
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado jun/2025–set/2025) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | ITP e GDE referenciados explicitamente na tabela de etapas |
+| 1.2 | 13/06/2026 | Time de Melhoria Contínua | Registrada explicitamente a não aplicabilidade do processo de Aquisição (AQU) neste projeto, conforme PRO-AQU-001 §2 |

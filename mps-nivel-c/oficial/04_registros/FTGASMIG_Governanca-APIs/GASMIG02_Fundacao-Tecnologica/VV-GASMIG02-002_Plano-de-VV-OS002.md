@@ -4,8 +4,8 @@
 |---|---|
 | **Documento** | VV-GASMIG02-002 |
 | **Projeto** | Fundação Tecnológica GASMIG — OS-PARCELA-002 |
-| **Versão** | 1.0 |
-| **Data** | 26/05/2026 |
+| **Versão** | 1.1 |
+| **Data** | 11/06/2026 |
 
 > **Nota de adaptação:** Mesma abordagem da OS-PARCELA-001 (VV-GASMIG02-001). Verificação por checklist de configuração e smoke checks, não testes de software. Conforme ADAP-GASMIG02-002.
 
@@ -123,7 +123,7 @@ Mesmos métodos da OS-PARCELA-001. Adicionados:
 - Resultado da verificação técnica comunicado por Cézar Hiraki a Abraão Oliveira em 09/06/2026
 - Sessão de homologação end-to-end agendada para ~10/06/2026 com Eduardo Yasuda e José Geraldo (GASMIG)
 - Aceite registrado em ATA-GASMIG02-003 (Ata de Aceite OS-002)
-- Indicadores de V&V alimentam a medição consolidada do projeto conforme PLA-MED-001
+- Indicadores de V&V alimentam a medição consolidada do projeto conforme PLA-MED-001 v1.3
 
 ---
 
@@ -132,4 +132,5 @@ Mesmos métodos da OS-PARCELA-001. Adicionados:
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 26/05/2026 | Abraão Oliveira / Cézar Hiraki | Versão inicial |
+| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Referência de medição atualizada para PLA-MED-001 v1.3 |
 | 1.1 | 10/06/2026 | Time de Melhoria Contínua | Checklist preenchido com resultados da verificação técnica de 09/06/2026 (Cézar Hiraki — 28 itens ✅, 0 não conformidades) |

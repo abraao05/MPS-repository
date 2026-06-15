@@ -3,13 +3,15 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.37 (rascunho) |
-| **Data** | 05/06/2026 |
+| **Versão** | 0.40 (rascunho) |
+| **Data** | 13/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
 | **Fonte de escopo** | PlanilhaIndicadores_SW_2024__NivelC.xlsx |
-| **Nº de projetos na avaliação** | 4+ (3 documentados: FTGASMIG, FTFRUKI, PROFARMA/D1000 · AASP a documentar) |
+| **Nº de projetos na avaliação** | 3 selecionados (PROFARMA/D1000, FTGASMIG, FTFRUKI) · AASP_CNJ documentado como 4º projeto (reserva) |
 | **Responsável (ponto focal)** | Abraão Oliveira |
+
+> **Alterações v0.40 (13/06/2026):** revisão geral do inventário (§2.1) a partir da varredura completa do repositório — sincronização de todos os documentos e versões existentes hoje. Novos artefatos de governança incorporados: ATA-GPC-001 (ata de análise crítica), GQA-ORG-001 (auditoria organizacional), REG-GPC-001 (registro de melhorias), REG-GPC-002 (plano de implementação de melhorias), REG-OSW-001 (painel de portfólio) e REG-OSW-002 (comunicação da política). Novos processos de apoio: PRO-CAP-001, PRO-GCO-001, PRO-MED-001 e REG-MED-001 (repositório de medidas). Capacitação ampliada para 47 ativos (incl. MAT-CAP-023 e TPL-CAP-002). Registros de projeto atualizados: PROFARMA (21), FTGASMIG (28 — OS-001 e OS-002 encerradas), FTFRUKI (34), e **AASP_CNJ agora documentado (19 docs)** como 4º projeto de reserva. Escopo da avaliação fixado em **3 projetos** (PROFARMA, GASMIG, FRUKI). AQU confirmado como **Não Aplicável**.
 
 > **Alterações v0.2 (02/06/2026):** resolução das 5 pendências de escopo. OSW 8/9/10 confirmados no escopo (há gestão de portfólio). AQU mantido, mas movido para o fim da fila (candidato a não-aplicável, a confirmar com a ASR). Ferramentas definidas (Jira, Git, Azure DevOps, Azure Test Plans/Xray, Confluence). Papel de GQA confirmado. Ver seção 3 para detalhes.
 
@@ -73,237 +75,275 @@ MPS-Nivel-C/
 
 ## 2.1 Inventário completo de documentos
 
-*Atualizado em 05/06/2026 — versão de referência de todos os ativos de processo produzidos.*
+*Atualizado em 13/06/2026 (v0.40) — gerado a partir da varredura direta do repositório (`oficial/`). Total: 199 documentos `.md` + 6 currículos (`.pdf`), 1 diagrama (`.svg`) e planilhas de gestão de projeto (`.xlsx`).*
 
 ### Governança organizacional (`oficial/00_governanca/`)
 
 | Código | Documento | Versão | Atende |
 |---|---|---|---|
-| POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 |
-| CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.1 | GCO 1, 4 |
-| PRO-GPC-001 | Processo-Padrão Organizacional | 2.2 | GPC 2 |
-| GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.2 | GPC 2 |
-| PRO-GPC-002 | Definição do Time de Melhoria Contínua | 1.2 | GPC 6 |
-| EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.3 | GPC 3; CP (iv, v, vi) |
-| EST-GPC-002 | Estratégia de Gerência de Riscos e Oportunidades | 1.2 | GPC 7 |
-| PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.4 | GPC 1, 4, 5, 8, 10, 11 |
-| PRO-OSW-001 | Governança Organizacional de Processos | 1.2 | OSW 2, 3, 4, 5, 6, 7 |
-| PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.2 | OSW 8, 9, 10 |
+| ATA-GPC-001 | Reuniao Analise Critica de Processos | 1.0 | GPC 6,7; OSW 3 |
+| CONV-ORG-001 | Convencao de Nomenclatura e Versionamento | 1.1 | GCO 1, 4 |
+| EST-GPC-001 | Estrategia de Garantia da Qualidade | 1.3 | GPC 3; CP (iv,v,vi) |
+| EST-GPC-002 | Estrategia de Gerencia de Riscos | 1.2 | GPC 7; OSW 5 |
+| GQA-ORG-001 | Auditoria Organizacional | 1.1 | GPC 3; CP (iv,v) |
+| GUIA-GPC-001 | Guia de Adaptacao do Processo Padrao | 2.0 | GPC 2 |
+| PLA-GPC-001 | Plano de Gestao e Melhoria de Processos | 1.7 | GPC 1,4,5,8,10,11 |
+| POL-ORG-001 | Politica Organizacional de Processos | 1.0 | OSW 1 |
+| PRO-GPC-001 | Processo Padrao Organizacional | 2.3 | GPC 2 |
+| PRO-GPC-002 | Definicao do Time de Melhoria Continua | 1.2 | GPC 6 |
+| PRO-OSW-001 | Governanca Organizacional de Processos | 1.2 | OSW 2,3,4,5,6,7 |
+| PRO-OSW-002 | Gestao de Portfolio de Projetos | 1.3 | OSW 8,9,10 |
+| REG-GPC-001 | Registro de Melhorias de Processo | 1.0 | GPC 4 |
+| REG-GPC-002 | Plano de Implementacao de Melhorias | 1.0 | GPC 5,6,11 |
+| REG-OSW-001 | Painel de Portfolio | 1.0 | OSW 8,9,10; MED 6 |
+| REG-OSW-002 | Comunicacao da Politica Organizacional | 1.0 | OSW 1,7 |
 
 ### Apoio organizacional (`oficial/01_apoio/`)
 
 | Código | Documento | Versão | Atende |
 |---|---|---|---|
-| PLA-MED-001 | Plano de Medição | 1.3 | MED 1–7; GPC 9; OSW 6 |
-| PLA-GCO-001 | Plano de Gerência de Configuração | 1.1 | GCO 1–5 |
-| GUIA-GCO-001 | Guia de Nomenclaturas Técnicas | 1.0 | GCO 1, 2; GPC 8 |
-| PRO-GDE-001 | Processo de Gerência de Decisões | 1.2 | GDE 1–6 |
-| PLA-CAP-001 | Plano de Capacitação | 1.1 | CAP 1–4 |
-| GUIA-CAP-001 | Mini-manual — Gerência de Projetos | — | CAP 2 (material de apoio) |
-| GUIA-CAP-002 | Mini-manual — Especificação de Requisitos | — | CAP 2 |
-| GUIA-CAP-003 | Mini-manual — Projeto e Construção do Produto | — | CAP 2 |
-| GUIA-CAP-004 | Mini-manual — Verificação e Validação | — | CAP 2 |
-| GUIA-CAP-005 | Mini-manual — Gerência de Configuração | — | CAP 2 |
-| GUIA-CAP-006 | Mini-manual — Integração do Produto | — | CAP 2 |
-| GUIA-CAP-007 | Mini-manual — Gerência de Decisões | — | CAP 2 |
-| GUIA-CAP-008 | Mini-manual — Medição | — | CAP 2 |
-| GUIA-CAP-009 | Mini-manual — Gerência de Processos | — | CAP 2 |
-| GUIA-CAP-010 | Mini-manual — Gerência Organizacional de Software | — | CAP 2 |
-| GUIA-CAP-011 | Mini-manual — Capacitação | — | CAP 2 |
-| GUIA-CAP-012 | Mini-manual — Aquisição | — | CAP 2 |
-| MAT-CAP-013 | Trilha COO / Portfólio | 1.0 | CAP 1–2 |
-| MAT-CAP-014 | Trilha Time de Melhoria Contínua / SEPG | 1.0 | CAP 1–2 |
-| MAT-CAP-015 | Trilha RH / Pessoas | 1.0 | CAP 1–2 |
-| MAT-CAP-016 | Trilha Tech Lead / Arquiteto | 1.0 | CAP 1–2 |
-| MAT-CAP-017 | Trilha PO / PM | 1.0 | CAP 1–2 |
-| MAT-CAP-018 | Trilha Desenvolvedores | 1.0 | CAP 1–2 |
-| MAT-CAP-019 | Trilha DevOps | 1.0 | CAP 1–2 |
-| MAT-CAP-020 | Trilha QA | 1.0 | CAP 1–2 |
-| MAT-CAP-021 | Trilha GCO Baseline / Auditoria de Configuração | 1.0 | CAP 1–2 |
-| MAT-CAP-022 | Trilha Responsável de Medição | 1.0 | CAP 1–2 |
-| AVA-CAP-001 | Avaliação — Processo-Padrão Geral | 1.0 | CAP 3 |
-| AVA-CAP-002 | Avaliação — Trilha GP / PO | 1.0 | CAP 3 |
-| AVA-CAP-003 | Avaliação — Trilha Técnica (Tech Lead / Devs / QA) | 1.0 | CAP 3 |
-| AVA-CAP-004 | Avaliação — Trilha GCO / ITP | 1.0 | CAP 3 |
-| AVA-CAP-005 | Avaliação — Trilha GPC / MED / CAP | 1.0 | CAP 3 |
-| TPL-CAP-001 | Template de Registro de Sessão de Treinamento | 1.0 | CAP 2 (template) |
-| PRO-AQU-001 | Processo de Aquisição | 1.1 | AQU 1–4 *(aplicabilidade a confirmar com ASR)* |
+| GUIA-GCO-001 | Guia de Nomenclaturas Tecnicas | 1.0 | GCO 1,2; GPC 8 |
+| PLA-CAP-001 | Plano de Capacitacao | 1.2 | CAP 1-4; OSW 2 |
+| PLA-GCO-001 | Plano de Gerencia de Configuracao | 1.1 | GCO 1-5 |
+| PLA-MED-001 | Plano de Medicao | 1.3 | MED 1-7; GPC 9; OSW 6 |
+| PRO-AQU-001 | Processo de Aquisicao | 1.1 | AQU 1-4 (NA) |
+| PRO-CAP-001 | Processo de Capacitacao | 1.0 | CAP 1-4 |
+| PRO-GCO-001 | Processo de Gerencia de Configuracao | 1.0 | GCO 1-5 |
+| PRO-GDE-001 | Processo de Gerencia de Decisoes | 1.2 | GDE 1-6 |
+| PRO-MED-001 | Processo de Medicao | 1.0 | MED 1-7 |
+| REG-MED-001 | Repositorio Organizacional de Medicao | 1.0 | MED 3,7; GPC 9 |
+
+### Capacitação (`oficial/01_apoio/cap/`)
+
+| Código | Documento | Versão |
+|---|---|---|
+| AVA-CAP-001 | Avaliacao Processo Padrao Geral | 1.2 |
+| AVA-CAP-002 | Avaliacao GPR | 1.1 |
+| AVA-CAP-003 | Avaliacao Tecnico REQ PCP VV | 1.1 |
+| AVA-CAP-004 | Avaliacao GCO ITP | 1.1 |
+| AVA-CAP-005 | Avaliacao GPC MED CAP | 1.0 |
+| GUIA-CAP-001 | MiniManual GPR | 1.3 |
+| GUIA-CAP-002 | MiniManual REQ | 1.2 |
+| GUIA-CAP-003 | MiniManual PCP | 1.2 |
+| GUIA-CAP-004 | MiniManual VV | 1.2 |
+| GUIA-CAP-005 | MiniManual GCO | 1.2 |
+| GUIA-CAP-006 | MiniManual ITP | 1.1 |
+| GUIA-CAP-007 | MiniManual GDE | 1.1 |
+| GUIA-CAP-008 | MiniManual MED | 1.1 |
+| GUIA-CAP-009 | MiniManual GPC | 1.1 |
+| GUIA-CAP-010 | MiniManual OSW | 1.0 |
+| GUIA-CAP-011 | MiniManual CAP | 1.0 |
+| GUIA-CAP-012 | MiniManual AQU | 1.0 |
+| MAT-CAP-013 | Trilha COO Portfolio | 1.1 |
+| MAT-CAP-014 | Trilha Time Melhoria SEPG | 1.1 |
+| MAT-CAP-015 | Trilha RH Pessoas | 1.0 |
+| MAT-CAP-016 | Trilha Tech Lead Arquiteto | 1.2 |
+| MAT-CAP-017 | Trilha PO PM | 1.2 |
+| MAT-CAP-018 | Trilha Devs | 1.2 |
+| MAT-CAP-019 | Trilha DevOps | 1.1 |
+| MAT-CAP-020 | Trilha QA | 1.2 |
+| MAT-CAP-021 | Trilha GCO Baseline | 1.1 |
+| MAT-CAP-022 | Trilha Responsavel Medicao | 1.1 |
+| MAT-CAP-023 | Trilha Tecnica Onboarding | 1.0 |
+| REG-CAP-001B | Sessao Reforco Jan2025 | 1.0 |
+| REG-CAP-001 | Sessao Treinamento Dez2024 | 1.0 |
+| REG-CAP-002B | Sessao Reforco Set2025 | 1.0 |
+| REG-CAP-002 | Sessao Treinamento Mar2025 | 1.0 |
+| REG-CAP-003 | Sessao Treinamento Ago2025 | 1.0 |
+| REG-CAP-004 | Sessao Treinamento Jan2026 | 1.0 |
+| REG-CAP-005 | Sessao Treinamento Mai2026 | 1.0 |
+| REG-CAP-006 | Sessao Gestao Out2025 | 1.0 |
+| REG-CAP-007 | Sessao Tecnico Jan2026 | 1.0 |
+| REG-CAP-008 | Sessao Tecnico Fev2026 | 1.0 |
+| REG-CAP-009 | Reciclagem Mar2026 | 1.0 |
+| REG-CAP-010 | Onboarding Tecnico Jan2026 | 1.0 |
+| REG-CAP-011 | Workshop Azure APIM Mar2026 | 1.0 |
+| REG-CAP-012 | Workshop Automacao Testes Fev2026 | 1.0 |
+| REG-CAP-013 | Consultoria Desenho Processos Jun2025 | 1.0 |
+| REG-CAP-CV-001 | Indice de Curriculos | 1.0 |
+| REL-CAP-001 | Relatorio de Eficacia 2025 | 1.0 |
+| TPL-CAP-001 | Registro de Sessao de Treinamento | 1.0 |
+| TPL-CAP-002 | Relatorio de Eficacia de Treinamento | 1.0 |
+
+*Subtotal capacitação: 47 documentos (5 avaliações, 12 mini-manuais, 11 trilhas/materiais, 15 registros de sessão, índice de currículos, relatório de eficácia, 2 templates).*
 
 ### Processos de projeto (`oficial/02_projeto/`)
 
 | Código | Documento | Versão | Atende |
 |---|---|---|---|
-| PRO-GPR-001 | Processo de Gerência de Projetos | 1.4 | GPR 1–20 |
-| GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | 1.0 | apoio ao GPR |
-| PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.1 | REQ 1–7 |
-| PRO-PCP-001 | Processo de Projeto e Construção do Produto | 1.1 | PCP 1–3 |
-| PRO-ITP-001 | Processo de Integração do Produto | 1.1 | ITP 1–6 |
-| PRO-VV-001 | Processo de Verificação e Validação | 1.2 | VV 1–5 |
+| GUIA-GPR-001 | Roteiro de Kickoff | 1.0 | apoio GPR |
+| PRO-GPR-001 | Processo de Gerencia de Projetos | 1.4 | GPR 1-20 |
+| PRO-ITP-001 | Processo de Integracao do Produto | 1.1 | ITP 1-6 |
+| PRO-PCP-001 | Processo de Projeto e Construcao do Produto | 1.1 | PCP 1-3 |
+| PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.1 | REQ 1-7 |
+| PRO-VV-001 | Processo de Verificacao e Validacao | 1.2 | VV 1-5 |
 
 ### Templates (`oficial/03_templates/`)
 
-| Código | Documento | Atende |
+| Código | Documento | Versão |
 |---|---|---|
-| TPL-GPR-001 | Template de Plano de Projeto | GPR 12 |
-| TPL-GPR-002 | Template de Termo de Abertura do Projeto | GPR 1 |
-| TPL-GPR-003 | Template de Registro de Adaptação do Processo | GPR 2 / CP-C |
-| TPL-GPR-004 | Template de Termo de Encerramento e Aceite | GPR |
-| TPL-GPR-005 | Template de Relatório de Acompanhamento | GPR 14 |
-| TPL-GPR-006 | Template de Change Request | GPR / GCO |
-| TPL-REQ-001 | Template de Documento de Requisitos | REQ 1–2 |
-| TPL-REQ-002 | Template de Matriz de Rastreabilidade | REQ 4 |
-| TPL-PCP-001 | Template de Documento de Design | PCP 1–2 |
-| TPL-ITP-001 | Template de Estratégia de Integração | ITP 1 |
-| TPL-VV-001 | Template de Plano de V&V | VV 1, 3 |
-| TPL-VV-002 | Template de Registro de Revisão por Pares | VV 2 |
-| TPL-GPC-001 | Template de Registro de Verificação de GQA | GPC 3 / CP (iv, v) |
-| TPL-GDE-001 | Template de Registro de Análise de Decisão (RAD) | GDE 6 |
-| TPL-ORG-001 | Template de Ata de Reunião | multiuso |
-
-### Registros de projetos (`oficial/04_registros/`)
-
-**FTGASMIG — Governança de APIs** · Cliente: GASMIG · GP: Abraão Oliveira
-
-*OS-001 encerrada (aceite 26/05/2026) · OS-002 em andamento (encerramento previsto 10/06/2026)*
-
-| Código | Documento | Versão | Evidência |
-|---|---|---|---|
-| TAP-GASMIG02-001 | Termo de Abertura — OS-001 | 1.0 | GPR 1, 13 |
-| PLA-GASMIG02-001 | Plano de Projeto — OS-001 | 1.1 | GPR 3–12 |
-| REQ-GASMIG02-001 | Documento de Requisitos — OS-001 | 1.0 | REQ 1–7 |
-| PCP-GASMIG02-001 | Documento de Design — OS-001 | 1.1 | PCP 1–3 |
-| VV-GASMIG02-001 | Plano de V&V — OS-001 | 1.0 | VV 1–5 |
-| RASTR-GASMIG02-001 | Matriz de Rastreabilidade — OS-001 | 1.0 | REQ 4 |
-| ADAP-GASMIG02-001 | Registro de Adaptação — OS-001 | 1.2 | GPR 2 / CP-C |
-| GDE-GASMIG02-001 | Registro de Análise de Decisão | 1.0 | GDE 2–6 |
-| REV-GASMIG02-001 | Registro de Verificação Técnica — OS-001 | 1.0 | PCP 2 / VV 4 |
-| ATA-GASMIG02-001 | Ata de Kickoff | 1.0 | GPR 13 |
-| ATA-GASMIG02-002 | Ata de Aceite — OS-001 | 1.0 | GPR (aceite) |
-| TAE-GASMIG02-001 | Termo de Encerramento — OS-001 | 1.0 | GPR (encerramento) |
-| LI-GASMIG02-001 | Lições Aprendidas | 1.0 | GPR 20 / GPC 4 |
-| CAP-GASMIG02-001 | Registro de Capacitação da Equipe | 1.0 | CAP 2 |
-| GQA-GASMIG02-001 | Registro de GQA (OS-001 + OS-002 parcial) | 1.2 | GPC 3 / CP (iv, v) |
-| TAP-GASMIG02-002 | Termo de Abertura — OS-002 | 1.0 | GPR 1, 13 |
-| PLA-GASMIG02-002 | Plano de Projeto — OS-002 | 1.1 | GPR 3–12 |
-| REQ-GASMIG02-002 | Documento de Requisitos — OS-002 | 1.0 | REQ 1–7 |
-| PCP-GASMIG02-002 | Documento de Design — OS-002 | 1.0 | PCP 1–3 |
-| VV-GASMIG02-002 | Plano de V&V — OS-002 | 1.0 | VV 1–5 |
-| RASTR-GASMIG02-002 | Matriz de Rastreabilidade — OS-002 | 1.0 | REQ 4 |
-| ADAP-GASMIG02-002 | Registro de Adaptação — OS-002 | 1.0 | GPR 2 / CP-C |
-
-*3 artefatos pendentes (encerramento OS-002): REV-GASMIG02-002, ATA-GASMIG02-003, TAE-GASMIG02-002 — previstos para 09–10/06/2026.*
-
-**FTFRUKI — SuperApp Fruki · Força de Vendas** · Cliente: Fruki Bebidas S.A. · GP: Abraão Oliveira
-
-*Pacote 1 (Módulo Metas e RV) encerrado Set/2025 · Pacote Final 24 encerrado 15/01/2026 · 32 documentos*
-
-*Pacote 1 — Módulo Metas e Remuneração Variável*
-
-| Código | Documento | Versão | Evidência |
-|---|---|---|---|
-| TAP-FRUKI01-001 | Termo de Abertura — Pacote 1 | 1.1 | GPR 1, 13 |
-| PLA-FRUKI01-001 | Plano de Projeto — Pacote 1 | 1.1 | GPR 3–12 |
-| REQ-FRUKI01-001 | Documento de Requisitos — Pacote 1 | 1.1 | REQ 1–7 |
-| PCP-FRUKI01-001 | Documento de Design — Pacote 1 | 1.0 | PCP 1–3 |
-| VV-FRUKI01-001 | Plano de V&V — Pacote 1 | 1.0 | VV 1–5 |
-| ITP-FRUKI01-001 | Estratégia de Integração — Pacote 1 | 1.0 | ITP 1 |
-| RASTR-FRUKI01-001 | Matriz de Rastreabilidade — Pacote 1 | 1.0 | REQ 4 |
-| ADAP-FRUKI01-001 | Registro de Adaptação — Pacote 1 | 1.1 | GPR 2 / CP-C |
-| ATA-FRUKI01-001 | Ata de Kickoff | 1.0 | GPR 13 |
-| ATA-FRUKI01-002 | Ata de Levantamento de Metas | 1.0 | REQ 1 |
-| ATA-FRUKI01-007 | Ata de Piloto — Módulo Metas e RV | 1.0 | VV 5 |
-| TAE-FRUKI01-001 | Termo de Encerramento — Pacote 1 | 1.0 | GPR (encerramento) |
-
-*Pacote Final 24*
-
-| Código | Documento | Versão | Evidência |
-|---|---|---|---|
-| TAP-FRUKI01-002 | Termo de Abertura — Pacote Final 24 | 1.1 | GPR 1, 13 |
-| PLA-FRUKI01-002 | Plano de Projeto — Pacote Final 24 | 1.0 | GPR 3–12 |
-| REQ-FRUKI01-002 | Documento de Requisitos — Pacote Final 24 | 1.0 | REQ 1–7 |
-| PCP-FRUKI01-002 | Documento de Design — Pacote Final 24 | 1.0 | PCP 1–3 |
-| VV-FRUKI01-002 | Plano de V&V — Pacote Final 24 | 1.0 | VV 1–5 |
-| ITP-FRUKI01-002 | Estratégia de Integração — Pacote Final 24 | 1.0 | ITP 1 |
-| RASTR-FRUKI01-002 | Matriz de Rastreabilidade — Pacote Final 24 | 1.0 | REQ 4 |
-| ADAP-FRUKI01-002 | Registro de Adaptação — Pacote Final 24 | 1.1 | GPR 2 / CP-C |
-| CR-FRUKI01-001 | Solicitação de Mudança — Regra de Ouro | 1.0 | GPR / GCO |
-| RAC-FRUKI01-001 | Relatório de Acompanhamento | 1.0 | GPR 14 |
-| ATA-FRUKI01-003 | Ata de Aceite Final | 1.0 | GPR (aceite) |
-| ATA-FRUKI01-004 | Ata de Validação Sprint 1 | 1.0 | VV 5 |
-| ATA-FRUKI01-005 | Ata de Validação Sprint 2 | 1.0 | VV 5 |
-| ATA-FRUKI01-006 | Ata de Validação Sprint 3 | 1.0 | VV 5 |
-| TAE-FRUKI01-002 | Termo de Encerramento — Pacote Final 24 | 1.1 | GPR (encerramento) |
-
-*Compartilhados (ambos os pacotes)*
-
-| Código | Documento | Versão | Evidência |
-|---|---|---|---|
-| GDE-FRUKI01-001 | Registro de Análise de Decisão | 1.0 | GDE 2–6 |
-| GQA-FRUKI01-001 | Registro de GQA | 1.1 | GPC 3 / CP (iv, v) |
-| GCO-FRUKI01-001 | Registro de Configuração | 1.3 | GCO 4 |
-| LI-FRUKI01-001 | Lições Aprendidas | 1.0 | GPR 20 / GPC 4 |
-| MED-FRUKI01-001 | Registro de Medição | 1.0 | MED 3–4 |
-
----
-
-**PROFARMA — Cadastro de Clientes · Rede D1000** · Cliente: Profarma S.A. / Rede D1000 · GP: Abraão Oliveira
-
-*Encerrado 29/01/2026 · 18 documentos*
-
-| Código | Documento | Versão | Evidência |
-|---|---|---|---|
-| TAP-PROFARMA01-001 | Termo de Abertura | 1.0 | GPR 1, 13 |
-| PLA-PROFARMA01-001 | Plano de Projeto | 1.0 | GPR 3–12 |
-| REQ-PROFARMA01-001 | Documento de Requisitos | 1.2 | REQ 1–7 |
-| PCP-PROFARMA01-001 | Documento de Design | 1.3 | PCP 1–3 |
-| VV-PROFARMA01-001 | Plano de V&V | 1.1 | VV 1–5 |
-| RASTR-PROFARMA01-001 | Matriz de Rastreabilidade | 1.1 | REQ 4 |
-| ADAP-PROFARMA01-001 | Registro de Adaptação | 1.0 | GPR 2 / CP-C |
-| GDE-PROFARMA01-001 | Registro de Análise de Decisão | 1.0 | GDE 2–6 |
-| CTQ-PROFARMA01-001 | Cenários de Teste de Homologação | 1.0 | VV 3 |
-| REV-PROFARMA01-001 | Registro de Revisão Técnica | 1.0 | PCP 2 / VV 4 |
-| REL-VV-PROFARMA01-001 | Relatório de Execução de Testes | 1.0 | VV 4–5 |
-| RAC-PROFARMA01-001 | Relatório de Acompanhamento | 1.0 | GPR 14 |
-| ATA-PROFARMA01-001 | Ata de Kickoff | 1.0 | GPR 13 |
-| ATA-PROFARMA01-002 | Ata de Aceite Final | 1.0 | GPR (aceite) |
-| GQA-PROFARMA01-001 | Registro de GQA | 1.0 | GPC 3 / CP (iv, v) |
-| MED-PROFARMA01-001 | Registro de Medição | 1.0 | MED 3–4 |
-| LI-PROFARMA01-001 | Lições Aprendidas | 1.0 | GPR 20 / GPC 4 |
-| TAE-PROFARMA01-001 | Termo de Encerramento | 1.0 | GPR (encerramento) |
-
----
-
-**Projetos AASP — estrutura criada, documentação a produzir**
-
-| Pasta | Cliente | Status |
-|---|---|---|
-| AASP_Andamento-Processuais | AASP | ⬜ A documentar |
-| AASP_Automacao-Governanca | AASP | ⬜ A documentar |
-| AASP_CNJ | AASP | ⬜ A documentar |
-
----
+| EXEMPLO-GPR-005 | Status Report Exemplo Preenchido | — |
+| TPL-GDE-001 | Template Registro de Analise de Decisao | — |
+| TPL-GPC-001 | Template Registro de Verificacao de GQA | — |
+| TPL-GPR-001 | Template Plano de Projeto | [versão] |
+| TPL-GPR-002 | Template Termo de Abertura | [versão] |
+| TPL-GPR-003 | Template Registro de Adaptacao | [versão] |
+| TPL-GPR-004 | Template Termo de Encerramento | [versão] |
+| TPL-GPR-005 | Template Relatorio de Acompanhamento | — |
+| TPL-GPR-006 | Template Change Request | — |
+| TPL-ITP-001 | Template Estrategia de Integracao | [versão] |
+| TPL-ORG-001 | Template Ata de Reuniao | — |
+| TPL-PCP-001 | Template Documento de Design | [versão] |
+| TPL-REQ-001 | Template Documento de Requisitos | [versão] |
+| TPL-REQ-002 | Template Matriz de Rastreabilidade | [versão] |
+| TPL-VV-001 | Template Plano de Verificacao e Validacao | [versão] |
+| TPL-VV-002 | Template Registro de Revisao por Pares | — |
 
 ### Capacidade (`oficial/05_capacidade/`)
 
 | Código | Documento | Versão | Atende |
 |---|---|---|---|
-| MAPA-CAP-001 | Mapa de Capacidade dos Processos (CP-E/D/C) | 1.1 | CP-E, CP-D, CP-C (rastreabilidade) |
+| MAPA-CAP-001 | Mapa de Capacidade dos Processos | 1.1 | CP-E/D/C |
+| MAPA-ORG-001 | Matriz de Papeis e Responsabilidades | 1.0 | OSW 4; CP (iii) |
+
+### Registros de projeto — PROFARMA (`04_registros/PROFARMA_Cadastro-de-Clientes/`)
+
+| Código | Documento | Versão |
+|---|---|---|
+| ADAP-PROFARMA01-001 | Registro de Adaptacao | 1.1 |
+| ATA-PROFARMA01-001 | Ata de Kickoff | 1.0 |
+| ATA-PROFARMA01-002 | Ata de Aceite Final | 1.0 |
+| CR-PROFARMA01-001 | Registro de Change Requests | 1.0 |
+| CTQ-PROFARMA01-001 | Cenarios de Teste Homologacao | 1.0 |
+| GCO-PROFARMA01-001 | Registro de Gerencia de Configuracao | 1.0 |
+| GDE-PROFARMA01-001 | Registro de Analise de Decisao | 1.0 |
+| GQA-PROFARMA01-001 | Registro de GQA | 1.1 |
+| ITP-PROFARMA01-001 | Estrategia de Integracao | 1.0 |
+| LI-PROFARMA01-001 | Licoes Aprendidas | 1.2 |
+| MED-PROFARMA01-001 | Registro de Medicao | 1.2 |
+| PCP-PROFARMA01-001 | Documento de Design | 1.5 |
+| PLA-PROFARMA01-001 | Plano de Projeto | 1.3 |
+| RAC-PROFARMA01-001 | Relatorio de Acompanhamento | 1.0 |
+| RASTR-PROFARMA01-001 | Matriz de Rastreabilidade | 1.1 |
+| REL-VV-PROFARMA01-001 | Relatorio de Execucao de Testes | 1.0 |
+| REQ-PROFARMA01-001 | Documento de Requisitos | 1.4 |
+| REV-PROFARMA01-001 | Registro de Revisao Tecnica | 1.0 |
+| TAE-PROFARMA01-001 | Termo de Encerramento | 1.0 |
+| TAP-PROFARMA01-001 | Termo de Abertura | 1.0 |
+| VV-PROFARMA01-001 | Plano de VV | 1.2 |
+
+### Registros de projeto — GASMIG (`04_registros/FTGASMIG_Governanca-APIs/GASMIG02_Fundacao-Tecnologica/`)
+
+| Código | Documento | Versão |
+|---|---|---|
+| ADAP-GASMIG02-001 | Registro de Adaptacao | 1.4 |
+| ADAP-GASMIG02-002 | Registro de Adaptacao OS002 | 1.2 |
+| ATA-GASMIG02-001 | Ata de Kickoff | — |
+| ATA-GASMIG02-002 | Ata de Aceite OS001 | — |
+| ATA-GASMIG02-003 | Apresentacao Entrega OS002 | 1.0 |
+| CAP-GASMIG02-001 | Registro de Capacitacao da Equipe | 1.1 |
+| GCO-GASMIG02-001 | Gerencia de Configuracao | 1.0 |
+| GDE-GASMIG02-001 | Registro de Analise de Decisao | 1.1 |
+| GQA-GASMIG02-001 | Registro de GQA | 1.5 |
+| ITP-GASMIG02-002 | Estrategia de Integracao OS002 | 1.0 |
+| LI-GASMIG02-001 | Licoes Aprendidas | 1.2 |
+| MED-GASMIG02-001 | Registro de Medicao | 1.2 |
+| PCP-GASMIG02-001 | Documento de Design | 1.1 |
+| PCP-GASMIG02-002 | Documento de Design OS002 | 1.0 |
+| PLA-GASMIG02-001 | Plano de Projeto | 1.3 |
+| PLA-GASMIG02-002 | Plano de Projeto OS002 | 1.3 |
+| RAC-GASMIG02-001 | Relatorio de Acompanhamento | 1.1 |
+| RASTR-GASMIG02-001 | Matriz de Rastreabilidade | 1.0 |
+| RASTR-GASMIG02-002 | Matriz de Rastreabilidade OS002 | 1.0 |
+| REQ-GASMIG02-001 | Documento de Requisitos | 1.0 |
+| REQ-GASMIG02-002 | Documento de Requisitos OS002 | 1.0 |
+| REV-GASMIG02-001 | Registro de Verificacao Tecnica | 1.0 |
+| TAE-GASMIG02-001 | Termo de Encerramento OS001 | 1.0 |
+| TAE-GASMIG02-002 | Termo de Encerramento OS002 | 1.0 |
+| TAP-GASMIG02-001 | Termo de Abertura | 1.0 |
+| TAP-GASMIG02-002 | Termo de Abertura OS002 | 1.0 |
+| VV-GASMIG02-001 | Plano de VV | 1.2 |
+| VV-GASMIG02-002 | Plano de VV OS002 | 1.1 |
+
+### Registros de projeto — FRUKI (`04_registros/FTFRUKI_SuperApp-Forca-de-Vendas/`)
+
+| Código | Documento | Versão |
+|---|---|---|
+| ADAP-FRUKI01-001 | Registro de Adaptacao | 1.2 |
+| ADAP-FRUKI01-002 | Registro de Adaptacao PacoteFinal24 | 1.2 |
+| ATA-FRUKI01-001 | Ata de Kickoff | — |
+| ATA-FRUKI01-002 | Ata Levantamento Metas | — |
+| ATA-FRUKI01-003 | Ata de Aceite Final | — |
+| ATA-FRUKI01-004 | Ata Validacao Sprint1 NaoAlocados | 1.0 |
+| ATA-FRUKI01-005 | Ata Validacao Sprint2 RegraDeOuro | 1.0 |
+| ATA-FRUKI01-006 | Ata Validacao Sprint3 PDV | 1.0 |
+| ATA-FRUKI01-007 | Ata Piloto Pacote1 | 1.0 |
+| ATA-FRUKI01-008 | Ata Kickoff PacoteFinal24 | 1.0 |
+| CR-FRUKI01-001 | Solicitacao de Mudanca RegraDeOuro | 1.0 |
+| GCO-FRUKI01-001 | Registro de Configuracao | 1.4 |
+| GDE-FRUKI01-001 | Registro de Decisao | — |
+| GQA-FRUKI01-001 | Registro de GQA | 1.2 |
+| ITP-FRUKI01-001 | Estrategia de Integracao | 1.0 |
+| ITP-FRUKI01-002 | Estrategia de Integracao PacoteFinal24 | 1.0 |
+| LI-FRUKI01-001 | Licoes Aprendidas | 1.0 |
+| MED-FRUKI01-001 | Registro de Medicao | 1.0 |
+| PCP-FRUKI01-001 | Documento de Design | 1.0 |
+| PCP-FRUKI01-002 | Documento de Design PacoteFinal24 | 1.0 |
+| PLA-FRUKI01-001 | Plano de Projeto | 1.1 |
+| PLA-FRUKI01-002 | Plano de Projeto PacoteFinal24 | 1.0 |
+| RAC-FRUKI01-001 | Relatorio de Acompanhamento | — |
+| RAC-FRUKI01-002 | Relatorio de Acompanhamento Pacote1 | — |
+| RASTR-FRUKI01-001 | Matriz de Rastreabilidade | 1.0 |
+| RASTR-FRUKI01-002 | Matriz de Rastreabilidade PacoteFinal24 | 1.0 |
+| REQ-FRUKI01-001 | Documento de Requisitos | 1.1 |
+| REQ-FRUKI01-002 | Documento de Requisitos PacoteFinal24 | 1.0 |
+| TAE-FRUKI01-001 | Termo de Encerramento | 1.0 |
+| TAE-FRUKI01-002 | Termo de Encerramento PacoteFinal24 | 1.1 |
+| TAP-FRUKI01-001 | Termo de Abertura | 1.1 |
+| TAP-FRUKI01-002 | Termo de Abertura PacoteFinal24 | 1.1 |
+| VV-FRUKI01-001 | Plano VeV | 1.0 |
+| VV-FRUKI01-002 | Plano VeV PacoteFinal24 | 1.0 |
+
+### Registros de projeto — AASP_CNJ (`04_registros/AASP_CNJ/`)
+
+| Código | Documento | Versão |
+|---|---|---|
+| 00 | INDICE AASPCNJ01_Mapa de Registros | 1.5 |
+| ADAP-AASPCNJ01-001 | Registro de Adaptacao | 1.0 |
+| ATA-AASPCNJ01-001 | Ata Alinhamento Fluxo CNJ | — |
+| CAP-AASPCNJ01-001 | Registro de Capacitacao da Equipe | 1.0 |
+| CR-AASPCNJ01-001 | Change Request | — |
+| GCO-AASPCNJ01-001 | Registro de Configuracao | 1.0 |
+| GDE-AASPCNJ01-001 | Registro de Analise de Decisao | — |
+| GQA-AASPCNJ01-001 | Registro de GQA | — |
+| ITP-AASPCNJ01-001 | Estrategia de Integracao | 1.0 |
+| MED-AASPCNJ01-001 | Registro de Medicao | 1.0 |
+| PCP-AASPCNJ01-001 | Documento de Design | 1.0 |
+| PLA-AASPCNJ01-001 | Plano de Projeto | 1.0 |
+| RAC-AASPCNJ01-001 | Relatorio de Acompanhamento | — |
+| RASTR-AASPCNJ01-001 | Matriz de Rastreabilidade | 1.0 |
+| REL-VV-AASPCNJ01-001 | Relatorio de Execucao de Testes | 1.0 |
+| REQ-AASPCNJ01-001 | Documento de Requisitos | 1.0 |
+| REV-AASPCNJ01-001 | Registro de Revisao por Pares | — |
+| TAP-AASPCNJ01-001 | Termo de Abertura | 1.0 |
+| VV-AASPCNJ01-001 | Plano de VV | 1.0 |
 
 ### Internos (`_interno/`) — não auditados pela ASR
 
-| Código | Documento | Versão | Observação |
-|---|---|---|---|
-| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | 0.36 | Rascunho de gestão |
-| GUIA-ORG-001 | Guia de Estrutura do Confluence | 1.0 | Apoio à navegação no Confluence |
+| Código | Documento | Observação |
+|---|---|---|
+| MAPA-ORG-001 | Mapa de Artefatos / Plano de Implantação (este doc) | Rascunho de gestão (v0.40) |
+| GUIA-ORG-001 | Guia de Estrutura do Confluence | Apoio à navegação no Confluence |
+| PlanilhaIndicadores...PREENCHIDA | Planilha de evidências para a ASR | Submissão da avaliação (links Drive) |
 
-### Pendentes / A produzir
+### Lacunas de upload (existem no repositório, ainda sem link no Drive)
 
-| Código | Documento | Prioridade | Observação |
-|---|---|---|---|
-| DIAG-GPC-001 | Diagrama do Fluxo do Processo-Padrão (figura) | Média | Ilustra PRO-GPC-001; a atualizar com ambientes |
-| TREINO-* | Apostilas de treinamento por papel | Baixa | Apoio à preparação da equipe — não é evidência MPS |
-
----
+| Código | Pasta | Observação |
+|---|---|---|
+| REG-MED-001 | 01_apoio | Repositório de medidas — subir `.docx` ao Drive (reforça MED 3/7 e GPC 9) |
+| EXEMPLO-GPR-005 | 03_templates | Exemplo preenchido de status report — apoio, não é evidência obrigatória |
+| ATA-FRUKI01-008 | 04_registros/FTFRUKI | Ata de kickoff do Pacote Final 24 — subir ao Drive (reforça GPR 13 do FRUKI) |
+| 00_INDICE-AASPCNJ01 | 04_registros/AASP_CNJ | Índice do projeto AASP (reserva) |
 
 ## FASE 1 — GOVERNANÇA
 

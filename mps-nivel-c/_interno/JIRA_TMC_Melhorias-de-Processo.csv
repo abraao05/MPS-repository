@@ -1,0 +1,20 @@
+ID Tarefa,OM Ref.,Área,Descrição,Responsável,Prazo,Status,Artefato
+IMPL-OM01-A,OM-01,GPR / REQ,Elaborar checklist de discovery para projetos com integrações a sistemas legados,Time de Melhoria Contínua,Ago/2026,Planejada,GUIA-GPC-001 / TPL-GPR-001
+IMPL-OM02-A,OM-02,GPR,Incluir campo de lead time de GMUD no template de estimativa de sprint,Time de Melhoria Contínua,Ago/2026,Planejada,TPL-GPR-001
+IMPL-OM03-A,OM-03,GPR,Formalizar registro obrigatório de CRs com esforço estimado em contratos de squad,Time de Melhoria Contínua,Jul/2026,Planejada,PRO-GPC-001
+IMPL-OM04-A,OM-04,PCP,Criar guia técnico para projetos com carga inicial de base legada,Time de Melhoria Contínua,Set/2026,Planejada,GUIA-PCP-001
+IMPL-OM05-A,OM-05,PCP,Documentar outbox pattern como padrão arquitetural para integrações com legados,Time de Melhoria Contínua,Jul/2026,Em implementação,Confluence — biblioteca técnica
+IMPL-OM06-A,OM-06,GPR,Criar checklist de pré-engajamento para projetos Azure,Time de Melhoria Contínua,Jun/2026,Implementada,LI-GASMIG02-001 §5
+IMPL-OM07-A,OM-07,MED / GPR,Incluir métricas de referência para alertas e monitoramento Azure na base de estimativas,Time de Melhoria Contínua,Set/2026,Planejada,PLA-MED-001
+IMPL-OM08-A,OM-08,PCP,Elaborar template de naming convention para recursos Azure,Time de Melhoria Contínua,Ago/2026,Planejada,TPL-PCP-002
+IMPL-OM09-A,OM-09,VV,Incluir validação de Named Values no checklist de verificação técnica,Time de Melhoria Contínua,Jul/2026,Planejada,Checklists VV Azure
+IMPL-OM10-A,OM-10,GPR,Criar template de ata de aceite com checklist de entregáveis,Time de Melhoria Contínua,Jul/2026,Em análise,TPL-GPR-007
+IMPL-OM11-A,OM-11,PCP,Incluir seção de parâmetros de monitoramento em template PCP Azure,Time de Melhoria Contínua,Ago/2026,Em análise,TPL-PCP-001
+IMPL-DOC-01,—,Conformidade AQU,Registrar não aplicabilidade do AQU em todos os Registros de Adaptação (5 ADAPTs),Time de Melhoria Contínua,13/06/2026,Implementada,"ADAP-GASMIG02-001 v1.4, ADAP-GASMIG02-002 v1.2, ADAP-FRUKI01-001 v1.2, ADAP-FRUKI01-002 v1.2, ADAP-PROFARMA01-001 v1.1"
+IMPL-DOC-02,—,Governança OSW,Criar Painel de Portfólio REG-OSW-001 (OSW 8/9/10),Time de Melhoria Contínua,13/06/2026,Implementada,REG-OSW-001 v1.0
+IMPL-DOC-03,—,GQA Organizacional,Estender GQA-ORG-001 para cobrir AQU (§3.6) e OSW (§3.7),Time de Melhoria Contínua,13/06/2026,Implementada,GQA-ORG-001 v1.1
+IMPL-DOC-04,—,Governança OSW,Atualizar PRO-OSW-002 para referenciar REG-OSW-001,Time de Melhoria Contínua,13/06/2026,Implementada,PRO-OSW-002 v1.3
+IMPL-DOC-05,—,Capacitação / OSW 2,Incluir orçamento MPS-SW Nível C em PLA-CAP-001 §6.1,Time de Melhoria Contínua,13/06/2026,Implementada,PLA-CAP-001 v1.2
+IMPL-DOC-06,—,Governança OSW 3,Produzir ATA-GPC-001 — reunião análise crítica TMC,Time de Melhoria Contínua,13/06/2026,Implementada,ATA-GPC-001 v1.0
+IMPL-DOC-07,—,Governança OSW 7,Produzir REG-OSW-002 — registro de comunicação da política,Time de Melhoria Contínua,13/06/2026,Implementada,REG-OSW-002 v1.0
+IMPL-DOC-08,—,GPC 5 / GPC 6,Produzir REG-GPC-002 — plano de implementação de melhorias,Time de Melhoria Contínua,13/06/2026,Implementada,REG-GPC-002 v1.0
