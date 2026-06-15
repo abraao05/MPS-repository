@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | POL-ORG-001 — Política Organizacional de Processos |
-| **Versão** | 1.0 |
-| **Data** | 07/07/2025 |
+| **Versão** | 1.1 |
+| **Data** | 15/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação / Patrocínio** | Tiago Barbosa Nascimento — Founder e CEO |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
@@ -68,8 +68,9 @@ A Timeware adota uma separação clara entre quem **define** os processos, quem 
 | Papel | Responsabilidade em relação à Política |
 |---|---|
 | **Founder e CEO** | Aprovar e patrocinar a Política; garantir recursos; revisar periodicamente o alinhamento dos processos aos objetivos de negócio. |
+| **COO (Operações)** | **Operacionalizar** as diretrizes desta Política no dia a dia da organização; coordenar a alocação de recursos compartilhados entre projetos; conduzir as auditorias de Garantia da Qualidade de Processo (GQA) com independência em relação às equipes auditadas; aprovar adaptações de processo de projetos; escalar ao CEO desvios que coloquem em risco os objetivos organizacionais. |
 | **Time de Melhoria Contínua** (Grupo de Processos da organização) | **Definir** e manter os processos-padrão, templates e materiais de apoio; disponibilizá-los na biblioteca de ativos; apoiar os projetos no uso dos processos e conduzir sua melhoria contínua. |
-| **Garantia da Qualidade de Processo (GQA)** | **Verificar** objetivamente se os projetos e equipes executam o trabalho de acordo com os processos definidos e se os produtos de trabalho atendem aos padrões, de forma independente em relação a quem executou o trabalho avaliado. |
+| **Garantia da Qualidade de Processo (GQA)** | **Verificar** objetivamente se os projetos e equipes executam o trabalho de acordo com os processos definidos e se os produtos de trabalho atendem aos padrões, de forma independente em relação a quem executou o trabalho avaliado. A função de auditor GQA é exercida pelo COO ou por colaborador designado pelo COO com independência em relação à equipe auditada. |
 | **Gerentes de Projeto** | **Executar** o planejamento e o acompanhamento dos projetos conforme os processos, adaptando-os ao contexto de cada projeto. |
 | **Equipes de Engenharia / Projeto (Scrum)** | **Executar** o trabalho técnico utilizando os processos, templates e materiais definidos, ao longo das sprints. |
 | **Colaboradores** | Conhecer e seguir os processos aplicáveis às suas atividades. |
@@ -110,3 +111,4 @@ Este documento corresponde ao resultado **OSW 1** do processo **Gerência Organi
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 07/07/2025 | Time de Melhoria Contínua | Formalização da Política Organizacional de Processos |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Adição do papel COO (Operações) na seção 5 (Responsabilidades), com definição de suas atribuições operacionais, de coordenação de portfólio, de GQA e de governança de adaptações de processo — alinhamento com PRO-GPC-002, PRO-OSW-001, EST-GPC-001, EST-GPC-002 e PLA-GPC-001, que já referenciavam o COO. Resolução da pendência #1 do PENDENCIAS.md. |
