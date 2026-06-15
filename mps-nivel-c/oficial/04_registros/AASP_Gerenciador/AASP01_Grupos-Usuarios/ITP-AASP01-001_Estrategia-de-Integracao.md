@@ -7,10 +7,10 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Produto** | ms.auxo.gruposusuarios |
 | **Repositório** | Azure DevOps · komatsuhenry67/gerenciador-aasp/ms.auxo.gruposusuarios |
-| **GP / Tech Lead** | Henry Komatsu — Timeware Brasil |
-| **Dev Junior** | Bruno Almeida — Timeware Brasil |
-| **PO** | Marcos Ferreira — AASP |
-| **QA** | Renata Souza — AASP |
+| **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
+| **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
+| **PO** | Marcos Turnes — AASP |
+| **QA** | Leonardo Francisco Pereira — AASP |
 | **Data base** | 26/05/2026 |
 | **Versão** | 1.0 |
 | **Status** | Ativo |
@@ -45,7 +45,7 @@ O ms.auxo.gruposusuarios é um microsserviço REST desenvolvido em .NET Framewor
 | Fase 2 | S2 | Auditoria de ações (AG-23) | Escrita na tabela AuditoriaGrupos via triggers | Tabela AuditoriaGrupos criada + trigger de INSERT ativo em toda operação de escrita + caso AUD-01 passando | ⏳ Em andamento |
 | Fase 2 | S2 | Integração ms.temis.vinculos (AG-24) | HTTP POST para ms.temis.vinculos/api/vinculos | Contrato de API definido + cliente HTTP implementado + caso INT-01 passando + comportamento de retry testado | ⏳ Em andamento |
 | Fase 3 | S3 | Relatório consolidado (AG-25) | GET /grupos/relatorio (JOIN entre Grupos, PermissoesGrupo e UsuariosGrupo) | Endpoint retornando payload correto + caso REL-01 aprovado | 📅 Planejado |
-| Fase 4 | S4 | Homologação final | Todos os endpoints integrados + ms.temis.vinculos em ambiente AASP | Renata Souza (AASP/QA) valida todos os cenários de aceite em ambiente de homologação | 📅 Planejado |
+| Fase 4 | S4 | Homologação final | Todos os endpoints integrados + ms.temis.vinculos em ambiente AASP | Leonardo Francisco Pereira (AASP/QA) valida todos os cenários de aceite em ambiente de homologação | 📅 Planejado |
 
 ---
 
@@ -90,7 +90,7 @@ Esta interface representa o consumo dos endpoints REST do ms.auxo.gruposusuarios
 |---|---|---|---|
 | **Desenvolvimento** | Máquinas dos desenvolvedores (Timeware) + ms.temis.vinculos em ambiente dev compartilhado | SQL Server local — auxo3 dev | Sprint 1 e Sprint 2 |
 | **Integração contínua** | Pipeline Azure DevOps — build + testes automatizados a cada PR | SQL Server em container (CI) | Sprint 1 em diante |
-| **Homologação** | Ambiente AASP — instância dedicada com dados anonimizados | SQL Server AASP — auxo3 e temis3 | A partir de Sprint 2 (aguardando confirmação Renata Souza) |
+| **Homologação** | Ambiente AASP — instância dedicada com dados anonimizados | SQL Server AASP — auxo3 e temis3 | A partir de Sprint 2 (aguardando confirmação Leonardo Francisco Pereira) |
 
 **Observação de segurança:** as connection strings e a chave de serviço X-Service-Key são gerenciadas exclusivamente via variáveis de ambiente, sem nenhum valor hardcoded no código-fonte ou nos arquivos de configuração versionados.
 
@@ -104,7 +104,7 @@ Esta interface representa o consumo dos endpoints REST do ms.auxo.gruposusuarios
 | INT-01 (ms.temis.vinculos) | Falha após retry deve gerar log de erro e não confirmar a operação no auxo3 | Validado por teste de falha simulada | ⏳ Sprint 2 |
 | INT-02 (Gerenciador AASP) | Todos os endpoints respondem corretamente com JWT válido e rejeitam requisições sem token | 100% dos testes de autenticação passando | ✅ Sprint 1 |
 | Relatório (AG-25) | GET /grupos/relatorio retorna dados consolidados corretos com JOIN entre as três tabelas | Caso REL-01 aprovado por QA | 📅 Sprint 3 |
-| Homologação final | Todos os cenários de aceite validados por Renata Souza em ambiente AASP | 100% dos cenários aprovados | 📅 Sprint 4 |
+| Homologação final | Todos os cenários de aceite validados por Leonardo Francisco Pereira em ambiente AASP | 100% dos cenários aprovados | 📅 Sprint 4 |
 
 ---
 
@@ -112,4 +112,4 @@ Esta interface representa o consumo dos endpoints REST do ms.auxo.gruposusuarios
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 26/05/2026 | Henry Komatsu | Versão inicial — estratégia de integração definida para as quatro fases do projeto |
+| 1.0 | 26/05/2026 | Abraão | Versão inicial — estratégia de integração definida para as quatro fases do projeto |

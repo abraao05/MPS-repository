@@ -8,7 +8,7 @@
 | Produto       | ms.auxo.gruposusuarios                                                |
 | Versão        | 1.0                                                                   |
 | Data          | 19/05/2026                                                            |
-| Autor         | Henry Komatsu                                                         |
+| Autor         | Abraão                                                         |
 | Status        | Aprovado                                                              |
 
 ---
@@ -42,10 +42,12 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 
 | Papel                   | Nome             | Organização | Contato                          |
 |-------------------------|------------------|-------------|----------------------------------|
-| PO / Patrocinador        | Marcos Ferreira  | AASP        | —                                |
-| QA                      | Renata Souza     | AASP        | —                                |
-| Gerente de Projeto / TL | Henry Komatsu    | Timeware    | henry.komatsu@timeware.com.br    |
-| Desenvolvedor Junior    | Bruno Almeida    | Timeware    | —                                |
+| PO / Patrocinador        | Marcos Turnes  | AASP        | —                                |
+| QA                      | Leonardo Francisco Pereira     | AASP        | —                                |
+| Gerente de Projeto / TL | Abraão (GP) · Cezar Hiraki (TL)    | Timeware    | Abraão (a confirmar) · contato@cezarvelazquez.com.br |
+| Desenvolvedor           | Renan Kiyoshi    | Timeware    | renan.kiyoshi.timeware@outlook.com |
+| Desenvolvedor           | Henry Komatsu    | Timeware    | henry.komatsu.timeware@outlook.com |
+| Desenvolvedor           | Mateus Veloso           | Timeware    | mateus.veloso.timeware@outlook.com |
 
 ## 4. Macroplanejamento
 
@@ -53,7 +55,7 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 |----------------------|-----------------------|-----------------------------------------|
 | Kickoff              | 19/05/2026            | Realizado — ver ATA-AASP01-001          |
 | Sprint 1 — início    | 26/05/2026            | —                                       |
-| Sprint 1 — fim       | 06/06/2026            | ✅ Concluída — aceite Marcos Ferreira   |
+| Sprint 1 — fim       | 06/06/2026            | ✅ Concluída — aceite Marcos Turnes   |
 | Sprint 2 — início    | 09/06/2026            | Em andamento                            |
 | Sprint 2 — fim       | 20/06/2026            | —                                       |
 | Sprint 3 — início    | 23/06/2026            | Planejada                               |
@@ -89,4 +91,4 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 
 | Versão | Data       | Autor          | Descrição             |
 |--------|------------|----------------|-----------------------|
-| 1.0    | 19/05/2026 | Henry Komatsu  | Criação do documento  |
+| 1.0    | 19/05/2026 | Abraão  | Criação do documento  |

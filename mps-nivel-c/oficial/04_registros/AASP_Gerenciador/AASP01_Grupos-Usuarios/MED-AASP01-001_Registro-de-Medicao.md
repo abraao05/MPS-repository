@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associacao dos Advogados de Sao Paulo |
 | **Versao** | 1.1 |
 | **Data** | 15/06/2026 |
-| **Gerente de Projeto** | Henry Komatsu |
+| **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | MED — Medicao (evidencia de projeto) |
 
 ---
@@ -26,9 +26,9 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 |---|---|
 | **Plano de referencia** | PLA-MED-001 — Plano de Medicao Organizacional Timeware |
 | **Frequencia de coleta** | Por sprint (a cada 2 semanas) |
-| **Responsavel pela coleta** | Henry Komatsu (Gerente de Projeto / Tech Lead) |
+| **Responsavel pela coleta** | Abraão (Gerente de Projeto) |
 | **Repositorio dos dados** | Azure DevOps — Boards + Repositorio ms.auxo.gruposusuarios |
-| **Destinatarios** | Henry Komatsu (interno), Marcos Ferreira (AASP, status semanal) |
+| **Destinatarios** | Abraão (interno), Marcos Turnes (AASP, status semanal) |
 
 ---
 
@@ -40,7 +40,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 |---|---|---|---|---|
 | Kickoff | 19/05/2026 | 19/05/2026 | 0 dias | Realizado conforme planejado; todos os participantes presentes |
 | Inicio Sprint 1 | 26/05/2026 | 26/05/2026 | 0 dias | — |
-| Aceite Sprint 1 | 06/06/2026 | 06/06/2026 | 0 dias | Aceite formal Marcos Ferreira sem ressalvas |
+| Aceite Sprint 1 | 06/06/2026 | 06/06/2026 | 0 dias | Aceite formal Marcos Turnes sem ressalvas |
 | Inicio Sprint 2 | 09/06/2026 | 09/06/2026 | 0 dias | — |
 | Encerramento Sprint 2 (previsto) | 20/06/2026 | — | Em andamento | Posicao: ~60% concluido em 15/06/2026 |
 | Inicio Sprint 3 | 23/06/2026 | — | Planejado | — |
@@ -104,7 +104,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | Tempo de resposta p95 — GET /grupos | <= 260 ms | <= 500 ms | Dev (Swagger UI) | Meta atingida |
 | Disponibilidade ambiente dev | > 99% no periodo da Sprint 1 | >= 99% | Dev (local) | Meta atingida |
 
-> Medicoes realizadas via Swagger UI em ambiente dev local durante a Sprint 1. Medicoes em ambiente de homologacao AASP serao realizadas a partir da Sprint 2 (ambiente disponivel a partir de 09/06/2026 — Renata Souza).
+> Medicoes realizadas via Swagger UI em ambiente dev local durante a Sprint 1. Medicoes em ambiente de homologacao AASP serao realizadas a partir da Sprint 2 (ambiente disponivel a partir de 09/06/2026 — Leonardo Francisco Pereira).
 
 ---
 
@@ -119,7 +119,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | M5 | Taxa de aprovacao no aceite | 100% (10/10 cenarios Sprint 1) | >= 95% | Atingido | CTQ-AASP01-001 |
 | M6 | Tempo medio de resposta API | <= 280 ms (Swagger dev, endpoint p95) | <= 500 ms | Atingido | Evidencia Swagger Sprint 1 |
 | M7 | % de requisitos rastreados | 100% (AG-20 a AG-25 rastreados) | 100% | Atingido | RASTR-AASP01-001 |
-| M8 | Satisfacao do cliente | Aceite formal sem ressalvas (Marcos Ferreira, 06/06/2026) | Aceite formal | Atingido | ATA-AASP01-002 |
+| M8 | Satisfacao do cliente | Aceite formal sem ressalvas (Marcos Turnes, 06/06/2026) | Aceite formal | Atingido | ATA-AASP01-002 |
 
 ---
 
@@ -131,10 +131,10 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 - Atualizar M2 com SP realizado vs. planejado (28 SP)
 - Atualizar M3 com achados de code review PRs #16 e #17
 - Atualizar M4 com cobertura de testes unitarios AG-23 e AG-24
-- Atualizar M5 apos UAT Sprint 2 (Renata Souza)
+- Atualizar M5 apos UAT Sprint 2 (Leonardo Francisco Pereira)
 - Atualizar M6 com medicoes de performance em ambiente homologacao AASP
 - Confirmar M7 com rastreabilidade AG-23 e AG-24
-- Atualizar M8 apos aceite formal Sprint 2 (Marcos Ferreira)
+- Atualizar M8 apos aceite formal Sprint 2 (Marcos Turnes)
 
 ---
 
@@ -142,5 +142,5 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 
 | Versao | Data | Autor | Descricao |
 |---|---|---|---|
-| 1.0 | 09/06/2026 | Henry Komatsu | Versao inicial — pos-encerramento Sprint 1; registros M1-M8 com dados reais Sprint 1 |
-| 1.1 | 15/06/2026 | Henry Komatsu | Atualizacao com status parcial Sprint 2 (~60% concluido em 15/06); secao 7 atualizada com proximo ponto de medicao |
+| 1.0 | 09/06/2026 | Abraão | Versao inicial — pos-encerramento Sprint 1; registros M1-M8 com dados reais Sprint 1 |
+| 1.1 | 15/06/2026 | Abraão | Atualizacao com status parcial Sprint 2 (~60% concluido em 15/06); secao 7 atualizada com proximo ponto de medicao |

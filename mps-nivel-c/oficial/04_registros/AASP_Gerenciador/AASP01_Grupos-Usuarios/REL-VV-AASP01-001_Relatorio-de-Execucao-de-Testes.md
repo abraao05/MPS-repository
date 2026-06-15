@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
-| **Gerente de Projeto** | Henry Komatsu |
+| **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | VV (evidência de projeto) |
 
 ---
@@ -70,7 +70,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 ### 3.4 Testes de Homologação — Sprint 1 (UAT)
 
-**Executados por:** Renata Souza (AASP — QA/Homologadora)
+**Executados por:** Leonardo Francisco Pereira (AASP — QA/Homologadora)
 **Data de execução:** 06/06/2026
 **Ambiente:** Homologação AASP — banco auxo3
 
@@ -107,8 +107,8 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 | Etapa | Responsável | Data | Resultado |
 |---|---|---|---|
-| Execução dos cenários de aceite (CTQ) | Renata Souza (AASP — QA) | 06/06/2026 | Todos os 10 cenários aprovados |
-| Aceite formal do cliente | Marcos Ferreira (AASP — PO) | 06/06/2026 | Concedido sem ressalvas |
+| Execução dos cenários de aceite (CTQ) | Leonardo Francisco Pereira (AASP — QA) | 06/06/2026 | Todos os 10 cenários aprovados |
+| Aceite formal do cliente | Marcos Turnes (AASP — PO) | 06/06/2026 | Concedido sem ressalvas |
 
 ---
 
@@ -142,7 +142,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 **Status: Aguardando conclusão da implementação — previsto para 19 e 20/06/2026**
 
-Os cenários de aceite da Sprint 2 (AUD-01, AUD-02 para AG-23; INT-01 para AG-24) serão executados por Renata Souza (AASP) após conclusão da implementação e disponibilização do ambiente de homologação atualizado.
+Os cenários de aceite da Sprint 2 (AUD-01, AUD-02 para AG-23; INT-01 para AG-24) serão executados por Leonardo Francisco Pereira (AASP) após conclusão da implementação e disponibilização do ambiente de homologação atualizado.
 
 ---
 
@@ -150,10 +150,10 @@ Os cenários de aceite da Sprint 2 (AUD-01, AUD-02 para AG-23; INT-01 para AG-24
 
 | Pendência | Responsável | Previsão |
 |---|---|---|
-| Completar implementação dos triggers de auditoria para operação DELETE (AG-23) | Bruno Almeida | 17/06/2026 |
-| Testes de integração com ms.temis.vinculos em ambiente dev compartilhado (AG-24) | Bruno Almeida | 18/06/2026 |
-| UAT — Renata Souza executa cenários AUD-01, AUD-02 e INT-01 | Renata Souza (AASP) | 19–20/06/2026 |
-| Sprint Review e aceite formal Sprint 2 com Marcos Ferreira | Henry Komatsu + Marcos Ferreira | 20/06/2026 — 14h00 Teams |
+| Completar implementação dos triggers de auditoria para operação DELETE (AG-23) | Renan Kiyoshi | 17/06/2026 |
+| Testes de integração com ms.temis.vinculos em ambiente dev compartilhado (AG-24) | Renan Kiyoshi | 18/06/2026 |
+| UAT — Leonardo Francisco Pereira executa cenários AUD-01, AUD-02 e INT-01 | Leonardo Francisco Pereira (AASP) | 19–20/06/2026 |
+| Sprint Review e aceite formal Sprint 2 com Marcos Turnes | Abraão + Marcos Turnes | 20/06/2026 — 14h00 Teams |
 
 ---
 
@@ -185,5 +185,5 @@ Os cenários de aceite da Sprint 2 (AUD-01, AUD-02 para AG-23; INT-01 para AG-24
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 09/06/2026 | Henry Komatsu | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
-| 1.1 | 15/06/2026 | Henry Komatsu | Inclusão dos resultados parciais da Sprint 2 (AG-23 ~70%, AG-24 ~40%); seções 4 e 6 atualizadas |
+| 1.0 | 09/06/2026 | Abraão | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
+| 1.1 | 15/06/2026 | Abraão | Inclusão dos resultados parciais da Sprint 2 (AG-23 ~70%, AG-24 ~40%); seções 4 e 6 atualizadas |

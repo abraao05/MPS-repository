@@ -7,10 +7,10 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Produto** | ms.auxo.gruposusuarios |
 | **Repositório** | Azure DevOps · komatsuhenry67/gerenciador-aasp/ms.auxo.gruposusuarios |
-| **GP / Tech Lead** | Henry Komatsu — Timeware Brasil |
-| **Dev Junior** | Bruno Almeida — Timeware Brasil |
-| **PO** | Marcos Ferreira — AASP |
-| **QA** | Renata Souza — AASP |
+| **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
+| **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
+| **PO** | Marcos Turnes — AASP |
+| **QA** | Leonardo Francisco Pereira — AASP |
 | **Data base** | 26/05/2026 |
 | **Versão** | 1.1 |
 | **Status** | Ativo |
@@ -77,7 +77,7 @@ Os itens abaixo possuem requisito definido e rastreabilidade registrada, mas ain
 - **Requisitos funcionais planejados:** 1 de 9 (11%) — RF-09 previsto para S3
 - **Requisitos não funcionais validados:** 2 de 3 (67%) — RNF-01 e RNF-02 validados em S1
 - **Requisitos não funcionais pendentes:** 1 de 3 (33%) — RNF-03 depende da conclusão de AG-23 (S2)
-- **Casos de teste Sprint 1:** 10 de 10 (100%) aprovados por Renata Souza (AASP)
+- **Casos de teste Sprint 1:** 10 de 10 (100%) aprovados por Leonardo Francisco Pereira (AASP)
 - **Rastreabilidade req → teste:** 100% para todos os requisitos entregues até S1
 - **Rastreabilidade req → PR:** 100% para requisitos entregues (PRs #11, #12, #13, #14, #15)
 
@@ -87,5 +87,5 @@ Os itens abaixo possuem requisito definido e rastreabilidade registrada, mas ain
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 26/05/2026 | Henry Komatsu | Versão inicial — estrutura da matriz com requisitos RF-01 a RF-09 e RNF-01 a RNF-03 |
-| 1.1 | 09/06/2026 | Henry Komatsu | Atualizado pós-Sprint 1: PRs #11 a #15 registrados, status de entrega e resultados dos casos de teste incorporados |
+| 1.0 | 26/05/2026 | Abraão | Versão inicial — estrutura da matriz com requisitos RF-01 a RF-09 e RNF-01 a RNF-03 |
+| 1.1 | 09/06/2026 | Abraão | Atualizado pós-Sprint 1: PRs #11 a #15 registrados, status de entrega e resultados dos casos de teste incorporados |

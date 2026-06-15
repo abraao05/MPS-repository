@@ -7,10 +7,10 @@
 | **Data** | 19/05/2026 |
 | **Projeto** | AG — ms.auxo.gruposusuarios |
 | **Cliente** | AASP |
-| **GP/TL** | Henry Komatsu (Timeware) |
-| **Dev** | Bruno Almeida (Timeware) |
-| **PO** | Marcos Ferreira (AASP) |
-| **QA** | Renata Souza (AASP) |
+| **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
+| **Dev** | Renan Kiyoshi (Timeware) |
+| **PO** | Marcos Turnes (AASP) |
+| **QA** | Leonardo Francisco Pereira (AASP) |
 
 ---
 
@@ -58,7 +58,7 @@ Justificativa: A compatibilidade plena com .NET Framework 4.7.2 e a consistencia
 
 - **Impacto arquitetural:** toda a camada de repositorio do ms.auxo.gruposusuarios usara Dapper com queries SQL explicitas; migrations e alteracoes de schema serao gerenciadas por scripts .sql versionados no repositorio (sem EF Core migrations)
 - **Risco aceito:** maior verbosidade no repositorio em comparacao com EF Core para operacoes simples; mitigado pela consistencia com o padrao do projeto e pela experiencia da equipe com Dapper
-- **Decisao validada por:** Henry Komatsu (TL) e Marcos Ferreira (PO) no Kickoff em 19/05/2026
+- **Decisao validada por:** Cezar Hiraki (TL) e Marcos Turnes (PO) no Kickoff em 19/05/2026
 
 ---
 
@@ -90,14 +90,14 @@ Ao excluir um grupo de usuarios, e necessario decidir se o registro e removido f
 |---|---|---|---|
 | Integridade referencial e historico | Alto | Excelente — registros de PermissoesGrupo, UsuariosGrupo e AuditoriaGrupos permanecem integros com FK valida; historico completo preservado | Ruim — exige CASCADE DELETE em todas as tabelas filhas ou exclusao manual em cascata; historico de AuditoriaGrupos perdido |
 | Rastreabilidade e auditoria | Alto | Excelente — grupos inativos podem ser consultados para auditoria; AuditoriaGrupos mantem GrupoId valido mesmo apos inativacao | Ruim — registros de AuditoriaGrupos ficam orfaos apos hard delete do grupo; rastreabilidade comprometida |
-| Comportamento validado pelo PO | Medio | Aprovado — Marcos Ferreira validou a abordagem de soft delete no Kickoff; comportamento alinhado com expectativa do AASP | Nao validado — nao e a expectativa do PO |
+| Comportamento validado pelo PO | Medio | Aprovado — Marcos Turnes validou a abordagem de soft delete no Kickoff; comportamento alinhado com expectativa do AASP | Nao validado — nao e a expectativa do PO |
 | Simplicidade de implementacao | Baixo | Media — requer adicao do campo Ativo e filtro WHERE Ativo=1 em todas as queries de listagem | Alta — DELETE SQL simples, sem necessidade de campo adicional; porem exige tratamento de cascata |
 
 ### 5. Decisao
 
 **Escolhido: Alternativa A — Soft Delete**
 
-Justificativa: A integridade referencial e critica para o ms.auxo.gruposusuarios — grupos possuem historico de vinculos (UsuariosGrupo), permissoes (PermissoesGrupo) e registros de auditoria (AuditoriaGrupos) que nao devem ser perdidos. O hard delete exigiria cascata de exclusoes ou geraria registros orfaos em tabelas filhas, comprometendo a rastreabilidade exigida pelo processo MPS-SW. O soft delete preserva o historico completo, e compativel com o requisito de auditoria (AG-23 — implementado na Sprint 2) e alinhado com a rastreabilidade exigida pelo MPS-SW nivel C. Decisao validada com o PO Marcos Ferreira no Kickoff em 19/05/2026 (referenciado como D-02 na ATA-AASP01-001).
+Justificativa: A integridade referencial e critica para o ms.auxo.gruposusuarios — grupos possuem historico de vinculos (UsuariosGrupo), permissoes (PermissoesGrupo) e registros de auditoria (AuditoriaGrupos) que nao devem ser perdidos. O hard delete exigiria cascata de exclusoes ou geraria registros orfaos em tabelas filhas, comprometendo a rastreabilidade exigida pelo processo MPS-SW. O soft delete preserva o historico completo, e compativel com o requisito de auditoria (AG-23 — implementado na Sprint 2) e alinhado com a rastreabilidade exigida pelo MPS-SW nivel C. Decisao validada com o PO Marcos Turnes no Kickoff em 19/05/2026 (referenciado como D-02 na ATA-AASP01-001).
 
 ### 6. Impacto da decisao
 
@@ -114,4 +114,4 @@ Justificativa: A integridade referencial e critica para o ms.auxo.gruposusuarios
 
 | Versao | Data | Autor | Descricao |
 |---|---|---|---|
-| 1.0 | 19/05/2026 | Henry Komatsu | Criacao do documento; decisoes GDE-001 (Dapper) e GDE-002 (Soft Delete) tomadas no Kickoff e formalizadas com base nas discussoes com Marcos Ferreira (PO) e Bruno Almeida (Dev) |
+| 1.0 | 19/05/2026 | Abraão | Criacao do documento; decisoes GDE-001 (Dapper) e GDE-002 (Soft Delete) tomadas no Kickoff e formalizadas com base nas discussoes com Marcos Turnes (PO) e Renan Kiyoshi (Dev) |

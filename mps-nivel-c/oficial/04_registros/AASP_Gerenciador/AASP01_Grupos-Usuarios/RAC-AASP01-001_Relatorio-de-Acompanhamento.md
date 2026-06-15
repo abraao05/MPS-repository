@@ -7,10 +7,10 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Produto** | ms.auxo.gruposusuarios |
 | **Repositório** | Azure DevOps · komatsuhenry67/gerenciador-aasp/ms.auxo.gruposusuarios |
-| **GP / Tech Lead** | Henry Komatsu — Timeware Brasil |
-| **Dev Junior** | Bruno Almeida — Timeware Brasil |
-| **PO** | Marcos Ferreira — AASP |
-| **QA** | Renata Souza — AASP |
+| **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
+| **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
+| **PO** | Marcos Turnes — AASP |
+| **QA** | Leonardo Francisco Pereira — AASP |
 | **Data do relatório** | 15/06/2026 |
 | **Versão** | 1.1 |
 | **Status geral** | Em andamento — Sprint 2 |
@@ -30,7 +30,7 @@ Monitorar o progresso do projeto em relação ao plano estabelecido, identificar
 | **Status geral** | ✅ Concluído com aceite formal |
 | **Período** | 26/05/2026 – 06/06/2026 |
 | **Data de aceite** | 06/06/2026 |
-| **Responsável pelo aceite** | Marcos Ferreira (PO — AASP) |
+| **Responsável pelo aceite** | Marcos Turnes (PO — AASP) |
 | **Ressalvas no aceite** | Nenhuma |
 
 ### 2.1 Itens Planejados vs. Entregues
@@ -56,7 +56,7 @@ Nenhum desvio de prazo, escopo ou esforço identificado na Sprint 1. Todas as hi
 | Resolução dos achados | Todos resolvidos antes do merge final | 100% antes do merge | ✅ |
 | Cenários de aceite executados | 10 cenários | 10 planejados | ✅ |
 | Cenários de aceite aprovados | 10 de 10 (100%) | ≥ 95% | ✅ Meta superada |
-| Aceite formal do PO | Marcos Ferreira — 06/06/2026 — sem ressalvas | Aceite formal obrigatório | ✅ |
+| Aceite formal do PO | Marcos Turnes — 06/06/2026 — sem ressalvas | Aceite formal obrigatório | ✅ |
 
 ---
 
@@ -80,7 +80,7 @@ Nenhum desvio de prazo, escopo ou esforço identificado na Sprint 1. Todas as hi
 | Código | Descrição | Probabilidade | Impacto | Mitigação | Status |
 |---|---|---|---|---|---|
 | R-04 | Falha ou instabilidade na integração com ms.temis.vinculos | Média | Alto | Contrato de API definido; retry implementado; cliente HTTP com timeout configurado | Em monitoramento |
-| R-01 | Atraso na disponibilização do ambiente de homologação AASP | Baixa | Médio | Aguardando confirmação de janela de testes por Renata Souza (AASP) | Em monitoramento |
+| R-01 | Atraso na disponibilização do ambiente de homologação AASP | Baixa | Médio | Aguardando confirmação de janela de testes por Leonardo Francisco Pereira (AASP) | Em monitoramento |
 
 ### 3.3 Projeção de Encerramento — Sprint 2
 
@@ -93,7 +93,7 @@ Com AG-23 em ~70% e AG-24 em ~40% na metade da sprint, a projeção é de conclu
 | Sprint | Período | Histórias / Entregas | SP | Status | Observação |
 |---|---|---|---|---|---|
 | S3 | 23/06–04/07/2026 | AG-25 — Relatórios consolidados (RF-09 · GET /grupos/relatorio) | 20 | 📅 Planejado | Sem ajustes de escopo até o momento; depende de AG-23 e AG-24 concluídos |
-| S4 | 07/07–11/07/2026 | Encerramento: TAE (Testes de Aceite Final), LI (Lições Aprendidas), GQA (revisão de qualidade), homologação final em ambiente AASP | 8 | 📅 Planejado | Depende do aceite formal de S3 por Marcos Ferreira; homologação conduzida por Renata Souza |
+| S4 | 07/07–11/07/2026 | Encerramento: TAE (Testes de Aceite Final), LI (Lições Aprendidas), GQA (revisão de qualidade), homologação final em ambiente AASP | 8 | 📅 Planejado | Depende do aceite formal de S3 por Marcos Turnes; homologação conduzida por Leonardo Francisco Pereira |
 
 ---
 
@@ -108,7 +108,7 @@ Com AG-23 em ~70% e AG-24 em ~40% na metade da sprint, a projeção é de conclu
 | M5 | Taxa de aceite dos cenários | 100% (10 de 10 aprovados em S1) | ≥ 95% | ✅ Meta superada |
 | M6 | Tempo de resposta dos endpoints | ≤ 280 ms (validado via Swagger em S1) | ≤ 500 ms | ✅ Meta superada |
 | M7 | Rastreabilidade req → teste | 100% (para todos os RFs entregues em S1) | 100% | ✅ Meta atingida |
-| M8 | Satisfação do cliente | Aceite formal sem ressalvas — Marcos Ferreira (06/06/2026) | Aceite formal | ✅ Meta atingida |
+| M8 | Satisfação do cliente | Aceite formal sem ressalvas — Marcos Turnes (06/06/2026) | Aceite formal | ✅ Meta atingida |
 
 ---
 
@@ -122,5 +122,5 @@ O próximo relatório de acompanhamento está previsto para **20/06/2026**, ao e
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 09/06/2026 | Henry Komatsu | Versão inicial — snapshot pós-Sprint 1 com resultados de entrega, qualidade e aceite formal |
-| 1.1 | 15/06/2026 | Henry Komatsu | Atualização com status parcial de Sprint 2 (AG-23 ~70%, AG-24 ~40%), riscos ativos e métricas consolidadas |
+| 1.0 | 09/06/2026 | Abraão | Versão inicial — snapshot pós-Sprint 1 com resultados de entrega, qualidade e aceite formal |
+| 1.1 | 15/06/2026 | Abraão | Atualização com status parcial de Sprint 2 (AG-23 ~70%, AG-24 ~40%), riscos ativos e métricas consolidadas |

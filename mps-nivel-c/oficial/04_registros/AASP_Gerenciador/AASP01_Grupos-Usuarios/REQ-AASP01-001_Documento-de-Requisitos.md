@@ -8,7 +8,7 @@
 | Produto       | ms.auxo.gruposusuarios                                                |
 | Versão        | 1.1                                                                   |
 | Data          | 26/05/2026                                                            |
-| Autor         | Henry Komatsu                                                         |
+| Autor         | Abraão                                                         |
 | Status        | Aprovado                                                              |
 
 ---
@@ -90,5 +90,5 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 
 | Versão | Data       | Autor          | Descrição                                        |
 |--------|------------|----------------|--------------------------------------------------|
-| 1.0    | 19/05/2026 | Henry Komatsu  | Levantamento inicial dos requisitos (kickoff)    |
-| 1.1    | 26/05/2026 | Henry Komatsu  | Refinamento dos requisitos para Sprint 1         |
+| 1.0    | 19/05/2026 | Abraão  | Levantamento inicial dos requisitos (kickoff)    |
+| 1.1    | 26/05/2026 | Abraão  | Refinamento dos requisitos para Sprint 1         |
