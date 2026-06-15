@@ -1,9 +1,9 @@
-# Ata de Reunião — Aceite Final do Projeto AASP_GOV · SensrJiraSync
+# Ata de Reunião — Aceite Final do Projeto AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
 | **Reunião** | Aceite Final e Encerramento do Projeto |
-| **Projeto / contexto** | AASP_GOV — SensrJiraSync |
+| **Projeto / contexto** | AASP_Automacao-Governanca — SensrJiraSync |
 | **Data** | 02/06/2026 |
 | **Local / meio** | Videoconferência |
 | **Responsável pela ata** | Abraão Oliveira |
@@ -35,7 +35,7 @@ A QA Caroline Sousa apresentou os resultados da homologação executada nas últ
 
 | Decisão / aceite | Responsável | Data |
 |---|---|---|
-| Aceite formal das entregas do projeto AASP_GOV (11 RF + 6 RNF, com critérios de aceite CA01–CA07 validados) | Marcos Correa Fernandez Turnes (Sponsor — AASP) | 02/06/2026 |
+| Aceite formal das entregas do projeto AASP_Automacao-Governanca (11 RF + 6 RNF, com critérios de aceite CA01–CA07 validados) | Marcos Correa Fernandez Turnes (Sponsor — AASP) | 02/06/2026 |
 | Autorização para publicação do serviço no Azure Scheduled Job de produção | Marcos Correa Fernandez Turnes (Sponsor — AASP) | 02/06/2026 |
 | Confirmação de zero pendências de escopo, sem CRs em aberto | Abraão Oliveira / Marcos Correa Fernandez Turnes | 02/06/2026 |
 | Acordo sobre o período de suporte pós-go-live (10 dias úteis: 02/06–12/06/2026, conforme PLA §8.3) | Marcos Correa Fernandez Turnes / Abraão Oliveira | 02/06/2026 |
@@ -62,4 +62,4 @@ Após a publicação em produção em 02/06/2026, inicia-se o período de suport
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata da reunião de aceite final do projeto AASP_GOV em 02/06/2026, com participação do Sponsor da AASP, do Gerente de Projeto, do Tech Lead e da QA. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata da reunião de aceite final do projeto AASP_Automacao-Governanca em 02/06/2026, com participação do Sponsor da AASP, do Gerente de Projeto, do Tech Lead e da QA. |

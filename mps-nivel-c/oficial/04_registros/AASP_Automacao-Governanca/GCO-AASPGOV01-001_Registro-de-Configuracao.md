@@ -1,4 +1,4 @@
-# Registro de Gerência de Configuração — AASP_GOV · SensrJiraSync
+# Registro de Gerência de Configuração — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
@@ -71,4 +71,4 @@ A implantação em produção seguiu o seguinte rito: (1) validação do execut�
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de gerência de configuração consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de gerência de configuração consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |

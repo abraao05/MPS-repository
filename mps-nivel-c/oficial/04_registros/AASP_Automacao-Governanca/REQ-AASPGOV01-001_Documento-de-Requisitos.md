@@ -1,9 +1,9 @@
-# Documento de Requisitos — AASP_GOV · SensrJiraSync
+# Documento de Requisitos — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
 | **Documento** | REQ-AASPGOV01-001 |
-| **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
+| **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 02/06/2026 |
@@ -94,4 +94,4 @@ Serviço .NET 8 executado como Azure Scheduled Job que, a cada execução, auten
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Documento de requisitos consolidado a partir do Registro de Projeto AASP_GOV v2.0 (08/06/2026). Adicionada priorização, Story Points e Sprint para cada RF/RNF conforme modelagem agile retroativa (ADAP-AASPGOV01-001). |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Documento de requisitos consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026). Adicionada priorização, Story Points e Sprint para cada RF/RNF conforme modelagem agile retroativa (ADAP-AASPGOV01-001). |

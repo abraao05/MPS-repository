@@ -1,4 +1,4 @@
-# Documento de Design — AASP_GOV · SensrJiraSync
+# Documento de Design — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
@@ -127,4 +127,4 @@ O design da solução foi avaliado e formalmente aprovado pelo Tech Lead / Arqui
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Documento de design consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Documento de design consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |

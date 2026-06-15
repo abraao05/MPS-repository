@@ -1,4 +1,4 @@
-# Registro de Verificação de GQA — AASP_GOV · SensrJiraSync
+# Registro de Verificação de GQA — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|

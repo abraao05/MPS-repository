@@ -1,9 +1,9 @@
-# Registro de Adaptação do Processo — AASP_GOV · SensrJiraSync
+# Registro de Adaptação do Processo — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
 | **Documento** | ADAP-AASPGOV01-001 |
-| **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
+| **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Versão** | 1.0 |
 | **Data** | 02/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira (Gerente de Projeto) |
@@ -57,4 +57,4 @@ Todos os pontos de controle obrigatórios foram cumpridos.
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de adaptação consolidado a partir do Registro de Projeto AASP_GOV v2.0 (08/06/2026). |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de adaptação consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026). |

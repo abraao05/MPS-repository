@@ -1,9 +1,9 @@
-# Registro de Capacitação da Equipe — AASP_GOV · SensrJiraSync
+# Registro de Capacitação da Equipe — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
 | **Documento** | CAP-AASPGOV01-001 — Registro de Capacitação da Equipe |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 02/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
@@ -24,7 +24,7 @@ Registrar a composição da equipe alocada ao projeto AASP_Automacao-Governanca,
 | Raony Chagas — Desenvolvedor Sênior | 14/04/2026 – 02/06/2026 | Todas |
 | Allan Alves — Desenvolvedor (Suporte) | 17/04/2026 – 02/06/2026 | 2, 3, 4 |
 | Caroline Sousa — Analista de Testes (QA) | 21/05/2026 – 02/06/2026 | 4 |
-| Lucas Batista — Infraestrutura / DevOps | 14/04/2026 – 16/04/2026 e 21/05/2026 – 02/06/2026 | 1, 4 |
+| Lucas Batista — Infraestrutura / DevOps | 14/04/2026 – 02/06/2026 | 1, 2, 3, 4 |
 | Jonathan Alves — Auditor GQA (independente) | 02/06/2026 | Auditoria final |
 
 ## 3. Integração formal de membros ao time
@@ -53,4 +53,5 @@ A equipe já atuava com as tecnologias centrais do projeto (.NET 8, Azure DevOps
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de capacitação consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de capacitação consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção de consistência: atuação de Lucas Batista ajustada para todas as fases (participa do alinhamento da Fase 2 e provisiona ambiente na Fase 3); padronização do nome. |

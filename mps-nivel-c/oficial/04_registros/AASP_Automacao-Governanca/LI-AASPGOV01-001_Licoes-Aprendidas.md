@@ -1,9 +1,9 @@
-# Lições Aprendidas — AASP_GOV · SensrJiraSync
+# Lições Aprendidas — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
 | **Documento** | LI-AASPGOV01-001 |
-| **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
+| **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 02/06/2026 |
@@ -14,7 +14,7 @@
 
 ## 1. Objetivo
 
-Consolidar as lições aprendidas durante a execução do projeto AASP_GOV para alimentar a melhoria contínua dos processos organizacionais da Timeware. Esta seção atende ao requisito GPR 20 do MR-MPS-SW:2024 e ao item correspondente do relatório de gaps da avaliação ASR. As lições relevantes são incorporadas aos templates organizacionais (TPL-*), aos processos (PRO-*) e aos guias de adaptação (GUIA-*) conforme aplicável.
+Consolidar as lições aprendidas durante a execução do projeto AASP_Automacao-Governanca para alimentar a melhoria contínua dos processos organizacionais da Timeware. Esta seção atende ao requisito GPR 20 do MR-MPS-SW:2024 e ao item correspondente do relatório de gaps da avaliação ASR. As lições relevantes são incorporadas aos templates organizacionais (TPL-*), aos processos (PRO-*) e aos guias de adaptação (GUIA-*) conforme aplicável.
 
 ## 2. Lições por dimensão
 
@@ -106,4 +106,4 @@ As lições aprendidas registradas neste documento serão verificadas pela audit
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Lições aprendidas do projeto AASP_GOV consolidadas no encerramento (02/06/2026), com 7 lições e 5 oportunidades de melhoria organizacional. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Lições aprendidas do projeto AASP_Automacao-Governanca consolidadas no encerramento (02/06/2026), com 7 lições e 5 oportunidades de melhoria organizacional. |

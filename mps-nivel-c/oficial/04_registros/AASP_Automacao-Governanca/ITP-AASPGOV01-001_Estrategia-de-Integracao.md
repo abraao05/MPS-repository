@@ -1,4 +1,4 @@
-# Estratégia de Integração — AASP_GOV · SensrJiraSync
+# Estratégia de Integração — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
@@ -95,4 +95,4 @@ Material de apoio entregue junto ao artefato:
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Estratégia de integração consolidada a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Estratégia de integração consolidada a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |

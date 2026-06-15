@@ -1,10 +1,10 @@
-# Matriz de Rastreabilidade — AASP_GOV · SensrJiraSync
+# Matriz de Rastreabilidade — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
 | **Documento** | RASTR-AASPGOV01-001 |
-| **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
-| **Versão** | 1.0 |
+| **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
+| **Versão** | 1.1 |
 | **Data** | 02/06/2026 |
 
 ---
@@ -37,7 +37,7 @@ A rastreabilidade bidirecional é mantida nesta matriz e refletida no Jira via �
 | Continuidade do processamento em falha de 1 desenvolvedor | RNF-02 | SyncService — try/catch por DeveloperConfig | STORY-AASPGOV-013 | Sprint 2 | CT-06, CT-12 | CA07 (Resiliência por desenvolvedor) | ✅ Verificado |
 | Auditoria de cada execução | RNF-03 | Microsoft.Extensions.Logging em todos os serviços | STORY-AASPGOV-014 | Sprint 2 | (validado por inspeção de log na Fase 4) | Auditoria de execução | ✅ Verificado |
 | Evolução do serviço sem reescrita massiva | RNF-04 | Estrutura Core / Infrastructure / App (Decisão D01) | STORY-AASPGOV-015 | Sprint 0 | (validado por inspeção arquitetural) | Decisão D01 (GDE-AASPGOV01-001) | ✅ Verificado |
-| Sem exposição de credenciais | RNF-05 | `appsettings.json` gerenciado externamente | STORY-AASPGOV-016 | Sprint 0 | (validado por auditoria de configuração — GCO §6) | Decisão D02 (GDE-AASPGOV01-001) | ✅ Verificado |
+| Sem exposição de credenciais | RNF-05 | `appsettings.json` gerenciado externamente | STORY-AASPGOV-016 | Sprint 0 | (validado por auditoria de configuração — GCO §6) | Auditoria de configuração (GCO-AASPGOV01-001 §6) | ✅ Verificado |
 | Compatibilidade .NET 8 / Azure | RNF-06 | TargetFramework `net8.0` em todos os projetos | STORY-AASPGOV-017 | Sprint 0 | (validado por publicação no Azure) | Entrega ao cliente | ✅ Verificado |
 
 ---
@@ -76,4 +76,5 @@ Todos os 7 critérios de aceite foram cobertos por casos de teste executados e a
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Matriz de rastreabilidade consolidada a partir do Registro de Projeto AASP_GOV v2.0 (08/06/2026). Vínculos a items de backlog (Jira) refletem a modelagem retroativa em 17 stories + sprints conforme GEST-AASPGOV01. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Matriz de rastreabilidade consolidada a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026). Vínculos a items de backlog (Jira) refletem a modelagem retroativa em 17 stories + sprints conforme GEST-AASPGOV01. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção de consistência: critério de RNF-05 referenciado à auditoria de configuração (GCO §6) em vez da Decisão D02 (autenticação); padronização do nome. |

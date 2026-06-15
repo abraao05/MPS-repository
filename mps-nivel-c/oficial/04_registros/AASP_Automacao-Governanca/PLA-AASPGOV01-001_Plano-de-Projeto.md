@@ -1,9 +1,9 @@
-# Plano de Projeto — AASP_GOV · SensrJiraSync
+# Plano de Projeto — AASP_Automacao-Governanca · SensrJiraSync
 
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-AASPGOV01-001 |
-| **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
+| **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 02/06/2026 |
@@ -62,7 +62,7 @@ Referência de capacidade: 168 h/mês disponíveis por pessoa (21 dias × 8 h); 
 | DevOps | 1 | 20% | 14 h | 4 | 56 h (efetiva no projeto: ~4 h registradas) |
 | **Total estimado** | | | | | **216 h** (planejado) / **236 h** (realizado) |
 
-> *Referência de cálculo:* h efetivas/sprint = 70 h × (% dedicação). Ex.: Dev 100% = 70 h/sprint; GP 40% = 28 h/sprint. Os totais informados refletem o esforço efetivamente registrado por papel dentro do projeto AASP_GOV (escopo de pequeno porte), não a capacidade total disponível dos profissionais.
+> *Referência de cálculo:* h efetivas/sprint = 70 h × (% dedicação). Ex.: Dev 100% = 70 h/sprint; GP 40% = 28 h/sprint. Os totais informados refletem o esforço efetivamente registrado por papel dentro do projeto AASP_Automacao-Governanca (escopo de pequeno porte), não a capacidade total disponível dos profissionais.
 
 **Esforço estimado × realizado por fase**
 
@@ -211,4 +211,4 @@ O projeto é viável: o esforço estimado (216 h, ~59 SP) é compatível com a d
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Plano consolidado a partir do Registro de Projeto AASP_GOV v2.0 (08/06/2026), seguindo TPL-GPR-001 v1.2. |
+| 1.0 | 02/06/2026 | Time de Melhoria Contínua | Plano consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026), seguindo TPL-GPR-001 v1.2. |

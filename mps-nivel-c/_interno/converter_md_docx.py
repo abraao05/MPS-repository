@@ -172,10 +172,17 @@ def extract_meta(md_text):
     if m:
         meta['title'] = m.group(1).replace('— TIMEWARE','').replace('— Timeware','').strip()
 
-    # Primeira tabela de metadados
+    # Primeira tabela de metadados (apenas o primeiro bloco de tabela após o título)
+    in_meta = False
     for line in md_text.split('\n'):
         s = line.strip()
-        if not s.startswith('|') or re.match(r'^\|[-: |]+\|$', s): continue
+        if re.match(r'^\|[-: |]+\|$', s):
+            in_meta = True
+            continue
+        if not s.startswith('|'):
+            if in_meta: break
+            continue
+        in_meta = True
         cells = [c.strip() for c in s.split('|') if c.strip()]
         if len(cells) < 2: continue
         key, val = cells[0].lower(), cells[1]
