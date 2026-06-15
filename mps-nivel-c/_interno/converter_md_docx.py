@@ -449,6 +449,35 @@ def convert(md_path, out_path=None):
             add_inline(p, re.sub(r'^\d+\. ', '', line))
             i += 1; continue
 
+        # Imagem ![caption](path)
+        img_m = re.match(r'!\[([^\]]*)\]\(([^)]+)\)', line.strip())
+        if img_m:
+            flush()
+            caption, img_path = img_m.group(1), img_m.group(2)
+            abs_img = os.path.join(os.path.dirname(os.path.abspath(md_path)), img_path)
+            if os.path.exists(abs_img):
+                try:
+                    from docx.shared import Inches
+                    p_img = doc.add_paragraph()
+                    p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_img.paragraph_format.space_before = Pt(6)
+                    p_img.paragraph_format.space_after = Pt(2)
+                    run_img = p_img.add_run()
+                    run_img.add_picture(abs_img, width=Inches(5.5))
+                    if caption:
+                        p_cap = doc.add_paragraph()
+                        p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_cap.paragraph_format.space_before = Pt(0)
+                        p_cap.paragraph_format.space_after = Pt(10)
+                        r_cap = p_cap.add_run(caption)
+                        r_cap.font.name = 'Calibri'; r_cap.font.size = Pt(9)
+                        r_cap.italic = True; r_cap.font.color.rgb = GRAY
+                except Exception:
+                    p = doc.add_paragraph(f'[Imagem: {caption}]')
+            else:
+                p = doc.add_paragraph(f'[Imagem não encontrada: {img_path}]')
+            i += 1; continue
+
         # Blockquote > (instruções de template)
         if line.startswith('> '):
             flush()
