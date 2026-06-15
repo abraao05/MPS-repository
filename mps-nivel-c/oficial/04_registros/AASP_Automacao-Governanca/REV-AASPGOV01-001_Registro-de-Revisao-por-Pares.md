@@ -17,7 +17,7 @@ A revisão por pares no projeto AASP_Automacao-Governanca é conduzida exclusiva
 
 | Papel | Identificação |
 |---|---|
-| Autor principal | Raony Chagas (Desenvolvedor Sênior) |
+| Autor principal | Henry (Desenvolvedor) |
 | Autor de suporte | Allan Alves (Desenvolvedor) |
 | Revisor principal | Cezar Hiraki (Tech Lead / Arquiteto) |
 | Revisor adicional | Membro da equipe distinto do autor (rotativo por PR) |
@@ -56,3 +56,4 @@ A revisão por pares no projeto AASP_Automacao-Governanca é conduzida exclusiva
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro da prática de revisão por pares consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Autores atualizados: Henry substituiu Raony Chagas como autor principal. |

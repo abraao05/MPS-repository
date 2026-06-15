@@ -16,9 +16,8 @@
 |---|---|---|
 | Abraão Oliveira | Gerente de Projeto | Timeware |
 | Cezar Hiraki | Tech Lead / Arquiteto | Timeware |
-| Raony Chagas | Desenvolvedor Sênior | Timeware |
-| Allan Alves | Desenvolvedor (Suporte) | Timeware |
-| Lucas Batista | Infraestrutura / DevOps | Timeware |
+| Henry | Desenvolvedor | Timeware |
+| Allan Alves | Desenvolvedor | Timeware |
 
 ## 2. Pauta
 
@@ -42,17 +41,17 @@ Por fim, o Tech Lead confirmou que a API Jira v3 exige o uso do Atlassian Docume
 |---|---|---|
 | Autenticação JWT individual por desenvolvedor no Sensr (D02) | Cezar Hiraki | 23/04/2026 |
 | Identificação de cards migrados via prefixo #ID no summary do Jira (D03) | Cezar Hiraki | 23/04/2026 |
-| Utilizar ADF (Atlassian Document Format) para campos de texto no Jira v3 (D04) | Raony Chagas | 23/04/2026 |
+| Utilizar ADF (Atlassian Document Format) para campos de texto no Jira v3 (D04) | Henry | 23/04/2026 |
 | Aprovação para início da Fase 3 — Desenvolvimento dos Serviços em 24/04/2026 | Abraão Oliveira | 23/04/2026 |
 
 ## 5. Ações (follow-up)
 
 | Ação | Responsável | Prazo |
 |---|---|---|
-| Implementar SensrService com mecanismo de login por desenvolvedor e gestão de tokens JWT | Raony Chagas | Mai/2026 |
-| Implementar JiraService incluindo método BuildAdfDocument para campos de texto rico | Raony Chagas / Allan Alves | Mai/2026 |
-| Preparar estrutura de testes e cenários para uso na Fase 4 de Homologação | Caroline Sousa | Mai/2026 |
-| Provisionar ambiente de integração para execução dos serviços durante a Fase 3 | Lucas Batista | 24/04/2026 |
+| Implementar SensrService com mecanismo de login por desenvolvedor e gestão de tokens JWT | Henry | Mai/2026 |
+| Implementar JiraService incluindo método BuildAdfDocument para campos de texto rico | Henry / Allan Alves | Mai/2026 |
+| Preparar estrutura de testes e cenários para uso na Fase 4 de Homologação | Jonatan | Mai/2026 |
+| Provisionar ambiente de integração para execução dos serviços durante a Fase 3 | Cezar Hiraki | 24/04/2026 |
 
 ## 6. Próximos passos
 
@@ -65,3 +64,4 @@ Início da Fase 3 — Desenvolvimento dos Serviços (24/04 a 20/05/2026), com im
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata reconstituída a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos participantes e responsáveis pelas ações: Henry substituiu Raony Chagas, Cézar Hiraki substituiu Lucas Batista, Jonatan substituiu Caroline Sousa nas ações de preparação de testes. |

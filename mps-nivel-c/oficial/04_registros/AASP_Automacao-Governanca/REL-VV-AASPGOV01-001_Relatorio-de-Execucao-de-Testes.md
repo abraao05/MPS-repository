@@ -22,7 +22,7 @@ Registrar os resultados da execução de testes do projeto AASP_Automacao-Govern
 | Fase 2 — Mapeamento de APIs (17/04–23/04/2026) | Teste de integração manual | Validação dos endpoints Sensr (login, getactivitiesbyprojectstatus, getsingleactivity, subactivity) e Jira v3 (search, create, transitions, comments) via Postman. Confirmação de autenticação JWT e Basic Auth. |
 | Fase 3 — Desenvolvimento (24/04–20/05/2026) | Testes unitários | Cobertura dos métodos críticos: `StatusMapper.MapSensrToJira` (5 mapeamentos), `HtmlHelper.ToPlainText`, `HtmlHelper.ParseDescriptionHistory`, `JiraService.SanitizeLabel`, `SyncService.ExtractSensrId`. |
 | Fase 3 — Desenvolvimento (24/04–20/05/2026) | Code review | Pull Requests no Azure DevOps revisados por Cezar Hiraki (Tech Lead) e membros da equipe — cobertura de SensrService, JiraService, SyncService, HtmlHelper e StatusMapper. Registrado em REV-AASPGOV01-001. |
-| Fase 4 — Homologação (21/05–02/06/2026) | Teste de integração E2E | Ciclo completo de migração inicial (Sensr → Jira) e sincronização incremental de status, executados pela QA Caroline Sousa em ambiente real do Sensr e workspace Jira de teste do AASP. Cenários CT-01 a CT-12. |
+| Fase 4 — Homologação (21/05–02/06/2026) | Teste de integração E2E | Ciclo completo de migração inicial (Sensr → Jira) e sincronização incremental de status, executados pelo QA Jonatan em ambiente real do Sensr e workspace Jira de teste do AASP. Cenários CT-01 a CT-12. |
 | Fase 4 — Homologação (21/05–02/06/2026) | Teste de regressão | Reteste dos cenários afetados após a correção dos defeitos BUG-01 a BUG-05. 100% de aprovação confirmada antes da validação com o Sponsor. |
 
 ## 3. Defeitos registrados e tratados
@@ -49,7 +49,7 @@ Registrar os resultados da execução de testes do projeto AASP_Automacao-Govern
 | CA06 | Migração do histórico — entradas do description_history como comentários individuais | CT-11 | Validado |
 | CA07 | Resiliência por desenvolvedor — falha de um não interrompe os demais | CT-06, CT-12 | Validado |
 
-Todos os 7 critérios de aceite foram validados pelo Analista de Testes (Caroline Sousa) em ambiente real de homologação, e confirmados pelo Sponsor Marcos Correa Fernandez Turnes na reunião de 29/05/2026 (ATA-AASPGOV01-003).
+Todos os 7 critérios de aceite foram validados pelo QA (Jonatan) em ambiente real de homologação, e confirmados pelo Sponsor Marcos Correa Fernandez Turnes na reunião de 29/05/2026 (ATA-AASPGOV01-003).
 
 ## 5. Conclusão
 
@@ -64,3 +64,4 @@ A validação com o Sponsor em ambiente real, com verificação direta de migra�
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Relatório de execução de testes consolidado a partir do Registro de Projeto AASP_GOV v2.0. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização do responsável pela execução dos testes de homologação: Jonatan substituiu Caroline Sousa como QA. |

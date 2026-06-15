@@ -6,7 +6,7 @@
 | **Projeto** | AASP_GOV — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data de abertura** | 14/04/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
@@ -40,18 +40,19 @@ Desenvolver e entregar o serviço SensrJiraSync — uma solução .NET 8 executa
 | Marcos Correa Fernandez Turnes (Sponsor / Patrocinador) | Validação dos requisitos, homologação e aceite formal das entregas | AASP |
 | Abraão Oliveira (Gerente de Projeto) | Alinhamento com o cliente, gestão das entregas e comunicação | Timeware Brasil |
 | Cezar Hiraki (Tech Lead / Arquiteto) | Decisões técnicas, arquitetura da solução e aprovação do design | Timeware Brasil |
-| Jonathan Alves (Auditor GQA — independente) | Verificação de aderência ao processo MPS-SW | Timeware Brasil |
+| Caroline Sousa (GQA Independente) | Verificação de aderência ao processo MPS-SW | Timeware Brasil |
 
 ## 4. Equipe do projeto
 
 | Papel | Responsável |
 |---|---|
 | Gerente de Projeto | Abraão Oliveira |
-| Tech Lead / Arquiteto (acumula 2 papéis) | Cezar Hiraki |
-| Desenvolvedor Sênior | Raony Chagas |
-| Desenvolvedor (Suporte) | Allan Alves (incorporado em 17/04/2026, ao início da Fase 2) |
-| Analista de Testes (QA) | Caroline Sousa (a partir da Fase 4 — 21/05/2026) |
-| Infraestrutura / DevOps | Lucas Batista |
+| Tech Lead / DevOps / Arquiteto | Cezar Hiraki |
+| Desenvolvedor | Henry |
+| Desenvolvedor | Allan Alves |
+| Desenvolvedor | Felipe |
+| QA | Jonatan |
+| GQA (Independente) | Caroline Sousa |
 
 ## 5. Macroplanejamento (datas-alvo)
 
@@ -102,3 +103,4 @@ O projeto foi formalmente aberto em 14/04/2026 com a reunião de kickoff entre o
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Termo de abertura consolidado a partir do Registro de Projeto AASP_GOV v2.0 (08/06/2026). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização da equipe do projeto: Henry substituiu Raony Chagas, Cézar Hiraki absorveu DevOps, Jonatan como QA, Caroline Sousa como GQA Independente, Felipe adicionado como Desenvolvedor. |

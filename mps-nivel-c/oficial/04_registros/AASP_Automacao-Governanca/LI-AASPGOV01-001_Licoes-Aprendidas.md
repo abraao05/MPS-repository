@@ -98,7 +98,7 @@ As oportunidades acima são encaminhadas ao Time de Melhoria Contínua via PLA-G
 
 ## 4. Auditoria e validação independente
 
-As lições aprendidas registradas neste documento serão verificadas pela auditoria de GQA (Jonathan Alves, Auditor independente) e referenciadas em GQA-AASPGOV01-001 como parte da verificação de aderência ao processo MPS-SW (GPR 20).
+As lições aprendidas registradas neste documento serão verificadas pela auditoria de GQA (Caroline Sousa, GQA Independente) e referenciadas em GQA-AASPGOV01-001 como parte da verificação de aderência ao processo MPS-SW (GPR 20).
 
 ---
 
