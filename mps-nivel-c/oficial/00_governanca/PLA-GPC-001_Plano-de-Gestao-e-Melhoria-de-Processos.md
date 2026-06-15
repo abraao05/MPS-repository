@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-GPC-001 — Plano de Gestão e Melhoria de Processos |
-| **Versão** | 1.7 |
+| **Versão** | 1.8 |
 | **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
+| **Responsável** | Silvio Baroni |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -180,6 +181,7 @@ Este documento corresponde a **vários resultados** do processo **Gerência de P
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.8 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 25/08/2025 | Time de Melhoria Contínua | Definição inicial do plano de gestão e melhoria de processos |
 | 1.1 | 19/11/2025 | Time de Melhoria Contínua | Inclusão do Registro de Oportunidades de Melhoria (GPC 4) na seção 5 |
 | 1.2 | 26/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO nos papéis |

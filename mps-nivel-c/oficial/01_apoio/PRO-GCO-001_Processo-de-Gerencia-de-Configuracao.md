@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GCO-001 — Processo de Gerência de Configuração |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 10/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Cézar Velázquez |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -128,4 +129,5 @@ Este documento corresponde aos resultados do processo **Gerência de Configuraç
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Cézar Velázquez |
 | 1.0 | 10/06/2026 | Time de Melhoria Contínua | Versão inicial — definição formal do processo de gerência de configuração, complementando o plano operacional PLA-GCO-001 |

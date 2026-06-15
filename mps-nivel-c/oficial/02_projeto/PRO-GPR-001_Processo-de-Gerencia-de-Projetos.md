@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPR-001 — Processo de Gerência de Projetos |
-| **Versão** | 1.4 |
+| **Versão** | 1.5 |
 | **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Abraão Oliveira |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -136,6 +137,7 @@ Este documento corresponde aos resultados **GPR 1 a GPR 20** do processo **Gerê
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.5 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Abraão Oliveira |
 | 1.0 | 06/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de gerência de projetos |
 | 1.1 | 12/12/2025 | Time de Melhoria Contínua | Alinhamento ao novo fluxo: kickoff gerencial, concepção em trilhas, aprovação do plano e baseline |
 | 1.2 | 15/01/2026 | Time de Melhoria Contínua | Inclusão dos marcos de abertura/encerramento de projeto (Termo de Encerramento) e distinção entre aceite de produto (review) e encerramento de projeto |

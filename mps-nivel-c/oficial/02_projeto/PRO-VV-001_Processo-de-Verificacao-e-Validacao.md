@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-VV-001 — Processo de Verificação e Validação |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 16/01/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Caroline Jenifer |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -111,6 +112,7 @@ Este documento corresponde aos resultados do processo **Verificação e Validaç
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Caroline Jenifer |
 | 1.0 | 24/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de verificação e validação |
 | 1.1 | 05/12/2025 | Time de Melhoria Contínua | Detalhamento do fluxo do QA (teste exploratório, evidências, cenários Gherkin) |
 | 1.2 | 16/01/2026 | Time de Melhoria Contínua | Critério de mapa de teste; teste mocado não é evidência; ambientes (homologação/stage); registro de bugs/retrabalho via subtarefas |

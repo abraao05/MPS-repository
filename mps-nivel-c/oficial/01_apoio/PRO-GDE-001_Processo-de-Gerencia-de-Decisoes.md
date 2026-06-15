@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GDE-001 — Processo de Gerência de Decisões |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Cézar Velázquez |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -107,6 +108,7 @@ Este documento corresponde aos resultados do processo **Gerência de Decisões (
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Cézar Velázquez |
 | 1.0 | 17/09/2025 | Time de Melhoria Contínua | Definição inicial do processo de gerência de decisões |
 | 1.1 | 12/02/2026 | Time de Melhoria Contínua | Refinamento do gatilho de alto impacto com limiar orientativo de 10% sobre prazo/custo (§3) |
 | 1.2 | 05/06/2026 | Time de Melhoria Contínua | Adição de tabela de nomenclatura equivalente MPS (TDA-Tomada_Decisao_Arquitetural) na seção de rastreabilidade |

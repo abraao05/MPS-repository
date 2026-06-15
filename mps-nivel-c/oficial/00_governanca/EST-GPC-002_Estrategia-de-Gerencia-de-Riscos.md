@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | EST-GPC-002 — Estratégia de Gerência de Riscos e Oportunidades |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
+| **Responsável** | Abraão Oliveira |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -123,6 +124,7 @@ Este documento corresponde a **um resultado** do processo **Gerência de Process
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Abraão Oliveira |
 | 1.0 | 20/08/2025 | Time de Melhoria Contínua | Definição inicial da estratégia de gerência de riscos e oportunidades |
 | 1.1 | 25/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO no tratamento de riscos organizacionais |
 | 1.2 | 05/06/2026 | Time de Melhoria Contínua | Adição de tabela de nomenclatura equivalente MPS (TMP_Risco) na seção de rastreabilidade |

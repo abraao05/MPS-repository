@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-OSW-001 — Governança Organizacional de Processos |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 12/03/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações), com patrocínio do Founder e CEO |
+| **Responsável** | Wilson Yamada |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -134,6 +135,7 @@ Este documento corresponde aos resultados **OSW 2 a OSW 7** do processo **Gerên
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Wilson Yamada |
 | 1.0 | 27/08/2025 | Time de Melhoria Contínua | Definição inicial da governança organizacional de processos |
 | 1.1 | 24/11/2025 | Time de Melhoria Contínua | Inclusão da camada COO na autoridade; análise crítica conduzida pelo COO com reporte ao CEO |
 | 1.2 | 12/03/2026 | Time de Melhoria Contínua | Adição da tabela de competências por papel (§4.1) e da matriz RACI das atividades-chave de governança (§4.2) |

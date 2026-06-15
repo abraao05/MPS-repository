@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-REQ-001 — Processo de Engenharia de Requisitos |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 15/12/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Abraão Oliveira |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -92,5 +93,6 @@ Este documento corresponde aos resultados do processo **Engenharia de Requisitos
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Abraão Oliveira |
 | 1.0 | 09/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de engenharia de requisitos |
 | 1.1 | 15/12/2025 | Time de Melhoria Contínua | Contextualização do Discovery no novo fluxo (após kickoff gerencial; alimenta a concepção) |

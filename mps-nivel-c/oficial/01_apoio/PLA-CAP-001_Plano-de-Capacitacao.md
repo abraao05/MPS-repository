@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-CAP-001 — Plano de Capacitação |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 13/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Silvio Baroni |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -122,6 +123,7 @@ Este documento corresponde aos resultados do processo **Capacitação (CAP)** do
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 22/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de capacitação |
 | 1.1 | 10/02/2026 | Time de Melhoria Contínua | Formalização das fontes de necessidades de capacitação com tabela de responsáveis e ações (§3) |
 | 1.2 | 13/06/2026 | Time de Melhoria Contínua | Adicionada §6.1 com orçamento detalhado do ciclo MPS-SW Nível C (ASR, SOFTEX, consultoria) — evidência de CAP 4 e OSW 2 |

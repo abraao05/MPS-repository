@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-GCO-001 — Plano de Gerência de Configuração |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 15/01/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Cézar Velázquez |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -141,5 +142,6 @@ Este documento corresponde aos resultados do processo **Gerência de Configuraç
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Cézar Velázquez |
 | 1.0 | 12/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de gerência de configuração |
 | 1.1 | 15/01/2026 | Time de Melhoria Contínua | Adição da lista mínima de itens de configuração por projeto (§3.1) |
