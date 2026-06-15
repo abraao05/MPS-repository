@@ -3,9 +3,10 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GUIA-GPR-001 — Roteiro de Apresentação de Kickoff |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 13/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
+| **Responsável** | Abraão Oliveira |
 | **Classificação** | Apoio (orientação para o time) |
 | **Finalidade** | Padronizar o conteúdo da reunião/apresentação de kickoff gerencial (Fase 2 do PRO-GPC-001) |
 
@@ -46,4 +47,5 @@ A apresentação em si é material de apoio. A **evidência do kickoff** para fi
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Abraão Oliveira |
 | 1.0 | 13/11/2025 | Time de Melhoria Contínua | Definição inicial do roteiro de kickoff |
