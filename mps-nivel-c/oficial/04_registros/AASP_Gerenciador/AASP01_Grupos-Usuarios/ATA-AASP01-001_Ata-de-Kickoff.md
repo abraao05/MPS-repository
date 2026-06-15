@@ -9,9 +9,9 @@
 | **Data** | 19/05/2026 |
 | **Horario** | 09h30 – 11h00 |
 | **Canal** | Microsoft Teams |
-| **Facilitador** | Abraão (Timeware) |
+| **Facilitador** | Abraão Oliveira (Timeware) |
 | **Versao** | 1.0 |
-| **Gerente de Projeto** | Abraão |
+| **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR — Gerencia de Projetos (evidencia de projeto) |
 
 ---
@@ -20,8 +20,8 @@
 
 | Nome | Empresa | Papel |
 |---|---|---|
-| Abraão · Cezar Hiraki | Timeware | GP (Abraão) · Arquiteto/Tech Lead (Cezar) · Facilitador |
-| Renan Kiyoshi | Timeware | Desenvolvedor |
+| Abraão Oliveira · Cézar Velázquez | Timeware | GP (Abraão Oliveira) · Arquiteto/Tech Lead (Cézar) · Facilitador |
+| Renan Kioshi | Timeware | Desenvolvedor |
 | Henry Komatsu | Timeware | Desenvolvedor |
 | Mateus Veloso | Timeware | Desenvolvedor |
 | Marcos Turnes | AASP | Product Owner / Representante do Cliente |
@@ -45,11 +45,11 @@
 
 ### 3.1 Apresentacao da Equipe e Alinhamento de Papeis
 
-Abraão abriu a reuniao apresentando a equipe Timeware responsavel pela entrega da Feature AG: Abraão como Gerente de Projeto, Cezar Hiraki como Arquiteto e Tech Lead, e Renan Kiyoshi, Henry Komatsu e Mateus Veloso como desenvolvedores. Marcos Turnes foi apresentado como Product Owner da AASP e principal tomador de decisoes de negocio para o projeto. Leonardo Francisco Pereira ficou estabelecida como responsavel pela execucao dos testes de homologacao e pelo aceite tecnico dos entregaveis. Ficou acordado que Abraão e Marcos Turnes seriam os pontos focais primarios de comunicacao entre Timeware e AASP.
+Abraão Oliveira abriu a reuniao apresentando a equipe Timeware responsavel pela entrega da Feature AG: Abraão Oliveira como Gerente de Projeto, Cézar Velázquez como Arquiteto e Tech Lead, e Renan Kioshi, Henry Komatsu e Mateus Veloso como desenvolvedores. Marcos Turnes foi apresentado como Product Owner da AASP e principal tomador de decisoes de negocio para o projeto. Leonardo Francisco Pereira ficou estabelecida como responsavel pela execucao dos testes de homologacao e pelo aceite tecnico dos entregaveis. Ficou acordado que Abraão Oliveira e Marcos Turnes seriam os pontos focais primarios de comunicacao entre Timeware e AASP.
 
 ### 3.2 Revisao do Escopo
 
-Abraão apresentou o escopo completo da Feature AG — Grupos de Usuarios, que compreende:
+Abraão Oliveira apresentou o escopo completo da Feature AG — Grupos de Usuarios, que compreende:
 
 - **CRUD de Grupos**: criacao, leitura, atualizacao e exclusao (soft delete) de grupos de usuarios
 - **Controle de Permissoes RBAC**: vinculacao de permissoes a grupos, habilitando controle de acesso baseado em funcoes
@@ -62,41 +62,41 @@ Marcos Turnes confirmou os objetivos de negocio e reafirmou a criticidade do con
 
 ### 3.3 Arquitetura Tecnica
 
-Cezar Hiraki apresentou a proposta de arquitetura tecnica:
+Cézar Velázquez apresentou a proposta de arquitetura tecnica:
 
-- **Framework**: ASP.NET Core Web API (.NET Framework 4.7.2)
+- **Framework**: ASP.NET Web API (.NET Framework 4.7.2)
 - **ORM**: Dapper (decisao tomada na reuniao — ver D-01 e GDE-001)
 - **Banco de dados**: SQL Server — banco `auxo3` (banco existente do Gerenciador AASP)
 - **Branching**: Git Flow no repositorio Azure DevOps (`ms.auxo.gruposusuarios`)
 - **Autenticacao**: JWT Bearer Token em todos os endpoints (D-05)
 - **Configuracao**: connection strings via variaveis de ambiente, sem hardcode (D-06)
 
-Marcos Turnes confirmou que o banco `auxo3` e o repositorio Azure DevOps estao disponiveis e serao compartilhados com a equipe Timeware ate 23/05/2026. Renan Kiyoshi levantou a questao sobre soft delete versus hard delete para grupos. Apos discussao sobre integridade referencial e rastreabilidade auditavel exigida pelo MPS-SW, ficou decidido pelo soft delete via campo `Ativo = false` (D-02 — GDE-002).
+Marcos Turnes confirmou que o banco `auxo3` e o repositorio Azure DevOps estao disponiveis e serao compartilhados com a equipe Timeware ate 23/05/2026. Renan Kioshi levantou a questao sobre soft delete versus hard delete para grupos. Apos discussao sobre integridade referencial e rastreabilidade auditavel exigida pelo MPS-SW, ficou decidido pelo soft delete via campo `Ativo = false` (D-02 — GDE-002).
 
 ### 3.4 Cadencia de Trabalho
 
 Ficou estabelecida a seguinte cadencia de trabalho para todo o projeto:
 
-- **Daily Standup**: todos os dias uteis as 09h30 via Microsoft Teams (todas as partes — Abraão, Cezar e os desenvolvedores; quando necessario Marcos Turnes e Leonardo)
+- **Daily Standup**: todos os dias uteis as 09h30 via Microsoft Teams (todas as partes — Abraão Oliveira, Cézar e os desenvolvedores; quando necessario Marcos Turnes e Leonardo)
 - **Sprint**: duracao de 2 semanas; Sprint 1 com inicio em 26/05/2026
-- **Sprint Planning**: segunda-feira de abertura do sprint (Abraão e a equipe de desenvolvimento, com alinhamento previo com Marcos Turnes)
+- **Sprint Planning**: segunda-feira de abertura do sprint (Abraão Oliveira e a equipe de desenvolvimento, com alinhamento previo com Marcos Turnes)
 - **Sprint Review / Demo**: sexta-feira de encerramento do sprint, as 14h00 via Teams, com participacao obrigatoria de Marcos Turnes e Leonardo Francisco Pereira
-- **Relatorio de Status Semanal**: Abraão envia email de status a Marcos Turnes toda sexta-feira, cobrindo progresso, impedimentos e proximos passos
-- **Canal de comunicacao assincronico**: Microsoft Teams (canal do projeto) para duvidas e alinhamentos nao urgentes; urgencias por telefone direto Abraão–Marcos
+- **Relatorio de Status Semanal**: Abraão Oliveira envia email de status a Marcos Turnes toda sexta-feira, cobrindo progresso, impedimentos e proximos passos
+- **Canal de comunicacao assincronico**: Microsoft Teams (canal do projeto) para duvidas e alinhamentos nao urgentes; urgencias por telefone direto Abraão Oliveira–Marcos
 
 ### 3.5 Gestao de Acessos
 
 Marcos Turnes confirmou que os seguintes acessos seriam providenciados ate **23/05/2026**:
 
-- Acesso ao repositorio Azure DevOps (`ms.auxo.gruposusuarios`) para Renan Kiyoshi, Henry Komatsu e Mateus Veloso
-- Acesso ao banco `auxo3` (ambiente dev) para Renan Kiyoshi, Henry Komatsu e Mateus Veloso
+- Acesso ao repositorio Azure DevOps (`ms.auxo.gruposusuarios`) para Renan Kioshi, Henry Komatsu e Mateus Veloso
+- Acesso ao banco `auxo3` (ambiente dev) para Renan Kioshi, Henry Komatsu e Mateus Veloso
 - Documentacao do contrato de API do `ms.temis.vinculos` (microservico de vinculos)
 
 Leonardo Francisco Pereira ficou responsavel por preparar o ambiente de homologacao AASP (banco de dados de homologacao e servidor de aplicacao) para estar disponivel no inicio da Sprint 2, em **09/06/2026**, data em que os primeiros testes de homologacao estao previstos.
 
 ### 3.6 Schema do Banco auxo3
 
-Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `auxo3` para identificar tabelas relevantes e evitar conflitos de nomenclatura ou redundancia. Marcos Turnes informou que ha uma tabela `Usuarios` no banco, com `UsuarioId` como chave primaria utilizada em todo o sistema Gerenciador. As novas tabelas necessarias para a Feature AG (`Grupos`, `PermissoesGrupo`, `UsuariosGrupo`) serao criadas via scripts de migration versionados no repositorio, garantindo rastreabilidade e reproducibilidade dos ambientes (dev, homologacao, producao). Ficou acordado que Cezar Hiraki elaboraria os scripts de migration ate 28/05/2026.
+Cézar Velázquez levantou a necessidade de analisar o schema existente do banco `auxo3` para identificar tabelas relevantes e evitar conflitos de nomenclatura ou redundancia. Marcos Turnes informou que ha uma tabela `Usuarios` no banco, com `UsuarioId` como chave primaria utilizada em todo o sistema Gerenciador. As novas tabelas necessarias para a Feature AG (`Grupos`, `PermissoesGrupo`, `UsuariosGrupo`) serao criadas via scripts de migration versionados no repositorio, garantindo rastreabilidade e reproducibilidade dos ambientes (dev, homologacao, producao). Ficou acordado que Cézar Velázquez elaboraria os scripts de migration ate 28/05/2026.
 
 ---
 
@@ -104,12 +104,12 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 
 | # | Decisao | Responsavel | Referencia |
 |---|---|---|---|
-| D-01 | Dapper como ORM — escolhido em detrimento do Entity Framework Core por compatibilidade com .NET FW 4.7.2 e por ser o padrao de acesso a dados adotado no projeto Gerenciador AASP | Cezar Hiraki | GDE-001 |
-| D-02 | Soft Delete para grupos — campo `Ativo = false` ao inves de exclusao fisica; garante integridade referencial e rastreabilidade auditavel conforme requisitos MPS | Cezar Hiraki | GDE-002 |
-| D-03 | Git Flow como modelo de branching — padrao: `feature/ag-{id}` -> `develop` -> `release` -> `main`; nenhum commit direto em `main` ou `develop` | Cezar Hiraki | GCO-AASP01-001 |
-| D-04 | Sprint de 2 semanas com daily as 09h30 no Teams; Sprint Review na sexta-feira de encerramento as 14h | Abraão + Marcos Turnes | PLA-AASP01-001 |
-| D-05 | JWT Bearer Token para autenticacao em todos os endpoints do ms.auxo.gruposusuarios, sem excecao | Cezar Hiraki | PCP-AASP01-001 |
-| D-06 | Connection strings via variaveis de ambiente — proibido hardcode de strings de conexao no codigo-fonte ou em arquivos commitados | Cezar Hiraki | GCO-AASP01-001 |
+| D-01 | Dapper como ORM — escolhido em detrimento do Entity Framework Core por compatibilidade com .NET FW 4.7.2 e por ser o padrao de acesso a dados adotado no projeto Gerenciador AASP | Cézar Velázquez | GDE-001 |
+| D-02 | Soft Delete para grupos — campo `Ativo = false` ao inves de exclusao fisica; garante integridade referencial e rastreabilidade auditavel conforme requisitos MPS | Cézar Velázquez | GDE-002 |
+| D-03 | Git Flow como modelo de branching — padrao: `feature/ag-{id}` -> `develop` -> `release` -> `main`; nenhum commit direto em `main` ou `develop` | Cézar Velázquez | GCO-AASP01-001 |
+| D-04 | Sprint de 2 semanas com daily as 09h30 no Teams; Sprint Review na sexta-feira de encerramento as 14h | Abraão Oliveira + Marcos Turnes | PLA-AASP01-001 |
+| D-05 | JWT Bearer Token para autenticacao em todos os endpoints do ms.auxo.gruposusuarios, sem excecao | Cézar Velázquez | PCP-AASP01-001 |
+| D-06 | Connection strings via variaveis de ambiente — proibido hardcode de strings de conexao no codigo-fonte ou em arquivos commitados | Cézar Velázquez | GCO-AASP01-001 |
 | D-07 | Aceite formal por sprint realizado por Marcos Turnes, com participacao de Leonardo Francisco Pereira na execucao dos testes de homologacao; aceite documentado em ata | Marcos Turnes | VV-AASP01-001 |
 
 ---
@@ -118,15 +118,15 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 
 | Acao | Responsavel | Prazo |
 |---|---|---|
-| Providenciar acesso ao repositorio Azure DevOps (ms.auxo.gruposusuarios) para Renan Kiyoshi, Henry Komatsu e Mateus Veloso | Marcos Turnes | 23/05/2026 |
+| Providenciar acesso ao repositorio Azure DevOps (ms.auxo.gruposusuarios) para Renan Kioshi, Henry Komatsu e Mateus Veloso | Marcos Turnes | 23/05/2026 |
 | Compartilhar schema do banco auxo3 (tabelas existentes, PKs, FKs relevantes) | Marcos Turnes | 23/05/2026 |
 | Compartilhar contrato de API do ms.temis.vinculos (swagger ou documento de especificacao) | Marcos Turnes | 23/05/2026 |
 | Preparar ambiente de homologacao AASP (banco de dados e servidor de aplicacao) para testes de homologacao | Leonardo Francisco Pereira | 09/06/2026 (inicio Sprint 2) |
-| Configurar pipeline CI/CD no Azure DevOps (build automatico, execucao de testes unitarios no PR) | Cezar Hiraki | 26/05/2026 |
-| Criar branches de feature no repositorio: feature/ag-20, feature/ag-21, feature/ag-22 | Renan Kiyoshi | 26/05/2026 |
-| Elaborar scripts de migration para criacao das tabelas Grupos, PermissoesGrupo e UsuariosGrupo no banco auxo3 | Cezar Hiraki | 28/05/2026 |
-| Enviar convite recorrente do Teams para daily 09h30 (equipe Timeware e AASP) | Abraão | 19/05/2026 (neste dia) |
-| Enviar convite do Teams para Sprint Review Sprint 1 — 06/06/2026 as 14h00 | Abraão | 19/05/2026 (neste dia) |
+| Configurar pipeline CI/CD no Azure DevOps (build automatico, execucao de testes unitarios no PR) | Cézar Velázquez | 26/05/2026 |
+| Criar branches de feature no repositorio: feature/ag-20, feature/ag-21, feature/ag-22 | Renan Kioshi | 26/05/2026 |
+| Elaborar scripts de migration para criacao das tabelas Grupos, PermissoesGrupo e UsuariosGrupo no banco auxo3 | Cézar Velázquez | 28/05/2026 |
+| Enviar convite recorrente do Teams para daily 09h30 (equipe Timeware e AASP) | Abraão Oliveira | 19/05/2026 (neste dia) |
+| Enviar convite do Teams para Sprint Review Sprint 1 — 06/06/2026 as 14h00 | Abraão Oliveira | 19/05/2026 (neste dia) |
 
 ---
 
@@ -142,4 +142,4 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 
 | Versao | Data | Autor | Descricao |
 |---|---|---|---|
-| 1.0 | 19/05/2026 | Abraão | Versao inicial — registro da reuniao de kickoff realizada em 19/05/2026 |
+| 1.0 | 19/05/2026 | Abraão Oliveira | Versao inicial — registro da reuniao de kickoff realizada em 19/05/2026 |

@@ -8,7 +8,7 @@
 | Produto       | ms.auxo.gruposusuarios                                                |
 | Versão        | 1.0                                                                   |
 | Data          | 19/05/2026                                                            |
-| Autor         | Abraão                                                         |
+| Autor         | Abraão Oliveira                                                         |
 | Status        | Aprovado                                                              |
 
 ---
@@ -44,8 +44,8 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 |-------------------------|------------------|-------------|----------------------------------|
 | PO / Patrocinador        | Marcos Turnes  | AASP        | —                                |
 | QA                      | Leonardo Francisco Pereira     | AASP        | —                                |
-| Gerente de Projeto / TL | Abraão (GP) · Cezar Hiraki (TL)    | Timeware    | Abraão (a confirmar) · contato@cezarvelazquez.com.br |
-| Desenvolvedor           | Renan Kiyoshi    | Timeware    | renan.kiyoshi.timeware@outlook.com |
+| Gerente de Projeto / TL | Abraão Oliveira (GP) · Cézar Velázquez (TL)    | Timeware    | contato@cezarvelazquez.com.br |
+| Desenvolvedor           | Renan Kioshi    | Timeware    | renan.kiyoshi.timeware@outlook.com |
 | Desenvolvedor           | Henry Komatsu    | Timeware    | henry.komatsu.timeware@outlook.com |
 | Desenvolvedor           | Mateus Veloso           | Timeware    | mateus.veloso.timeware@outlook.com |
 
@@ -91,4 +91,4 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 
 | Versão | Data       | Autor          | Descrição             |
 |--------|------------|----------------|-----------------------|
-| 1.0    | 19/05/2026 | Abraão  | Criação do documento  |
+| 1.0    | 19/05/2026 | Abraão Oliveira  | Criação do documento  |

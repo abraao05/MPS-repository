@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associacao dos Advogados de Sao Paulo |
 | **Versao** | 1.1 |
 | **Data** | 26/05/2026 |
-| **Gerente de Projeto** | Abraão |
+| **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | PCP (evidencia de projeto) |
 
 ---
@@ -220,5 +220,5 @@ Para a especificacao completa do contrato de integracao, cenarios de erro, exemp
 
 | Versao | Data | Autor | Descricao |
 |---|---|---|---|
-| 1.0 | 26/05/2026 | Abraão | Arquitetura inicial — Sprint 1; stack, modelo de dados, endpoints S1 |
-| 1.1 | 15/06/2026 | Abraão | Adicao da secao 6 (integracao ms.temis.vinculos) apos disponibilizacao do contrato de API no inicio da Sprint 2 |
+| 1.0 | 26/05/2026 | Abraão Oliveira | Arquitetura inicial — Sprint 1; stack, modelo de dados, endpoints S1 |
+| 1.1 | 15/06/2026 | Abraão Oliveira | Adicao da secao 6 (integracao ms.temis.vinculos) apos disponibilizacao do contrato de API no inicio da Sprint 2 |

@@ -7,8 +7,8 @@
 | **Data** | 06/06/2026 |
 | **Projeto** | AG — ms.auxo.gruposusuarios |
 | **Cliente** | AASP |
-| **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
-| **Dev** | Renan Kiyoshi (Timeware) |
+| **GP/TL** | Abraão Oliveira (GP) · Cézar Velázquez (TL) (Timeware) |
+| **Dev** | Renan Kioshi (Timeware) |
 | **PO** | Marcos Turnes (AASP) |
 | **QA** | Leonardo Francisco Pereira (AASP) |
 | **Processo MPS-SW** | VV — Verificacao e Validacao (evidencia de revisao por pares) |
@@ -28,8 +28,8 @@ Registrar as revisoes tecnicas formais (code reviews via Pull Requests) realizad
 | **Data** | 30/05/2026 (PR #11) e 02/06/2026 (PR #12) |
 | **Tipo** | Code review — implementacao de feature |
 | **PRs revisados** | #11 (POST /grupos — CRUD base), #12 (GET /grupos, GET /grupos/{id}, PUT /grupos/{id}, DELETE /grupos/{id}) |
-| **Revisor responsavel** | Cezar Hiraki (Tech Lead — Timeware) |
-| **Autor do codigo** | Renan Kiyoshi (Timeware) |
+| **Revisor responsavel** | Cézar Velázquez (Tech Lead — Timeware) |
+| **Autor do codigo** | Renan Kioshi (Timeware) |
 | **Resultado** | Aprovado com correcoes |
 
 ### 2.1 Achados
@@ -50,7 +50,7 @@ Registrar as revisoes tecnicas formais (code reviews via Pull Requests) realizad
 | **Data** | 03/06/2026 |
 | **Tipo** | Code review — implementacao de feature |
 | **PR revisado** | #13 (PUT /grupos/{id}/permissoes) |
-| **Revisor responsavel** | Cezar Hiraki (Tech Lead — Timeware) |
+| **Revisor responsavel** | Cézar Velázquez (Tech Lead — Timeware) |
 | **Autor do codigo** | Henry Komatsu (Timeware) |
 | **Resultado** | Aprovado com correcoes |
 
@@ -71,7 +71,7 @@ Registrar as revisoes tecnicas formais (code reviews via Pull Requests) realizad
 | **Data** | 05/06/2026 |
 | **Tipo** | Code review — implementacao de feature |
 | **PRs revisados** | #14 (POST /grupos/{id}/usuarios), #15 (DELETE /grupos/{id}/usuarios/{uid}) |
-| **Revisor responsavel** | Cezar Hiraki (Tech Lead — Timeware) |
+| **Revisor responsavel** | Cézar Velázquez (Tech Lead — Timeware) |
 | **Autor do codigo** | Mateus Veloso (Timeware) |
 | **Resultado** | Aprovado com correcoes |
 
@@ -109,4 +109,4 @@ Revisoes tecnicas previstas para a Sprint 2, cobrindo as historias AG-23 (Audito
 
 | Versao | Data | Autor | Descricao |
 |---|---|---|---|
-| 1.0 | 06/06/2026 | Abraão | Criacao do documento; registro formal das revisoes tecnicas da Sprint 1 (PRs #11 a #15); todos os achados resolvidos e documentados |
+| 1.0 | 06/06/2026 | Abraão Oliveira | Criacao do documento; registro formal das revisoes tecnicas da Sprint 1 (PRs #11 a #15); todos os achados resolvidos e documentados |

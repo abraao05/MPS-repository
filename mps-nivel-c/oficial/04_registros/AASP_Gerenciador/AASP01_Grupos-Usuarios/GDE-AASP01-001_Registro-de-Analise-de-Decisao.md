@@ -7,8 +7,8 @@
 | **Data** | 19/05/2026 |
 | **Projeto** | AG — ms.auxo.gruposusuarios |
 | **Cliente** | AASP |
-| **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
-| **Dev** | Renan Kiyoshi (Timeware) |
+| **GP/TL** | Abraão Oliveira (GP) · Cézar Velázquez (TL) (Timeware) |
+| **Dev** | Renan Kioshi (Timeware) |
 | **PO** | Marcos Turnes (AASP) |
 | **QA** | Leonardo Francisco Pereira (AASP) |
 
@@ -58,7 +58,7 @@ Justificativa: A compatibilidade plena com .NET Framework 4.7.2 e a consistencia
 
 - **Impacto arquitetural:** toda a camada de repositorio do ms.auxo.gruposusuarios usara Dapper com queries SQL explicitas; migrations e alteracoes de schema serao gerenciadas por scripts .sql versionados no repositorio (sem EF Core migrations)
 - **Risco aceito:** maior verbosidade no repositorio em comparacao com EF Core para operacoes simples; mitigado pela consistencia com o padrao do projeto e pela experiencia da equipe com Dapper
-- **Decisao validada por:** Cezar Hiraki (TL) e Marcos Turnes (PO) no Kickoff em 19/05/2026
+- **Decisao validada por:** Cézar Velázquez (TL) e Marcos Turnes (PO) no Kickoff em 19/05/2026
 
 ---
 
@@ -114,4 +114,4 @@ Justificativa: A integridade referencial e critica para o ms.auxo.gruposusuarios
 
 | Versao | Data | Autor | Descricao |
 |---|---|---|---|
-| 1.0 | 19/05/2026 | Abraão | Criacao do documento; decisoes GDE-001 (Dapper) e GDE-002 (Soft Delete) tomadas no Kickoff e formalizadas com base nas discussoes com Marcos Turnes (PO) e Renan Kiyoshi (Dev) |
+| 1.0 | 19/05/2026 | Abraão Oliveira | Criacao do documento; decisoes GDE-001 (Dapper) e GDE-002 (Soft Delete) tomadas no Kickoff e formalizadas com base nas discussoes com Marcos Turnes (PO) e Renan Kioshi (Dev) |

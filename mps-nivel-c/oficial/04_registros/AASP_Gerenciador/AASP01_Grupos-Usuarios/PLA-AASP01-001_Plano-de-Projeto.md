@@ -8,8 +8,8 @@
 | Produto       | ms.auxo.gruposusuarios                                                |
 | Versão        | 1.0                                                                   |
 | Data          | 19/05/2026                                                            |
-| Autor         | Abraão                                                         |
-| Status        | Vigente                                                               |
+| Autor         | Abraão Oliveira                                                         |
+| Status        | Aprovado                                                               |
 
 ---
 
@@ -53,8 +53,8 @@ O escopo deste plano abrange as Sprints 1 a 4 do projeto, conforme detalhado no 
 |------------------------------|------------------|-------------|----------------------------------------------------------------------------------------------|
 | Product Owner                | Marcos Turnes  | AASP        | Priorização do backlog, aceite de entrega, aprovação de change requests                      |
 | QA / Homologação             | Leonardo Francisco Pereira     | AASP        | Execução de testes de homologação, emissão de parecer de aceite por sprint                   |
-| Gerente de Projeto / Tech Lead | Abraão (GP) · Cezar Hiraki (TL)  | Timeware    | Coordenação do projeto, arquitetura técnica, code review, relatório de status, gestão de riscos |
-| Desenvolvedor                | Renan Kiyoshi    | Timeware    | Implementação das features, testes unitários, atualização da documentação técnica            |
+| Gerente de Projeto / Tech Lead | Abraão Oliveira (GP) · Cézar Velázquez (TL)  | Timeware    | Coordenação do projeto, arquitetura técnica, code review, relatório de status, gestão de riscos |
+| Desenvolvedor                | Renan Kioshi    | Timeware    | Implementação das features, testes unitários, atualização da documentação técnica            |
 | Desenvolvedor                | Henry Komatsu    | Timeware    | Implementação das features e testes unitários                                                |
 | Desenvolvedor                | Mateus Veloso           | Timeware    | Implementação das features e testes unitários                                                |
 
@@ -62,10 +62,10 @@ O escopo deste plano abrange as Sprints 1 a 4 do projeto, conforme detalhado no 
 
 | Evento                  | Frequência                              | Canal          | Participantes              | Responsável    |
 |-------------------------|-----------------------------------------|----------------|----------------------------|----------------|
-| Daily Stand-up          | Diária — 09h30                          | Microsoft Teams | Equipe Timeware            | Abraão  |
-| Sprint Review           | Sexta-feira da semana de fechamento     | Microsoft Teams | Equipe completa + PO + QA  | Abraão  |
-| Sprint Retrospectiva    | Sexta-feira da semana de fechamento     | Microsoft Teams | Equipe Timeware            | Abraão  |
-| Relatório de Status     | Semanal — toda segunda-feira            | E-mail         | Marcos Turnes, Leonardo Francisco Pereira | Abraão |
+| Daily Stand-up          | Diária — 09h30                          | Microsoft Teams | Equipe Timeware            | Abraão Oliveira  |
+| Sprint Review           | Sexta-feira da semana de fechamento     | Microsoft Teams | Equipe completa + PO + QA  | Abraão Oliveira  |
+| Sprint Retrospectiva    | Sexta-feira da semana de fechamento     | Microsoft Teams | Equipe Timeware            | Abraão Oliveira  |
+| Relatório de Status     | Semanal — toda segunda-feira            | E-mail         | Marcos Turnes, Leonardo Francisco Pereira | Abraão Oliveira |
 | Comunicações urgentes   | Sob demanda                             | Microsoft Teams | Partes envolvidas          | Qualquer membro |
 
 ## 6. Plano de Gestão de Riscos
@@ -90,9 +90,9 @@ O escopo deste plano abrange as Sprints 1 a 4 do projeto, conforme detalhado no 
 
 | Atividade                   | Quando             | Responsável       | Critério de Conclusão                                        |
 |-----------------------------|--------------------|-------------------|--------------------------------------------------------------|
-| Testes unitários            | A cada sprint      | Renan Kiyoshi     | Cobertura ≥ 70% nos módulos entregues na sprint              |
-| Code review                 | A cada PR          | Cezar Hiraki     | Aprovação formal no Azure DevOps antes do merge              |
-| Testes de integração        | Sprint 2           | Cezar Hiraki     | Endpoints integrados validados em ambiente de desenvolvimento |
+| Testes unitários            | A cada sprint      | Renan Kioshi     | Cobertura ≥ 80% nos módulos entregues na sprint              |
+| Code review                 | A cada PR          | Cézar Velázquez     | Aprovação formal no Azure DevOps antes do merge              |
+| Testes de integração        | Sprint 2           | Cézar Velázquez     | Endpoints integrados validados em ambiente de desenvolvimento |
 | Homologação QA              | Sprint 3 e Sprint 4 | Leonardo Francisco Pereira     | Parecer de aceite emitido pela QA da AASP                    |
 | Aceite formal               | Fim de cada sprint  | Marcos Turnes  | Confirmação escrita do PO (e-mail ou Teams)                  |
 
@@ -101,7 +101,7 @@ O escopo deste plano abrange as Sprints 1 a 4 do projeto, conforme detalhado no 
 | ID  | Métrica                                                             |
 |-----|---------------------------------------------------------------------|
 | M1  | 100% dos requisitos funcionais (RF-01 a RF-09) entregues e aceitos  |
-| M2  | Cobertura de testes unitários ≥ 70% em todos os módulos             |
+| M2  | Cobertura de testes unitários ≥ 80% em todos os módulos             |
 | M3  | Tempo de resposta ≤ 500 ms para 95% das requisições (RNF-01)        |
 | M4  | Zero defeitos críticos abertos na entrega final                     |
 | M5  | Aceite formal de sprint em 100% das sprints pelo PO                 |
@@ -114,8 +114,8 @@ O escopo deste plano abrange as Sprints 1 a 4 do projeto, conforme detalhado no 
 Toda solicitação de alteração de escopo, prazo ou custo deve:
 
 1. Ser formalizada por escrito (e-mail ou formulário CR) pelo solicitante
-2. Ser avaliada pelo Gerente de Projeto (Abraão) quanto a impacto em prazo, esforço e riscos
-3. Ser aprovada formalmente por **Marcos Turnes (AASP)** e **Abraão (Timeware)**
+2. Ser avaliada pelo Gerente de Projeto (Abraão Oliveira) quanto a impacto em prazo, esforço e riscos
+3. Ser aprovada formalmente por **Marcos Turnes (AASP)** e **Abraão Oliveira (Timeware)**
 4. Ser registrada no documento de Change Requests (CR-AASP01) com número sequencial
 5. Ter o plano atualizado antes da implementação
 
@@ -135,4 +135,4 @@ Mudanças não aprovadas por ambas as partes não serão implementadas.
 
 | Versão | Data       | Autor          | Descrição             |
 |--------|------------|----------------|-----------------------|
-| 1.0    | 19/05/2026 | Abraão  | Criação do documento  |
+| 1.0    | 19/05/2026 | Abraão Oliveira  | Criação do documento  |

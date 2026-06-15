@@ -7,19 +7,19 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Produto** | ms.auxo.gruposusuarios |
 | **Repositório** | Azure DevOps · komatsuhenry67/gerenciador-aasp/ms.auxo.gruposusuarios |
-| **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
-| **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
+| **GP / Tech Lead** | Abraão Oliveira (GP) · Cézar Velázquez (TL) — Timeware Brasil |
+| **Desenvolvedores** | Renan Kioshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
 | **PO** | Marcos Turnes — AASP |
 | **QA** | Leonardo Francisco Pereira — AASP |
 | **Data base** | 26/05/2026 |
 | **Versão** | 1.1 |
-| **Status** | Ativo |
+| **Status** | Aprovado |
 
 ---
 
 ## 1. Objetivo
 
-Registrar a rastreabilidade entre histórias do Jira (AG-XX), requisitos funcionais e não funcionais, endpoints implementados, Pull Requests do Azure DevOps, casos de teste e status de entrega. Este documento evidencia o atributo de rastreabilidade exigido pelo processo GPR e pelo processo de Gerência de Requisitos (GRE) do nível C do MPS.BR, garantindo que cada requisito possa ser rastreado desde sua origem até a entrega verificada.
+Registrar a rastreabilidade entre histórias do Jira (AG-XX), requisitos funcionais e não funcionais, endpoints implementados, Pull Requests do Azure DevOps, casos de teste e status de entrega. Este documento evidencia o atributo de rastreabilidade exigido pelo processo GPR e pelo processo de Engenharia de Requisitos (REQ) do nível C do MPS.BR, garantindo que cada requisito possa ser rastreado desde sua origem até a entrega verificada.
 
 ---
 
@@ -87,5 +87,5 @@ Os itens abaixo possuem requisito definido e rastreabilidade registrada, mas ain
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 26/05/2026 | Abraão | Versão inicial — estrutura da matriz com requisitos RF-01 a RF-09 e RNF-01 a RNF-03 |
-| 1.1 | 09/06/2026 | Abraão | Atualizado pós-Sprint 1: PRs #11 a #15 registrados, status de entrega e resultados dos casos de teste incorporados |
+| 1.0 | 26/05/2026 | Abraão Oliveira | Versão inicial — estrutura da matriz com requisitos RF-01 a RF-09 e RNF-01 a RNF-03 |
+| 1.1 | 09/06/2026 | Abraão Oliveira | Atualizado pós-Sprint 1: PRs #11 a #15 registrados, status de entrega e resultados dos casos de teste incorporados |

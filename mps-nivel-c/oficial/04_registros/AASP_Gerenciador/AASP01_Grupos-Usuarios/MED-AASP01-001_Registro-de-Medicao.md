@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associacao dos Advogados de Sao Paulo |
 | **Versao** | 1.1 |
 | **Data** | 15/06/2026 |
-| **Gerente de Projeto** | Abraão |
+| **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | MED — Medicao (evidencia de projeto) |
 
 ---
@@ -26,9 +26,9 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 |---|---|
 | **Plano de referencia** | PLA-MED-001 — Plano de Medicao Organizacional Timeware |
 | **Frequencia de coleta** | Por sprint (a cada 2 semanas) |
-| **Responsavel pela coleta** | Abraão (Gerente de Projeto) |
+| **Responsavel pela coleta** | Abraão Oliveira (Gerente de Projeto) |
 | **Repositorio dos dados** | Azure DevOps — Boards + Repositorio ms.auxo.gruposusuarios |
-| **Destinatarios** | Abraão (interno), Marcos Turnes (AASP, status semanal) |
+| **Destinatarios** | Abraão Oliveira (interno), Marcos Turnes (AASP, status semanal) |
 
 ---
 
@@ -67,9 +67,9 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | Sprint | Metodos Testados | Total Metodos | Cobertura Est. | Meta | Status |
 |---|---|---|---|---|---|
 | Sprint 1 | 22 | ~26 | 85% | >= 80% | Meta atingida |
-| Sprint 2 | A apurar | — | — | >= 80% | Em andamento |
-| Sprint 3 | A apurar | — | — | >= 80% | Planejado |
-| Sprint 4 | A apurar | — | — | >= 80% | Planejado |
+| Sprint 2 | — | — | — | >= 80% | Em andamento |
+| Sprint 3 | — | — | — | >= 80% | Planejado |
+| Sprint 4 | — | — | — | >= 80% | Planejado |
 
 > Nota: Cobertura estimada com base no total de metodos publicos das camadas de servico (GruposService, PermissoesService) e repositorio (GruposRepository, PermissoesRepository) implementados na Sprint 1. Medicao exata disponivel no relatorio de execucao xUnit (REL-VV-AASP01-001).
 
@@ -78,9 +78,9 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | Sprint | Tipo | Encontrados | Severidade | Resolvidos Antes do Aceite | Origem |
 |---|---|---|---|---|---|
 | Sprint 1 | Achados code review (REV) | 5 | P2: 3 / P3: 2 | 5 de 5 (100%) | PRs #11, #12, #13, #14, #15 |
-| Sprint 2 | A apurar | — | — | — | Em andamento |
-| Sprint 3 | A apurar | — | — | — | Planejado |
-| Sprint 4 | A apurar | — | — | — | Planejado |
+| Sprint 2 | — | — | — | — | Em andamento |
+| Sprint 3 | — | — | — | — | Planejado |
+| Sprint 4 | — | — | — | — | Planejado |
 
 > Nenhum defeito aberto em producao ou homologacao ao longo da Sprint 1. Todos os achados foram registrados e resolvidos antes do merge conforme processo REV (REV-AASP01-001).
 
@@ -142,5 +142,5 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 
 | Versao | Data | Autor | Descricao |
 |---|---|---|---|
-| 1.0 | 09/06/2026 | Abraão | Versao inicial — pos-encerramento Sprint 1; registros M1-M8 com dados reais Sprint 1 |
-| 1.1 | 15/06/2026 | Abraão | Atualizacao com status parcial Sprint 2 (~60% concluido em 15/06); secao 7 atualizada com proximo ponto de medicao |
+| 1.0 | 09/06/2026 | Abraão Oliveira | Versao inicial — pos-encerramento Sprint 1; registros M1-M8 com dados reais Sprint 1 |
+| 1.1 | 15/06/2026 | Abraão Oliveira | Atualizacao com status parcial Sprint 2 (~60% concluido em 15/06); secao 7 atualizada com proximo ponto de medicao |

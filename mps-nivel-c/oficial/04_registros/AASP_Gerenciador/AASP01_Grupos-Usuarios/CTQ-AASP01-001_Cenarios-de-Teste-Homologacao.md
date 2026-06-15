@@ -7,11 +7,11 @@
 | **Data** | 26/05/2026 |
 | **Projeto** | AG — ms.auxo.gruposusuarios |
 | **Cliente** | AASP |
-| **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
-| **Dev** | Renan Kiyoshi (Timeware) |
+| **GP/TL** | Abraão Oliveira (GP) · Cézar Velázquez (TL) (Timeware) |
+| **Dev** | Renan Kioshi (Timeware) |
 | **PO** | Marcos Turnes (AASP) |
 | **QA** | Leonardo Francisco Pereira (AASP) |
-| **Executado por** | Leonardo Francisco Pereira (AASP) + Abraão (Timeware) |
+| **Executado por** | Leonardo Francisco Pereira (AASP) + Abraão Oliveira (Timeware) |
 | **Ambiente de execucao** | Homologacao AASP |
 | **Data de execucao Sprint 1** | 06/06/2026 |
 
@@ -19,7 +19,7 @@
 
 ## 1. Contexto
 
-Cenarios de teste executados durante a homologacao da Sprint 1 (AG-20, AG-21, AG-22). Definidos em conjunto entre Abraão (Timeware) e Leonardo Francisco Pereira (AASP). Todos os 10 cenarios da Sprint 1 foram executados e aprovados em 06/06/2026, sem ressalvas, conforme registrado na ATA-AASP01-002.
+Cenarios de teste executados durante a homologacao da Sprint 1 (AG-20, AG-21, AG-22). Definidos em conjunto entre Abraão Oliveira (Timeware) e Leonardo Francisco Pereira (AASP). Todos os 10 cenarios da Sprint 1 foram executados e aprovados em 06/06/2026, sem ressalvas, conforme registrado na ATA-AASP01-002.
 
 A feature AG — ms.auxo.gruposusuarios e desenvolvida em .NET Framework 4.7.2, com acesso ao banco SQL Server auxo3 via Dapper. Os cenarios cobrem os endpoints implementados nos PRs #11 a #15 da Sprint 1.
 
@@ -100,5 +100,5 @@ Cenarios previstos para a Sprint 3, cobrindo a historia AG-25 (Relatorio consoli
 
 | Versao | Data | Autor | Descricao |
 |---|---|---|---|
-| 1.0 | 26/05/2026 | Abraão | Criacao do documento; cenarios da Sprint 1 definidos em conjunto com Leonardo Francisco Pereira (AASP) |
-| 1.1 | 09/06/2026 | Abraão | Resultado da execucao Sprint 1 registrado (100% aprovado em 06/06/2026); cenarios das Sprints 2 e 3 planejados |
+| 1.0 | 26/05/2026 | Abraão Oliveira | Criacao do documento; cenarios da Sprint 1 definidos em conjunto com Leonardo Francisco Pereira (AASP) |
+| 1.1 | 09/06/2026 | Abraão Oliveira | Resultado da execucao Sprint 1 registrado (100% aprovado em 06/06/2026); cenarios das Sprints 2 e 3 planejados |
