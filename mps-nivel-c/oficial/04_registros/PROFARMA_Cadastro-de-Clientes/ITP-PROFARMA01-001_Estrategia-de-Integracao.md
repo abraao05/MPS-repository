@@ -5,8 +5,8 @@
 | **Documento** | ITP-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 15/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | ITP (evidência de projeto) |
 
@@ -126,6 +126,20 @@ O pipeline Azure DevOps executa a cada push no branch `develop` e a cada PR.
 - **Localização dos logs:** Azure DevOps — `profarma.visualstudio.com/rede-d1000/` (acesso D1000 + Timeware)
 - **Resultado consolidado:** 0 falhas de pipeline após Sprint 5; pipeline verde como gate obrigatório para merge em `main`
 
+### 7.1.1 Evidências do pipeline CI/CD (Azure DevOps)
+
+**Histórico de runs do pipeline — Abril/Maio 2026 (pós go-live):**
+
+![Histórico de runs do pipeline Azure DevOps — Abril/Maio 2026: runs bem-sucedidos nos branches develop e feature/*, evidenciando pipeline verde contínuo pós go-live](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-pipeline-historico-runs-abr-mai.png)
+
+**Stages do pipeline — commit 04aaeee2 (branch develop):**
+
+![Stages do pipeline Azure DevOps — commit 04aaeee2 (PR 4 Segmentacao_Clientes → develop): Initialize Agent, Build (dotnet build), Test (dotnet test), Publish, Archive, Publish Artifact — todos verdes](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-pipeline-stages-develop-04aaeee2.png)
+
+**Stages do pipeline — branch ajustes_cadastrais:**
+
+![Stages do pipeline Azure DevOps — branch ajustes_cadastrais: Initialize Agent, Build, Test, Publish, Archive, Publish Artifact — todos bem-sucedidos](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-pipeline-stages-ajustes-cadastrais.png)
+
 ### 7.2 Releases entregues
 
 | Release | Data | Componentes | GMUD / PR | Observação |
@@ -150,3 +164,4 @@ O pipeline Azure DevOps executa a cada push no branch `develop` e a cada PR.
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída consolidando a estratégia e registros de integração do projeto |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Adição de §7.1.1 com evidências visuais do pipeline CI/CD (Azure DevOps): histórico de runs e stages |

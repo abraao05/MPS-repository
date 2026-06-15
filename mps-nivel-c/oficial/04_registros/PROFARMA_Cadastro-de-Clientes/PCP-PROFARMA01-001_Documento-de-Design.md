@@ -5,8 +5,8 @@
 | **Documento** | PCP-PROFARMA01-001 |
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
-| **Versão** | 1.5 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.6 |
+| **Data** | 15/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | PCP (evidência de projeto) |
 
@@ -353,6 +353,46 @@ A aprovação do design arquitetural pelo Tech Lead D1000 (Armando Junior) é ta
 
 ---
 
+## 12. Evidências de implementação (Azure DevOps)
+
+### 12.1 Estrutura da solução — repositório loja-backend
+
+**Solution D1000 Backend — 28 projetos:**
+
+![Solution D1000 Backend com 28 projetos: D1000.Clientes.API, D1000.Clientes.Application, D1000.Clientes.Domain, D1000.Clientes.Infrastructure, workers, testes e demais módulos — Azure DevOps](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-solution-d1000backend-28projetos.png)
+
+**Estrutura interna — D1000.Clientes.API:**
+
+![Estrutura D1000.Clientes.API: Controllers (ClienteController, HealthController, MetricsController), Middlewares, Extensions, Program.cs — Azure DevOps](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-estrutura-clientes-api.png)
+
+**Estrutura interna — D1000.Gateway.API:**
+
+![Estrutura D1000.Gateway.API: configuração do API Gateway, roteamento e middlewares de autenticação — Azure DevOps](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-estrutura-gateway-api.png)
+
+**Domain Models organizados por contexto:**
+
+![Domain Models por contexto de negócio: Cliente, Endereço, Auditoria, Outbox, LGPD, Convênios — estrutura DDD no projeto D1000.Clientes.Domain — Azure DevOps](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-domain-models-por-contexto.png)
+
+**Camadas Shared, Application, Domain e Infrastructure:**
+
+![Projetos D1000.Shared, D1000.Clientes.Application, D1000.Clientes.Domain e D1000.Clientes.Infrastructure — separação de responsabilidades Clean Architecture — Azure DevOps](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-shared-application-domain-infrastructure.png)
+
+### 12.2 Commits de implementação — integração Call Center
+
+**Commit de integração Call Center (parte 1):**
+
+![Commit Azure DevOps — implementação da integração Call Center: endpoint GET /clientes/{cpf}/call-center, SLA 500 ms, autenticação API Key (parte 1)](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-commit-callcenter-integracao-01.png)
+
+**Commit de integração Call Center (parte 2):**
+
+![Commit Azure DevOps — implementação da integração Call Center: handlers, DTOs e mapeamentos do canal Call Center (parte 2)](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-commit-callcenter-integracao-02.png)
+
+**Commit de infraestrutura Call Center:**
+
+![Commit Azure DevOps — infraestrutura Call Center: ConfigMap Kubernetes, variáveis de ambiente e configuração de credencial no Azure Key Vault](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-commit-callcenter-infraestrutura.png)
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
@@ -363,3 +403,4 @@ A aprovação do design arquitetural pelo Tech Lead D1000 (Armando Junior) é ta
 | 1.3 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — consolidação final após piloto loja 9 |
 | 1.4 | 11/06/2026 | Time de Melhoria Contínua | Adição de §1.1 (canais completos do diagrama), atualização de §2.2 (API Gateway, Container Registry, Helm, Bot Services, Azure Monitor), adição de §9 (avaliação do design por Armando Junior — 17/07/2025) |
 | 1.5 | 11/06/2026 | Time de Melhoria Contínua | Adição de §9 "Design de produto (UX/UI) — não aplicável" e §10 "Rastreabilidade requisito → design" (conformidade com TPL-PCP-001); seção de avaliação renumerada para §11 |
+| 1.6 | 15/06/2026 | Time de Melhoria Contínua | Adição de §12 com evidências visuais da estrutura da solução (28 projetos, Clean Architecture) e commits de implementação da integração Call Center |

@@ -5,8 +5,8 @@
 | **Documento**        | REV-PROFARMA01-001                            |
 | **Projeto**          | Cadastro de Clientes — Rede D1000             |
 | **Cliente**          | Profarma S.A. / Rede D1000                    |
-| **Versão**           | 1.0                                           |
-| **Data**             | 05/06/2026                                    |
+| **Versão**           | 1.1                                           |
+| **Data**             | 15/06/2026                                    |
 | **Gerente de Projeto** | Abraão Oliveira                             |
 | **Processo MPS-SW**  | VV — Verificação e Validação (evidência de revisão por pares) |
 
@@ -86,7 +86,37 @@ Este documento registra as revisões técnicas formais (peer reviews) realizadas
 
 ---
 
-## 5. Resumo Consolidado de Achados
+## 5. REV-004 — Revisão de código por Pull Request (code review contínuo)
+
+| Campo | Valor |
+|---|---|
+| **Período** | Abril/2026 (manutenção pós go-live) |
+| **Tipo** | Code review via Pull Request (Azure DevOps) |
+| **Repositório** | Profarma Cadastro de Clientes — Azure DevOps |
+| **Revisor responsável** | Joni Quirino da Silva Junior |
+| **Resultado** | Aprovado em todos os PRs |
+
+### 5.1 Pull Requests revisados e aprovados
+
+**PR 3 — Acresção de dados OptIn e OptOut**
+
+Autora: Julielle Pereira de Sa Santos | Branch: Ajuste_OptIn_OptOut → develop | Aprovado por: Joni Quirino da Silva Junior | Merge: 14/abr. às 18:40 | Commit: b76af1ce
+
+![PR 3 — Acresção de dados OptIn e OptOut: aprovado por Joni Quirino da Silva Junior (Azure DevOps)](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-pr-03-optin-optout-aprovado.png)
+
+**PR 4 — Implementação de endpoints de import Segmentação de clientes e processamento das segmentações**
+
+Autora: Julielle Pereira de Sa Santos | Branch: Segmentacao_Clientes → develop | Aprovado por: Joni Quirino da Silva Junior | Merge: 24/abr. às 11:30 | Commit: 04aaeee2
+
+![PR 4 — Implementação de endpoints de Segmentação de clientes: aprovado por Joni Quirino da Silva Junior (Azure DevOps)](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-pr-04-segmentacao-aprovado.png)
+
+### 5.2 Histórico de commits — rastreabilidade
+
+![Histórico de commits out/2025: Merged PR 1, feat: Correções completas RG/Opt-In/Out/Convenios, fix: webhook OMS AKS, fix: ClearChangeTracker, fix: perda de dados RG — Azure DevOps](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-historico-commits-out2025.png)
+
+---
+
+## 6. Resumo Consolidado de Achados
 
 | ID         | Revisão   | Severidade | Status     |
 |------------|-----------|------------|------------|
@@ -108,3 +138,4 @@ Este documento registra as revisões técnicas formais (peer reviews) realizadas
 | Versão | Data       | Autor                        | Descrição                          |
 |--------|------------|------------------------------|------------------------------------|
 | 1.0    | 05/06/2026 | Time de Melhoria Contínua    | Versão inicial — registro oficial  |
+| 1.1    | 15/06/2026 | Time de Melhoria Contínua    | Adição de §5 REV-004 com evidências de code review via Pull Request (PR 3, PR 4) e histórico de commits Azure DevOps |
