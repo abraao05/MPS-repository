@@ -87,8 +87,8 @@ Esta seção nomina os titulares de cada papel e os demais membros da equipe que
 | **Tech Lead / Arquiteto** | Cézar Velázquez | — | CV (Fatec BS); REG-CAP-011 (Azure); REG-CAP-001/002/005/009 |
 | **Desenvolvedores** | — | Renan Kioshi, Raony Chagas, Mateus Veloso, Lucas Batista, Henry Komatsu, Allan Patrocínio, Felipe Siqueira | REG-CAP-010 (onboarding técnico); REG-CAP-011 (Azure); REG-CAP-012 (testes) |
 | **QA** | Caroline Jenifer (Carol) | Jonatan Silva, Letícia Moraes | CV Carol (FIAP, 7+ anos QA); REG-CAP-012 (automação de testes); REG-CAP-002/007/008/009 |
-| **DevOps** | — | Rafael Cunha | REG-CAP-010 (onboarding); REG-CAP-011 (Azure/IaC); REG-CAP-002/009 |
-| **GCO Baseline / Auditoria** | — | Mariana Teixeira | REG-CAP-002 (GCO); REG-CAP-009 |
+| **DevOps / GCO (pipeline/release)** | Cézar Velázquez | Flávio Fernandes | REG-CAP-011 (Azure/IaC); REG-CAP-001/002/005/009 (Cézar); REG-CAP-002/009 (Flávio) |
+| **GCO Baseline / Auditoria** | Cézar Velázquez | Flávio Fernandes | REG-CAP-011 (Azure); REG-CAP-001/002/005/009 (Cézar); REG-CAP-002/009 (Flávio) |
 | **GQA / Qualidade do Processo** | Caroline Jenifer (Carol) | — | CV Carol (FIAP, 7+ anos QA); REG-CAP-012 (automação de testes); REG-CAP-007/008/009 |
 | **Time de Melhoria Contínua / SEPG** | Silvio Baroni (coordenador), Abraão Oliveira, Flávio Fernandes | Patricia Lima, Mariana Teixeira | CV Silvio (PM Sênior); REG-CAP-013 (desenho de processos); REG-CAP-003/006/009 |
 | **Responsável de Medição** | Silvio Baroni | Abraão Oliveira | CV Silvio (PM Sênior); REG-CAP-013; REG-CAP-003/006/009 |
@@ -128,7 +128,7 @@ A matriz aplica-se a projetos (GPR, REQ, PCP, ITP, VV) e à organização (GCO, 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Seção 5 atualizada: titulares e equipes revistos conforme distribuição de papéis para entrevistas MPS-SW — GQA passa para Caroline Jenifer; Medição passa para Silvio Baroni; GP fica só com Abraão Oliveira; PO adiciona Baroni como equipe; Devs expandidos (Mateus Veloso, Lucas Batista, Allan Patrocínio, Felipe Siqueira); RH equipe atualizado (Klayton Roberto); Portfólio/OSW adiciona Abraão e Baroni como equipe; Baroni identificado como coordenador do SEPG |
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Seção 5 atualizada: titulares e equipes revistos conforme distribuição de papéis para entrevistas MPS-SW — GQA passa para Caroline Jenifer; Medição passa para Silvio Baroni; GP fica só com Abraão Oliveira; PO adiciona Baroni como equipe; Devs expandidos (Mateus Veloso, Lucas Batista, Allan Patrocínio, Felipe Siqueira); RH equipe atualizado (Klayton Roberto); Portfólio/OSW adiciona Abraão e Baroni como equipe; Baroni identificado como coordenador do SEPG; DevOps e GCO Baseline passam para Cézar Velázquez (titular) e Flávio Fernandes (equipe) |
 | 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel "Consultora de Processos (PJ)" removido apenas da seção 5 (titulares/equipe); mantido na seção 4 (competências) |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Seção 5 reestruturada: coluna "Equipe" adicionada; titulares corrigidos (Wilson Yamada = COO/Medição/Portfólio; Baroni = GP/PO; Flávio = MC/GQA; Guilherme = RH); equipe de projeto separada dos titulares |
 | 1.0 | 10/06/2026 | Time de Melhoria Contínua | Versão inicial — matriz consolidando RACI processo × papel, competências por papel e titulares com evidência de competência |
