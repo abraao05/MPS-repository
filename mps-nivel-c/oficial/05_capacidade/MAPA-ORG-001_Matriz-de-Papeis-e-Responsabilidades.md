@@ -71,6 +71,7 @@ A matriz aplica-se aos 12 processos do escopo MPS-SW Nível C e cobre tanto os p
 | **Time de Melhoria Contínua / SEPG** | GPC, CAP (apoio), MED (consolidação) | Definição e melhoria de processos; MR-MPS-SW; modelagem de processos; análise de métricas; facilitação |
 | **Responsável de Medição** | MED (operação) | Coleta e consolidação de medidas; análise de indicadores; repositório de medição |
 | **RH / Capacitação** | CAP, AQU (apoio) | Identificação de necessidades de competência; planejamento de capacitação; avaliação de eficácia |
+| **Consultora de Processos (PJ)** | GPC (apoio à definição) | Lean Six Sigma; modelagem e melhoria de processos; mapeamento de fluxo de valor |
 | **COO** | OSW, GPC (autoridade), portfólio | Gestão de portfólio; governança organizacional; análise crítica de desempenho |
 
 ---
@@ -127,6 +128,6 @@ A matriz aplica-se a projetos (GPR, REQ, PCP, ITP, VV) e à organização (GCO, 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel "Consultora de Processos (PJ)" removido das seções 4 e 5 |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel "Consultora de Processos (PJ)" removido apenas da seção 5 (titulares/equipe); mantido na seção 4 (competências) |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Seção 5 reestruturada: coluna "Equipe" adicionada; titulares corrigidos (Wilson Yamada = COO/Medição/Portfólio; Baroni = GP/PO; Flávio = MC/GQA; Guilherme = RH); equipe de projeto separada dos titulares |
 | 1.0 | 10/06/2026 | Time de Melhoria Contínua | Versão inicial — matriz consolidando RACI processo × papel, competências por papel e titulares com evidência de competência |
