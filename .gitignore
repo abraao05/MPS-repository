@@ -2,3 +2,10 @@ exports/
 
 # Arquivos de lock do LibreOffice/OpenOffice
 .~lock.*#
+
+# Artefatos de build de exportação (ZIP de docx)
+mps-nivel-c/_export/
+
+# Cache Python
+__pycache__/
+*.pyc
