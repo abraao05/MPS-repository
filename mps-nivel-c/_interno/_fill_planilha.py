@@ -229,9 +229,21 @@ def blank_rows_for(ws, irow, lrow):
     end = lrow if lrow else irow + 10
     return [r for r in range(irow + 1, end) if ws.cell(row=r, column=1).value is None]
 
+# Nomes legíveis por projeto (para cabeçalho R3 nas abas de projeto)
+PROJ_NAMES = {
+ 'FRUKI':   'FTFRUKI — Super App Força de Vendas',
+ 'AASP_AP': 'AASP — Andamento Processuais',
+}
+
 # ============ WRITE ============
 wb = openpyxl.load_workbook(SRC)
 pmap_dict = dict(PROJECTS)
+
+# ---- cabeçalho de projeto (R3) nas abas de processo ----
+for sheet in ['GPR','REQ','PCP','ITP','VV']:
+    ws = wb[sheet]
+    for pname, col in PCOL.items():
+        ws.cell(row=3, column=col, value=PROJ_NAMES.get(pname, pname)).alignment = CENTER
 
 # ---- abas de projeto (GPR, REQ, PCP, ITP, VV) ----
 for sheet in ['GPR','REQ','PCP','ITP','VV']:
