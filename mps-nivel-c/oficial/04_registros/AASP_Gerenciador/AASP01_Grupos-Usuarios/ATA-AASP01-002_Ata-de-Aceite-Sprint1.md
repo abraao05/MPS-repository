@@ -39,7 +39,7 @@ Apresentar os entregáveis da Sprint 1 (AG-20, AG-21, AG-22) ao cliente AASP, de
 | História | Requisitos Cobertos | Endpoints Demonstrados | Status dos Testes | Resultado do Aceite |
 |---|---|---|---|---|
 | **AG-20** — CRUD de Grupos | RF-01 a RF-04 | POST /grupos (criação com validação de nome único); GET /grupos (listagem paginada); GET /grupos/{id} (busca individual); PUT /grupos/{id} (atualização); DELETE /grupos/{id} (soft delete — campo Ativo=false) | 5 cenários: GRP-01 a GRP-05 — todos OK (100%) | Aprovado por Marcos Turnes |
-| **AG-21** — Permissões por Grupo (RBAC) | RF-05 | PUT /grupos/{id}/permissoes (enum validado: Leitura, Escrita, Exclusão, Administração, Relatório) | 2 cenários: PERM-01 e PERM-02 — todos OK (100%) | Aprovado por Marcos Turnes |
+| **AG-21** — Permissões por Grupo (RBAC) | RF-05 | PUT /grupos/{id}/permissoes (enum validado: Leitura, Escrita, Exclusao, Administracao, Relatorio) | 2 cenários: PERM-01 e PERM-02 — todos OK (100%) | Aprovado por Marcos Turnes |
 | **AG-22** — Vínculo Usuário-Grupo | RF-06 | POST /grupos/{id}/usuarios (com validação de usuário ativo); DELETE /grupos/{id}/usuarios/{uid} (soft delete do vínculo) | 3 cenários: VINC-01, VINC-02, VINC-03 — todos OK (100%) | Aprovado por Marcos Turnes |
 
 ---

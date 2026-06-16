@@ -81,7 +81,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 | GRP-03 | AG-20 | Atualizar nome e descrição de grupo existente via PUT — persistência validada | OK |
 | GRP-04 | AG-20 | Soft delete de grupo — campo Ativo=false; grupo não aparece em listagem ativa | OK |
 | GRP-05 | AG-20 | Tentar criar grupo com nome duplicado — sad path; erro 409 retornado corretamente | OK |
-| PERM-01 | AG-21 | Associar permissões válidas (Leitura, Escrita, Administração) a um grupo — persistência validada | OK |
+| PERM-01 | AG-21 | Associar permissões válidas (Leitura, Escrita, Administracao) a um grupo — persistência validada | OK |
 | PERM-02 | AG-21 | Tentar associar permissão inválida (fora do enum) — sad path; erro 400 retornado corretamente | OK |
 | VINC-01 | AG-22 | Vincular usuário ativo a um grupo — associação registrada em UsuariosGrupo | OK |
 | VINC-02 | AG-22 | Desvincular usuário de um grupo via DELETE — soft delete do vínculo validado | OK |
