@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REG-OSW-001 — Painel de Portfólio de Projetos |
-| **Versão** | 1.1 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 16/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Responsável** | COO (Operações) — escritório de portfólio de projetos |
 | **Processo MPS-SW** | OSW (evidência organizacional — OSW 8, OSW 9, OSW 10) |
@@ -25,7 +25,7 @@ Este painel materializa, para fins de avaliação, a gestão de portfólio defin
 | Item | Descrição |
 |---|---|
 | Período de referência | Abr/2025 – Jul/2026 (ciclo de implantação MPS-SW Nível C) |
-| Data do snapshot | 15/06/2026 |
+| Data do snapshot | 16/06/2026 |
 | Fontes | Jira (situação dos projetos e quadro de capacity), Confluence (atas de priorização e de análise crítica), registros de projeto (04_registros) |
 | Responsável pela consolidação | COO (Operações), com apoio do Time de Melhoria Contínua |
 
@@ -39,8 +39,10 @@ Este painel materializa, para fins de avaliação, a gestão de portfólio defin
 | SuperApp Força de Vendas — Pacote 1 (Metas e RV) | Fruki | Desenvolvimento mobile (React Native) | Jun/2025 – Set/2025 | ✅ Concluído (piloto + aceite) | 04_registros/FTFRUKI_SuperApp-Forca-de-Vendas |
 | SuperApp Força de Vendas — Pacote Final 24 | Fruki | Desenvolvimento mobile (React Native) | Out/2025 – Jan/2026 | ✅ Concluído (aceite 15/01/2026) | 04_registros/FTFRUKI_SuperApp-Forca-de-Vendas |
 | Fundação Tecnológica — Governança de APIs (OS-001 e OS-002) | GASMIG | Configuração cloud (Azure API Management) | Abr/2026 – Jun/2026 | ✅ Concluído (OS-002 encerrada 09/06/2026) | 04_registros/FTGASMIG_Governanca-APIs |
-| WorkerAndamentos — Captura de Andamentos Processuais | AASP | Desenvolvimento back-end / worker | ~9 meses (em curso) | 🟡 Em execução (encerramento previsto 30/06/2026) | 04_registros/AASP_CNJ |
-| MilhasFácil — Busca e Alerta de Passagens por Milhas | Hub de Milhas | Desenvolvimento de software (3 serviços: API/Web/Crawler) | Fev/2026 – Jul/2026 (em curso) | 🟡 Em execução (Sprint 9 de 12; encerramento previsto 26/07/2026) | 04_registros/MilhasFacil_Busca-de-Milhas |
+| WorkerAndamentos — Captura de Andamentos Processuais | AASP | Desenvolvimento back-end / worker | Out/2025 – Jun/2026 | 🟡 Em execução (encerramento previsto 30/06/2026) | 04_registros/AASP_CNJ |
+| MilhasFácil — Busca e Alerta de Passagens por Milhas | Hub de Milhas | Desenvolvimento de software (3 serviços: API/Web/Crawler) | Fev/2026 – Jul/2026 | 🟡 Em execução (Sprint 9 de 12; encerramento previsto 26/07/2026) | 04_registros/MilhasFacil_Busca-de-Milhas |
+| SensrJiraSync — Sincronização Sensr↔Jira | AASP | Desenvolvimento back-end / serviço de automação | Abr/2026 – Em curso | 🟡 Em execução | 04_registros/AASP_Automacao-Governanca |
+| Gerenciador AASP — Grupos de Usuários (AASP01) | AASP | Desenvolvimento back-end / microsserviço (RBAC) | Mai/2026 – Jul/2026 | 🟡 Em execução (encerramento previsto 11/07/2026) | 04_registros/AASP_Gerenciador |
 
 > Os projetos acima compõem o portfólio do ciclo. Demais oportunidades em prospecção são qualificadas pela área comercial e só entram no portfólio após aprovação da priorização (§4).
 
@@ -55,7 +57,7 @@ A priorização das oportunidades e dos projetos é conduzida pelo **COO (Opera�
 - **disponibilidade de recursos**, especialmente os compartilhados (Tech Lead, Arquiteto, Product Owner);
 - **retorno e relevância estratégica.**
 
-No período de referência, os projetos foram assumidos de forma escalonada, respeitando a capacidade real da organização: a entrada da Fundação Tecnológica GASMIG (abr/2026) ocorreu após a conclusão dos pacotes do SuperApp Fruki (jan/2026), evitando sobreposição dos recursos técnicos compartilhados. A decisão de assumir cada projeto e sua ordem de prioridade é registrada nas atas do escritório de portfólio (Confluence).
+No período de referência, os projetos foram assumidos de forma escalonada, respeitando a capacidade real da organização: a entrada da Fundação Tecnológica GASMIG (abr/2026) ocorreu após a conclusão dos pacotes do SuperApp Fruki (jan/2026), evitando sobreposição dos recursos técnicos compartilhados. Os três projetos AASP em curso (WorkerAndamentos, SensrJiraSync e Gerenciador) e o projeto MilhasFácil operam com equipes dedicadas por projeto, sem concorrência de recursos compartilhados. A decisão de assumir cada projeto e sua ordem de prioridade é registrada nas atas do escritório de portfólio (Confluence).
 
 ---
 
@@ -90,6 +92,8 @@ Os projetos do portfólio são acompanhados de forma consolidada quanto ao cumpr
 | Fundação Tecnológica GASMIG | Entrega por marco (OS-001 e OS-002) | Concluído; OS-002 encerrada em 09/06/2026 |
 | WorkerAndamentos (AASP) | Entrega por fase/onda | Em execução; acompanhamento por horas e fases; encerramento previsto 30/06/2026 |
 | MilhasFácil (Hub de Milhas) | Entrega incremental por sprint (12 sprints) | Em execução; Sprint 9 de 12; CR-MF-001 absorvido sem atraso macro; encerramento previsto 26/07/2026 |
+| SensrJiraSync (AASP) | Entrega da automação de migração Sensr→Jira | Em execução; sincronização incremental em operação |
+| Gerenciador AASP — Grupos de Usuários | Entrega por sprint (4 sprints) | Em execução; Sprint 2 em andamento (09–20/06/2026); encerramento previsto 11/07/2026 |
 
 Desvios identificados no acompanhamento são tratados por realocação de recursos, repriorização ou ações específicas no projeto, conforme PRO-OSW-002 §5.
 
@@ -115,5 +119,6 @@ A situação do portfólio é insumo da **análise crítica trimestral dos proce
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 13/06/2026 | Time de Melhoria Contínua | Versão inicial — consolidação (snapshot) do portfólio do ciclo MPS-SW Nível C, materializando a evidência de OSW 8, 9 e 10 mantida no Jira/Confluence |
+| 1.2 | 16/06/2026 | Time de Melhoria Contínua | Portfólio consolidado: adicionados MilhasFácil (Hub de Milhas), SensrJiraSync e Gerenciador AASP (Grupos de Usuários) ao portfólio ativo; §4 e §7 atualizados para refletir 4 projetos simultâneos em execução; snapshot atualizado para 16/06/2026 e período de referência estendido para Jul/2026 |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Inclusão do projeto MilhasFácil (Hub de Milhas) no portfólio (§3 e §7); atualização do snapshot para 15/06/2026 e do período de referência para Jul/2026 |
+| 1.0 | 13/06/2026 | Time de Melhoria Contínua | Versão inicial — consolidação (snapshot) do portfólio do ciclo MPS-SW Nível C, materializando a evidência de OSW 8, 9 e 10 mantida no Jira/Confluence |
