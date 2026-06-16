@@ -1,0 +1,222 @@
+############ FONTE AP — Registro de Projeto (REG-AASP-AP-001) ############
+Traceback (most recent call last):
+  File "C:\Users\TIMEWA~1\AppData\Local\Temp\dx.py", line 13, in <module>
+    d = docx.Document(sys.argv[1])
+  File "C:\Users\Timeware12\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\docx\api.py", line 27, in Document
+    document_part = cast("DocumentPart", Package.open(docx).main_document_part)
+                                         ~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Timeware12\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\docx\opc\package.py", line 126, in open
+    pkg_reader = PackageReader.from_file(pkg_file)
+  File "C:\Users\Timeware12\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\docx\opc\pkgreader.py", line 22, in from_file
+    phys_reader = PhysPkgReader(pkg_file)
+  File "C:\Users\Timeware12\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\docx\opc\phys_pkg.py", line 21, in __new__
+    raise PackageNotFoundError("Package not found at '%s'" % pkg_file)
+docx.opc.exceptions.PackageNotFoundError: Package not found at 'AASP_AndamentosProcessuais_Registro_de_Projeto_v1.0.docx'
+
+############ FONTE AP — INTAKE preenchido ############
+TIMEWARE BRASIL SOFTWARES E SERVIÇOS LTDA
+Formulário de Levantamento de Projeto — MPS-SW Nível C
+AASP_AndamentosProcessuais — Refatoração da Solução de Captura de Andamentos
+Documento | INTAKE-PROJETO (interno) — preenchido
+Versão | 1.0
+Data | 14/06/2026
+Preenchido por | Mateus Veloso — Desenvolvimento
+Uso | Levantamento que alimenta TAP, PLA, REQ, RASTR, PCP, ITP, VV, GCO, GDE, GQA, MED, ATAs, CR, RAC, TAE, LI e a Planilha de Gestão
+---[table end]---
+BLOCO 1 — Identificação do projeto
+Nome do projeto | AASP_AndamentosProcessuais — Refatoração da Solução de Processamento de Captura de Andamentos
+Código do projeto | AASP_AndamentosProcessuais (Plano de Projeto REG-AASP-AP-001)
+Cliente / organização | AASP — Associação dos Advogados de São Paulo (cliente) · Timeware Brasil (executora)
+Produto ou sistema | Solução legada .NET de captura de andamentos processuais (API AndamentosProcessuais + CapturaServer), ~20 anos de operação — ciclo de refatoração
+Objetivo principal | Refatorar a solução para suportar o novo modelo de captura (DataJud/CNJ + WorkerAndamentos): fila unificada, webhook multi-fonte, histórico por instância, desligamento nas APIs parceiras e controle de erros/segredo por instância — sem interromper a operação existente.
+Data de início | 15/12/2025 (início do ciclo)
+Data de encerramento | 30/06/2026 (previsão) — desenvolvimento concluído; implantação (Fase 5) em andamento
+Tem pacotes / fases distintas? | Sim — gestão por fases: Fases 1–2 (Dez/2025–Mar/2026); Fases 3–4 (Abr–Jun/2026); Fase 5 — Implantação (Jun/2026)
+Código do pacote 1 | Fases 1–2 — Webhook / CapturaServer / RabbitMQ
+Código do pacote 2 | Fases 3–4 — Refatoração CNJ / Tratamento de Erros (+ Fase 5 — Implantação)
+---[table end]---
+BLOCO 2 — Equipe
+Equipe Timeware
+Papel | Nome
+Gerente de Projeto | Cezar Hiraki Velazquez
+Tech Lead / Arquiteto | Cezar Hiraki Velazquez (acumula GP, Tech Lead e Arquiteto)
+Desenvolvedor Sênior (Principal) | Raony Chagas
+Desenvolvedor (Suporte) | Mateus Veloso (incorporado em Abr/2026)
+QA / Testes | Caroline Sousa
+DevOps / Infraestrutura | Lucas Batista (Fase 2 e Fase 5)
+Designer UX/UI | Não aplicável (projeto de backend/refatoração)
+Auditor GQA | Jonathan Barbosa (independente da equipe de projeto)
+---[table end]---
+Stakeholders do cliente
+Papel | Nome | Responsabilidade
+Sponsor / responsável pelo aceite | Marcos Correa Fernandez Turnes | Autorização do projeto e aceite formal das entregas
+PO / contato técnico | Marcos Correa Fernandez Turnes (representante AASP — acumula Sponsor e Product Owner / Decisor) | Validação dos requisitos, homologação e aceite das fases
+Revisor de código | Cezar Hiraki Velazquez | Revisão de Pull Request (≥1 membro além do autor) no Azure DevOps
+---[table end]---
+BLOCO 3 — Escopo e requisitos
+O que está incluído | Refatoração do CapturaServer (publicação na fila WorkerAndamentos + SegmentoTribunal); webhook de indexação multi-fonte; histórico de movimentações por instância; verificação e desligamento nas APIs parceiras; campo CodigoFonteAPI e endpoint de atualização; tratamento de erros por instância (Observacao); segredo de justiça por instância (Segredo); desmembramento do RunUpdater para priorização.
+O que está fora do escopo | O restante da solução AndamentosProcessuais permanece inalterado (alterações cirúrgicas); sem migração de dados no Elasticsearch; sem alteração estrutural do IModelElastic; sem reescrita do sistema legado.
+Produto de entrada | Solução legada existente; tabelas de controle em SQL Server; APIs parceiras (Solucionário, Botmax); API DataJud/CNJ (consumida via WorkerAndamentos); ambiente de homologação compartilhado com AASP_CNJ.
+---[table end]---
+Requisitos funcionais (RF)
+Código | Descrição
+RF01 | CapturaServer publica na fila WorkerAndamentos (RabbitMQ), independente do tribunal de origem.
+RF02 | Webhook de indexação aceita dados de qualquer fonte, sem campos fixos por tribunal.
+RF03 | Histórico de movimentações por instância (ProcessoCapturaMovimentacaoStatus) com inativação do registro anterior e criação de novo.
+RF04 | Atualiza DataUltimaAtualizacao no registro ativo mesmo sem novas movimentações.
+RF05 | Após captura via CNJ, verifica APIs parceiras e aciona exclusão do NUP se cadastrado.
+RF06 | Registra o resultado do desligamento nas tabelas de cadastro de cada parceira.
+RF07 | Campo Observacao em ProcessoCapturaLogin registra o erro por instância.
+RF08 | Erro parcial: ProcessoCaptura recebe status 3; apenas a instância afetada é marcada.
+RF09 | NUP inválido pela parceira: CodigoProcessoCapturaStatus=8 e CodigoProcessoCapturaResposta=10 em todas as instâncias.
+RF10 | Atualiza CodigoFonteAPI em ProcessoCaptura após cada captura.
+RF11 | Atualiza o campo Segredo em ProcessoCapturaLogin por instância (via CNJ ou EPROC/ESAJ).
+RF12 | RunUpdater desmembrado para priorizações de retorno por tipo de resultado.
+---[table end]---
+Requisitos não funcionais (RNF)
+Código | Categoria | Descrição
+RNF01 | Retrocompatibilidade | Refatorações não interrompem o fluxo de captura existente durante a transição.
+RNF02 | Rastreabilidade | Todo estado de processamento registrado com data, status e observação de erro.
+RNF03 | Manutenibilidade | Webhook parametrizável para novas fontes sem alterar a camada de serialização.
+RNF04 | Confiabilidade | Retry no envio do webhook garante não-perda de dados em falhas transitórias.
+RNF05 | Integridade | Histórico de movimentações preservado integralmente, sem sobrescrita.
+---[table end]---
+BLOCO 4 — Adaptação do processo-padrão
+Item | Decisão | Justificativa
+Design UX/UI | Não aplicável | Projeto de backend/refatoração — sem interface de usuário.
+Nível de documentação | Reforçado | Projeto sob avaliação de certificação MPS-SW Nível C.
+Combinação de papéis | Tech Lead acumula Arquiteto e Gerência | Equipe enxuta; Cezar Hiraki Velazquez concentra GP, Tech Lead e Arquiteto.
+Processo de revisão de código | PR no Azure DevOps, revisada por ≥1 membro além do autor | Garantia de qualidade do código e rastreabilidade (GitFlow).
+Processo de entrega | GMUD — pacotes versionados + DDL no Azure DevOps; deploy em homologação e produção | Solução legada em produção; mudanças controladas por GMUD.
+Outras adaptações | Homologação por amostragem em ambiente compartilhado com AASP_CNJ | Não há Elasticsearch dedicado para testes; ciclo coordenado entre os dois projetos.
+---[table end]---
+BLOCO 5 — Estimativas e cronograma
+Tamanho estimado | ~348 h (estimativa em horas — o projeto não utilizou story points)
+Velocity de referência | Não aplicável (gestão por horas/fases no ClickUp)
+Base histórica usada | Experiência do time na solução legada + projeto irmão AASP_CNJ (mesmo time e ciclo)
+Esforço / prazo estimado | ~6,5 meses (15/12/2025 – 30/06/2026), 5 fases · ~348 h estimadas / ~362 h realizadas (parcial)
+Duração de cada sprint | Gestão por fases (não há sprints de duração fixa)
+---[table end]---
+Marcos
+Marco | Data planejada | Data realizada
+Kickoff / início do ciclo | Dez/2025 | 15/12/2025
+Fim das Fases 1–2 (Webhook/CapturaServer/RabbitMQ) | Mar/2026 | Mar/2026
+Aprovação do Plano (baseline REG v1.0) | — | 08/06/2026
+Fim da Fase 3 (Refatoração CNJ) | Mai/2026 | Mai/2026
+Fim da Fase 4 (Tratamento de erros e validação) | Jun/2026 | Jun/2026
+Piloto / Homologação (por amostragem) | Jan–Mai/2026 | Jan–Mai/2026
+Aceite final / Encerramento | 30/06/2026 | Em andamento (Fase 5 — implantação)
+---[table end]---
+BLOCO 6 — Ambiente e configuração
+Repositório de código | Azure DevOps — andamentosProcessuais / AndamentosProcessuais (_git)
+Branch strategy | GitFlow: main (default) + develop + feature/<ÉPICO>-NNN; PR obrigatório para merge em develop/main
+Ambiente de desenvolvimento | Local (.NET) + SQL Server
+Ambiente de homologação / staging | Compartilhado com AASP_CNJ (por amostragem; sem Elasticsearch dedicado)
+Ambiente de produção | AASP — SQL Server + Elasticsearch + RabbitMQ
+Tecnologias principais | .NET / C#, SQL Server, RabbitMQ, Elasticsearch
+Ferramentas de gestão | ClickUp (cards, horas estimadas/realizadas) · Azure DevOps (código, GMUD)
+Baseline de configuração | Tags: v0.9.0, v1.0.0, v2.0.0 — baseline entregue v2.0.0 (Fases 3–4)
+---[table end]---
+BLOCO 7 — Decisões arquiteturais e de design
+Padrão arquitetural | Solução legada em camadas (API .NET + CapturaServer + workers); evolução cirúrgica e delimitada, sem reescrita
+Integrações externas | RabbitMQ (fila WorkerAndamentos) · Elasticsearch (indexação) · SQL Server (persistência) · Solucionário e Botmax (APIs parceiras) · API DataJud/CNJ (fonte, via WorkerAndamentos)
+Estratégia de build e entrega | Pacotes GMUD + scripts DDL versionados no Azure DevOps; deploy homologação → produção
+---[table end]---
+Decisões formais (GDE)
+Contexto / Problema | Alternativas | Decisão tomada | Justificativa
+D01 (Dez/2025) — primeiro entregável da solução | Alterar fluxo legado vs. webhook dedicado | Criar webhook de indexação específico para EPROC/ESAJ | Viabilizar captura via engine nativo TJSP sem regressão no fluxo legado
+D02 (Fev/2026) — ponto de entrada do pipeline | Manter fila por tribunal vs. fila única | Migrar CapturaServer da fila EprocTjsp para a fila WorkerAndamentos | Unificar o pipeline e preparar para múltiplas fontes
+D03 (Abr/2026) — webhook com campos fixos do TJSP | Novo webhook vs. parametrizar o existente | Parametrizar o webhook para suporte multi-fonte | Evitar duplicação de lógica; reduzir manutenção futura
+D04 (Abr/2026) — histórico de movimentações | Update no registro vs. inativação | Histórico por inativação de registro (não por update) | Preservar histórico por instância sem perda de dados
+D05 (Abr/2026) — onde tratar parceiras | No worker vs. na API | Verificação/desligamento das parceiras na camada da API | Worker permanece agnóstico; controladores já existem na API
+D06 (Mai/2026) — parceiras heterogêneas | Controlador genérico vs. por parceira | Controladores específicos por parceira (Solucionário, Botmax) | Estruturas/endpoints diferentes; interface comum facilita novas parceiras
+D07 (Mai/2026) — escopo do segredo | Segredo por processo vs. por instância | Campo Segredo por instância em ProcessoCapturaLogin | Um processo pode ser segredo em uma instância e não em outra
+---[table end]---
+BLOCO 8 — Riscos
+Escala Prob./Impacto: 1=Baixo · 2=Médio · 3=Alto · Exposição = P × I.
+Risco | P | I | Exp. | Resposta | Status final
+R-01 Refatoração do webhook causar regressão no fluxo EPROC em produção | 2 | 3 | 6 | Mitigar (testes de regressão por amostragem; retrocompatibilidade) | Controlado — não ocorreu
+R-02 APIs parceiras com comportamento inconsistente nos endpoints de exclusão | 3 | 3 | 9 | Mitigar (tratamento específico por parceira + registro do retorno) | Ocorreu — tratado
+R-03 Perda de histórico de movimentações durante a migração do modelo | 1 | 3 | 3 | Mitigar (modelo só adiciona registros; nada é sobrescrito) | Controlado — não ocorreu
+R-04 Impacto no desempenho pela verificação nas APIs parceiras | 2 | 2 | 4 | Mitigar (verificação só após captura CNJ; EPROC não afetado) | Controlado — não ocorreu
+R-05 Falhas transitórias no envio do webhook causando perda de dados | 2 | 3 | 6 | Mitigar (retry no worker antes de registrar erro) | Ocorreu — tratado
+---[table end]---
+BLOCO 9 — Verificação e Validação (V&V / Testes)
+Ciclos de execução
+Ciclo / Fase | Módulo | O que foi testado | Defeitos | Resolução | Data
+Fases 1–2 | Webhook EPROC / RabbitMQ | Recebimento, serialização, indexação ES; publicação na fila; homologação por amostragem | 0 | — | Jan–Mar/2026
+Fase 3 | Webhook multi-fonte / Movimentações / Parceiras | Dados CNJ; inativação/criação de registro; DataUltimaAtualizacao; desligamento nas parceiras | BUG-01 | Parametrização dos campos do modelo | Abr–Mai/2026
+Fase 4 | Erros / Segredo / E2E / Regressão | Erro parcial; NUP inválido; segredo por instância; fluxo E2E; regressão EPROC | BUG-02..05 | Correção de merge, Observacao, ordem do desligamento e CodigoFonteAPI | Mai–Jun/2026
+---[table end]---
+Cenários de teste (CT-01 a CT-12 — 100% aprovados)
+CT | Fase | Tipo | Cenário (Dado → Quando → Então) | Situação
+CT-01 | F1 | Happy | Dados EPROC enviados ao webhook → webhook recebe → serializa e indexa no Elasticsearch | Aprovado
+CT-02 | F2 | Happy | Processo pendente → CapturaServer publica na fila WorkerAndamentos com SegmentoTribunal | Aprovado
+CT-03 | F2 | Integração | Processos EPROC pendentes → fluxo completo executado → captura e indexação por amostragem | Aprovado
+CT-04 | F3 | Happy | Dados da API CNJ enviados ao webhook → webhook processa → indexação multi-fonte OK | Aprovado
+CT-05 | F3 | Happy | Instância com registro ativo → nova captura → registro anterior inativado e novo criado | Aprovado
+CT-06 | F3 | Happy | Instância sem novas movimentações → captura → DataUltimaAtualizacao atualizado | Aprovado
+CT-07 | F3 | Integração | Processo capturado via CNJ e cadastrado em parceira → verificação → desligamento na parceira | Aprovado
+CT-08 | F4 | E2E | Processo multi-instância pendente via CNJ → fluxo completo → captura com sucesso em todas | Aprovado
+CT-09 | F4 | Sad | Falha em uma instância e sucesso nas demais → ProcessoCaptura status 3 e só a instância marcada | Aprovado
+CT-10 | F4 | Sad | Parceira retorna NUP inválido → Status=8 e Resposta=10 em todas as instâncias | Aprovado
+CT-11 | F4 | Happy | Processo com uma instância em segredo e outra não → campo Segredo atualizado por instância | Aprovado
+CT-12 | F4 | Regressão | Fluxo EPROC/ESAJ em produção → aplicação das refatorações → fluxo EPROC não impactado | Aprovado
+---[table end]---
+BLOCO 10 — Reuniões e acompanhamento
+Reuniões / atividades de alinhamento
+Tipo / Atividade | Data | Pautas / Decisões principais
+Alinhamento do fluxo da API CNJ | 07/04/2026 | Apresentação do novo fluxo; responsabilidades de cada componente no novo modelo
+Atualização de atividades do projeto CNJ | 28/04/2026 | Progresso e decisões sobre webhook e APIs parceiras
+Revisão do fluxo e definição de atividades | 08/05/2026 | Revisão completa com time ampliado; redistribuição entre os dois projetos
+Continuidade durante férias do GP | 06–08/05/2026 | Planejamento da continuidade e autonomia do time
+Homologação EPROC/ESAJ (por amostragem) | Jan–Mai/2026 | Ciclos contínuos de validação dos critérios de aceite
+Validação com APIs parceiras | 05/05/2026 | Validação integrada do fluxo de verificação e desligamento
+---[table end]---
+Change Requests
+Código | Data | Descrição | Impacto | Aprovado por
+CR-AASP-AP-001 | Jan/2026 | Escopo adicional de homologação EPROC/ESAJ e devolutiva para associados | +~42 h (absorvido na Fase 2) | Marcos Correa Fernandez Turnes
+CR-AASP-AP-002 | Mai/2026 | Escopo adicional Fase 4: campos Observacao, Segredo, CodigoFonteAPI e tratamentos de erro | +~8 h · atraso ~30 dias | Marcos Correa Fernandez Turnes
+---[table end]---
+Acompanhamento por fase
+Fase | H Estimadas | H Realizadas | Desvio | Defeitos
+Fase 1 — Webhook e CapturaServer (EPROC) | 44 | 48 | +9% | 0
+Fase 2 — Estabilização e integração RabbitMQ | 66 | 72 | +9% | 0
+Fase 3 — Refatoração para suporte ao CNJ | 130 | 144 | +11% | 1
+Fase 4 — Tratamento de erros e validação | 90 | 98 | +9% | 4
+Fase 5 — Implantação | 18 | Em apuração | — | 0
+TOTAL | ~348 | ~362 (parcial) | +9,7% | 5
+---[table end]---
+BLOCO 11 — GQA (Garantia da Qualidade)
+Marco auditado | Data | Auditor | Itens | Desvios | % Conf.
+Fases 1–2 — aderência ao processo | 08/06/2026 | Jonathan Barbosa | 10 | 0 | 100%
+Fases 3–4 — aderência ao processo | 08/06/2026 | Jonathan Barbosa | 11 | 0 | 100%
+Consolidado do ciclo | 08/06/2026 | Jonathan Barbosa | 21 | 0 | 100%
+---[table end]---
+BLOCO 12 — Medição (KPIs)
+Código | Indicador | Resultado medido
+M1 | % Entregas no prazo (aderência ao cronograma) | ~91% (meta ≥ 85%) ✓
+M2 | Desvio de esforço (%) | +9,7% (meta ≤ 20%) ✓
+M3 | Story points entregues vs. planejados | N/A (gestão por horas) — escopo 100% (12 RF + 5 RNF)
+M4 | Velocity média realizada | N/A (gestão por fases)
+M5 | Taxa de defeitos em homologação | 5 defeitos identificados e 100% contidos antes da implantação
+M6 | Defeitos escapados para produção | 0 ✓
+M7 | % Requisitos com rastreabilidade completa | 100% (RASTR-AASP-AP-001)
+M8 | % Conformidade GQA | 100% (21/21 itens conformes)
+M9 | NPS do cliente / satisfação | Não medido formalmente — aceite por fase com o representante AASP
+---[table end]---
+BLOCO 13 — Encerramento
+Data do aceite formal | Aceite por fase (Fases 1–2: Mar/2026 · Fases 3–4: Jun/2026) · encerramento total previsto 30/06/2026
+Forma do aceite | Homologação e validação com o representante AASP + aceite das entregas por fase
+Quem concedeu o aceite | Marcos Correa Fernandez Turnes (representante / patrocinador AASP)
+Entregas finais | Solução refatorada (API AndamentosProcessuais + CapturaServer), scripts DDL versionados, pacotes GMUD e documentação MPS (REG-AASP-AP-001, planilha de gestão, evidências)
+Encerrado conforme planejado? | Parcialmente — desenvolvimento concluído (com +30 dias de escopo adicional acordado na Fase 4); implantação (Fase 5) em andamento
+---[table end]---
+Lições aprendidas
+Categoria | O que funcionou bem | O que melhorar
+Processo / gestão | Gestão integrada com o AASP_CNJ (time, ambiente e ciclo compartilhados) | Previsibilidade do escopo adicional (CRs na Fase 2 e Fase 4)
+Técnico | Parametrização do webhook evitou duplicação; controladores por parceira; histórico por inativação | Cobertura de testes automatizados / pipeline de CI
+Comunicação com o cliente | Devolutiva aos associados e alinhamentos registrados em atas | Antecipar validações de homologação
+Estimativas | Esforço realizado próximo do estimado (+9,7%) | Reservar buffer para escopo emergente das APIs parceiras
+---[table end]---
+Formulário preenchido a partir do Registro de Projeto REG-AASP-AP-001, da Planilha de Gestão GEST-AASP-AndamentosProcessuais-001 e das evidências do projeto, em 14/06/2026.

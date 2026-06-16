@@ -1,0 +1,190 @@
+===== ABA: Visão Geral =====
+GESTÃO DO PROJETO — AASP ANDAMENTOS PROCESSUAIS
+Planilha de Registros de Gestão · Timeware Brasil · Referência: PRO-GPR-001
+IDENTIFICAÇÃO DO PROJETO
+Cliente | AASP — Associação dos Advogados de São Paulo
+Projeto | AASP_AndamentosProcessuais — Refatoração da Solução de Processamento de Captura de Andamentos
+Gerente de Projeto | Cezar Hiraki Velazquez
+Processo MPS-SW | GPR · MPS-SW Nível C — MR-MPS-SW:2024
+Plano de Projeto | REG-AASP-AP-001
+Referência GQA | GQA-AASP-AP-001 (Auditor: Jonathan Barbosa — independente da equipe)
+Início do Ciclo | 15/12/2025
+Previsão de Encerramento | 30/06/2026
+Status | Em execução — desenvolvimento concluído, implantação (Fase 5) em andamento
+RESUMO POR PACOTE
+Pacote | Escopo | Período | Status
+Fases 1–2 — Webhook / CapturaServer / RabbitMQ | Webhook EPROC, integração RabbitMQ, SegmentoTribunal, homologação | Dez/2025 – Mar/2026 | ✅ Concluída
+Fases 3–4 — Refatoração CNJ / Tratamento de Erros | Webhook multi-fonte, movimentações, parceiras, CodigoFonteAPI, erros | Abr/2026 – Jun/2026 | ✅ Concluída
+INDICADORES CONSOLIDADOS
+Indicador | Fases 1–2 | Fases 3–4 | Consolidado | Meta
+Esforço estimado (h) | ~110 h | ~220 h | ~348 h | —
+Esforço realizado (h) | ~120 h | ~242 h | ~362 h (parcial) | ≤ +20%
+Desvio de esforço | +9% | +10% | +9,7% médio | ≤ 20%
+Aderência ao cronograma | 100% | ~85% | ~91% médio | ≥ 85%
+Defeitos escapados p/ prod. | 0 | 0 | 0 | 0
+Retrabalho | 0 | 0 | 0 | 0
+NCs de GQA abertas | 0 | 0 | 0 | 0
+Bugs registrados | 0 | 5 | 5 total | —
+===== ABA: Cronograma =====
+CRONOGRAMA DO PROJETO — FASES E ATIVIDADES
+Referência: REG-AASP-AP-001 §3.1 / §3.2
+FASES 1–2 — Webhook, CapturaServer e Integração RabbitMQ (Dez/2025–Mar/2026)
+Marco / Atividade | Data Prevista | Data Realizada | Duração Real | Entrega | Status | Observação
+Criar webhook de indexação para EPROC/ESAJ TJSP | Dez/2025 | 14/01–04/02/2026 | 3 semanas | Webhook EPROC operacional | ✅ Realizado | Integração e serialização para IModelElastic validadas
+Implementar fila EprocTjsp no CapturaServer | Jan/2026 | 14/02–09/02/2026 | 1 semana | Fila EprocTjsp alimentada | ✅ Realizado | Atividade realizada antes da data prevista
+Adicionar SegmentoTribunal na requisição de captura | Fev/2026 | 19/02/2026 | 1 dia | Campo incluído na requisição CapturaServer | ✅ Realizado | Alteração cirúrgica no CapturaServer
+Integração endpoint publicação RabbitMQ | Fev/2026 | 26–27/02/2026 | 2 dias | Endpoint publicação fila WorkerAndamentos | ✅ Realizado | Publicação com tratamento de exceção e logging
+Homologação solução EPROC/ESAJ (por amostragem) | Jan/2026 | 16/01–29/05/2026 | ~4 meses | Fluxo EPROC validado | ✅ Realizado | Ambiente compartilhado com AASP_CNJ; sem Elasticsearch dedicado
+Devolutiva para associados sobre resultado em produção | Jan/2026 | 19/01–28/02/2026 | ~6 semanas | Comunicação com associados | ✅ Realizado | Resultado em produção comunicado ao cliente
+Devolutiva e encerramento Fases 1–2 | Mar/2026 | Mar/2026 | — | Ciclo Fases 1–2 encerrado | ✅ Realizado | Alinhamento com cliente; base para início Fases 3–4
+FASES 3–4 — Refatoração CNJ, Tratamento de Erros e Validação (Abr/2026–Jun/2026)
+Marco / Atividade | Data Prevista | Data Realizada | Duração Real | Entrega | Status | Observação
+Webhook multi-fonte — suporte a qualquer fonte de captura | Abr/2026 | 08/04/2026 | 1 dia | Webhook agnóstico à fonte | ✅ Realizado | Parametrização remove dependências fixas do TJSP
+Alinhamento campos CNJ com modelo Elasticsearch | Abr/2026 | 15–16/04/2026 | 2 dias | Mapeamento IModelElastic validado | ✅ Realizado | Reunião de alinhamento 07/04/2026
+Implementação lógica de movimentações por instância | Abr/2026 | 13–15/04/2026 | 3 dias | Tabela ProcessoCapturaMovimentacaoStatus | ✅ Realizado | Campos Ativo e DataUltimaAtualizacao
+Exclusão NUP nas APIs parceiras e log de desligamento | Abr/2026 | 09/04–07/05/2026 | ~4 semanas | Controladores Solucionário e Botmax | ✅ Realizado | Controlador específico por parceira
+Endpoint atualização CodigoFonteAPI | Abr/2026 | 27–28/04/2026 | 2 dias | Campo CodigoFonteAPI em ProcessoCaptura | ✅ Realizado | Roteamento por fonte de captura por processo
+Desmembramento RunUpdater para priorização de retorno | Mai/2026 | 12–13/05/2026 | 2 dias | RunUpdater desmembrado | ✅ Realizado | Tratamento diferenciado por tipo de resultado
+Alteração tabela ProcessoCapturaLogin (Observacao e Segredo) | Mai/2026 | 18–21/05/2026 | 4 dias | Campos adicionados em homol. e produção | ✅ Realizado | Controle granular por instância processual
+Implementação retry envio webhook | Mai/2026 | 27–29/05/2026 | 3 dias | Retry no WorkerAndamentos | ✅ Realizado | Risco R-05 tratado; garante não-perda de dados
+Atividades de finalização e implantação (Fase 5) | Jun/2026 | 03/06/2026–Em andamento | — | Pacotes GMUD / Deploy produção | 🔄 Em andamento | Fase 5 — montagem de pacotes e deploy
+===== ABA: Backlog =====
+BACKLOG DO PROJETO — REQUISITOS
+Referência: REG-AASP-AP-001 §2.3 e §2.4
+REQUISITOS FUNCIONAIS — AASP_AndamentosProcessuais
+ID | Descrição | Tipo | Fase | Prioridade | Status | Aceite
+RF01 | CapturaServer publica mensagens na fila WorkerAndamentos (RabbitMQ), independente do tribunal de origem | Funcional | Fase 2 | Alta | ✅ Entregue | Homologação Mai/2026
+RF02 | Webhook aceita dados de qualquer fonte de captura, sem campos fixos por tribunal específico | Funcional | Fase 3 | Alta | ✅ Entregue | Validação Fase 3
+RF03 | Histórico de movimentações por instância em ProcessoCapturaMovimentacaoStatus com inativação do registro anterior | Funcional | Fase 3 | Alta | ✅ Entregue | Validação Fase 3
+RF04 | DataUltimaAtualizacao atualizado no registro ativo mesmo sem novas movimentações | Funcional | Fase 3 | Média | ✅ Entregue | Validação Fase 3
+RF05 | Após captura via CNJ, verifica APIs parceiras e aciona exclusão do NUP se cadastrado | Funcional | Fase 3 | Alta | ✅ Entregue | Validação 04–05/05/2026
+RF06 | Resultado do desligamento nas parceiras registrado nas tabelas de cadastro por parceira | Funcional | Fase 3 | Alta | ✅ Entregue | Validação Fase 3
+RF07 | Campo Observacao em ProcessoCapturaLogin registra detalhe do erro por instância | Funcional | Fase 4 | Alta | ✅ Entregue | Validação Fase 4
+RF08 | Erro parcial: ProcessoCaptura recebe status 3; apenas instância afetada marcada individualmente | Funcional | Fase 4 | Alta | ✅ Entregue | Validação critério CA05
+RF09 | NUP inválido pela parceira: CodigoProcessoCapturaStatus=8 e CodigoProcessoCapturaResposta=10 em todas as instâncias | Funcional | Fase 4 | Alta | ✅ Entregue | Validação critério CA05
+RF10 | Campo CodigoFonteAPI atualizado em ProcessoCaptura após cada captura | Funcional | Fase 3 | Alta | ✅ Entregue | Validação Fase 3
+RF11 | Campo Segredo em ProcessoCapturaLogin atualizado por instância via CNJ ou EPROC/ESAJ | Funcional | Fase 4 | Alta | ✅ Entregue | Validação critério CA08
+RF12 | RunUpdater desmembrado para executar priorizações de retorno por tipo de resultado | Funcional | Fase 4 | Média | ✅ Entregue | Validação Fase 4
+REQUISITOS NÃO FUNCIONAIS — AASP_AndamentosProcessuais
+ID | Descrição | Tipo | Fase | Prioridade | Status | Aceite
+RNF01 | Refatorações não interrompem fluxo existente durante período de transição (retrocompatibilidade) | Não-funcional | Transversal | Alta | ✅ Verificado | Regressão Fase 4
+RNF02 | Todo estado de processamento registrado com data, status e observação de erro (rastreabilidade) | Não-funcional | Transversal | Alta | ✅ Verificado | Validação Fase 4
+RNF03 | Webhook parametrizável para novas fontes sem alteração na camada de serialização (manutenibilidade) | Não-funcional | Fase 3 | Alta | ✅ Verificado | Validação Fase 3
+RNF04 | Retry no envio do webhook garante não-perda de dados em falhas transitórias (confiabilidade) | Não-funcional | Fase 4 | Alta | ✅ Verificado | Implementado Mai/2026
+RNF05 | Histórico de movimentações preservado integralmente sem sobrescrita de registros anteriores (integridade) | Não-funcional | Fase 3 | Alta | ✅ Verificado | Validação Fase 3
+===== ABA: Equipe =====
+EQUIPE DO PROJETO
+Referência: REG-AASP-AP-001 §1.2 · §3.3
+EQUIPE TIMEWARE
+Nome / Papel | Responsabilidade | Fases 1–2 | Fases 3–4 | Alocação | Observação
+Cezar Hiraki · Tech Lead / Arquiteto de Software | Planejamento técnico, arquitetura da solução e decisões de design | ✅ Sim | ✅ Sim | 100% | Ponto focal técnico Timeware — todas as fases
+Raony Chagas · Desenvolvedor Sênior (Principal) | Implementação das refatorações: webhook, CapturaServer, lógica de movimentações | ✅ Sim | ✅ Sim | 100% | Responsável técnico principal em todas as fases
+Mateus Veloso · Desenvolvedor (Suporte) | Suporte ao desenvolvimento de endpoints, fluxo de parceiras e correções | ❌ Não | ✅ Sim | 100% (Fases 3–4) | Incorporado a partir de Abr/2026
+Caroline Sousa · Analista de QA | Execução de testes de fluxo e validação dos critérios de aceite | ❌ Não | ✅ Sim (Fase 4) | Parcial (Fase 4) | Mai/2026 – Jun/2026
+Lucas Batista · DevOps / Infraestrutura | Provisionamento de ambientes, GMUD e deploy em produção | ✅ Sim (Fase 2) | ✅ Sim (Fase 5) | Pontual | Jan/2026 e Jun/2026
+PARTES INTERESSADAS — CLIENTE (AASP — Associação dos Advogados de São Paulo)
+Nome | Papel / Função | Envolvimento | Fases 1–2 | Fases 3–4 | Ponto de contato principal
+Marcos Correa Fernandez Turnes · Representante do Cliente (AASP) | Product Owner / Decisor | Validação dos requisitos, homologação e aceite das entregas | ✅ Sim | ✅ Sim | Aceite formal das fases
+===== ABA: Acompanhamento =====
+ACOMPANHAMENTO DE FASES
+Referência: REG-AASP-AP-001 §3.4 · MED-AASP-AP-001
+EVOLUÇÃO POR FASE
+Fase | Período | H Estimadas | H Realizadas | Desvio | Responsável Principal | Defeitos ID. | Defeitos Prod. | Aderência Crono. | Observações
+Fase 1 — Webhook e CapturaServer (EPROC) | Dez/2025–Fev/2026 | 44 | 48 | +9% | Dev Sênior | 0 | 0 | 100% | Webhook EPROC e fila EprocTjsp entregues
+Fase 2 — Estabilização e integração RabbitMQ | Fev/2026–Mar/2026 | 66 | 72 | +9% | Dev Sênior / GP | 0 | 0 | 100% | Desvio por homologação extensa e devolutiva; escopo acordado com cliente
+Fase 3 — Refatoração para suporte ao CNJ | Abr/2026–Mai/2026 | 130 | 144 | +11% | Dev Sênior / Dev Suporte | 1 | 0 | 100% | Webhook multi-fonte, movimentações, APIs parceiras, CodigoFonteAPI; BUG-01 (parametrização dos campos) identificado e corrigido
+Fase 4 — Tratamento de erros e validação | Mai/2026–Jun/2026 | 90 | 98 | +9% | Dev Sênior / Analista de Testes | 4 | 0 | ~85% | 4 bugs identificados e corrigidos antes da implantação; atraso de ~30d
+Fase 5 — Implantação | Jun/2026 | 18 | Em apuração | — | GP / DevOps | 0 | 0 | Em andamento | Montagem GMUD e deploy em produção
+CONSOLIDADO POR FASE
+Fase | Período | H Estimadas | H Realizadas | Desvio Total | Responsável | Def. ID. | Def. Prod. | Adh. Crono. | Resultado
+Fases 1–2 | Dez/2025–Mar/2026 | ~110 h | ~120 h | +9% | Dev Sênior / GP | 0 | 0 | 100% | ✅ Entregue — desvio por escopo adicional de homologação acordado com cliente
+Fases 3–4 | Abr/2026–Jun/2026 | ~220 h | ~242 h | +10% | Dev Sênior / Dev Suporte / Analista | 5 | 0 | ~85% | ✅ Deadline mantido; atraso de ~30d por escopo adicional acordado
+TOTAL PROJETO | Dez/2025–Jun/2026 | ~348 h | ~362 h (parcial) | +9,7% | Time completo | 5 | 0 | ~91% | ✅ 0 defeitos em produção; desenvolvimento concluído; implantação em andamento
+CONTROLE DE MUDANÇAS DE ESCOPO
+Código | Descrição | Fase | Data Solicitação | Impacto h | Impacto Prazo | Aprovado por | Status
+CR-AASP-AP-001 | Escopo adicional de homologação EPROC/ESAJ e devolutiva para associados | Fase 2 | Jan/2026 | ~42 h adicionais | Absorvido na Fase 2 | Marcos Correa Fernandez Turnes | ✅ Aprovado
+CR-AASP-AP-002 | Escopo adicional Fase 4: campos Observacao, Segredo, CodigoFonteAPI em múltiplas rotinas e tratamentos de erro | Fase 4 | Mai/2026 | ~8 h adicionais | Atraso de ~30 dias vs. prazo original | Marcos Correa Fernandez Turnes | ✅ Aprovado
+===== ABA: Riscos =====
+REGISTRO DE RISCOS E OPORTUNIDADES
+Referência: REG-AASP-AP-001 §3.5 · Escala Prob./Imp.: 1=Baixo · 2=Médio · 3=Alto · Exposição = P×I
+RISCOS IDENTIFICADOS — PROJETO AASP_ANDAMENTOSPROCESSUAIS
+ID | Risco | Categoria | Prob. (1–3) | Imp. (1–3) | Exposição (P×I) | Resposta | Status | Responsável | Observação
+R-01 | Refatoração do webhook causar regressão no fluxo EPROC já em produção | Técnico | 2 | 3 | 6 | Mitigar | ✅ Controlado | GP / Tech Lead | Testes de regressão por amostragem antes de cada merge; retrocompatibilidade garantida
+R-02 | APIs parceiras com comportamento inconsistente nos endpoints de exclusão | Externo | 3 | 3 | 9 | Mitigar | ⚠️ Ocorreu | Dev Sênior | Implementação específica por parceira com registro detalhado do retorno nas tabelas de controle
+R-03 | Perda de histórico de movimentações durante migração do modelo de controle | Técnico | 1 | 3 | 3 | Mitigar | ✅ Controlado | Dev Sênior | Novo modelo apenas adiciona registros; nenhum dado histórico removido ou sobrescrito
+R-04 | Impacto no desempenho pela adição de verificações nas APIs parceiras | Técnico | 2 | 2 | 4 | Mitigar | ✅ Controlado | Arquiteto | Verificação realizada apenas após captura bem-sucedida via CNJ; fluxo EPROC não afetado
+R-05 | Falhas transitórias no envio do webhook causando perda de dados | Técnico | 2 | 3 | 6 | Mitigar | ⚠️ Ocorreu | Dev Sênior | Implementação de retry no worker antes do registro de erro nas tabelas de controle
+===== ABA: Medição =====
+REGISTRO DE MEDIÇÃO DO PROJETO
+Referência: REG-AASP-AP-001 §8 · MED-AASP-AP-001
+INDICADORES DE PROJETO — RESULTADOS POR FASE
+Indicador (MED) | Fases 1–2 Valor Real | Fases 3–4 Valor Real | Consolidado | Meta Org. | Status Meta | Referência
+Aderência ao Cronograma | 100% | ~85% (+30d por escopo acordado) | ~91% médio | ≥ 85% | ✅ Atingida | REG-AASP-AP-001 §3.1
+Desvio de Esforço (horas) | +9% (Fases 1–2) | +10% (Fases 3–4) | +9,7% médio | ≤ 20% | ✅ Atingida | REG-AASP-AP-001 §3.4
+Defeitos identificados | 0 | 5 (corrigidos antes da implantação) | 5 total | — | ✅ Contidos | REG-AASP-AP-001 §7.4
+Defeitos escapados para produção | 0 | 0 | 0 | 0 | ✅ Atingida | REG-AASP-AP-001 §7.4
+Taxa de contenção de defeitos | 100% | 100% | 100% | ≥ 95% | ✅ Atingida | REG-AASP-AP-001 §7.4
+NCs de GQA abertas ao encerramento | 0 | 0 | 0 | 0 | ✅ Atingida | GQA-AASP-AP-001
+Retrabalho (% esforço) | 0% | 0% | 0% | ≤ 5% | ✅ Atingida | REG-AASP-AP-001 §8.2
+Rastreabilidade de status por instância | — | 100% processos com status por instância | 100% | 100% | ✅ Atingida | REG-AASP-AP-001 §8.1
+Webhook compatível com múltiplas fontes | — | CNJ, EPROC/ESAJ e APIs parceiras | Operacional | 100% fontes | ✅ Atingida | REG-AASP-AP-001 §8.1
+Processos desligados nas parceiras após captura CNJ | — | 100% dos casos identificados | 100% | 100% | ✅ Atingida | REG-AASP-AP-001 §8.1
+Escopo realizado vs. planejado | 100% (6 RF + 2 RNF) | 100% (6 RF + 3 RNF) | 100% | 100% | ✅ Atingida | REG-AASP-AP-001 §2.3
+===== ABA: GQA =====
+GARANTIA DA QUALIDADE — REGISTRO DE AUDITORIA
+Referência: GQA-AASP-AP-001 · EST-GPC-001 · TPL-GPC-001 · Auditor: Jonathan Barbosa — independente da equipe de projeto
+Auditor | Jonathan Barbosa
+Independência | Sim — Jonathan Barbosa não participa da execução do projeto
+Referência estratégia | EST-GPC-001 — Estratégia de Garantia da Qualidade
+Data da auditoria | 08/06/2026 (registro do ciclo — desenvolvimento concluído; implantação em andamento)
+FASES 1–2 — Verificação de aderência ao processo
+# | Item verificado | Produto de trabalho | Resultado | Observação
+1 | Registro de Projeto produzido e aprovado | REG-AASP-AP-001 | ✅ Conforme | v1.0 — 08/06/2026
+2 | Planejamento de fases documentado | REG-AASP-AP-001 §3.1 | ✅ Conforme | 5 fases com período, status e descrição
+3 | Requisitos funcionais e não funcionais especificados e validados | REG-AASP-AP-001 §2.3/2.4 | ✅ Conforme | 12 RF e 5 RNF documentados
+4 | Partes interessadas identificadas com papéis e responsabilidades | REG-AASP-AP-001 §1.2 | ✅ Conforme | 7 papéis Timeware + representante AASP
+5 | Atas e alinhamentos registrados com data e objetivo | REG-AASP-AP-001 §9.1 | ✅ Conforme | 6 reuniões/atividades documentadas
+6 | Riscos identificados com probabilidade, impacto e tratamento | REG-AASP-AP-001 §3.5 | ✅ Conforme | 5 riscos — 2 ocorridos e tratados
+7 | Gerência de configuração documentada (branches, GMUD, DDL) | REG-AASP-AP-001 §5 | ✅ Conforme | GitFlow, Azure DevOps, DDL versionado
+8 | Dependências e integrações identificadas | REG-AASP-AP-001 §4.5 | ✅ Conforme | RabbitMQ, Elasticsearch, SQL Server, APIs parceiras
+9 | Decisões relevantes registradas com justificativa e impacto | REG-AASP-AP-001 §12.1 | ✅ Conforme | 7 decisões com data, justificativa e impacto
+10 | Esforço estimado e realizado por fase documentado | REG-AASP-AP-001 §3.4 | ✅ Conforme | Tabela de esforço com totais por fase
+FASES 3–4 — Verificação de aderência ao processo
+# | Item verificado | Produto de trabalho | Resultado | Observação
+1 | Estratégia de testes documentada | REG-AASP-AP-001 §7.1 | ✅ Conforme | Testes funcionais, integração, regressão e persistência por fase
+2 | Testes realizados por fase documentados com tipo e descrição | REG-AASP-AP-001 §7.2 | ✅ Conforme | 9 tipos de teste em 4 fases
+3 | Critérios de aceite definidos com evidência esperada | REG-AASP-AP-001 §7.3 | ✅ Conforme | 8 critérios de aceite (CA01–CA08)
+4 | Registro de defeitos e correções por fase | REG-AASP-AP-001 §7.4 | ✅ Conforme | 5 bugs (BUG-01 a BUG-05) — todos corrigidos
+5 | Indicadores do projeto documentados com meta e resultado | REG-AASP-AP-001 §8.1 | ✅ Conforme | 5 indicadores — todos atingidos
+6 | Esforço realizado por fase com responsável principal | REG-AASP-AP-001 §8.2 | ✅ Conforme | Horas por fase com responsável
+7 | Capacitação e transferência de conhecimento documentadas | REG-AASP-AP-001 §11.1 | ✅ Conforme | Repasse técnico ao dev suporte; code review; DDL comentado
+8 | Componentes modificados documentados com motivação | REG-AASP-AP-001 §4.2 | ✅ Conforme | 7 componentes com modificação e motivação
+9 | Itens de configuração identificados | REG-AASP-AP-001 §5.1 | ✅ Conforme | API, CapturaServer, scripts DDL, pacotes GMUD
+10 | Aquisições e fornecedores documentados | REG-AASP-AP-001 §10.1 | ✅ Conforme | RabbitMQ, Elasticsearch, Solucionário, Botmax, Azure DevOps, SQL Server
+11 | Conformidade do processo registrada (ClickUp, DevOps, GMUD) | REG-AASP-AP-001 §9.2 | ✅ Conforme | Gestão ClickUp; branching Azure DevOps; DDL versionado
+RESULTADO DA AUDITORIA
+Fase | Itens verificados | Conformes | Desvios | Resultado
+Fases 1–2 | 10 itens verificados | 10 conformes | 0 desvios | ✅ Conforme
+Fases 3–4 | 11 itens verificados | 11 conformes | 0 desvios | ✅ Conforme
+CONSOLIDADO | 21 itens verificados | 21 conformes | 0 desvios | ✅ Conforme
+===== ABA: V&V — Testes =====
+V&V — TESTES REALIZADOS · AASP_AndamentosProcessuais
+Fonte: REG-AASP-AP-001 §7 · Processo: PRO-VV-001
+Fase | Componente / Funcionalidade | # | Cenário / Descrição | Tipo | Dado (Given) | Quando (When) | Então / E (Then) | Evidência | Situação
+Fase 1 | Webhook EPROC/ESAJ | CT-01 | Recebimento, serialização e indexação no Elasticsearch — happy path | Happy | Dado que o WorkerAndamentos envia dados EPROC para o webhook | Quando o webhook recebe a requisição | Então os dados são serializados para IModelElastic e indexados no Elasticsearch E as tabelas ProcessoCaptura e ProcessoCapturaLogin são atualizadas | Validação Fase 1 — fluxo completo EPROC | ✅ Aprovado
+Fase 2 | Endpoint RabbitMQ / SegmentoTribunal | CT-02 | Publicação na fila WorkerAndamentos com SegmentoTribunal — happy path | Happy | Dado que o CapturaServer identifica um processo pendente de captura | Quando publica a mensagem na fila WorkerAndamentos | Então a mensagem contém NUP e SegmentoTribunal E o WorkerAndamentos consome e processa corretamente | Validação Fase 2 | ✅ Aprovado
+Fase 2 | Homologação EPROC/ESAJ | CT-03 | Fluxo completo de captura e indexação EPROC por amostragem — integração | Integração | Dado que processos EPROC estão pendentes de captura | Quando o fluxo completo é executado (CapturaServer → RabbitMQ → WorkerAndamentos → Webhook → Elasticsearch) | Então os processos são indexados corretamente E os critérios CA01 a CA04 são atendidos | Homologação Jan/2026–Mai/2026 em ambiente compartilhado com AASP_CNJ | ✅ Aprovado
+Fase 3 | Webhook multi-fonte | CT-04 | Recebimento de dados da API DataJud/CNJ — happy path | Happy | Dado que o WorkerAndamentos envia dados da API CNJ para o webhook | Quando o webhook processa a requisição | Então os dados são serializados corretamente sem campos fixos do TJSP E a indexação ocorre com sucesso no Elasticsearch | Validação Fase 3 | ✅ Aprovado
+Fase 3 | Movimentações por instância | CT-05 | Inativação de registro anterior e criação de novo registro — happy path | Happy | Dado que uma instância possui registro ativo em ProcessoCapturaMovimentacaoStatus | Quando novas movimentações chegam via captura | Então o registro anterior recebe Ativo=0 E um novo registro é criado com Ativo=1 e DataUltimaAtualizacao atualizada | Validação Fase 3 | ✅ Aprovado
+Fase 3 | Movimentações por instância | CT-06 | Atualização de DataUltimaAtualizacao sem novas movimentações — happy path | Happy | Dado que uma instância não possui novas movimentações | Quando a captura é executada | Então DataUltimaAtualizacao é atualizado no registro ativo E nenhum novo registro é criado na tabela | Validação Fase 3 | ✅ Aprovado
+Fase 3 | APIs Parceiras — desligamento | CT-07 | Verificação e desligamento nas APIs parceiras após captura CNJ — integração | Integração | Dado que um processo é capturado com sucesso via CNJ E está cadastrado em uma API parceira | Quando o fluxo de desligamento é executado | Então o processo é excluído da parceira E o resultado é registrado na tabela de cadastro com status, data e observação | Validação 04–05/05/2026 para Solucionário e Botmax | ✅ Aprovado
+Fase 4 | Fluxo completo E2E | CT-08 | Captura CNJ com sucesso em todas as instâncias — happy path | E2E | Dado que um processo possui múltiplas instâncias pendentes de captura via CNJ | Quando o fluxo completo é executado | Então CA01, CA02, CA03, CA04, CA07 e CA08 são todos atendidos E 0 defeitos gerados em produção | Teste E2E Fase 4 | ✅ Aprovado
+Fase 4 | Tratamento de erros | CT-09 | Erro parcial por instância — sad path | Sad | Dado que a captura falha em uma instância e tem sucesso nas demais | Quando o sistema processa o retorno misto | Então ProcessoCaptura mantém status 3 E apenas a instância afetada recebe CodigoProcessoCapturaResposta=8 com Observacao preenchido | Validação critério CA05 | ✅ Aprovado
+Fase 4 | Tratamento de erros | CT-10 | NUP inválido retornado pela API parceira — sad path | Sad | Dado que a API parceira retorna NUP inválido | Quando o sistema processa o retorno | Então CodigoProcessoCapturaStatus é atualizado para 8 E CodigoProcessoCapturaResposta para 10 em todas as instâncias de ProcessoCapturaLogin | Validação critério CA05 | ✅ Aprovado
+Fase 4 | Segredo de justiça por instância | CT-11 | Campo Segredo atualizado individualmente por instância — happy path | Happy | Dado que um processo possui uma instância em segredo de justiça e outra não | Quando a captura é processada | Então o campo Segredo é atualizado individualmente por instância E instâncias não restritas não são afetadas pelo segredo da outra | Validação critério CA08 | ✅ Aprovado
+Fase 4 | Regressão EPROC/ESAJ | CT-12 | Fluxo EPROC/ESAJ não impactado pelas refatorações — regressão | Regressão | Dado que o fluxo EPROC/ESAJ está operacional em produção | Quando as refatorações das Fases 3 e 4 são aplicadas | Então o fluxo EPROC/ESAJ continua operando corretamente E nenhuma regressão é identificada nos fluxos existentes | Testes de regressão por amostragem antes de cada merge — Fase 4 | ✅ Aprovado
+RESUMO
+Fase | Total CT | Happy | Sad | Integração/E2E/Regressão | Aprovados | % Aprovação
+Fases 1–2 | 3 | 2 | 0 | 1 | 3 | 100%
+Fases 3–4 | 9 | 4 | 2 | 3 | 9 | 100%
+TOTAL | 12 | 6 | 2 | 4 | 12 | 100%
