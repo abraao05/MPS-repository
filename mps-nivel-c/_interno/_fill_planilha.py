@@ -10,7 +10,7 @@ from openpyxl.styles import Alignment, Font
 
 SRC = '/root/.claude/uploads/5abbaf16-7c03-5c89-bd42-930844eb89cc/d820916e-PlanilhaIndicadores_SW_2024__NivelC.xlsx'
 OUT = '/home/user/MPS-repository/mps-nivel-c/_interno/PlanilhaIndicadores_SW_2024_NivelC_PREENCHIDA.xlsx'
-CSV = '/root/.claude/uploads/5abbaf16-7c03-5c89-bd42-930844eb89cc/0c7a0c0b-16.6_MAPADRIVE_IndicedeLinks.csv'
+CSV = '/root/.claude/uploads/5abbaf16-7c03-5c89-bd42-930844eb89cc/216596c6-16.6_MAPADRIVE_IndicedeLinks.csv'
 
 # ---- link index ----
 LINKS = {}
@@ -72,7 +72,7 @@ AASPAP = {
  'REQ':['REQ-AASPAP01-001'],
  'RASTR':['RASTR-AASPAP01-001'],
  'PCP':['PCP-AASPAP01-001'],
- 'REV':['REV-AASPAP01-001'],
+ 'REV':['REV-AASPAP01-001','REV-AASPAP01-002'],
  'VV':['VV-AASPAP01-001'],
  'RELVV':['REL-VV-AASPAP01-001'],
  'ITP':['ITP-AASPAP01-001'],
@@ -82,9 +82,11 @@ AASPAP = {
  'GQA':['GQA-AASPAP01-001'],
  'RAC':['RAC-AASPAP01-001'],
  'ATAK':['ATA-AASPAP01-001'],
+ 'ATAA':['ATA-AASPAP01-002','ATA-AASPAP01-003','ATA-AASPAP01-004','ATA-AASPAP01-005'],
+ 'ATA_METAS':['MQ-AASPAP01-001'],
  'CR':['CR-AASPAP01-001','CR-AASPAP01-002'],
  'GEST':['GEST-AASPAP01'],
- 'LI':[],'CTQ':[],'CAP':[],'ATAA':[],'ATA_METAS':[],'ATA_VAL':[],'TAE':[],
+ 'LI':[],'CTQ':[],'CAP':[],'ATA_VAL':[],'TAE':[],
 }
 
 PROJECTS = [('FRUKI', FRU), ('AASP_AP', AASPAP)]
