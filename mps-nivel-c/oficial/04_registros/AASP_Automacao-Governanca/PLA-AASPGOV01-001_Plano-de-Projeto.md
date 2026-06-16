@@ -5,7 +5,7 @@
 | **Documento** | PLA-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.0 |
+| **Versão** | 1.3 |
 | **Data** | 02/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
@@ -107,7 +107,7 @@ Referência de capacidade: 168 h/mês disponíveis por pessoa (21 dias × 8 h); 
 
 ## 6. Recursos (GPR 6, 7)
 
-- **Equipe:** Abraão Oliveira (Gerente de Projeto, todas as fases); Cezar Hiraki (Tech Lead/Arquiteto, todas as fases); Raony Chagas (Desenvolvedor Sênior, todas as fases); Allan Alves (Desenvolvedor de Suporte, Fases 2–4); Caroline Sousa (Analista de Testes, Fase 4); Lucas Batista (Infraestrutura/DevOps, Fases 1 e 4).
+- **Equipe:** Abraão Oliveira (Gerente de Projeto, todas as fases); Cezar Hiraki (Tech Lead/DevOps/Arquiteto, todas as fases); Henry Komatsu (Desenvolvedor, todas as fases); Allan Alves (Desenvolvedor, Fases 2–4); Felipe Siqueira (Desenvolvedor, Fases 2–4); Jonathan Alves (QA, Fase 4); Caroline Sousa (GQA Independente, encerramento).
 - **Ambiente e ferramentas:**
   - **Controle de versão / CI/CD:** Azure DevOps (repositório `SensrJiraSync` + pipeline)
   - **Hospedagem do serviço:** Azure (Scheduled Job em ambiente Windows)
@@ -124,7 +124,7 @@ Referência de capacidade: 168 h/mês disponíveis por pessoa (21 dias × 8 h); 
 | Marcos Correa Fernandez Turnes (Sponsor — AASP) | Validação, homologação e aceite formal | Reuniões de marco (Kickoff, Alinhamento APIs, Validação Homologação, Aceite Final) — 4 atas |
 | Abraão Oliveira (GP — Timeware) | Gestão de entregas, comunicação com cliente | Acompanhamento contínuo + reuniões de marco |
 | Time de desenvolvimento (Timeware) | Execução técnica e decisões de implementação | Reuniões de alinhamento por sprint; revisão de código via PR no Azure DevOps |
-| Jonathan Alves (Auditor GQA — Timeware) | Verificação de aderência ao processo MPS-SW | Auditoria única ao encerramento (ver GQA-AASPGOV01-001) |
+| Caroline Sousa (GQA Independente — Timeware) | Verificação de aderência ao processo MPS-SW | Auditoria única ao encerramento (ver GQA-AASPGOV01-001) |
 
 ## 8. Transição e suporte pós-go-live (GPR 8, GPR 16)
 
@@ -133,7 +133,7 @@ Referência de capacidade: 168 h/mês disponíveis por pessoa (21 dias × 8 h); 
 | Item | Descrição |
 |---|---|
 | **Fluxo de deploy** | Homologação aprovada → publicação manual do executável .NET 8 auto-contido no Azure → configuração do Scheduled Job → verificação da primeira execução |
-| **Responsável pela execução do deploy** | Lucas Batista (DevOps) |
+| **Responsável pela execução do deploy** | Cezar Hiraki (DevOps) |
 | **Aprovador do go-live** | Marcos Correa Fernandez Turnes (Sponsor AASP) + Abraão Oliveira (GP) |
 | **Processo de mudança do cliente** | Não aplicável — implantação direta no Azure Scheduler da Timeware (não há GMUD do cliente) |
 | **Janela de deploy** | Horário comercial (serviço novo, sem usuários ativos no momento do deploy) |
@@ -143,12 +143,12 @@ Referência de capacidade: 168 h/mês disponíveis por pessoa (21 dias × 8 h); 
 
 | Critério | Obrigatório? | Verificado por |
 |---|---|---|
-| Todos os defeitos críticos (S1) resolvidos | Sim | Caroline Sousa (QA) / Abraão Oliveira |
+| Todos os defeitos críticos (S1) resolvidos | Sim | Jonathan Alves (QA) / Abraão Oliveira |
 | Homologação aprovada pelo cliente | Sim | Marcos Correa Fernandez Turnes |
 | Documentação de entrega completa (appsettings, endpoints, troubleshooting) | Sim | Cezar Hiraki (Tech Lead) |
-| Cenários CT-01 a CT-12 aprovados | Sim | Caroline Sousa (QA) |
-| Baseline de configuração registrada (tag de versão) | Sim | Lucas Batista (DevOps) |
-| Credenciais e permissões de produção confirmadas | Sim | Lucas Batista (DevOps) |
+| Cenários CT-01 a CT-12 aprovados | Sim | Jonathan Alves (QA) |
+| Baseline de configuração registrada (tag de versão) | Sim | Cezar Hiraki (DevOps) |
+| Credenciais e permissões de produção confirmadas | Sim | Cezar Hiraki (DevOps) |
 | Aceite formal do Sponsor registrado em ata | Sim | Abraão Oliveira (GP) |
 
 ### 8.3 Suporte e monitoramento pós-go-live
@@ -212,3 +212,6 @@ O projeto é viável: o esforço estimado (216 h, ~59 SP) é compatível com a d
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Plano consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026), seguindo TPL-GPR-001 v1.2. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização da equipe, responsáveis pelo deploy e critérios de prontidão: Henry Komatsu substituiu Raony Chagas, Cezar Hiraki absorveu DevOps (Lucas Batista), Jonathan Alves como QA, Caroline Sousa como GQA Independente, Felipe Siqueira adicionado. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Jonathan Alves (QA) corrigido de grafia anterior. |
+| 1.3 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

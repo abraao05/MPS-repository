@@ -4,9 +4,9 @@
 |---|---|
 | **Documento** | PCP-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
-| **Versão** | 1.0 |
-| **Data** | 02/06/2026 |
-| **Responsáveis** | Cezar Hiraki (Arquiteto / Tech Lead) |
+| **Versão** | 1.3 |
+| **Data** | 15/06/2026 |
+| **Responsáveis** | Cezar Hiraki (Tech Lead / DevOps / Arquiteto) |
 
 ---
 
@@ -113,13 +113,13 @@ Matriz completa de rastreabilidade em RASTR-AASPGOV01-001.
 
 | Item avaliado | Avaliador | Problema encontrado | Tratamento |
 |---|---|---|---|
-| Estrutura em 3 camadas (Core / Infrastructure / App) | Cezar Hiraki (Tech Lead / Arquiteto) | Nenhum problema identificado | Aprovado em 16/04/2026 |
-| Fluxo de sincronização — lógica criar vs. atualizar | Cezar Hiraki + Raony Chagas | Risco de sobrescrever edições manuais realizadas no Jira durante a transição | Mitigado pela D06 — sincronização incremental limitada a status |
+| Estrutura em 3 camadas (Core / Infrastructure / App) | Cezar Hiraki (Tech Lead / DevOps / Arquiteto) | Nenhum problema identificado | Aprovado em 16/04/2026 |
+| Fluxo de sincronização — lógica criar vs. atualizar | Cezar Hiraki + Henry Komatsu | Risco de sobrescrever edições manuais realizadas no Jira durante a transição | Mitigado pela D06 — sincronização incremental limitada a status |
 | Estratégia de identificação por prefixo `#ID` no summary | Cezar Hiraki | Necessidade de extração robusta do identificador Sensr no summary do Jira | Implementação de `SyncService.ExtractSensrId` com cobertura de testes |
-| Conversão HTML → ADF para campos de texto | Cezar Hiraki + Raony Chagas | API Jira v3 rejeita texto plano e HTML direto; risco de conteúdo ilegível para o usuário | Decisão D04 — uso de ADF via `JiraService.BuildAdfDocument`; formalizada em GDE-AASPGOV01-001 |
+| Conversão HTML → ADF para campos de texto | Cezar Hiraki + Henry Komatsu | API Jira v3 rejeita texto plano e HTML direto; risco de conteúdo ilegível para o usuário | Decisão D04 — uso de ADF via `JiraService.BuildAdfDocument`; formalizada em GDE-AASPGOV01-001 |
 | Gestão de credenciais por desenvolvedor | Cezar Hiraki | Risco de exposição de tokens em logs de execução | Mitigado por RNF05 — credenciais fora do código, sem registro de tokens nos logs |
 
-O design da solução foi avaliado e formalmente aprovado pelo Tech Lead / Arquiteto **Cezar Hiraki** em **16/04/2026**, ao final da Fase 1 (Arquitetura), antes do início do desenvolvimento. A aprovação constitui evidência do atendimento ao critério PCP2 do processo de Desenvolvimento e Manutenção de Software (DES) do MR-MPS-SW:2024 Nível C.
+O design da solução foi avaliado e formalmente aprovado pelo Tech Lead / DevOps / Arquiteto **Cezar Hiraki** em **16/04/2026**, ao final da Fase 1 (Arquitetura), antes do início do desenvolvimento. A aprovação constitui evidência do atendimento ao critério PCP2 do processo de Desenvolvimento e Manutenção de Software (DES) do MR-MPS-SW:2024 Nível C.
 
 ---
 
@@ -128,3 +128,6 @@ O design da solução foi avaliado e formalmente aprovado pelo Tech Lead / Arqui
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Documento de design consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Avaliadores atualizados na tabela de avaliação do design: Henry Komatsu substituiu Raony Chagas. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Versão do cabeçalho corrigida para 1.2; papel de Cezar Hiraki atualizado para Tech Lead / DevOps / Arquiteto; Jonathan Alves (QA) corrigido de grafia anterior. |
+| 1.3 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

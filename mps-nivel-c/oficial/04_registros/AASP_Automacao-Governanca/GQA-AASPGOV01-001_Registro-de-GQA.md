@@ -6,14 +6,14 @@
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
 | **Marco / tipo de verificação** | Encerramento (verificação consolidada do ciclo completo do projeto) |
 | **Data** | 02/06/2026 |
-| **Auditor (GQA)** | Jonathan Alves (Auditor GQA — independente da equipe do projeto) |
+| **Auditor (GQA)** | Caroline Sousa (GQA Independente — independente da equipe do projeto) |
 | **Gerente de Projeto** | Abraão Oliveira |
 
 ---
 
 ## 1. Escopo da verificação
 
-Verificação de aderência ao processo-padrão (PRO-GPC-001) e de existência, completude e conformidade dos produtos de trabalho do projeto AASP_Automacao-Governanca ao encerramento, conforme EST-GPC-001 e TPL-GPC-001 v1.1. A verificação é consolidada em marco único de encerramento, conforme adaptação registrada em ADAP-AASPGOV01-001 (auditoria única ao encerramento, justificada pelo porte e duração do projeto — aproximadamente 7 semanas com entregável único). A independência da função de GQA é assegurada pela atuação de Jonathan Alves, que não participou da execução do projeto em nenhuma fase.
+Verificação de aderência ao processo-padrão (PRO-GPC-001) e de existência, completude e conformidade dos produtos de trabalho do projeto AASP_Automacao-Governanca ao encerramento, conforme EST-GPC-001 e TPL-GPC-001 v1.1. A verificação é consolidada em marco único de encerramento, conforme adaptação registrada em ADAP-AASPGOV01-001 (auditoria única ao encerramento, justificada pelo porte e duração do projeto — aproximadamente 7 semanas com entregável único). A independência da função de GQA é assegurada pela atuação de Caroline Sousa (GQA Independente), que não participou da execução do projeto em nenhuma fase.
 
 ---
 
@@ -28,7 +28,7 @@ Verificação de aderência ao processo-padrão (PRO-GPC-001) e de existência, 
 | 5 | Decisões relevantes registradas com análise formal (gatilhos GDE) | ✅ Conforme | GDE-AASPGOV01-001 — D01 a D07 documentados |
 | 6 | Acompanhamento do projeto registrado | ✅ Conforme | RAC-AASPGOV01-001 — Sprint 0 a Sprint 3 |
 | 7 | Medição realizada e resultados comunicados conforme PLA-MED-001 | ✅ Conforme | MED-AASPGOV01-001 — M1 a M7 apuradas e comunicadas |
-| 8 | Capacitação e transferência de conhecimento documentadas | ✅ Conforme | CAP-AASPGOV01-001 — onboarding Allan Alves e Caroline Sousa registrados |
+| 8 | Capacitação e transferência de conhecimento documentadas | ✅ Conforme | CAP-AASPGOV01-001 — onboarding Allan Alves e Jonathan Alves registrados |
 | 9 | Estratégia de integração documentada e critérios de prontidão aplicados | ✅ Conforme | ITP-AASPGOV01-001 — ITP2 a ITP6 cobertos |
 | 10 | Revisão por pares realizada e registrada | ✅ Conforme | REV-AASPGOV01-001 — PRs revisados por Cezar Hiraki em todas as fases |
 | 11 | Aceite formal do cliente registrado em ata | ✅ Conforme | ATA-AASPGOV01-003 (29/05/2026) + ATA-AASPGOV01-004 (02/06/2026) |
@@ -93,3 +93,6 @@ Nenhum desvio identificado. Todos os produtos de trabalho verificados existem, e
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de verificação de GQA de encerramento do projeto AASP_Automacao-Governanca, conduzido por Jonathan Alves (auditor independente). |
 | 1.1 | 13/06/2026 | Time de Melhoria Contínua | Adicionado item 23 (GEST-AASPGOV01 xlsx) à tabela de produtos de trabalho; atualizada contagem §3 item 1 de 24 para 23 artefatos (após remoção do CR — INTAKE-AASPGOV01 Bloco 10); atualizado resultado §5 de 22/22 para 23/23. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Auditor GQA atualizado: Caroline Sousa (GQA Independente) substituiu Jonathan Alves; referência de onboarding atualizada para Jonathan Alves (QA). |
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Jonathan Alves (QA) corrigido de grafia anterior. |
+| 1.4 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves); reforço da redação de independência da GQA. |

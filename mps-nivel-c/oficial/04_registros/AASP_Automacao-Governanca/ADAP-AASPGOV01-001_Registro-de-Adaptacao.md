@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | ADAP-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 02/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira (Gerente de Projeto) |
 
@@ -58,3 +58,4 @@ Todos os pontos de controle obrigatórios foram cumpridos.
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de adaptação consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026). |
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

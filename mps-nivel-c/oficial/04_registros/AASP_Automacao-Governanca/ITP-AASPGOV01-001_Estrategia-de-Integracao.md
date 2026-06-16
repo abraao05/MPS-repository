@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | ITP-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 02/06/2026 |
 
 ---
@@ -96,3 +96,4 @@ Material de apoio entregue junto ao artefato:
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Estratégia de integração consolidada a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

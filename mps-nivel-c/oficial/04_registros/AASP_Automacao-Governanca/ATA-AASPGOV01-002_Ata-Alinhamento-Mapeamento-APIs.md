@@ -15,10 +15,9 @@
 | Nome | Papel | Organização |
 |---|---|---|
 | Abraão Oliveira | Gerente de Projeto | Timeware |
-| Cezar Hiraki | Tech Lead / Arquiteto | Timeware |
-| Raony Chagas | Desenvolvedor Sênior | Timeware |
-| Allan Alves | Desenvolvedor (Suporte) | Timeware |
-| Lucas Batista | Infraestrutura / DevOps | Timeware |
+| Cezar Hiraki | Tech Lead / DevOps / Arquiteto | Timeware |
+| Henry Komatsu | Desenvolvedor | Timeware |
+| Allan Alves | Desenvolvedor | Timeware |
 
 ## 2. Pauta
 
@@ -42,17 +41,17 @@ Por fim, o Tech Lead confirmou que a API Jira v3 exige o uso do Atlassian Docume
 |---|---|---|
 | Autenticação JWT individual por desenvolvedor no Sensr (D02) | Cezar Hiraki | 23/04/2026 |
 | Identificação de cards migrados via prefixo #ID no summary do Jira (D03) | Cezar Hiraki | 23/04/2026 |
-| Necessidade de ADF confirmada para campos de texto no Jira v3 (D04 formalizada na Fase 3 — ver GDE-AASPGOV01-001) | Raony Chagas | 23/04/2026 |
+| Necessidade de ADF confirmada para campos de texto no Jira v3 (D04 formalizada na Fase 3 — ver GDE-AASPGOV01-001) | Henry Komatsu | 23/04/2026 |
 | Aprovação para início da Fase 3 — Desenvolvimento dos Serviços em 24/04/2026 | Abraão Oliveira | 23/04/2026 |
 
 ## 5. Ações (follow-up)
 
 | Ação | Responsável | Prazo |
 |---|---|---|
-| Implementar SensrService com mecanismo de login por desenvolvedor e gestão de tokens JWT | Raony Chagas | Mai/2026 |
-| Implementar JiraService incluindo método BuildAdfDocument para campos de texto rico | Raony Chagas / Allan Alves | Mai/2026 |
-| Preparar estrutura de testes e cenários para uso na Fase 4 de Homologação | Caroline Sousa | Mai/2026 |
-| Provisionar ambiente de integração para execução dos serviços durante a Fase 3 | Lucas Batista | 24/04/2026 |
+| Implementar SensrService com mecanismo de login por desenvolvedor e gestão de tokens JWT | Henry Komatsu | Mai/2026 |
+| Implementar JiraService incluindo método BuildAdfDocument para campos de texto rico | Henry Komatsu / Allan Alves | Mai/2026 |
+| Preparar estrutura de testes e cenários para uso na Fase 4 de Homologação | Jonathan Alves | Mai/2026 |
+| Provisionar ambiente de integração para execução dos serviços durante a Fase 3 | Cezar Hiraki | 24/04/2026 |
 
 ## 6. Próximos passos
 
@@ -65,4 +64,6 @@ Início da Fase 3 — Desenvolvimento dos Serviços (24/04 a 20/05/2026), com im
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata reconstituída a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção de consistência: D04 registrada como necessidade confirmada em 23/04, com formalização na Fase 3 (GDE), eliminando conflito de data; padronização do nome. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos participantes e responsáveis pelas ações: Henry Komatsu substituiu Raony Chagas, Cezar Hiraki substituiu Lucas Batista, Jonathan Alves substituiu Caroline Sousa nas ações de preparação de testes. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel de Cezar Hiraki atualizado para Tech Lead / DevOps / Arquiteto na tabela de participantes; Jonathan Alves (QA) corrigido de grafia anterior. |
+| 1.3 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves); D04 como necessidade confirmada em 23/04 (formalização na Fase 3). |

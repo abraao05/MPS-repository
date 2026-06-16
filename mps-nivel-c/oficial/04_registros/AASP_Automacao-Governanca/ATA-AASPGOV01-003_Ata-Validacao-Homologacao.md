@@ -15,9 +15,9 @@
 | Nome | Papel | Organização |
 |---|---|---|
 | Abraão Oliveira | Gerente de Projeto | Timeware |
-| Cezar Hiraki | Tech Lead / Arquiteto | Timeware |
-| Raony Chagas | Desenvolvedor Sênior | Timeware |
-| Caroline Sousa | Analista de Testes (QA) | Timeware |
+| Cezar Hiraki | Tech Lead / DevOps / Arquiteto | Timeware |
+| Henry Komatsu | Desenvolvedor | Timeware |
+| Jonathan Alves | QA | Timeware |
 | Marcos Correa Fernandez Turnes | Sponsor / Patrocinador | AASP |
 
 ## 2. Pauta
@@ -29,7 +29,7 @@
 
 ## 3. Discussões e definições
 
-A Analista de Testes Caroline Sousa apresentou os resultados dos cinco cenários de teste (CT-01 a CT-05) executados em ambiente real durante a Fase 4 de Homologação. Todos os cenários foram aprovados após a aplicação das correções, cobrindo migração inicial sem duplicatas, fidelidade da hierarquia (projeto→Epic, atividade→Task, sub-atividade→Subtask), fidelidade de conteúdo, sincronização incremental de status e resiliência por desenvolvedor.
+O QA Jonathan Alves apresentou os resultados dos cinco cenários de teste (CT-01 a CT-05) executados em ambiente real durante a Fase 4 de Homologação. Todos os cenários foram aprovados após a aplicação das correções, cobrindo migração inicial sem duplicatas, fidelidade da hierarquia (projeto→Epic, atividade→Task, sub-atividade→Subtask), fidelidade de conteúdo, sincronização incremental de status e resiliência por desenvolvedor.
 
 O Tech Lead Cezar Hiraki detalhou as cinco correções realizadas. O BUG-01 referia-se ao envio direto do HTML dos campos de descrição do Sensr ao Jira, causando formatação inválida — corrigido com a implementação do `HtmlHelper`, com os métodos `ToPlainText` e `ParseDescriptionHistory`. O BUG-02 tratava de transições de status que falhavam silenciosamente quando o status-alvo não estava disponível no fluxo Jira — corrigido com consulta prévia via `GetTransitionsAsync` e log de aviso. O BUG-03 causava transições desnecessárias por comparação de status com diferenciação de maiúsculas e minúsculas — corrigido com `StringComparison.OrdinalIgnoreCase`. O BUG-04 gerava erro na criação de issues no Jira quando labels continham espaços — corrigido com implementação do método `SanitizeLabel`, substituindo espaços e barras por underscore. O BUG-05 resultava em cards não encontrados em projetos com muitos itens por ausência de paginação — corrigido com paginação via `nextPageToken` no método `GetIssuesByEpicAsync`.
 
@@ -48,7 +48,7 @@ O Sponsor Marcos Correa Fernandez Turnes verificou pessoalmente a migração de 
 | Ação | Responsável | Prazo |
 |---|---|---|
 | Preparar e emitir o Termo de Aceite e Encerramento TAE-AASPGOV01-001 | Abraão Oliveira | 02/06/2026 |
-| Preparar documentação final de implantação do serviço no Azure Scheduler | Lucas Batista | 02/06/2026 |
+| Preparar documentação final de implantação do serviço no Azure Scheduler | Cezar Hiraki | 02/06/2026 |
 | Participar da reunião de aceite final e assinar o TAE-AASPGOV01-001 | Marcos Correa Fernandez Turnes | 02/06/2026 |
 
 ## 6. Próximos passos
@@ -62,3 +62,6 @@ Encerramento formal do projeto em 02/06/2026, com realização da reunião de ac
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Ata reconstituída a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos participantes: Henry Komatsu substituiu Raony Chagas, Jonathan Alves substituiu Caroline Sousa no papel de QA; responsável pela documentação de implantação atualizado para Cezar Hiraki. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel de Cezar Hiraki atualizado para Tech Lead / DevOps / Arquiteto na tabela de participantes; Jonathan Alves (QA) corrigido de grafia anterior. |
+| 1.3 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

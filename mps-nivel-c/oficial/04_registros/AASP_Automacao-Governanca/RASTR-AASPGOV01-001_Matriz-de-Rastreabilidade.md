@@ -77,4 +77,4 @@ Todos os 7 critérios de aceite foram cobertos por casos de teste executados e a
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Matriz de rastreabilidade consolidada a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026). Vínculos a items de backlog (Jira) refletem a modelagem retroativa em 17 stories + sprints conforme GEST-AASPGOV01. |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção de consistência: critério de RNF-05 referenciado à auditoria de configuração (GCO §6) em vez da Decisão D02 (autenticação); padronização do nome. |
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves); critério do RNF-05 → auditoria de configuração (GCO §6). |

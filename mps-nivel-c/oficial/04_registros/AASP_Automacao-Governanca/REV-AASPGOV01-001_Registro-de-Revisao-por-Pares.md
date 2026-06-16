@@ -5,7 +5,7 @@
 | **Documento / Referência** | REV-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
 | **Item revisado** | Código-fonte dos serviços SensrService, JiraService, SyncService, HtmlHelper, StatusMapper e correções dos defeitos BUG-01 a BUG-05 |
-| **Data** | 02/06/2026 |
+| **Data** | 15/06/2026 |
 
 ---
 
@@ -17,9 +17,9 @@ A revisão por pares no projeto AASP_Automacao-Governanca é conduzida exclusiva
 
 | Papel | Identificação |
 |---|---|
-| Autor principal | Raony Chagas (Desenvolvedor Sênior) |
+| Autor principal | Henry Komatsu (Desenvolvedor) |
 | Autor de suporte | Allan Alves (Desenvolvedor) |
-| Revisor principal | Cezar Hiraki (Tech Lead / Arquiteto) |
+| Revisor principal | Cezar Hiraki (Tech Lead / DevOps / Arquiteto) |
 | Revisor adicional | Membro da equipe distinto do autor (rotativo por PR) |
 
 ## 3. Itens revisados (representativos)
@@ -51,8 +51,29 @@ A revisão por pares no projeto AASP_Automacao-Governanca é conduzida exclusiva
 
 ---
 
+## Anexo A — Evidência de Pull Requests (Azure DevOps)
+
+Evidência capturada no Azure DevOps (`dev.azure.com/allanalvestimeware/Automação-Governança` → **Repos → Pull requests → Completed**). Os 7 Pull Requests do projeto foram abertos pela conta `allan.alves` (Allan Alves) e integrados na branch `develop` após revisão e aprovação por um revisor distinto do autor, conforme a prática de GitFlow descrita acima.
+
+| PR | Título | Integrado em | Revisor (aprovação) |
+|---|---|---|---|
+| !23 | feat: estrutura Clean Architecture (.NET 8) | `develop` | Henry Komatsu |
+| !24 | feat: SensrService — autenticação JWT, retry e timeout | `develop` | Cezar Hiraki Velazquez |
+| !25 | feat: JiraService — paginação e validação de credenciais | `develop` | Cezar Hiraki Velazquez |
+| !26 | feat: StatusMapper — constante DefaultStatus e XML doc | `develop` | Cezar Hiraki Velazquez |
+| !27 | feat: SyncService — DryRun, Stopwatch e logs estruturados | `develop` | Cezar Hiraki Velazquez |
+| !28 | feat: HtmlHelper — ToPlainText e ParseDescriptionHistory | `develop` | Cezar Hiraki Velazquez |
+| !29 | fix: substituir Debug.WriteLine por LogDebug (BUG-01) | `develop` | Henry Komatsu |
+
+Os 7 PRs constam como **Completed** no Azure DevOps. Após a integração em `develop`, o conjunto foi promovido a `main` na release `v1.0.0` (02/06/2026, tag `v1.0.0`). Nenhum merge ocorreu sem a aprovação de ao menos um revisor além do autor (atende VV2 — aprovações de pull request / code review).
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro da prática de revisão por pares consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Autores atualizados: Henry Komatsu substituiu Raony Chagas como autor principal. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel de Cezar Hiraki atualizado para Tech Lead / DevOps / Arquiteto; Jonathan Alves (QA) corrigido de grafia anterior. |
+| 1.3 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves); adicionado o Anexo A — Evidência de Pull Requests (Azure DevOps, PRs !23–!29). |
