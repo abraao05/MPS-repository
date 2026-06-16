@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REG-CAP-CV-001 — Índice de Currículos e Evidências de Competência |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 10/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
@@ -43,12 +43,12 @@ Para os papéis cuja competência técnica é desenvolvida internamente (sem cur
 
 | Papel | Evidência de competência técnica |
 |---|---|
-| Desenvolvedores (Renan Kioshi, Raony Chagas, Fernando Oliveira, Henry Komatsu) | REG-CAP-010 (onboarding técnico); REG-CAP-011 (Azure); REG-CAP-012 (testes); REG-CAP-001/002/005/007/009 (processo) |
+| Desenvolvedores (Renan Kioshi, Raony Chagas, Fernando Oliveira, Henry Komatsu, Allan Patrocínio, Mateus Veloso, Lucas Batista, Felipe Siqueira) | REG-CAP-010 (onboarding técnico); REG-CAP-011 (Azure); REG-CAP-012 (testes); REG-CAP-001/002/005/007/009 (processo) |
 | QA (Jonatan Silva, Letícia Moraes) | REG-CAP-012 (automação de testes); REG-CAP-002/007/008/009 (processo de VV) |
-| DevOps (Rafael Cunha) | REG-CAP-010 (onboarding); REG-CAP-011 (Azure/IaC); REG-CAP-002/009 (GCO/ITP) |
+| DevOps / GCO (Flávio Fernandes) | REG-CAP-010 (onboarding); REG-CAP-011 (Azure/IaC); REG-CAP-002/009 (GCO/ITP) |
 | Time de Melhoria Contínua (Patricia Lima, Mariana Teixeira) | REG-CAP-013 (desenho de processos com Karen Wada); REG-CAP-003/006/009 |
-| Responsável de Medição (Thiago Nunes) | REG-CAP-003/009 |
-| RH / Capacitação (Guilherme Gomes, Camila Ferreira) | REG-CAP-004/006/009 |
+| Responsável de Medição (Silvio Baroni) | REG-CAP-003/006/009 |
+| RH / Capacitação (Guilherme Gomes, Klayton Roberto) | REG-CAP-004/006/009 |
 
 ---
 
@@ -64,4 +64,5 @@ Este índice apoia os atributos de capacidade **CP-ii e CP-iii** (responsáveis 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Seção 3 atualizada: Allan Patrocínio, Mateus Veloso, Lucas Batista e Felipe Siqueira incluídos nos Desenvolvedores; Klayton Roberto incluído em RH/Capacitação; DevOps atualizado para Flávio Fernandes; Responsável de Medição atualizado para Silvio Baroni |
 | 1.0 | 10/06/2026 | Time de Melhoria Contínua | Versão inicial — índice de currículos e evidências de competência por papel |

@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REG-CAP-010 |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 09/01/2026 |
 | **Referência** | TPL-CAP-001 v1.0; PLA-CAP-001 §5; MAT-CAP-023 |
 
@@ -47,12 +47,15 @@
 | Raony Chagas | Dev | S | Concluído | Ambiente local configurado; primeiro PR submetido conforme padrão |
 | Carol Silva | QA | S | Concluído | Acesso a ambientes e pipelines; execução de smoke checks |
 | Jonatan Silva | QA | S | Concluído | Acesso a ambientes e pipelines; execução de smoke checks |
+| Allan Patrocínio | Dev | S | Concluído | Ambiente local configurado; primeiro PR submetido conforme padrão |
+| Mateus Veloso | Dev | S | Concluído | Ambiente local configurado; primeiro PR submetido conforme padrão |
+| Lucas Batista | Dev | S | Concluído | Ambiente local configurado; primeiro PR submetido conforme padrão |
 
 ---
 
 ## 4. Observações e Pendências
 
-Onboarding técnico do novo time técnico (turma jan/2026), conduzido antes da capacitação de processo (REG-CAP-007, 14/01/2026). Objetivo: garantir competência técnica de base (stack, ambientes, padrões) antes da atuação nos projetos. Todos os participantes concluíram o setup e submeteram o primeiro Pull Request dentro do padrão de code review. Sem pendências.
+Onboarding técnico dos desenvolvedores e QA em estágio de ingresso ou adequação de ambientes (jan/2026), conduzido antes da capacitação de processo (REG-CAP-007, 14/01/2026). Allan Patrocínio, Mateus Veloso e Lucas Batista participaram para padronização de ambiente e revisão do fluxo de configuração. Todos os participantes concluíram o setup e submeteram o primeiro Pull Request dentro do padrão de code review. Sem pendências.
 
 ---
 
@@ -69,4 +72,5 @@ Onboarding técnico do novo time técnico (turma jan/2026), conduzido antes da c
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Incluídos Allan Patrocínio, Mateus Veloso e Lucas Batista na lista de participantes; §4 atualizado |
 | 1.0 | 09/01/2026 | Time de Melhoria Contínua | Registro do onboarding técnico do time técnico que ingressou em jan/2026 |
