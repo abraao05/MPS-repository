@@ -1,22 +1,16 @@
 # -*- coding: utf-8 -*-
 """Preenche a PlanilhaIndicadores ASR (Nivel C).
 Estrutura por indicador:
-  - Linhas em branco: col A = nome do documento; cols C/D/E/F = 'x' com hyperlink Drive.
+  - Linhas em branco: col A = nome do documento; cols C/D = 'x' com hyperlink Drive.
   - Linha (T,L,P,N,NA): autoavaliacao (T/NA) nas colunas de projeto.
-  - Col B e coluna 'Final' (G): intocadas (auditor preenche).
+  - Col B e coluna 'Final' (E): intocadas (auditor preenche).
 """
 import csv, re, openpyxl
 from openpyxl.styles import Alignment, Font
 
 SRC = '/root/.claude/uploads/5abbaf16-7c03-5c89-bd42-930844eb89cc/d820916e-PlanilhaIndicadores_SW_2024__NivelC.xlsx'
 OUT = '/home/user/MPS-repository/mps-nivel-c/_interno/PlanilhaIndicadores_SW_2024_NivelC_PREENCHIDA.xlsx'
-CSV = '/root/.claude/uploads/5abbaf16-7c03-5c89-bd42-930844eb89cc/c0987dec-MAPADRIVE_IndicedeLinks.csv'
-
-FOLDER = {
- 'cap':'1WaBDqw00DVFtkeCoCL3gJk59oO07kehU',
- 'curriculos':'1voDfAAX8j0BR6ddM55izLF9pdQ2eclYi',
-}
-def folder_url(k): return f"https://drive.google.com/drive/folders/{FOLDER[k]}"
+CSV = '/root/.claude/uploads/5abbaf16-7c03-5c89-bd42-930844eb89cc/0c7a0c0b-16.6_MAPADRIVE_IndicedeLinks.csv'
 
 # ---- link index ----
 LINKS = {}
@@ -26,11 +20,9 @@ with open(CSV, encoding='utf-8-sig') as f:
         if tipo == 'md': continue
         LINKS.setdefault(doc.split('_',1)[0], {})[tipo] = (doc, link)
 
-# Links enviados ao Drive apos exportacao do CSV
-LINKS.setdefault('REG-MED-001', {})['docx'] = ('REG-MED-001', 'https://drive.google.com/file/d/1FOAiyoGlyqXioyDAXV4gCyqsJZvaJ1aB/view?usp=drivesdk')
-LINKS.setdefault('EXEMPLO-GPR-005', {})['docx'] = ('EXEMPLO-GPR-005', 'https://drive.google.com/file/d/1xdb1hYORBdN9jrAxuuqEunXIoDzptTBH/view?usp=drivesdk')
+# Entradas manuais — docs cujo nome no Drive nao segue a convencao padrao
 LINKS.setdefault('ATA-FRUKI01-008', {})['docx'] = ('ATA-FRUKI01-008', 'https://drive.google.com/file/d/11alVpwlnsPjgd1_PO4OzMBXeJLRz6PXi/view?usp=drivesdk')
-LINKS.setdefault('INDICE-AASPCNJ01', {})['pdf'] = ('00_INDICE-AASPCNJ01', 'https://drive.google.com/file/d/1kf3EdS_AsVImdD6P_03zCt-OF7_UHj6N/view?usp=drivesdk')
+LINKS.setdefault('REG-MED-001', {})['docx'] = ('REG-MED-001', 'https://drive.google.com/file/d/1FOAiyoGlyqXioyDAXV4gCyqsJZvaJ1aB/view?usp=drivesdk')
 
 MISSING = set()
 
@@ -49,50 +41,54 @@ def get_fname(code, ext=None):
     return list(e.values())[0][0]
 
 # ============ PROJECT ROLE MAPS ============
-PROF = {
- 'TAP':['TAP-PROFARMA01-001'],'PLA':['PLA-PROFARMA01-001'],'ADAP':['ADAP-PROFARMA01-001'],
- 'REQ':['REQ-PROFARMA01-001'],'RASTR':['RASTR-PROFARMA01-001'],'PCP':['PCP-PROFARMA01-001'],
- 'REV':['REV-PROFARMA01-001'],'VV':['VV-PROFARMA01-001'],'CTQ':['CTQ-PROFARMA01-001'],
- 'RELVV':['REL-VV-PROFARMA01-001'],'GCO':['GCO-PROFARMA01-001'],'GDE':['GDE-PROFARMA01-001'],
- 'MED':['MED-PROFARMA01-001'],'GQA':['GQA-PROFARMA01-001'],'RAC':['RAC-PROFARMA01-001'],
- 'ATAK':['ATA-PROFARMA01-001'],'ATAA':['ATA-PROFARMA01-002'],'CR':['CR-PROFARMA01-001'],
- 'LI':['LI-PROFARMA01-001'],'TAE':['TAE-PROFARMA01-001'],'GEST':['GEST-PROFARMA01'],
- 'ITP':['ITP-PROFARMA01-001'],'ATA_METAS':[],'ATA_VAL':[],'CAP':[],
-}
-GAS = {
- 'TAP':['TAP-GASMIG02-001','TAP-GASMIG02-002'],'PLA':['PLA-GASMIG02-001','PLA-GASMIG02-002'],
- 'ADAP':['ADAP-GASMIG02-001','ADAP-GASMIG02-002'],'REQ':['REQ-GASMIG02-001','REQ-GASMIG02-002'],
- 'RASTR':['RASTR-GASMIG02-001','RASTR-GASMIG02-002'],'PCP':['PCP-GASMIG02-001','PCP-GASMIG02-002'],
- 'VV':['VV-GASMIG02-001','VV-GASMIG02-002'],'ITP':['ITP-GASMIG02-002'],'REV':['REV-GASMIG02-001'],
- 'GDE':['GDE-GASMIG02-001'],'GCO':['GCO-GASMIG02-001'],'MED':['MED-GASMIG02-001'],
- 'GQA':['GQA-GASMIG02-001'],'RAC':['RAC-GASMIG02-001'],'ATAK':['ATA-GASMIG02-001'],
- 'ATAA':['ATA-GASMIG02-002','ATA-GASMIG02-003'],'CAP':['CAP-GASMIG02-001'],
- 'LI':['LI-GASMIG02-001'],'TAE':['TAE-GASMIG02-001','TAE-GASMIG02-002'],'GEST':['GEST-GASMIG02'],
- 'CR':[],'CTQ':[],'RELVV':[],'ATA_METAS':[],'ATA_VAL':[],
-}
 FRU = {
- 'TAP':['TAP-FRUKI01-001','TAP-FRUKI01-002'],'PLA':['PLA-FRUKI01-001','PLA-FRUKI01-002'],
- 'ADAP':['ADAP-FRUKI01-001','ADAP-FRUKI01-002'],'REQ':['REQ-FRUKI01-001','REQ-FRUKI01-002'],
- 'RASTR':['RASTR-FRUKI01-001','RASTR-FRUKI01-002'],'PCP':['PCP-FRUKI01-001','PCP-FRUKI01-002'],
- 'VV':['VV-FRUKI01-001','VV-FRUKI01-002'],'ITP':['ITP-FRUKI01-001','ITP-FRUKI01-002'],
- 'GDE':['GDE-FRUKI01-001'],'GCO':['GCO-FRUKI01-001'],'MED':['MED-FRUKI01-001'],
- 'GQA':['GQA-FRUKI01-001'],'RAC':['RAC-FRUKI01-001','RAC-FRUKI01-002'],'CR':['CR-FRUKI01-001'],
- 'LI':['LI-FRUKI01-001'],'ATAK':['ATA-FRUKI01-001','ATA-FRUKI01-008'],
- 'ATA_METAS':['ATA-FRUKI01-002'],'ATAA':['ATA-FRUKI01-003'],
+ 'TAP':['TAP-FRUKI01-001','TAP-FRUKI01-002'],
+ 'PLA':['PLA-FRUKI01-001','PLA-FRUKI01-002'],
+ 'ADAP':['ADAP-FRUKI01-001','ADAP-FRUKI01-002'],
+ 'REQ':['REQ-FRUKI01-001','REQ-FRUKI01-002'],
+ 'RASTR':['RASTR-FRUKI01-001','RASTR-FRUKI01-002'],
+ 'PCP':['PCP-FRUKI01-001','PCP-FRUKI01-002'],
+ 'VV':['VV-FRUKI01-001','VV-FRUKI01-002'],
+ 'ITP':['ITP-FRUKI01-001','ITP-FRUKI01-002'],
+ 'GDE':['GDE-FRUKI01-001'],
+ 'GCO':['GCO-FRUKI01-001'],
+ 'MED':['MED-FRUKI01-001'],
+ 'GQA':['GQA-FRUKI01-001'],
+ 'RAC':['RAC-FRUKI01-001'],
+ 'CR':['CR-FRUKI01-001'],
+ 'LI':['LI-FRUKI01-001'],
+ 'TAE':['TAE-FRUKI01-001','TAE-FRUKI01-002'],
+ 'ATAK':['ATA-FRUKI01-001','ATA-FRUKI01-008'],
+ 'ATA_METAS':['ATA-FRUKI01-002'],
+ 'ATAA':['ATA-FRUKI01-003'],
  'ATA_VAL':['ATA-FRUKI01-004','ATA-FRUKI01-005','ATA-FRUKI01-006','ATA-FRUKI01-007'],
- 'TAE':['TAE-FRUKI01-001','TAE-FRUKI01-002'],'REV':[],'CTQ':[],'RELVV':[],'CAP':[],
+ 'GEST':['GEST-FRUKI01-001'],
+ 'REV':[],'CTQ':[],'RELVV':[],'CAP':[],
 }
-AASP = {
- 'TAP':['TAP-AASPCNJ01-001'],'PLA':['PLA-AASPCNJ01-001'],'ADAP':['ADAP-AASPCNJ01-001'],
- 'REQ':['REQ-AASPCNJ01-001'],'RASTR':['RASTR-AASPCNJ01-001'],'PCP':['PCP-AASPCNJ01-001'],
- 'ITP':['ITP-AASPCNJ01-001'],'VV':['VV-AASPCNJ01-001'],'RELVV':['REL-VV-AASPCNJ01-001'],
- 'GCO':['GCO-AASPCNJ01-001'],'GDE':['GDE-AASPCNJ01-001'],'MED':['MED-AASPCNJ01-001'],
- 'GQA':['GQA-AASPCNJ01-001'],'RAC':['RAC-AASPCNJ01-001'],'ATAK':['ATA-AASPCNJ01-001'],
- 'CAP':['CAP-AASPCNJ01-001'],'CR':['CR-AASPCNJ01-001'],'GEST':['GEST-AASPCNJ01'],
- 'REV':['REV-AASPCNJ01-001'],'LI':[],'CTQ':[],'ATAA':[],'ATA_METAS':[],'ATA_VAL':[],'TAE':[],
+AASPAP = {
+ 'TAP':['TAP-AASPAP01-001'],
+ 'PLA':['PLA-AASPAP01-001'],
+ 'ADAP':['ADAP-AASPAP01-001'],
+ 'REQ':['REQ-AASPAP01-001'],
+ 'RASTR':['RASTR-AASPAP01-001'],
+ 'PCP':['PCP-AASPAP01-001'],
+ 'REV':['REV-AASPAP01-001'],
+ 'VV':['VV-AASPAP01-001'],
+ 'RELVV':['REL-VV-AASPAP01-001'],
+ 'ITP':['ITP-AASPAP01-001'],
+ 'GCO':['GCO-AASPAP01-001'],
+ 'GDE':['GDE-AASPAP01-001'],
+ 'MED':['MED-AASPAP01-001'],
+ 'GQA':['GQA-AASPAP01-001'],
+ 'RAC':['RAC-AASPAP01-001'],
+ 'ATAK':['ATA-AASPAP01-001'],
+ 'CR':['CR-AASPAP01-001','CR-AASPAP01-002'],
+ 'GEST':['GEST-AASPAP01'],
+ 'LI':[],'CTQ':[],'CAP':[],'ATAA':[],'ATA_METAS':[],'ATA_VAL':[],'TAE':[],
 }
-PROJECTS = [('PROFARMA',PROF),('GASMIG',GAS),('FRUKI',FRU),('AASP_CNJ',AASP)]
-PCOL = {'PROFARMA':3,'GASMIG':4,'FRUKI':5,'AASP_CNJ':6}  # C,D,E,F
+
+PROJECTS = [('FRUKI', FRU), ('AASP_AP', AASPAP)]
+PCOL = {'FRUKI': 3, 'AASP_AP': 4}  # C, D
 
 # Descricao legivel por role — vai para col A das linhas de evidencia
 ROLE_LABELS = {
@@ -140,12 +136,13 @@ IND_ROLES = {
 }
 
 # ============ ORG SHEETS ============
-GCO_REG=[('GCO-PROFARMA01-001',None,None),('GCO-GASMIG02-001',None,None),('GCO-FRUKI01-001',None,None),('GCO-AASPCNJ01-001',None,None)]
-MED_REG=[('MED-PROFARMA01-001',None,None),('MED-GASMIG02-001',None,None),('MED-FRUKI01-001',None,None),('MED-AASPCNJ01-001',None,None)]
-GDE_REG=[('GDE-PROFARMA01-001',None,None),('GDE-GASMIG02-001',None,None),('GDE-FRUKI01-001',None,None),('GDE-AASPCNJ01-001',None,None)]
-GQA_REG=[('GQA-PROFARMA01-001',None,None),('GQA-GASMIG02-001',None,None),('GQA-FRUKI01-001',None,None),('GQA-AASPCNJ01-001',None,None)]
-LI_REG =[('LI-PROFARMA01-001',None,None),('LI-GASMIG02-001',None,None),('LI-FRUKI01-001',None,None)]
-ADAP_REG=[('ADAP-PROFARMA01-001',None,None),('ADAP-GASMIG02-001',None,None),('ADAP-GASMIG02-002',None,None),('ADAP-FRUKI01-001',None,None),('ADAP-FRUKI01-002',None,None),('ADAP-AASPCNJ01-001',None,None)]
+GCO_REG =[('GCO-FRUKI01-001',None,None),('GCO-AASPAP01-001',None,None)]
+MED_REG =[('MED-FRUKI01-001',None,None),('MED-AASPAP01-001',None,None)]
+GDE_REG =[('GDE-FRUKI01-001',None,None),('GDE-AASPAP01-001',None,None)]
+GQA_REG =[('GQA-FRUKI01-001',None,None),('GQA-AASPAP01-001',None,None)]
+LI_REG  =[('LI-FRUKI01-001',None,None)]
+ADAP_REG=[('ADAP-FRUKI01-001',None,None),('ADAP-FRUKI01-002',None,None),
+          ('ADAP-AASPAP01-001',None,None)]
 REGCAP=[(f'REG-CAP-{n}',None,None) for n in ['001','001B','002','002B','003','004','005','006','007','008','009','010','011','012','013']]
 AVACAP=[(f'AVA-CAP-{n}',None,None) for n in ['001','002','003','004','005']]
 
@@ -174,7 +171,7 @@ ORG_EV = {
  'GDE 5':[('PRO-GDE-001','§5',None)],
  'GDE 6':[('PRO-GDE-001','§5',None),('TPL-GDE-001',None,None)]+GDE_REG,
  'CAP 1+':[('PLA-CAP-001','§3',None),('PRO-CAP-001',None,None)],
- 'CAP 2':[('PLA-CAP-001','§4',None),('TPL-CAP-001',None,None),('CAP-GASMIG02-001',None,None),('CAP-AASPCNJ01-001',None,None),('PRO-CAP-001',None,None)]+REGCAP,
+ 'CAP 2':[('PLA-CAP-001','§4',None),('TPL-CAP-001',None,None),('PRO-CAP-001',None,None)]+REGCAP,
  'CAP 3':[('PLA-CAP-001','§5',None),('REL-CAP-001',None,None),('PRO-CAP-001',None,None)]+AVACAP,
  'CAP 4':[('PLA-CAP-001','§6',None),('REG-CAP-CV-001',None,None),('PRO-CAP-001',None,None)],
  'GPC 1':[('PLA-GPC-001','§2',None)],
@@ -302,28 +299,17 @@ for sheet in ['AQU','GCO','MED','GDE','CAP','GPC','OSW']:
             ws.cell(row=rr, column=3, value=rating).alignment = CENTER
 
 # ---- CP_Projeto ----
-PLA_ALL=[('PLA-PROFARMA01-001',None,None),('PLA-GASMIG02-001',None,None),('PLA-GASMIG02-002',None,None),
-         ('PLA-FRUKI01-001',None,None),('PLA-FRUKI01-002',None,None),('PLA-AASPCNJ01-001',None,None)]
-VV_ALL =[('VV-PROFARMA01-001',None,None),('VV-GASMIG02-001',None,None),('VV-FRUKI01-001',None,None),('VV-AASPCNJ01-001',None,None)]
-REV_ALL=[('REV-PROFARMA01-001',None,None),('REV-GASMIG02-001',None,None),('REV-AASPCNJ01-001',None,None)]
+PLA_ALL=[('PLA-FRUKI01-001',None,None),('PLA-FRUKI01-002',None,None),
+         ('PLA-AASPAP01-001',None,None)]
+VV_ALL =[('VV-FRUKI01-001',None,None),('VV-AASPAP01-001',None,None)]
+REV_ALL=[('REV-AASPAP01-001',None,None)]
 REGCAP5=[(f'REG-CAP-{n}',None,None) for n in ['001','002','003','004','005']]
-
-def block_text(items):
-    out = []
-    for it in items:
-        if isinstance(it, str): out.append(it); continue
-        code, sec, ext = it
-        url = get_url(code, ext)
-        if not url: continue
-        fname = get_fname(code, ext)
-        out.append(f"{fname} {sec} — {url}" if sec else f"{fname} — {url}")
-    return "\n".join(out)
 
 CP_PROJ_ROWS = {4:'i',9:'ii',14:'iii',19:'iv',24:'v',29:'vi',33:'vii'}
 CP_PROJ_EV = {
- 'i':["Registros de execucao dos 4 projetos (evidencia detalhada nas abas GPR/REQ/PCP/ITP/VV):"]+PLA_ALL+VV_ALL,
+ 'i':["Registros de execucao dos 2 projetos (evidencia detalhada nas abas GPR/REQ/PCP/ITP/VV):"]+PLA_ALL+VV_ALL,
  'ii':["Adaptacao do processo-padrao por projeto:"]+ADAP_REG+[('PRO-GPC-001',None,None),('GUIA-GPC-001',None,None)],
- 'iii':[('PLA-CAP-001',None,None),('PRO-CAP-001',None,None),('CAP-GASMIG02-001',None,None),('CAP-AASPCNJ01-001',None,None)]+REGCAP5,
+ 'iii':[('PLA-CAP-001',None,None),('PRO-CAP-001',None,None)]+REGCAP5,
  'iv':[('EST-GPC-001',None,None),('GQA-ORG-001',None,None),('TPL-GPC-001',None,None)]+GQA_REG,
  'v':GQA_REG+REV_ALL+[('TPL-GPC-001',None,None)],
  'vi':LI_REG+[('REG-GPC-001',None,None)],
@@ -396,5 +382,5 @@ for proc, col in CPO_PROC_COL.items():
 
 wb.save(OUT)
 print("Saved:", OUT)
-print("\nMISSING CODES (", len(MISSING), "):")
+print(f"\nMISSING CODES ({len(MISSING)}):")
 for m in sorted(MISSING): print("  -", m)
