@@ -7,8 +7,8 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Produto** | ms.auxo.gruposusuarios |
 | **Repositório** | Azure DevOps · komatsuhenry67/gerenciador-aasp/ms.auxo.gruposusuarios |
-| **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
-| **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
+| **GP / Tech Lead** | Abraão Oliveira (GP) · Cézar Velázquez (TL) — Timeware Brasil |
+| **Desenvolvedores** | Renan Kioshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
 | **PO** | Marcos Turnes — AASP |
 | **QA** | Leonardo Francisco Pereira — AASP |
 | **Data base** | 26/05/2026 |
@@ -19,7 +19,7 @@
 
 ## 1. Objetivo
 
-Descrever a estratégia de integração do microsserviço ms.auxo.gruposusuarios com os demais componentes do sistema Gerenciador AASP, definindo a ordem de integração, os critérios de prontidão de cada fase, os ambientes utilizados e os resultados esperados. Este documento serve como evidência do processo de Integração (INT) e Verificação (VER) do nível C do MPS.BR.
+Descrever a estratégia de integração do microsserviço ms.auxo.gruposusuarios com os demais componentes do sistema Gerenciador AASP, definindo a ordem de integração, os critérios de prontidão de cada fase, os ambientes utilizados e os resultados esperados. Este documento serve como evidência dos processos de Integração do Produto (ITP) e Verificação e Validação (VV) do nível C do MPS.BR.
 
 ---
 
@@ -112,4 +112,4 @@ Esta interface representa o consumo dos endpoints REST do ms.auxo.gruposusuarios
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 26/05/2026 | Abraão | Versão inicial — estratégia de integração definida para as quatro fases do projeto |
+| 1.0 | 26/05/2026 | Abraão Oliveira | Versão inicial — estratégia de integração definida para as quatro fases do projeto |

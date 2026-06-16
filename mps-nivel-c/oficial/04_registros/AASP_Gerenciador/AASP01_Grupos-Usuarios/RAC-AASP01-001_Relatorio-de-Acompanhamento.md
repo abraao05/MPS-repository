@@ -7,8 +7,8 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Produto** | ms.auxo.gruposusuarios |
 | **Repositório** | Azure DevOps · komatsuhenry67/gerenciador-aasp/ms.auxo.gruposusuarios |
-| **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
-| **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
+| **GP / Tech Lead** | Abraão Oliveira (GP) · Cézar Velázquez (TL) — Timeware Brasil |
+| **Desenvolvedores** | Renan Kioshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
 | **PO** | Marcos Turnes — AASP |
 | **QA** | Leonardo Francisco Pereira — AASP |
 | **Data do relatório** | 15/06/2026 |
@@ -93,7 +93,7 @@ Com AG-23 em ~70% e AG-24 em ~40% na metade da sprint, a projeção é de conclu
 | Sprint | Período | Histórias / Entregas | SP | Status | Observação |
 |---|---|---|---|---|---|
 | S3 | 23/06–04/07/2026 | AG-25 — Relatórios consolidados (RF-09 · GET /grupos/relatorio) | 20 | 📅 Planejado | Sem ajustes de escopo até o momento; depende de AG-23 e AG-24 concluídos |
-| S4 | 07/07–11/07/2026 | Encerramento: TAE (Testes de Aceite Final), LI (Lições Aprendidas), GQA (revisão de qualidade), homologação final em ambiente AASP | 8 | 📅 Planejado | Depende do aceite formal de S3 por Marcos Turnes; homologação conduzida por Leonardo Francisco Pereira |
+| S4 | 07/07–11/07/2026 | Encerramento: TAE (Termo de Encerramento e Aceite), LI (Lições Aprendidas), GQA (Registro de Verificação de GQA), homologação final em ambiente AASP | 8 | 📅 Planejado | Depende do aceite formal de S3 por Marcos Turnes; homologação conduzida por Leonardo Francisco Pereira |
 
 ---
 
@@ -122,5 +122,5 @@ O próximo relatório de acompanhamento está previsto para **20/06/2026**, ao e
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 09/06/2026 | Abraão | Versão inicial — snapshot pós-Sprint 1 com resultados de entrega, qualidade e aceite formal |
-| 1.1 | 15/06/2026 | Abraão | Atualização com status parcial de Sprint 2 (AG-23 ~70%, AG-24 ~40%), riscos ativos e métricas consolidadas |
+| 1.0 | 09/06/2026 | Abraão Oliveira | Versão inicial — snapshot pós-Sprint 1 com resultados de entrega, qualidade e aceite formal |
+| 1.1 | 15/06/2026 | Abraão Oliveira | Atualização com status parcial de Sprint 2 (AG-23 ~70%, AG-24 ~40%), riscos ativos e métricas consolidadas |

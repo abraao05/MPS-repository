@@ -8,7 +8,7 @@
 | Produto       | ms.auxo.gruposusuarios                                                |
 | Versão        | 1.1                                                                   |
 | Data          | 26/05/2026                                                            |
-| Autor         | Abraão                                                         |
+| Autor         | Abraão Oliveira                                                         |
 | Status        | Aprovado                                                              |
 
 ---
@@ -51,7 +51,7 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 | RNF-02 | Segurança        | Autenticação via JWT; comunicação exclusivamente por HTTPS                             |
 | RNF-03 | Rastreabilidade  | Todas as operações de escrita devem ser rastreáveis via tabela `AuditoriaGrupos`       |
 | RNF-04 | Compatibilidade  | Stack obrigatória: .NET Framework 4.7.2 e Dapper; SQL Server como SGBD                |
-| RNF-05 | Manutenibilidade | Cobertura mínima de 70% de testes unitários por módulo                                 |
+| RNF-05 | Manutenibilidade | Cobertura mínima de 80% de testes unitários por módulo                                 |
 
 ## 5. Regras de Negócio
 
@@ -90,5 +90,5 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 
 | Versão | Data       | Autor          | Descrição                                        |
 |--------|------------|----------------|--------------------------------------------------|
-| 1.0    | 19/05/2026 | Abraão  | Levantamento inicial dos requisitos (kickoff)    |
-| 1.1    | 26/05/2026 | Abraão  | Refinamento dos requisitos para Sprint 1         |
+| 1.0    | 19/05/2026 | Abraão Oliveira  | Levantamento inicial dos requisitos (kickoff)    |
+| 1.1    | 26/05/2026 | Abraão Oliveira  | Refinamento dos requisitos para Sprint 1         |

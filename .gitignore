@@ -1,1 +1,4 @@
 exports/
+
+# Arquivos de lock do LibreOffice/OpenOffice
+.~lock.*#

@@ -7,7 +7,7 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
-| **Gerente de Projeto** | Abraão |
+| **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | VV (evidência de projeto) |
 
 ---
@@ -81,7 +81,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 | GRP-03 | AG-20 | Atualizar nome e descrição de grupo existente via PUT — persistência validada | OK |
 | GRP-04 | AG-20 | Soft delete de grupo — campo Ativo=false; grupo não aparece em listagem ativa | OK |
 | GRP-05 | AG-20 | Tentar criar grupo com nome duplicado — sad path; erro 409 retornado corretamente | OK |
-| PERM-01 | AG-21 | Associar permissões válidas (Leitura, Escrita, Administração) a um grupo — persistência validada | OK |
+| PERM-01 | AG-21 | Associar permissões válidas (Leitura, Escrita, Administracao) a um grupo — persistência validada | OK |
 | PERM-02 | AG-21 | Tentar associar permissão inválida (fora do enum) — sad path; erro 400 retornado corretamente | OK |
 | VINC-01 | AG-22 | Vincular usuário ativo a um grupo — associação registrada em UsuariosGrupo | OK |
 | VINC-02 | AG-22 | Desvincular usuário de um grupo via DELETE — soft delete do vínculo validado | OK |
@@ -150,10 +150,10 @@ Os cenários de aceite da Sprint 2 (AUD-01, AUD-02 para AG-23; INT-01 para AG-24
 
 | Pendência | Responsável | Previsão |
 |---|---|---|
-| Completar implementação dos triggers de auditoria para operação DELETE (AG-23) | Renan Kiyoshi | 17/06/2026 |
-| Testes de integração com ms.temis.vinculos em ambiente dev compartilhado (AG-24) | Renan Kiyoshi | 18/06/2026 |
+| Completar implementação dos triggers de auditoria para operação DELETE (AG-23) | Renan Kioshi | 17/06/2026 |
+| Testes de integração com ms.temis.vinculos em ambiente dev compartilhado (AG-24) | Renan Kioshi | 18/06/2026 |
 | UAT — Leonardo Francisco Pereira executa cenários AUD-01, AUD-02 e INT-01 | Leonardo Francisco Pereira (AASP) | 19–20/06/2026 |
-| Sprint Review e aceite formal Sprint 2 com Marcos Turnes | Abraão + Marcos Turnes | 20/06/2026 — 14h00 Teams |
+| Sprint Review e aceite formal Sprint 2 com Marcos Turnes | Abraão Oliveira + Marcos Turnes | 20/06/2026 — 14h00 Teams |
 
 ---
 
@@ -162,7 +162,7 @@ Os cenários de aceite da Sprint 2 (AUD-01, AUD-02 para AG-23; INT-01 para AG-24
 | Sprint | Histórias Planejadas | Status |
 |---|---|---|
 | Sprint 3 (23/06–04/07/2026) | AG-25 — Relatórios (GET /grupos/relatorio) | Planejado — aguarda conclusão da Sprint 2 |
-| Sprint 4 (07/07–18/07/2026) | Encerramento do projeto: TAE (Termo de Aceite Final), LI (Lições Aprendidas), GQA (Revisão de Qualidade Final), Homologação final com AASP | Planejado — aguarda conclusão da Sprint 3 |
+| Sprint 4 (07/07–11/07/2026) | Encerramento do projeto: TAE (Termo de Encerramento e Aceite), LI (Lições Aprendidas), GQA (Registro de Verificação de GQA), Homologação final com AASP | Planejado — aguarda conclusão da Sprint 3 |
 
 ---
 
@@ -185,5 +185,5 @@ Os cenários de aceite da Sprint 2 (AUD-01, AUD-02 para AG-23; INT-01 para AG-24
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 09/06/2026 | Abraão | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
-| 1.1 | 15/06/2026 | Abraão | Inclusão dos resultados parciais da Sprint 2 (AG-23 ~70%, AG-24 ~40%); seções 4 e 6 atualizadas |
+| 1.0 | 09/06/2026 | Abraão Oliveira | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
+| 1.1 | 15/06/2026 | Abraão Oliveira | Inclusão dos resultados parciais da Sprint 2 (AG-23 ~70%, AG-24 ~40%); seções 4 e 6 atualizadas |
