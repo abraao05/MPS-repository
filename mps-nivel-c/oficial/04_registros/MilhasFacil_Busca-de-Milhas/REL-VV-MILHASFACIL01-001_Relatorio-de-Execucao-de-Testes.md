@@ -5,7 +5,7 @@
 | **Documento** | REL-VV-MILHASFACIL01-001 |
 | **Projeto** | MilhasFacil — Plataforma de Busca e Alerta de Passagens por Milhas |
 | **Cliente** | Hub de Milhas |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | VV |
@@ -206,7 +206,7 @@ Funcionalidade: Proteção de endpoints autenticados
 | Gate de cobertura | Pipeline CI (JaCoCo 80%) | Aprovado | Ativo desde a S4; CT-10 aprovado |
 | Aceitação manual — QA | Execução manual (sem ferramenta de gestão de testes) | Aprovado | Validação da QA Jonathan Alves na release v0.9.0; evidências geradas à mão |
 
-Os builds de CI do período (#52–#60) concluíram com sucesso, sustentando o gate de cobertura da API e a execução dos testes nos três repositórios. Os testes integrados de `FilteredSearchService` (CT-11) e de integração do `AirportRepository` (CT-12) foram integrados em `develop` na Sprint 9 e promovidos para `main` na release v0.9.0 com builds verdes, e validados manualmente pela QA Jonathan Alves.
+Os builds de CI recentes da S9 (#52–#60), dentro da série de CI do projeto (#41–#60), concluíram com sucesso, sustentando o gate de cobertura da API e a execução dos testes nos três repositórios. Os testes integrados de `FilteredSearchService` (CT-11) e de integração do `AirportRepository` (CT-12) foram integrados em `develop` na Sprint 9 e promovidos para `main` na release v0.9.0 com builds verdes, e validados manualmente pela QA Jonathan Alves.
 
 ![IMG-CI-02 — Resultado dos builds #52–#60 no pipeline de CI](evidencias/IMG-CI-02_builds-52-60.png)
 
@@ -238,3 +238,4 @@ Não há defeitos críticos em aberto. A não conformidade NC-001 (cobertura < 8
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Esclarecimento na §5 de que os builds #52–#60 são os recentes da S9, subconjunto da série de CI do projeto (#41–#60). |

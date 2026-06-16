@@ -7,7 +7,7 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
@@ -129,7 +129,7 @@ A release v0.9.0 (promoção `develop → homolog → main`, tag v0.9.0) integro
 
 | Versão | Arquivo | Objeto criado | Observações |
 |---|---|---|---|
-| V1 | `V1__create_users.sql` | `users` | PK `BIGSERIAL`, `email` único, `role` default `USER`; coluna `phone` adicionada via `ALTER TABLE` |
+| V1 | `V1__create_users.sql` | `users` | PK `UUID`, `email` único, `role` default `USER`; coluna `phone` adicionada via `ALTER TABLE` |
 | V2 | `V2__create_flight_history.sql` | `flight_history` | FK `user_id`; índice `idx_fh_user` |
 | V3 | `V3__create_route_preferences.sql` | `route_preferences` | `alert_frequency` default `DAILY`; `active` default `TRUE` |
 | V4 | `V4__create_notifications.sql` | `notifications` | `channel` default `WHATSAPP`; índice `idx_notif_user` |
@@ -294,3 +294,4 @@ O design da solução foi avaliado e aprovado por **Cézar Velazquez** (Tech Lea
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção da PK da migration V1 (`BIGSERIAL` → `UUID`) para consistência com a entidade `User` (UUID id) e o CTQ. |

@@ -5,7 +5,7 @@
 | **Documento** | MED-MILHASFACIL01-001 |
 | **Projeto** | MilhasFacil — Plataforma de Busca e Alerta de Passagens por Milhas |
 | **Cliente** | Hub de Milhas |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | MED (evidência de projeto) |
@@ -35,7 +35,7 @@ As medidas coletadas no projeto são mapeadas ao catálogo organizacional M1–M
 | Medida org. | Definição (PLA-MED-001) | Apuração no projeto | Valor / situação (S1–S8) |
 |---|---|---|---|
 | **M1** — Aderência ao prazo | (prazo real − prazo planejado) / prazo planejado | Sprints entregues nas datas planejadas; macro sem atraso (CR-MF-001 = 0 dia) | Dentro do esperado (0 desvio de prazo macro) |
-| **M2** — Esforço estimado × realizado | esforço real / esforço estimado | Horas reais / horas estimadas (§4.1) | 666 h / 614 h = **1,083 (+8,3%)** |
+| **M2** — Esforço estimado × realizado | esforço real / esforço estimado | Horas reais / horas estimadas (§4.1) | 666 h / 614 h = **1,085 (+8,5%)** |
 | **M3** — Velocity | pontos concluídos por sprint | Story points por sprint (§3) | Média **33,9 SP/sprint** (meta ≥ 30) |
 | **M4** — Itens entregues × planejados | itens concluídos / planejados na sprint | Aderência de SP por sprint (§4) e cards concluídos/planejados | 81%–94% por sprint |
 | **M5** — Densidade de defeitos | defeitos por sprint/entrega | Bugs (type Bug) por sprint (§3) | 0–3 por sprint; sem acúmulo |
@@ -93,7 +93,7 @@ Acompanhamento de planejamento vs. realizado por sprint, conforme a planilha de 
 | Story Points realizados | 271 SP |
 | Carry acumulado | 38 SP |
 | Horas estimadas | 614 h |
-| Horas reais | 666 h (+8,3%) |
+| Horas reais | 666 h (+8,5%) |
 | Velocity média | 33,9 SP/sprint |
 
 ---
@@ -143,3 +143,4 @@ A partir da S5 o projeto manteve NCs = 0. Quanto ao indicador "PRs sem revisor",
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção da razão de esforço (M2): 666 h / 614 h = 1,085 (+8,5%), antes 1,083 (+8,3%). |

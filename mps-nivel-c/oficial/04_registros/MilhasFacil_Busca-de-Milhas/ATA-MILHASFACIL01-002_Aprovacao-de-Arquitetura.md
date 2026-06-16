@@ -4,13 +4,15 @@
 |---|---|
 | **Documento** | ATA-MILHASFACIL01-002 |
 | **Projeto** | MilhasFacil — Plataforma de Busca e Alerta de Passagens por Milhas |
+| **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
+| **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Reunião** | Design Review — Aprovação da Arquitetura técnica da solução |
 | **Data** | 11/02/2026 |
 | **Horário** | 14h00 – 15h30 |
 | **Canal** | Microsoft Teams |
 | **Facilitador** | Cézar Velazquez (Tech Lead / Arquiteto) |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 
 ---
 
@@ -99,3 +101,4 @@ A arquitetura técnica da plataforma MilhasFacil foi **revisada e aprovada** nes
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — registro da reunião de Design Review e aprovação da arquitetura (PO + Tech Lead) realizada em 11/02/2026. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Inclusão dos campos de cabeçalho Código do projeto (MILHASFACIL01) e Organização (Timeware Brasil Softwares e Serviços LTDA), padronizando com os demais registros do projeto. |

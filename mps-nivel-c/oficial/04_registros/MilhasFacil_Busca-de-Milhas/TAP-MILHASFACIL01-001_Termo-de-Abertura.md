@@ -7,7 +7,7 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
@@ -36,7 +36,7 @@ O Hub de Milhas necessita de uma ferramenta própria que centralize a consulta d
   - RF07 — Perfil do usuário (GET/PATCH `/users/me`)
   - RF08 — Alertas agendados via Spring Scheduler
   - RF09 — Notificação WhatsApp via Z-API
-  - RF10 — Assinaturas BASIC/PREMIUM/ENTERPRISE
+  - RF10 — Assinaturas BASIC/PRO/ENTERPRISE
   - RF11 — Rotação de refresh token
   - RF12 — Logout com blacklist de jti em Redis
   - RF13 — Filtros avançados de busca (maxMiles / cabinType) — entregue na release v0.9.0 (main)
@@ -134,3 +134,4 @@ Modelo de sprints de 2 semanas. Início do projeto em 09/02/2026, término previ
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção do nome do plano de assinatura no RF10 (PREMIUM → PRO), alinhando ao enum real do código e ao REQ/PCP. |

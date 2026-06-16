@@ -7,7 +7,7 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
@@ -22,7 +22,25 @@ Registrar as adaptações aplicadas ao processo-padrão de desenvolvimento Timew
 
 ---
 
-## 2. Adaptações aplicadas
+## 2. Nível de adaptação do projeto (calibração)
+
+Conforme o Guia de Adaptação do Processo-Padrão (GUIA-GPC-001 §5), o projeto é classificado pela regra do **nível mais alto atingido em qualquer critério**.
+
+| Critério (GUIA-GPC-001 §5.1) | Situação do MilhasFacil | Nível |
+|---|---|---|
+| Duração | 09/02/2026 a 26/07/2026 (~5,5 meses) | Nível 2 |
+| Tamanho da equipe | 7 pessoas no projeto (GP; Tech Lead/Arquiteto/DevOps; QA; GQA; 3 desenvolvedores — DevOps = 5) | Nível 3 |
+| Complexidade técnica | Três serviços (API Spring Boot, Web Angular, Crawler Python); múltiplas integrações externas (Smiles, Azul, Latam e Z-API/WhatsApp); busca paralela; autenticação JWT com refresh e blacklist | Nível 2–3 |
+| Criticidade / SLA contratual | Sem SLA contratual rígido; impacto operacional moderado | Nível 2 |
+| Regulação / compliance | Tratamento de dados pessoais de usuário (LGPD básico); sem regulação setorial | Nível 2 |
+
+**Nível de adaptação resultante: Nível 3 — Aprofundado**, determinado pelo tamanho da equipe e pela complexidade técnica multi-serviço com múltiplas integrações.
+
+Coerente com o Nível 3, o projeto mantém os produtos de trabalho mais formais previstos no GUIA-GPC-001 §5.2: documento de requisitos completo com **rastreabilidade bidirecional explícita** (RASTR §2 e §3), **automação de testes com métrica de cobertura** (JaCoCo; gate de 80% a partir da S4), **plano de integração independente** (ITP) e **GQA por ciclo/sprint** (auditorias GQA-A01/A02/A03). As adaptações registradas na seção seguinte ajustam a *profundidade e a forma* de execução, sem suprimir nenhum ponto de controle obrigatório (GUIA-GPC-001 §3).
+
+---
+
+## 3. Adaptações aplicadas
 
 | # | Item do processo-padrão | Decisão de adaptação | Justificativa |
 |---|---|---|---|
@@ -39,7 +57,7 @@ Registrar as adaptações aplicadas ao processo-padrão de desenvolvimento Timew
 
 ---
 
-## 3. Itens sem adaptação (processo-padrão mantido)
+## 4. Itens sem adaptação (processo-padrão mantido)
 
 - Controle de versão de código no Azure DevOps (Git), com branch padrão main nos três repositórios.
 - PR obrigatório para develop antes do merge, com aprovação do Tech Lead (Cézar Velazquez).
@@ -51,7 +69,7 @@ Registrar as adaptações aplicadas ao processo-padrão de desenvolvimento Timew
 
 ---
 
-## 4. Impacto das adaptações no projeto
+## 5. Impacto das adaptações no projeto
 
 | Adaptação | Impacto observado |
 |---|---|
@@ -63,7 +81,7 @@ Registrar as adaptações aplicadas ao processo-padrão de desenvolvimento Timew
 
 ---
 
-## 5. Processos não aplicáveis ao projeto
+## 6. Processos não aplicáveis ao projeto
 
 | Processo | Aplicável? | Justificativa |
 |---|---|---|
@@ -76,3 +94,4 @@ Registrar as adaptações aplicadas ao processo-padrão de desenvolvimento Timew
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Inclusão da seção 2 (Nível de adaptação / calibração conforme GUIA-GPC-001 §5): projeto classificado como Nível 3 — Aprofundado; renumeração das seções seguintes. |
