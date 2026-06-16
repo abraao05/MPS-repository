@@ -169,6 +169,12 @@ DATA = r"""
 04_registros/AASP_Andamento-Processuais|||PCP-AASPAP01-001_Documento-de-Design.docx|||1MkxkyhMa5O4d9ee1JVYHNZV59BxiHU3m
 04_registros/AASP_Andamento-Processuais|||GDE-AASPAP01-001_Registro-de-Analise-de-Decisao.docx|||1sDGfP0m6WdyKS4MYzHLLZNNQCyus0xJw
 04_registros/AASP_Andamento-Processuais|||GQA-AASPAP01-001_Registro-de-GQA.docx|||19WE56UNWv-aVGiPL24PzStXvX1NuplXF
+04_registros/AASP_Andamento-Processuais|||MQ-AASPAP01-001_Definicao-de-Metas-de-Qualidade.docx|||1xsxRl8hMbuDqZIcyrSTe9niJJuYLldRn
+04_registros/AASP_Andamento-Processuais|||ATA-AASPAP01-002_Ata-de-Acompanhamento-Fase-1.docx|||1o5hMgR4SdNrl2fakLB59tI0JOtZWxlwD
+04_registros/AASP_Andamento-Processuais|||ATA-AASPAP01-003_Ata-de-Acompanhamento-Fase-2.docx|||1L5XOH48-U99-Y1mdKjuNV_UCY_bZCxJo
+04_registros/AASP_Andamento-Processuais|||ATA-AASPAP01-004_Ata-de-Acompanhamento-Fase-3.docx|||1KTLJHZC0eTeQ429HoZqPT5SoF27e_aMw
+04_registros/AASP_Andamento-Processuais|||ATA-AASPAP01-005_Ata-de-Acompanhamento-Fase-4.docx|||1U8rsYKXxRluVYXT1UNe3h5RlWmJGvS6-
+04_registros/AASP_Andamento-Processuais|||REV-AASPAP01-002_Registro-de-Revisao-por-Pares-por-Entrega.docx|||1ijB8cHIMAWWH29ZHGjN2ByonolS_z-XE
 04_registros/AASP_Andamento-Processuais/evidencias|||andamentos_historicoPreservado2.jpg|||1l8sW0voE8k-y6ew1dTbd5aePqlr5UffM
 04_registros/AASP_Andamento-Processuais/evidencias|||andamentos_ApisParceiras.jpg|||1di53G9P1RLs2VtusPoTRJay3fOG7c1L2
 04_registros/AASP_Andamento-Processuais/evidencias|||devops_andamentos_commits.png|||1fkX4bzm8iFGVFOtMtIK4rEtjZhF1bomY
