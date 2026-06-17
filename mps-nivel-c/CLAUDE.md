@@ -34,7 +34,9 @@ Repositório dos ativos de processo da **Timeware** para a avaliação **MPS-SW 
 
 ### Ao editar um documento
 - Toda alteração relevante **incrementa a versão** (menor para ajustes, maior para mudanças estruturais).
-- **Adicione uma linha no histórico de revisões** ao final do documento, com versão, data, autor ("Time de Melhoria Contínua") e descrição da mudança.
+- **Adicione uma linha no histórico de revisões** ao final do documento, com versão, data, autor e descrição da mudança.
+  - **Documentos de definição organizacional** (POL, CONV, PRO, EST, PLA organizacional, GUIA, TPL, MAPA): autor = **"Time de Melhoria Contínua"**.
+  - **Registros de projeto** (`oficial/04_registros/`): autor = o **papel do projeto que executa o artefato (o "R" da matriz `MAPA-ORG-001` §3)** — ex.: Gerente de Projeto (GPR: TAP/PLA/RAC/CR/ADAP), Tech Lead/Arquiteto (REQ/PCP/ITP/RASTR), QA + Gerente de Projeto (VV), Auditor de GQA independente (GQA). E a **data reflete o momento real do artefato na linha do tempo do projeto** (datas retroativas são intencionais — regra 3), não a data de consolidação. O "Time de Melhoria Contínua" é a **autoridade (A)** que aprova o processo, **não o autor** do registro.
 - Atualize o campo **Data** do cabeçalho para a data da versão atual.
 - Se o documento for referenciado no `MAPA-ORG-001`, atualize a versão lá também.
 
