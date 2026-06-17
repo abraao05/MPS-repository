@@ -45,6 +45,7 @@ projects = [
         inicio=datetime.date(2025, 6, 5),
         termino=datetime.date(2026, 1, 15),
         fase='Concluído',
+        sprint_ou_fase='Concluído',
         importancia='Alta',
         selecao='Sim',
         justificativa=(
@@ -68,6 +69,7 @@ projects = [
         inicio=datetime.date(2025, 12, 15),
         termino=None,
         fase='Construção',
+        sprint_ou_fase='Fase 5 — Implantação',
         importancia='Alta',
         selecao='Sim',
         justificativa=(
@@ -91,6 +93,7 @@ projects = [
         inicio=datetime.date(2025, 3, 17),
         termino=datetime.date(2026, 1, 29),
         fase='Concluído',
+        sprint_ou_fase='Concluído',
         importancia='Alta',
         selecao='Sim',
         justificativa=(
@@ -114,6 +117,7 @@ projects = [
         inicio=datetime.date(2025, 10, 1),
         termino=datetime.date(2026, 6, 30),
         fase='Construção',
+        sprint_ou_fase='Fase 7 — Homologação / Encerramento',
         importancia='Alta',
         selecao='Sim',
         justificativa=(
@@ -153,6 +157,7 @@ for i, proj in enumerate(projects):
 ws2 = wb['PLANO']
 for i, proj in enumerate(projects):
     ws2.cell(17 + i, 1).value = proj['nome']
+    ws2.cell(17 + i, 4).value = proj['sprint_ou_fase']  # col D = Sprint ou Fase (manual)
 
 
 # ─────────────────────────────────────────
