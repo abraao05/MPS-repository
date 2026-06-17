@@ -54,5 +54,5 @@
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 11/06/2026 | Time de Melhoria Contínua | Índice de registros do projeto AASPAP01 (inventário inicial). |
-| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Inclui Metas de Qualidade (MQ-001), Atas de Acompanhamento por fase (ATA-002 a 005) e Revisão por Pares por Entrega (REV-002). |
+| 1.0 | 12/06/2026 | Gerente de Projeto | Índice de registros do projeto AASPAP01 (inventário inicial). |
+| 1.1 | 16/06/2026 | Gerente de Projeto | Inclui Metas de Qualidade (MQ-001), Atas de Acompanhamento por fase (ATA-002 a 005) e Revisão por Pares por Entrega (REV-002). |

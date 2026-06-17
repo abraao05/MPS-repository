@@ -48,4 +48,4 @@ Fase 3 — Refatoração para suporte ao CNJ.
 ## Histórico de revisões
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 31/03/2026 | Time de Melhoria Contínua | Ata de acompanhamento da Fase 2, consolidada a partir de MED-AASPAP01-001 e do CR-AASPAP01-001. |
+| 1.0 | 31/03/2026 | Gerente de Projeto | Ata de acompanhamento da Fase 2, consolidada a partir de MED-AASPAP01-001 e do CR-AASPAP01-001. |

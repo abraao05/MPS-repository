@@ -47,4 +47,4 @@ Fase 2 — Estabilização e integração RabbitMQ.
 ## Histórico de revisões
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 27/02/2026 | Time de Melhoria Contínua | Ata de acompanhamento da Fase 1, consolidada a partir de MED-AASPAP01-001 §3 e do acompanhamento no GitLab. |
+| 1.0 | 27/02/2026 | Gerente de Projeto | Ata de acompanhamento da Fase 1, consolidada a partir de MED-AASPAP01-001 §3 e do acompanhamento no GitLab. |

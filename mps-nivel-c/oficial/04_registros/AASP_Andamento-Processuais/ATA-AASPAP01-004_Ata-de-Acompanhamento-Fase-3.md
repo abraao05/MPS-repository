@@ -48,4 +48,4 @@ Fase 4 — Tratamento de erros e validação.
 ## Histórico de revisões
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 29/05/2026 | Time de Melhoria Contínua | Ata de acompanhamento da Fase 3, consolidada a partir de MED-AASPAP01-001 §3-4 e de REL-VV-AASPAP01-001. |
+| 1.0 | 29/05/2026 | Gerente de Projeto | Ata de acompanhamento da Fase 3, consolidada a partir de MED-AASPAP01-001 §3-4 e de REL-VV-AASPAP01-001. |

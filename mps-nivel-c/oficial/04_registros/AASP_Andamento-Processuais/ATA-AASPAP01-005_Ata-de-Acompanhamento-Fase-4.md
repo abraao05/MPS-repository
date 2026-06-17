@@ -50,4 +50,4 @@ Fase 5 — Implantação (em andamento; encerramento previsto 30/06/2026).
 ## Histórico de revisões
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 12/06/2026 | Time de Melhoria Contínua | Ata de acompanhamento da Fase 4, consolidada a partir de MED-AASPAP01-001, CR-AASPAP01-002 e REL-VV-AASPAP01-001. |
+| 1.0 | 12/06/2026 | Gerente de Projeto | Ata de acompanhamento da Fase 4, consolidada a partir de MED-AASPAP01-001, CR-AASPAP01-002 e REL-VV-AASPAP01-001. |

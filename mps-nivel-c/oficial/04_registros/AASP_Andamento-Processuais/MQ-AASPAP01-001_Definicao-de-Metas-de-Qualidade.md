@@ -48,4 +48,4 @@ As metas são medidas e reportadas na Medição (MED-AASPAP01-001), verificadas 
 ## Histórico de revisões
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 15/12/2025 | Time de Melhoria Contínua | Definição das metas de qualidade do projeto no kickoff (alvos de prazo, esforço, defeitos, contenção, retrabalho, conformidade de processo e cobertura de testes). |
+| 1.0 | 15/12/2025 | Gerente de Projeto | Definição das metas de qualidade do projeto no kickoff (alvos de prazo, esforço, defeitos, contenção, retrabalho, conformidade de processo e cobertura de testes). |

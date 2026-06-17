@@ -1,6 +1,6 @@
 # REGISTRO DE REVISÃO POR PARES POR ENTREGA — AASP_ANDAMENTOSPROCESSUAIS
 
-REV-AASPAP01-002 · Versão 1.0 · 11/06/2026 · Timeware Brasil
+REV-AASPAP01-002 · Versão 1.0 · 09/06/2026 · Timeware Brasil
 
 | Campo | Valor |
 |---|---|
@@ -10,7 +10,7 @@ REV-AASPAP01-002 · Versão 1.0 · 11/06/2026 · Timeware Brasil
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Versão** | 1.0 |
-| **Data** | 11/06/2026 |
+| **Data** | 09/06/2026 |
 | **Processo MPS-SW** | VV (evidência de projeto) |
 | **Ferramenta** | GitLab (Merge Requests) |
 
@@ -32,4 +32,4 @@ Todas as entregas foram integradas após revisão por ao menos um par além do a
 ## Histórico de revisões
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 11/06/2026 | Time de Melhoria Contínua | Registro de revisão por pares por entrega (Merge Requests do GitLab), complementando o registro consolidado REV-AASPAP01-001. |
+| 1.0 | 09/06/2026 | Equipe Técnica | Registro de revisão por pares por entrega (Merge Requests do GitLab), complementando o registro consolidado REV-AASPAP01-001. |
