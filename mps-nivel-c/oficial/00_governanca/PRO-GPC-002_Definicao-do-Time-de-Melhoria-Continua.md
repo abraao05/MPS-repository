@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPC-002 — Definição do Time de Melhoria Contínua |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Silvio Baroni |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -86,6 +87,7 @@ Este documento corresponde ao resultado **GPC 6** do processo **Gerência de Pro
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 15/08/2025 | Time de Melhoria Contínua | Definição inicial do Time de Melhoria Contínua |
 | 1.1 | 21/11/2025 | Time de Melhoria Contínua | Inclusão da estrutura de patrocínio (CEO estratégico / COO operacional) e vínculo às Operações |
 | 1.2 | 05/06/2026 | Time de Melhoria Contínua | Adição de tabela de nomenclatura equivalente MPS (ATA-Reunião_EPG) na seção de rastreabilidade |

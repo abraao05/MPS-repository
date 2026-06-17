@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-PCP-001 — Processo de Projeto e Construção do Produto |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 15/12/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Cézar Velázquez |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -83,5 +84,6 @@ Este documento corresponde aos resultados do processo **Projeto e Construção d
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Cézar Velázquez |
 | 1.0 | 14/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de projeto e construção do produto |
 | 1.1 | 15/12/2025 | Time de Melhoria Contínua | Distinção entre design na concepção (pré-plano) e design adiantado nas sprints |

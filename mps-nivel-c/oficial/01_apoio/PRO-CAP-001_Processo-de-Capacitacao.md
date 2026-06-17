@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-CAP-001 — Processo de Capacitação |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 10/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Silvio Baroni |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -139,4 +140,5 @@ Este processo apoia diretamente os **atributos de capacidade CP-ii e CP-iii** do
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 10/06/2026 | Time de Melhoria Contínua | Versão inicial — definição formal do processo de capacitação, complementando o plano operacional PLA-CAP-001 e integrando a camada de evidências de competência (MAPA-ORG-001, REG-CAP-CV-001) |

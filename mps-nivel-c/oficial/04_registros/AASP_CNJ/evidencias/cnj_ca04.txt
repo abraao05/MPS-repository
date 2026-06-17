@@ -1,0 +1,151 @@
+{
+  "took" : 6068,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 68,
+    "successful" : 68,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 1,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "aasp_andamentos_segunda",
+        "_type" : "processo",
+        "_id" : "40494218020268260000",
+        "_score" : 1.0,
+        "_source" : {
+          "capa" : {
+            "dataDeDistribuicao" : "",
+            "situacao" : "MOVIMENTO",
+            "eletronico" : false,
+            "comarca" : "Fone: -",
+            "numeroAntigo" : "",
+            "classe" : "Agravo de Instrumento",
+            "juiz" : "ROGÉRIO MURILLO PEREIRA CIMINO",
+            "valorAcao" : "0.00"
+          },
+          "partesProcesso" : [
+            {
+              "tipo" : "AUTOR",
+              "nome" : "MAXWELL PEREIRA DE SOUZA",
+              "documentoParte" : "180.**********",
+              "advogados" : [ ]
+            },
+            {
+              "tipo" : "RÉU",
+              "nome" : "ASSOCIACAO EDUCACIONAL VIP",
+              "documentoParte" : "13.0**************",
+              "advogados" : [
+                "PAULO VITOR MORAES DE OLIVEIRA   SP359085"
+              ]
+            }
+          ],
+          "movimentacoes" : [
+            {
+              "data" : "2026-06-09T23:59:45",
+              "descricao" : "CONTRARRAZÕES - Refer. ao Evento: 9",
+              "evento" : 14,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-19T03:01:30",
+              "descricao" : "Publicado no DJ Eletrônico - no dia 19/05/2026 - Refer. aos Eventos: 9, 10, 11",
+              "evento" : 13,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-18T02:04:25",
+              "descricao" : "Disponibilizado no DJ Eletrônico - no dia 18/05/2026 - Refer. aos Eventos: 9, 10, 11",
+              "evento" : 12,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-15T13:16:26",
+              "descricao" : "Expedida/certificada a intimação eletrônicaRefer.  ao Evento 7(AGRAVANTE -  PATRICIA HELENA DAS NEVES SOUZA) Prazo: 15 dias Status:ABERTO Data inicial da contagem do prazo: 20/05/2026 00:00:00 Data final: 11/06/2026 23:59:59",
+              "evento" : 11,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-15T13:16:26",
+              "descricao" : "Expedida/certificada a intimação eletrônicaRefer.  ao Evento 7(AGRAVANTE -  MAXWELL PEREIRA DE SOUZA) Prazo: 15 dias Status:ABERTO Data inicial da contagem do prazo: 20/05/2026 00:00:00 Data final: 11/06/2026 23:59:59",
+              "evento" : 10,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-15T13:16:26",
+              "descricao" : "Expedida/certificada a intimação eletrônicaRefer.  ao Evento 7(AGRAVADO -  ASSOCIACAO EDUCACIONAL VIP) Prazo: 15 dias Status:FECHADO Data inicial da contagem do prazo: 20/05/2026 00:00:00 Data final: 11/06/2026 23:59:59",
+              "evento" : 9,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-12T13:41:57",
+              "descricao" : "Remetidos os Autos - CPRV2703S -> DP3UPJ",
+              "evento" : 8,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-12T13:41:57",
+              "descricao" : "Concedida em parte a Medida Liminar",
+              "evento" : 7,
+              "conteudoDocumento" : """<a class="infraLinkDocumento" href="controlador.php?acao=acessar_documento_publico&doc=611778603562344689420159095111&evento=611778603562344689420159123637&key=cd30ece5b85ff0b1fdb3bd4c50e8643f64d4b4e66202c7a26c05ca9064c5e4a0&hash=fb653f3e1ce187f87410749f805bdfb2" target="_blank" aria-label="Visualizar documento DESPADEC1 do tipo html " data-nome="DESPADEC" data-mimetype="html" data-doc="611778603562344689420159095111"><img src="infra_css/imagens/consultar.gif" title="Visualizar Documento" alt="Visualizar" class="infraImgNormal">DESPADEC1</a>"""
+            },
+            {
+              "data" : "2026-05-08T15:55:16",
+              "descricao" : "Remetidos os Autos - DCDP -> CPRV2703S",
+              "evento" : 6,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-08T15:19:34",
+              "descricao" : "Expedida/certificada a comunicação eletrônica - Custas: Não houve recolhimento de custas no processo originário. Guia criada automaticamente no momento da distribuição",
+              "evento" : 5,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-08T15:19:33",
+              "descricao" : "Link para pagamento - Guia: 772745423, subguia: 773446148",
+              "evento" : 4,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-08T15:19:32",
+              "descricao" : "Juntada - Guia Gerada - MAXWELL PEREIRA DE SOUZA - Guia 772745423 - R$ 576,30",
+              "evento" : 3,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-08T15:19:30",
+              "descricao" : "Remessa Interna para Revisão - CPRV2703S -> DCDP",
+              "evento" : 2,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            },
+            {
+              "data" : "2026-05-08T15:19:28",
+              "descricao" : "Distribuído por sorteio (CPRV2703G) - Ref. ao Despacho/Decisão do(s) evento(s) 114 do processo originário.Autos com o Relator",
+              "evento" : 1,
+              "conteudoDocumento" : "Evento não gerou documento(s)"
+            }
+          ],
+          "incidentes" : [ ],
+          "qtdeMovimentacoes" : 14,
+          "dataUltimaMovimentacao" : "2026-06-09T23:59:45",
+          "dataCaptura" : "2026-06-11T11:33:11.4130388-03:00",
+          "iD" : "40494218020268260000",
+          "numeroProcesso" : "4049421-80.2026.8.26.0000",
+          "instancia" : "Segunda",
+          "segredoJustica" : false,
+          "processoCapturaResposta" : 0,
+          "processoCapturaRespostaInt" : 1,
+          "codigoTribunal" : 26,
+          "codigoSegmentoJudiciario" : 8
+        }
+      }
+    ]
+  }
+}

@@ -4,8 +4,8 @@
 |---|---|
 | **Documento** | ADAP-FRUKI01-002 |
 | **Projeto** | SuperApp Fruki — Pacote Final 24 |
-| **Versão** | 1.1 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 13/06/2026 |
 | **Responsável pela adaptação** | Abraão Oliveira |
 
 ---
@@ -34,6 +34,7 @@
 | Revisão por pares | Sim | Revisão técnica das PRs pelo Jardel (Fruki) antes do merge; revisão interna pela equipe Timeware |
 | Registro de capacitação | Não aplicável | Sem treinamento formal de usuários no escopo |
 | Gestão de decisões arquiteturais (GDE) | Aplicável — simplificada | Decisão de renomeação "Caixa Preta" → "Regra de Ouro" registrada em `GDE-FRUKI01-001_Registro-de-Decisao.md` — Decisão 2; arquitetura React Native já estabelecida no Pacote 1 |
+| Aquisição (AQU) | Não aplicável | Igual ao Pacote 1: squad próprio Timeware, sem subcontratação de terceiro respondendo por entrega. APIs/dados fornecidos pela Fruki são insumos do cliente, fora do escopo de AQU (PRO-AQU-001 §2). |
 
 ## 3. Pontos de controle obrigatórios (não adaptáveis)
 
@@ -51,3 +52,4 @@
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | ITP-FRUKI01-002 e GDE-FRUKI01-001 referenciados explicitamente na tabela de etapas |
+| 1.2 | 13/06/2026 | Time de Melhoria Contínua | Registrada explicitamente a não aplicabilidade do processo de Aquisição (AQU) neste pacote, conforme PRO-AQU-001 §2 |

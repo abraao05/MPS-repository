@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REG-GPC-001 — Registro de Melhorias de Processo |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
+| **Responsável** | Silvio Baroni |
 | **Processo MPS-SW** | GPC (evidência organizacional — GPC 5, GPC 11) |
 
 ---
@@ -78,4 +79,5 @@ Este documento evidencia:
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 11/06/2026 | Time de Melhoria Contínua | Versão inicial — consolidação das 11 OMs dos projetos PROFARMA e GASMIG identificadas no ciclo de implantação MPS-SW Nível C |

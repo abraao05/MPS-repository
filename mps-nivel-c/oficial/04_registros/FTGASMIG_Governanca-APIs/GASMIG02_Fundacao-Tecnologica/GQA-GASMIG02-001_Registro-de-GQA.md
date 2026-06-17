@@ -3,11 +3,12 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GQA-GASMIG02-001 — Registro de Garantia da Qualidade |
-| **Versão** | 1.4 |
+| **Versão** | 1.5 |
 | **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | Fundação Tecnológica GASMIG — Governança de APIs |
 | **Auditor** | COO (Operações) |
+| **Normas de referência** | PRO-GPC-001 v2.2; EST-GPC-001 v1.3; GUIA-GPC-001 v1.2; PLA-MED-001 v1.3 |
 
 ---
 
@@ -30,9 +31,11 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto, verificando
 | Termo de abertura elaborado antes do início das atividades | ✅ Sim | TAP-GASMIG02-001 v1.0, assinado em 10/04/2026 |
 | Requisitos documentados e rastreáveis antes da configuração | ✅ Sim | REQ-GASMIG02-001 v1.0 |
 | Design técnico documentado e aprovado antes do deploy | ✅ Sim | PCP-GASMIG02-001 v1.0, elaborado em 15/04/2026 |
-| Adaptações ao processo formalizadas | ✅ Sim | ADAP-GASMIG02-001: testes substituídos por checklists de verificação |
+| Adaptações ao processo formalizadas (PRO-GPC-001 v2.2 como base) | ✅ Sim | ADAP-GASMIG02-001 v1.3: testes substituídos por checklists; referência a PRO-GPC-001 v2.2 e GUIA-GPC-001 v1.2 |
+| Seis pontos de controle obrigatórios do GUIA-GPC-001 v1.2 cobertos | ✅ Sim | Abertura, Requisitos, Design, Verificação, Homologação e Encerramento confirmados em ADAP-GASMIG02-001 v1.3 |
 | Plano de verificação executado com resultados registrados | ✅ Sim | VV-GASMIG02-001 com checklist e evidências |
 | Rastreabilidade mantida entre requisitos, design e verificação | ✅ Sim | RASTR-GASMIG02-001 v1.0 |
+| Indicadores de medição alimentados conforme PLA-MED-001 v1.3 | ✅ Sim | Indicadores de V&V (itens verificados/total) registrados em VV-GASMIG02-001 §5 |
 | Papéis e responsabilidades seguidos conforme planejado | ✅ Sim | Conforme PLA-GASMIG02-001, seção 6 |
 | Encerramento formal realizado com aceite do cliente | ✅ Sim | ATA-GASMIG02-002 + TAE-GASMIG02-001 |
 | **GCO-1** — ICs identificados e controlados com convenção de versão adotada | ✅ Sim | Azure DevOps com Git Flow e naming convention de IaC/policies documentados em GCO-GASMIG02-001 |
@@ -126,3 +129,4 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto, verificando
 | 1.2 | 05/06/2026 | Time de Melhoria Contínua | Correção do papel do auditor para COO (Operações), garantindo independência da GQA em relação à equipe de projeto |
 | 1.3 | 10/06/2026 | COO (Operações) | Fechamento da auditoria parcial OS-002; adição da auditoria de encerramento (§2.3); artefatos ⏳ atualizados para ✅ |
 | 1.4 | 11/06/2026 | Time de Melhoria Contínua | Adição de itens GCO-1 a GCO-3 nas três auditorias (OS-001, OS-002 parcial e OS-002 encerramento) — GCO 5 |
+| 1.5 | 11/06/2026 | Time de Melhoria Contínua | Adicionado campo Normas de referência no cabeçalho (PRO-GPC-001 v2.2, EST-GPC-001 v1.3, GUIA-GPC-001 v1.2, PLA-MED-001 v1.3); itens de auditoria ampliados com verificação dos 6 pontos de controle obrigatórios e dos indicadores de medição |

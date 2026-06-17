@@ -3,12 +3,13 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GQA-ORG-001 — Auditoria de GQA Organizacional |
-| **Versão** | 1.0 |
-| **Data** | 11/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 13/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Auditor** | COO (Operações) |
 | **Aprovação** | Time de Melhoria Contínua |
-| **Processo MPS-SW** | GPC (evidência organizacional — GPC 3, GPC 6, GPC 7) |
+| **Responsável** | Caroline Jenifer |
+| **Processo MPS-SW** | GPC (evidência organizacional — GPC 3, GPC 6, GPC 7); cobre também a verificação organizacional de AQU e OSW |
 
 ---
 
@@ -25,7 +26,7 @@ Esta auditoria corresponde ao `CHK-Auditoria Organizacional` previsto em EST-GPC
 | Item | Descrição |
 |---|---|
 | Período auditado | Jan/2026 – Jun/2026 |
-| Processos auditados | GPC (Gerência de Processos), MED (Medição), GCO organizacional, CAP (Capacitação), GDE (Gerência de Decisões) |
+| Processos auditados | GPC (Gerência de Processos), MED (Medição), GCO organizacional, CAP (Capacitação), GDE (Gerência de Decisões), AQU (Aquisição), OSW (Gerência Organizacional de Software) |
 | Data da auditoria | 11/06/2026 |
 | Auditor | COO (Operações) — independente das equipes que produziram os ativos |
 
@@ -91,6 +92,26 @@ Esta auditoria corresponde ao `CHK-Auditoria Organizacional` previsto em EST-GPC
 
 **Resultado GDE:** Conforme — 2/2 itens.
 
+### 3.6 Aquisição (AQU)
+
+| # | Item verificado | Resultado | Referência | Observação |
+|---|---|---|---|---|
+| 1 | Processo de aquisição documentado (critérios de seleção, acordo, monitoramento e revisão técnica) | ✅ Conforme | PRO-AQU-001 (§3–6); rastreabilidade AQU 1–4 (§9) | Processo definido e disponível na biblioteca organizacional |
+| 2 | Aplicabilidade da aquisição avaliada e registrada nos projetos do ciclo | ✅ Conforme | ADAP-PROFARMA01-001 §5; ADAP-GASMIG02-001/002 §2; ADAP-FRUKI01-001/002 §2; ADAP-AASPCNJ01-001 §2 | Nenhum projeto do ciclo subcontratou terceiro responsável por entrega; AQU registrado como **não aplicável**, com justificativa, em todas as adaptações |
+
+**Resultado AQU:** Conforme — 2/2 itens. Não houve aquisição no ciclo; a não aplicabilidade está documentada e justificada em todos os projetos (PRO-AQU-001 §2).
+
+### 3.7 Gerência Organizacional de Software (OSW)
+
+| # | Item verificado | Resultado | Referência | Observação |
+|---|---|---|---|---|
+| 1 | Diretrizes organizacionais de processos definidas e patrocinadas pela alta direção | ✅ Conforme | POL-ORG-001; PRO-OSW-001 §1–2 | Diretrizes alinhadas ao objetivo de crescer com qualidade e previsibilidade |
+| 2 | Governança organizacional documentada (recursos, autoridade/competências, riscos, medidas) | ✅ Conforme | PRO-OSW-001 §3–6; MAPA-ORG-001; EST-GPC-002; REG-MED-001 | Recursos garantidos, RACI definido e medidas organizacionais em uso |
+| 3 | Análise crítica dos processos pela direção conduzida | ✅ Conforme | PRO-OSW-001 §7 (ata no Confluence) | Cadência trimestral, conduzida pelo COO com reporte ao CEO |
+| 4 | Gestão de portfólio documentada e operada | ✅ Conforme | PRO-OSW-002; REG-OSW-001 | Portfólio do ciclo priorizado, com capacity acompanhado e sem conflito de recurso compartilhado no período |
+
+**Resultado OSW:** Conforme — 4/4 itens.
+
 ---
 
 ## 4. Resumo por área de processo
@@ -102,7 +123,9 @@ Esta auditoria corresponde ao `CHK-Auditoria Organizacional` previsto em EST-GPC
 | GCO (org) | 3 | 3 | 100% | Conforme |
 | CAP | 3 | 3 | 100% | Conforme |
 | GDE | 2 | 2 | 100% | Conforme |
-| **Total** | **23** | **23** | **100%** | **Conforme** |
+| AQU | 2 | 2 | 100% | Conforme |
+| OSW | 4 | 4 | 100% | Conforme |
+| **Total** | **29** | **29** | **100%** | **Conforme** |
 
 ---
 
@@ -118,7 +141,7 @@ Oportunidades de melhoria observadas (encaminhadas ao ciclo de GPC):
 
 ## 6. Parecer final
 
-A organização Timeware demonstra aderência plena aos processos organizacionais auditados neste ciclo (GPC, MED, GCO, CAP, GDE). Os ativos de processo estão documentados, os indicadores foram coletados e analisados, as melhorias foram identificadas e registradas, e as capacitações estão mapeadas. O ciclo de melhoria contínua está operante, com pelo menos uma melhoria implementada (OM-06) e efetividade verificada.
+A organização Timeware demonstra aderência plena aos processos organizacionais auditados neste ciclo (GPC, MED, GCO, CAP, GDE, AQU e OSW). Os ativos de processo estão documentados, os indicadores foram coletados e analisados, as melhorias foram identificadas e registradas, e as capacitações estão mapeadas. O processo de Aquisição (AQU) está definido e teve sua não aplicabilidade justificada e registrada nos projetos do ciclo; a governança organizacional e a gestão de portfólio (OSW) estão documentadas e operantes, com evidência consolidada no Painel de Portfólio (REG-OSW-001). O ciclo de melhoria contínua está operante, com pelo menos uma melhoria implementada (OM-06) e efetividade verificada.
 
 ---
 
@@ -127,8 +150,10 @@ A organização Timeware demonstra aderência plena aos processos organizacionai
 | Resultado | Como este documento atende |
 |---|---|
 | GPC 3 — estratégia de GQA executada por função independente | §2: auditor = COO (independente das equipes de processo); §3: verificação realizada |
-| GPC 6 — aderência dos processos verificada | §3.1: 8 itens GPC verificados com resultado conforme |
-| GPC 7 — produtos de trabalho organizacionais verificados | §3.1–3.5: produtos de trabalho auditados em todas as áreas |
+| GPC 6 — aderência dos processos verificada | §3.1–3.7: aderência verificada em GPC, MED, GCO, CAP, GDE, AQU e OSW |
+| GPC 7 — produtos de trabalho organizacionais verificados | §3.1–3.7: produtos de trabalho auditados em todas as áreas |
+
+Esta auditoria fornece também a **verificação objetiva (GQA) dos processos organizacionais AQU e OSW** — atendendo aos critérios iv e v do atributo de processo no nível organizacional (CP_Organizacional) para esses dois processos, antes cobertos apenas pelas definições de processo.
 
 ---
 
@@ -136,4 +161,6 @@ A organização Timeware demonstra aderência plena aos processos organizacionai
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Caroline Jenifer |
 | 1.0 | 11/06/2026 | COO (Operações) | Versão inicial — auditoria organizacional ao final do ciclo MPS-SW Nível C |
+| 1.1 | 13/06/2026 | COO (Operações) | Escopo ampliado com a verificação organizacional de AQU (§3.6) e OSW (§3.7); resumo (§4), parecer (§6) e rastreabilidade atualizados; total de 23 para 29 itens auditados |

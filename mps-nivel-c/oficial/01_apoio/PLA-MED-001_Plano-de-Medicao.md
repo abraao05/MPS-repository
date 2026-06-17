@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-MED-001 — Plano de Medição |
-| **Versão** | 1.3 |
+| **Versão** | 1.4 |
 | **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações), com patrocínio do Founder e CEO |
+| **Responsável** | Silvio Baroni |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -173,6 +174,7 @@ Este documento também sustenta o repositório organizacional de medidas (GPC 9)
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.4 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 08/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de medição |
 | 1.1 | 20/01/2026 | Time de Melhoria Contínua | Detalhamento da captura do indicador de retrabalho (subtarefas de bug no Jira) |
 | 1.2 | 14/05/2026 | Time de Melhoria Contínua | Revisão das definições operacionais dos indicadores |

@@ -113,8 +113,35 @@ Conforme ADAP-PROFARMA01-001 (A-08), o papel de responsável por GCO foi acumula
 
 ---
 
+## 8. Evidências de controle de configuração (Azure DevOps)
+
+### 8.1 Tags de baseline — repositório loja-backend
+
+Tags geradas ao longo do ciclo de vida do projeto, evidenciando GCO3 (baselines nos marcos do projeto).
+
+**Tags 2024–2025 (24.4.1.1 a 25.11.1.1):**
+
+![Tags de baseline 2024–2025 (24.4.1.1, 24.4.1.9, 24.4.1.10, 24.4.1.11, 24.9.1.2, 25.1.1.1, 25.2.1.1, 25.10.2.1, 25.11.1.1) — Azure DevOps loja-backend](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-tags-baseline-2024-2025.png)
+
+**Tags 2026 — pós go-live (26.1.1.1 a 26.3.2.1):**
+
+![Tags de baseline 2026 (26.1.1.1, 26.1.1.1-cadastro-clientes, 26.1.1.2, 26.1.1.3, 26.2.1.1, 26.3.1.2, 26.3.1.3, 26.3.2.1) — Azure DevOps loja-backend](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-tags-baseline-2026.png)
+
+### 8.2 Branches — estrutura Git Flow
+
+**Grupos feature/, fix/, hotfix/, release/ e branches de trabalho ativo:**
+
+![Branches: grupos feature/, fix/, hotfix/, release/ e branches Ajuste_OptIn_OptOut, ajuste_termoaceite, ajustes_cadastrais, Segmentacao_Clientes; develop (Default) — Azure DevOps](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-branches-estrutura-feature-fix-hotfix.png)
+
+**Branches feature/* expandido — nomenclatura rastreável:**
+
+![Branches feature/*: database-profarma-der, initial-setup, migration-console-app, playwright-e2e-tests, requisitos-funcionais-completos, user-authentication, validacoes-robustas — Azure DevOps](../../../_interno/evidencias-profarma-cezar/azure-devops/azuredevops-branches-feature-detalhes.png)
+
+---
+
 ## Histórico de revisões
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída consolidando o controle de configuração exercido durante o projeto |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Adição de §8 com evidências visuais de tags de baseline e branches do Azure DevOps |

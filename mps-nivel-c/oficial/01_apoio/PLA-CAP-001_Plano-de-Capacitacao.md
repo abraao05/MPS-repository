@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PLA-CAP-001 — Plano de Capacitação |
-| **Versão** | 1.1 |
-| **Data** | 10/02/2026 |
+| **Versão** | 1.3 |
+| **Data** | 13/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Silvio Baroni |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -71,7 +72,20 @@ A Timeware mantém os recursos necessários ao programa de capacitação:
 - **orçamento** para certificações e treinamentos externos, com incentivo e reconhecimento;
 - **materiais e trilhas** mantidos e atualizados, disponíveis aos colaboradores.
 
-A manutenção desses recursos é responsabilidade da área de Cultura e Pessoas, com apoio do COO.
+### 6.1. Orçamento do ciclo MPS-SW Nível C (2025–2026)
+
+Para o ciclo de implantação e avaliação MPS-SW Nível C, foram previstas e aprovadas pelo COO as seguintes despesas:
+
+| Item | Fornecedor/Órgão | Valor (R$) |
+|---|---|---|
+| Avaliação Oficial Nível C + Cursos CR1 e CR2 | ASR Consultoria | R$ 22.000,00 |
+| Taxa de avaliação SOFTEX | SOFTEX | R$ 6.861,00 |
+| Consultoria MPS (preparação e implantação) | Consultor externo | R$ 3.500,00 |
+| **Total aprovado** | | **R$ 32.361,00** |
+
+A aprovação do orçamento é responsabilidade do COO, com ciência do CEO.
+
+A manutenção dos recursos gerais de capacitação é responsabilidade da área de Cultura e Pessoas, com apoio do COO.
 
 ## 7. Papéis
 
@@ -109,5 +123,7 @@ Este documento corresponde aos resultados do processo **Capacitação (CAP)** do
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.3 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 22/09/2025 | Time de Melhoria Contínua | Definição inicial do plano de capacitação |
 | 1.1 | 10/02/2026 | Time de Melhoria Contínua | Formalização das fontes de necessidades de capacitação com tabela de responsáveis e ações (§3) |
+| 1.2 | 13/06/2026 | Time de Melhoria Contínua | Adicionada §6.1 com orçamento detalhado do ciclo MPS-SW Nível C (ASR, SOFTEX, consultoria) — evidência de CAP 4 e OSW 2 |

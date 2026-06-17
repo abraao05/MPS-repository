@@ -1,0 +1,67 @@
+ID,Titulo,Tipo,Pai,Sprint,Story Points,Status,Data Criacao,Data Entrega
+SCRUM-1,"Tarefa 1",Tarefa,,,,Tarefas pendentes,2026-06-12,2026-06-17
+SCRUM-2,"Tarefa 2",História,,,,Em andamento,2026-06-12,2026-06-22
+SCRUM-3,"Tarefa 3",Feature,,,,Em andamento,2026-06-12,
+SCRUM-4,"Subtarefa 2.1",Subtask,SCRUM-2,,,Tarefas pendentes,2026-06-12,
+SCRUM-5,"EP-01 — Fundação & Arquitetura",Epic,,,21,Tarefas pendentes,2026-06-12,2025-05-23
+SCRUM-6,"EP-02 — Gestão de Clientes",Epic,,,26,Tarefas pendentes,2026-06-12,2025-06-06
+SCRUM-7,"EP-03 — Fidelidade & Relacionamento",Epic,,,16,Tarefas pendentes,2026-06-12,2025-06-06
+SCRUM-8,"EP-04 — Integrações Externas",Epic,,,29,Tarefas pendentes,2026-06-12,2025-06-27
+SCRUM-9,"EP-05 — Migração de Dados Legados",Epic,,,13,Tarefas pendentes,2026-06-12,2025-07-04
+SCRUM-10,"EP-06 — Qualidade & Testes",Epic,,,13,Tarefas pendentes,2026-06-12,2025-07-11
+SCRUM-11,"EP-07 — DevOps & Observabilidade",Epic,,,8,Tarefas pendentes,2026-06-12,2025-07-11
+SCRUM-12,"RF-01 — Setup da solução Clean Architecture .NET 8",História,SCRUM-5,SCRUM Sprint 1,5,Tarefas pendentes,2026-06-12,2025-05-16
+SCRUM-13,"RF-02 — Modelagem do domínio e infraestrutura de dados",História,SCRUM-5,SCRUM Sprint 1,16,Tarefas pendentes,2026-06-12,2025-05-23
+SCRUM-14,"RF-03 — CRUD de clientes com geração automática de ID (Cloud/ITEC)",História,SCRUM-6,SCRUM Sprint 1,21,Tarefas pendentes,2026-06-12,2025-05-30
+SCRUM-15,"RF-04 — Autenticação Azure AD e gestão segura de secrets",História,SCRUM-6,SCRUM Sprint 1,5,Tarefas pendentes,2026-06-12,2025-06-06
+SCRUM-16,"RF-05 — Opt-in/opt-out e gestão de fidelidade",História,SCRUM-7,SCRUM Sprint 1,8,Tarefas pendentes,2026-06-12,2025-06-02
+SCRUM-17,"RF-06 — Gestão de convênios (vincular/desvincular)",História,SCRUM-7,SCRUM Sprint 1,5,Tarefas pendentes,2026-06-12,2025-06-04
+SCRUM-18,"RF-07 — Gestão de filiais, redes e regiões",História,SCRUM-7,SCRUM Sprint 1,3,Tarefas pendentes,2026-06-12,2025-05-29
+SCRUM-19,"RF-08 — Integração CRM Plusoft — sincronização de clientes",História,SCRUM-8,SCRUM Sprint 1,8,Tarefas pendentes,2026-06-12,2025-06-18
+SCRUM-20,"RF-09 — Integração Propz fidelidade — 4 redes",História,SCRUM-8,SCRUM Sprint 2,8,Tarefas pendentes,2026-06-12,2025-06-18
+SCRUM-21,"RF-10 — Webhook OMS Maestro + callback D1000 (OAuth2)",História,SCRUM-8,SCRUM Sprint 2,13,Tarefas pendentes,2026-06-12,2025-06-27
+SCRUM-22,"RF-11 — Worker CadastroClientes.MigrationDirect — SQL Server → PostgreSQL",História,SCRUM-9,SCRUM Sprint 2,13,Tarefas pendentes,2026-06-12,2025-07-04
+SCRUM-23,"RF-12 — Testes unitários xUnit com cobertura ≥ 80%",História,SCRUM-10,SCRUM Sprint 2,8,Tarefas pendentes,2026-06-12,2025-07-07
+SCRUM-24,"RF-13 — Testes E2E com Playwright — fluxos críticos",História,SCRUM-10,SCRUM Sprint 2,5,Tarefas pendentes,2026-06-12,2025-07-11
+SCRUM-25,"RF-14 — CI/CD com Azure Pipelines e K8s/AKS",História,SCRUM-11,SCRUM Sprint 2,5,Tarefas pendentes,2026-06-12,2025-06-20
+SCRUM-26,"RF-15 — Observabilidade com Grafana e Prometheus",História,SCRUM-11,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-07-11
+SCRUM-27,"T-01 — Criar estrutura de projetos Clean Architecture (.NET 8)",Subtask,SCRUM-12,SCRUM Sprint 1,2,Tarefas pendentes,2026-06-12,2025-05-09
+SCRUM-28,"T-02 — Configurar packages NuGet (EF Core, Polly, MediatR, FluentValidation)",Subtask,SCRUM-12,SCRUM Sprint 1,1,Tarefas pendentes,2026-06-12,2025-05-09
+SCRUM-29,"T-03 — Configurar appsettings por ambiente e DI container",Subtask,SCRUM-12,SCRUM Sprint 1,1,Tarefas pendentes,2026-06-12,2025-05-12
+SCRUM-30,"T-04 — Criar 15 entidades do domínio",Subtask,SCRUM-13,SCRUM Sprint 1,5,Tarefas pendentes,2026-06-12,2025-05-16
+SCRUM-31,"T-05 — Configurar AppDbContext com PostgreSQL",Subtask,SCRUM-13,SCRUM Sprint 1,3,Tarefas pendentes,2026-06-12,2025-05-19
+SCRUM-32,"T-06 — Criar e aplicar 13 migrations EF Core",Subtask,SCRUM-13,SCRUM Sprint 1,5,Tarefas pendentes,2026-06-12,2025-05-21
+SCRUM-33,"T-07 — Configurar connection strings por ambiente",Subtask,SCRUM-13,SCRUM Sprint 1,2,Tarefas pendentes,2026-06-12,2025-05-23
+SCRUM-34,"T-08 — Implementar ClientesController com endpoints CRUD",Subtask,SCRUM-14,SCRUM Sprint 1,5,Tarefas pendentes,2026-06-12,2025-05-27
+SCRUM-35,"T-09 — Implementar ClienteIdService (faixas Cloud/ITEC)",Subtask,SCRUM-14,SCRUM Sprint 1,3,Tarefas pendentes,2026-06-12,2025-05-27
+SCRUM-36,"T-10 — Implementar CQRS (Commands/Queries/Handlers)",Subtask,SCRUM-14,SCRUM Sprint 1,5,Tarefas pendentes,2026-06-12,2025-05-28
+SCRUM-37,"T-11 — Validações CPF/CNPJ e regras de negócio",Subtask,SCRUM-14,SCRUM Sprint 1,3,Tarefas pendentes,2026-06-12,2025-05-29
+SCRUM-38,"T-12 — Testes unitários do ClienteIdService",Subtask,SCRUM-14,SCRUM Sprint 1,3,Tarefas pendentes,2026-06-12,2025-05-30
+SCRUM-39,"T-13 — Configurar Azure AD OAuth2 JWT middleware",Subtask,SCRUM-15,SCRUM Sprint 1,2,Tarefas pendentes,2026-06-12,2025-05-30
+SCRUM-40,"T-14 — Proteger endpoints com [Authorize] e policies",Subtask,SCRUM-15,SCRUM Sprint 1,1,Tarefas pendentes,2026-06-12,2025-06-03
+SCRUM-41,"T-15 — Configurar secrets no Azure Key Vault / K8s Secrets",Subtask,SCRUM-15,SCRUM Sprint 1,2,Tarefas pendentes,2026-06-12,2025-06-06
+SCRUM-42,"T-16 — Implementar endpoints de opt-in/opt-out",Subtask,SCRUM-16,SCRUM Sprint 1,3,Tarefas pendentes,2026-06-12,2025-05-30
+SCRUM-43,"T-17 — Integrar opt-in com Propz nas 4 redes",Subtask,SCRUM-16,SCRUM Sprint 1,3,Tarefas pendentes,2026-06-12,2025-06-02
+SCRUM-44,"T-18 — Auditoria de histórico opt-in/opt-out",Subtask,SCRUM-16,SCRUM Sprint 1,2,Tarefas pendentes,2026-06-12,2025-06-02
+SCRUM-45,"T-19 — Implementar ConveniadoController",Subtask,SCRUM-17,SCRUM Sprint 1,2,Tarefas pendentes,2026-06-12,2025-06-03
+SCRUM-46,"T-20 — Lógica vinculação/desvinculação ClienteConvenio + validações",Subtask,SCRUM-17,SCRUM Sprint 1,3,Tarefas pendentes,2026-06-12,2025-06-04
+SCRUM-47,"T-21 — Implementar FiliaisController CRUD e associações",Subtask,SCRUM-18,SCRUM Sprint 1,2,Tarefas pendentes,2026-06-12,2025-05-29
+SCRUM-48,"T-22 — Implementar PlusoftController e serviço de sincronização",Subtask,SCRUM-19,SCRUM Sprint 1,4,Tarefas pendentes,2026-06-12,2025-06-13
+SCRUM-49,"T-23 — Polly retry e tratamento de erros Plusoft",Subtask,SCRUM-19,SCRUM Sprint 1,2,Tarefas pendentes,2026-06-12,2025-06-16
+SCRUM-50,"T-24 — Implementar PropzController e mapeamento das 4 redes",Subtask,SCRUM-20,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-06-13
+SCRUM-51,"T-25 — Circuit breaker e tolerância a falhas Propz",Subtask,SCRUM-20,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-06-18
+SCRUM-52,"T-26 — Implementar OmsIntegrationController + validação webhook",Subtask,SCRUM-21,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-06-18
+SCRUM-53,"T-27 — OAuth2 Azure AD para callback D1000",Subtask,SCRUM-21,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-06-23
+SCRUM-54,"T-28 — Fila de processamento assíncrono de eventos OMS",Subtask,SCRUM-21,SCRUM Sprint 2,4,Tarefas pendentes,2026-06-12,2025-06-27
+SCRUM-55,"T-29 — Estrutura do Worker MigrationDirect com batches",Subtask,SCRUM-22,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-06-25
+SCRUM-56,"T-30 — SemaphoreSlim, Polly retry e circuit breaker do Worker",Subtask,SCRUM-22,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-07-01
+SCRUM-57,"T-31 — Graceful shutdown e checkpoint de migração",Subtask,SCRUM-22,SCRUM Sprint 2,2,Tarefas pendentes,2026-06-12,2025-07-04
+SCRUM-58,"T-32 — Setup xUnit + Moq e testes da camada Domain",Subtask,SCRUM-23,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-06-30
+SCRUM-59,"T-33 — Testes camada Application (handlers e services)",Subtask,SCRUM-23,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-07-04
+SCRUM-60,"T-34 — Integrar relatório de cobertura no Azure Pipeline",Subtask,SCRUM-23,SCRUM Sprint 2,2,Tarefas pendentes,2026-06-12,2025-07-07
+SCRUM-61,"T-35 — Setup Playwright e cenários E2E de cadastro",Subtask,SCRUM-24,SCRUM Sprint 2,2,Tarefas pendentes,2026-06-12,2025-07-04
+SCRUM-62,"T-36 — Cenários E2E de opt-in/out e integrações + pipeline CI",Subtask,SCRUM-24,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-07-11
+SCRUM-63,"T-37 — Criar 4 Azure Pipelines (build, test, deploy, rollback)",Subtask,SCRUM-25,SCRUM Sprint 2,2,Tarefas pendentes,2026-06-12,2025-06-13
+SCRUM-64,"T-38 — Configurar 32 manifests K8s e deploy automático AKS",Subtask,SCRUM-25,SCRUM Sprint 2,3,Tarefas pendentes,2026-06-12,2025-06-20
+SCRUM-65,"T-39 — Configurar Prometheus + métricas custom da API",Subtask,SCRUM-26,SCRUM Sprint 2,1,Tarefas pendentes,2026-06-12,2025-07-04
+SCRUM-66,"T-40 — Criar dashboards Grafana e configurar alertas",Subtask,SCRUM-26,SCRUM Sprint 2,2,Tarefas pendentes,2026-06-12,2025-07-11

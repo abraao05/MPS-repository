@@ -4,9 +4,10 @@
 |---|---|
 | **Documento** | GDE-GASMIG02-001 |
 | **Projeto** | Fundação Tecnológica GASMIG — Governança de APIs |
-| **Versão** | 1.0 |
-| **Data** | 14/04/2026 |
+| **Versão** | 1.1 |
+| **Data** | 11/06/2026 |
 | **Responsável pela decisão** | Cézar Hiraki (Tech Lead / Arquiteto) / Abraão Oliveira (GP/PO) |
+| **Processo de referência** | PRO-GDE-001 v1.2 |
 
 ---
 
@@ -70,3 +71,4 @@ A fundação GASMIG é explicitamente projetada para ser reutilizável em projet
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 14/04/2026 | Cézar Hiraki / Abraão Oliveira | Registro inicial da decisão de arquitetura de isolamento de clientes |
+| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Adicionada referência ao processo de decisão de referência (PRO-GDE-001 v1.2) |
