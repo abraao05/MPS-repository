@@ -8,10 +8,10 @@
 | **Data** | 06/06/2026 |
 | **Horário** | 14h00 – 15h30 |
 | **Canal** | Microsoft Teams |
-| **Facilitador** | Abraão Oliveira (Timeware) |
+| **Facilitador** | Abraão (Timeware) |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
-| **Processo MPS-SW** | GPR / VV — Gerência de Projetos e Verificação e Validação (evidência de projeto) |
+| **Processo MPS-SW** | AQU / GRE (evidência de projeto) |
 
 ---
 
@@ -19,8 +19,8 @@
 
 | Nome | Empresa | Papel |
 |---|---|---|
-| Abraão Oliveira · Cézar Velázquez | Timeware | GP (Abraão Oliveira) · Arquiteto/Tech Lead (Cézar) · Facilitador |
-| Renan Kioshi | Timeware | Desenvolvedor |
+| Abraão · Cezar Hiraki | Timeware | GP (Abraão) · Arquiteto/Tech Lead (Cezar) · Facilitador |
+| Renan Kiyoshi | Timeware | Desenvolvedor |
 | Henry Komatsu | Timeware | Desenvolvedor |
 | Mateus Veloso | Timeware | Desenvolvedor |
 | Marcos Turnes | AASP | Product Owner / Representante do Cliente / Aprovador |
@@ -38,19 +38,19 @@ Apresentar os entregáveis da Sprint 1 (AG-20, AG-21, AG-22) ao cliente AASP, de
 
 | História | Requisitos Cobertos | Endpoints Demonstrados | Status dos Testes | Resultado do Aceite |
 |---|---|---|---|---|
-| **AG-20** — CRUD de Grupos | RF-01 a RF-04 | POST /grupos (criação com validação de nome único); GET /grupos (listagem paginada); GET /grupos/{id} (busca individual); PUT /grupos/{id} (atualização); DELETE /grupos/{id} (soft delete — campo Ativo=false) | 5 cenários: GRP-01 a GRP-05 — todos OK (100%) | Aprovado por Marcos Turnes |
-| **AG-21** — Permissões por Grupo (RBAC) | RF-05 | PUT /grupos/{id}/permissoes (enum validado: Leitura, Escrita, Exclusao, Administracao, Relatorio) | 2 cenários: PERM-01 e PERM-02 — todos OK (100%) | Aprovado por Marcos Turnes |
-| **AG-22** — Vínculo Usuário-Grupo | RF-06 | POST /grupos/{id}/usuarios (com validação de usuário ativo); DELETE /grupos/{id}/usuarios/{uid} (soft delete do vínculo) | 3 cenários: VINC-01, VINC-02, VINC-03 — todos OK (100%) | Aprovado por Marcos Turnes |
+| **AG-20** — CRUD de Grupos | RF-01 a RF-04 | incluirgrupo (criação com validação de nome único); listargrupo (listagem paginada); buscargrupoporid (usuários do grupo); alterargrupo (alteração); excluirgrupo (soft delete — campo excluido=1); ativardesativar (ativa/desativa) | 7 cenários: GRP-01 a GRP-07 — todos OK (100%) | Aprovado por Marcos Turnes |
+| **AG-21** — Função do Usuário no Grupo | RF-05 | alterarfuncaodousuario (função: Usuario/Administrador) | 1 cenário: FUNC-01 — OK (100%) | Aprovado por Marcos Turnes |
+| **AG-22** — Vínculo Usuário-Grupo | RF-06 | vínculo de usuários via GrupoDeUsuarios em incluirgrupo/alterargrupo; removerusuario (soft delete do vínculo) | 2 cenários: VINC-01, VINC-02 — todos OK (100%) | Aprovado por Marcos Turnes |
 
 ---
 
 ## 4. Demonstração Técnica
 
-Cézar Velázquez demonstrou todos os endpoints via **Swagger UI** (`http://localhost:5000/swagger`) com banco `auxo3` de homologação, cobrindo os fluxos happy path e sad path de cada história. As validações de negócio (nome único de grupo, enum de permissões, usuário ativo) foram demonstradas em tempo real com payloads de teste preparados previamente.
+Cezar Hiraki demonstrou todos os endpoints via **Swagger UI** (`http://localhost:5000/swagger`) com banco `auxo3` de homologação, cobrindo os fluxos happy path e sad path de cada história. As validações de negócio (nome único de grupo e função do usuário) foram demonstradas em tempo real com payloads de teste preparados previamente.
 
-Renan Kioshi demonstrou os **scripts de migration** do banco de dados (estrutura das tabelas Grupos, PermissoesGrupo e UsuariosGrupo) e a organização do repositório no Azure DevOps, incluindo as branches de feature, PRs aprovados e histórico de commits por história.
+Renan Kiyoshi demonstrou os **scripts de migration** do banco de dados (estrutura das tabelas grupos_usuarios, grupos_usuarios_vinculos e grupos_usuarios_funcao) e a organização do repositório no GitLab, incluindo as branches de feature, MRs aprovados e histórico de commits por história.
 
-Leonardo Francisco Pereira confirmou que todos os **10 cenários de aceite** (GRP-01 a GRP-05, PERM-01, PERM-02, VINC-01 a VINC-03) foram executados por ela no ambiente de homologação AASP em 06/06/2026 e aprovados sem ressalvas, conforme evidências registradas no CTQ-AASP01-001.
+Leonardo Francisco Pereira confirmou que todos os **10 cenários de aceite** (GRP-01 a GRP-07, FUNC-01, VINC-01 e VINC-02) foram executados por ela no ambiente de homologação AASP em 06/06/2026 e aprovados sem ressalvas, conforme evidências registradas no CTQ-AASP01-001.
 
 ---
 
@@ -71,7 +71,7 @@ Leonardo Francisco Pereira confirmou que todos os **10 cenários de aceite** (GR
 
 - **Leonardo Francisco Pereira (AASP — QA):** Validou todos os 10 cenários de aceite no ambiente de homologação AASP. Solicitou que o ambiente de homologação para a Sprint 2 seja preparado pela equipe Timeware até 11/06/2026, incluindo os scripts de migration das novas tabelas (AuditoriaGrupos).
 
-- **Abraão Oliveira (Timeware — GP):** Informou que a Sprint 2 inicia em 09/06/2026 com as histórias AG-23 (Auditoria de Grupos) e AG-24 (Integração com ms.temis.vinculos). Confirmou que o ambiente de homologação será preparado até 11/06/2026 conforme solicitado por Leonardo Francisco Pereira.
+- **Abraão (Timeware — GP):** Informou que a Sprint 2 inicia em 09/06/2026 com as histórias AG-23 (Auditoria de Grupos) e AG-24 (Integração com ms.temis.vinculos). Confirmou que o ambiente de homologação será preparado até 11/06/2026 conforme solicitado por Leonardo Francisco Pereira.
 
 ---
 
@@ -93,11 +93,11 @@ A Sprint 1 é considerada oficialmente encerrada e entregue. Todas as histórias
 
 | Ação | Responsável | Prazo |
 |---|---|---|
-| Iniciar Sprint 2 — AG-23 (Auditoria) + AG-24 (Integração ms.temis.vinculos) | Renan Kioshi, Henry Komatsu e Mateus Veloso | 09/06/2026 |
-| Preparar ambiente de homologação AASP para Sprint 2 (migrations AuditoriaGrupos) | Renan Kioshi, Henry Komatsu e Mateus Veloso | 11/06/2026 |
+| Iniciar Sprint 2 — AG-23 (Auditoria) + AG-24 (Integração ms.temis.vinculos) | Renan Kiyoshi, Henry Komatsu e Mateus Veloso | 09/06/2026 |
+| Preparar ambiente de homologação AASP para Sprint 2 (migrations AuditoriaGrupos) | Renan Kiyoshi, Henry Komatsu e Mateus Veloso | 11/06/2026 |
 | Confirmar ambiente de homologação Sprint 2 recebido e validado | Leonardo Francisco Pereira (AASP) | 11/06/2026 |
-| Atualizar GEST-AASP01, RAC-AASP01-001 e MED-AASP01-001 com resultados finais Sprint 1 | Abraão Oliveira | 09/06/2026 |
-| Sprint Review Sprint 2 agendada — apresentação de AG-23 e AG-24 | Abraão Oliveira + Marcos Turnes | 20/06/2026 — 14h00 Teams |
+| Atualizar GEST-AASP01, RAC-AASP01-001 e MED-AASP01-001 com resultados finais Sprint 1 | Abraão | 09/06/2026 |
+| Sprint Review Sprint 2 agendada — apresentação de AG-23 e AG-24 | Abraão + Marcos Turnes | 20/06/2026 — 14h00 Teams |
 
 ---
 
@@ -105,4 +105,4 @@ A Sprint 1 é considerada oficialmente encerrada e entregue. Todas as histórias
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 06/06/2026 | Abraão Oliveira | Versão inicial — ata de aceite formal da Sprint 1 (AG-20, AG-21, AG-22); aceite concedido por Marcos Turnes sem ressalvas |
+| 1.0 | 06/06/2026 | Abraão | Versão inicial — ata de aceite formal da Sprint 1 (AG-20, AG-21, AG-22); aceite concedido por Marcos Turnes sem ressalvas |

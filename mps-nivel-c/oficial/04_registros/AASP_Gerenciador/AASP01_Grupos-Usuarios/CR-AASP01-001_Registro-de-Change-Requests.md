@@ -7,16 +7,16 @@
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Versão** | 1.0 |
 | **Data** | 06/06/2026 |
-| **Gerente de Projeto** | Abraão Oliveira |
-| **Processo MPS-SW** | GPR / GCO (evidência de projeto) |
+| **Gerente de Projeto** | Abraão |
+| **Processo MPS-SW** | GRE (evidência de projeto) |
 
 ---
 
 ## 1. Contexto
 
-O projeto foi contratado com escopo definido no TAP-AASP01-001 e requisitos formalizados em REQ-AASP01-001 (AG-20 a AG-25). O processo de change request exige aprovação formal de Marcos Turnes (AASP, PO) e Abraão Oliveira (Timeware, GP) antes de qualquer mudança de escopo ser implementada, conforme PLA-AASP01-001.
+O projeto foi contratado com escopo definido no TAP-AASP01-001 e requisitos formalizados em REQ-AASP01-001 (AG-20 a AG-25). O processo de change request exige aprovação formal de Marcos Turnes (AASP, PO) e Abraão (Timeware, GP) antes de qualquer mudança de escopo ser implementada, conforme PLA-AASP01-001.
 
-Qualquer solicitação de alteração de escopo, prazo, custo ou requisitos deve ser registrada neste documento, analisada quanto ao impacto e aprovada formalmente antes de ser incorporada ao backlog ou ao plano do projeto. Este registro é evidência do controle de escopo exigido pelos processos GPR e GCO do MPS-SW Nível C.
+Qualquer solicitação de alteração de escopo, prazo, custo ou requisitos deve ser registrada neste documento, analisada quanto ao impacto e aprovada formalmente antes de ser incorporada ao backlog ou ao plano do projeto. Este registro é evidência do controle de escopo exigido pelo processo GRE do MPS.BR Nível C.
 
 ---
 
@@ -45,13 +45,13 @@ Qualquer solicitação de alteração de escopo, prazo, custo ou requisitos deve
 
 O fluxo de gestão de change requests adotado no projeto segue as etapas abaixo:
 
-1. **Solicitação por escrito** — O solicitante (cliente ou equipe interna) encaminha a solicitação de mudança por e-mail ou Microsoft Teams para Abraão Oliveira (GP), descrevendo a mudança desejada, a justificativa e o impacto esperado.
+1. **Solicitação por escrito** — O solicitante (cliente ou equipe interna) encaminha a solicitação de mudança por e-mail ou Microsoft Teams para Abraão (GP), descrevendo a mudança desejada, a justificativa e o impacto esperado.
 
-2. **Análise de impacto** — Abraão Oliveira realiza análise de impacto em até 3 dias úteis, avaliando as dimensões de prazo, custo, escopo e qualidade. O resultado é documentado em formulário de análise de CR.
+2. **Análise de impacto** — Abraão realiza análise de impacto em até 3 dias úteis, avaliando as dimensões de prazo, custo, escopo e qualidade. O resultado é documentado em formulário de análise de CR.
 
-3. **Apresentação ao cliente** — Abraão Oliveira apresenta a análise de impacto a Marcos Turnes (AASP, PO) em reunião formal (Teams ou presencial), com as opções disponíveis e recomendação da equipe.
+3. **Apresentação ao cliente** — Abraão apresenta a análise de impacto a Marcos Turnes (AASP, PO) em reunião formal (Teams ou presencial), com as opções disponíveis e recomendação da equipe.
 
-4. **Aprovação formal** — A mudança somente é aprovada com assinatura (ou confirmação formal por e-mail) de Marcos Turnes (AASP) e Abraão Oliveira (Timeware). Mudanças sem aprovação dupla não são implementadas.
+4. **Aprovação formal** — A mudança somente é aprovada com assinatura (ou confirmação formal por e-mail) de Marcos Turnes (AASP) e Abraão (Timeware). Mudanças sem aprovação dupla não são implementadas.
 
 5. **Registro neste documento** — O CR aprovado é registrado na tabela da Seção 2, com todos os campos preenchidos, e o documento é atualizado com nova versão.
 
@@ -75,4 +75,4 @@ Nenhum Change Request em avaliação em 15/06/2026.
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 06/06/2026 | Abraão Oliveira | Versão inicial — zero CRs registrados; escopo estável conforme TAP-AASP01-001 |
+| 1.0 | 06/06/2026 | Abraão | Versão inicial — zero CRs registrados; escopo estável conforme TAP-AASP01-001 |

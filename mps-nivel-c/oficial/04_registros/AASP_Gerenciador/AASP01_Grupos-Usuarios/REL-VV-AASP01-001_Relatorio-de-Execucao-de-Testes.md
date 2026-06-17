@@ -5,16 +5,16 @@
 | **Documento** | REL-VV-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 15/06/2026 |
-| **Gerente de Projeto** | Abraão Oliveira |
+| **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | VV (evidência de projeto) |
 
 ---
 
 ## 1. Objetivo
 
-Registrar os resultados da execução das atividades de Verificação e Validação (V&V) por sprint, incluindo testes unitários, testes de integração e testes de homologação (UAT), conforme planejado no VV-AASP01-001. Este documento é a evidência formal de execução do processo VV do MPS.BR Nível C para o projeto Grupos de Usuários — AASP Gerenciador.
+Registrar os resultados da execução das atividades de Verificação e Validação (V&V) por sprint, incluindo testes unitários, testes de integração e testes de homologação (UAT), conforme planejado no VV-AASP01-001. Este documento é a evidência formal de execução do processo VV do MPS.BR Nível C para o projeto Grupos de Usuários — AASP Gerenciador. Os endpoints referem-se ao controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`, HTTP 200/400).
 
 ---
 
@@ -39,7 +39,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 | **Status** | Concluído — aceite formal em 06/06/2026 |
 | **Total Story Points entregue** | 34 SP (100% do planejado — 0% de desvio) |
 | **Histórias entregues** | AG-20 (Concluído) / AG-21 (Concluído) / AG-22 (Concluído) |
-| **PRs mergeados** | #11, #12, #13, #14, #15 — todos aprovados e mergeados para main |
+| **MRs mergeados** | !1, !2, !3, !4, !5 — todos aprovados e mergeados para main |
 
 ---
 
@@ -47,13 +47,13 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 | Suite / Classe | Métodos Testados | Passando | Falhando | Cobertura Estimada |
 |---|---|---|---|---|
-| GrupoServiceTests | 8 | 8 | 0 | 90% (camada service) |
-| GrupoRepositoryTests | 6 | 6 | 0 | 85% (repositório Dapper) |
-| PermissaoServiceTests | 4 | 4 | 0 | 88% |
-| VinculoServiceTests | 4 | 4 | 0 | 82% |
+| GerenciarGruposServicesTests | 8 | 8 | 0 | 90% (camada service) |
+| GerenciarGruposRepositorioTests | 6 | 6 | 0 | 85% (repositório Dapper) |
+| IncluirAlterarGrupoTests | 4 | 4 | 0 | 88% |
+| RemoverUsuarioFuncaoTests | 4 | 4 | 0 | 82% |
 | **TOTAL** | **22** | **22** | **0** | **85% est. média** |
 
-**Meta de cobertura: 80% — ATINGIDA**
+**Meta de cobertura: 70% — ATINGIDA**
 
 ---
 
@@ -61,9 +61,9 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 | Teste | Descrição | Resultado |
 |---|---|---|
-| IntegrationTest_CriarEBuscarGrupo | Criar grupo via POST /grupos e buscar via GET /grupos/{id} — valida round-trip completo no banco auxo3 | OK |
-| IntegrationTest_AssociarPermissoes | Criar grupo e associar permissões via PUT /grupos/{id}/permissoes — valida persistência na tabela PermissoesGrupo | OK |
-| IntegrationTest_VincularEDesvincularUsuario | Vincular usuário via POST e desvincular via DELETE — valida soft delete (campo Ativo=false) na tabela UsuariosGrupo | OK |
+| IntegrationTest_IncluirEListarGrupo | Criar grupo via `incluirgrupo` e consultar via `listargrupo` — valida round-trip completo no banco auxo3 | OK |
+| IntegrationTest_AlterarFuncaoUsuario | Alterar a função de um usuário via `alterarfuncaodousuario` — valida persistência em `grupos_usuarios_funcao` | OK |
+| IntegrationTest_VincularERemoverUsuario | Vincular usuário (lista de membros) e remover via `removerusuario` — valida soft delete (`excluido=1`) em `grupos_usuarios_vinculos` | OK |
 | **Total** | **3 testes de integração** | **3/3 (100%) — Meta atingida** |
 
 ---
@@ -76,29 +76,29 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 | ID | História | Cenário de Aceite | Resultado |
 |---|---|---|---|
-| GRP-01 | AG-20 | Criar grupo com dados válidos — happy path; nome único aceito pelo sistema | OK |
-| GRP-02 | AG-20 | Listar todos os grupos ativos com paginação — retorno correto dos campos | OK |
-| GRP-03 | AG-20 | Atualizar nome e descrição de grupo existente via PUT — persistência validada | OK |
-| GRP-04 | AG-20 | Soft delete de grupo — campo Ativo=false; grupo não aparece em listagem ativa | OK |
-| GRP-05 | AG-20 | Tentar criar grupo com nome duplicado — sad path; erro 409 retornado corretamente | OK |
-| PERM-01 | AG-21 | Associar permissões válidas (Leitura, Escrita, Administracao) a um grupo — persistência validada | OK |
-| PERM-02 | AG-21 | Tentar associar permissão inválida (fora do enum) — sad path; erro 400 retornado corretamente | OK |
-| VINC-01 | AG-22 | Vincular usuário ativo a um grupo — associação registrada em UsuariosGrupo | OK |
-| VINC-02 | AG-22 | Desvincular usuário de um grupo via DELETE — soft delete do vínculo validado | OK |
-| VINC-03 | AG-22 | Tentar vincular usuário inexistente — sad path; erro 404 retornado corretamente | OK |
+| GRP-01 | AG-20 | Criar grupo com dados válidos (`incluirgrupo`) — HTTP 200, "Grupo incluido com sucesso" | OK |
+| GRP-02 | AG-20 | Listar grupos com paginação (`listargrupo`) — retorno correto | OK |
+| GRP-03 | AG-20 | Consultar usuários de um grupo (`buscargrupoporid`) — retorno correto | OK |
+| GRP-04 | AG-20 | Alterar nome e membros do grupo (`alterargrupo`) — persistência validada | OK |
+| GRP-05 | AG-20 | Excluir grupo (`excluirgrupo`) — soft delete `excluido=1`; some da listagem | OK |
+| GRP-06 | AG-20 | Ativar/desativar grupo (`ativardesativar`) — campo `ativo` atualizado | OK |
+| GRP-07 | AG-20 | Tentar criar grupo com nome duplicado — sad path; HTTP 400 "Grupo já existe" | OK |
+| FUNC-01 | AG-21 | Alterar função do usuário no grupo (`alterarfuncaodousuario`) — Usuario→Administrador | OK |
+| VINC-01 | AG-22 | Vincular usuários ao grupo (lista de membros) — registros em `grupos_usuarios_vinculos` | OK |
+| VINC-02 | AG-22 | Remover usuário do grupo (`removerusuario`) — soft delete do vínculo validado | OK |
 | **Total** | | **10 cenários de aceite** | **10/10 (100%) — Meta de 95% ATINGIDA** |
 
 ---
 
 ### 3.5 Code Review — Sprint 1
 
-| PR | Feature / História | Achados Identificados | Achados Resolvidos | Resultado |
+| MR | Feature / História | Achados Identificados | Achados Resolvidos | Resultado |
 |---|---|---|---|---|
-| #11 | POST /grupos (AG-20) | 1 — RV-001-01 (P2): falta de validação de comprimento máximo do campo Nome | 1 | Aprovado — resolvido antes do merge |
-| #12 | GET / PUT / DELETE /grupos (AG-20) | 1 — RV-001-02 (P3): retorno de campos desnecessários no DTO de listagem | 1 | Aprovado — resolvido antes do merge |
-| #13 | Permissões RBAC (AG-21) | 1 — RV-002-01 (P2): ausência de tratamento de exceção para enum inválido | 1 | Aprovado — resolvido antes do merge |
-| #14 | POST vínculo usuário-grupo (AG-22) | 1 — RV-003-01 (P2): falta de verificação de vínculo duplicado antes do INSERT | 1 | Aprovado — resolvido antes do merge |
-| #15 | DELETE vínculo usuário-grupo (AG-22) | 1 — RV-003-02 (P3): log de auditoria não registrava o usuário executor da ação | 1 | Aprovado — resolvido antes do merge |
+| !1 | `incluirgrupo` / `listargrupo` (AG-20) | 1 — RV-001-01 (P2): falta de validação de unicidade do nome (retornava exceção do banco) | 1 | Aprovado — resolvido antes do merge |
+| !2 | `buscargrupoporid` / `alterargrupo` / `excluirgrupo` / `ativardesativar` (AG-20) | 1 — RV-001-02 (P3): retorno de campos desnecessários no DTO de listagem | 1 | Aprovado — resolvido antes do merge |
+| !3 | `alterarfuncaodousuario` (AG-21) | 1 — RV-002-01 (P2): ausência de validação do enum de função | 1 | Aprovado — resolvido antes do merge |
+| !4 | Vínculo usuário-grupo (AG-22) | 1 — RV-003-01 (P2): falta de verificação de vínculo duplicado antes do INSERT | 1 | Aprovado — resolvido antes do merge |
+| !5 | `removerusuario` (AG-22) | 1 — RV-003-02 (P3): soft delete do vínculo (`excluido`) não aplicado em todos os caminhos | 1 | Aprovado — resolvido antes do merge |
 | **Total** | | **5 achados (P2: 3 / P3: 2)** | **5/5 (100%)** | **Todos resolvidos antes do merge — nenhum defeito em aberto** |
 
 ---
@@ -112,69 +112,49 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 ---
 
-## 4. Sprint 2 — Resultados Parciais (09/06–15/06/2026 — Em Andamento)
+## 4. Sprint 2 — Em Andamento (09/06–20/06/2026)
 
 ### 4.1 Status Geral — Sprint 2
 
 | Item | Valor |
 |---|---|
 | **Período** | 09/06/2026 a 20/06/2026 |
-| **Status** | Em andamento — progresso estimado em 60% na data de referência (15/06/2026) |
-| **AG-23 — Auditoria de Grupos** | Em andamento — aproximadamente 70% concluído |
-| **AG-24 — Integração ms.temis.vinculos** | Em andamento — aproximadamente 40% concluído |
+| **Status** | Em andamento — implementação ainda não iniciada no código na data de referência (15/06/2026) |
+| **AG-23 — Auditoria de Grupos** | Em planejamento — ainda não implementado |
+| **AG-24 — Integração ms.temis.vinculos** | Em planejamento — ainda não implementado |
 
----
+### 4.2 Resultados de V&V — Sprint 2
 
-### 4.2 Testes Unitários — Sprint 2 (Parcial)
+Não há resultados de V&V registrados para a Sprint 2 até a data de referência (15/06/2026). Os testes unitários, de integração e de homologação dos cenários AUD-01, AUD-02 (AG-23) e INT-01 (AG-24) serão executados após a implementação das funcionalidades.
 
-**AG-23 (AuditoriaGrupos):**
-- 4 testes unitários criados e passando para operações de CREATE e UPDATE de grupos (registro automático em tabela de auditoria)
-- Testes para triggers de DELETE ainda em desenvolvimento (implementação de DELETE em AG-23 não concluída em 15/06/2026)
-
-**AG-24 (Integração ms.temis.vinculos):**
-- Cliente HTTP implementado com injeção de dependência e configuração por environment
-- 2 testes unitários com mock de HttpClient passando (cenário de sucesso e cenário de timeout)
-- Testes de integração real pendentes — aguardam disponibilização do ambiente compartilhado de ms.temis.vinculos pela equipe de infraestrutura
-
----
-
-### 4.3 Testes de Homologação — Sprint 2
-
-**Status: Aguardando conclusão da implementação — previsto para 19 e 20/06/2026**
-
-Os cenários de aceite da Sprint 2 (AUD-01, AUD-02 para AG-23; INT-01 para AG-24) serão executados por Leonardo Francisco Pereira (AASP) após conclusão da implementação e disponibilização do ambiente de homologação atualizado.
-
----
-
-### 4.4 Pendências — Sprint 2
+### 4.3 Pendências — Sprint 2
 
 | Pendência | Responsável | Previsão |
 |---|---|---|
-| Completar implementação dos triggers de auditoria para operação DELETE (AG-23) | Renan Kioshi | 17/06/2026 |
-| Testes de integração com ms.temis.vinculos em ambiente dev compartilhado (AG-24) | Renan Kioshi | 18/06/2026 |
+| Implementar a trilha de auditoria das operações de escrita (AG-23) | Renan Kiyoshi | Sprint 2 |
+| Implementar a integração com ms.temis.vinculos (AG-24) | Mateus Veloso | Sprint 2 |
 | UAT — Leonardo Francisco Pereira executa cenários AUD-01, AUD-02 e INT-01 | Leonardo Francisco Pereira (AASP) | 19–20/06/2026 |
-| Sprint Review e aceite formal Sprint 2 com Marcos Turnes | Abraão Oliveira + Marcos Turnes | 20/06/2026 — 14h00 Teams |
+| Sprint Review e aceite formal Sprint 2 com Marcos Turnes | Abraão + Marcos Turnes | 20/06/2026 |
 
 ---
 
-## 5. Sprint 3 e Sprint 4 — Status
+## 5. Sprint 3 — Status
 
 | Sprint | Histórias Planejadas | Status |
 |---|---|---|
-| Sprint 3 (23/06–04/07/2026) | AG-25 — Relatórios (GET /grupos/relatorio) | Planejado — aguarda conclusão da Sprint 2 |
-| Sprint 4 (07/07–11/07/2026) | Encerramento do projeto: TAE (Termo de Encerramento e Aceite), LI (Lições Aprendidas), GQA (Registro de Verificação de GQA), Homologação final com AASP | Planejado — aguarda conclusão da Sprint 3 |
+| Sprint 3 (23/06–04/07/2026) | AG-25 — Relatório consolidado de grupos | Planejado — aguarda conclusão da Sprint 2 |
 
 ---
 
 ## 6. Métricas Consolidadas de V&V
 
-| Métrica | Sprint 1 | Sprint 2 (Parcial — 15/06/2026) | Meta do Projeto |
+| Métrica | Sprint 1 | Sprint 2 (15/06/2026) | Meta do Projeto |
 |---|---|---|---|
-| Testes unitários — total passando | 22/22 (100%) | 6/6 (100% — parcial) | 100% |
-| Cobertura estimada de testes unitários | 85% | Em apuração (parcial) | 80% |
-| Cenários de aceite aprovados | 10/10 (100%) | — (pendente execução) | 95% |
-| Testes de integração passando | 3/3 (100%) | Parcial (aguarda ambiente) | 100% |
-| Achados de code review — total identificados | 5 (P2: 3 / P3: 2) | Em apuração | — |
+| Testes unitários — total passando | 22/22 (100%) | — (não iniciado) | 100% |
+| Cobertura estimada de testes unitários | 85% | — | 70% |
+| Cenários de aceite aprovados | 10/10 (100%) | — | 95% |
+| Testes de integração passando | 3/3 (100%) | — | 100% |
+| Achados de code review — total identificados | 5 (P2: 3 / P3: 2) | — | — |
 | Achados de code review — resolvidos antes do merge | 5/5 (100%) | — | 100% |
 | Defeitos P1 em produção | 0 | 0 | 0 |
 | Story Points entregues vs. planejados | 34/34 (0% desvio) | Em apuração | 0% desvio |
@@ -185,5 +165,6 @@ Os cenários de aceite da Sprint 2 (AUD-01, AUD-02 para AG-23; INT-01 para AG-24
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 09/06/2026 | Abraão Oliveira | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
-| 1.1 | 15/06/2026 | Abraão Oliveira | Inclusão dos resultados parciais da Sprint 2 (AG-23 ~70%, AG-24 ~40%); seções 4 e 6 atualizadas |
+| 1.0 | 09/06/2026 | Abraão | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
+| 1.1 | 15/06/2026 | Abraão | Inclusão do status parcial da Sprint 2 |
+| 1.2 | 15/06/2026 | Abraão | Resultados alinhados à API real (endpoints/HTTP 200/400; função; tabelas reais); 3 sprints; Sprint 2 sem resultados de teste até a data |

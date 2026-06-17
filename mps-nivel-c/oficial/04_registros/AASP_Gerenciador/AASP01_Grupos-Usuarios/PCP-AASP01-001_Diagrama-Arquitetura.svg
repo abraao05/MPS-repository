@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="640" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="56" fill="#003366"/>
+  <text x="24" y="35" fill="#ffffff" font-size="20" font-weight="bold">Arquitetura — ms.auxo.gruposusuarios (Feature AG · Grupos de Usuários)</text>
+  <text x="936" y="35" fill="#9fc5e8" font-size="12" text-anchor="end">PCP-AASP01-001 · .NET FW 4.7.2 · Dapper · SQL Server</text>
+
+  <!-- Cliente -->
+  <rect x="40" y="100" width="160" height="70" rx="8" fill="#EBF5FB" stroke="#1A5276" stroke-width="1.5"/>
+  <text x="120" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#003366">Consumidor da API</text>
+  <text x="120" y="150" text-anchor="middle" font-size="11" fill="#555">Sistema Gerenciador AASP</text>
+
+  <!-- seta cliente -> API -->
+  <line x1="200" y1="135" x2="300" y2="135" stroke="#003366" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="250" y="125" text-anchor="middle" font-size="10" fill="#555">HTTPS + JWT</text>
+
+  <!-- Camadas (stack) -->
+  <rect x="300" y="100" width="320" height="70" rx="8" fill="#D6E4F0" stroke="#003366" stroke-width="1.5"/>
+  <text x="460" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#003366">API (api.auxo.usuarios)</text>
+  <text x="460" y="150" text-anchor="middle" font-size="11" fill="#333">Controllers · JWT Bearer · Swagger/OpenAPI</text>
+
+  <line x1="460" y1="170" x2="460" y2="205" stroke="#003366" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="300" y="205" width="320" height="70" rx="8" fill="#D6E4F0" stroke="#003366" stroke-width="1.5"/>
+  <text x="460" y="233" text-anchor="middle" font-size="14" font-weight="bold" fill="#003366">Service (service.auxo.usuarios)</text>
+  <text x="460" y="255" text-anchor="middle" font-size="11" fill="#333">Regras de negócio · validações (409/400/422/404)</text>
+
+  <line x1="460" y1="275" x2="460" y2="310" stroke="#003366" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="300" y="310" width="320" height="70" rx="8" fill="#D6E4F0" stroke="#003366" stroke-width="1.5"/>
+  <text x="460" y="338" text-anchor="middle" font-size="14" font-weight="bold" fill="#003366">Repository (repositorio.auxo.usuarios)</text>
+  <text x="460" y="360" text-anchor="middle" font-size="11" fill="#333">Dapper ORM · QuerysSql (sem EF Core)</text>
+
+  <line x1="460" y1="380" x2="460" y2="415" stroke="#003366" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Banco auxo3 -->
+  <rect x="300" y="415" width="320" height="150" rx="8" fill="#E2EFDA" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="460" y="440" text-anchor="middle" font-size="14" font-weight="bold" fill="#1B5E20">SQL Server — banco auxo3</text>
+  <rect x="320" y="455" width="135" height="34" rx="5" fill="#ffffff" stroke="#2E7D32"/>
+  <text x="387" y="477" text-anchor="middle" font-size="11" fill="#1B5E20">Grupos</text>
+  <rect x="465" y="455" width="135" height="34" rx="5" fill="#ffffff" stroke="#2E7D32"/>
+  <text x="532" y="477" text-anchor="middle" font-size="11" fill="#1B5E20">PermissoesGrupo</text>
+  <rect x="320" y="500" width="135" height="34" rx="5" fill="#ffffff" stroke="#2E7D32"/>
+  <text x="387" y="522" text-anchor="middle" font-size="11" fill="#1B5E20">UsuariosGrupo</text>
+  <rect x="465" y="500" width="135" height="34" rx="5" fill="#ffffff" stroke="#2E7D32"/>
+  <text x="532" y="522" text-anchor="middle" font-size="11" fill="#1B5E20">AuditoriaGrupos</text>
+
+  <!-- DTO/Models lateral -->
+  <rect x="660" y="205" width="250" height="70" rx="8" fill="#F2F2F2" stroke="#555" stroke-width="1.2"/>
+  <text x="785" y="233" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">DTOs / Models</text>
+  <text x="785" y="255" text-anchor="middle" font-size="11" fill="#555">dto.auxo.usuarios · models.auxo.usuarios</text>
+  <line x1="620" y1="240" x2="660" y2="240" stroke="#999" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- Integração ms.temis -->
+  <rect x="660" y="310" width="250" height="70" rx="8" fill="#FCE4D6" stroke="#C0561E" stroke-width="1.5"/>
+  <text x="785" y="335" text-anchor="middle" font-size="13" font-weight="bold" fill="#9C3D12">ms.temis.vinculos</text>
+  <text x="785" y="356" text-anchor="middle" font-size="11" fill="#7a3210">HTTP POST /api/vinculos → temis3</text>
+  <line x1="620" y1="345" x2="660" y2="345" stroke="#C0561E" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="640" y="335" text-anchor="middle" font-size="9" fill="#7a3210">HTTP</text>
+
+  <!-- legenda -->
+  <text x="40" y="600" font-size="11" fill="#555">Camadas .NET (api → service → repositório/Dapper → SQL Server auxo3) · Integração HTTP com ms.temis.vinculos (base temis3) · Autenticação JWT · Documentação Swagger.</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#003366"/>
+    </marker>
+  </defs>
+</svg>
