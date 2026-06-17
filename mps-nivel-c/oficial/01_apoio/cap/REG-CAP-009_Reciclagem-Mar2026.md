@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REG-CAP-009 |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 20/03/2026 |
 | **Referência** | TPL-CAP-001 v1.0; PLA-CAP-001 §5 |
 
@@ -53,12 +53,16 @@
 | Carol Silva | QA | S | 87 | AVA-CAP-003: 84 | Aprovado |
 | Jonatan Silva | QA | S | 85 | AVA-CAP-003: 82 | Aprovado |
 | Flávio Fernandes | GQA / Qualidade do Processo | S | 90 | AVA-CAP-005: 88 | Aprovado |
+| Klayton Roberto | RH / Capacitação | S | 81 | AVA-CAP-005: 78 | Aprovado |
+| Allan Patrocínio | Dev | S | 85 | AVA-CAP-003: 82 | Aprovado |
+| Mateus Veloso | Dev | S | 83 | AVA-CAP-003: 80 | Aprovado |
+| Lucas Batista | Dev | S | 84 | AVA-CAP-003: 81 | Aprovado |
 
 ---
 
 ## 4. Observações e Pendências
 
-Taxa de aprovação: 10/10 (100%). Melhor resultado registrado até o momento. Média do AVA-CAP-001: 88,2 — evolução significativa em relação à primeira turma (dez/2024: 74,5). Flávio Fernandes destacou-se no módulo de GQA, conduzindo o exercício prático com autonomia.
+Taxa de aprovação: 14/14 (100%). Média do AVA-CAP-001: 86,8 — evolução significativa em relação à primeira turma (dez/2024: 74,5). Flávio Fernandes destacou-se no módulo de GQA, conduzindo o exercício prático com autonomia. Allan Patrocínio, Mateus Veloso e Lucas Batista participaram pela primeira vez da reciclagem geral; Klayton Roberto incluído na trilha de RH/Capacitação.
 
 ---
 
@@ -75,4 +79,5 @@ Taxa de aprovação: 10/10 (100%). Melhor resultado registrado até o momento. M
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Incluídos Allan Patrocínio, Mateus Veloso, Lucas Batista (Dev) e Klayton Roberto (RH); taxa e média atualizadas |
 | 1.0 | 20/03/2026 | Time de Melhoria Contínua | Registro da reciclagem geral — time completo (mar/2026) |

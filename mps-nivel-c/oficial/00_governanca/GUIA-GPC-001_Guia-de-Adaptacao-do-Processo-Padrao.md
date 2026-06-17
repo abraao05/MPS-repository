@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GUIA-GPC-001 — Guia de Adaptação do Processo-Padrão (Tailoring) |
-| **Versão** | 2.0 |
+| **Versão** | 2.1 |
 | **Data** | 10/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
+| **Responsável** | Silvio Baroni |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 | **Documento de referência** | PRO-GPC-001 — Processo-Padrão Organizacional |
@@ -328,6 +329,7 @@ A revisão é registrada no mesmo documento de adaptação, com nova versão e j
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 2.1 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 08/08/2025 | Time de Melhoria Contínua | Definição inicial do guia de adaptação do processo-padrão |
 | 1.1 | 16/12/2025 | Time de Melhoria Contínua | Ajuste de nomenclatura de fase conforme o novo fluxo |
 | 1.2 | 19/01/2026 | Time de Melhoria Contínua | Inclusão do eixo de adaptação de cadência de entrega e ambiente de stage |

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 800" font-family="Segoe UI, Arial, sans-serif" role="img">
+<title>Arquitetura do fluxo de captura de andamentos processuais da AASP</title>
+<desc>CapturaServer publica o NUP no RabbitMQ; o WorkerAndamentos consome, roteia por CodigoFonteAPI com fallback em 3 niveis (CNJ, EPROC/ESAJ, APIs parceiras) e envia ao webhook GuardarProcessoCapturaExterna da API AndamentosProcessuais, que serializa para IModelElastic e indexa no Elasticsearch. Tabelas de controle no SQL Server.</desc>
+<defs>
+<marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L7,3 L0,6 Z" fill="#5A6470"/></marker>
+</defs>
+<rect x="0" y="0" width="1040" height="800" fill="#FFFFFF"/>
+<text x="520" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#1F3A66">AASP · Arquitetura do fluxo de captura de andamentos processuais</text>
+<text x="520" y="55" text-anchor="middle" font-size="12" fill="#5A6470">CapturaServer -&gt; RabbitMQ -&gt; WorkerAndamentos -&gt; Webhook -&gt; Elasticsearch</text>
+<rect x="150" y="70" width="13" height="13" rx="2" fill="#DCE7F5" stroke="#2E5C9A"/><text x="169" y="81" font-size="11" fill="#1F2A37">AASP_AndamentosProcessuais</text>
+<rect x="380" y="70" width="13" height="13" rx="2" fill="#DCEFE0" stroke="#3A8A52"/><text x="399" y="81" font-size="11" fill="#1F2A37">AASP_CNJ · WorkerAndamentos</text>
+<rect x="640" y="70" width="13" height="13" rx="2" fill="#ECEEF0" stroke="#9AA0A6"/><text x="659" y="81" font-size="11" fill="#1F2A37">Infra / externo</text>
+
+<rect x="380" y="104" width="280" height="56" rx="8" fill="#DCE7F5" stroke="#2E5C9A"/><text x="520" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#1F2A37">CapturaServer</text><text x="520" y="146" text-anchor="middle" font-size="10.5" fill="#5A6470">serviço Windows · reserva o NUP (Status 1-&gt;2)</text>
+<line x1="520" y1="160" x2="520" y2="194" stroke="#5A6470" stroke-width="1.5" marker-end="url(#arr)"/><text x="528" y="180" font-size="10" fill="#5A6470">publica NUP</text>
+
+<rect x="380" y="196" width="280" height="54" rx="8" fill="#ECEEF0" stroke="#9AA0A6"/><text x="520" y="219" text-anchor="middle" font-size="14" font-weight="bold" fill="#1F2A37">RabbitMQ</text><text x="520" y="237" text-anchor="middle" font-size="10.5" fill="#5A6470">fila unificada WorkerAndamentos</text>
+<line x1="520" y1="250" x2="520" y2="286" stroke="#5A6470" stroke-width="1.5" marker-end="url(#arr)"/><text x="528" y="270" font-size="10" fill="#5A6470">consome</text>
+
+<rect x="360" y="288" width="320" height="72" rx="8" fill="#DCEFE0" stroke="#3A8A52"/><text x="520" y="314" text-anchor="middle" font-size="14" font-weight="bold" fill="#1F2A37">WorkerAndamentos</text><text x="520" y="332" text-anchor="middle" font-size="10.5" fill="#5A6470">workers concorrentes · roteia por CodigoFonteAPI</text><text x="520" y="348" text-anchor="middle" font-size="10.5" fill="#5A6470">trata EhSegredo (segredo de justiça por instância)</text>
+
+<text x="520" y="386" text-anchor="middle" font-size="11" font-weight="bold" fill="#3A8A52">fallback em 3 níveis</text>
+<line x1="460" y1="360" x2="200" y2="402" stroke="#5A6470" stroke-width="1.3" marker-end="url(#arr)"/>
+<line x1="520" y1="360" x2="520" y2="402" stroke="#5A6470" stroke-width="1.3" marker-end="url(#arr)"/>
+<line x1="580" y1="360" x2="840" y2="402" stroke="#5A6470" stroke-width="1.3" marker-end="url(#arr)"/>
+
+<rect x="40" y="404" width="300" height="70" rx="8" fill="#ECEEF0" stroke="#9AA0A6"/><text x="190" y="428" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A37">1º · API DataJud / CNJ</text><text x="190" y="446" text-anchor="middle" font-size="10.5" fill="#5A6470">fonte primária · token Bearer</text><text x="190" y="461" text-anchor="middle" font-size="10.5" fill="#5A6470">(tabela FonteAPI)</text>
+<rect x="370" y="404" width="300" height="70" rx="8" fill="#DCEFE0" stroke="#3A8A52"/><text x="520" y="428" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A37">2º · Engine EPROC / ESAJ</text><text x="520" y="446" text-anchor="middle" font-size="10.5" fill="#5A6470">Puppeteer · fallback TJSP (826)</text>
+<rect x="700" y="404" width="300" height="70" rx="8" fill="#ECEEF0" stroke="#9AA0A6"/><text x="850" y="428" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A37">3º · APIs Parceiras</text><text x="850" y="446" text-anchor="middle" font-size="10.5" fill="#5A6470">Solucionário · Botmax</text><text x="850" y="461" text-anchor="middle" font-size="10.5" fill="#5A6470">(por prioridade)</text>
+
+<line x1="190" y1="474" x2="430" y2="520" stroke="#5A6470" stroke-width="1.3" marker-end="url(#arr)"/>
+<line x1="520" y1="474" x2="520" y2="520" stroke="#5A6470" stroke-width="1.3" marker-end="url(#arr)"/>
+<line x1="850" y1="474" x2="610" y2="520" stroke="#5A6470" stroke-width="1.3" marker-end="url(#arr)"/>
+<text x="635" y="503" font-size="10" fill="#5A6470">dados capturados -&gt; webhook (com retry)</text>
+
+<rect x="350" y="522" width="340" height="72" rx="8" fill="#DCE7F5" stroke="#2E5C9A"/><text x="520" y="548" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1F2A37">Webhook · GuardarProcessoCapturaExterna</text><text x="520" y="566" text-anchor="middle" font-size="10.5" fill="#5A6470">API AndamentosProcessuais</text><text x="520" y="581" text-anchor="middle" font-size="10.5" fill="#5A6470">serializa para IModelElastic</text>
+<line x1="520" y1="594" x2="520" y2="630" stroke="#5A6470" stroke-width="1.5" marker-end="url(#arr)"/><text x="528" y="614" font-size="10" fill="#5A6470">indexa</text>
+
+<rect x="380" y="632" width="280" height="52" rx="8" fill="#ECEEF0" stroke="#9AA0A6"/><text x="520" y="654" text-anchor="middle" font-size="14" font-weight="bold" fill="#1F2A37">Elasticsearch</text><text x="520" y="672" text-anchor="middle" font-size="10.5" fill="#5A6470">índice aasp_andamentos_*</text>
+<line x1="520" y1="684" x2="520" y2="718" stroke="#5A6470" stroke-width="1.5" marker-end="url(#arr)"/><text x="528" y="704" font-size="10" fill="#5A6470">consulta</text>
+
+<rect x="380" y="720" width="280" height="48" rx="8" fill="#ECEEF0" stroke="#9AA0A6"/><text x="520" y="743" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A37">Front-end AASP</text><text x="520" y="759" text-anchor="middle" font-size="10.5" fill="#5A6470">consulta dos associados</text>
+
+<rect x="700" y="540" width="320" height="180" rx="8" fill="#F5F7F9" stroke="#9AA0A6"/><rect x="700" y="540" width="320" height="26" rx="8" fill="#DCE7F5" stroke="#9AA0A6"/><text x="860" y="558" text-anchor="middle" font-size="12" font-weight="bold" fill="#1F3A66">Tabelas de controle · SQL Server</text>
+<text x="714" y="588" font-size="10" fill="#1F2A37">• ProcessoCaptura — CodigoFonteAPI · Status</text>
+<text x="714" y="614" font-size="10" fill="#1F2A37">• ProcessoCapturaLogin — EhSegredo · Resposta</text>
+<text x="714" y="640" font-size="10" fill="#1F2A37">• ProcessoCapturaMovimentacaoStatus — Ativo,</text>
+<text x="726" y="655" font-size="10" fill="#1F2A37">DataUltimaAtualizacao</text>
+<text x="714" y="681" font-size="10" fill="#1F2A37">• FonteAPI — TokenAcesso · DataExpiracaoToken</text>
+<line x1="690" y1="560" x2="660" y2="558" stroke="#9AA0A6" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+<line x1="700" y1="600" x2="680" y2="558" stroke="#9AA0A6" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="556" y="538" font-size="9.5" fill="#9AA0A6">lê / atualiza</text>
+</svg>

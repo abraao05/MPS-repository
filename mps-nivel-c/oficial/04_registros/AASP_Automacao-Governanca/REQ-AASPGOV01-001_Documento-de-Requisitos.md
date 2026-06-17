@@ -5,8 +5,8 @@
 | **Documento** | REQ-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.0 |
-| **Data** | 02/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 15/06/2026 |
 | **Responsáveis (Discovery)** | Cezar Hiraki (Tech Lead) · Abraão Oliveira (GP) |
 
 ---
@@ -86,7 +86,7 @@ Serviço .NET 8 executado como Azure Scheduled Job que, a cada execução, auten
 |---|---|---|---|
 | Marcos Correa Fernandez Turnes | Sponsor (AASP) | Entendimento confirmado dos 11 RF + 6 RNF e do escopo macro | 14/04/2026 (ATA-AASPGOV01-001) |
 | Abraão Oliveira | Gerente de Projeto (Timeware) | Compromisso assumido pela equipe Timeware com a entrega no prazo de 7 semanas | 14/04/2026 (ATA-AASPGOV01-001) |
-| Cezar Hiraki | Tech Lead / Arquiteto (Timeware) | Compromisso técnico com a arquitetura em 3 camadas e os critérios de aceite | 14/04/2026 (ATA-AASPGOV01-001) |
+| Cezar Hiraki | Tech Lead / DevOps / Arquiteto (Timeware) | Compromisso técnico com a arquitetura em 3 camadas e os critérios de aceite | 14/04/2026 (ATA-AASPGOV01-001) |
 
 ---
 
@@ -95,3 +95,5 @@ Serviço .NET 8 executado como Azure Scheduled Job que, a cada execução, auten
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Documento de requisitos consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026). Adicionada priorização, Story Points e Sprint para cada RF/RNF conforme modelagem agile retroativa (ADAP-AASPGOV01-001). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Papel de Cezar Hiraki atualizado para Tech Lead / DevOps / Arquiteto; Jonathan Alves (QA) corrigido de grafia anterior. |
+| 1.2 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

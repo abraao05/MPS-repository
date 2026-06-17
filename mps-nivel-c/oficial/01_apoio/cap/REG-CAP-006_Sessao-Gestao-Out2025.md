@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REG-CAP-006 |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 10/10/2025 |
 | **Referência** | TPL-CAP-001 v1.0; PLA-CAP-001 §5 |
 
@@ -46,12 +46,13 @@
 | Wilson Yamada | Sponsor / Portfólio / Medição | S | 83 | AVA-CAP-005: 79 | Aprovado |
 | Silvio Baroni | Coordenador MPS / SEPG / GQA | S | 91 | AVA-CAP-005: 88 | Aprovado |
 | Guilherme Gomes | RH / Pessoas / Capacitação / AQU | S | 78 | AVA-CAP-005: 74 | Aprovado |
+| Klayton Roberto | RH / Capacitação (apoio) | S | 80 | AVA-CAP-005: 76 | Aprovado |
 
 ---
 
 ## 4. Observações e Pendências
 
-Taxa de aprovação: 3/3 (100%). Primeiros resultados sólidos para o grupo de gestão. Wilson Yamada apresentou dúvidas sobre a diferença entre o papel do Responsável de Medição e o da análise crítica — esclarecido na sessão.
+Taxa de aprovação: 4/4 (100%). Primeiros resultados sólidos para o grupo de gestão. Wilson Yamada apresentou dúvidas sobre a diferença entre o papel do Responsável de Medição e o da análise crítica — esclarecido na sessão. Klayton Roberto participou na trilha de RH/Capacitação junto a Guilherme Gomes.
 
 ---
 
@@ -68,4 +69,5 @@ Taxa de aprovação: 3/3 (100%). Primeiros resultados sólidos para o grupo de g
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Incluído Klayton Roberto (RH); taxa de aprovação e §4 atualizados |
 | 1.0 | 10/10/2025 | Time de Melhoria Contínua | Registro da sessão de gestão/SEPG (out/2025) |

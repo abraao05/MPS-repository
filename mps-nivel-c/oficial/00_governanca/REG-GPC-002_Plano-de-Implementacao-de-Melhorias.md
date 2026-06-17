@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REG-GPC-002 — Plano de Implementação de Melhorias de Processo |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 13/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
+| **Responsável** | Silvio Baroni |
 | **Processo MPS-SW** | GPC (evidência organizacional — GPC 5, GPC 6, GPC 11) |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -92,4 +93,5 @@ Além das OMs de projeto, o ciclo de preparação MPS-SW gerou melhorias diretas
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 13/06/2026 | Time de Melhoria Contínua | Versão inicial — plano de implementação das 11 OMs de REG-GPC-001 e 8 tarefas documentais do ciclo MPS-SW Nível C |

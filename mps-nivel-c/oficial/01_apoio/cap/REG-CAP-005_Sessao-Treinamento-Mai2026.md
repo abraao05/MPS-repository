@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REG-CAP-005 |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 15/05/2026 |
 | **Referência** | TPL-CAP-001 v1.0; PLA-CAP-001 §5 |
 
@@ -46,12 +46,13 @@
 | Cézar Hiraki | Tech Lead | S | 91 | AVA-CAP-003: 88 / AVA-CAP-004: 85 | Aprovado |
 | Fernando Oliveira | Dev | S | 86 | AVA-CAP-003: 82 | Aprovado |
 | Henry Komatsu | Dev | S | 84 | AVA-CAP-003: 79 | Aprovado |
+| Felipe Siqueira | Dev | S | 83 | AVA-CAP-003: 78 | Aprovado |
 
 ---
 
 ## 4. Observações e Pendências
 
-Taxa de aprovação: 4/4 (100%). Evolução significativa em relação à primeira turma (dez/2024): média do AVA-CAP-001 subiu de 76 para 89. Melhoria atribuída à revisão dos materiais realizada em 2025-2026.
+Taxa de aprovação: 5/5 (100%). Média do AVA-CAP-001: 87,6. Evolução significativa em relação à primeira turma (dez/2024): média subiu de 76 para 87,6. Melhoria atribuída à revisão dos materiais realizada em 2025-2026. Felipe Siqueira participou pela primeira vez da reciclagem técnica (ingresso mar/2026).
 
 ---
 
@@ -68,4 +69,5 @@ Taxa de aprovação: 4/4 (100%). Evolução significativa em relação à primei
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Incluído Felipe Siqueira (Dev); taxa de aprovação e §4 atualizados |
 | 1.0 | 15/05/2026 | Time de Melhoria Contínua | Registro da reciclagem anual — time técnico atual |

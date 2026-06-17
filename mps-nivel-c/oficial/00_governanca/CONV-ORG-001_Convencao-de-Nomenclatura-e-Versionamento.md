@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | CONV-ORG-001 — Convenção de Nomenclatura e Versionamento |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 19/05/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
+| **Responsável** | Silvio Baroni |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -145,5 +146,6 @@ Este documento corresponde aos resultados **GCO 1** e **GCO 4** do processo **Ge
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 14/07/2025 | Time de Melhoria Contínua | Definição da convenção de nomenclatura e versionamento |
 | 1.1 | 19/05/2026 | Time de Melhoria Contínua | Siglas com leitura organizacional e coluna de correspondência ao modelo (instrução para auditoria) |

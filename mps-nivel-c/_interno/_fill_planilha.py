@@ -1,22 +1,18 @@
 # -*- coding: utf-8 -*-
 """Preenche a PlanilhaIndicadores ASR (Nivel C).
-Estrutura por indicador:
-  - Linhas em branco: col A = nome do documento; cols C/D/E/F = 'x' com hyperlink Drive.
-  - Linha (T,L,P,N,NA): autoavaliacao (T/NA) nas colunas de projeto.
-  - Col B e coluna 'Final' (G): intocadas (auditor preenche).
+- Col A: nome do documento / rótulo de seção
+- Col B (CP): link para documentos organizacionais (valem para todos os projetos)
+- Cols C-F (projetos): links para documentos específicos por projeto
+- Linhas (T,L,P,N,NA): intocadas — preenchimento exclusivo do avaliador ASR
+- Col B (Final) nas abas ORG: intocada
+- AQU: mantido em branco (empresa não tem evidência de uso deste processo)
 """
 import csv, re, openpyxl
 from openpyxl.styles import Alignment, Font
 
 SRC = '/root/.claude/uploads/5abbaf16-7c03-5c89-bd42-930844eb89cc/d820916e-PlanilhaIndicadores_SW_2024__NivelC.xlsx'
 OUT = '/home/user/MPS-repository/mps-nivel-c/_interno/PlanilhaIndicadores_SW_2024_NivelC_PREENCHIDA.xlsx'
-CSV = '/root/.claude/uploads/5abbaf16-7c03-5c89-bd42-930844eb89cc/c0987dec-MAPADRIVE_IndicedeLinks.csv'
-
-FOLDER = {
- 'cap':'1WaBDqw00DVFtkeCoCL3gJk59oO07kehU',
- 'curriculos':'1voDfAAX8j0BR6ddM55izLF9pdQ2eclYi',
-}
-def folder_url(k): return f"https://drive.google.com/drive/folders/{FOLDER[k]}"
+CSV = '/root/.claude/uploads/5abbaf16-7c03-5c89-bd42-930844eb89cc/216596c6-16.6_MAPADRIVE_IndicedeLinks.csv'
 
 # ---- link index ----
 LINKS = {}
@@ -26,11 +22,9 @@ with open(CSV, encoding='utf-8-sig') as f:
         if tipo == 'md': continue
         LINKS.setdefault(doc.split('_',1)[0], {})[tipo] = (doc, link)
 
-# Links enviados ao Drive apos exportacao do CSV
-LINKS.setdefault('REG-MED-001', {})['docx'] = ('REG-MED-001', 'https://drive.google.com/file/d/1FOAiyoGlyqXioyDAXV4gCyqsJZvaJ1aB/view?usp=drivesdk')
-LINKS.setdefault('EXEMPLO-GPR-005', {})['docx'] = ('EXEMPLO-GPR-005', 'https://drive.google.com/file/d/1xdb1hYORBdN9jrAxuuqEunXIoDzptTBH/view?usp=drivesdk')
+# Entradas manuais — docs cujo nome no Drive não segue a convenção padrão
 LINKS.setdefault('ATA-FRUKI01-008', {})['docx'] = ('ATA-FRUKI01-008', 'https://drive.google.com/file/d/11alVpwlnsPjgd1_PO4OzMBXeJLRz6PXi/view?usp=drivesdk')
-LINKS.setdefault('INDICE-AASPCNJ01', {})['pdf'] = ('00_INDICE-AASPCNJ01', 'https://drive.google.com/file/d/1kf3EdS_AsVImdD6P_03zCt-OF7_UHj6N/view?usp=drivesdk')
+LINKS.setdefault('REG-MED-001', {})['docx'] = ('REG-MED-001', 'https://drive.google.com/file/d/1FOAiyoGlyqXioyDAXV4gCyqsJZvaJ1aB/view?usp=drivesdk')
 
 MISSING = set()
 
@@ -49,52 +43,111 @@ def get_fname(code, ext=None):
     return list(e.values())[0][0]
 
 # ============ PROJECT ROLE MAPS ============
-PROF = {
- 'TAP':['TAP-PROFARMA01-001'],'PLA':['PLA-PROFARMA01-001'],'ADAP':['ADAP-PROFARMA01-001'],
- 'REQ':['REQ-PROFARMA01-001'],'RASTR':['RASTR-PROFARMA01-001'],'PCP':['PCP-PROFARMA01-001'],
- 'REV':['REV-PROFARMA01-001'],'VV':['VV-PROFARMA01-001'],'CTQ':['CTQ-PROFARMA01-001'],
- 'RELVV':['REL-VV-PROFARMA01-001'],'GCO':['GCO-PROFARMA01-001'],'GDE':['GDE-PROFARMA01-001'],
- 'MED':['MED-PROFARMA01-001'],'GQA':['GQA-PROFARMA01-001'],'RAC':['RAC-PROFARMA01-001'],
- 'ATAK':['ATA-PROFARMA01-001'],'ATAA':['ATA-PROFARMA01-002'],'CR':['CR-PROFARMA01-001'],
- 'LI':['LI-PROFARMA01-001'],'TAE':['TAE-PROFARMA01-001'],'GEST':['GEST-PROFARMA01'],
- 'ITP':['ITP-PROFARMA01-001'],'ATA_METAS':[],'ATA_VAL':[],'CAP':[],
-}
-GAS = {
- 'TAP':['TAP-GASMIG02-001','TAP-GASMIG02-002'],'PLA':['PLA-GASMIG02-001','PLA-GASMIG02-002'],
- 'ADAP':['ADAP-GASMIG02-001','ADAP-GASMIG02-002'],'REQ':['REQ-GASMIG02-001','REQ-GASMIG02-002'],
- 'RASTR':['RASTR-GASMIG02-001','RASTR-GASMIG02-002'],'PCP':['PCP-GASMIG02-001','PCP-GASMIG02-002'],
- 'VV':['VV-GASMIG02-001','VV-GASMIG02-002'],'ITP':['ITP-GASMIG02-002'],'REV':['REV-GASMIG02-001'],
- 'GDE':['GDE-GASMIG02-001'],'GCO':['GCO-GASMIG02-001'],'MED':['MED-GASMIG02-001'],
- 'GQA':['GQA-GASMIG02-001'],'RAC':['RAC-GASMIG02-001'],'ATAK':['ATA-GASMIG02-001'],
- 'ATAA':['ATA-GASMIG02-002','ATA-GASMIG02-003'],'CAP':['CAP-GASMIG02-001'],
- 'LI':['LI-GASMIG02-001'],'TAE':['TAE-GASMIG02-001','TAE-GASMIG02-002'],'GEST':['GEST-GASMIG02'],
- 'CR':[],'CTQ':[],'RELVV':[],'ATA_METAS':[],'ATA_VAL':[],
-}
 FRU = {
- 'TAP':['TAP-FRUKI01-001','TAP-FRUKI01-002'],'PLA':['PLA-FRUKI01-001','PLA-FRUKI01-002'],
- 'ADAP':['ADAP-FRUKI01-001','ADAP-FRUKI01-002'],'REQ':['REQ-FRUKI01-001','REQ-FRUKI01-002'],
- 'RASTR':['RASTR-FRUKI01-001','RASTR-FRUKI01-002'],'PCP':['PCP-FRUKI01-001','PCP-FRUKI01-002'],
- 'VV':['VV-FRUKI01-001','VV-FRUKI01-002'],'ITP':['ITP-FRUKI01-001','ITP-FRUKI01-002'],
- 'GDE':['GDE-FRUKI01-001'],'GCO':['GCO-FRUKI01-001'],'MED':['MED-FRUKI01-001'],
- 'GQA':['GQA-FRUKI01-001'],'RAC':['RAC-FRUKI01-001','RAC-FRUKI01-002'],'CR':['CR-FRUKI01-001'],
- 'LI':['LI-FRUKI01-001'],'ATAK':['ATA-FRUKI01-001','ATA-FRUKI01-008'],
- 'ATA_METAS':['ATA-FRUKI01-002'],'ATAA':['ATA-FRUKI01-003'],
+ 'TAP':['TAP-FRUKI01-001','TAP-FRUKI01-002'],
+ 'PLA':['PLA-FRUKI01-001','PLA-FRUKI01-002'],
+ 'ADAP':['ADAP-FRUKI01-001','ADAP-FRUKI01-002'],
+ 'REQ':['REQ-FRUKI01-001','REQ-FRUKI01-002'],
+ 'RASTR':['RASTR-FRUKI01-001','RASTR-FRUKI01-002'],
+ 'PCP':['PCP-FRUKI01-001','PCP-FRUKI01-002'],
+ 'VV':['VV-FRUKI01-001','VV-FRUKI01-002'],
+ 'ITP':['ITP-FRUKI01-001','ITP-FRUKI01-002'],
+ 'GDE':['GDE-FRUKI01-001'],
+ 'GCO':['GCO-FRUKI01-001'],
+ 'MED':['MED-FRUKI01-001'],
+ 'GQA':['GQA-FRUKI01-001'],
+ 'RAC':['RAC-FRUKI01-001'],
+ 'CR':['CR-FRUKI01-001'],
+ 'LI':['LI-FRUKI01-001'],
+ 'TAE':['TAE-FRUKI01-001','TAE-FRUKI01-002'],
+ 'ATAK':['ATA-FRUKI01-001','ATA-FRUKI01-008'],
+ 'ATA_METAS':['ATA-FRUKI01-002'],
+ 'ATAA':['ATA-FRUKI01-003'],
  'ATA_VAL':['ATA-FRUKI01-004','ATA-FRUKI01-005','ATA-FRUKI01-006','ATA-FRUKI01-007'],
- 'TAE':['TAE-FRUKI01-001','TAE-FRUKI01-002'],'REV':[],'CTQ':[],'RELVV':[],'CAP':[],
+ 'GEST':['GEST-FRUKI01-001'],
+ 'REV':[],'CTQ':[],'RELVV':[],'CAP':[],
+}
+AASPAP = {
+ 'TAP':['TAP-AASPAP01-001'],
+ 'PLA':['PLA-AASPAP01-001'],
+ 'ADAP':['ADAP-AASPAP01-001'],
+ 'REQ':['REQ-AASPAP01-001'],
+ 'RASTR':['RASTR-AASPAP01-001'],
+ 'PCP':['PCP-AASPAP01-001'],
+ 'REV':['REV-AASPAP01-001','REV-AASPAP01-002'],
+ 'VV':['VV-AASPAP01-001'],
+ 'RELVV':['REL-VV-AASPAP01-001'],
+ 'ITP':['ITP-AASPAP01-001'],
+ 'GCO':['GCO-AASPAP01-001'],
+ 'GDE':['GDE-AASPAP01-001'],
+ 'MED':['MED-AASPAP01-001'],
+ 'GQA':['GQA-AASPAP01-001'],
+ 'RAC':['RAC-AASPAP01-001'],
+ 'ATAK':['ATA-AASPAP01-001'],
+ 'ATAA':['ATA-AASPAP01-002','ATA-AASPAP01-003','ATA-AASPAP01-004','ATA-AASPAP01-005'],
+ 'ATA_METAS':['MQ-AASPAP01-001'],
+ 'CR':['CR-AASPAP01-001','CR-AASPAP01-002'],
+ 'GEST':['GEST-AASPAP01'],
+ 'LI':[],'CTQ':[],'CAP':[],'ATA_VAL':[],'TAE':[],
+}
+PROF = {
+ 'TAP':['TAP-PROFARMA01-001'],
+ 'PLA':['PLA-PROFARMA01-001'],
+ 'ADAP':['ADAP-PROFARMA01-001'],
+ 'REQ':['REQ-PROFARMA01-001'],
+ 'RASTR':['RASTR-PROFARMA01-001'],
+ 'PCP':['PCP-PROFARMA01-001'],
+ 'REV':['REV-PROFARMA01-001'],
+ 'VV':['VV-PROFARMA01-001'],
+ 'CTQ':['CTQ-PROFARMA01-001'],
+ 'RELVV':['REL-VV-PROFARMA01-001'],
+ 'ITP':['ITP-PROFARMA01-001'],
+ 'GCO':['GCO-PROFARMA01-001'],
+ 'GDE':['GDE-PROFARMA01-001'],
+ 'MED':['MED-PROFARMA01-001'],
+ 'GQA':['GQA-PROFARMA01-001'],
+ 'RAC':['RAC-PROFARMA01-001'],
+ 'ATAK':['ATA-PROFARMA01-001'],
+ 'ATA_VAL':['ATA-PROFARMA01-002'],
+ 'CR':['CR-PROFARMA01-001'],
+ 'LI':['LI-PROFARMA01-001'],
+ 'TAE':['TAE-PROFARMA01-001'],
+ 'GEST':['GEST-PROFARMA01'],
+ 'ATAA':[],'ATA_METAS':[],'CAP':[],
 }
 AASP = {
- 'TAP':['TAP-AASPCNJ01-001'],'PLA':['PLA-AASPCNJ01-001'],'ADAP':['ADAP-AASPCNJ01-001'],
- 'REQ':['REQ-AASPCNJ01-001'],'RASTR':['RASTR-AASPCNJ01-001'],'PCP':['PCP-AASPCNJ01-001'],
- 'ITP':['ITP-AASPCNJ01-001'],'VV':['VV-AASPCNJ01-001'],'RELVV':['REL-VV-AASPCNJ01-001'],
- 'GCO':['GCO-AASPCNJ01-001'],'GDE':['GDE-AASPCNJ01-001'],'MED':['MED-AASPCNJ01-001'],
- 'GQA':['GQA-AASPCNJ01-001'],'RAC':['RAC-AASPCNJ01-001'],'ATAK':['ATA-AASPCNJ01-001'],
- 'CAP':['CAP-AASPCNJ01-001'],'CR':['CR-AASPCNJ01-001'],'GEST':['GEST-AASPCNJ01'],
- 'REV':['REV-AASPCNJ01-001'],'LI':[],'CTQ':[],'ATAA':[],'ATA_METAS':[],'ATA_VAL':[],'TAE':[],
+ 'TAP':['TAP-AASPCNJ01-001'],
+ 'PLA':['PLA-AASPCNJ01-001'],
+ 'ADAP':['ADAP-AASPCNJ01-001'],
+ 'REQ':['REQ-AASPCNJ01-001'],
+ 'RASTR':['RASTR-AASPCNJ01-001'],
+ 'PCP':['PCP-AASPCNJ01-001'],
+ 'REV':['REV-AASPCNJ01-001'],
+ 'VV':['VV-AASPCNJ01-001'],
+ 'RELVV':['REL-VV-AASPCNJ01-001'],
+ 'ITP':['ITP-AASPCNJ01-001'],
+ 'GCO':['GCO-AASPCNJ01-001'],
+ 'GDE':['GDE-AASPCNJ01-001'],
+ 'MED':['MED-AASPCNJ01-001'],
+ 'GQA':['GQA-AASPCNJ01-001'],
+ 'RAC':['RAC-AASPCNJ01-001'],
+ 'ATAK':['ATA-AASPCNJ01-001'],
+ 'CR':['CR-AASPCNJ01-001'],
+ 'GEST':['GEST-AASPCNJ01-001'],
+ 'CAP':['CAP-AASPCNJ01-001'],
+ 'LI':[],'CTQ':[],'ATAA':[],'ATA_METAS':[],'ATA_VAL':[],'TAE':[],
 }
-PROJECTS = [('PROFARMA',PROF),('GASMIG',GAS),('FRUKI',FRU),('AASP_CNJ',AASP)]
-PCOL = {'PROFARMA':3,'GASMIG':4,'FRUKI':5,'AASP_CNJ':6}  # C,D,E,F
 
-# Descricao legivel por role — vai para col A das linhas de evidencia
+PROJECTS = [('FRUKI',FRU),('AASP_AP',AASPAP),('PROFARMA',PROF),('AASP_CNJ',AASP)]
+PCOL = {'FRUKI':3,'AASP_AP':4,'PROFARMA':5,'AASP_CNJ':6}  # C, D, E, F
+
+PROJ_NAMES = {
+ 'FRUKI':   'FTFRUKI — Super App Força de Vendas',
+ 'AASP_AP': 'AASP — Andamento Processuais',
+ 'PROFARMA':'PROFARMA / D1000 — Cadastro de Clientes',
+ 'AASP_CNJ':'AASP — CNJ Integração',
+}
+
 ROLE_LABELS = {
  'TAP':'TAP — Termo de Abertura do Projeto',
  'PLA':'PLA — Plano de Projeto',
@@ -118,12 +171,11 @@ ROLE_LABELS = {
  'CR':'CR — Change Request',
  'LI':'LI — Registro de Licoes Aprendidas',
  'TAE':'TAE — Termo de Aceite da Entrega',
- 'GEST':'GEST — Planilha de Gestao do Projeto (backlog/tarefas)',
+ 'GEST':'GEST — Planilha de Gestao do Projeto',
  'ITP':'ITP — Estrategia de Integracao do Produto',
  'CAP':'CAP — Registro de Capacitacao da Equipe',
 }
 
-# indicator -> role list
 IND_ROLES = {
  'GPR 1':['TAP','PLA'],'GPR 2+':['ADAP'],'GPR 3+':['PLA'],'GPR 4+':['PLA'],
  'GPR 5':['PLA','GEST'],'GPR 6':['PLA'],'GPR 7+':['PLA'],'GPR 8':['PLA'],'GPR 9':['PLA'],
@@ -140,21 +192,24 @@ IND_ROLES = {
 }
 
 # ============ ORG SHEETS ============
-GCO_REG=[('GCO-PROFARMA01-001',None,None),('GCO-GASMIG02-001',None,None),('GCO-FRUKI01-001',None,None),('GCO-AASPCNJ01-001',None,None)]
-MED_REG=[('MED-PROFARMA01-001',None,None),('MED-GASMIG02-001',None,None),('MED-FRUKI01-001',None,None),('MED-AASPCNJ01-001',None,None)]
-GDE_REG=[('GDE-PROFARMA01-001',None,None),('GDE-GASMIG02-001',None,None),('GDE-FRUKI01-001',None,None),('GDE-AASPCNJ01-001',None,None)]
-GQA_REG=[('GQA-PROFARMA01-001',None,None),('GQA-GASMIG02-001',None,None),('GQA-FRUKI01-001',None,None),('GQA-AASPCNJ01-001',None,None)]
-LI_REG =[('LI-PROFARMA01-001',None,None),('LI-GASMIG02-001',None,None),('LI-FRUKI01-001',None,None)]
-ADAP_REG=[('ADAP-PROFARMA01-001',None,None),('ADAP-GASMIG02-001',None,None),('ADAP-GASMIG02-002',None,None),('ADAP-FRUKI01-001',None,None),('ADAP-FRUKI01-002',None,None),('ADAP-AASPCNJ01-001',None,None)]
+GCO_REG =[('GCO-FRUKI01-001',None,None),('GCO-AASPAP01-001',None,None),
+          ('GCO-PROFARMA01-001',None,None),('GCO-AASPCNJ01-001',None,None)]
+MED_REG =[('MED-FRUKI01-001',None,None),('MED-AASPAP01-001',None,None),
+          ('MED-PROFARMA01-001',None,None),('MED-AASPCNJ01-001',None,None)]
+GDE_REG =[('GDE-FRUKI01-001',None,None),('GDE-AASPAP01-001',None,None),
+          ('GDE-PROFARMA01-001',None,None),('GDE-AASPCNJ01-001',None,None)]
+GQA_REG =[('GQA-FRUKI01-001',None,None),('GQA-AASPAP01-001',None,None),
+          ('GQA-PROFARMA01-001',None,None),('GQA-AASPCNJ01-001',None,None)]
+LI_REG  =[('LI-FRUKI01-001',None,None),('LI-PROFARMA01-001',None,None)]
+ADAP_REG=[('ADAP-FRUKI01-001',None,None),('ADAP-FRUKI01-002',None,None),
+          ('ADAP-AASPAP01-001',None,None),('ADAP-PROFARMA01-001',None,None),
+          ('ADAP-AASPCNJ01-001',None,None)]
 REGCAP=[(f'REG-CAP-{n}',None,None) for n in ['001','001B','002','002B','003','004','005','006','007','008','009','010','011','012','013']]
 AVACAP=[(f'AVA-CAP-{n}',None,None) for n in ['001','002','003','004','005']]
 
+# AQU mantido em branco — sem evidência de uso (equipe própria, sem subcontratação)
 ORG_EV = {
- 'AQU 1':["Nao aplicavel — nenhum projeto teve subcontratacao de desenvolvimento (equipe propria Timeware). Processo organizacional definido:",('PRO-AQU-001','§3',None)],
- 'AQU 2':["Nao aplicavel (ver AQU 1). Processo definido:",('PRO-AQU-001','§4',None)],
- 'AQU 3+':["Nao aplicavel (ver AQU 1). Processo definido:",('PRO-AQU-001','§5',None)],
- 'AQU 4+':["Nao aplicavel (ver AQU 1). Processo definido:",('PRO-AQU-001','§6',None)],
- 'AQU 5':[],
+ 'AQU 1':[],'AQU 2':[],'AQU 3+':[],'AQU 4+':[],'AQU 5':[],
  'GCO 1':[('PLA-GCO-001','§3',None),('GUIA-GCO-001',None,None),('CONV-ORG-001',None,None),('PRO-GCO-001',None,None)],
  'GCO 2':[('PLA-GCO-001','§4',None),('GUIA-GCO-001',None,None),('PRO-GCO-001',None,None)],
  'GCO 3':[('PLA-GCO-001','§5',None)]+GCO_REG+[('PRO-GCO-001',None,None)],
@@ -174,7 +229,7 @@ ORG_EV = {
  'GDE 5':[('PRO-GDE-001','§5',None)],
  'GDE 6':[('PRO-GDE-001','§5',None),('TPL-GDE-001',None,None)]+GDE_REG,
  'CAP 1+':[('PLA-CAP-001','§3',None),('PRO-CAP-001',None,None)],
- 'CAP 2':[('PLA-CAP-001','§4',None),('TPL-CAP-001',None,None),('CAP-GASMIG02-001',None,None),('CAP-AASPCNJ01-001',None,None),('PRO-CAP-001',None,None)]+REGCAP,
+ 'CAP 2':[('PLA-CAP-001','§4',None),('TPL-CAP-001',None,None),('PRO-CAP-001',None,None)]+REGCAP,
  'CAP 3':[('PLA-CAP-001','§5',None),('REL-CAP-001',None,None),('PRO-CAP-001',None,None)]+AVACAP,
  'CAP 4':[('PLA-CAP-001','§6',None),('REG-CAP-CV-001',None,None),('PRO-CAP-001',None,None)],
  'GPC 1':[('PLA-GPC-001','§2',None)],
@@ -199,8 +254,7 @@ ORG_EV = {
  'OSW 9':[('PRO-OSW-002','§4',None),('REG-OSW-001',None,None)],
  'OSW 10':[('PRO-OSW-002','§5',None),('REG-OSW-001',None,None)],
 }
-ORG_RATING = {'AQU 1':'NA','AQU 2':'NA','AQU 3+':'NA','AQU 4+':'NA'}
-ORG_NO_RATING = {'AQU 5'}
+ORG_NO_RATING = set()  # sem preenchimento de avaliação — exclusivo do avaliador
 
 # ============ ESTILOS ============
 WRAP = Alignment(wrap_text=True, vertical='top')
@@ -214,7 +268,6 @@ def write_link(ws, row, col, url):
     cell.alignment = CENTER
 
 def find_blocks(ws):
-    """Retorna lista de (codigo, linha_indicador, linha_legenda)."""
     blocks = []; cur = None
     for r in range(4, ws.max_row+1):
         a = ws.cell(row=r, column=1).value
@@ -235,6 +288,12 @@ def blank_rows_for(ws, irow, lrow):
 # ============ WRITE ============
 wb = openpyxl.load_workbook(SRC)
 pmap_dict = dict(PROJECTS)
+
+# ---- cabeçalho de projeto (R3) nas abas de processo ----
+for sheet in ['GPR','REQ','PCP','ITP','VV']:
+    ws = wb[sheet]
+    for pname, col in PCOL.items():
+        ws.cell(row=3, column=col, value=PROJ_NAMES.get(pname, pname)).alignment = CENTER
 
 # ---- abas de projeto (GPR, REQ, PCP, ITP, VV) ----
 for sheet in ['GPR','REQ','PCP','ITP','VV']:
@@ -258,25 +317,18 @@ for sheet in ['GPR','REQ','PCP','ITP','VV']:
 
             r = blanks[row_cursor]; row_cursor += 1
             ws.cell(row=r, column=1, value=label).alignment = Alignment(vertical='top')
-
             for pname, col in PCOL.items():
                 if pname in proj_urls:
                     write_link(ws, r, col, proj_urls[pname])
+        # linha (T,L,P,N,NA) — não preencher
 
-        # linha de rating
-        rr = lrow if lrow else irow
-        for pname, col in PCOL.items():
-            pmap = pmap_dict[pname]
-            has = any(get_url(c) for role in roles for c in pmap.get(role, []))
-            if has:
-                ws.cell(row=rr, column=col, value='T').alignment = CENTER
-
-# ---- abas organizacionais (AQU, GCO, MED, GDE, CAP, GPC, OSW) ----
+# ---- abas organizacionais (GCO, MED, GDE, CAP, GPC, OSW) — AQU em branco ----
 for sheet in ['AQU','GCO','MED','GDE','CAP','GPC','OSW']:
     ws = wb[sheet]
     for code, irow, lrow in find_blocks(ws):
         if code not in ORG_EV: continue
         items = ORG_EV[code]
+        if not items: continue  # AQU e qualquer indicador sem evidência = em branco
         blanks = blank_rows_for(ws, irow, lrow)
         row_cursor = 0
 
@@ -293,108 +345,164 @@ for sheet in ['AQU','GCO','MED','GDE','CAP','GPC','OSW']:
                 label = f"{fname} {sec}" if sec else fname
                 r = blanks[row_cursor]; row_cursor += 1
                 ws.cell(row=r, column=1, value=label).alignment = Alignment(vertical='top')
-                write_link(ws, r, 3, url)  # col C = ORG
+                write_link(ws, r, 3, url)  # col C = Fonte da Evidência (ORG)
+        # linha (T,L,P,N,NA) — não preencher
 
-        # linha de rating
-        rr = lrow if lrow else irow
-        rating = ORG_RATING.get(code, 'T' if (code not in ORG_NO_RATING and items) else None)
-        if rating:
-            ws.cell(row=rr, column=3, value=rating).alignment = CENTER
+# ============ CP_Projeto ============
+# Estrutura do template (nosso d820916e):
+# R3: cabeçalho de projeto; R4:(i) R5-8 blank; R9:(ii) R10-13 blank;
+# R14:(iii) R15-18 blank; R19:(iv) R20-23 blank; R24:(v) R25-28 blank;
+# R29:(vi) R30-32 blank; R33:(vii) R34-36 blank; R37:(T,L,P,N,NA) — não tocar
+#
+# Convenção: col B = evidência organizacional (vale todos os projetos)
+#            cols C-F = evidência específica por projeto
 
-# ---- CP_Projeto ----
-PLA_ALL=[('PLA-PROFARMA01-001',None,None),('PLA-GASMIG02-001',None,None),('PLA-GASMIG02-002',None,None),
-         ('PLA-FRUKI01-001',None,None),('PLA-FRUKI01-002',None,None),('PLA-AASPCNJ01-001',None,None)]
-VV_ALL =[('VV-PROFARMA01-001',None,None),('VV-GASMIG02-001',None,None),('VV-FRUKI01-001',None,None),('VV-AASPCNJ01-001',None,None)]
-REV_ALL=[('REV-PROFARMA01-001',None,None),('REV-GASMIG02-001',None,None),('REV-AASPCNJ01-001',None,None)]
-REGCAP5=[(f'REG-CAP-{n}',None,None) for n in ['001','002','003','004','005']]
+ws_cp = wb['CP_Projeto']
 
-def block_text(items):
-    out = []
-    for it in items:
-        if isinstance(it, str): out.append(it); continue
-        code, sec, ext = it
-        url = get_url(code, ext)
-        if not url: continue
-        fname = get_fname(code, ext)
-        out.append(f"{fname} {sec} — {url}" if sec else f"{fname} — {url}")
-    return "\n".join(out)
+# R3: nomes dos projetos
+for pname, col in PCOL.items():
+    ws_cp.cell(row=3, column=col, value=PROJ_NAMES[pname]).alignment = CENTER
 
-CP_PROJ_ROWS = {4:'i',9:'ii',14:'iii',19:'iv',24:'v',29:'vi',33:'vii'}
-CP_PROJ_EV = {
- 'i':["Registros de execucao dos 4 projetos (evidencia detalhada nas abas GPR/REQ/PCP/ITP/VV):"]+PLA_ALL+VV_ALL,
- 'ii':["Adaptacao do processo-padrao por projeto:"]+ADAP_REG+[('PRO-GPC-001',None,None),('GUIA-GPC-001',None,None)],
- 'iii':[('PLA-CAP-001',None,None),('PRO-CAP-001',None,None),('CAP-GASMIG02-001',None,None),('CAP-AASPCNJ01-001',None,None)]+REGCAP5,
- 'iv':[('EST-GPC-001',None,None),('GQA-ORG-001',None,None),('TPL-GPC-001',None,None)]+GQA_REG,
- 'v':GQA_REG+REV_ALL+[('TPL-GPC-001',None,None)],
- 'vi':LI_REG+[('REG-GPC-001',None,None)],
- 'vii':[('PRO-GPC-001',None,None),('PLA-MED-001',None,None),('PLA-GPC-001',None,None)],
-}
+def cp_org_link(row, col_b, code, ext=None, sec=None):
+    url = get_url(code, ext)
+    if not url: return False
+    fname = get_fname(code, ext)
+    label = f"{fname} {sec}" if sec else fname
+    ws_cp.cell(row=row, column=1, value=label).alignment = Alignment(vertical='top')
+    write_link(ws_cp, row, col_b, url)
+    return True
 
-ws = wb['CP_Projeto']
-for row, att in CP_PROJ_ROWS.items():
-    blanks = blank_rows_for(ws, row, row + 5)
-    row_cursor = 0
-    for item in CP_PROJ_EV[att]:
-        if row_cursor >= len(blanks): break
-        if isinstance(item, str):
-            r = blanks[row_cursor]; row_cursor += 1
-            ws.cell(row=r, column=2, value=item).alignment = WRAP
-        else:
-            code, sec, ext = item
-            url = get_url(code, ext)
-            if not url: continue
-            fname = get_fname(code, ext)
-            label = f"{fname} {sec}" if sec else fname
-            r = blanks[row_cursor]; row_cursor += 1
-            ws.cell(row=r, column=2, value=label).alignment = Alignment(vertical='top')
-            write_link(ws, r, 3, url)
+def cp_proj_links(row, role):
+    written = False
+    for pname, pmap in PROJECTS:
+        col = PCOL[pname]
+        for c in pmap.get(role, []):
+            url = get_url(c)
+            if url:
+                write_link(ws_cp, row, col, url)
+                written = True
+                break
+    return written
 
-# ---- CP_Organizacional ----
-CPO_PROC_COL = {'AQU':2,'GCO':4,'MED':6,'GDE':8,'CAP':10,'GPC':12,'OSW':14}
-CPO_ROWS = {5:'i',10:'ii',15:'iii',20:'iv',25:'v',30:'vi',35:'vii'}
-COM = {
- 'ii':[('PRO-GPC-001',None,None),('GUIA-GPC-001',None,None)],
- 'iv':[('EST-GPC-001',None,None),('GQA-ORG-001',None,None)],
- 'v':[('GQA-ORG-001',None,None),('TPL-GPC-001',None,None)],
- 'vi':[('REG-GPC-001',None,None),('PLA-GPC-001','§5.1',None)],
- 'vii':[('PLA-GPC-001',None,None),('PLA-MED-001',None,None)],
-}
-CPO_I = {
- 'AQU':[('PRO-AQU-001',None,None)],
- 'GCO':[('PLA-GCO-001',None,None),('PRO-GCO-001',None,None)]+GCO_REG,
- 'MED':[('PLA-MED-001',None,None),('PRO-MED-001',None,None)]+MED_REG,
- 'GDE':[('PRO-GDE-001',None,None)]+GDE_REG,
- 'CAP':[('PLA-CAP-001',None,None),('PRO-CAP-001',None,None)]+REGCAP5,
- 'GPC':[('PLA-GPC-001',None,None),('PRO-GPC-001',None,None)],
- 'OSW':[('PRO-OSW-001',None,None),('PRO-OSW-002',None,None)],
-}
-CPO_III = {
- 'AQU':[('PLA-CAP-001',None,None),('GUIA-CAP-012',None,None)],
- 'GCO':[('PLA-CAP-001',None,None),('GUIA-CAP-005',None,None),('MAT-CAP-021',None,None),('AVA-CAP-004',None,None)],
- 'MED':[('PLA-CAP-001',None,None),('GUIA-CAP-008',None,None),('MAT-CAP-022',None,None),('AVA-CAP-005',None,None)],
- 'GDE':[('PLA-CAP-001',None,None),('GUIA-CAP-007',None,None)],
- 'CAP':[('PLA-CAP-001',None,None),('GUIA-CAP-011',None,None),('AVA-CAP-005',None,None)],
- 'GPC':[('PLA-CAP-001',None,None),('GUIA-CAP-009',None,None),('MAT-CAP-014',None,None),('AVA-CAP-005',None,None)],
- 'OSW':[('PLA-CAP-001',None,None),('GUIA-CAP-010',None,None),('MAT-CAP-013',None,None)],
-}
-ws = wb['CP_Organizacional']
-for proc, col in CPO_PROC_COL.items():
-    for row, att in CPO_ROWS.items():
-        items = CPO_I[proc] if att == 'i' else CPO_III[proc] if att == 'iii' else COM.get(att, [])
-        blanks = blank_rows_for(ws, row, row + 5)
-        row_cursor = 0
-        for item in items:
-            if row_cursor >= len(blanks): break
-            code, sec, ext = item
-            url = get_url(code, ext)
-            if not url: continue
-            fname = get_fname(code, ext)
-            label = f"{fname} {sec}" if sec else fname
-            r = blanks[row_cursor]; row_cursor += 1
-            ws.cell(row=r, column=col-1, value=label).alignment = Alignment(vertical='top')
-            write_link(ws, r, col, url)
+# (i) R4 — texto informativo
+ws_cp.cell(row=5, column=1,
+    value='Todas as evidências de execução dos resultados dos processos nos projetos (GPR, REQ, PCP, ITP, VV)'
+).alignment = WRAP
+
+# (ii) R9 — processo padrão e adaptação
+cp_org_link(10, 2, 'PRO-GPR-001')
+cp_org_link(11, 2, 'GUIA-GPC-001')
+ws_cp.cell(row=12, column=1, value='ADAP — Registro de Adaptacao do Processo').alignment = Alignment(vertical='top')
+cp_proj_links(12, 'ADAP')
+cp_org_link(13, 2, 'MAPA-ORG-001', ext='docx')
+
+# (iii) R14 — pessoas preparadas
+cp_org_link(15, 2, 'MAPA-ORG-001', ext='docx')
+cp_org_link(16, 2, 'REG-CAP-CV-001')
+cp_org_link(17, 2, 'PLA-CAP-001')
+
+# (iv) R19 — verificação objetiva do processo
+ws_cp.cell(row=20, column=1, value='GEST — Planilha de Gestao do Projeto').alignment = Alignment(vertical='top')
+cp_proj_links(20, 'GEST')
+ws_cp.cell(row=21, column=1, value='GQA — Registro de Auditoria (GQA)').alignment = Alignment(vertical='top')
+cp_proj_links(21, 'GQA')
+
+# (v) R24 — produtos de trabalho avaliados
+ws_cp.cell(row=25, column=1, value='GEST — Planilha de Gestao do Projeto').alignment = Alignment(vertical='top')
+cp_proj_links(25, 'GEST')
+ws_cp.cell(row=26, column=1, value='GQA — Registro de Auditoria (GQA)').alignment = Alignment(vertical='top')
+cp_proj_links(26, 'GQA')
+
+# (vi) R29 — oportunidades de melhoria
+ws_cp.cell(row=30, column=1, value='LI — Registro de Licoes Aprendidas').alignment = Alignment(vertical='top')
+cp_proj_links(30, 'LI')
+cp_org_link(31, 2, 'REG-GPC-001')
+
+# (vii) R33 — informações e ativos de processo
+cp_org_link(34, 2, 'PLA-GPC-001')
+cp_org_link(35, 2, 'REG-GPC-002')
+# R37 = (T,L,P,N,NA) — não tocar
+
+# ============ CP_Organizacional ============
+# Estrutura do template:
+# R2: cabeçalhos de processo (AQU=C2, GCO=C4, MED=C6, GDE=C8, CAP=C10, GPC=C12, OSW=C14)
+# R4: seção E/D/C; R5:(i) R6-9 blank; R10:(ii) R11-14 blank; R15:(iii) R16-19 blank;
+# R20:(iv) R21-24 blank; R25:(v) R26-29 blank; R30:(vi) R31-34 blank;
+# R35:(vii) R36-39 blank; R40:(T,L,P,N,NA) — não tocar
+#
+# Cols de evidência: AQU=2(branco), GCO=4, MED=6, GDE=8, CAP=10, GPC=12, OSW=14
+
+ws_cpo = wb['CP_Organizacional']
+
+# Colunas por processo (col de Fonte da Evidência)
+ORG_COLS = {'GCO':4,'MED':6,'GDE':8,'CAP':10,'GPC':12,'OSW':14}
+ALL_ORG_COLS = list(ORG_COLS.values())  # [4,6,8,10,12,14]
+
+def cpo_link(row, cols, code, ext=None, sec=None, label_override=None):
+    url = get_url(code, ext)
+    if not url: return False
+    fname = get_fname(code, ext)
+    label = label_override or (f"{fname} {sec}" if sec else fname)
+    ws_cpo.cell(row=row, column=1, value=label).alignment = Alignment(vertical='top')
+    for col in (cols if isinstance(cols, list) else [cols]):
+        write_link(ws_cpo, row, col, url)
+    return True
+
+# (i) R5 — texto informativo
+ws_cpo.cell(row=6, column=1,
+    value='Todas as evidências de execução dos resultados — ver abas GCO, MED, GDE, CAP, GPC, OSW'
+).alignment = WRAP
+
+# (ii) R10 — processo padrão
+# linha 11: um PRO por processo
+ws_cpo.cell(row=11, column=1, value='Definição de processos (PRO-*)').alignment = Alignment(vertical='top')
+for proc, col in ORG_COLS.items():
+    code_map = {'GCO':'PRO-GCO-001','MED':'PRO-MED-001','GDE':'PRO-GDE-001',
+                'CAP':'PRO-CAP-001','GPC':'PRO-GPC-001','OSW':'PRO-OSW-001'}
+    url = get_url(code_map[proc])
+    if url: write_link(ws_cpo, 11, col, url)
+# linha 12: complementos GPC e OSW
+ws_cpo.cell(row=12, column=1, value='Definição de processos (complemento GPC/OSW)').alignment = Alignment(vertical='top')
+for code, col in [('PRO-GPC-002',12),('PRO-OSW-002',14),('GUIA-GPC-001',12)]:
+    url = get_url(code)
+    if url: write_link(ws_cpo, 12, col, url)
+# linha 13: MAPA-ORG-001 para todos
+cpo_link(13, ALL_ORG_COLS, 'MAPA-ORG-001', ext='docx',
+         label_override='MAPA-ORG-001 — Matriz de Papeis e Responsabilidades')
+
+# (iii) R15 — pessoas preparadas
+cpo_link(16, ALL_ORG_COLS, 'MAPA-ORG-001', ext='docx',
+         label_override='MAPA-ORG-001 — Matriz de Papeis e Responsabilidades')
+cpo_link(17, ALL_ORG_COLS, 'REG-CAP-CV-001',
+         label_override='REG-CAP-CV-001 — Curriculos e Evidencias de Competencia')
+cpo_link(18, ALL_ORG_COLS, 'PLA-CAP-001')
+
+# (iv) R20 — verificação objetiva
+cpo_link(21, ALL_ORG_COLS, 'GQA-ORG-001',
+         label_override='GQA-ORG-001 — Auditoria Organizacional')
+cpo_link(22, [12], 'EST-GPC-001',
+         label_override='EST-GPC-001 — Estrategia de Auditoria de GQA')
+
+# (v) R25 — produtos de trabalho avaliados
+cpo_link(26, ALL_ORG_COLS, 'GQA-ORG-001',
+         label_override='GQA-ORG-001 — Auditoria Organizacional')
+cpo_link(27, [12], 'TPL-GPC-001',
+         label_override='TPL-GPC-001 — Template de Auditoria de GQA')
+
+# (vi) R30 — oportunidades de melhoria
+cpo_link(31, ALL_ORG_COLS, 'PLA-GPC-001',
+         label_override='PLA-GPC-001 — Plano de Melhoria de Processos')
+cpo_link(32, [12], 'REG-GPC-001',
+         label_override='REG-GPC-001 — Registro de Licoes Aprendidas Organizacionais')
+
+# (vii) R35 — informações e ativos de processo
+cpo_link(36, [12], 'REG-GPC-002',
+         label_override='REG-GPC-002 — Registro de Dados de Desempenho de Processos')
+cpo_link(37, ALL_ORG_COLS, 'PLA-GPC-001',
+         label_override='PLA-GPC-001 — Plano de Melhoria de Processos')
+# R40 = (T,L,P,N,NA) — não tocar
 
 wb.save(OUT)
 print("Saved:", OUT)
-print("\nMISSING CODES (", len(MISSING), "):")
+print(f"\nMISSING CODES ({len(MISSING)}):")
 for m in sorted(MISSING): print("  -", m)

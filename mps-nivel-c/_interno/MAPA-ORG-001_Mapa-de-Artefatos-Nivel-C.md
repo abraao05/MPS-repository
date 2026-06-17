@@ -3,13 +3,15 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Mapa de Artefatos / Plano de Implantação |
-| **Versão** | 0.40 (rascunho) |
-| **Data** | 13/06/2026 |
+| **Versão** | 0.41 (rascunho) |
+| **Data** | 15/06/2026 |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
 | **Avaliadora (IA)** | ASR Consultoria e Assessoria em Qualidade Ltda. |
 | **Fonte de escopo** | PlanilhaIndicadores_SW_2024__NivelC.xlsx |
-| **Nº de projetos na avaliação** | 3 selecionados (PROFARMA/D1000, FTGASMIG, FTFRUKI) · AASP_CNJ documentado como 4º projeto (reserva) |
+| **Nº de projetos na avaliação** | 3 selecionados (PROFARMA/D1000, FTGASMIG, FTFRUKI) · AASP_CNJ documentado como 4º projeto (reserva) · MilhasFacil documentado como projeto adicional do portfólio (em execução), **fora da amostra fixada para a avaliação** |
 | **Responsável (ponto focal)** | Abraão Oliveira |
+
+> **Alterações v0.41 (15/06/2026):** inclusão do projeto **MilhasFacil** (`04_registros/MilhasFacil_Busca-de-Milhas/`, cliente Hub de Milhas) no inventário §2.1 como projeto adicional do portfólio, **em execução** (Sprint 9 de 12; encerramento previsto 26/07/2026) — documentado para gestão/portfólio (ver REG-OSW-001), **fora da amostra de 3 projetos fixada para a avaliação**. 21 registros `.md` + planilha de gestão. Nota: a inclusão na PlanilhaIndicadores ASR depende dos links do Drive dos artefatos (ainda não exportados) e de definição de coluna na planilha (estrutura atual: 4 colunas de projeto + Final).
 
 > **Alterações v0.40 (13/06/2026):** revisão geral do inventário (§2.1) a partir da varredura completa do repositório — sincronização de todos os documentos e versões existentes hoje. Novos artefatos de governança incorporados: ATA-GPC-001 (ata de análise crítica), GQA-ORG-001 (auditoria organizacional), REG-GPC-001 (registro de melhorias), REG-GPC-002 (plano de implementação de melhorias), REG-OSW-001 (painel de portfólio) e REG-OSW-002 (comunicação da política). Novos processos de apoio: PRO-CAP-001, PRO-GCO-001, PRO-MED-001 e REG-MED-001 (repositório de medidas). Capacitação ampliada para 47 ativos (incl. MAT-CAP-023 e TPL-CAP-002). Registros de projeto atualizados: PROFARMA (21), FTGASMIG (28 — OS-001 e OS-002 encerradas), FTFRUKI (34), e **AASP_CNJ agora documentado (19 docs)** como 4º projeto de reserva. Escopo da avaliação fixado em **3 projetos** (PROFARMA, GASMIG, FRUKI). AQU confirmado como **Não Aplicável**.
 
@@ -327,6 +329,35 @@ MPS-Nivel-C/
 | REV-AASPCNJ01-001 | Registro de Revisao por Pares | — |
 | TAP-AASPCNJ01-001 | Termo de Abertura | 1.0 |
 | VV-AASPCNJ01-001 | Plano de VV | 1.0 |
+
+### Registros de projeto — MilhasFacil (`04_registros/MilhasFacil_Busca-de-Milhas/`)
+
+Projeto adicional do portfólio, **em execução** (Sprint 9 de 12; encerramento previsto 26/07/2026). Documentado para gestão e portfólio (ver REG-OSW-001); **não integra a amostra de 3 projetos fixada para a avaliação**. Status por artefato no índice do projeto (`00_INDICE-MILHASFACIL01`). Cliente: Hub de Milhas. Artefatos de encerramento (TAE, LI, Ata de Aceite) aguardam o aceite formal (~26/07/2026).
+
+| Código | Documento | Versão |
+|---|---|---|
+| 00 | INDICE MILHASFACIL01_Mapa de Registros | 1.0 |
+| ADAP-MILHASFACIL01-001 | Registro de Adaptacao | 1.1 |
+| ATA-MILHASFACIL01-001 | Ata de Kickoff | 1.1 |
+| ATA-MILHASFACIL01-002 | Aprovacao de Arquitetura | 1.1 |
+| CAP-MILHASFACIL01-001 | Registro de Capacitacao da Equipe | 1.0 |
+| CR-MILHASFACIL01-001 | Change Request | 1.1 |
+| CTQ-MILHASFACIL01-001 | Cenarios de Teste | 1.1 |
+| GCO-MILHASFACIL01-001 | Registro de Configuracao | 1.0 |
+| GDE-MILHASFACIL01-001 | Registro de Analise de Decisao | 1.1 |
+| GEST-MILHASFACIL01-001 | Planilha de Gestao do Projeto (xlsx) | 1.1 |
+| GQA-MILHASFACIL01-001 | Registro de GQA | 1.1 |
+| ITP-MILHASFACIL01-001 | Estrategia de Integracao | 1.0 |
+| MED-MILHASFACIL01-001 | Registro de Medicao | 1.1 |
+| PCP-MILHASFACIL01-001 | Documento de Design | 1.1 |
+| PLA-MILHASFACIL01-001 | Plano de Projeto | 1.1 |
+| RAC-MILHASFACIL01-001 | Relatorio de Acompanhamento | 1.1 |
+| RASTR-MILHASFACIL01-001 | Matriz de Rastreabilidade | 1.1 |
+| REL-VV-MILHASFACIL01-001 | Relatorio de Execucao de Testes | 1.1 |
+| REQ-MILHASFACIL01-001 | Documento de Requisitos | 1.1 |
+| REV-MILHASFACIL01-001 | Registro de Revisao por Pares | 1.0 |
+| TAP-MILHASFACIL01-001 | Termo de Abertura | 1.1 |
+| VV-MILHASFACIL01-001 | Plano de VV | 1.0 |
 
 ### Internos (`_interno/`) — não auditados pela ASR
 

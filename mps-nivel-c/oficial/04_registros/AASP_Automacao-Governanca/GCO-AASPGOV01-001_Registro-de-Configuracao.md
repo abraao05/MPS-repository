@@ -5,7 +5,7 @@
 | **Documento** | GCO-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 02/06/2026 |
 | **Gerente de Projeto / Responsável GCO** | Abraão Oliveira |
 | **Processo MPS-SW** | GCO (evidência de projeto) |
@@ -72,3 +72,4 @@ A implantação em produção seguiu o seguinte rito: (1) validação do execut�
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de gerência de configuração consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

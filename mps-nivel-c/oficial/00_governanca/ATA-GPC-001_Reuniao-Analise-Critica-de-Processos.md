@@ -8,6 +8,7 @@
 | **Data do documento** | 13/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Processo MPS-SW** | GPC (evidência — GPC 6, GPC 7) / OSW (evidência — OSW 3) |
+| **Responsável** | Silvio Baroni |
 | **Classificação** | Registro organizacional de governança |
 
 ---
@@ -112,4 +113,5 @@ O TMC deliberou sobre os canais e grupos para comunicação dos resultados do ci
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 13/06/2026 | Time de Melhoria Contínua | Versão inicial — ata da reunião de análise crítica de processos realizada em 11/06/2026 |

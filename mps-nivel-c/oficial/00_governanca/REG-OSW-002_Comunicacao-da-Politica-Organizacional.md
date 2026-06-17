@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REG-OSW-002 — Registro de Comunicação da Política Organizacional de Processos |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 13/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Silvio Baroni |
 | **Processo MPS-SW** | OSW (evidência organizacional — OSW 1, OSW 7) |
 | **Classificação** | Registro organizacional de governança |
 
@@ -104,4 +105,5 @@ A comunicação cobriu as seguintes diretrizes, conforme POL-ORG-001:
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 13/06/2026 | Time de Melhoria Contínua | Versão inicial — registro consolidado dos eventos de comunicação da POL-ORG-001 pela alta gestão (kickoff MPS-SW e análise crítica trimestral) |

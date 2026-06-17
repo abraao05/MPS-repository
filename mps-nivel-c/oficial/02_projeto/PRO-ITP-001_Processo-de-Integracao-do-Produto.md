@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-ITP-001 — Processo de Integração do Produto |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 15/03/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Cézar Velázquez |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -96,5 +97,6 @@ Este documento corresponde aos resultados do processo **Integração do Produto 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Cézar Velázquez |
 | 1.0 | 20/10/2025 | Time de Melhoria Contínua | Definição inicial do processo de integração do produto |
 | 1.1 | 15/03/2026 | Time de Melhoria Contínua | Adição dos critérios de conclusão da integração com checklist de qualidade (§7) |

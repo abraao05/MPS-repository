@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-CAP-001 — Mapa de Capacidade dos Processos |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 20/02/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Silvio Baroni |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C (atributos de capacidade CP-E, CP-D, CP-C) |
 | **Classificação** | Ativo de processo organizacional (rastreabilidade de capacidade) |
 
@@ -103,5 +104,6 @@ A camada de evidências dos projetos é, portanto, o complemento necessário des
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 10/11/2025 | Time de Melhoria Contínua | Definição inicial do mapa de capacidade dos processos |
 | 1.1 | 20/02/2026 | Time de Melhoria Contínua | Inclusão do resultado da revisão de correspondência após o primeiro ciclo de implantação (§4) |

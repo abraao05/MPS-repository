@@ -109,4 +109,4 @@ Detalhamento expandido das lições aprendidas em LI-AASPGOV01-001.
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Termo de Encerramento e Aceite do projeto AASP_Automacao-Governanca emitido em 02/06/2026 com aceite formal do Sponsor (Marcos Correa Fernandez Turnes), consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 (08/06/2026). |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção de consistência: contagem de cenários alinhada ao VV/REL-VV (9 happy + 3 sad); padronização do nome do projeto. |
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves); contagem de cenários alinhada ao VV/REL-VV (9 happy + 3 sad). |

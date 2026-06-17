@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-GPC-001 — Processo-Padrão Organizacional |
-| **Versão** | 2.3 |
+| **Versão** | 2.4 |
 | **Data** | 11/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
+| **Responsável** | Silvio Baroni |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 | **Escopo de aplicação** | Projetos de software sob medida para clientes |
@@ -257,6 +258,7 @@ Este processo-padrão é adaptado a cada projeto conforme as diretrizes do Guia 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 2.4 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Silvio Baroni |
 | 1.0 | 04/08/2025 | Time de Melhoria Contínua | Definição inicial do processo-padrão organizacional de desenvolvimento de software sob medida |
 | 2.0 | 12/12/2025 | Time de Melhoria Contínua | Reestruturação do fluxo: inclusão do Escritório de Projetos, kickoff como marco gerencial, fase de concepção em trilhas paralelas e aprovação do plano (baseline). Sete fases. |
 | 2.1 | 15/01/2026 | Time de Melhoria Contínua | Definição dos quatro ambientes (dev, QA, homologação, stage); distinção entre homologação e stage; encerramento de projeto vs. review de sprint |

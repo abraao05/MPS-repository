@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-AQU-001 — Processo de Aquisição |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 15/03/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Wilson Yamada |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -99,5 +100,6 @@ A aplicabilidade deste processo aos projetos da avaliação está sujeita a conf
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Wilson Yamada |
 | 1.0 | 26/09/2025 | Time de Melhoria Contínua | Definição inicial do processo de aquisição |
 | 1.1 | 15/03/2026 | Time de Melhoria Contínua | Adição dos critérios mínimos de qualificação de fornecedores (§3) |

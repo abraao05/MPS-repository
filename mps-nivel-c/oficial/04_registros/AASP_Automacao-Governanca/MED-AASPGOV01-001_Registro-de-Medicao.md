@@ -5,7 +5,7 @@
 | **Documento** | MED-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.0 |
+| **Versão** | 1.3 |
 | **Data** | 02/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | MED (evidência de projeto) |
@@ -47,9 +47,9 @@ Indicadores complementares às medidas M1–M7, definidos em função dos objeti
 | Fase | Período | Esforço estimado (h) | Esforço realizado (h) | Variação | Responsável principal |
 |---|---|---|---|---|---|
 | Fase 1 — Arquitetura | 14/04 – 16/04/2026 | 16 | 16 | 0% | Cezar Hiraki |
-| Fase 2 — Mapeamento e Autenticação | 17/04 – 23/04/2026 | 40 | 44 | +10% | Raony Chagas / Allan Alves |
-| Fase 3 — Desenvolvimento dos Serviços | 24/04 – 20/05/2026 | 120 | 128 | +6,7% | Raony Chagas / Allan Alves |
-| Fase 4 — Homologação e Correções | 21/05 – 02/06/2026 | 40 | 48 | +20% | Raony Chagas / Caroline Sousa |
+| Fase 2 — Mapeamento e Autenticação | 17/04 – 23/04/2026 | 40 | 44 | +10% | Henry Komatsu / Allan Alves |
+| Fase 3 — Desenvolvimento dos Serviços | 24/04 – 20/05/2026 | 120 | 128 | +6,7% | Henry Komatsu / Allan Alves |
+| Fase 4 — Homologação e Correções | 21/05 – 02/06/2026 | 40 | 48 | +20% | Henry Komatsu / Jonathan Alves |
 | **Total do projeto** | **14/04 – 02/06/2026** | **216** | **236** | **+9,3%** | — |
 
 O esforço foi modelado retroativamente em aproximadamente 59 Story Points distribuídos em 4 sprints (velocity média de 15 SP/sprint), para fins de gestão ágil e carga no Jira. Conversão aplicada: 1 SP = 4 h. Distribuição por sprint: Sprint 0 (15 SP) · Sprint 1 (16 SP) · Sprint 2 (16 SP) · Sprint 3 (12 SP). Referência: GEST-AASPGOV01_Planilha-de-Gestao-do-Projeto.xlsx (abas Backlog, Tarefas e Acompanhamento).
@@ -77,7 +77,7 @@ Conforme PLA-MED-001 §7, os resultados das medidas M1–M7 e os indicadores esp
 
 - **À organização Timeware:** os indicadores M1–M7 do projeto AASP_Automacao-Governanca foram consolidados no REG-MED-001 (Repositório Organizacional de Medidas), alimentando a base de dados histórica de projetos para calibração de estimativas futuras.
 
-- **Ao Auditor GQA:** os resultados foram disponibilizados para verificação independente pelo Auditor Jonathan Alves, registrados em GQA-AASPGOV01-001. A auditoria confirmou conformidade com o processo MED do MR-MPS-SW:2024 Nível C.
+- **Ao Auditor GQA:** os resultados foram disponibilizados para verificação independente pela GQA Independente Caroline Sousa, registrados em GQA-AASPGOV01-001. A auditoria confirmou conformidade com o processo MED do MR-MPS-SW:2024 Nível C.
 
 ---
 
@@ -86,3 +86,6 @@ Conforme PLA-MED-001 §7, os resultados das medidas M1–M7 e os indicadores esp
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Registro de medição consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0 e alinhado ao PLA-MED-001 v1.3 (05/06/2026). |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Atualização dos responsáveis principais por fase: Henry Komatsu substituiu Raony Chagas nas Fases 2, 3 e 4; Jonathan Alves substituiu Caroline Sousa na Fase 4. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Jonathan Alves (QA) corrigido de grafia anterior. |
+| 1.3 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

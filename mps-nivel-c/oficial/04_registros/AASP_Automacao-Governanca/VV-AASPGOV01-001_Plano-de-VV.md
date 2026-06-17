@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | VV-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync (AASPGOV01) |
-| **Versão** | 1.0 |
+| **Versão** | 1.3 |
 | **Data** | 02/06/2026 |
 
 ---
@@ -29,7 +29,7 @@
 - **Testes unitários:** cobertura dos métodos críticos das camadas Core e Infrastructure — `StatusMapper.MapSensrToJira`, `HtmlHelper.ToPlainText`, `HtmlHelper.ParseDescriptionHistory`, `JiraService.SanitizeLabel`, `SyncService.ExtractSensrId`.
 - **Testes de integração:** execução dos serviços contra as APIs reais do Sensr e do Jira v3 em ambiente de homologação, validando autenticação JWT por desenvolvedor, criação de hierarquia de issues e aplicação de transições.
 - **Testes de fluxo (E2E):** ciclo completo de migração inicial seguido de ciclo subsequente de sincronização incremental, cobrindo criação, idempotência e atualização de status.
-- **Testes do QA (Caroline Sousa, a partir da Fase 4):** validação dos 12 cenários funcionais (CT-01 a CT-12), edge cases e regressão após correção dos defeitos BUG-01 a BUG-05.
+- **Testes do QA (Jonathan Alves, a partir da Fase 4):** validação dos 12 cenários funcionais (CT-01 a CT-12), edge cases e regressão após correção dos defeitos BUG-01 a BUG-05.
 - **Ferramentas:** Azure DevOps (Pull Requests e code review), Postman (validação manual de contratos das APIs Sensr e Jira), ClickUp (gestão de tarefas de teste).
 - **Ambientes:** homologação executada diretamente contra os ambientes reais do Sensr e do Jira do AASP (workspace de teste configurado para o projeto piloto indicado pelo Sponsor). Conforme ADAP-AASPGOV01-001, o uso de mocks não seria representativo da compatibilidade real com as APIs de destino.
 
@@ -51,7 +51,7 @@ A execução e o registro de todos os testes estão documentados em `REL-VV-AASP
 
 ## 5. Análise e comunicação dos resultados (VV 5)
 
-Os resultados dos testes são analisados pelo Analista de Testes (Caroline Sousa) e comunicados ao Gerente de Projeto (Abraão Oliveira) durante as reuniões de revisão registradas nas atas ATA-AASPGOV01-001 a ATA-AASPGOV01-003. Defeitos identificados são registrados com ID, descrição, fase e tratamento no REL-VV-AASPGOV01-001 e acompanhados até resolução. Os indicadores de qualidade (taxa de aprovação de cenários, contagem e severidade de defeitos, e status dos critérios de aceite) alimentam o documento de Medição `MED-AASPGOV01-001`. A validação final dos critérios de aceite CA01–CA07 pelo Sponsor Marcos Correa Fernandez Turnes foi registrada na ATA-AASPGOV01-003 (29/05/2026) e formalizada no TAE-AASPGOV01-001 (02/06/2026).
+Os resultados dos testes são analisados pelo QA (Jonathan Alves) e comunicados ao Gerente de Projeto (Abraão Oliveira) durante as reuniões de revisão registradas nas atas ATA-AASPGOV01-001 a ATA-AASPGOV01-003. Defeitos identificados são registrados com ID, descrição, fase e tratamento no REL-VV-AASPGOV01-001 e acompanhados até resolução. Os indicadores de qualidade (taxa de aprovação de cenários, contagem e severidade de defeitos, e status dos critérios de aceite) alimentam o documento de Medição `MED-AASPGOV01-001`. A validação final dos critérios de aceite CA01–CA07 pelo Sponsor Marcos Correa Fernandez Turnes foi registrada na ATA-AASPGOV01-003 (29/05/2026) e formalizada no TAE-AASPGOV01-001 (02/06/2026).
 
 ## 6. Cenários de teste (Gherkin) e evidências
 
@@ -178,3 +178,6 @@ Funcionalidade: Migração e sincronização de cards entre Sensr e Jira
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Plano de V&V consolidado a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
+| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Responsável pelos testes de QA atualizado: Jonathan Alves substituiu Caroline Sousa. |
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Jonathan Alves (QA) corrigido de grafia anterior. |
+| 1.3 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

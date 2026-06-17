@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | PRO-OSW-002 — Gestão de Portfólio de Projetos |
-| **Versão** | 1.3 |
+| **Versão** | 1.4 |
 | **Data** | 13/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
+| **Responsável** | Wilson Yamada |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -108,6 +109,7 @@ Este documento corresponde aos resultados **OSW 8, 9, 10** do processo **Gerênc
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.4 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Wilson Yamada |
 | 1.0 | 29/08/2025 | Time de Melhoria Contínua | Definição inicial da gestão de portfólio de projetos |
 | 1.1 | 24/11/2025 | Time de Melhoria Contínua | Atribuição da autoridade do portfólio ao COO (escritório de portfólio de projetos) |
 | 1.2 | 20/03/2026 | Time de Melhoria Contínua | Detalhamento da estrutura e cadência do quadro de capacity (§4.1): campos, responsável e critério de escalada |

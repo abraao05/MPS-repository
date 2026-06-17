@@ -3,10 +3,11 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | EST-GPC-001 — Estratégia de Garantia da Qualidade (GQA) |
-| **Versão** | 1.3 |
+| **Versão** | 1.4 |
 | **Data** | 05/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | Time de Melhoria Contínua |
+| **Responsável** | Caroline Jenifer |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -118,6 +119,7 @@ O quadro abaixo relaciona os artefatos de GQA da Timeware à nomenclatura utiliz
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.4 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Caroline Jenifer |
 | 1.0 | 12/08/2025 | Time de Melhoria Contínua | Definição inicial da estratégia de garantia da qualidade de processo |
 | 1.1 | 21/11/2025 | Time de Melhoria Contínua | Ajuste do escalonamento de impasses para o COO (estrutura organizacional) |
 | 1.2 | 17/12/2025 | Time de Melhoria Contínua | Atualização dos marcos de verificação conforme o novo fluxo (kickoff gerencial, concepção, aprovação do plano) |

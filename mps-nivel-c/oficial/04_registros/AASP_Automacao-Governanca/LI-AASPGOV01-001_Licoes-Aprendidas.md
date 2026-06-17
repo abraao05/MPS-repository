@@ -5,7 +5,7 @@
 | **Documento** | LI-AASPGOV01-001 |
 | **Projeto** | AASP_Automacao-Governanca — SensrJiraSync: Serviço de Sincronização de Atividades entre Sensr e Jira |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.0 |
+| **Versão** | 1.1 |
 | **Data** | 02/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (GPR 20) — evidência de projeto |
@@ -98,7 +98,7 @@ As oportunidades acima são encaminhadas ao Time de Melhoria Contínua via PLA-G
 
 ## 4. Auditoria e validação independente
 
-As lições aprendidas registradas neste documento serão verificadas pela auditoria de GQA (Jonathan Alves, Auditor independente) e referenciadas em GQA-AASPGOV01-001 como parte da verificação de aderência ao processo MPS-SW (GPR 20).
+As lições aprendidas registradas neste documento serão verificadas pela auditoria de GQA (Caroline Sousa, GQA Independente) e referenciadas em GQA-AASPGOV01-001 como parte da verificação de aderência ao processo MPS-SW (GPR 20).
 
 ---
 
@@ -107,3 +107,4 @@ As lições aprendidas registradas neste documento serão verificadas pela audit
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | Lições aprendidas do projeto AASP_Automacao-Governanca consolidadas no encerramento (02/06/2026), com 7 lições e 5 oportunidades de melhoria organizacional. |
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves). |

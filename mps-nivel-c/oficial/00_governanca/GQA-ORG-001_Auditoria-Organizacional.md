@@ -3,11 +3,12 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GQA-ORG-001 — Auditoria de GQA Organizacional |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 13/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Auditor** | COO (Operações) |
 | **Aprovação** | Time de Melhoria Contínua |
+| **Responsável** | Caroline Jenifer |
 | **Processo MPS-SW** | GPC (evidência organizacional — GPC 3, GPC 6, GPC 7); cobre também a verificação organizacional de AQU e OSW |
 
 ---
@@ -160,5 +161,6 @@ Esta auditoria fornece também a **verificação objetiva (GQA) dos processos or
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.2 | 15/06/2026 | Time de Melhoria Contínua | Campo "Responsável" adicionado ao cabeçalho: Caroline Jenifer |
 | 1.0 | 11/06/2026 | COO (Operações) | Versão inicial — auditoria organizacional ao final do ciclo MPS-SW Nível C |
 | 1.1 | 13/06/2026 | COO (Operações) | Escopo ampliado com a verificação organizacional de AQU (§3.6) e OSW (§3.7); resumo (§4), parecer (§6) e rastreabilidade atualizados; total de 23 para 29 itens auditados |

@@ -88,4 +88,4 @@ A API Jira v3 retorna erro HTTP 400 ao receber texto plano ou HTML diretamente n
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 02/06/2026 | Time de Melhoria Contínua | RAD da escolha do formato ADF para a API Jira v3 (D04) e registro consolidado das decisões D01–D07, reconstituídos a partir do Registro de Projeto AASP_Automacao-Governanca v2.0. |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção de consistência: data do RAD de D04 alinhada a 06/05/2026 (coerente com o RAC); padronização do nome. |
+| 1.1 | 16/06/2026 | Time de Melhoria Contínua | Reconciliação: nome padronizado (AASP_Automacao-Governanca); sobrenomes (Henry Komatsu, Felipe Siqueira, Jonathan Alves); data do RAD de D04 alinhada a 06/05/2026 (RAC). |
