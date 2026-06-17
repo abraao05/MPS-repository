@@ -64,7 +64,7 @@ projects = [
         cliente='AASP — Associação dos Advogados de São Paulo',
         ciclo='Construção',
         esforco=362,   # realizado Fases 1–4 (GEST-AASPAP01); Fase 5 implantação em apuração
-        envolvidos=4,
+        envolvidos=5,
         gerente='Abraão Oliveira',
         inicio=datetime.date(2025, 12, 15),
         termino=None,
@@ -112,7 +112,7 @@ projects = [
         cliente='AASP — Associação dos Advogados de São Paulo',
         ciclo='Construção',
         esforco=624,   # realizado Fases 1–6 parcial (GEST-AASPCNJ01 aba Medição)
-        envolvidos=6,
+        envolvidos=7,
         gerente='Abraão Oliveira',
         inicio=datetime.date(2025, 10, 1),
         termino=datetime.date(2026, 6, 30),
@@ -180,6 +180,8 @@ equipe_rows = [
     ('Sim', 'Abraão Oliveira',            'AASP — Andamento Processuais', 'Gerente de Projeto',              'Gerente de Projetos',   'Wilson Yamada'),
     ('Sim', 'Cézar Hiraki Velázquez',     'AASP — Andamento Processuais', 'Tech Lead / Arquiteto / DevOps',  'Arquiteto de Software', 'Abraão Oliveira'),
     ('Não', 'Raony Chagas',               'AASP — Andamento Processuais', 'Desenvolvedor Sênior',            'Desenvolvedor Sênior',  'Cézar Hiraki Velázquez'),
+    ('Não', 'Mateus Veloso',              'AASP — Andamento Processuais', 'Desenvolvedor (Suporte)',          'Desenvolvedor',         'Cézar Hiraki Velázquez'),
+    ('Não', 'Caroline Sousa',             'AASP — Andamento Processuais', 'Analista de QA',                  'Analista de QA',        'Abraão Oliveira'),
     # ── PROFARMA (TAP-PROFARMA01-001) ───────────────────────────────────
     ('Sim', 'Abraão Oliveira',          'PROFARMA / D1000 — Cadastro de Clientes', 'Gerente de Projeto / Account Manager', 'Gerente de Projetos',   'Wilson Yamada'),
     ('Sim', 'Tiago Barbosa Nascimento', 'PROFARMA / D1000 — Cadastro de Clientes', 'Tech Lead',                            'CEO / Founder',         ''),
@@ -190,13 +192,14 @@ equipe_rows = [
     ('Não', 'João Cruz',                'PROFARMA / D1000 — Cadastro de Clientes', 'Dev Backend',                          'Desenvolvedor',         'Erick Coelho'),
     ('Não', 'David Buena',              'PROFARMA / D1000 — Cadastro de Clientes', 'Infra / DevOps',                       'Engenheiro DevOps',     'Cézar Hiraki Velázquez'),
     ('Não', 'Lucas Batista',            'PROFARMA / D1000 — Cadastro de Clientes', 'QA / Testes Automatizados',            'Analista de QA',        'Abraão Oliveira'),
-    # ── AASP_CNJ (CAP-AASPCNJ01-001) ───────────────────────────────────
-    ('Sim', 'Abraão Oliveira',        'AASP — CNJ Integração', 'Gerente de Projeto / Tech Lead',  'Gerente de Projetos',   'Wilson Yamada'),
-    ('Sim', 'Cézar Hiraki Velázquez', 'AASP — CNJ Integração', 'Arquiteto de Software',           'Arquiteto de Software', 'Abraão Oliveira'),
-    ('Não', 'Raony Chagas',           'AASP — CNJ Integração', 'Desenvolvedor Sênior (Principal)', 'Desenvolvedor Sênior',  'Cézar Hiraki Velázquez'),
-    ('Não', 'Levi Santos',            'AASP — CNJ Integração', 'Desenvolvedor (Suporte)',          'Desenvolvedor',         'Raony Chagas'),
-    ('Não', 'Jonatan Silva',          'AASP — CNJ Integração', 'Analista de Testes',              'Analista de QA',        'Abraão Oliveira'),
-    ('Não', 'David Buena',            'AASP — CNJ Integração', 'Infraestrutura / DevOps',         'Engenheiro DevOps',     'Cézar Hiraki Velázquez'),
+    # ── AASP_CNJ (TAP-AASPCNJ01-001) ───────────────────────────────────
+    ('Sim', 'Abraão Oliveira',        'AASP — CNJ Integração', 'Gerente de Projeto',               'Gerente de Projetos',       'Wilson Yamada'),
+    ('Sim', 'Cézar Hiraki Velázquez', 'AASP — CNJ Integração', 'Tech Lead / DevOps / Arquiteto',   'Arquiteto de Software',     'Abraão Oliveira'),
+    ('Não', 'Raony Chagas',           'AASP — CNJ Integração', 'Desenvolvedor Sênior (Principal)', 'Desenvolvedor Sênior',      'Cézar Hiraki Velázquez'),
+    ('Não', 'Mateus Veloso',          'AASP — CNJ Integração', 'Desenvolvedor',                    'Desenvolvedor',             'Cézar Hiraki Velázquez'),
+    ('Não', 'Lucas Batista',          'AASP — CNJ Integração', 'Desenvolvedor',                    'Desenvolvedor',             'Cézar Hiraki Velázquez'),
+    ('Não', 'Caroline Sousa',         'AASP — CNJ Integração', 'Analista de QA',                   'Analista de QA',            'Abraão Oliveira'),
+    ('Não', 'Jonathan Barbosa',       'AASP — CNJ Integração', 'Auditor GQA (independente)',        'Analista de Qualidade',     'Abraão Oliveira'),
 ]
 
 for i, row_data in enumerate(equipe_rows):
