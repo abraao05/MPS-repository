@@ -6,7 +6,7 @@
 | Projeto       | AASP01 — Grupos de Usuários (Feature AG)                              |
 | Cliente       | AASP — Associação dos Advogados de São Paulo                          |
 | Produto       | ms.auxo.gruposusuarios                                                |
-| Versão        | 1.1                                                                   |
+| Versão        | 1.2                                                                   |
 | Data          | 26/05/2026                                                            |
 | Autor         | Abraão                                                         |
 | Status        | Aprovado                                                              |
@@ -15,33 +15,35 @@
 
 ## 1. Objetivo
 
-Este documento descreve os requisitos funcionais, não funcionais e regras de negócio do microsserviço **ms.auxo.gruposusuarios**, desenvolvido para o sistema Gerenciador da AASP como parte da Feature AG — Grupos de Usuários.
+Este documento descreve os requisitos funcionais, não funcionais e regras de negócio do microsserviço **ms.auxo.gruposusuarios**, desenvolvido para o sistema Gerenciador da AASP como parte da Feature AG — Grupos de Usuários. Os endpoints citados refletem o controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`).
 
 ## 2. Glossário
 
 | Termo       | Definição                                                                                   |
 |-------------|---------------------------------------------------------------------------------------------|
-| Grupo       | Entidade que agrupa usuários do sistema sob um conjunto comum de permissões                 |
-| Permissão   | Direito de acesso atribuído a um grupo, seguindo o modelo RBAC                              |
-| Vínculo     | Associação entre um usuário e um grupo, registrada no banco `auxo3`                         |
-| RBAC        | Role-Based Access Control — controle de acesso baseado em papéis/permissões                 |
-| Soft Delete | Exclusão lógica: registro marcado como inativo, sem remoção física do banco de dados        |
+| Grupo       | Entidade que agrupa usuários do sistema, registrada no banco `auxo3`                         |
+| Membro      | Usuário associado a um grupo, enviado na lista `GrupoDeUsuarios` do payload do grupo         |
+| Função      | Papel de um usuário dentro de um grupo: `Usuario` (0) ou `Administrador` (1), conforme o enum `FuncaoUsuariosEnum` |
+| Envelope    | Formato de resposta padrão da API: `{ Sucesso, MensagemPublica, RetornaDados, HoraExecucao }` |
+| Soft Delete | Exclusão/inativação lógica: registro marcado como inativo, sem remoção física do banco        |
 | auxo3       | Banco de dados SQL Server principal do sistema Gerenciador da AASP                          |
 | temis3      | Banco de dados SQL Server de integração, acessado via `ms.temis.vinculos`                   |
 
 ## 3. Requisitos Funcionais
 
+> Todos os endpoints usam a rota base `api/gerenciar/grupos`, apenas verbos GET/POST, e respondem no envelope padrão com HTTP 200 (sucesso) ou 400 (erro/validação).
+
 | ID    | Descrição                                                                                                           | Backlog | Prioridade | Sprint | SP  |
 |-------|---------------------------------------------------------------------------------------------------------------------|---------|------------|--------|-----|
-| RF-01 | Criação de grupo via `POST /grupos` com nome, descrição e status ativo; validar unicidade do nome                   | AG-20   | Alta       | S1     | 5   |
-| RF-02 | Listagem e consulta de grupos via `GET /grupos` (lista paginada) e `GET /grupos/{id}` (detalhes)                    | AG-20   | Alta       | S1     | 4   |
-| RF-03 | Atualização de grupo via `PUT /grupos/{id}`; campos editáveis: nome, descrição, status                              | AG-20   | Alta       | S1     | 2   |
-| RF-04 | Exclusão lógica de grupo via `DELETE /grupos/{id}` (soft delete); bloqueada se houver usuários vinculados ativos    | AG-20   | Alta       | S1     | 2   |
-| RF-05 | Atribuição e substituição de permissões RBAC via `PUT /grupos/{id}/permissoes`; valores validados por enum          | AG-21   | Alta       | S1     | 11  |
-| RF-06 | Vinculação de usuário a grupo via `POST /grupos/{id}/usuarios` e remoção via `DELETE /grupos/{id}/usuarios/{uid}`   | AG-22   | Alta       | S1     | 10  |
-| RF-07 | Registro automático de auditoria em tabela `AuditoriaGrupos` para todas as operações de escrita (imutável)          | AG-23   | Média      | S2     | 13  |
-| RF-08 | Integração com `ms.temis.vinculos` via chamada HTTP para sincronização de vínculos na base `temis3`                 | AG-24   | Alta       | S2     | 15  |
-| RF-09 | Geração de relatório consolidado via `GET /grupos/relatorio` com exportação em formato CSV                          | AG-25   | Média      | S3     | 10  |
+| RF-01 | Criação de grupo via `POST incluirgrupo` (nome + lista de membros); validar unicidade do nome                       | AG-20   | Alta       | S1     | 5   |
+| RF-02 | Listagem de grupos via `GET listargrupo` (paginada) e consulta dos usuários de um grupo via `GET buscargrupoporid`  | AG-20   | Alta       | S1     | 4   |
+| RF-03 | Atualização de grupo via `POST alterargrupo` (nome e membros) e ativação/desativação via `POST ativardesativar`     | AG-20   | Alta       | S1     | 2   |
+| RF-04 | Exclusão de grupo via `POST excluirgrupo`, com opção de notificar os membros (campo `NotificarMembros`)             | AG-20   | Alta       | S1     | 2   |
+| RF-05 | Definição da função (`Usuario`/`Administrador`) de um usuário no grupo via `POST alterarfuncaodousuario`            | AG-21   | Alta       | S1     | 11  |
+| RF-06 | Vinculação de usuário ao grupo pela lista de membros em `incluirgrupo`/`alterargrupo` e remoção via `POST removerusuario` | AG-22 | Alta    | S1     | 10  |
+| RF-07 | *(Planejado — Sprint 2)* Registro automático de auditoria em tabela `AuditoriaGrupos` para operações de escrita     | AG-23   | Média      | S2     | 13  |
+| RF-08 | *(Planejado — Sprint 2)* Integração com `ms.temis.vinculos` para sincronização de vínculos na base `temis3`         | AG-24   | Alta       | S2     | 15  |
+| RF-09 | *(Planejado — Sprint 3)* Geração de relatório consolidado de grupos                                                 | AG-25   | Média      | S3     | 10  |
 
 ## 4. Requisitos Não Funcionais
 
@@ -49,7 +51,7 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 |-------|-------------------|----------------------------------------------------------------------------------------|
 | RNF-01 | Performance      | Tempo de resposta ≤ 500 ms para 95% das requisições em condições normais de carga      |
 | RNF-02 | Segurança        | Autenticação via JWT; comunicação exclusivamente por HTTPS                             |
-| RNF-03 | Rastreabilidade  | Todas as operações de escrita devem ser rastreáveis via tabela `AuditoriaGrupos`       |
+| RNF-03 | Rastreabilidade  | Operações de escrita devem ser rastreáveis via auditoria (entrega planejada na Sprint 2) |
 | RNF-04 | Compatibilidade  | Stack obrigatória: .NET Framework 4.7.2 e Dapper; SQL Server como SGBD                |
 | RNF-05 | Manutenibilidade | Cobertura mínima de 70% de testes unitários por módulo                                 |
 
@@ -57,25 +59,25 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 
 | ID    | Regra                                                                                                                  |
 |-------|------------------------------------------------------------------------------------------------------------------------|
-| RN-01 | O nome do grupo deve ser único no banco `auxo3`; tentativa de criação/atualização com nome duplicado retorna HTTP 409  |
-| RN-02 | A operação de soft delete (`DELETE /grupos/{id}`) é bloqueada se existirem usuários vinculados e ativos ao grupo       |
-| RN-03 | As permissões atribuídas a um grupo devem pertencer ao enum de permissões válido definido na camada de domínio         |
-| RN-04 | Os registros da tabela `AuditoriaGrupos` são imutáveis — não podem ser alterados ou excluídos por nenhuma operação     |
-| RN-05 | A sincronização com `ms.temis.vinculos` deve ser acionada automaticamente após qualquer alteração de vínculo           |
+| RN-01 | O nome do grupo deve ser único no banco `auxo3`; tentativa de criação com nome duplicado retorna HTTP 400 com mensagem `Grupo já existe` |
+| RN-02 | A exclusão de grupo (`POST excluirgrupo`) pode notificar os membros do grupo quando `NotificarMembros = true`          |
+| RN-03 | A função atribuída a um usuário no grupo deve pertencer ao enum `FuncaoUsuariosEnum` (`Usuario`, `Administrador`)       |
+| RN-04 | *(Planejado — Sprint 2)* Os registros de auditoria de `AuditoriaGrupos` são imutáveis — não podem ser alterados ou excluídos |
+| RN-05 | *(Planejado — Sprint 2)* A sincronização com `ms.temis.vinculos` deve ser acionada após alteração de vínculo           |
 
 ## 6. Critérios de Aceite
 
 | RF    | Critério de Aceite                                                                                                        |
 |-------|---------------------------------------------------------------------------------------------------------------------------|
-| RF-01 | `POST /grupos` retorna HTTP 201 com o recurso criado; retorna HTTP 409 em caso de nome duplicado                          |
-| RF-02 | `GET /grupos` retorna lista paginada; `GET /grupos/{id}` retorna HTTP 200 ou HTTP 404 se não encontrado                   |
-| RF-03 | `PUT /grupos/{id}` retorna HTTP 200 com dados atualizados; HTTP 404 se grupo inexistente                                  |
-| RF-04 | `DELETE /grupos/{id}` retorna HTTP 204 após soft delete; HTTP 409 se houver usuários vinculados                           |
-| RF-05 | `PUT /grupos/{id}/permissoes` substitui permissões e retorna HTTP 200; HTTP 400 para valores de enum inválidos            |
-| RF-06 | `POST /grupos/{id}/usuarios` retorna HTTP 201; `DELETE /grupos/{id}/usuarios/{uid}` retorna HTTP 204                     |
-| RF-07 | Toda operação de escrita gera registro em `AuditoriaGrupos` com usuário, timestamp e operação realizada                  |
-| RF-08 | Após criação/remoção de vínculo, `ms.temis.vinculos` é chamado com sucesso; falha gera log e não interrompe a operação   |
-| RF-09 | `GET /grupos/relatorio` retorna JSON consolidado; com `?formato=csv` retorna arquivo CSV com cabeçalho correto           |
+| RF-01 | `POST incluirgrupo` retorna HTTP 200 com `Sucesso=true` e `MensagemPublica="Grupo incluído com sucesso"`; nome duplicado retorna HTTP 400 `"Grupo já existe"` |
+| RF-02 | `GET listargrupo` retorna lista paginada (HTTP 200); `GET buscargrupoporid` retorna os usuários do grupo (HTTP 200); parâmetro inválido retorna HTTP 400 |
+| RF-03 | `POST alterargrupo` retorna HTTP 200 com os dados atualizados; `POST ativardesativar` altera o status (ativo 0/1) e retorna HTTP 200 |
+| RF-04 | `POST excluirgrupo` retorna HTTP 200 após a exclusão; notifica os membros quando `NotificarMembros = true`               |
+| RF-05 | `POST alterarfuncaodousuario` altera a função (`Usuario`/`Administrador`) do usuário e retorna HTTP 200; dados inválidos retornam HTTP 400 |
+| RF-06 | Vincular usuário (na lista `GrupoDeUsuarios` de `incluirgrupo`/`alterargrupo`) e `POST removerusuario` retornam HTTP 200 |
+| RF-07 | *(Planejado — Sprint 2)* Toda operação de escrita gera registro de auditoria com usuário, timestamp e operação realizada |
+| RF-08 | *(Planejado — Sprint 2)* Após alteração de vínculo, `ms.temis.vinculos` é chamado; falha gera log e não interrompe a operação |
+| RF-09 | *(Planejado — Sprint 3)* Relatório consolidado de grupos disponível para consulta                                        |
 
 ## 7. Referências
 
@@ -92,3 +94,4 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 |--------|------------|----------------|--------------------------------------------------|
 | 1.0    | 19/05/2026 | Abraão  | Levantamento inicial dos requisitos (kickoff)    |
 | 1.1    | 26/05/2026 | Abraão  | Refinamento dos requisitos para Sprint 1         |
+| 1.2    | 15/06/2026 | Abraão  | Alinhamento dos endpoints e regras à API real (GerenciarGruposController) |

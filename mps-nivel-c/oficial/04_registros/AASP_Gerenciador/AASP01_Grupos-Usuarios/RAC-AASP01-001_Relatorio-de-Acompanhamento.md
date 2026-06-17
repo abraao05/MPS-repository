@@ -6,7 +6,7 @@
 | **Projeto** | AG — Grupos de Usuários |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Produto** | ms.auxo.gruposusuarios |
-| **Repositório** | Azure DevOps · komatsuhenry67/gerenciador-aasp/ms.auxo.gruposusuarios |
+| **Repositório** | GitLab · http://191.234.192.153/aasp/ms.auxo.usuarios |
 | **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
 | **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
 | **PO** | Marcos Turnes — AASP |
@@ -37,9 +37,9 @@ Monitorar o progresso do projeto em relação ao plano estabelecido, identificar
 
 | História | Requisitos Cobertos | SP Planejado | SP Realizado | Desvio | Status | Observação |
 |---|---|---|---|---|---|---|
-| AG-20 — CRUD Grupos | RF-01, RF-02, RF-03, RF-04 | 13 | 13 | 0% | ✅ Entregue | PRs #11 e #12 aprovados e mergeados; casos GRP-01 a GRP-05 aprovados |
-| AG-21 — Permissões RBAC | RF-05 | 11 | 11 | 0% | ✅ Entregue | PR #13 aprovado; 8 testes unitários; casos PERM-01 e PERM-02 aprovados |
-| AG-22 — Vínculo Usuário-Grupo | RF-06 | 10 | 10 | 0% | ✅ Entregue | PRs #14 e #15 aprovados; casos VINC-01, VINC-02, VINC-03 aprovados |
+| AG-20 — CRUD Grupos | RF-01, RF-02, RF-03, RF-04 | 13 | 13 | 0% | ✅ Entregue | MRs !1 e !2 aprovados e mergeados; casos GRP-01 a GRP-05 aprovados |
+| AG-21 — Função do Usuário no Grupo | RF-05 | 11 | 11 | 0% | ✅ Entregue | MR !3 aprovado; 8 testes unitários; caso FUNC-01 aprovado |
+| AG-22 — Vínculo Usuário-Grupo | RF-06 | 10 | 10 | 0% | ✅ Entregue | MRs !4 e !5 aprovados; casos VINC-01, VINC-02, VINC-03 aprovados |
 | **Total Sprint 1** | **RF-01 a RF-06** | **34** | **34** | **0%** | **✅ 100% entregue** | — |
 
 ### 2.2 Desvios Identificados
@@ -72,8 +72,8 @@ Nenhum desvio de prazo, escopo ou esforço identificado na Sprint 1. Todas as hi
 
 | História | Requisito | Progresso | Detalhamento | Próximos Passos |
 |---|---|---|---|---|
-| AG-23 — Auditoria de Ações | RF-07 | ~70% | Tabela AuditoriaGrupos criada e populada nas operações de CRUD; triggers de auditoria implementados e em revisão de code review | Concluir revisão dos triggers; abrir PR; executar caso AUD-01 |
-| AG-24 — Integração ms.temis.vinculos | RF-08 | ~40% | Contrato de API definido e documentado; cliente HTTP implementado com timeout de 5 s e retry de 1 tentativa; testes de integração em construção | Finalizar testes INT-01; validar cenários de falha e retry; abrir PR |
+| AG-23 — Auditoria de Ações | RF-07 | Não iniciado | Planejado para a Sprint 2; auditoria ainda não implementada no código | Implementar a trilha de auditoria; abrir MR; executar caso AUD-01 |
+| AG-24 — Integração ms.temis.vinculos | RF-08 | Não iniciado | Planejado para a Sprint 2; integração ainda não implementada no código | Implementar a integração; abrir MR; executar caso INT-01 |
 
 ### 3.2 Riscos Ativos — Sprint 2
 
@@ -84,16 +84,15 @@ Nenhum desvio de prazo, escopo ou esforço identificado na Sprint 1. Todas as hi
 
 ### 3.3 Projeção de Encerramento — Sprint 2
 
-Com AG-23 em ~70% e AG-24 em ~40% na metade da sprint, a projeção é de conclusão dentro do prazo (20/06/2026), desde que os PRs sejam abertos e aprovados até 18/06/2026. Nenhuma ação corretiva foi necessária até o momento.
+AG-23 e AG-24 ainda não foram iniciados no código na data de referência (15/06/2026); a implementação está prevista para o restante da Sprint 2, com aceite planejado para 20/06/2026.
 
 ---
 
-## 4. Sprints 3 e 4 — Status Planejado
+## 4. Sprint 3 — Status Planejado
 
 | Sprint | Período | Histórias / Entregas | SP | Status | Observação |
 |---|---|---|---|---|---|
-| S3 | 23/06–04/07/2026 | AG-25 — Relatórios consolidados (RF-09 · GET /grupos/relatorio) | 20 | 📅 Planejado | Sem ajustes de escopo até o momento; depende de AG-23 e AG-24 concluídos |
-| S4 | 07/07–11/07/2026 | Encerramento: TAE (Testes de Aceite Final), LI (Lições Aprendidas), GQA (revisão de qualidade), homologação final em ambiente AASP | 8 | 📅 Planejado | Depende do aceite formal de S3 por Marcos Turnes; homologação conduzida por Leonardo Francisco Pereira |
+| S3 | 23/06–04/07/2026 | AG-25 — Relatório consolidado (RF-09) | 20 | 📅 Planejado | Sem ajustes de escopo até o momento; depende de AG-23 e AG-24 concluídos |
 
 ---
 
@@ -123,4 +122,5 @@ O próximo relatório de acompanhamento está previsto para **20/06/2026**, ao e
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 09/06/2026 | Abraão | Versão inicial — snapshot pós-Sprint 1 com resultados de entrega, qualidade e aceite formal |
-| 1.1 | 15/06/2026 | Abraão | Atualização com status parcial de Sprint 2 (AG-23 ~70%, AG-24 ~40%), riscos ativos e métricas consolidadas |
+| 1.1 | 15/06/2026 | Abraão | Atualização de status da Sprint 2 (AG-23 e AG-24 ainda não iniciados no código), riscos ativos e métricas |
+| 1.2 | 15/06/2026 | Abraão | Endpoints e escopo alinhados à API real (GerenciarGruposController); papel do usuário (Usuario/Administrador); três sprints |

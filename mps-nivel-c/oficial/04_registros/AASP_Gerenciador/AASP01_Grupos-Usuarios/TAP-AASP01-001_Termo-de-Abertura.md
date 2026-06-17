@@ -15,7 +15,7 @@
 
 ## 1. Objetivo do Projeto
 
-Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciador da AASP, permitindo a criação e gestão de grupos de usuários com controle de permissões RBAC e vínculos usuário↔grupo, integrado ao ecossistema existente da AASP.
+Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciador da AASP, permitindo a criação e gestão de grupos de usuários, com definição da função do usuário no grupo (Usuario/Administrador) e vínculos usuário↔grupo, integrado ao ecossistema existente da AASP.
 
 ## 2. Escopo
 
@@ -24,12 +24,12 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 | # | Entrega |
 |---|---------|
 | 1 | CRUD completo de grupos de usuários |
-| 2 | Permissões por grupo (modelo RBAC) |
+| 2 | Função do usuário no grupo (Usuario/Administrador) |
 | 3 | Vinculação usuário↔grupo (inclusão e remoção) |
-| 4 | Auditoria e log de operações em tabela `AuditoriaGrupos` |
+| 4 | Auditoria e log de operações (planejado — Sprint 2) |
 | 5 | Integração com `ms.temis.vinculos` via HTTP |
 | 6 | Relatórios consolidados com exportação CSV |
-| 7 | Endpoints RESTful documentados (Swagger) |
+| 7 | Endpoints documentados via Swagger |
 | 8 | Testes unitários e de integração por sprint |
 
 ### 2.2 Não Incluído
@@ -60,14 +60,12 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 | Sprint 2 — fim       | 20/06/2026            | —                                       |
 | Sprint 3 — início    | 23/06/2026            | Planejada                               |
 | Sprint 3 — fim       | 04/07/2026            | —                                       |
-| Sprint 4 — início    | 07/07/2026            | Encerramento                            |
-| Sprint 4 — fim       | 11/07/2026            | —                                       |
-| Encerramento         | ~11/07/2026           | —                                       |
+| Encerramento         | ~04/07/2026           | Ao final da Sprint 3                    |
 
 ## 5. Premissas
 
 - Ambiente SQL Server disponível e acessível para as equipes durante o projeto
-- Acesso ao repositório Azure DevOps (`komatsuhenry67/gerenciador-aasp/ms.auxo.gruposusuarios`) concedido a todos os membros da equipe antes do início da Sprint 1
+- Acesso ao repositório GitLab (`aasp/ms.auxo.usuarios`) concedido a todos os membros da equipe antes do início da Sprint 1
 - Banco de dados `auxo3` acessível e com schema atualizado
 - Schema e contrato de integração do `ms.temis.vinculos` documentados e disponibilizados pela AASP antes da Sprint 2
 

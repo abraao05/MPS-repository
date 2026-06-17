@@ -1,9 +1,9 @@
-# Cenarios de Teste e Homologacao — AASP Gerenciador · Grupos de Usuarios
+# Cenários de Teste e Homologação — AASP Gerenciador · Grupos de Usuários
 
 | Campo | Valor |
 |---|---|
 | **Documento** | CTQ-AASP01-001 |
-| **Versao** | 1.1 |
+| **Versão** | 1.2 |
 | **Data** | 26/05/2026 |
 | **Projeto** | AG — ms.auxo.gruposusuarios |
 | **Cliente** | AASP |
@@ -12,93 +12,93 @@
 | **PO** | Marcos Turnes (AASP) |
 | **QA** | Leonardo Francisco Pereira (AASP) |
 | **Executado por** | Leonardo Francisco Pereira (AASP) + Abraão (Timeware) |
-| **Ambiente de execucao** | Homologacao AASP |
-| **Data de execucao Sprint 1** | 06/06/2026 |
+| **Ambiente de execução** | Homologação AASP |
+| **Data de execução Sprint 1** | 06/06/2026 |
 
 ---
 
 ## 1. Contexto
 
-Cenarios de teste executados durante a homologacao da Sprint 1 (AG-20, AG-21, AG-22). Definidos em conjunto entre Abraão (Timeware) e Leonardo Francisco Pereira (AASP). Todos os 10 cenarios da Sprint 1 foram executados e aprovados em 06/06/2026, sem ressalvas, conforme registrado na ATA-AASP01-002.
+Cenários de teste executados durante a homologação da Sprint 1 (AG-20, AG-21, AG-22). Definidos em conjunto entre Abraão (Timeware) e Leonardo Francisco Pereira (AASP). Todos os 10 cenários da Sprint 1 foram executados e aprovados em 06/06/2026, sem ressalvas, conforme registrado na ATA-AASP01-002.
 
-A feature AG — ms.auxo.gruposusuarios e desenvolvida em .NET Framework 4.7.2, com acesso ao banco SQL Server auxo3 via Dapper. Os cenarios cobrem os endpoints implementados nos PRs #11 a #15 da Sprint 1.
+A feature AG — ms.auxo.gruposusuarios e desenvolvida em .NET Framework 4.7.2, com acesso ao banco SQL Server auxo3 via Dapper. Os endpoints são expostos pelo controller `GerenciarGruposController` (rota base `api/gerenciar/grupos`), com verbos GET/POST e resposta num envelope padrão `{ Sucesso, MensagemPublica, RetornaDados }` com HTTP 200 (sucesso) ou 400 (erro/validação). Os cenários cobrem os endpoints implementados nos MRs !1 a !5 da Sprint 1.
 
 ---
 
 ## 2. Resumo de cobertura por sprint
 
-| Sprint | Historias cobertas | Cenarios totais | OK | Nao OK | Nao testados | Status |
+| Sprint | Historias cobertas | Cenários totais | OK | Não OK | Não testados | Status |
 |---|---|---|---|---|---|---|
 | Sprint 1 | AG-20, AG-21, AG-22 | 10 | 10 | 0 | 0 | Aprovado 100% |
 | Sprint 2 | AG-23, AG-24 | 3 (planejados) | — | — | 3 | A executar |
 | Sprint 3 | AG-25 | 2 (planejados) | — | — | 2 | Planejado |
-| Sprint 4 | Regressao geral | TBD | — | — | — | Planejado |
 
 ---
 
-## 3. Cenarios — Sprint 1 — AG-20 CRUD Grupos
+## 3. Cenários — Sprint 1 — AG-20 CRUD Grupos
 
-5 cenarios definidos e executados para a historia AG-20, cobrindo criacao, listagem, atualizacao e exclusao logica de grupos.
+7 cenários definidos e executados para a historia AG-20, cobrindo criação, listagem, consulta dos usuários do grupo, alteração, exclusão, ativação/desativação e validação de nome duplicado.
 
-| ID | Cenario | Tipo | Pre-condicao | Passos / Quando | Resultado Esperado | Status | Observacao |
+| ID | Cenário | Tipo | Pre-condição | Passos / Quando | Resultado Esperado | Status | Observação |
 |---|---|---|---|---|---|---|---|
-| GRP-01 | Criar grupo com dados validos — happy path | Happy | Nenhum grupo com nome "Gestores" existe no banco | Enviar POST /grupos com body {"nome":"Gestores","descricao":"Grupo de gestores"} e JWT valido no header | HTTP 201; body com id gerado, nome="Gestores", descricao preenchida, ativo=true, DataCriacao preenchida | OK | 3 testes unitarios cobrindo este cenario no GrupoService |
-| GRP-02 | Listar todos os grupos ativos — happy path | Happy | Existem 3 grupos cadastrados e com Ativo=true no banco auxo3 | Enviar GET /grupos com JWT valido | HTTP 200; array com 3 objetos contendo id, nome, descricao, ativo=true para cada grupo | OK | |
-| GRP-03 | Atualizar nome e descricao de grupo — happy path | Happy | Grupo com id=5 existe e possui Ativo=true | Enviar PUT /grupos/5 com body {"nome":"Gestores Senior","descricao":"Atualizado"} e JWT valido | HTTP 200; grupo retornado com nome="Gestores Senior", descricao="Atualizado" e DataAtualizacao preenchida com o timestamp atual | OK | |
-| GRP-04 | Exclusao logica (soft delete) de grupo sem usuarios — happy path | Happy | Grupo com id=7 existe, Ativo=true e nao possui usuarios vinculados ativos | Enviar DELETE /grupos/7 com JWT valido | HTTP 204; campo Ativo=false no banco (registro permanece); grupo com id=7 nao aparece em GET /grupos (que filtra WHERE Ativo=1) | OK | Soft delete validado — registro permanece fisicamente no banco; apenas marcado como inativo |
-| GRP-05 | Tentar criar grupo com nome ja existente — sad path | Sad | Grupo com nome "Administradores" ja existe no banco com Ativo=true | Enviar POST /grupos com body {"nome":"Administradores","descricao":"Qualquer"} | HTTP 409 Conflict; body com mensagem "Nome de grupo ja existe" | OK | Validacao de unicidade implementada apos achado RV-001-01 — antes do fix retornava excecao do banco |
+| GRP-01 | Criar grupo com dados válidos — happy path | Happy | Nenhum grupo com nome "Gestores" existe no escritorio | Enviar `POST incluirgrupo` com body {"nome":"Gestores","grupoDeUsuarios":[]} e JWT válido | HTTP 200; `Sucesso=true`, `MensagemPublica="Grupo incluido com sucesso"`, `RetornaDados` com o id gerado | OK | 3 testes unitarios cobrindo este cenário |
+| GRP-02 | Listar grupos — happy path | Happy | Existem grupos cadastrados (excluido=0) no escritorio | Enviar `GET listargrupo` (paginado) com JWT válido | HTTP 200; `RetornaDados` com a lista paginada de grupos ativos | OK | |
+| GRP-03 | Consultar usuários de um grupo — happy path | Happy | Grupo id=5 existe e possui membros | Enviar `GET buscargrupoporid` (filtro com o id do grupo) e JWT válido | HTTP 200; `RetornaDados` com os usuários do grupo e suas funções | OK | |
+| GRP-04 | Alterar nome e membros do grupo — happy path | Happy | Grupo id=5 existe | Enviar `POST alterargrupo` com body {"id":5,"nome":"Gestores Senior","grupoDeUsuarios":[...]} e JWT válido | HTTP 200; `Sucesso=true`; `data_alteracao` atualizada | OK | |
+| GRP-05 | Excluir grupo (soft delete) — happy path | Happy | Grupo id=7 existe | Enviar `POST excluirgrupo` com body {"id":7,"notificarMembros":false} e JWT válido | HTTP 200; `excluido=1` no banco (registro permanece); grupo não aparece em `listargrupo` (filtra excluido=0) | OK | Soft delete validado — registro permanece fisicamente no banco |
+| GRP-06 | Ativar/desativar grupo — happy path | Happy | Grupo id=5 existe | Enviar `POST ativardesativar` com body {"id":5,"ativo":0} e JWT válido | HTTP 200; campo `ativo` atualizado para 0 | OK | |
+| GRP-07 | Tentar criar grupo com nome já existente — sad path | Sad | Grupo com nome "Administradores" já existe no escritorio | Enviar `POST incluirgrupo` com body {"nome":"Administradores","grupoDeUsuarios":[]} | HTTP 400; `Sucesso=false`, `MensagemPublica="Grupo ja existe"` | OK | Validação de unicidade (`ExisteGrupo`) — achado RV-001-01 |
 
 ---
 
-## 4. Cenarios — Sprint 1 — AG-21 Permissoes por Grupo
+## 4. Cenários — Sprint 1 — AG-21 Função do Usuario no Grupo
 
-2 cenarios definidos e executados para a historia AG-21, cobrindo associacao de permissoes validas e rejeicao de permissoes invalidas.
+1 cenário definido e executado para a historia AG-21, cobrindo a alteração da função (papel) de um usuário no grupo.
 
-| ID | Cenario | Tipo | Pre-condicao | Passos / Quando | Resultado Esperado | Status | Observacao |
+| ID | Cenário | Tipo | Pre-condição | Passos / Quando | Resultado Esperado | Status | Observação |
 |---|---|---|---|---|---|---|---|
-| PERM-01 | Associar permissoes validas a grupo — happy path | Happy | Grupo id=3 existe e possui Ativo=true | Enviar PUT /grupos/3/permissoes com body {"permissoes":["Leitura","Escrita"]} e JWT valido | HTTP 200; permissoes "Leitura" e "Escrita" registradas em PermissoesGrupo; GET /grupos/3 retorna as permissoes atualizadas | OK | Validacao de enum adicionada no controller apos RV-002-01; antes do fix, invalidos lancavam excecao SQL |
-| PERM-02 | Tentar associar permissao invalida — sad path | Sad | Grupo id=3 existe e possui Ativo=true | Enviar PUT /grupos/3/permissoes com body {"permissoes":["SuperAdmin"]} e JWT valido | HTTP 400 Bad Request; mensagem indicando que o valor "SuperAdmin" e invalido e listando os valores aceitos: Leitura, Escrita, Exclusao, Administracao, Relatorio | OK | Enum validado no controller antes de chamar o service; mensagem amigavel retornada |
+| FUNC-01 | Alterar função do usuário no grupo — happy path | Happy | Usuario id=42 e membro de um grupo com função `Usuario` (0) | Enviar `POST alterarfuncaodousuario` com body {"usuarioId":42,"funcaoId":1,"funcao":1} e JWT válido | HTTP 200; `Sucesso=true`; função do usuário atualizada para `Administrador` (1) | OK | Função validada pelo enum `FuncaoUsuariosEnum` (Usuario/Administrador) — achado RV-002-01 |
 
 ---
 
-## 5. Cenarios — Sprint 1 — AG-22 Vinculo Usuario-Grupo
+## 5. Cenários — Sprint 1 — AG-22 Vinculo Usuario-Grupo
 
-3 cenarios definidos e executados para a historia AG-22, cobrindo vinculo, desvinculo e tentativa com usuario inexistente.
+2 cenários definidos e executados para a historia AG-22, cobrindo o vinculo de usuários (lista de membros) e a remoção de um usuário do grupo.
 
-| ID | Cenario | Tipo | Pre-condicao | Passos / Quando | Resultado Esperado | Status | Observacao |
+| ID | Cenário | Tipo | Pre-condição | Passos / Quando | Resultado Esperado | Status | Observação |
 |---|---|---|---|---|---|---|---|
-| VINC-01 | Vincular usuario ativo a grupo — happy path | Happy | Usuario id=42 existe e possui Ativo=true; Grupo id=3 existe e ativo; vinculo entre eles nao existe | Enviar POST /grupos/3/usuarios com body {"usuarioId":42} e JWT valido | HTTP 201; registro criado em UsuariosGrupo com GrupoId=3, UsuarioId=42, Ativo=true e DataVinculo preenchida | OK | Validacao de usuario ativo adicionada apos RV-003-01 — antes do fix, usuarios inativos podiam ser vinculados |
-| VINC-02 | Desvincular usuario de grupo — happy path | Happy | Usuario id=42 esta vinculado ao Grupo id=3 com Ativo=true em UsuariosGrupo | Enviar DELETE /grupos/3/usuarios/42 com JWT valido | HTTP 204; campo Ativo=false no registro de UsuariosGrupo (soft delete do vinculo); usuario id=42 nao aparece em GET /grupos/3/usuarios | OK | Soft delete do vinculo — historico preservado em UsuariosGrupo |
-| VINC-03 | Tentar vincular usuario inexistente — sad path | Sad | Grupo id=3 existe e ativo; usuario id=999 nao existe no banco | Enviar POST /grupos/3/usuarios com body {"usuarioId":999} e JWT valido | HTTP 404; body com mensagem "Usuario nao encontrado" | OK | FK validada via consulta Dapper antes do INSERT; evita excecao de FK violation no banco |
+| VINC-01 | Vincular usuários ao grupo — happy path | Happy | Grupo id=3 existe; usuários 42 e 711 existem | Enviar `POST alterargrupo` (ou `incluirgrupo`) com `grupoDeUsuarios:[{"id":42,"funcaoId":0},{"id":711,"funcaoId":1}]` e JWT válido | HTTP 200; vinculos criados em `grupos_usuarios_vinculos` (grupo_id, usuario_id, funcao_id) | OK | Membros enviados na lista do payload do grupo |
+| VINC-02 | Remover usuário do grupo — happy path | Happy | Usuario id=711 esta vinculado ao Grupo id=3 | Enviar `POST removerusuario` com body {"id":711,"grupoId":3} e JWT válido | HTTP 200; `excluido=1` no vinculo (soft delete); usuário não aparece em `buscargrupoporid` | OK | Soft delete do vinculo — achado RV-003-01 |
 
 ---
 
-## 6. Cenarios planejados — Sprint 2 (a executar)
+## 6. Cenários planejados — Sprint 2 (a executar)
 
-Cenarios previstos para a Sprint 2, cobrindo as historias AG-23 (Auditoria) e AG-24 (Integracao com ms.temis.vinculos).
+Cenários previstos para a Sprint 2, cobrindo as historias AG-23 (Auditoria) e AG-24 (Integração com ms.temis.vinculos). Funcionalidades **ainda não implementadas** no código.
 
-| ID | Historia | Cenario | Tipo | Status |
+| ID | Historia | Cenário | Tipo | Status |
 |---|---|---|---|---|
-| AUD-01 | AG-23 | Registrar log ao criar grupo — toda operacao INSERT/UPDATE/DELETE em Grupos deve gerar registro em AuditoriaGrupos com campos: GrupoId, UsuarioOperadorId, Acao, DataHora e Detalhe preenchidos corretamente | Happy | A executar — Sprint 2 |
-| AUD-02 | AG-23 | Verificar que registros de auditoria nao podem ser deletados ou alterados — a tabela AuditoriaGrupos deve ser append-only; tentativas de DELETE ou UPDATE devem ser bloqueadas | Seguranca | A executar — Sprint 2 |
-| INT-01 | AG-24 | Vincular usuario a grupo dispara sincronizacao com ms.temis.vinculos — um HTTP POST /vinculos bem-sucedido deve ser realizado no ms.temis.vinculos apos cada vinculo de usuario criado com sucesso | Integracao | A executar — Sprint 2 |
+| AUD-01 | AG-23 | Toda operação de escrita em grupos deve gerar um registro de auditoria com usuário operador, ação, data/hora e detalhe | Happy | A executar — Sprint 2 |
+| AUD-02 | AG-23 | Os registros de auditoria devem ser imutaveis (append-only); tentativas de alteração/exclusão bloqueadas | Segurança | A executar — Sprint 2 |
+| INT-01 | AG-24 | Após alteração de vinculo, o serviço deve sincronizar com o ms.temis.vinculos | Integração | A executar — Sprint 2 |
 
 ---
 
-## 7. Cenarios planejados — Sprint 3 (a executar)
+## 7. Cenários planejados — Sprint 3 (a executar)
 
-Cenarios previstos para a Sprint 3, cobrindo a historia AG-25 (Relatorio consolidado).
+Cenários previstos para a Sprint 3, cobrindo a historia AG-25 (Relatório consolidado). Funcionalidade **ainda não implementada** no código.
 
-| ID | Historia | Cenario | Tipo | Status |
+| ID | Historia | Cenário | Tipo | Status |
 |---|---|---|---|---|
-| REL-01 | AG-25 | Listar grupos com usuarios e permissoes via GET /grupos/relatorio — endpoint retorna estrutura consolidada com todos os grupos ativos, seus membros (UsuariosGrupo) e permissoes (PermissoesGrupo) em uma unica resposta | Happy | Planejado — Sprint 3 |
-| REL-02 | AG-25 | Exportar relatorio em CSV — parametro de query string "?formato=csv" faz com que o endpoint retorne o relatorio como arquivo para download no formato CSV com Content-Disposition adequado | Happy | Planejado — Sprint 3 |
+| REL-01 | AG-25 | Relatório consolidado de grupos com seus membros e funções em uma única resposta | Happy | Planejado — Sprint 3 |
+| REL-02 | AG-25 | Exportação do relatório em formato CSV | Happy | Planejado — Sprint 3 |
 
 ---
 
-## Historico de revisoes
+## Histórico de revisões
 
-| Versao | Data | Autor | Descricao |
+| Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 26/05/2026 | Abraão | Criacao do documento; cenarios da Sprint 1 definidos em conjunto com Leonardo Francisco Pereira (AASP) |
-| 1.1 | 09/06/2026 | Abraão | Resultado da execucao Sprint 1 registrado (100% aprovado em 06/06/2026); cenarios das Sprints 2 e 3 planejados |
+| 1.0 | 26/05/2026 | Abraão | Criação do documento; cenários da Sprint 1 definidos em conjunto com Leonardo Francisco Pereira (AASP) |
+| 1.1 | 09/06/2026 | Abraão | Resultado da execução Sprint 1 registrado (100% aprovado em 06/06/2026); cenários das Sprints 2 e 3 planejados |
+| 1.2 | 15/06/2026 | Abraão | Cenários alinhados aos endpoints e status reais (GerenciarGruposController; HTTP 200/400; função Usuario/Administrador) |

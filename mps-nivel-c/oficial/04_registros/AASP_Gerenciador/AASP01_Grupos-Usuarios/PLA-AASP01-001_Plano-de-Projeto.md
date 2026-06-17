@@ -19,12 +19,12 @@ Este documento define o planejamento executivo do projeto AASP01, estabelecendo 
 
 ## 2. Escopo e Premissas
 
-O escopo deste plano abrange as Sprints 1 a 4 do projeto, conforme detalhado no TAP-AASP01-001 e nos requisitos RF-01 a RF-09 do REQ-AASP01-001.
+O escopo deste plano abrange as Sprints 1 a 3 do projeto, conforme detalhado no TAP-AASP01-001 e nos requisitos RF-01 a RF-09 do REQ-AASP01-001.
 
 **Premissas:**
 
 - Ambiente SQL Server (`auxo3`) disponível e acessível durante todo o projeto
-- Acesso ao repositório Azure DevOps concedido antes do início da Sprint 1
+- Acesso ao repositório GitLab concedido antes do início da Sprint 1
 - Schema e contrato de integração do `ms.temis.vinculos` disponibilizados antes da Sprint 2
 - Dedicação mínima acordada com as partes para reviews e homologação em cada sprint
 
@@ -32,11 +32,10 @@ O escopo deste plano abrange as Sprints 1 a 4 do projeto, conforme detalhado no 
 
 | Sprint   | Período               | SP   | Principais Entregas                                              | Status         |
 |----------|-----------------------|------|------------------------------------------------------------------|----------------|
-| Sprint 1 | 26/05/2026–06/06/2026 | 34   | CRUD grupos (RF-01 a RF-04), Permissões RBAC (RF-05), Vínculos (RF-06) — PRs #11–#15 | ✅ Concluída — aceite Marcos Turnes 06/06/2026 |
+| Sprint 1 | 26/05/2026–06/06/2026 | 34   | CRUD grupos (RF-01 a RF-04), Função do usuário (RF-05), Vínculos (RF-06) — MRs !1–!5 | ✅ Concluída — aceite Marcos Turnes 06/06/2026 |
 | Sprint 2 | 09/06/2026–20/06/2026 | 28   | Auditoria/Log (RF-07), Integração ms.temis.vinculos (RF-08)      | 🔄 Em andamento |
 | Sprint 3 | 23/06/2026–04/07/2026 | 20   | Relatórios e CSV export (RF-09), homologação QA                  | 📋 Planejada   |
-| Sprint 4 | 07/07/2026–11/07/2026 | 8    | Encerramento, ajustes finais, entrega formal                     | 📋 Planejada   |
-| **Total** | **19/05–11/07/2026** | **90** | —                                                             | —              |
+| **Total** | **19/05–04/07/2026** | **82** | —                                                             | —              |
 
 ### 3.1 Git Flow
 
@@ -91,9 +90,9 @@ O escopo deste plano abrange as Sprints 1 a 4 do projeto, conforme detalhado no 
 | Atividade                   | Quando             | Responsável       | Critério de Conclusão                                        |
 |-----------------------------|--------------------|-------------------|--------------------------------------------------------------|
 | Testes unitários            | A cada sprint      | Renan Kiyoshi     | Cobertura ≥ 70% nos módulos entregues na sprint              |
-| Code review                 | A cada PR          | Cezar Hiraki     | Aprovação formal no Azure DevOps antes do merge              |
+| Code review                 | A cada MR          | Cezar Hiraki     | Aprovação formal no GitLab antes do merge              |
 | Testes de integração        | Sprint 2           | Cezar Hiraki     | Endpoints integrados validados em ambiente de desenvolvimento |
-| Homologação QA              | Sprint 3 e Sprint 4 | Leonardo Francisco Pereira     | Parecer de aceite emitido pela QA da AASP                    |
+| Homologação QA              | Sprint 3            | Leonardo Francisco Pereira     | Parecer de aceite emitido pela QA da AASP                    |
 | Aceite formal               | Fim de cada sprint  | Marcos Turnes  | Confirmação escrita do PO (e-mail ou Teams)                  |
 
 ## 8. Métricas de Sucesso
@@ -107,7 +106,7 @@ O escopo deste plano abrange as Sprints 1 a 4 do projeto, conforme detalhado no 
 | M5  | Aceite formal de sprint em 100% das sprints pelo PO                 |
 | M6  | Integração com `ms.temis.vinculos` validada em homologação          |
 | M7  | Sem change requests não planejados aprovados durante o projeto       |
-| M8  | Entrega dentro do prazo definido no TAP (até 11/07/2026)            |
+| M8  | Entrega dentro do prazo definido no TAP (até 04/07/2026)            |
 
 ## 9. Processo de Change Request
 
