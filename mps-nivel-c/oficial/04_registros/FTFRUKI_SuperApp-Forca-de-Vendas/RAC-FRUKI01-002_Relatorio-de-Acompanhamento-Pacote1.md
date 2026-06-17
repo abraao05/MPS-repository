@@ -6,7 +6,7 @@
 |---|---|
 | **Documento** | RAC-FRUKI01-002 |
 | **Projeto** | SuperApp Fruki — Pacote 1 — Módulo Metas e Remuneração Variável |
-| **Plano de referência** | PLA-FRUKI01-001 v1.1 |
+| **Plano de referência** | PLA-FRUKI01-001 v1.3 |
 | **Período / ciclo** | 05/06/2025 – Set/2025 (encerramento do Pacote 1) |
 | **Data do relatório** | Set/2025 |
 | **Responsável** | Abraão Oliveira |
@@ -41,6 +41,14 @@
 - **Velocity Sprint 1:** ~34 SP / 4 semanas
 - **Velocity Sprint 2:** ~30 SP / 4–5 semanas (inclui ajustes pós-piloto)
 - **Velocity média observada:** ~32 SP/sprint (compatível com estimativa de 30–35 SP do PLA-FRUKI01-001)
+
+**Horas estimadas × realizadas:**
+
+| Dimensão | Estimado | Realizado | Desvio |
+|---|---|---|---|
+| Esforço total (horas) | 784 h | ~847 h | +8% |
+
+*Base: orçamento de horas por papel em PLA-FRUKI01-001 §4 (784 h para 4 sprints de 2 semanas). Desvio alinhado ao desvio de SP (+8%).*
 
 ### 1.3 Cronograma
 
@@ -122,3 +130,4 @@ Sequência natural: encerramento do Pacote 1 → abertura do Pacote Final 24 (09
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado jun–set/2025) |
+| 1.1 | 17/06/2026 | Abraão Oliveira | §1.2 ampliado: adição de tabela de horas estimadas × realizadas (784 h → ~847 h; desvio +8%) |

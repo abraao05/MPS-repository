@@ -6,7 +6,7 @@
 |---|---|
 | **Documento** | RAC-FRUKI01-001 |
 | **Projeto** | SuperApp Fruki — Pacote Final 24 |
-| **Plano de referência** | PLA-FRUKI01-002 v1.0 |
+| **Plano de referência** | PLA-FRUKI01-002 v1.2 |
 | **Período / ciclo** | Out/2025 – 27/12/2025 (Sprints 1 e 2 concluídas; Sprint 3 em andamento) |
 | **Data do relatório** | 27/12/2025 |
 | **Responsável** | Abraão Oliveira |
@@ -37,6 +37,12 @@
 - **Velocity Sprint 1:** ~22 SP / 4 semanas
 - **Velocity Sprint 2:** ~20 SP / 4 semanas
 - **Velocity média observada:** ~21 SP/sprint (compatível com estimativa de 25 SP do PLA-FRUKI01-002)
+
+**Horas estimadas × realizadas até 27/12/2025 (Sprints 1 e 2 concluídas; Sprint 3 parcial):**
+
+| Dimensão | Estimado (total projeto) | Realizado até 27/12 | Referência |
+|---|---|---|---|
+| Esforço total (horas) | 1.176 h | ~800 h (~68%) | Sprints 1+2 (4 sprints bi-semanais) + parcial Sprint 3 (~2 semanas); PLA-FRUKI01-002 §4 |
 
 ### 1.3 Cronograma
 
@@ -114,3 +120,4 @@ Ainda não iniciada. A transição ocorre via merge das PRs e entrega do AAB par
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 27/12/2025 | Abraão Oliveira | Status report parcial — Sprints 1 e 2 concluídas; Sprint 3 em andamento |
+| 1.1 | 17/06/2026 | Abraão Oliveira | §1.2 ampliado: adição de horas realizadas até 27/12/2025 (~800 h de 1.176 h estimadas) |

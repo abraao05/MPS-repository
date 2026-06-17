@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MED-FRUKI01-001 — Registro de Medição |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 17/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | SuperApp Fruki — Força de Vendas (Pacote 1 + Pacote Final 24) |
 | **Responsável por Medição** | Abraão Oliveira |
@@ -47,6 +47,14 @@ Registrar as medidas coletadas ao longo do projeto SuperApp Fruki conforme o PLA
 | **Total** | **~60 SP** | **~65 SP** | **+8%** |
 
 **Resultado M2:** Desvio de +8% no esforço — dentro da margem aceitável. Os desvios concentraram-se em itens de integração com API e ajustes pós-piloto.
+
+**Horas — estimado × realizado (Pacote 1):**
+
+| Dimensão | Estimado | Realizado | Desvio |
+|---|---|---|---|
+| Esforço total em horas | 784 h | ~847 h | +8% |
+
+*Referência de estimativa: PLA-FRUKI01-001 §4 — Orçamento de horas por papel.*
 
 ### M3 — Velocity
 
@@ -105,6 +113,14 @@ Registrar as medidas coletadas ao longo do projeto SuperApp Fruki conforme o PLA
 
 **Resultado M2:** Desvio de +3% — dentro da margem aceitável.
 
+**Horas — estimado × realizado (Pacote Final 24):**
+
+| Dimensão | Estimado | Realizado | Desvio |
+|---|---|---|---|
+| Esforço total em horas | 1.176 h | ~1.211 h | +3% |
+
+*Referência de estimativa: PLA-FRUKI01-002 §4 — Orçamento de horas por papel.*
+
 ### M3 — Velocity
 
 | Sprint | Módulo | SP concluídos | Duração |
@@ -138,7 +154,8 @@ Registrar as medidas coletadas ao longo do projeto SuperApp Fruki conforme o PLA
 | Medida | Pacote 1 | Pacote Final 24 | Referência organizacional |
 |---|---|---|---|
 | Aderência ao prazo | 100% dos marcos no prazo | 5 de 6 marcos no prazo (1 desvio gerenciado) | Meta: ≤10% de desvio |
-| Desvio de esforço | +8% | +3% | Meta: ≤15% de desvio |
+| Desvio de esforço (SP) | +8% | +3% | Meta: ≤15% de desvio |
+| Desvio de esforço (horas) | 784 h → ~847 h (+8%) | 1.176 h → ~1.211 h (+3%) | Meta: ≤15% de desvio |
 | Velocity (2 semanas) | ~32 SP/sprint | ~21 SP/sprint (módulos de 4 semanas) | Base: ~25 SP/sprint (PLA-FRUKI01-002) |
 | Taxa de contenção de defeitos | 100% | 100% | Meta: >95% |
 
@@ -149,3 +166,4 @@ Registrar as medidas coletadas ao longo do projeto SuperApp Fruki conforme o PLA
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro de medição consolidado dos dois pacotes |
+| 1.1 | 17/06/2026 | Abraão Oliveira | M2 expandido: adição de horas estimadas × realizadas (784 h / ~847 h — Pacote 1; 1.176 h / ~1.211 h — Pacote Final 24); §4 consolidado atualizado com linha de desvio de esforço em horas |

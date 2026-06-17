@@ -6,8 +6,8 @@
 | **Projeto** | SuperApp Fruki — Pacote Final 24 |
 | **Cliente** | Fruki Bebidas S.A. |
 | **Contrato** | Pacote Final 24 |
-| **Versão** | 1.0 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 17/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -37,7 +37,7 @@ Detalhamento completo em `ADAP-FRUKI01-002_Registro-de-Adaptacao.md`. Resumo:
 | Cadência de entrega | Por módulo — entrega incremental mensal | Pedidos Não Alocados (out); Regra de Ouro (nov); PDV (dez/jan) |
 | Ambiente de stage | Expo APK + branch feature no Azure DevOps | Builds de teste antes de cada merge; link Expo compartilhado com cliente para validação |
 
-## 4. Estimativas (GPR 3, 4)
+## 4. Estimativas e orçamento de horas (GPR 3, 4)
 
 - **Tamanho estimado:** ~75 story points
 
@@ -54,6 +54,19 @@ Detalhamento completo em `ADAP-FRUKI01-002_Registro-de-Adaptacao.md`. Resumo:
 - **Velocity de referência:** ~25 SP/sprint (equipe de 2 devs front-end + 1 UX; sprints de 2 semanas; velocidade observada no Pacote 1)
 - **Esforço/prazo estimado:** ~3 sprints / 3 meses (out/2025 – jan/2026)
 - **Base histórica:** Velocity observada no Pacote 1 (Metas/RV) do próprio SuperApp Fruki
+
+**Orçamento de horas por papel:**
+
+*Referência: 168 h/mês disponíveis por pessoa → ~140 h/mês efetivas (~70 h/sprint de 2 semanas) após dedução de cerimônias e reuniões (~15%). Dedicação parcial proporcional.*
+
+| Papel | Pessoas | Dedicação | h efetivas/sprint | Nº sprints | **h estimadas** |
+|---|---|---|---|---|---|
+| Gerente de Projeto / PO | 1 | 30% | 21 h | 6 | 126 h |
+| COO / Apoio Comercial | 1 | 10% | 7 h | 6 | 42 h |
+| UX/UI Designer / Analista | 1 | 30% | 21 h | 6 | 126 h |
+| Dev Front-End React Native | 2 | 100% | 70 h | 6 | 840 h |
+| GQA / COO (Operações) | 1 | 10% | 7 h | 6 | 42 h |
+| **Total** | | | | | **1.176 h** |
 
 ## 5. Cronograma e marcos (GPR 5)
 
@@ -162,3 +175,4 @@ Plano apresentado e aprovado na reunião de Kickoff do Pacote Final 24 em 09/10/
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | §11 corrigido: aprovação do plano referenciada em ATA-FRUKI01-008 (ata de kickoff e aprovação do plano) em vez de e-mail |
+| 1.2 | 17/06/2026 | Abraão Oliveira | §4 renomeado para "Estimativas e orçamento de horas"; adição da tabela de orçamento de horas por papel (1.176 h estimadas) |

@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GQA-FRUKI01-001 — Registro de Garantia da Qualidade |
-| **Versão** | 1.2 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.3 |
+| **Data** | 17/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Projeto** | SuperApp Fruki — Força de Vendas (Pacote 1 + Pacote Final 24) |
 | **Auditor** | COO (Operações) |
@@ -84,7 +84,7 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto SuperApp Fru
 | ATA-FRUKI01-001 | v1.0 | Participantes, pauta, decisões, ações de follow-up | ✅ Sim | Kickoff do Pacote 1 — 05/06/2025 |
 | ATA-FRUKI01-002 | v1.0 | Participantes, pauta, decisões, ações de follow-up | ✅ Sim | Levantamento de requisitos — 25/06/2025 |
 | ATA-FRUKI01-007 | v1.0 | Registro do piloto, defeitos identificados e resoluções | ✅ Sim | Piloto com vendedores — 05/08/2025 |
-| PLA-FRUKI01-001 | v1.1 | Planejamento detalhado, estimativas, riscos, recursos, marcos, aprovação | ✅ Sim | Aprovação via ATA-FRUKI01-001 |
+| PLA-FRUKI01-001 | v1.3 | Planejamento detalhado, estimativas, orçamento de horas, riscos, recursos, marcos, aprovação | ✅ Sim | Aprovação via ATA-FRUKI01-001 |
 | REQ-FRUKI01-001 | v1.1 | Requisitos numerados, rastreáveis, com critério de aceite, validação documentada | ✅ Sim | |
 | ADAP-FRUKI01-001 | v1.1 | Adaptações justificadas, pontos de controle marcados, ITP e GDE referenciados | ✅ Sim | |
 | PCP-FRUKI01-001 | v1.0 | Arquitetura documentada, design UX validado, decisões técnicas | ✅ Sim | |
@@ -107,7 +107,7 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto SuperApp Fru
 | ATA-FRUKI01-005 | v1.0 | Validação de sprint, cenários, resultado | ✅ Sim | Sprint 2 — Regra de Ouro — 28/11/2025 |
 | ATA-FRUKI01-006 | v1.0 | Validação de sprint, cenários, resultado, AAB v2.0 | ✅ Sim | Sprint 3 — PDV — 14/01/2026 |
 | ATA-FRUKI01-003 | v1.0 | Ata de aceite com decisões e ressalvas | ✅ Sim | Aceite final — 15/01/2026 |
-| PLA-FRUKI01-002 | v1.0 | Planejamento detalhado, estimativas, riscos, recursos, marcos, aprovação | ✅ Sim | Aprovação via ATA-FRUKI01-008 |
+| PLA-FRUKI01-002 | v1.2 | Planejamento detalhado, estimativas, orçamento de horas, riscos, recursos, marcos, aprovação | ✅ Sim | Aprovação via ATA-FRUKI01-008 |
 | REQ-FRUKI01-002 | v1.0 | Requisitos numerados, rastreáveis, com critério de aceite, validação documentada | ✅ Sim | |
 | ADAP-FRUKI01-002 | v1.1 | Adaptações justificadas, pontos de controle marcados, ITP e GDE referenciados | ✅ Sim | |
 | PCP-FRUKI01-002 | v1.0 | Arquitetura documentada, design UX validado por módulo, decisões técnicas | ✅ Sim | |
@@ -129,3 +129,4 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto SuperApp Fru
 | 1.0 | 05/06/2026 | COO (Operações) | Auditoria de encerramento do Pacote 1 |
 | 1.1 | 05/06/2026 | COO (Operações) | Inclusão da auditoria de encerramento do Pacote Final 24 |
 | 1.2 | 05/06/2026 | COO (Operações) | Novos itens de auditoria: ITP, GCO, CR, RAC, ata de kickoff do Pacote Final 24; versões corrigidas (ADAP-001/002 v1.1, TAP-002 v1.1, TAE-002 v1.1); novos artefatos adicionados às tabelas §3.1 e §3.2 (ITP-001/002, GCO-001, CR-001, RAC-001/002, ATA-004 a 008, LI-001, MED-001) |
+| 1.3 | 17/06/2026 | COO (Operações) | Versões dos PLAs atualizadas nas tabelas §3.1 e §3.2: PLA-001 v1.3 e PLA-002 v1.2 (adição do orçamento de horas em cada plano) |

@@ -6,8 +6,8 @@
 | **Projeto** | SuperApp Fruki — Pacote 1 — Módulo Metas e Remuneração Variável |
 | **Cliente** | Fruki Bebidas S.A. |
 | **Contrato** | Pacote 1 — Metas/RV |
-| **Versão** | 1.1 |
-| **Data** | 05/06/2026 |
+| **Versão** | 1.3 |
+| **Data** | 17/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -37,7 +37,7 @@ Detalhamento completo em `ADAP-FRUKI01-001_Registro-de-Adaptacao.md`. Resumo:
 | Cadência de entrega | Por entrega incremental (APK + PR) | Entregas parciais ao cliente ao longo do desenvolvimento |
 | Ambiente de stage | Expo APK + branch feature no Azure DevOps | Build de teste antes de cada merge |
 
-## 4. Estimativas (GPR 3, 4)
+## 4. Estimativas e orçamento de horas (GPR 3, 4)
 
 - **Tamanho estimado:** ~60 story points
 
@@ -54,6 +54,19 @@ Detalhamento completo em `ADAP-FRUKI01-001_Registro-de-Adaptacao.md`. Resumo:
 - **Velocity de referência:** ~30 SP/sprint (equipe de 2 devs front-end + 1 UX; sprints de 2 semanas)
 - **Esforço/prazo estimado:** ~2 sprints / 6–8 semanas (jun–ago/2025)
 - **Base histórica:** Projetos anteriores de desenvolvimento React Native na Timeware
+
+**Orçamento de horas por papel:**
+
+*Referência: 168 h/mês disponíveis por pessoa → ~140 h/mês efetivas (~70 h/sprint de 2 semanas) após dedução de cerimônias e reuniões (~15%). Dedicação parcial proporcional.*
+
+| Papel | Pessoas | Dedicação | h efetivas/sprint | Nº sprints | **h estimadas** |
+|---|---|---|---|---|---|
+| Gerente de Projeto / PO | 1 | 30% | 21 h | 4 | 84 h |
+| COO / Apoio Comercial | 1 | 10% | 7 h | 4 | 28 h |
+| UX/UI Designer / Analista | 1 | 30% | 21 h | 4 | 84 h |
+| Dev Front-End React Native | 2 | 100% | 70 h | 4 | 560 h |
+| GQA / COO (Operações) | 1 | 10% | 7 h | 4 | 28 h |
+| **Total** | | | | | **784 h** |
 
 ## 5. Cronograma e marcos (GPR 5)
 
@@ -152,3 +165,4 @@ Plano apresentado e aprovado na reunião de kickoff em 05/06/2025. O aceite foi 
 | 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo |
 | 1.1 | 05/06/2026 | Abraão Oliveira | Rescopo para Pacote 1 (Metas/RV apenas); e-mail Thiago Gomes corrigido; valores comerciais removidos |
 | 1.2 | 05/06/2026 | Abraão Oliveira | §11 corrigido: aprovação do plano referenciada em ATA-FRUKI01-001 (ata de kickoff) em vez de e-mail |
+| 1.3 | 17/06/2026 | Abraão Oliveira | §4 renomeado para "Estimativas e orçamento de horas"; adição da tabela de orçamento de horas por papel (784 h estimadas) |
