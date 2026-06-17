@@ -98,4 +98,4 @@ Nenhum problema crítico identificado. Cecília Ribeiro solicitou que o título 
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (validação realizada em nov/2025) |
+| 1.0 | 28/11/2025 | Abraão Oliveira | Versão inicial — registro retroativo (validação realizada em nov/2025) |

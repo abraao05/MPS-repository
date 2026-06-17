@@ -129,5 +129,5 @@ Sequência natural: encerramento do Pacote 1 → abertura do Pacote Final 24 (09
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado jun–set/2025) |
+| 1.0 | 01/09/2025 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado jun–set/2025) |
 | 1.1 | 17/06/2026 | Abraão Oliveira | §1.2 ampliado: adição de tabela de horas estimadas × realizadas (784 h → ~847 h; desvio +8%) |

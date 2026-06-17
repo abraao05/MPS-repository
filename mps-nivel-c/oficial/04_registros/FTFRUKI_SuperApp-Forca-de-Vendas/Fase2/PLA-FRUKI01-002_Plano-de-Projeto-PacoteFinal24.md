@@ -173,6 +173,6 @@ Plano apresentado e aprovado na reunião de Kickoff do Pacote Final 24 em 09/10/
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
+| 1.0 | 09/10/2025 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | §11 corrigido: aprovação do plano referenciada em ATA-FRUKI01-008 (ata de kickoff e aprovação do plano) em vez de e-mail |
 | 1.2 | 17/06/2026 | Abraão Oliveira | §4 renomeado para "Estimativas e orçamento de horas"; adição da tabela de orçamento de horas por papel (1.176 h estimadas) |

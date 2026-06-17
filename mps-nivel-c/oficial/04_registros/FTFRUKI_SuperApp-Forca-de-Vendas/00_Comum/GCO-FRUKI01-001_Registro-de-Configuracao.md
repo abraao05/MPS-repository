@@ -91,7 +91,7 @@ Conforme PLA-GCO-001 seção 3.1, os seguintes itens de configuração foram ide
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — Pacote 1 (ICs, branches, baselines, mudanças) |
+| 1.0 | 01/09/2025 | Abraão Oliveira | Versão inicial — Pacote 1 (ICs, branches, baselines, mudanças) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | Inclusão do Pacote Final 24 — branches, baselines BL-02 a BL-05, mudanças CM-01 a CM-03 |
 | 1.2 | 05/06/2026 | Abraão Oliveira | Atualização da lista de ICs: ATAs expandidas de ATA-003 para ATA-007 (atas de validação de sprint e piloto) |
 | 1.3 | 05/06/2026 | Abraão Oliveira | CR-FRUKI01-001 adicionado à lista de ICs; CM-03 atualizado com referência ao CR formal |

@@ -126,7 +126,7 @@ Registrar as auditorias de qualidade realizadas ao longo do projeto SuperApp Fru
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | COO (Operações) | Auditoria de encerramento do Pacote 1 |
+| 1.0 | 01/09/2025 | COO (Operações) | Auditoria de encerramento do Pacote 1 |
 | 1.1 | 05/06/2026 | COO (Operações) | Inclusão da auditoria de encerramento do Pacote Final 24 |
 | 1.2 | 05/06/2026 | COO (Operações) | Novos itens de auditoria: ITP, GCO, CR, RAC, ata de kickoff do Pacote Final 24; versões corrigidas (ADAP-001/002 v1.1, TAP-002 v1.1, TAE-002 v1.1); novos artefatos adicionados às tabelas §3.1 e §3.2 (ITP-001/002, GCO-001, CR-001, RAC-001/002, ATA-004 a 008, LI-001, MED-001) |
 | 1.3 | 17/06/2026 | COO (Operações) | Versões dos PLAs atualizadas nas tabelas §3.1 e §3.2: PLA-001 v1.3 e PLA-002 v1.2 (adição do orçamento de horas em cada plano) |

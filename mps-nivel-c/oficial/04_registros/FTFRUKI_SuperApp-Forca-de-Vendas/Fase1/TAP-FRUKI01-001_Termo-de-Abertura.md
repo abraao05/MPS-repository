@@ -97,5 +97,5 @@ Conforme proposta comercial "Pacote 1 — Metas/RV" acordada em junho de 2025 co
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — abertura retroativa |
+| 1.0 | 05/06/2025 | Abraão Oliveira | Versão inicial — abertura retroativa |
 | 1.1 | 05/06/2026 | Abraão Oliveira | Rescopo para Pacote 1 (Metas/RV apenas); Pacote Final 24 registrado em TAP-FRUKI01-002 |

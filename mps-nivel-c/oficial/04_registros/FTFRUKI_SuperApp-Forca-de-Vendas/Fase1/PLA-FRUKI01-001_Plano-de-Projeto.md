@@ -162,7 +162,7 @@ Plano apresentado e aprovado na reunião de kickoff em 05/06/2025. O aceite foi 
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo |
+| 1.0 | 05/06/2025 | Abraão Oliveira | Versão inicial — registro retroativo |
 | 1.1 | 05/06/2026 | Abraão Oliveira | Rescopo para Pacote 1 (Metas/RV apenas); e-mail Thiago Gomes corrigido; valores comerciais removidos |
 | 1.2 | 05/06/2026 | Abraão Oliveira | §11 corrigido: aprovação do plano referenciada em ATA-FRUKI01-001 (ata de kickoff) em vez de e-mail |
 | 1.3 | 17/06/2026 | Abraão Oliveira | §4 renomeado para "Estimativas e orçamento de horas"; adição da tabela de orçamento de horas por papel (784 h estimadas) |

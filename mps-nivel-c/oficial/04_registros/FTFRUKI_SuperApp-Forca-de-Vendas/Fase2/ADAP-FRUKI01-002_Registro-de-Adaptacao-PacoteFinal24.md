@@ -50,6 +50,6 @@
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
+| 1.0 | 09/10/2025 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | ITP-FRUKI01-002 e GDE-FRUKI01-001 referenciados explicitamente na tabela de etapas |
-| 1.2 | 13/06/2026 | Time de Melhoria Contínua | Registrada explicitamente a não aplicabilidade do processo de Aquisição (AQU) neste pacote, conforme PRO-AQU-001 §2 |
+| 1.2 | 13/06/2026 | Abraão Oliveira | Registrada explicitamente a não aplicabilidade do processo de Aquisição (AQU) neste pacote, conforme PRO-AQU-001 §2 |

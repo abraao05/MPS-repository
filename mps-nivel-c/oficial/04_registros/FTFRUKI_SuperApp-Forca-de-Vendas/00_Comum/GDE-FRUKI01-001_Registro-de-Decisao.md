@@ -122,4 +122,4 @@ Cecília Ribeiro aprovou a nomenclatura "Regra de Ouro" por ser mais positiva e 
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — duas decisões registradas: tratamento front-end de dados de API e renomeação "Caixa Preta" → "Regra de Ouro" |
+| 1.0 | 25/10/2025 | Abraão Oliveira | Versão inicial — duas decisões registradas: tratamento front-end de dados de API e renomeação "Caixa Preta" → "Regra de Ouro" |

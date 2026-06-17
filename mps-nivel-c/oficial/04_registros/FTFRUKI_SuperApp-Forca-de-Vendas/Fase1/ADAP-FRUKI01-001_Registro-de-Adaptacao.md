@@ -50,6 +50,6 @@
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado jun/2025–set/2025) |
+| 1.0 | 25/06/2025 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado jun/2025–set/2025) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | ITP e GDE referenciados explicitamente na tabela de etapas |
-| 1.2 | 13/06/2026 | Time de Melhoria Contínua | Registrada explicitamente a não aplicabilidade do processo de Aquisição (AQU) neste projeto, conforme PRO-AQU-001 §2 |
+| 1.2 | 13/06/2026 | Abraão Oliveira | Registrada explicitamente a não aplicabilidade do processo de Aquisição (AQU) neste projeto, conforme PRO-AQU-001 §2 |

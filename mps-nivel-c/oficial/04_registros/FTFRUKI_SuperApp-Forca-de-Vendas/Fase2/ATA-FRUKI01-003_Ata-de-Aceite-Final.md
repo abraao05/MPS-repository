@@ -73,4 +73,4 @@ Nenhuma pendência registrada. Todos os itens do escopo do Pacote Final 24 foram
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (reunião realizada em 15/01/2026) |
+| 1.0 | 15/01/2026 | Abraão Oliveira | Versão inicial — registro retroativo (reunião realizada em 15/01/2026) |

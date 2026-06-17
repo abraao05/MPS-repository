@@ -100,4 +100,4 @@ A mudança foi implementada conforme planejado. O Módulo Regra de Ouro foi entr
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (mudança aprovada e implementada em out–nov/2025) |
+| 1.0 | 09/10/2025 | Abraão Oliveira | Versão inicial — registro retroativo (mudança aprovada e implementada em out–nov/2025) |

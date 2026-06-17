@@ -90,5 +90,5 @@ A solução envolve: UX/UI com protótipos validados por Cecília antes do desen
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo |
+| 1.0 | 25/06/2025 | Abraão Oliveira | Versão inicial — registro retroativo |
 | 1.1 | 05/06/2026 | Abraão Oliveira | Rescopo para Pacote 1 (Metas/RV apenas); RF-05 a RF-14 movidos para REQ-FRUKI01-002 |

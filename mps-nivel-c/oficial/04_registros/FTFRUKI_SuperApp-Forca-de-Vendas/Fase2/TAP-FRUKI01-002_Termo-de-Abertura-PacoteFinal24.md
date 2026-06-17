@@ -104,5 +104,5 @@ Conforme proposta "Pacote Final 24" apresentada em 26/09/2025 e aprovada por Lea
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — abertura retroativa (projeto executado out/2025–jan/2026) |
+| 1.0 | 09/10/2025 | Abraão Oliveira | Versão inicial — abertura retroativa (projeto executado out/2025–jan/2026) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | §7 Premissas: referência explícita a CR-FRUKI01-001 para inclusão da Regra de Ouro |

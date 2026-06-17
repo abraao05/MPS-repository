@@ -90,5 +90,5 @@ O código dos três módulos foi entregue via Pull Requests revisadas e mergeada
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
+| 1.0 | 15/01/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
 | 1.1 | 05/06/2026 | Abraão Oliveira | §3 corrigido: referência à CR-FRUKI01-001 (mudança de escopo aprovada em 09/10/2025 antes do início da execução) |

@@ -81,4 +81,4 @@
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (reunião realizada em 25/06/2025) |
+| 1.0 | 25/06/2025 | Abraão Oliveira | Versão inicial — registro retroativo (reunião realizada em 25/06/2025) |

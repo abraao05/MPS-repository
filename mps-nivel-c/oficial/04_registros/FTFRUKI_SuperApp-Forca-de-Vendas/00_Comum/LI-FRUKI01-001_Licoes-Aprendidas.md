@@ -63,4 +63,4 @@ As lições LE-07 e OM-01 foram identificadas durante o Pacote Final 24 e devem 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Gerente de Projeto | Lições aprendidas dos dois pacotes do SuperApp Fruki; oportunidades de melhoria identificadas |
+| 1.0 | 15/01/2026 | Gerente de Projeto | Lições aprendidas dos dois pacotes do SuperApp Fruki; oportunidades de melhoria identificadas |

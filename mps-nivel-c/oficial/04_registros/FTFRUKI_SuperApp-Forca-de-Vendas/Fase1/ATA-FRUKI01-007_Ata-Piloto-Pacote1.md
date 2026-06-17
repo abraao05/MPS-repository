@@ -108,4 +108,4 @@ Validar o Módulo Metas e Remuneração Variável com dados reais de campo antes
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (piloto realizado em ago/2025) |
+| 1.0 | 05/08/2025 | Abraão Oliveira | Versão inicial — registro retroativo (piloto realizado em ago/2025) |

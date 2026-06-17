@@ -165,5 +165,5 @@ Registrar as medidas coletadas ao longo do projeto SuperApp Fruki conforme o PLA
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro de medição consolidado dos dois pacotes |
+| 1.0 | 15/01/2026 | Abraão Oliveira | Versão inicial — registro de medição consolidado dos dois pacotes |
 | 1.1 | 17/06/2026 | Abraão Oliveira | M2 expandido: adição de horas estimadas × realizadas (784 h / ~847 h — Pacote 1; 1.176 h / ~1.211 h — Pacote Final 24); §4 consolidado atualizado com linha de desvio de esforço em horas |

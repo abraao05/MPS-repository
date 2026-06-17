@@ -44,4 +44,4 @@ Todos os RF-05 a RF-14 e RNF-01 a RNF-05 possuem: elemento de design corresponde
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |
+| 1.0 | 15/01/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado out/2025–jan/2026) |

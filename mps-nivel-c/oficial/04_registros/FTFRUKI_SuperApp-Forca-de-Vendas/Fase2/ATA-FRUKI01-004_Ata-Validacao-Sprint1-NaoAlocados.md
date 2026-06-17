@@ -92,4 +92,4 @@ Nenhum problema crítico identificado durante a validação. Cecília Ribeiro so
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (validação realizada em out/2025) |
+| 1.0 | 24/10/2025 | Abraão Oliveira | Versão inicial — registro retroativo (validação realizada em out/2025) |

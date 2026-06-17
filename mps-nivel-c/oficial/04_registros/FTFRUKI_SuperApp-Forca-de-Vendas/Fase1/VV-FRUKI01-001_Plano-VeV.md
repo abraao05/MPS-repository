@@ -123,4 +123,4 @@ Funcionalidade: Remuneração Variável (RV) por Perfil
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado jun–set/2025) |
+| 1.0 | 01/07/2025 | Abraão Oliveira | Versão inicial — registro retroativo (projeto executado jun–set/2025) |

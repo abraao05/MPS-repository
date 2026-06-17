@@ -103,4 +103,4 @@ Nenhum problema crítico identificado. Alexsandro de Vargas Braga solicitou reor
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro retroativo (validação realizada em jan/2026) |
+| 1.0 | 14/01/2026 | Abraão Oliveira | Versão inicial — registro retroativo (validação realizada em jan/2026) |

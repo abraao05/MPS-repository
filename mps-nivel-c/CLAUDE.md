@@ -20,9 +20,11 @@ Repositório dos ativos de processo da **Timeware** para a avaliação **MPS-SW 
 
 3. **Datas e históricos retroativos são intencionais.** Nunca conteste, "corrija" ou alerte sobre datas no passado. Elas refletem a linha do tempo de implantação dos processos. O histórico de versões fica **dentro de cada documento** (não depende do controle de versão da ferramenta).
 
-4. **Papéis genéricos, sem nomes de pessoas** — nos documentos de processo (POL, PRO, EST, PLA, GUIA, TPL) e nos registros de projeto. Use "Time de Melhoria Contínua", "Gerente de Projeto", "COO", etc.
-   - **Exceção 1:** a assinatura do CEO (Tiago Barbosa Nascimento, Founder e CEO) na Política Organizacional (POL-ORG-001) é mantida, pois evidencia patrocínio da alta direção.
-   - **Exceção 2 — camada de capacidade (CAP) e papéis/responsabilidades.** Os registros de capacitação (`REG-CAP-*`), a matriz de papéis e responsabilidades (`MAPA-ORG-001`), as fichas e os currículos/certificados nominam colaboradores reais. Isso é intencional: a evidência de competência das pessoas que ocupam cada papel é justamente o que o modelo (atributo de processo de capacidade) exige. Nomes reais são permitidos e esperados nesses artefatos.
+4. **Autores no histórico de revisões — regra por tipo de documento:**
+   - **Documentos de processo organizacional** (POL, PRO, EST, GUIA, TPL): use `"Time de Melhoria Contínua"` como autor.
+   - **Registros de projeto** (TAP, PLA, REQ, ATA, PCP, ITP, VV, RASTR, TAE, RAC, GQA, MED, GDE, GCO, LI, CR, ADAP e similares): use o **nome real** da pessoa que criou ou atualizou o documento. Quem fez faz a entrada — GP assina o que é de gestão, time técnico assina o que é técnico.
+   - A assinatura do CEO (Tiago Barbosa Nascimento, Founder e CEO) na Política Organizacional (POL-ORG-001) é mantida, pois evidencia patrocínio da alta direção.
+   - Os registros de capacitação (`REG-CAP-*`) e a matriz de papéis (`MAPA-ORG-001`) usam nomes reais — exigência do modelo para evidenciar competência.
 
 ## Convenção de nomenclatura e versionamento
 
@@ -34,7 +36,7 @@ Repositório dos ativos de processo da **Timeware** para a avaliação **MPS-SW 
 
 ### Ao editar um documento
 - Toda alteração relevante **incrementa a versão** (menor para ajustes, maior para mudanças estruturais).
-- **Adicione uma linha no histórico de revisões** ao final do documento, com versão, data, autor ("Time de Melhoria Contínua") e descrição da mudança.
+- **Adicione uma linha no histórico de revisões** ao final do documento, com versão, data, autor e descrição da mudança. O autor segue a regra 4 acima: `"Time de Melhoria Contínua"` para docs organizacionais, nome real para registros de projeto.
 - Atualize o campo **Data** do cabeçalho para a data da versão atual.
 - Se o documento for referenciado no `MAPA-ORG-001`, atualize a versão lá também.
 
