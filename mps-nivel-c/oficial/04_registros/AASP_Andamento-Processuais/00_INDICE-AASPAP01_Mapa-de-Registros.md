@@ -11,7 +11,7 @@
 | **Data** | 16/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza as evidências do projeto; não é, ele próprio, evidência auditável pela ASR. |
 
-> **Como usar:** mapeia os registros MPS do projeto AASPAP01 e o status de cada um. Execução gerada; encerramento aguarda o aceite formal (previsto 30/06/2026).
+> **Como usar:** mapeia os registros MPS do projeto AASPAP01 e o status de cada um. Execução concluída; projeto encerrado em 30/06/2026 (TAE-AASPAP01-001).
 
 ## Registros do projeto (gerados ✅)
 
@@ -43,13 +43,14 @@
 | 23 | GCO-AASPAP01-001 | Registro de Configuração | GCO | ✅ |
 | 24 | MED-AASPAP01-001 | Registro de Medição | MED | ✅ |
 | 25 | GEST-AASPAP01 | Planilha de Gestão do Projeto | GPR | ✅ |
+| 26 | TAE-AASPAP01-001 | Termo de Encerramento e Aceite (Lições integradas) | GPR | ✅ |
 
-## Encerramento (aguardando aceite formal 🔵)
+## Encerramento (concluído ✅)
 
 | Código | Documento | Processo | Status |
 |---|---|---|---|
-| TAE-AASPAP01-001 | Termo de Encerramento | GPR | 🔵 aguardando encerramento |
-| LI-AASPAP01-001 | Lições Aprendidas | GPR | 🔵 aguardando encerramento |
+| TAE-AASPAP01-001 | Termo de Encerramento e Aceite | GPR | ✅ gerado em 30/06/2026 |
+| LI-AASPAP01-001 | Lições Aprendidas (integradas ao TAE) | GPR | ✅ integrado ao TAE-AASPAP01-001 §6 |
 
 ## Histórico de revisões
 
