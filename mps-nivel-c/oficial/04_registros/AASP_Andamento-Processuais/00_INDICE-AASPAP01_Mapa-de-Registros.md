@@ -17,6 +17,7 @@
 
 | # | Código | Documento | Processo | Status |
 |---|---|---|---|---|
+| 0 | REG-AASPAP01-001 | Registro de Projeto (Linha de Base Consolidada) | GPR/GCO | ✅ |
 | 1 | MQ-AASPAP01-001 | Definição de Metas de Qualidade | GPC/MED | ✅ |
 | 2 | TAP-AASPAP01-001 | Termo de Abertura | GPR | ✅ |
 | 3 | PLA-AASPAP01-001 | Plano de Projeto | GPR | ✅ |
