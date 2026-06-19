@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | MAPA-ORG-001 — Matriz de Papéis e Responsabilidades |
-| **Versão** | 1.3 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.5 |
+| **Data** | 18/06/2026 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
 | **Aprovação** | COO (Operações) |
 | **Modelo de referência** | MR-MPS-SW:2024 — Nível C |
@@ -89,7 +89,7 @@ Esta seção nomina os titulares de cada papel e os demais membros da equipe que
 | **QA** | Caroline Jenifer (Carol) | Jonatan Silva, Letícia Moraes | CV Carol (FIAP, 7+ anos QA); REG-CAP-012 (automação de testes); REG-CAP-002/007/008/009 |
 | **DevOps / GCO (pipeline/release)** | Cézar Velázquez | Flávio Fernandes | REG-CAP-011 (Azure/IaC); REG-CAP-001/002/005/009 (Cézar); REG-CAP-002/009 (Flávio) |
 | **GCO Baseline / Auditoria** | Cézar Velázquez | Flávio Fernandes | REG-CAP-011 (Azure); REG-CAP-001/002/005/009 (Cézar); REG-CAP-002/009 (Flávio) |
-| **GQA / Qualidade do Processo** | Caroline Jenifer (Carol) | — | CV Carol (FIAP, 7+ anos QA); REG-CAP-012 (automação de testes); REG-CAP-007/008/009 |
+| **GQA / Qualidade do Processo** | Flávio Fernandes | Jonathan Barbosa (auditor de GQA de projeto — AASP_AndamentosProcessuais e AASP_CNJ) | CV Flávio (Azure Architect Expert, TOGAF, COBIT, MBA FGV); REG-CAP-007/009; auditorias de projeto em GQA-AASPAP01-001 e GQA-AASPCNJ01-001 (Jonathan Barbosa) |
 | **Time de Melhoria Contínua / SEPG** | Silvio Baroni (coordenador), Abraão Oliveira, Flávio Fernandes | Patricia Lima, Mariana Teixeira | CV Silvio (PM Sênior); REG-CAP-013 (desenho de processos); REG-CAP-003/006/009 |
 | **Responsável de Medição** | Silvio Baroni | Abraão Oliveira | CV Silvio (PM Sênior); REG-CAP-013; REG-CAP-003/006/009 |
 | **RH / Capacitação** | Guilherme Gomes | Klayton Roberto | REG-CAP-004/006/009; AVA-CAP-005 |
@@ -128,6 +128,8 @@ A matriz aplica-se a projetos (GPR, REQ, PCP, ITP, VV) e à organização (GCO, 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
+| 1.5 | 18/06/2026 | Time de Melhoria Contínua | Incluído **Jonathan Barbosa** na §5 como auditor de GQA de projeto (coluna Equipe da GQA), mantendo Flávio Fernandes como titular organizacional — modelo de 2 níveis: dono da função GQA na organização + auditor independente por projeto (registrado em GQA-AASPAP01-001 e GQA-AASPCNJ01-001). |
+| 1.4 | 18/06/2026 | Time de Melhoria Contínua | Titularidade da **GQA / Qualidade do Processo** corrigida de Caroline Jenifer (Carol) para **Flávio Fernandes**, restaurando a independência da GQA (a QA/V&V não pode auditar o próprio trabalho); §5 alinhada ao `.xlsx` e ao `CV-Flavio-Fernandes_GQA-Arquitetura`. Nos projetos AASP_CNJ e AASP_AndamentosProcessuais o auditor de GQA independente é Jonathan Barbosa. Carol permanece titular de QA. |
 | 1.3 | 15/06/2026 | Time de Melhoria Contínua | Seção 5 atualizada: titulares e equipes revistos conforme distribuição de papéis para entrevistas MPS-SW — GQA passa para Caroline Jenifer; Medição passa para Silvio Baroni; GP fica só com Abraão Oliveira; PO adiciona Baroni como equipe; Devs expandidos (Mateus Veloso, Lucas Batista, Allan Patrocínio, Felipe Siqueira); RH equipe atualizado (Klayton Roberto); Portfólio/OSW adiciona Abraão e Baroni como equipe; Baroni identificado como coordenador do SEPG; DevOps e GCO Baseline passam para Cézar Velázquez (titular) e Flávio Fernandes (equipe) |
 | 1.2 | 15/06/2026 | Time de Melhoria Contínua | Papel "Consultora de Processos (PJ)" removido apenas da seção 5 (titulares/equipe); mantido na seção 4 (competências) |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Seção 5 reestruturada: coluna "Equipe" adicionada; titulares corrigidos (Wilson Yamada = COO/Medição/Portfólio; Baroni = GP/PO; Flávio = MC/GQA; Guilherme = RH); equipe de projeto separada dos titulares |
