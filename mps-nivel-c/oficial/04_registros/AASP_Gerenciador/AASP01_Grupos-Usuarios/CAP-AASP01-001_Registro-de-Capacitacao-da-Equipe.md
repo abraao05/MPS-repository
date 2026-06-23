@@ -22,7 +22,7 @@ Registrar a identificação das competências necessárias à execução do proj
 
 | # | Competência | Justificativa no projeto |
 |---|---|---|
-| C-01 | .NET Framework 4.7.2 / ASP.NET Web API | Stack obrigatória do sistema Gerenciador AASP |
+| C-01 | .NET 5 / ASP.NET Core Web API | Stack obrigatória do sistema Gerenciador AASP |
 | C-02 | Dapper e SQL Server (T-SQL, migrations) | Acesso a dados sobre o banco legado auxo3 |
 | C-03 | Arquitetura de microsserviços REST e RBAC | Design do ms.auxo.gruposusuarios e controle de permissões |
 | C-04 | Integração HTTP entre serviços (contratos, retry) | Integração com o ms.temis.vinculos |
@@ -49,7 +49,7 @@ Legenda: ✅ competência atendida.
 
 ## 4. Ações de capacitação
 
-A equipe alocada já possuía as competências necessárias à stack e ao domínio do projeto, evidenciadas pela experiência prévia em módulos do sistema Gerenciador AASP (Dapper e .NET Framework 4.7.2 como padrão estabelecido — ver GDE-AASP01-001). Não foi identificada necessidade de treinamento formal específico para o início do projeto.
+A equipe alocada já possuía as competências necessárias à stack e ao domínio do projeto, evidenciadas pela experiência prévia em módulos do sistema Gerenciador AASP (Dapper e .NET 5 como padrão estabelecido — ver GDE-AASP01-001). Não foi identificada necessidade de treinamento formal específico para o início do projeto.
 
 | Necessidade | Ação | Situação |
 |---|---|---|

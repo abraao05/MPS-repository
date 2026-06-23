@@ -5,8 +5,8 @@
 | **Documento** | REL-VV-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.2 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.3 |
+| **Data** | 23/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | VV (evidência de projeto) |
 
@@ -14,7 +14,7 @@
 
 ## 1. Objetivo
 
-Registrar os resultados da execução das atividades de Verificação e Validação (V&V) por sprint, incluindo testes unitários, testes de integração e testes de homologação (UAT), conforme planejado no VV-AASP01-001. Este documento é a evidência formal de execução do processo VV do MPS.BR Nível C para o projeto Grupos de Usuários — AASP Gerenciador. Os endpoints referem-se ao controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`, HTTP 200/400).
+Registrar os resultados da execução das atividades de Verificação e Validação (V&V) por sprint, incluindo code review, testes de sistema e testes de homologação (UAT), conforme planejado no VV-AASP01-001. Testes unitários e de integração automatizados não se aplicam a este projeto. Este documento é a evidência formal de execução do processo VV do MPS.BR Nível C para o projeto Grupos de Usuários — AASP Gerenciador. Os endpoints referem-se ao controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`, HTTP 200/400).
 
 ---
 
@@ -45,26 +45,13 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 ### 3.2 Testes Unitários — Sprint 1
 
-| Suite / Classe | Métodos Testados | Passando | Falhando | Cobertura Estimada |
-|---|---|---|---|---|
-| GerenciarGruposServicesTests | 8 | 8 | 0 | 90% (camada service) |
-| GerenciarGruposRepositorioTests | 6 | 6 | 0 | 85% (repositório Dapper) |
-| IncluirAlterarGrupoTests | 4 | 4 | 0 | 88% |
-| RemoverUsuarioFuncaoTests | 4 | 4 | 0 | 82% |
-| **TOTAL** | **22** | **22** | **0** | **85% est. média** |
-
-**Meta de cobertura: 70% — ATINGIDA**
+**Não se aplica** — o projeto não possui testes unitários automatizados.
 
 ---
 
 ### 3.3 Testes de Integração — Sprint 1
 
-| Teste | Descrição | Resultado |
-|---|---|---|
-| IntegrationTest_IncluirEListarGrupo | Criar grupo via `incluirgrupo` e consultar via `listargrupo` — valida round-trip completo no banco auxo3 | OK |
-| IntegrationTest_AlterarFuncaoUsuario | Alterar a função de um usuário via `alterarfuncaodousuario` — valida persistência em `grupos_usuarios_funcao` | OK |
-| IntegrationTest_VincularERemoverUsuario | Vincular usuário (lista de membros) e remover via `removerusuario` — valida soft delete (`excluido=1`) em `grupos_usuarios_vinculos` | OK |
-| **Total** | **3 testes de integração** | **3/3 (100%) — Meta atingida** |
+**Não se aplica** — o projeto não possui testes de integração automatizados.
 
 ---
 
@@ -125,7 +112,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 ### 4.2 Resultados de V&V — Sprint 2
 
-Não há resultados de V&V registrados para a Sprint 2 até a data de referência (15/06/2026). Os testes unitários, de integração e de homologação dos cenários AUD-01, AUD-02 (AG-23) e INT-01 (AG-24) serão executados após a implementação das funcionalidades.
+Não há resultados de V&V registrados para a Sprint 2 até a data de referência (15/06/2026). Os testes de sistema e de homologação dos cenários AUD-01, AUD-02 (AG-23) e INT-01 (AG-24) serão executados após a implementação das funcionalidades. Testes automatizados não se aplicam a este projeto.
 
 ### 4.3 Pendências — Sprint 2
 
@@ -150,10 +137,9 @@ Não há resultados de V&V registrados para a Sprint 2 até a data de referênci
 
 | Métrica | Sprint 1 | Sprint 2 (15/06/2026) | Meta do Projeto |
 |---|---|---|---|
-| Testes unitários — total passando | 22/22 (100%) | — (não iniciado) | 100% |
-| Cobertura estimada de testes unitários | 85% | — | 70% |
+| Testes unitários automatizados | **Não se aplica** | **Não se aplica** | N/A |
+| Testes de integração automatizados | **Não se aplica** | **Não se aplica** | N/A |
 | Cenários de aceite aprovados | 10/10 (100%) | — | 95% |
-| Testes de integração passando | 3/3 (100%) | — | 100% |
 | Achados de code review — total identificados | 5 (P2: 3 / P3: 2) | — | — |
 | Achados de code review — resolvidos antes do merge | 5/5 (100%) | — | 100% |
 | Defeitos P1 em produção | 0 | 0 | 0 |
@@ -168,3 +154,4 @@ Não há resultados de V&V registrados para a Sprint 2 até a data de referênci
 | 1.0 | 09/06/2026 | Abraão | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
 | 1.1 | 15/06/2026 | Abraão | Inclusão do status parcial da Sprint 2 |
 | 1.2 | 15/06/2026 | Abraão | Resultados alinhados à API real (endpoints/HTTP 200/400; função; tabelas reais); 3 sprints; Sprint 2 sem resultados de teste até a data |
+| 1.3 | 23/06/2026 | Abraão | Testes unitários e de integração marcados como Não se aplica (projeto sem testes automatizados) |

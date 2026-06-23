@@ -64,7 +64,7 @@ Marcos Turnes confirmou os objetivos de negocio e reafirmou a criticidade do con
 
 Cezar Hiraki apresentou a proposta de arquitetura técnica:
 
-- **Framework**: ASP.NET Core Web API (.NET Framework 4.7.2)
+- **Framework**: ASP.NET Core Web API (.NET 5)
 - **ORM**: Dapper (decisão tomada na reunião — ver D-01 e GDE-001)
 - **Banco de dados**: SQL Server — banco `auxo3` (banco existente do Gerenciador AASP)
 - **Branching**: Git Flow no repositório GitLab (`ms.auxo.gruposusuarios`)
@@ -104,7 +104,7 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 
 | # | Decisão | Responsável | Referência |
 |---|---|---|---|
-| D-01 | Dapper como ORM — escolhido em detrimento do Entity Framework Core por compatibilidade com .NET FW 4.7.2 e por ser o padrão de acesso a dados adotado no projeto Gerenciador AASP | Cezar Hiraki | GDE-001 |
+| D-01 | Dapper como ORM — escolhido em detrimento do Entity Framework Core por consistência com o padrão de acesso a dados do projeto Gerenciador AASP e pelo controle do SQL sobre o schema legado | Cezar Hiraki | GDE-001 |
 | D-02 | Soft Delete para grupos — campo `Ativo = false` ao inves de exclusão física; garante integridade referencial e rastreabilidade auditavel conforme requisitos MPS | Cezar Hiraki | GDE-002 |
 | D-03 | Git Flow como modelo de branching — padrão: `feature/ag-{id}` -> `develop` -> `release` -> `main`; nenhum commit direto em `main` ou `develop` | Cezar Hiraki | GCO-AASP01-001 |
 | D-04 | Sprint de 2 semanas com daily as 09h30 no Teams; Sprint Review na sexta-feira de encerramento as 14h | Abraão + Marcos Turnes | PLA-AASP01-001 |
@@ -134,7 +134,7 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 
 - **Sprint 1** inicia em **26/05/2026**, com foco na implementação de AG-20 (CRUD base de grupos: incluirgrupo, listargrupo, buscargrupoporid, alterargrupo, excluirgrupo, ativardesativar)
 - **Próxima reunião formal**: Sprint Review Sprint 1 — **06/06/2026 as 14h00** via Microsoft Teams, com Marcos Turnes e Leonardo Francisco Pereira
-- Equipe Timeware iniciara o setup do projeto (.NET FW 4.7.2, Dapper, estrutura de pastas, pipeline CI) imediatamente após recebimento dos acessos (previsto 23/05/2026)
+- Equipe Timeware iniciara o setup do projeto (.NET 5, Dapper, estrutura de pastas, pipeline CI) imediatamente após recebimento dos acessos (previsto 23/05/2026)
 
 ---
 

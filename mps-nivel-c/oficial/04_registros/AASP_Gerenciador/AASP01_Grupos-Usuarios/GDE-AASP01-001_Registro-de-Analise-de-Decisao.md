@@ -18,21 +18,21 @@
 
 ### 1. Contexto / problema
 
-O ms.auxo.gruposusuarios precisa de uma camada de acesso ao banco SQL Server (auxo3). O projeto Gerenciador da AASP usa .NET Framework 4.7.2 como target framework. A escolha do ORM e uma decisão arquitetural com impacto em toda a camada de dados do microsserviço, afetando performance, manutenção, compatibilidade e consistência com o restante do projeto.
+O ms.auxo.gruposusuarios precisa de uma camada de acesso ao banco SQL Server (auxo3). O microsserviço roda em .NET 5 (net5.0) e o Dapper já é o padrão de acesso a dados estabelecido nos demais módulos do Gerenciador da AASP. A escolha do ORM e uma decisão arquitetural com impacto em toda a camada de dados do microsserviço, afetando performance, manutenção, consistência com o restante do projeto e aderência ao schema legado do banco auxo3.
 
 ### 2. Alternativas avaliadas
 
 | # | Alternativa | Descrição |
 |---|---|---|
-| A | Dapper | Micro-ORM open-source; queries SQL explicitas escritas pelo desenvolvedor; suporte pleno e oficial ao .NET Framework 4.7.2; alto desempenho em operações de leitura e escrita; baixo overhead de memória e CPU; já utilizado em outros módulos do Gerenciador AASP como padrão estabelecido |
-| B | Entity Framework Core 6.x | ORM completo da Microsoft com abstração via LINQ e DbContext; suporte ao .NET Framework 4.7.2 e apenas experimental via netstandard2.0, podendo apresentar comportamentos inesperados; curva de aprendizado de migrations e DbContext; overhead maior em queries simples comparado ao Dapper; geração de SQL pode ser opaca |
+| A | Dapper | Micro-ORM open-source; queries SQL explicitas escritas pelo desenvolvedor; suporte pleno e oficial ao .NET 5; alto desempenho em operações de leitura e escrita; baixo overhead de memória e CPU; já utilizado em outros módulos do Gerenciador AASP como padrão estabelecido |
+| B | Entity Framework Core 6.x | ORM completo da Microsoft com abstração via LINQ e DbContext; plenamente suportado no .NET 5, porém introduziria um segundo padrão de acesso a dados divergente do restante do Gerenciador; curva de aprendizado de migrations e DbContext; overhead maior em queries simples comparado ao Dapper; geração de SQL pode ser opaca |
 | C | ADO.NET puro | Acesso ao banco sem ORM; máximo controle sobre as queries; verboso e com alto custo de manutenção para operações CRUD; requer muito código boilerplate para cada operação; não oferece vantagem real sobre Dapper para este cenário |
 
 ### 3. Critérios de decisão
 
 | Critério | Peso |
 |---|---|
-| Compatibilidade plena com .NET Framework 4.7.2 | Alto |
+| Controle do SQL e aderência ao schema legado do auxo3 | Alto |
 | Consistência com o padrão existente do projeto Gerenciador AASP | Alto |
 | Performance em operações de leitura (listagem de grupos, relatórios) | Alto |
 | Facilidade de manutenção e debugging de queries SQL | Medio |
@@ -42,7 +42,7 @@ O ms.auxo.gruposusuarios precisa de uma camada de acesso ao banco SQL Server (au
 
 | Critério | Peso | A — Dapper | B — EF Core 6.x | C — ADO.NET puro |
 |---|---|---|---|---|
-| Compatibilidade .NET FW 4.7.2 | Alto | Plena — suporte oficial e estavel para .NET Framework 4.7.2 | Parcial — suporte apenas via netstandard2.0; pode apresentar comportamentos inesperados em runtime com .NET FW legado | Plena — ADO.NET e nativo do .NET Framework em qualquer versão |
+| Controle do SQL / schema legado auxo3 | Alto | Excelente — SQL explícito escrito à mão, ideal para o schema legado e suas convenções de nomenclatura | Médio — o mapeamento automático do EF Core sofre com o schema legado; ajustes exigem configuração adicional | Excelente — controle total do SQL, porém com alto custo de boilerplate |
 | Consistência com o projeto | Alto | Excelente — Dapper já e o padrão adotado nos outros módulos do Gerenciador AASP; equipe conhece o padrão | Baixa — EF Core seria uma exceção no projeto, introduzindo um segundo padrão de acesso a dados sem justificativa técnica suficiente | Media — possível de usar, mas introduz verbosidade e diferenca de estilo em relação ao restante |
 | Performance em leitura | Alto | Excelente — queries SQL otimizadas escritas diretamente pelo desenvolvedor; sem overhead de tradução LINQ para SQL | Boa — pode gerar SQL ineficiente via LINQ para queries complexas; otimizações exigem conhecimento avancado do EF Core | Excelente — controle total sobre o SQL; sem overhead de ORM |
 | Manutenção e debugging | Medio | Bom — SQL explicito e legivel no código; fácil de debugar e otimizar queries diretamente | Bom — mas o SQL gerado pelo EF Core pode ser opaco e difícil de debugar sem ferramentas adicionais | Ruim — código muito verboso para CRUD básico; alto custo de manutenção para operações simples |
@@ -52,7 +52,7 @@ O ms.auxo.gruposusuarios precisa de uma camada de acesso ao banco SQL Server (au
 
 **Escolhido: Alternativa A — Dapper**
 
-Justificativa: A compatibilidade plena com .NET Framework 4.7.2 e a consistência com o padrão existente do Gerenciador AASP foram os fatores determinantes. O suporte do EF Core ao .NET Framework e apenas via netstandard2.0, introduzindo risco técnico desnecessario em um projeto de produção. O Dapper oferece performance superior em queries de leitura, e a equipe já possui experiência consolidada com o micro-ORM nos outros módulos do projeto, eliminando curva de aprendizado e garantindo consistência arquitetural. A alternativa C (ADO.NET puro) foi descartada por não oferecer vantagem real sobre o Dapper para este cenário, com custo de manutenção significativamente maior.
+Justificativa: A consistência com o padrão de acesso a dados já estabelecido no Gerenciador AASP (Dapper) e o controle fino sobre o SQL — importante para o schema legado do banco auxo3 — foram os fatores determinantes. O Dapper oferece performance superior em queries de leitura e baixo overhead, e a equipe já possui experiência consolidada com o micro-ORM nos outros módulos do projeto, eliminando curva de aprendizado e garantindo consistência arquitetural. O EF Core, embora plenamente suportado no .NET 5, introduziria um segundo padrão de acesso a dados divergente do restante do projeto, com geração de SQL menos transparente sobre o schema legado. A alternativa C (ADO.NET puro) foi descartada por não oferecer vantagem real sobre o Dapper para este cenário, com custo de manutenção significativamente maior.
 
 ### 6. Impacto e riscos da decisão
 
@@ -115,3 +115,4 @@ Justificativa: A integridade referencial e critica para o ms.auxo.gruposusuarios
 |---|---|---|---|
 | 1.0 | 19/05/2026 | Abraão | Criação do documento; decisões GDE-001 (Dapper) e GDE-002 (Soft Delete) tomadas no Kickoff |
 | 1.1 | 15/06/2026 | Abraão | GDE-002 alinhado ao schema real (soft delete via `excluido`; tabelas `grupos_usuarios`, `_vinculos`, `_funcao`; endpoint `excluirgrupo`) |
+| 1.2 | 19/06/2026 | Abraão | GDE-001 alinhado ao runtime real (.NET 5); justificativa refeita com base em consistência com o padrão do Gerenciador, performance e controle do schema legado |

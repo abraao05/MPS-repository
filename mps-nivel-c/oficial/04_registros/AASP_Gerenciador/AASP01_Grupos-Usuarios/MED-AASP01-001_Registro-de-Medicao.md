@@ -5,8 +5,8 @@
 | **Documento** | MED-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.1 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 23/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | MED — Medição (evidência de projeto) |
 
@@ -60,15 +60,9 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 
 ## 4. Medidas de Qualidade de Produto
 
-### 4.1 Testes Unitarios e Cobertura
+### 4.1 Testes Unitários e Cobertura
 
-| Sprint | Métodos Testados | Total Métodos | Cobertura Est. | Meta | Status |
-|---|---|---|---|---|---|
-| Sprint 1 | 22 | ~26 | 85% | >= 80% | Meta atingida |
-| Sprint 2 | A apurar | — | — | >= 80% | Em andamento |
-| Sprint 3 | A apurar | — | — | >= 80% | Planejado |
-
-> Nota: Cobertura estimada com base no total de métodos públicos das camadas de serviço (GruposService, PermissoesService) e repositório (GruposRepository, PermissoesRepository) implementados na Sprint 1. Medição exata disponível no relatório de execução xUnit (REL-VV-AASP01-001).
+**Não se aplica** — o projeto não possui testes unitários ou de integração automatizados. Esta métrica não é coletada neste projeto.
 
 ### 4.2 Defeitos por Fase
 
@@ -110,7 +104,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | M1 | % de entregas no prazo | 100% (Sprint 1 aceita em 06/06/2026) | >= 90% | Atingido | RAC-AASP01-001 |
 | M2 | Desvio de esforço (SP) | 0% Sprint 1 (34 planejado x 34 realizado) | <= 10% | Atingido | RAC-AASP01-001 |
 | M3 | Índice de defeitos por SP | 0,088 def/SP (3 achados P2 / 34 SP) | <= 0,20 | Atingido | REV-AASP01-001 |
-| M4 | Cobertura testes unitarios | 85% estimado Sprint 1 | >= 80% | Atingido | REL-VV-AASP01-001 |
+| M4 | Cobertura testes unitários | **Não se aplica** — projeto sem testes automatizados | N/A | N/A | — |
 | M5 | Taxa de aprovação no aceite | 100% (10/10 cenários Sprint 1) | >= 95% | Atingido | CTQ-AASP01-001 |
 | M6 | Tempo medio de resposta API | <= 280 ms (Swagger dev, endpoint p95) | <= 500 ms | Atingido | Evidência Swagger Sprint 1 |
 | M7 | % de requisitos rastreados | 100% (AG-20 a AG-25 rastreados) | 100% | Atingido | RASTR-AASP01-001 |
@@ -125,7 +119,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 - Atualizar M1 com status de prazo da Sprint 2
 - Atualizar M2 com SP realizado vs. planejado (28 SP)
 - Atualizar M3 com achados de code review MRs !6 e !7
-- Atualizar M4 com cobertura de testes unitarios AG-23 e AG-24
+- M4: Não se aplica (projeto sem testes automatizados)
 - Atualizar M5 após UAT Sprint 2 (Leonardo Francisco Pereira)
 - Atualizar M6 com medições de performance em ambiente homologação AASP
 - Confirmar M7 com rastreabilidade AG-23 e AG-24
@@ -139,3 +133,4 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 |---|---|---|---|
 | 1.0 | 09/06/2026 | Abraão | Versão inicial — pos-encerramento Sprint 1; registros M1-M8 com dados reais Sprint 1 |
 | 1.1 | 15/06/2026 | Abraão | Atualização com status parcial Sprint 2 (~60% concluido em 15/06); seção 7 atualizada com próximo ponto de medição |
+| 1.2 | 23/06/2026 | Abraão | M4 e §4.1 marcados como Não se aplica (projeto sem testes automatizados) |

@@ -21,7 +21,7 @@
 
 Cenários de teste executados durante a homologação da Sprint 1 (AG-20, AG-21, AG-22). Definidos em conjunto entre Abraão (Timeware) e Leonardo Francisco Pereira (AASP). Todos os 10 cenários da Sprint 1 foram executados e aprovados em 06/06/2026, sem ressalvas, conforme registrado na ATA-AASP01-002.
 
-A feature AG — ms.auxo.gruposusuarios e desenvolvida em .NET Framework 4.7.2, com acesso ao banco SQL Server auxo3 via Dapper. Os endpoints são expostos pelo controller `GerenciarGruposController` (rota base `api/gerenciar/grupos`), com verbos GET/POST e resposta num envelope padrão `{ Sucesso, MensagemPublica, RetornaDados }` com HTTP 200 (sucesso) ou 400 (erro/validação). Os cenários cobrem os endpoints implementados nos MRs !1 a !5 da Sprint 1.
+A feature AG — ms.auxo.gruposusuarios e desenvolvida em .NET 5, com acesso ao banco SQL Server auxo3 via Dapper. Os endpoints são expostos pelo controller `GerenciarGruposController` (rota base `api/gerenciar/grupos`), com verbos GET/POST e resposta num envelope padrão `{ Sucesso, MensagemPublica, RetornaDados }` com HTTP 200 (sucesso) ou 400 (erro/validação). Os cenários cobrem os endpoints implementados nos MRs !1 a !5 da Sprint 1.
 
 ---
 

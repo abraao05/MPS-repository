@@ -51,8 +51,8 @@
 | 19 | GEST-AASP01 | Planilha de Gestão do Projeto (xlsx) | GPR | ✅ |
 | 20 | ATA-AASP01-001 | Ata de Kickoff (19/05/2026) | ORG | ✅ |
 | 21 | ATA-AASP01-002 | Ata de Aceite — Sprint 1 (06/06/2026) | ORG | ✅ |
-| 22 | TAE-AASP01-001 | Termo de Encerramento e Aceite | GPR | ⏳ Sprint 4 |
-| 23 | LI-AASP01-001 | Lições Aprendidas | GPR | ⏳ Sprint 4 |
+| 22 | TAE-AASP01-001 | Termo de Encerramento e Aceite | GPR | ⏳ Sprint 3 (encerramento) |
+| 23 | LI-AASP01-001 | Lições Aprendidas | GPR | ⏳ Sprint 3 (encerramento) |
 
 > **Aquisição (AQU):** não aplicável — não houve subcontratação de desenvolvimento (equipe própria Timeware). Insumos de serviço (APIs e ambientes do cliente) são tratados em ITP-AASP01-001 e nos riscos do PLA-AASP01-001.
 
@@ -70,3 +70,4 @@
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Abraão Oliveira | Criação do índice de registros do projeto AASP01 (Sprint 2 em andamento) |
+| 1.1 | 23/06/2026 | Abraão Oliveira | TAE e LI corrigidos de Sprint 4 para Sprint 3 (encerramento) |

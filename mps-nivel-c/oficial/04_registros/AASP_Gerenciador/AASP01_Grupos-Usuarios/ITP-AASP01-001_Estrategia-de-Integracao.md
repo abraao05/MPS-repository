@@ -25,7 +25,7 @@ Descrever a estratégia de integração do microsserviço ms.auxo.gruposusuarios
 
 ## 2. Visão Geral da Integração
 
-O ms.auxo.gruposusuarios é um microsserviço desenvolvido em .NET Framework 4.7.2 com Dapper e SQL Server, responsável pelo gerenciamento de grupos de usuários no ecossistema do Gerenciador AASP. Os endpoints são expostos pelo controller `GerenciarGruposController` (rota base `api/gerenciar/grupos`, verbos GET/POST). Ele se integra com os seguintes componentes:
+O ms.auxo.gruposusuarios é um microsserviço desenvolvido em .NET 5 com Dapper e SQL Server, responsável pelo gerenciamento de grupos de usuários no ecossistema do Gerenciador AASP. Os endpoints são expostos pelo controller `GerenciarGruposController` (rota base `api/gerenciar/grupos`, verbos GET/POST). Ele se integra com os seguintes componentes:
 
 - **Internamente (banco auxo3):** endpoints auto-contidos para CRUD de grupos, função do usuário no grupo e vínculo usuário-grupo. Tabelas: `grupos_usuarios`, `grupos_usuarios_vinculos`, `grupos_usuarios_funcao`.
 - **ms.temis.vinculos (banco temis3):** *(planejado — Sprint 2)* microsserviço externo para sincronização de vínculos no domínio Temis, a ser acessado via HTTP REST.

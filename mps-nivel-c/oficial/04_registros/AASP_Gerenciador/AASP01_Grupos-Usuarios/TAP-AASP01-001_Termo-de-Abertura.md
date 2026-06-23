@@ -71,7 +71,7 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 
 ## 6. Restrições
 
-- Stack obrigatória: **.NET Framework 4.7.2** — migração para .NET 8 ou superior fora do escopo
+- Stack obrigatória: **.NET 5** — migração para .NET 8 ou superior fora do escopo
 - ORM: **Dapper** — uso de Entity Framework Core não autorizado
 - Escopo limitado à feature AG (Grupos de Usuários); quaisquer outras demandas devem ser tratadas como novo projeto ou change request formal
 

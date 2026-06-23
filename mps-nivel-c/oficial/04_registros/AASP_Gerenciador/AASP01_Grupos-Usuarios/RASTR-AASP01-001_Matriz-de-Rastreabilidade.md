@@ -12,20 +12,20 @@
 | **PO** | Marcos Turnes — AASP |
 | **QA** | Leonardo Francisco Pereira — AASP |
 | **Data base** | 26/05/2026 |
-| **Versão** | 1.2 |
+| **Versão** | 1.3 |
 | **Status** | Ativo |
 
 ---
 
 ## 1. Objetivo
 
-Registrar a rastreabilidade entre histórias do Jira (AG-XX), requisitos funcionais e não funcionais, endpoints implementados, Merge Requests do GitLab, casos de teste e status de entrega. Este documento evidência o atributo de rastreabilidade exigido pelo processo GPR e pelo processo de Gerência de Requisitos (GRE) do nível C do MPS.BR, garantindo que cada requisito possa ser rastreado desde sua origem até a entrega verificada. Os endpoints referem-se ao controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`).
+Registrar a rastreabilidade entre issues do GitLab (AG-XX), requisitos funcionais e não funcionais, endpoints implementados, Merge Requests do GitLab, casos de teste e status de entrega. Este documento evidência o atributo de rastreabilidade exigido pelo processo GPR e pelo processo de Gerência de Requisitos (GRE) do nível C do MPS.BR, garantindo que cada requisito possa ser rastreado desde sua origem até a entrega verificada. Os endpoints referem-se ao controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`).
 
 ---
 
 ## 2. Rastreabilidade — Requisitos Funcionais
 
-| Req. (RF) | História Jira | Descrição | Endpoint(s) | MR(s) | Casos de Teste | Sprint | Status |
+| Req. (RF) | Issue GitLab | Descrição | Endpoint(s) | MR(s) | Casos de Teste | Sprint | Status |
 |---|---|---|---|---|---|---|---|
 | RF-01 | AG-20 | Criar grupo de usuários | POST incluirgrupo | MR !1 | GRP-01, GRP-07 | S1 | ✅ Entregue |
 | RF-02 | AG-20 | Listar grupos e consultar usuários do grupo | GET listargrupo · GET buscargrupoporid | MR !1 | GRP-02, GRP-03 | S1 | ✅ Entregue |
@@ -42,7 +42,7 @@ Registrar a rastreabilidade entre histórias do Jira (AG-XX), requisitos funcion
 | Req. (RNF) | Descrição | Escopo | MR(s) | Sprint | Caso de Teste / Validação | Status |
 |---|---|---|---|---|---|---|
 | RNF-01 | Tempo de resposta ≤ 500 ms em condições normais de carga | Todos os endpoints | — | S1–S3 | Validado via Swagger/testes de performance (resultado obtido: ≤ 280 ms) | ✅ Validado |
-| RNF-02 | Autenticação e autorização via JWT Bearer Token | Todos os endpoints | MR !1 | S1 | Validado em code review e testes de integração | ✅ Validado |
+| RNF-02 | Autenticação e autorização via JWT Bearer Token | Todos os endpoints | MR !1 | S1 | Validado em code review e testes de sistema (Swagger) | ✅ Validado |
 | RNF-03 | Rastreabilidade de ações via auditoria (AuditoriaGrupos) | Operações de escrita | MR pendente | S2 | AUD-01 — planejado para Sprint 2 (AG-23) | ⏳ Pendente |
 
 ---
@@ -89,3 +89,4 @@ Os itens abaixo possuem requisito definido e rastreabilidade registrada, mas ain
 | 1.0 | 26/05/2026 | Abraão | Versão inicial — estrutura da matriz com requisitos RF-01 a RF-09 e RNF-01 a RNF-03 |
 | 1.1 | 09/06/2026 | Abraão | Atualizado pós-Sprint 1: MRs !1 a !5 registrados, status de entrega e resultados dos casos de teste incorporados |
 | 1.2 | 15/06/2026 | Abraão | Endpoints, casos de teste e cobertura alinhados à API real (GerenciarGruposController) |
+| 1.3 | 23/06/2026 | Abraão | Referências a "Jira" substituídas por "GitLab Issues"; referência a testes de integração corrigida para testes de sistema |
