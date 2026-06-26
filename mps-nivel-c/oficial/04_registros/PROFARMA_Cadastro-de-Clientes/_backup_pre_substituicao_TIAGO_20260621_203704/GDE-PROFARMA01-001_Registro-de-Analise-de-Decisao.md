@@ -211,7 +211,7 @@ O endpoint `GET /clientes/{cpf}` é o mais crítico do sistema: é chamado por P
 
 O SLA de latência (p95 ≤ 200ms a 500 req/s) é o requisito não-funcional mais crítico do sistema. O Dapper executa SQL parametrizado diretamente, eliminando o overhead de materialização de grafo de entidades do EF Core nas leituras de alta frequência. A consistência forte (mesmo banco) é indispensável para o PDV, que lê imediatamente após qualquer atualização de cadastro. O CQRS completo com banco separado introduziria complexidade e custo desproporcionais ao benefício marginal.
 
-- **Responsável pela aprovação:** Cézar Hiraki Velázquez (Tech Lead — Timeware)
+- **Responsável pela aprovação:** Tiago Barbosa Nascimento (CEO / Founder — Timeware)
 - **Data da decisão:** 16/05/2025
 
 ### 6. Consequências

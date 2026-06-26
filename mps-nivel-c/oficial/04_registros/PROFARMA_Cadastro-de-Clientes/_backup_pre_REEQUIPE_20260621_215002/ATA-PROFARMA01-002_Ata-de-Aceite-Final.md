@@ -32,7 +32,7 @@
 | Fagner Pereira     | Operações / Infra                          | Rede D1000  |
 | Abraão Oliveira    | Gerente de Projeto                         | Timeware    |
 | Cézar Hiraki Velázquez   | Tech Lead                                  | Timeware    |
-| Caroline Sousa      | QA                                         | Timeware    |
+| Lucas Batista      | QA                                         | Timeware    |
 
 ---
 

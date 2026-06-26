@@ -55,11 +55,13 @@ Desenvolver o novo sistema de Cadastro de Clientes da Rede D1000, substituindo a
 | Papel | Responsável |
 |---|---|
 | Gerente de Projeto / Account Manager | Abraão Oliveira |
-| Tech Lead / DevOps / Arquiteto | Cézar Hiraki Velázquez |
-| Dev Backend | Mateus Veloso |
-| Dev Backend | Raony Chagas |
-| Dev Backend | Lucas Batista |
-| QA / Testes automatizados | Caroline Sousa |
+| Tech Lead | Cézar Hiraki Velázquez |
+| Dev Principal / Arquiteto da solução | Erick Coelho |
+| Dev Backend | Gustavo Mathias |
+| Dev Backend | Renan Kiyoshi |
+| Dev Backend | João Cruz |
+| Infra / DevOps | David Buena |
+| QA / Testes automatizados | Lucas Batista |
 
 ## 5. Macroplanejamento (datas-alvo)
 

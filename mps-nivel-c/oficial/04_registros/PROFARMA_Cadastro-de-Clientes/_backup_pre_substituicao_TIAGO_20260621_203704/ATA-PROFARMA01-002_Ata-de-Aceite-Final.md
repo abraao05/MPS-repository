@@ -31,8 +31,8 @@
 | Julielle Santos    | QA                                         | Rede D1000  |
 | Fagner Pereira     | Operações / Infra                          | Rede D1000  |
 | Abraão Oliveira    | Gerente de Projeto                         | Timeware    |
-| Cézar Hiraki Velázquez   | Tech Lead                                  | Timeware    |
-| Caroline Sousa      | QA                                         | Timeware    |
+| Tiago Barbosa Nascimento   | Tech Lead                                  | Timeware    |
+| Lucas Batista      | QA                                         | Timeware    |
 
 ---
 

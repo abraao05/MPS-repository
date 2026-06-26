@@ -33,7 +33,7 @@ Este plano cobre as atividades de V&V aplicadas ao longo dos sprints do projeto,
 | 1 | Testes unitários | Time Timeware (Dev + QA) | xUnit (.NET) / FluentAssertions | Código da feature concluído | Cobertura ≥ 80% nas camadas Domain e Application; todos os testes passando |
 | 2 | Testes de integração | Time Timeware (Dev + QA) | xUnit + TestContainers (PostgreSQL local) | Testes unitários passando | Todos os fluxos críticos de integração (outbox, endpoints) executados sem falha |
 | 3 | Revisão de código (peer review) | Tech Lead + Dev revisor | Azure DevOps Pull Requests | PR aberto com testes passando no CI | PR aprovado por pelo menos 1 revisor (Tech Lead ou Dev Senior) |
-| 4 | Testes de sistema | QA Timeware (Caroline Sousa) | Manual + scripts automatizados | Feature em ambiente de homologação | Todos os critérios de aceite do sprint cobertos |
+| 4 | Testes de sistema | QA Timeware (Lucas Batista) | Manual + scripts automatizados | Feature em ambiente de homologação | Todos os critérios de aceite do sprint cobertos |
 | 5 | Testes de homologação (UAT) | QA D1000 (Julielle Santos) + QA Timeware | Roteiros de teste aprovados pela D1000 | Ambiente de homologação estável; roteiros aprovados | Aceite formal da D1000 por sprint ou fase |
 | 6 | Testes de piloto (produção restrita) | D1000 + Timeware | Operação real — loja 9 | Aceite de homologação; GMUD aprovado | Operação estável por período definido; sem incidentes críticos |
 
@@ -134,7 +134,7 @@ Todos os defeitos encontrados em testes de homologação são registrados no Jir
 
 ### 7.1 Processo de aceite de sprint
 
-1. QA Timeware (Caroline Sousa) conclui os testes de sistema e certifica que os critérios de aceite das histórias foram atendidos
+1. QA Timeware (Lucas Batista) conclui os testes de sistema e certifica que os critérios de aceite das histórias foram atendidos
 2. Time Timeware apresenta a entrega na Sprint Review (presença de Armando Junior, Helena Moreira e Julielle Santos da D1000)
 3. D1000 executa testes de homologação com roteiros aprovados em ambiente dedicado
 4. Defeitos identificados são classificados por severidade e corrigidos conforme SLA

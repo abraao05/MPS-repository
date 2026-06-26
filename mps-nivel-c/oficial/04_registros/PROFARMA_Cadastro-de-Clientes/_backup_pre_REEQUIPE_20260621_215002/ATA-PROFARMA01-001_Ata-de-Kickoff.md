@@ -18,11 +18,13 @@
 | Nome | Empresa | Papel |
 |---|---|---|
 | Abraão Oliveira | Timeware | Gerente de Projeto / Facilitador |
-| Cézar Hiraki Velázquez | Timeware | Tech Lead / DevOps / Arquiteto |
-| Mateus Veloso | Timeware | Dev Backend |
-| Raony Chagas | Timeware | Dev Backend |
-| Lucas Batista | Timeware | Dev Backend |
-| Caroline Sousa | Timeware | QA / Testes automatizados |
+| Cézar Hiraki Velázquez | Timeware | Tech Lead |
+| Erick Coelho | Timeware | Dev Principal / Arquiteto |
+| Gustavo Mathias | Timeware | Dev Backend |
+| Renan Kiyoshi | Timeware | Dev Backend |
+| João Cruz | Timeware | Dev Backend |
+| David Buena | Timeware | Infra / DevOps |
+| Lucas Batista | Timeware | QA / Testes automatizados |
 | Armando Pereira Reis Junior | Rede D1000 | Tech Lead / Gestor de TI |
 | Humberto Erler | Rede D1000 | Gerente de TI |
 | Helena Moreira | Rede D1000 | Coordenadora de Projeto |
@@ -60,7 +62,7 @@ Ethierre Leite (especialista de negócio D1000) apresentou as regras de negócio
 
 ### 3.3 Arquitetura macro
 
-Cézar Hiraki Velázquez apresentou a proposta de arquitetura:
+Erick Coelho apresentou a proposta de arquitetura:
 - Clean Architecture em .NET 8
 - PostgreSQL (Azure Database for PostgreSQL) como banco principal
 - AKS para orquestração de containers
@@ -80,7 +82,7 @@ Ficou estabelecida a seguinte cadência:
 
 ### 3.5 Gestão de acessos
 
-Rafael Nader ficou responsável pela criação dos acessos no Azure DevOps para a equipe Timeware (repositórios `loja-balcao-frontend` e `loja-backend` em `profarma.visualstudio.com/rede-d1000/`). Cézar Hiraki Velázquez (Infra/DevOps Timeware) ficou responsável por receber e validar os acessos.
+Rafael Nader ficou responsável pela criação dos acessos no Azure DevOps para a equipe Timeware (repositórios `loja-balcao-frontend` e `loja-backend` em `profarma.visualstudio.com/rede-d1000/`). David Buena (Infra/DevOps Timeware) ficou responsável por receber e validar os acessos.
 
 ### 3.6 Legado ITEC e saneamento da base
 
@@ -94,9 +96,9 @@ Ficou acordado que o time Timeware não teria acesso direto ao banco de dados de
 
 | # | Decisão | Responsável | Data-limite |
 |---|---|---|---|
-| D-01 | CPF como chave primária única no novo sistema (sem campo ID interno alternativo como PK exposta) | Cézar Hiraki Velázquez (Timeware) + Armando Junior (D1000) | Implementado no Sprint 1 |
+| D-01 | CPF como chave primária única no novo sistema (sem campo ID interno alternativo como PK exposta) | Erick Coelho (Timeware) + Armando Junior (D1000) | Implementado no Sprint 1 |
 | D-02 | Banco de dados PostgreSQL no Azure (não SQL Server) | Cézar Hiraki Velázquez (Timeware) | Confirmado no kickoff |
-| D-03 | Outbox pattern para integração com ITEC (não chamada síncrona) | Cézar Hiraki Velázquez | Sprint 3 |
+| D-03 | Outbox pattern para integração com ITEC (não chamada síncrona) | Erick Coelho | Sprint 3 |
 | D-04 | Sprint de 2 semanas com dailys às 09h30 via Teams | Abraão Oliveira | Imediato (28/04/2025) |
 | D-05 | Acesso ao Azure DevOps concedido em até 3 dias úteis | Fagner Pereira (D1000) | 01/05/2025 |
 | D-06 | Time Timeware não terá acesso direto ao banco ITEC produtivo | Armando Junior / Humberto Erler (D1000) | Vigente durante todo o projeto |
@@ -112,10 +114,10 @@ Ficou acordado que o time Timeware não teria acesso direto ao banco de dados de
 | Providenciar acessos ao Azure DevOps para a equipe Timeware | Fagner Pereira / Rafael Nader (D1000) | 01/05/2025 |
 | Criar canal Microsoft Teams dedicado para o projeto | Helena Moreira (D1000) | 29/04/2025 |
 | Compartilhar documentação do ITEC (schema do banco, endpoints existentes) | Alexandre Henrique (D1000) | 02/05/2025 |
-| Iniciar levantamento detalhado dos campos de cadastro obrigatórios vs. opcionais | Ethierre Leite (D1000) + Cézar Hiraki Velázquez (Timeware) | 05/05/2025 |
-| Definir ambiente de desenvolvimento local (Docker Compose) para o time Timeware | Cézar Hiraki Velázquez (Timeware) | 30/04/2025 |
+| Iniciar levantamento detalhado dos campos de cadastro obrigatórios vs. opcionais | Ethierre Leite (D1000) + Erick Coelho (Timeware) | 05/05/2025 |
+| Definir ambiente de desenvolvimento local (Docker Compose) para o time Timeware | David Buena (Timeware) | 30/04/2025 |
 | Estabelecer rotina de daily no Teams | Abraão Oliveira | 28/04/2025 (neste dia) |
-| Apresentar primeiro Sprint Planning em 28/04/2025 | Cézar Hiraki Velázquez | 28/04/2025 |
+| Apresentar primeiro Sprint Planning em 28/04/2025 | Cézar Hiraki Velázquez / Erick Coelho | 28/04/2025 |
 | Confirmar disponibilidade do DBA Marcus Ribeiro para apoio no saneamento | Abraão Oliveira → Marcelo Rezende (Profarma) | 02/05/2025 |
 
 ---

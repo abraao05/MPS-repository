@@ -22,7 +22,7 @@ Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do pr
 
 | Papel | Responsável |
 |---|---|
-| Responsável por GQA (auditor de processo) | Jonathan Barbosa |
+| Responsável por GQA (auditor de processo) | COO (Operações Timeware) |
 | Ponto de contato no projeto | Abraão Oliveira (Gerente de Projeto) |
 | Tech Lead (verificação técnica) | Cézar Hiraki Velázquez |
 
@@ -36,7 +36,7 @@ Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do pr
 |---|---|
 | Data | 20/06/2025 |
 | Escopo | Verificação da aderência ao processo-padrão Timeware nos Sprints 1–5 |
-| Auditor | Jonathan Barbosa |
+| Auditor | COO (Operações) |
 | Resultado | Conforme com ressalvas (2 não conformidades) |
 
 **Checklist verificado:**
@@ -66,7 +66,7 @@ Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do pr
 |---|---|
 | Data | 10/10/2025 |
 | Escopo | Verificação da aderência ao processo de V&V e gestão de defeitos durante a fase de homologação |
-| Auditor | Jonathan Barbosa |
+| Auditor | COO (Operações) |
 | Resultado | Conforme |
 
 **Checklist verificado:**
@@ -91,7 +91,7 @@ Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do pr
 |---|---|
 | Data | 05/06/2026 |
 | Escopo | Verificação da completude dos artefatos de encerramento e conformidade com o processo de GPR |
-| Auditor | Jonathan Barbosa |
+| Auditor | COO (Operações) |
 | Resultado | Conforme |
 
 **Checklist verificado:**

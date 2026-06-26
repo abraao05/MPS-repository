@@ -26,7 +26,7 @@ Este documento registra as revisões técnicas formais (peer reviews) realizadas
 | **Tipo**                | Revisão de design arquitetural                             |
 | **Artefato revisado**   | PCP-PROFARMA01-001 (versão 0.1) — arquitetura Clean Architecture, modelo de dados, decisões DA-01 a DA-04 |
 | **Revisor responsável** | Armando Junior (Tech Lead D1000)                          |
-| **Participantes**       | Cézar Hiraki Velázquez (Timeware), Abraão Oliveira (Timeware), Armando Junior (D1000) |
+| **Participantes**       | Tiago Barbosa Nascimento (Timeware), Abraão Oliveira (Timeware), Armando Junior (D1000) |
 | **Resultado**           | Aprovado com ajustes                                       |
 
 ### 2.1 Achados
@@ -48,8 +48,8 @@ Este documento registra as revisões técnicas formais (peer reviews) realizadas
 | **Data**                | 06/06/2025                                                          |
 | **Tipo**                | Revisão de implementação e testes de integração                     |
 | **Artefato revisado**   | Worker outbox + tabela `outbox_eventos` em funcionamento no ambiente local |
-| **Revisor responsável** | Cézar Hiraki Velázquez (Tech Lead Timeware)                              |
-| **Participantes**       | Caroline Sousa (QA Timeware), desenvolvedor responsável pelo worker  |
+| **Revisor responsável** | Tiago Barbosa Nascimento (Tech Lead Timeware)                              |
+| **Participantes**       | Lucas Batista (QA Timeware), desenvolvedor responsável pelo worker  |
 | **Resultado**           | Aprovado com correções obrigatórias (corrigidas antes do merge)     |
 
 ### 3.1 Achados
@@ -70,7 +70,7 @@ Este documento registra as revisões técnicas formais (peer reviews) realizadas
 | **Data**                | 20/06/2025                                                                                    |
 | **Tipo**                | Revisão de segurança e conformidade de contratos                                              |
 | **Artefato revisado**   | Middlewares de autenticação (API Key + OAuth 2.0), contratos OpenAPI dos 10 endpoints do Sprint 1–5 |
-| **Revisor responsável** | Armando Junior (D1000) + Cézar Hiraki Velázquez (Timeware)                                         |
+| **Revisor responsável** | Armando Junior (D1000) + Tiago Barbosa Nascimento (Timeware)                                         |
 | **Participantes**       | Abraão Oliveira (Timeware), Julielle Santos (QA D1000)                                       |
 | **Resultado**           | Aprovado com correções obrigatórias                                                           |
 

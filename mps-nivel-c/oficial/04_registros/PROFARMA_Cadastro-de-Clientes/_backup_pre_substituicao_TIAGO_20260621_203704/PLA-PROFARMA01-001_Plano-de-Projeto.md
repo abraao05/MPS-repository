@@ -6,8 +6,8 @@
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
 | **Contrato** | Squad D1000 Loja — alocação de 3 Dev Pleno |
-| **Versão** | 1.4 |
-| **Data** | 25/06/2026 |
+| **Versão** | 1.3 |
+| **Data** | 11/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -33,22 +33,8 @@ Detalhamento completo em `ADAP-PROFARMA01-001_Registro-de-Adaptacao.md`. Resumo:
 | Cadência de entrega | Sprints de ~2 semanas com dailys às 11h30 (Teams) | Equipe distribuída SP/RJ, alto volume de integração |
 | Controle de versão | Azure DevOps (repositórios da Profarma) | Repositórios do cliente: loja-balcao-frontend, loja-backend |
 | Gestão de backlog | Azure DevOps Boards + Jira (a partir de sprint 4) | Jira introduzido para maior visibilidade ao cliente |
-| Rastreabilidade de defeitos | Planilha de tickets (Mateus Veloso) + Azure DevOps | Histórico completo exportado em 07/11/2025 |
+| Rastreabilidade de defeitos | Planilha de tickets (Gustavo Mathias) + Azure DevOps | Histórico completo exportado em 07/11/2025 |
 | Viagens presenciais | Previstas quando ambiente travado ou pontos críticos | Custo médio R$ 5.000 por deslocamento (4 pessoas) |
-| Política de revisão de código | 1 revisor padrão; 2 revisores para mudanças críticas (integração, infra, deploy) | Validação técnica e qualidade; escalação para decisões de arquitetura |
-
-### 3.1 Política de Revisão de Código
-
-A política de revisão de mudanças no repositório `loja-backend` segue a matriz:
-
-| Tipo de mudança | Revisores obrigatórios | Observações |
-|---|---|---|
-| Features/endpoints | 1 revisor (Tech Lead ou Dev sênior) | Padrão para mudanças rotineiras |
-| Configuração/infraestrutura | 2 revisores | Escalação obrigatória (Tech Lead + DevOps) |
-| Deploy/GMUD | 2+ revisores + approval de Ops | Gerente de TI (Humberto) aprova em produção |
-| Correções/bugfixes | 1 revisor (contexto-dependente) | Se crítico (S1/S2), escala para 2 |
-
-**Implementação prática:** 14 MRs com 1 revisor (85%); 5 MRs com 2 revisores (15%) — correlacionados com mudanças de integração e configuração.
 
 ## 4. Estimativas e orçamento de horas (GPR 3, 4)
 
@@ -76,11 +62,14 @@ A política de revisão de mudanças no repositório `loja-backend` segue a matr
 | Papel | Pessoas | Dedicação | h efetivas/sprint | Sprints | **h estimadas** |
 |---|---|---|---|---|---|
 | Gerente de Projeto | 1 | 30% | 21 h | 19 | 399 h |
-| Tech Lead / DevOps / Arquiteto (Cézar) | 1 | 100% | 70 h | 19 | 1.330 h |
-| Dev Backend (Mateus, Raony) | 2 | 100% | 70 h | 19 | 2.660 h |
-| Dev Backend (Lucas — a partir Sprint 13, 50%) | 1 | 50% | 35 h | 7 | 245 h |
-| QA / Automação (Caroline — Sprints 15–19, 40%) | 1 | 40% | 28 h | 5 | 140 h |
-| **Total** | | | | | **4.774 h** |
+| Tech Lead | 1 | 50% | 35 h | 19 | 665 h |
+| Dev Principal / Arquiteto | 1 | 100% | 70 h | 11 | 770 h |
+| Dev Backend (Gustavo, Renan) | 2 | 100% | 70 h | 19 | 2.660 h |
+| Dev Backend (Cézar — a partir Sprint 8) | 1 | 100% | 70 h | 12 | 840 h |
+| Dev Backend (João — a partir Sprint 13, 50%) | 1 | 50% | 35 h | 7 | 245 h |
+| DevOps (Sprint 14) | 1 | 100% | 70 h | 1 | 70 h |
+| QA / Automação (Sprints 15–19, 40%) | 1 | 40% | 28 h | 5 | 140 h |
+| **Total** | | | | | **5.789 h** |
 
 ## 5. Cronograma e marcos (GPR 5)
 
@@ -110,7 +99,6 @@ A política de revisão de mudanças no repositório `loja-backend` segue a matr
 | Sprint 9 | 18/08–29/08/2025 | 28 | Ambiente homologação configurado; início carga de clientes |
 | Sprint 10 | 01/09–12/09/2025 | 30 | Carga parcial (1 M de 20 M registros); worker de expurgo aprovado |
 | Sprint 11 | 15/09–26/09/2025 | 28 | Preparação dailys de teste; Datadog configurado; mapping cenários de teste |
-| Sprint 11b | 10/10/2025 (retroativo) | — | Release intermediária 25.10.0.1 criada (Cézar Hiraki Velázquez) — marco de estabilidade antes de testes intensivos |
 | Sprint 12 | 29/09–10/10/2025 | 28 | Início testes homologação (<5% em 29/09 — aceleração exigida); status reports iniciados |
 | Sprint 13 | 13/10–24/10/2025 | 28 | Status reports 08/10, 14/10, 17/10; bloqueio acesso banco QA (14–21/10); retomada após desbloqueio |
 | Sprint 14 | 27/10–07/11/2025 | 28 | Plano de piloto (04–05/11); proposta de infra produtiva Azure (03/11); bug id_cliente sequencial (06/11) |
@@ -125,20 +113,20 @@ A política de revisão de mudanças no repositório `loja-backend` segue a matr
 
 | Data | Evento | Participantes-chave |
 |---|---|---|
-| 17/03/2025 | Reunião "Evolução do desenho e material" (Fireflies) | Cézar, Humberto, Armando, Diego, Marcelo, Alexandre |
+| 17/03/2025 | Reunião "Evolução do desenho e material" (Fireflies) | Tiago, Humberto, Armando, Diego, Marcelo, Alexandre |
 | 28/04/2025 | Primeira daily formal do projeto | Equipe completa |
-| 25/06/2025 | Alinhamento urgente pré-apresentação Falcão | Abraão, Armando, Cézar, Helena |
-| 17/07/2025 | Apresentação formal do plano ao Diretor | Marcus Falcão, Helena, Humberto, Fagner, Rafael, Diego, Cézar, Abraão, Marcus Ribeiro, Armando |
-| 23/07/2025 | Alinhamento técnico 2,5 h (integridade de dados) | Humberto, Diego, Marcus Ribeiro, Cézar, Abraão, Rafael, Ethierre, Helena, Fagner, Armando |
-| 29/09/2025 | Daily com diagnóstico de atraso crítico (<5% testes) | Armando, Ethierre, Cézar, Marcelo, Abraão, Helena, Pedro, Humberto |
-| 03/11/2025 | Proposta de infraestrutura produtiva Azure (Cézar Hiraki Velázquez) | Time Timeware, Fabio Ruiz, Diego Lacerda, Armando, Marcelo |
-| 04–05/11/2025 | Reuniões de planejamento de piloto | Armando, Pedro, Helena, Fagner, Rafael, Cézar, Abraão, Raony, Humberto |
-| 04/12/2025 | Integração Propz CRM concluída — liberação para testes | Abraão, Helena, Julielle, Armando, Fagner, Raony, Rafael |
+| 25/06/2025 | Alinhamento urgente pré-apresentação Falcão | Abraão, Armando, Erick, Tiago, Helena |
+| 17/07/2025 | Apresentação formal do plano ao Diretor | Marcus Falcão, Helena, Humberto, Fagner, Rafael, Diego, Tiago, Abraão, Marcus Ribeiro, Armando |
+| 23/07/2025 | Alinhamento técnico 2,5 h (integridade de dados) | Humberto, Diego, Marcus Ribeiro, Tiago, Abraão, Rafael, Ethierre, Helena, Fagner, Armando |
+| 29/09/2025 | Daily com diagnóstico de atraso crítico (<5% testes) | Armando, Ethierre, Tiago, Marcelo, Erick, Abraão, Helena, Pedro, Humberto |
+| 03/11/2025 | Proposta de infraestrutura produtiva Azure (David Buena) | Time Timeware, Fabio Ruiz, Diego Lacerda, Armando, Marcelo |
+| 04–05/11/2025 | Reuniões de planejamento de piloto | Armando, Pedro, Helena, Fagner, Rafael, Tiago, Abraão, Renan, Humberto |
+| 04/12/2025 | Integração Propz CRM concluída — liberação para testes | Abraão, Helena, Julielle, Armando, Fagner, Raony, Renan, Rafael |
 | 09/01/2026 | E-mail de status — divergência de percepção com cliente | Abraão → Armando (discordância formal registrada) |
 | 22/01/2026 | Liberação formal para testes — responsabilidade Timeware concluída | Abraão → Armando, Pedro, Helena |
 | 23/01/2026 | Confirmação de deploy pelo cliente; e-mail de cronograma e impactos | Pedro → equipe; Abraão → Pedro |
 | 26/01/2026 | Versão disponibilizada no ambiente (Fagner) | Fagner → Pedro, Abraão, Armando |
-| 29/01/2026 | Últimos PRs com correções de testes (Raony) | Raony → Cézar, equipe completa |
+| 29/01/2026 | Últimos PRs com correções de testes (Renan) | Renan → Cézar, equipe completa |
 
 ## 6. Recursos (GPR 6, 7)
 
@@ -147,12 +135,15 @@ A política de revisão de mudanças no repositório `loja-backend` segue a matr
 | Papel | Responsável | Dedicação |
 |---|---|---|
 | Gerente de Projeto / Account Manager | Abraão Oliveira | Parcial (gestão, comunicação, viagens) |
-| Tech Lead / DevOps / Arquiteto | Cézar Hiraki Velázquez | Integral (sprints 1–19) |
-| Dev Backend | Mateus Veloso | Integral (sprints 1–19) |
-| Dev Backend | Raony Chagas | Integral (sprints 1–19) |
-| Dev Backend | Lucas Batista | Parcial (sprints 13–19) |
-| QA / Automação | Caroline Sousa | Parcial (sprints 15–19) |
-| GQA | Jonathan Barbosa | Parcial (auditorias de processo) |
+| Tech Lead | Tiago Barbosa Nascimento | Parcial (decisões técnicas, PRs críticos) |
+| Dev Principal / Arquiteto da solução | Erick Coelho | Integral (sprints 1–11) |
+| Dev Backend | Gustavo Mathias | Integral (sprints 1–19) |
+| Dev Backend | Renan Kiyoshi | Integral (sprints 1–19) |
+| Dev Backend | Cézar Hiraki Velázquez | Integral (sprints 8–19) |
+| Dev Backend | João Cruz | Parcial (sprints 13–19) |
+| Infra / DevOps | David Buena | Parcial (sprint 14 — proposta infra) |
+| QA / Automação | Lucas Batista | Parcial (sprints 15–19) |
+| GQA | COO (Operações) | Parcial (auditorias de processo) |
 
 **Equipe Rede D1000/Profarma:**
 
@@ -191,7 +182,7 @@ A política de revisão de mudanças no repositório `loja-backend` segue a matr
 | Armando Junior (Rede D1000) | Decisões técnicas e de processo | Daily 11h30 via Teams; e-mails |
 | Humberto Erler (Rede D1000) | Aprovação de versões, ambientes | E-mails; aprovação de PRs |
 | Time técnico D1000 | Execução de testes e deploys | Daily; e-mails de status; PRs |
-| Cézar Hiraki Velázquez (Timeware) | Qualidade técnica, decisões arquiteturais | Daily interna 9h00; alinhamentos ad-hoc |
+| Tiago Barbosa Nascimento (Timeware) | Qualidade técnica, decisões arquiteturais | Daily interna 9h00; alinhamentos ad-hoc |
 | Abraão Oliveira (Timeware) | Status, comunicação formal com cliente | Status reports semanais (out–nov/2025) |
 
 ## 8. Transição (GPR 8)
@@ -215,7 +206,7 @@ A operação e sustentação pós-piloto são objeto de contrato separado de sus
 |---|---|---|
 | Homologação aprovada pelo cliente | Sim — aceite Helena Moreira (e-mail, Sprints 1–17) | QA D1000 (Julielle Santos) |
 | Documentação de entrega completa (PCP, API docs) | Sim — PCP-PROFARMA01-001 + Swagger | Tech Lead |
-| Testes de regressão executados sem falhas S1 | Sim — Sprints 18–19, zero S1 em aberto | QA Timeware (Caroline Sousa) |
+| Testes de regressão executados sem falhas S1 | Sim — Sprints 18–19, zero S1 em aberto | QA Timeware (Lucas Batista) |
 | Baseline de configuração registrada (tag/release) | Sim — tag `26.1.1.1` (Azure DevOps) | DevOps |
 | GMUD aprovada pelo cliente (processo de mudança) | Sim — GMUD 2624117 aprovada por Humberto Erler | Gerente de Projeto |
 | Credenciais e permissões de produção confirmadas | Sim — Azure Key Vault configurado; acessos AKS liberados | DevOps |
@@ -279,6 +270,5 @@ O projeto foi viável e concluído em janeiro de 2026, com a entrega das correç
 |---|---|---|---|
 | 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em e-mails e transcrições Fireflies do período 03/2025–01/2026 |
 | 1.1 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna SP Planejado na tabela §5.2 (573 SP totais) para consistência com a planilha de gestão do projeto |
-| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 4.774 h totais estimadas; ampliação do §8 (GPR 8) com estratégia de transição para produção, fluxo de GMUD e responsáveis pelo deploy |
+| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 5.789 h totais estimadas; ampliação do §8 (GPR 8) com estratégia de transição para produção, fluxo de GMUD e responsáveis pelo deploy |
 | 1.3 | 11/06/2026 | Time de Melhoria Contínua | Adição de §8.2 (checklist go-live), §8.3 (suporte pós-go-live com SLAs e indicadores Datadog) e §8.4 (critério de encerramento do suporte) — conformidade com TPL-GPR-001 v1.2 (GPR 8 / GPR 16) |
-| 1.4 | 25/06/2026 | Sistema de Auditoria / Reconciliação GitLab | Auditoria GitLab: (1) inclusão de release 25.10.0.1 em §5.2 (Sprint 11b), (2) formalização de Política de Revisão de Código em §3.1, (3) validação de divergências (zero críticas encontradas, conformidade ALTA). Backup pré-reconciliação: PLA-PROFARMA01-001_Plano-de-Projeto.md.backup.20260625_211538.bak |

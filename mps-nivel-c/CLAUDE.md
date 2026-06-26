@@ -13,7 +13,7 @@ Repositório dos ativos de processo da **Timeware** para a avaliação **MPS-SW 
 
 ## Regras inegociáveis
 
-1. **Nunca invente informação.** Se faltar um dado, deixe um placeholder explícito apenas no que falta e avise no chat — nunca preencha com suposição. Não fabrique números, nomes, datas ou referências.
+1. **Nunca infira informação.** Se faltar um dado, deixe um placeholder explícito apenas no que falta e avise no chat — nunca preencha com suposição. 
 
 2. **Nunca deixe recados ou comentários para o usuário dentro dos documentos.** Nada de "a confirmar", "ver com fulano", "TODO", "[verificar]" no corpo dos arquivos. Qualquer alerta, dúvida ou observação vai **no chat**, não no documento. O documento entregue fica limpo.
    - **Exceção:** os templates (`TPL-*`) têm campos a preencher (`[ ]`, `<dd/mm/aaaa>`) e instruções em itálico — isso é intencional e deve ser mantido.
@@ -35,9 +35,6 @@ Repositório dos ativos de processo da **Timeware** para a avaliação **MPS-SW 
 - Detalhes completos em `CONV-ORG-001`.
 
 ### Ao editar um documento
-- Toda alteração relevante **incrementa a versão** (menor para ajustes, maior para mudanças estruturais).
-- **Adicione uma linha no histórico de revisões** ao final do documento, com versão, data, autor e descrição da mudança.
-  - **Documentos de definição organizacional** (POL, CONV, PRO, EST, PLA organizacional, GUIA, TPL, MAPA): autor = **"Time de Melhoria Contínua"**.
   - **Registros de projeto** (`oficial/04_registros/`): autor = **nome real** da pessoa que criou ou atualizou o documento — GP assina o que é de gestão (TAP, PLA, RAC, CR, ADAP), time técnico assina o que é técnico (PCP, ITP, RASTR), auditor de GQA independente assina o GQA. A **data reflete o momento real do artefato na linha do tempo do projeto** (datas retroativas são intencionais — regra 3), não a data de consolidação.
 - Atualize o campo **Data** do cabeçalho para a data da versão atual.
 - Se o documento for referenciado no `MAPA-ORG-001`, atualize a versão lá também.

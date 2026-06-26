@@ -49,7 +49,7 @@ Este documento registra as revisões técnicas formais (peer reviews) realizadas
 | **Tipo**                | Revisão de implementação e testes de integração                     |
 | **Artefato revisado**   | Worker outbox + tabela `outbox_eventos` em funcionamento no ambiente local |
 | **Revisor responsável** | Cézar Hiraki Velázquez (Tech Lead Timeware)                              |
-| **Participantes**       | Caroline Sousa (QA Timeware), desenvolvedor responsável pelo worker  |
+| **Participantes**       | Lucas Batista (QA Timeware), desenvolvedor responsável pelo worker  |
 | **Resultado**           | Aprovado com correções obrigatórias (corrigidas antes do merge)     |
 
 ### 3.1 Achados

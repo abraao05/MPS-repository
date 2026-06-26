@@ -16,7 +16,7 @@
 
 Este documento registra os cenários de teste executados durante a fase de homologação do projeto Cadastro de Clientes — Rede D1000, cobrindo os canais PDV, Balcão, Call Center, Omni (VTEX) e Conveniados, além da integração Propz CRM.
 
-Os cenários foram definidos em conjunto entre as equipes Timeware (QA: Caroline Sousa) e D1000 (QA: Julielle Santos / Fagner Pereira) e executados principalmente no período de outubro a janeiro/2026 no ambiente de homologação `d1000_homologacao`.
+Os cenários foram definidos em conjunto entre as equipes Timeware (QA: Lucas Batista) e D1000 (QA: Julielle Santos / Fagner Pereira) e executados principalmente no período de outubro a janeiro/2026 no ambiente de homologação `d1000_homologacao`.
 
 **Base de dados:** os status reports de 08/10, 14/10 e 17/10/2025 registraram formalmente o progresso e os defeitos identificados.
 
@@ -195,7 +195,7 @@ O registro definitivo e autoritativo dos defeitos está em **REL-VV-PROFARMA01-0
 |---|---|---|---|
 | MEL-01 | Campo "tipo de opt-in" não retornado na consulta do Balcão (ex.: "SMS", "EMAIL") — necessário para regras de negócio de fidelidade | Balcão | Implementado no sprint seguinte |
 | MEL-02 | Fallback cloud → local → preferencial: regra definida, scripts de clientes preferenciais por UF precisam ser carregados | PDV | Scripts de insert preparados e carregados |
-| MEL-03 | Versão do Call Center confirmada em 25721 — necessário merge antes de liberar ambiente de testes | Call Center | Merge realizado por Raony em 14/10 |
+| MEL-03 | Versão do Call Center confirmada em 25721 — necessário merge antes de liberar ambiente de testes | Call Center | Merge realizado por Renan em 14/10 |
 
 ---
 
