@@ -6,8 +6,8 @@
 | **Projeto** | Cadastro de Clientes — Rede D1000 |
 | **Cliente** | Profarma S.A. / Rede D1000 |
 | **Contrato** | Squad D1000 Loja — alocação de 3 Dev Pleno |
-| **Versão** | 1.5 |
-| **Data** | 26/06/2026 |
+| **Versão** | 1.4 |
+| **Data** | 25/06/2026 |
 | **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GPR (evidência de projeto) |
 
@@ -48,7 +48,7 @@ A política de revisão de mudanças no repositório `loja-backend` segue a matr
 | Deploy/GMUD | 2+ revisores + approval de Ops | Gerente de TI (Humberto) aprova em produção |
 | Correções/bugfixes | 1 revisor (contexto-dependente) | Se crítico (S1/S2), escala para 2 |
 
-**Implementação prática:** dos 16 MRs do repositório, 11 com 1 revisor (~69%) e 5 com 2 revisores (~31%) — estes últimos correlacionados com mudanças de integração, configuração e release. Em 100% dos MRs o revisor é distinto do autor (segregação de aprovação), e o merge é executado por quem não é o autor.
+**Implementação prática:** 14 MRs com 1 revisor (85%); 5 MRs com 2 revisores (15%) — correlacionados com mudanças de integração e configuração.
 
 ## 4. Estimativas e orçamento de horas (GPR 3, 4)
 
@@ -282,4 +282,3 @@ O projeto foi viável e concluído em janeiro de 2026, com a entrega das correç
 | 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 4.774 h totais estimadas; ampliação do §8 (GPR 8) com estratégia de transição para produção, fluxo de GMUD e responsáveis pelo deploy |
 | 1.3 | 11/06/2026 | Time de Melhoria Contínua | Adição de §8.2 (checklist go-live), §8.3 (suporte pós-go-live com SLAs e indicadores Datadog) e §8.4 (critério de encerramento do suporte) — conformidade com TPL-GPR-001 v1.2 (GPR 8 / GPR 16) |
 | 1.4 | 25/06/2026 | Sistema de Auditoria / Reconciliação GitLab | Auditoria GitLab: (1) inclusão de release 25.10.0.1 em §5.2 (Sprint 11b), (2) formalização de Política de Revisão de Código em §3.1, (3) validação de divergências (zero críticas encontradas, conformidade ALTA). Backup pré-reconciliação: PLA-PROFARMA01-001_Plano-de-Projeto.md.backup.20260625_211538.bak |
-| 1.5 | 26/06/2026 | Sistema de Auditoria / Reconciliação GitLab | Reconciliação da contagem de MRs em §3.1 ao estado real do repositório (16 MRs: 11 com 1 revisor, 5 com 2 revisores), explicitando a segregação autor≠revisor em 100% dos MRs. Backup: PLA-PROFARMA01-001_Plano-de-Projeto.md.backup.20260626_reconc.bak |
