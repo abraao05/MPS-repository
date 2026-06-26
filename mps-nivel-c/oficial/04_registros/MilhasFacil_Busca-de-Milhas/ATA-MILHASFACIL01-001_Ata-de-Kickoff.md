@@ -13,7 +13,11 @@
 | **Canal** | Microsoft Teams |
 | **Facilitador** | Abraão (Timeware) |
 | **Gerente de Projeto** | Abraão |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
+
+---
+
+> **Nota de implementação (26/06/2026):** A plataforma de DevOps do projeto é o **GitLab** (http://191.234.192.153), com três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`) e CI/CD baseado em **Docker runner (runner-vm-docker)**, alinhado ao estado real registrado nos demais documentos do projeto.
 
 ---
 
@@ -38,7 +42,7 @@
 2. Revisão do escopo e dos objetivos do produto
 3. Definição da arquitetura macro da solução (API · Web · Crawler)
 4. Cadência de trabalho: dailys, sprints e cerimônias
-5. Gestão de acessos: Azure DevOps, repositórios e ambientes
+5. Gestão de acessos: GitLab, repositórios e ambientes
 6. Definição da política de branch, rastreabilidade e gate de CI
 7. Próximos passos e ações imediatas
 
@@ -95,7 +99,7 @@ Ficou estabelecida a seguinte cadência:
 
 ### 3.6 Gestão de acessos, política de branch e CI
 
-Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os acessos no Azure DevOps e configurar os três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`, branch padrão `main`) e as pipelines (PowerShell@2, agente Windows, triggers `develop`/`homolog`/`main`). Acordou-se a política de branch com PR obrigatório para `develop`, aprovação do PR pelo Tech Lead (Cézar Velazquez), gate de CI e nomes de branch no padrão `feat/fix + MF-XX`. As mudanças de escopo (CR) seriam aprovadas pelo GP (Abraão). A meta de cobertura de testes foi fixada em ≥ 80% (JaCoCo/Karma/pytest), com gate de cobertura no CI a partir da S4.
+Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os acessos no GitLab e configurar os três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`, branch padrão `main`) e as pipelines (GitLab CI/CD em Docker runner-vm-docker, triggers `develop`/`homolog`/`main`). Acordou-se a política de branch com PR obrigatório para `develop`, aprovação do PR pelo Tech Lead (Cézar Velazquez), gate de CI e nomes de branch no padrão `feat/fix + MF-XX`. As mudanças de escopo (CR) seriam aprovadas pelo GP (Abraão). A meta de cobertura de testes foi fixada em ≥ 80% (JaCoCo/Karma/pytest), com gate de cobertura no CI a partir da S4.
 
 ---
 
@@ -118,8 +122,8 @@ Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os aces
 
 | Ação | Responsável | Prazo |
 |---|---|---|
-| Provisionar acessos e criar os três repositórios no Azure DevOps | Cézar Velazquez (Timeware) | 11/02/2026 |
-| Configurar pipelines API/Web/Crawler (PowerShell@2, agente Windows) | Cézar Velazquez (Timeware) | 13/02/2026 |
+| Provisionar acessos e criar os três repositórios no GitLab | Cézar Velazquez (Timeware) | 11/02/2026 |
+| Configurar pipelines GitLab CI (Docker runner) | Cézar Velazquez (Timeware) | 13/02/2026 |
 | Criar canal Microsoft Teams dedicado e rotina de daily | Abraão (Timeware) | 09/02/2026 (neste dia) |
 | Detalhar o backlog inicial (RF01–RF15) no Jira (board 614) | Abraão + PO Hub de Milhas | 11/02/2026 |
 | Definir ambiente de desenvolvimento local (Docker Compose) | Cézar Velazquez (Timeware) | 11/02/2026 |
@@ -138,7 +142,7 @@ Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os aces
 | Código | O que capturar | Fonte/URL |
 |---|---|---|
 | IMG-JIRA-01 | Board 614 com backlog inicial RF01–RF15 e sprint S1 | Jira — board 614 |
-| IMG-DEVOPS-01 | Criação dos repositórios MilhasFacil_api/web/crawler | Azure DevOps — Repos |
+| IMG-GITLAB-00 | Criação dos repositórios MilhasFacil_api/web/crawler | GitLab — http://191.234.192.153 |
 
 ---
 
@@ -148,3 +152,4 @@ Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os aces
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção do nome do plano de assinatura no RF10 (PREMIUM → PRO), alinhando ao enum real do código e ao REQ/PCP. |
+| 1.2 | 26/06/2026 | Auditoria MPS.BR Nível C | Reconciliação de plataforma na pauta/seção 3.6 e nota de implementação: Azure DevOps → GitLab e PowerShell@2/agente Windows → Docker runner (runner-vm-docker), alinhando ao estado real e aos demais registros. |

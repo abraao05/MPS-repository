@@ -7,8 +7,8 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.1 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 26/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
 | **Tech Lead / Arquiteto / DevOps** | Cézar Velazquez |
@@ -34,8 +34,8 @@ Detalhamento completo em `ADAP-MILHASFACIL01-001_Registro-de-Adaptacao.md`. Resu
 | Item de adaptação | Decisão | Justificativa |
 |---|---|---|
 | Cadência de entrega | Sprints de 2 semanas | Equipe enxuta (3 desenvolvedores efetivos); previsibilidade de entrega |
-| Pipeline de CI | Agente Windows (Default) com tasks PowerShell@2 | Padronização do agente disponível; risco R-05 |
-| Controle de versão | Azure DevOps — repositórios MilhasFacil_api, MilhasFacil_web, MilhasFacil_crawler (branch padrão main) | Três aplicações independentes |
+| Pipeline de CI | Docker (runner-vm-docker) no GitLab CI/CD | Padronização do agente disponível; risco R-05 |
+| Controle de versão | GitLab — repositórios MilhasFacil_api, MilhasFacil_web, MilhasFacil_crawler (branch padrão main) | Três aplicações independentes |
 | Gate de cobertura | Ativado a partir da Sprint 4 (JaCoCo 80% na API) | NC-001 (cobertura <80%) tratada com gate de CI |
 | Gestão de backlog | Jira (board 614) + planilha GEST-MILHASFACIL01-001 | Rastreabilidade e gestão consolidada |
 
@@ -50,12 +50,12 @@ Detalhamento completo em `ADAP-MILHASFACIL01-001_Registro-de-Adaptacao.md`. Resu
 | Papel | Pessoas | No DevOps? |
 |---|---|---|
 | Gerente de Projeto (gestão; não codifica) | 1 (Abraão) | Não |
-| Tech Lead / Arquiteto / DevOps (revisor de PR) | 1 (Cézar Velazquez) | Sim |
+| Tech Lead / Arquiteto / DevOps (revisor de MR) | 1 (Cézar Velazquez) | Sim |
 | Desenvolvedor | 3 (Felipe Santos, Lucas Batista, Henry Oliveira) | Sim |
 | QA (teste manual; gera evidências) | 1 (Jonathan Alves) | Sim |
 | GQA independente (auditoria de processo) | 1 (Carol/Caroline) | Não |
 
-> **DevOps (Azure) = 5 pessoas:** Cézar (TL) + Felipe/Lucas/Henry (devs) + Jonathan (QA). Abraão (GP) e Carol (GQA) ficam fora do DevOps. Detalhamento dos papéis e da combinação em `ADAP-MILHASFACIL01-001` (A-06) e §6 deste plano.
+> **DevOps (GitLab) = 5 pessoas:** Cézar (TL) + Felipe/Lucas/Henry (devs) + Jonathan (QA). Abraão (GP) e Carol (GQA) ficam fora do DevOps. Detalhamento dos papéis e da combinação em `ADAP-MILHASFACIL01-001` (A-06) e §6 deste plano.
 
 **Orçamento de esforço — controle por sprint/equipe (decisão de adaptação):** o esforço do projeto é estimado e acompanhado **por sprint, no nível da equipe** (story points → horas planejadas vs. realizadas), e **não é decomposto por papel**. Essa é uma decisão de adaptação coerente com a equipe enxuta e com a fonte da verdade de gestão (planilha `GEST-MILHASFACIL01-001`), que registra a série de horas por sprint (§5.1), não por pessoa/papel. O total estimado do ciclo planejado é de **614 h** (S1–S8), com **666 h** realizadas (+8,5%).
 
@@ -107,20 +107,20 @@ A baseline da S9 foi promovida de develop para main na release **v0.9.0** (devel
 | Papel | Responsável | Dedicação |
 |---|---|---|
 | Gerente de Projeto (gestão; não codifica; fora do DevOps) | Abraão | Gestão, comunicação e aprovação de escopo/CR |
-| Tech Lead / Arquiteto / DevOps (revisor de PR; no DevOps) | Cézar Velazquez | Arquitetura, infraestrutura, pipelines, Docker Compose e aprovação de PRs |
+| Tech Lead / Arquiteto / DevOps (revisor de MR; no DevOps) | Cézar Velazquez | Arquitetura, infraestrutura, pipelines, Docker Compose e aprovação de PRs |
 | Dev Backend Principal (API + crawlers; no DevOps) | Felipe Santos | Integral |
 | Full Stack (no DevOps) | Lucas Batista | Integral (S1 Angular; S2+ backend) |
 | Full Stack (no DevOps) | Henry Oliveira | Integral (S3 Angular; S4+ backend) |
 | QA (teste manual; gera evidências; no DevOps) | Jonathan Alves | Execução de testes manuais e geração de evidências |
 | GQA independente (auditoria; não codifica; fora do DevOps) | Carol (Caroline) | Auditorias de processo (GQA) |
 
-> DevOps (Azure) = 5 pessoas: Cézar (TL) + Henry/Lucas/Felipe (devs) + Jonathan (QA). Abraão (GP) e Carol (GQA) ficam fora do DevOps.
+> DevOps (GitLab) = 5 pessoas: Cézar (TL) + Henry/Lucas/Felipe (devs) + Jonathan (QA). Abraão (GP) e Carol (GQA) ficam fora do DevOps.
 
 **Ambiente e ferramentas:**
 
 | Ferramenta / Ambiente | Uso |
 |---|---|
-| Azure DevOps (MilhasFacil_api, MilhasFacil_web, MilhasFacil_crawler) | Repositórios, PRs e pipelines (PowerShell@2, agente Windows) |
+| GitLab CI/CD (MilhasFacil_api, MilhasFacil_web, MilhasFacil_crawler) | Repositórios, PRs e pipelines (Docker, runner-vm-docker) |
 | Jira (board 614) | Gestão de backlog e sprints |
 | Planilha GEST-MILHASFACIL01-001 | Fonte da verdade de gestão |
 | Redis | Blacklist de tokens (`token:invalidated:`, TTL 7 dias) |
@@ -135,7 +135,7 @@ Partes interessadas conforme `TAP-MILHASFACIL01-001` §5:
 |---|---|---|
 | PO Hub de Milhas (cliente) | Priorização do backlog, valor de negócio e aprovação de escopo/CR | Relatório de status periódico (RAC) do GP; reuniões/entregas por sprint (Planning/Review); aprovação de CR |
 | Gerente de Projeto (Abraão) | Gestão, prazo, escopo e comunicação | Daily (Teams); consolidação do RAC; ponto de contato com o PO |
-| Tech Lead / Arquiteto / DevOps (Cézar Velazquez) | Arquitetura, infraestrutura, pipelines e aprovação técnica de PR | Daily (Teams); Sprint Planning/Review/Retrospectiva |
+| Tech Lead / Arquiteto / DevOps (Cézar Velazquez) | Arquitetura, infraestrutura, pipelines e aprovação técnica de MR | Daily (Teams); Sprint Planning/Review/Retrospectiva |
 | Equipe de desenvolvimento e QA (Felipe, Lucas, Henry, Jonathan) | Execução das entregas e evidências de teste | Daily (Teams); cerimônias de sprint |
 | GQA independente (Carol/Caroline) | Auditoria de processo (conformidade) | Auditorias de GQA por ciclo |
 
@@ -151,13 +151,13 @@ Partes interessadas conforme `TAP-MILHASFACIL01-001` §5:
 ## 8. Modelo de sprints
 
 - Iterações de 2 semanas, com planejamento, execução e revisão por sprint.
-- Política de branches: PR obrigatório para develop, aprovação de PR pelo Tech Lead (Cézar Velazquez), gate de CI e nomenclatura `feat/`|`fix/` + `MF-XX`. Na S9 foi ativada a **branch policy** de revisor (≥1 revisor) em develop nos três repositórios. A aprovação de escopo/CR é do GP (Abraão).
+- Política de branches: PR obrigatório para develop, aprovação de MR pelo Tech Lead (Cézar Velazquez), gate de CI e nomenclatura `feat/`|`fix/` + `MF-XX`. Na S9 foi ativada a **política de branches protegidas** de revisor (≥1 revisor) em develop nos três repositórios. A aprovação de escopo/CR é do GP (Abraão).
 - Gate de cobertura (≥80% JaCoCo/Karma/pytest) ativo a partir da Sprint 4.
 - Baselines de versão por sprint (v0.1.0 … v0.8.0; **v0.9.0** released em main na S9).
 
 ## 9. Transição e suporte pós-go-live (GPR 8, GPR 16)
 
-> **Projeto ABERTO (Sprint 9 de 12).** O encerramento formal e o aceite ocorrerão ao fim do projeto (término previsto em **26/07/2026**), quando serão emitidos a Ata de Aceite Final (ATA-MILHASFACIL01-003) e o Termo de Encerramento e Aceite (TAE-MILHASFACIL01-001), ainda não aplicáveis nesta fase (ver `00_INDICE-MILHASFACIL01`, Onda 3).
+> **Projeto ABERTO (Sprint 10 de 12).** O encerramento formal e o aceite ocorrerão ao fim do projeto (término previsto em **26/07/2026**), quando serão emitidos a Ata de Aceite Final (ATA-MILHASFACIL01-003) e o Termo de Encerramento e Aceite (TAE-MILHASFACIL01-001), ainda não aplicáveis nesta fase (ver `00_INDICE-MILHASFACIL01`, Onda 3).
 
 ### 9.1 Estratégia de transição para produção
 
@@ -167,8 +167,8 @@ A passagem para produção segue a esteira de promoção definida na gerência d
 |---|---|
 | **Fluxo de promoção** | `develop` (integração) → `homolog` (homologação) → `main` (produção), nos três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`) |
 | **Versionamento** | Tag de versão semântica por release (`v0.1.0`–`v0.9.0`); a release v0.9.0 foi promovida a `main` (tag nos três repositórios, 15/06/2026) |
-| **Política de revisão** | PR obrigatório para `develop` com aprovação técnica do Tech Lead (Cézar Velazquez) e **branch policy de revisor (≥1 revisor)** ativada em `develop` na S9, impedindo merge sem revisão |
-| **Verificação de prontidão** | Smoke checks por *healthcheck*: `/actuator/health` (API, Spring Boot Actuator) e `GET /health` (Crawler) respondendo com sucesso; pipelines verdes (PowerShell@2) e gate de cobertura JaCoCo ≥80% na API — condições verificadas antes da promoção entre ambientes |
+| **Política de revisão** | PR obrigatório para `develop` com aprovação técnica do Tech Lead (Cézar Velazquez) e **proteção de branch com revisores obrigatórios (≥1 revisor)** ativada em `develop` na S9, impedindo merge sem revisão |
+| **Verificação de prontidão** | Smoke checks por *healthcheck*: `/actuator/health` (API, Spring Boot Actuator) e `GET /health` (Crawler) respondendo com sucesso; pipelines verdes (Docker, runner-vm-docker) e gate de cobertura JaCoCo ≥80% na API — condições verificadas antes da promoção entre ambientes |
 | **Responsável pela operação de promoção** | Tech Lead / Arquiteto / DevOps (Cézar Velazquez) |
 | **Aprovação de escopo/entrega** | Gerente de Projeto (Abraão); validação funcional manual da QA (Jonathan Alves) em homologação |
 
@@ -177,7 +177,7 @@ A passagem para produção segue a esteira de promoção definida na gerência d
 Uma entrega é considerada pronta para promoção quando atende, de forma cumulativa (conforme `ITP-MILHASFACIL01-001` §5–§7 e `VV-MILHASFACIL01-001` §7):
 
 - Critério de aceite do requisito (RF) atendido e caso de teste correspondente **Aprovado** (validação manual da QA em homologação);
-- PR revisado e aprovado pelo Tech Lead, com **gate de CI verde** e cobertura ≥80% na API (a partir da S4);
+- MR revisado e aprovado pelo Tech Lead, com **gate de CI verde** e cobertura ≥80% na API (a partir da S4);
 - *Healthcheck* dos componentes respondendo (`/actuator/health`, `GET /health`);
 - Baseline marcada por tag de versão e promovida `develop` → `homolog` → `main`.
 
@@ -193,11 +193,11 @@ O projeto ainda **não teve release de produção formalizada ao cliente** (o ci
 | R-02 | Cobertura de testes abaixo de 80% | 3 | 3 | 9 | NC-001 (S2–S4), encerrada na S5 (JaCoCo 82%) |
 | R-03 | Indisponibilidade da Z-API | 2 | 2 | 4 | Fallback por e-mail |
 | R-04 | Mudança de escopo | 2 | 3 | 6 | Tratada via CR-MF-001 |
-| R-05 | Pipeline de CI em agente Windows | 2 | 2 | 4 | Padronização com tasks PowerShell@2 |
+| R-05 | Pipeline de CI em agente Windows | 2 | 2 | 4 | Padronização com Docker (runner-vm-docker) no GitLab CI/CD |
 
 ## 11. Viabilidade (GPR 11)
 
-O projeto está em execução dentro do cronograma macro, com Sprint 9 de 12 em andamento. A velocity média de 33,9 SP (S1–S8) supera a meta de ≥30 SP, com aderência média de SP de ~88% (faixa de 81% a 94% por sprint), e o desvio acumulado de horas (+8,5%) está dentro de faixa gerenciável. A não conformidade de cobertura (NC-001) foi aberta na S2 e encerrada na S5 com o gate de CI ativado na S4, confirmando a viabilidade da abordagem. A promoção da release v0.9.0 a main na S9 (RF13/RF14/MF-64 entregues) consolida a viabilidade do ciclo de entrega.
+O projeto está em execução dentro do cronograma macro, com Sprint 10 de 12 em andamento. A velocity média de 33,9 SP (S1–S8) supera a meta de ≥30 SP, com aderência média de SP de ~88% (faixa de 81% a 94% por sprint), e o desvio acumulado de horas (+8,5%) está dentro de faixa gerenciável. A não conformidade de cobertura (NC-001) foi aberta na S2 e encerrada na S5 com o gate de CI ativado na S4, confirmando a viabilidade da abordagem. A promoção da release v0.9.0 a main na S9 (RF13/RF14/MF-64 entregues) consolida a viabilidade do ciclo de entrega.
 
 ---
 
@@ -205,5 +205,6 @@ O projeto está em execução dentro do cronograma macro, com Sprint 9 de 12 em 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S10 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Aderência ao TPL-GPR-001: correção do RF10 (PREMIUM → PRO); inclusão da seção de Transição e suporte pós-go-live (§9, GPR 8/16); plano de comunicação e partes interessadas (§7, GPR 9); orçamento de esforço com composição da equipe por papel e registro do controle de horas por sprint/equipe (§4, GPR 4). Renumeração das seções subsequentes. Uniformização do desvio acumulado de horas para +8,5% (M2), consistente com MED e GEST. |
+| 1.2 | 26/06/2026 | Time de Melhoria Contínua | Correção de referências de CI: PowerShell@2/agente Windows substituído por Docker (runner-vm-docker); Azure Pipelines/Azure DevOps substituído por GitLab CI/CD em todas as ocorrências (§3, §6, §9.1, §10/R-05). |

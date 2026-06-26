@@ -7,8 +7,8 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.1 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 26/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
 | **Tech Lead / Arquiteto / DevOps** | Cézar Velazquez |
@@ -45,7 +45,7 @@ O projeto MilhasFacil é executado em sprints de 2 semanas, com mudanças de esc
 | **Risco vinculado** | R-04 — Mudança de escopo (Prob. 2 · Impacto 3 · Exposição 6) |
 | **Situação** | Aprovado e absorvido na Sprint 9 — RF13 (filtros avançados) **entregue na release v0.9.0 (released em main)** |
 
-A absorção do CR-MF-001 na Sprint 9 é evidenciada pela entrega de RF13: os PRs #11/#21/#27 (filtros `maxMiles`/`cabinType`) foram **concluídos em 15/06/2026 com revisor Cézar Velazquez (TL) — Approved, vote 10 (conta legada `Mateus Veloso` no Azure DevOps) — e mergeados em develop**, e a release **v0.9.0** foi promovida a main (tag nos três repositórios), deixando RF13 **Entregue (released em main)**; o card MF-65 foi transicionado para "Concluído" no Jira (board 614).
+A absorção do CR-MF-001 na Sprint 9 é evidenciada pela entrega de RF13: os MRs **api !13 / web !9 / crawler !4** (filtros `maxMiles`/`cabinType`) foram **concluídos em 15/06/2026 com 2 revisores aprovados e mergeados em develop**, e a release **v0.9.0** foi promovida a main (tag nos três repositórios), deixando RF13 **Entregue (released em main)**; o card MF-65 foi transicionado para "Concluído" no Jira (board 614).
 
 ---
 
@@ -83,3 +83,4 @@ A absorção do CR-MF-001 na Sprint 9 é evidenciada pela entrega de RF13: os PR
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Aderência ao TPL-GPR-006: inclusão da classificação explícita do tipo de tratamento (Aditivo, §4), com justificativa coerente ao impacto de +10 h. Renumeração das seções subsequentes. |
+| 1.2 | 26/06/2026 | Time de Melhoria Contínua | Atualização da plataforma de Azure DevOps para GitLab; PRs #11/#21/#27 substituídos pelos identificadores GitLab api !13 / web !9 / crawler !4; revisores confirmados (2 revisores aprovados); remoção do alias legado "Mateus Veloso". |

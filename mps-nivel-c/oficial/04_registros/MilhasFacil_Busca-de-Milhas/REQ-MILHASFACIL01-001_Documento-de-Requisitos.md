@@ -7,8 +7,8 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.1 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 26/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | REQ (evidência de projeto) |
@@ -21,7 +21,7 @@ Registrar os requisitos funcionais e não funcionais da plataforma MilhasFacil �
 
 A solução é composta por três serviços independentes: **API** (Spring Boot 3.2.5 / Java 21), **Web** (Angular 17.3) e **Crawler** (FastAPI 0.111 / SeleniumBase 4.27.4). O detalhamento arquitetural consta no documento PCP-MILHASFACIL01-001.
 
-> **Estado dos ramos em 15/06/2026 (release v0.9.0):** após a promoção `develop → homolog → main` (tag **v0.9.0**), a linha `main` contém os requisitos RF01–RF14 e a melhoria MF-64 (released), com migrations **V1–V5 + V9** (`V9__airport_search_index`). RF13, RF14 e MF-64 passaram a status **Entregue**, como os demais RF01–RF12. A padronização de nomenclatura de banco (MF-73, migration `V10__fix_naming_conventions.sql`, incluindo `route_preferences.is_active` e índices completos) está no **PR #29 ativo**, ainda não mergeado em `main`. RF15 não foi iniciado.
+> **Estado dos ramos em 15/06/2026 (release v0.9.0):** após a promoção `develop → homolog → main` (tag **v0.9.0**), a linha `main` contém os requisitos RF01–RF14 e a melhoria MF-64 (released), com migrations **V1–V5 + V9** (`V9__airport_search_index`). RF13, RF14 e MF-64 passaram a status **Entregue**, como os demais RF01–RF12. A padronização de nomenclatura de banco (MF-73, migration `V10__fix_naming_conventions.sql`, incluindo `route_preferences.is_active` e índices completos) está no **api !15 ativo**, ainda não mergeado em `main`. RF15 não foi iniciado.
 
 ---
 
@@ -79,7 +79,7 @@ A solução é composta por três serviços independentes: **API** (Spring Boot 
 | RNF01 | A busca de voos deve concluir em até 30 segundos. | `SearchService` aplica timeout de 40 s por companhia, mas o tempo de resposta observado mantém-se dentro de 30 s (média medida de 8,3 s). | Performance | Atendido |
 | RNF02 | A cobertura de testes deve ser de no mínimo 80%. | Cobertura medida por JaCoCo (API), Karma (Web) e pytest (Crawler), com gate de CI ativo a partir da Sprint 4 (pipeline da API exige JaCoCo ≥ 80%). | Qualidade | Atendido |
 | RNF03 | A segurança deve combinar BCrypt, JWT, Redis e CORS. | Senhas em BCrypt; JWT HS256 stateless (access 30 min / refresh 7 dias); blacklist de logout em Redis; CORS do Crawler restrito à origem da API; `SecurityConfig` com CSRF desabilitado e sessão STATELESS. | Segurança | Atendido |
-| RNF04 | Toda entrega deve ser rastreável por convenção de branches. | Branches seguem o padrão `feat/` e `fix/` com o código do cartão Jira (`MF-XX`); PR obrigatório para `develop` com aprovação do Tech Lead e gate de CI (branch policy de revisor ativa nos 3 repositórios). | Rastreabilidade | Atendido |
+| RNF04 | Toda entrega deve ser rastreável por convenção de branches. | Branches seguem o padrão `feat/` e `fix/` com o código do cartão Jira (`MF-XX`); MR obrigatório para `develop` com aprovação do Tech Lead e gate de CI (branch policy de revisor ativa nos 3 repositórios GitLab). | Rastreabilidade | Atendido |
 | RNF05 | A solução deve ser disponibilizável via Docker Compose. | Os três serviços (API, Web, Crawler) sobem por Docker Compose; janela de indisponibilidade de 3 h registrada na Sprint 6. | Disponibilidade | Atendido |
 
 ---
@@ -142,11 +142,11 @@ A API expõe os endpoints REST reais abaixo, sob a base `/api/v1` (JWT HS256 sta
 ## 7. Restrições e premissas
 
 - Os requisitos foram refinados de forma iterativa ao longo das sprints S1–S9; a antecipação dos filtros avançados (RF13) da S10 para a S9 foi formalizada pela mudança de escopo CR-MF-001 (28/05/2026), solicitada pelo PO do Hub de Milhas, com impacto de +10 h e sem atraso macro, aprovada por Abraão (GP).
-- RF13, RF14 e MF-64 foram promovidos a `main` na **release v0.9.0** (15/06/2026), pela promoção `develop → homolog → main` com tag v0.9.0; estão **Entregues**, como RF01–RF12. Os PRs correspondentes foram concluídos em 15/06/2026 com aprovação de Cézar Velazquez (Tech Lead — Approved, vote 10; conta legada `Mateus Veloso` no Azure DevOps).
-- A padronização de nomenclatura de banco (MF-73, migration `V10__fix_naming_conventions.sql`, incluindo a coluna `route_preferences.is_active` e a complementação dos índices) está no **PR #29 ativo**, ainda não mergeado em `main`.
+- RF13, RF14 e MF-64 foram promovidos a `main` na **release v0.9.0** (15/06/2026), pela promoção `develop → homolog → main` com tag v0.9.0; estão **Entregues**, como RF01–RF12. Os MRs correspondentes foram concluídos em 15/06/2026 com aprovação de Cézar Velazquez (Tech Lead — cezar.velazquez, Approved, vote 10).
+- A padronização de nomenclatura de banco (MF-73, migration `V10__fix_naming_conventions.sql`, incluindo a coluna `route_preferences.is_active` e a complementação dos índices) está no **api !15 ativo**, ainda não mergeado em `main`.
 - A consulta de milhas depende dos portais das companhias (Smiles, Azul, Latam); o redesenho de portal é um risco conhecido (R-01) que ocorreu na Sprint 8 (MF-59) e foi corrigido.
 - O canal de notificação primário é o WhatsApp via Z-API; em caso de indisponibilidade (R-03), há fallback por e-mail.
-- A migração de schema é controlada por Flyway: em `main`, as versões **V1–V5** (users, flight_history, route_preferences, notifications, subscriptions) **+ V9** (`V9__airport_search_index.sql`, índice de busca de aeroportos). Não há V6/V7/V8. A migration V10 está pendente no PR #29.
+- A migração de schema é controlada por Flyway: em `main`, as versões **V1–V5** (users, flight_history, route_preferences, notifications, subscriptions) **+ V9** (`V9__airport_search_index.sql`, índice de busca de aeroportos). Não há V6/V7/V8. A migration V10 está pendente no api !15.
 
 ---
 
@@ -155,14 +155,14 @@ A API expõe os endpoints REST reais abaixo, sob a base `/api/v1` (JWT HS256 sta
 | Envolvido | Papel | Forma de confirmação |
 |---|---|---|
 | Abraão | Gerente de Projeto (gestão) | Aprovação do escopo e da mudança CR-MF-001 (28/05/2026); aprovação das baselines de release |
-| Cézar Velazquez | Tech Lead / Arquiteto / DevOps (revisor de PR) | Revisão e aprovação dos 6 PRs da Sprint 9 (assinatura `Mateus Veloso` — Approved, vote 10, no Jira/Azure DevOps = Cézar) |
+| Cézar Velazquez | Tech Lead / Arquiteto / DevOps (revisor de MR) | Revisão e aprovação dos 6 MRs da Sprint 9 (cezar.velazquez — Approved, vote 10, no GitLab) |
 | Jonathan Alves | QA (teste manual; geração de evidências) | Execução dos casos de teste e validação dos critérios de aceite nas sprints |
 | Carol (Caroline) | GQA independente (auditoria) | Auditorias de GQA S1–S4 (Conforme com ressalva — NC-001) e S5–S8 (Conforme) |
 | PO Hub de Milhas | Product Owner (cliente) | Solicitante da mudança de escopo CR-MF-001; participação nas Sprint Reviews |
 
-> Nota de equivalência: os registros de projeto usam os nomes reais do time atual — GP **Abraão**, Tech Lead/Arquiteto/aprovador de PR **Cézar Velazquez**, QA **Jonathan Alves**, GQA **Carol (Caroline)**, devs **Felipe Santos / Lucas Batista / Henry Oliveira**. Nas evidências legadas do Azure DevOps a aprovação de PR aparece sob a conta `Mateus Veloso` (= Cézar Velazquez); a aprovação do escopo/CR cabe ao GP Abraão.
+> Os registros de projeto usam os nomes reais do time atual — GP **Abraão**, Tech Lead/Arquiteto/aprovador de MR **Cézar Velazquez** (cezar.velazquez no GitLab), QA **Jonathan Alves**, GQA **Carol (Caroline)**, devs **Felipe Santos / Lucas Batista / Henry Oliveira**. A aprovação do escopo/CR cabe ao GP Abraão.
 
-Os requisitos RF01–RF14 foram confirmados pela entrega e verificação nas sprints correspondentes (todos com status Entregue, em `main`); RF13, RF14 e MF-64 foram promovidos a `main` na release v0.9.0 (15/06/2026), com PRs concluídos e aprovados por Cézar Velazquez (conta legada `Mateus Veloso`); RF15 não foi iniciado (planejado para a Sprint 10).
+Os requisitos RF01–RF14 foram confirmados pela entrega e verificação nas sprints correspondentes (todos com status Entregue, em `main`); RF13, RF14 e MF-64 foram promovidos a `main` na release v0.9.0 (15/06/2026), com MRs concluídos e aprovados por Cézar Velazquez (cezar.velazquez no GitLab); RF15 não foi iniciado (planejado para a Sprint 10).
 
 A GQA registrou a NC-001 (cobertura de testes abaixo de 80% — JaCoCo 74% na S2); a ação corretiva (priorização de testes unitários + gate de CI a partir da S4) foi executada e a NC encerrada na Sprint 5 com JaCoCo de 82%.
 
@@ -174,3 +174,4 @@ A GQA registrou a NC-001 (cobertura de testes abaixo de 80% — JaCoCo 74% na S2
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção do aprovador de PR no RNF04 (aprovação do GP → aprovação do Tech Lead), alinhando ao papel de revisor de PR (Cézar Velazquez) descrito nos demais documentos. |
+| 1.2 | 26/06/2026 | Time de Melhoria Contínua | Correção de plataforma: Azure DevOps → GitLab; PR → MR; remoção de alias legado "Mateus Veloso"; MR #29 → api !15; IDs de MR da S9 atualizados para referências GitLab. |

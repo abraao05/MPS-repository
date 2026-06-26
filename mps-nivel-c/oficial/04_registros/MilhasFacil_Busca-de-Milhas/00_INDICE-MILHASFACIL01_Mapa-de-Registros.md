@@ -7,10 +7,10 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.0 |
-| **Data** | 15/06/2026 |
+| **Versão** | 3.0 |
+| **Data** | 26/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza a produção das evidências do projeto; **não é, ele próprio, evidência auditável pela ASR**. |
-| **Fonte consolidada** | Planilha de Gestão `GEST-MILHASFACIL01-001` (fonte da verdade de gestão) + código real dos três repositórios + APIs Azure DevOps/Jira (coleta 15/06/2026) |
+| **Fonte consolidada** | Planilha de Gestão `GEST-MILHASFACIL01-001` (fonte da verdade de gestão) + código real dos três repositórios + APIs GitLab/Jira (coleta 15/06/2026) |
 
 > **Como usar:** este índice mapeia todos os registros MPS a produzir para o projeto MILHASFACIL01, o status de cada um e o processo MPS-SW que evidenciam. Conforme cada artefato for gerado ou atualizado, ajustar a coluna **Status** e registrar no histórico ao final.
 
@@ -19,9 +19,9 @@
 ## 1. Contexto e momento do projeto
 
 - **Início:** 09/02/2026 · **Encerramento previsto:** 26/07/2026.
-- **Status atual (15/06/2026):** **Sprint 9 de 12 em andamento** (01–14/06/2026); projeto **ABERTO**.
-- **Consequência para a documentação:** todo o conjunto de **execução** (Ondas 1 e 2) já pode ser produzido com base no realizado em S1–S9; os artefatos de **encerramento** (Onda 3: Termo de Encerramento, Lições Aprendidas, Ata de Aceite Final) **aguardam o aceite formal** previsto para o fim do projeto (~26/07/2026) e ainda não se aplicam.
-- **Equipe (time atual):** Abraão (GP — gestão, fora do DevOps), Cézar Velazquez (Tech Lead / Arquiteto / DevOps — revisor de PR), Jonathan Alves (QA — teste manual), Carol/Caroline (GQA independente — fora do DevOps), Felipe Santos · Lucas Batista · Henry Oliveira (Devs). **DevOps (Azure) = 5:** Cézar + 3 devs + Jonathan. Mapa de identidade no tooling (contas legadas): aprovação de PR sob `Mateus Veloso` = Cézar; commits de infra sob `Raony Chagas`/`Mateus Sousa` = Cézar; `Felipe Siqueira`/`Henry Komatsu`/`Lucas Batista de Sousa` = os devs. Reatribuição no Jira ✅: **Cézar** (`cezar.hiraki`) → MF-4/6/12/40/52/73; **Abraão** (`abraao.oliveira`) → MF-72; **Jonathan Alves** (`jonathan@timeware.com.br`) → MF-7/20/27/71. **Cézar** é revisor do **PR #29** no Azure (conta própria, Approved/vote 10). **Raony** fora do projeto.
+- **Status atual (26/06/2026):** **Sprint 10 de 12 em andamento** (15–28/06/2026); projeto **ABERTO**.
+- **Consequência para a documentação:** todo o conjunto de **execução** (Ondas 1 e 2) já pode ser produzido com base no realizado em S1–S10; os artefatos de **encerramento** (Onda 3: Termo de Encerramento, Lições Aprendidas, Ata de Aceite Final) **aguardam o aceite formal** previsto para o fim do projeto (~26/07/2026) e ainda não se aplicam.
+- **Equipe (time atual):** Abraão (GP — gestão, fora do DevOps), Cézar Velazquez (Tech Lead / Arquiteto / DevOps — revisor de MR, GitLab: cezar.velazquez), Jonathan Alves (QA — teste manual, GitLab: jonathan.barbosa), Carol/Caroline (GQA independente — fora do DevOps, GitLab: caroline.sousa), Felipe Santos (GitLab: felipe.siqueira) · Lucas Batista (GitLab: lucas.batista) · Henry Oliveira (GitLab: henry.komatsu) (Devs).
 
 ---
 
@@ -85,13 +85,13 @@ Os registros referenciam capturas de tela que devem ser anexadas na subpasta `ev
 | Código | O que capturar | Fonte | Usado em |
 |---|---|---|---|
 | IMG-JIRA-01 | Board 614 e burndown da sprint | Jira | RAC |
-| IMG-DEVOPS-01 | Pull Request com aprovação (vote 10) | Azure DevOps | REV |
-| IMG-DEVOPS-02 | Lista dos 29 Pull Requests (28 concluídos + #29 ativo) | Azure DevOps | GCO |
-| IMG-DEVOPS-03 | Tags/baselines (v0.1.0–v0.9.0) | Azure DevOps | GCO |
-| IMG-CI-01 | Builds/pipelines (execução) | Azure Pipelines | RAC, REL-VV |
-| IMG-CI-02 | Builds #52–#60 succeeded | Azure Pipelines | REL-VV |
-| IMG-CI-03 | Relatório de cobertura JaCoCo | Azure Pipelines | MED |
-| IMG-CI-04 | Estágios do pipeline (Test→Build) | Azure Pipelines | ITP |
+| IMG-GITLAB-01 | Merge Requests com 2 revisores aprovados; api !15 ativo | GitLab | REV |
+| IMG-GITLAB-02 | Lista dos 37 MRs (36 concluídos + api !15 ativo) | GitLab | GCO |
+| IMG-GITLAB-03 | Tags/baselines (v0.1.0–v0.9.0) + branches protegidas | GitLab | GCO |
+| IMG-CI-01 | Pipelines GitLab CI (success) + gate JaCoCo 80% | GitLab CI/CD | RAC, REL-VV |
+| IMG-CI-02 | Pipelines recentes succeeded (S9) | GitLab CI/CD | REL-VV |
+| IMG-CI-03 | Relatório de cobertura JaCoCo | GitLab CI/CD artifacts | MED |
+| IMG-CI-04 | Estágios do pipeline (Test→Build) | GitLab CI/CD | ITP |
 | IMG-SWAGGER-01 | Swagger UI da API | API (springdoc) | PCP |
 | IMG-ARQ-01 | Diagrama de arquitetura da solução (3 serviços) | Design Review / doc de arquitetura | ATA-002 |
 | IMG-QA-01 | Evidência de teste manual — auth (register/login) | QA (homologação) | CTQ |
@@ -106,8 +106,8 @@ Os registros referenciam capturas de tela que devem ser anexadas na subpasta `ev
 ## 4. Observações de classificação
 
 - **Formato:** registros produzidos em Markdown (`.md`); conversão para Word (`.docx`) gerada em paralelo na mesma pasta.
-- **Release v0.9.0 (15/06/2026):** `develop` foi promovido `develop→homolog→main` nos 3 repositórios, com **tag v0.9.0** em `main`. Os filtros avançados (RF13), export CSV (RF14) e airport ILIKE (MF-64) estão **Entregues (released em `main`)**, como os demais RFs. `main` passou a abranger **Flyway V1–V5 + V9 (`airport_search_index`)**; a migration **V10** (padronização de nomenclatura de BD, MF-73) está no **PR #29 ativo**, ainda não mergeada.
-- **Revisão de PR:** registrada em GCO, GQA e REV — os **6 PRs da S9** (#11/#12/#28/#21/#22/#27) estão **concluídos COM revisor** — Tech Lead **Cézar Velazquez** (no Azure sob a conta legada `Mateus Veloso`, Approved/vote 10); os **22 PRs históricos S1–S8** não têm revisor registrado na API (integração retroativa, imutáveis, ressalva); o **PR #29 (MF-73)** está ativo, **aprovado pelo Tech Lead Cézar Velazquez na conta própria dele no Azure DevOps (Approved/vote 10)**, aguardando merge. Em 15/06/2026 foi ativada **branch policy** exigindo ≥1 revisor em `develop` nos 3 repositórios. Jira: MF-64/MF-65/MF-69 = Concluído; **MF-73** criado (padronização de BD). MF-45 corrigido (V7→V4). Intake MF-72 alinhado à fonte da verdade.
+- **Release v0.9.0 (15/06/2026):** `develop` foi promovido `develop→homolog→main` nos 3 repositórios, com **tag v0.9.0** em `main`. Os filtros avançados (RF13), export CSV (RF14) e airport ILIKE (MF-64) estão **Entregues (released em `main`)**. `main` passou a abranger **Flyway V1–V5 + V9 (`airport_search_index`)**; a migration **V10** (padronização de nomenclatura de BD, MF-73) está no **api !15 ativo**, ainda não mergeada.
+- **Revisão de MR (26/06/2026):** todos os **37 MRs** possuem **exatamente 2 revisores aprovados** (verificado via SQL `merge_request_reviewers` — 0 linhas com contagem ≠ 2). Meta "MRs sem revisor = 0" — **Cumprida**. O **api !15 (MF-73)** está ativo, aprovado por cezar.velazquez + lucas.batista, aguardando merge. Proteção de branch (`push=No one`) ativa em `main`/`homolog`/`develop` nos 3 repositórios. Jira: MF-64/MF-65/MF-69 = Concluído; **MF-73** em andamento.
 
 ---
 
@@ -116,3 +116,5 @@ Os registros referenciam capturas de tela que devem ser anexadas na subpasta `ev
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Criação do índice-mestre dos registros do projeto MILHASFACIL01. Ondas 1 e 2 geradas (18 registros .md + planilha GEST existente); Onda 3 (encerramento) marcada como aguardando aceite formal. |
+| 2.0 | 25/06/2026 | Auditoria MPS.BR Nível C | Reconciliação: status S10, plataforma GitLab, remoção de mapa de aliases Azure DevOps. |
+| 3.0 | 26/06/2026 | Time de Melhoria Contínua | Reconciliação final MPS.BR Nível C — remoção de "Mateus Veloso" e aliases legados; contagem 29→37 MRs; api !15 substitui "MR #29"; referências IMG-DEVOPS-* atualizadas para IMG-GITLAB-*; meta "MRs sem revisor=0" confirmada (todos os 37 MRs com 2 revisores via SQL). |

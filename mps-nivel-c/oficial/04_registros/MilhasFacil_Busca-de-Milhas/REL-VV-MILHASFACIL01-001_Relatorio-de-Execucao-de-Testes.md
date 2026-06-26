@@ -61,7 +61,7 @@ Cobertura medida por JaCoCo (API), Karma (Web) e pytest (Crawler). Bugs e não c
 | CT-11 | Filtros avançados maxMiles + cabinType | S9 | Happy | Aprovado |
 | CT-12 | Busca de aeroporto por ILIKE (MF-64) | S9 | Sad | Aprovado |
 
-Os 12 casos estão aprovados. **CT-11** (filtros avançados maxMiles + cabinType, RF13) é coberto pelos testes integrados de `FilteredSearchService` (build verde). **CT-12** (busca de aeroporto por ILIKE, MF-64) é coberto pelo teste de integração do `AirportRepository` (`q=gru` → GRU Guarulhos; build verde). Ambos foram integrados em `develop` na Sprint 9, promovidos para `main` na **release v0.9.0** (15/06/2026) e **validados manualmente pela QA Jonathan Alves** sobre a aplicação em homologação, com evidências geradas à mão. Os PRs associados (#11/#21/#27 para filtros, #12/#22 para CSV e #28 para airport ILIKE) foram concluídos em 15/06/2026 com aprovação do Tech Lead Cézar Velazquez (conta legada Mateus Veloso no Azure DevOps; ver REV-MILHASFACIL01-001 §4).
+Os 12 casos estão aprovados. **CT-11** (filtros avançados maxMiles + cabinType, RF13) é coberto pelos testes integrados de `FilteredSearchService` (build verde). **CT-12** (busca de aeroporto por ILIKE, MF-64) é coberto pelo teste de integração do `AirportRepository` (`q=gru` → GRU Guarulhos; build verde). Ambos foram integrados em `develop` na Sprint 9, promovidos para `main` na **release v0.9.0** (15/06/2026) e **validados manualmente pela QA Jonathan Alves** sobre a aplicação em homologação, com evidências geradas à mão. Os MRs associados (api !13/web !9/crawler !4 para filtros, api !14/web !10 para CSV e api !12 para airport ILIKE) foram concluídos em 15/06/2026 com 2 revisores aprovados por MR (ver REV-MILHASFACIL01-001 §4).
 
 ---
 
@@ -228,8 +228,8 @@ Não há defeitos críticos em aberto. A não conformidade NC-001 (cobertura < 8
 
 | Código | O que capturar | Fonte/URL |
 |---|---|---|
-| IMG-CI-01 | Relatório de cobertura JaCoCo exibido no pipeline da API (gate de 80%) | Azure DevOps — Pipeline "MilhasFacil API - Pipeline" |
-| IMG-CI-02 | Lista de builds #52–#60 concluídos com sucesso nos três pipelines | Azure DevOps — Builds dos pipelines API/Web/Crawler |
+| IMG-CI-01 | Relatório de cobertura JaCoCo exibido no pipeline da API (gate de 80%) | GitLab — Pipeline "MilhasFacil API - Pipeline" |
+| IMG-CI-02 | Lista de builds #52–#60 concluídos com sucesso nos três pipelines | GitLab — Builds dos pipelines API/Web/Crawler |
 
 ---
 

@@ -5,8 +5,8 @@
 | **Documento** | CTQ-MILHASFACIL01-001 |
 | **Projeto** | MilhasFacil — Plataforma de Busca e Alerta de Passagens por Milhas |
 | **Cliente** | Hub de Milhas |
-| **Versão** | 1.1 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 26/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | VV (evidência de projeto — cenários de teste por card) |
 
@@ -19,9 +19,9 @@ Este documento registra, **card a card**, os cenários de teste que evidenciam o
 A estratégia de VV combina dois mecanismos:
 
 - **Validação funcional MANUAL** conduzida pela QA **Jonathan Alves**. O projeto **não utiliza ferramenta de gestão de testes** (não há TestRail/Zephyr/Xray): os cenários são exercitados manualmente nos ambientes de homologação dos três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`) e registrados nos relatórios de QA por sprint. Jonathan Alves gera as evidências de teste e atua no DevOps como QA. A **GQA independente (auditoria)** é responsabilidade da auditora **Carol** (Caroline), que fica fora do DevOps.
-- **Aprovação técnica via Pull Request**. Toda entrega passou por PR com gate de CI (build + testes automatizados — JUnit5/Mockito/AssertJ + Testcontainers na API, Karma na Web, pytest no Crawler; gate de cobertura JaCoCo ≥80% na API a partir da S4). A aprovação técnica do código (revisão de PR) é responsabilidade do **Tech Lead / Arquiteto Cézar Velazquez** (nas evidências legadas do Azure DevOps a aprovação aparece sob a conta **Mateus Veloso** = Cézar). Os **6 PRs da Sprint 9** (API #11, #12, #28; Web #21, #22; Crawler #27) foram concluídos em 15/06/2026 **com aprovação de Cézar Velazquez (conta legada Mateus Veloso) — Approved (vote 10)**.
+- **Aprovação técnica via Merge Request (GitLab)**. Toda entrega passou por MR com gate de CI (build + testes automatizados — JUnit5/Mockito/AssertJ + Testcontainers na API, Karma na Web, pytest no Crawler; gate de cobertura JaCoCo ≥80% na API a partir da S4). A aprovação técnica do código (revisão de MR) é responsabilidade do **Tech Lead / Arquiteto Cézar Velazquez**. Os **6 MRs funcionais S9** (api !13, !14, !12; web !9, !10; crawler !4) foram concluídos em 15/06/2026 **com 2 revisores aprovados**.
 
-> **Nota de equivalência de nomes (planilha/time atual ↔ Jira/Azure DevOps):** Cézar Velazquez = conta legada **Mateus Veloso** (aprovação de PR) / **Raony Chagas** / **Mateus Sousa** (commits de infra/arquitetura) · Felipe Santos = Felipe Siqueira · Lucas Batista = Lucas Batista de Sousa · Henry Oliveira = Henry Komatsu. No texto de gestão usa-se o nome do time atual; em evidência direta de PR cita-se a conta legada do Azure DevOps (Mateus Veloso = Cézar).
+> **Nota de usernames GitLab:** Cézar Velazquez = cezar.velazquez, Felipe Santos = felipe.siqueira, Lucas Batista = lucas.batista, Henry Oliveira = henry.komatsu.
 
 **Tipos de item e forma de evidência:**
 
@@ -87,15 +87,15 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 ### MF-4 — Tarefa — DevOps: Dockerfile multi-stage + docker-compose.yml
 
-- **Verificação:** confirmado build multi-stage da imagem da API e subida do stack via `docker-compose.yml` (API + Postgres) no ambiente de homologação. Responsável Cézar Velazquez (DevOps/TL; nas evidências legadas do Azure os commits de infra aparecem sob a conta Raony Chagas = Cézar); disponibilidade do stack validada pela QA Jonathan Alves.
+- **Verificação:** confirmado build multi-stage da imagem da API e subida do stack via `docker-compose.yml` (API + Postgres) no ambiente de homologação. Responsável Cézar Velazquez (DevOps/TL); disponibilidade do stack validada pela QA Jonathan Alves.
 
 ### MF-5 — Tarefa — Backend: Flyway V1 migration (tabela users + índices)
 
 - **Verificação:** migration `V1` aplicada com sucesso criando a tabela `users` (UUID, e-mail e telefone unique) e índices. Verificado por execução do Flyway no pipeline e inspeção do schema; responsável Lucas Batista.
 
-### MF-6 — Tarefa — CI/CD: Configurar Azure Pipelines (Test > Build > Deploy)
+### MF-6 — Tarefa — CI/CD: Configurar GitLab CI (Test > Build > Deploy)
 
-- **Verificação:** pipeline "MilhasFacil API - Pipeline" (PowerShell@2, agente Default/Windows) configurada com estágios Test > Build > Deploy e triggers em develop/homolog/main. Responsável Cézar Velazquez (DevOps/TL; conta legada Raony Chagas no Azure); primeiras execuções de build registradas no Azure DevOps.
+- **Verificação:** pipeline GitLab CI (Docker runner, runner-vm-docker) configurada com estágios Test > Build > Deploy e triggers em develop/homolog/main. Responsável Cézar Velazquez (DevOps/TL); primeiras execuções de build registradas no GitLab.
 
 ### MF-7 — Tarefa — QA: Sprint 1 testes de sanidade e plano de testes inicial
 
@@ -164,7 +164,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 ### MF-12 — Tarefa — DevOps: Deploy VPS ambiente de homologação (Docker Compose)
 
-- **Verificação:** ambiente de homologação publicado em VPS via Docker Compose. Responsável Cézar Velazquez (DevOps/TL; conta legada Raony Chagas no Azure); disponibilidade confirmada pela QA Jonathan Alves para execução dos cenários.
+- **Verificação:** ambiente de homologação publicado em VPS via Docker Compose. Responsável Cézar Velazquez (DevOps/TL); disponibilidade confirmada pela QA Jonathan Alves para execução dos cenários.
 
 ---
 
@@ -485,7 +485,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 ### MF-40 — Tarefa — DevOps: Spring Actuator /health + healthcheck docker-compose
 
-- **Verificação:** endpoint `/actuator/health` (público) exposto e healthcheck configurado no docker-compose. Responsável Cézar Velazquez (DevOps/TL; conta legada Raony Chagas no Azure); disponibilidade confirmada pela QA Jonathan Alves.
+- **Verificação:** endpoint `/actuator/health` (público) exposto e healthcheck configurado no docker-compose. Responsável Cézar Velazquez (DevOps/TL); disponibilidade confirmada pela QA Jonathan Alves.
 
 ### MF-41 — Tarefa — Testes: SearchController integration tests com Testcontainers
 
@@ -596,7 +596,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 ### MF-52 — Tarefa — DevOps: Docker Compose Redis 7 alpine + variáveis de ambiente
 
-- **Verificação:** serviço Redis 7 alpine adicionado ao docker-compose com variáveis de ambiente. Responsável Cézar Velazquez (DevOps/TL; conta legada Raony Chagas no Azure); conectividade confirmada nos testes de logout.
+- **Verificação:** serviço Redis 7 alpine adicionado ao docker-compose com variáveis de ambiente. Responsável Cézar Velazquez (DevOps/TL); conectividade confirmada nos testes de logout.
 
 ### MF-53 — Tarefa — Backend: JwtAuthenticationFilter valida blacklist antes de autorizar
 
@@ -692,7 +692,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 ## 11. Sprint 9 (01–14/06/2026) — Filtros avançados, CSV e airport ILIKE
 
-> **Nota S9:** os cards entregues nesta sprint foram **released em `main` na tag v0.9.0 (15/06/2026)**. Os **6 PRs da S9** (API #11, #12, #28; Web #21, #22; Crawler #27) foram concluídos **com aprovação de Cézar Velazquez (conta legada Mateus Veloso) — Approved (vote 10)**. Os cards **MF-64, MF-65 e MF-69** foram transicionados para **Concluído**; os demais cards S9 ainda em "Sendo feito"/"To Test"/"CODE REVIEW" no Jira tiveram seu código entregue na release.
+> **Nota S9:** os cards entregues nesta sprint foram **released em `main` na tag v0.9.0 (15/06/2026)**. Os **6 MRs funcionais S9** (api !13, !14, !12; web !9, !10; crawler !4) foram concluídos **com 2 revisores aprovados**. Os cards **MF-64, MF-65 e MF-69** foram transicionados para **Concluído**; os demais cards S9 ainda em "Sendo feito"/"To Test"/"CODE REVIEW" no Jira tiveram seu código entregue na release.
 
 ### MF-62 — História — Backend: SearchRequest v2: @Nullable maxMiles e cabinType · RF13
 
@@ -705,7 +705,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** SearchRequestV2 aceita campos opcionais maxMiles/cabinType sem quebrar a busca padrão.
 - **Resultado:** **Aprovado** (released em main v0.9.0; testes FilteredSearchService integrados; build verde).
-- **Aprovador:** **Cézar Velazquez (conta legada Mateus Veloso) — Approved (PR API #11)**.
+- **Aprovadores:** **cezar.velazquez + lucas.batista — Aprovados (api !13)**.
 
 ### MF-63 — História — Crawler: CABIN_MAP Latam + paginação Azul (next_btn) · RF13
 
@@ -718,7 +718,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** mapeamento de cabine e paginação do crawler operantes.
 - **Resultado:** **Aprovado** (released em main v0.9.0; pytest verde).
-- **Aprovador:** **Cézar Velazquez (conta legada Mateus Veloso) — Approved (PR Crawler #27)**.
+- **Aprovadores:** **cezar.velazquez + lucas.batista — Aprovados (crawler !4)**.
 
 ### MF-64 — Bug — Backend: Airport autocomplete case-insensitive (ILIKE) · MF-64
 
@@ -732,7 +732,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** autocomplete de aeroporto case-insensitive e sem acento; `q=gru` retorna GRU Guarulhos.
 - **Resultado:** **Aprovado** (released em main v0.9.0; teste de integração AirportRepository verde). Card **Concluído** no Jira.
-- **Aprovador:** **Cézar Velazquez (conta legada Mateus Veloso) — Approved (PR API #28)**.
+- **Aprovadores:** **cezar.velazquez + abraao.oliveira — Aprovados (api !12)**.
 
 ### MF-65 — História — Backend/Web/Crawler: Filtros avançados: maxMiles e cabinType [Sprint 9] · RF13
 
@@ -746,7 +746,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** filtros avançados funcionais ponta a ponta (API + Web + Crawler).
 - **Resultado:** **Aprovado** (released em main v0.9.0; build verde). Card **Concluído** no Jira. Vincula CR-MF-001 (antecipação de S10→S9).
-- **Aprovador:** **Cézar Velazquez (conta legada Mateus Veloso) — Approved (PRs API #11 / Web #21 / Crawler #27)**.
+- **Aprovadores:** **cezar.velazquez + lucas.batista — Aprovados (api !13 / web !9 / crawler !4)**.
 
 ### MF-66 — História — Web: SearchComponent v9: campos maxMiles + cabinType no form · RF13
 
@@ -759,7 +759,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** campos de filtro presentes no form e integrados ao endpoint filtrado.
 - **Resultado:** **Aprovado** (released em main v0.9.0; Karma verde).
-- **Aprovador:** **Cézar Velazquez (conta legada Mateus Veloso) — Approved (PR Web #21)**.
+- **Aprovadores:** **cezar.velazquez + abraao.oliveira — Aprovados (web !9)**.
 
 ### MF-67 — Tarefa — Testes: FilteredSearchService unit tests + SearchComponent E2E
 
@@ -781,7 +781,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** export CSV UTF-8 BOM em streaming, com download na UI.
 - **Resultado:** **Aprovado** (released em main v0.9.0; build verde). Card **Concluído** no Jira.
-- **Aprovador:** **Cézar Velazquez (conta legada Mateus Veloso) — Approved (PRs API #12 / Web #22)**.
+- **Aprovadores:** **cezar.velazquez + felipe.siqueira — Aprovados (api !14 / web !10)**.
 
 ### MF-70 — Tarefa — Chore: Atualizar documentação MPS Nível C Sprint 9
 
@@ -797,7 +797,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 ### MF-73 — Tarefa — Chore: Padronização de nomenclatura de BD (índices + is_active) conforme GUIA-GCO-001
 
-- **Verificação:** padronização de nomenclatura de banco (índices + coluna `is_active`) via migration **V10__fix_naming_conventions.sql**. Encontra-se no **PR #29 ATIVO** (aprovado pelo revisor Cézar Velazquez na conta própria dele no Azure — vote 10; status Jira "CODE REVIEW"), ainda não mergeado em main. Verificação de conformidade de configuração (GCO) e responsabilidade DevOps de Cézar Velazquez (card `cezar.hiraki` no Jira); aprovado pelo Cézar, aguardando merge. Não há requisito funcional a validar.
+- **Verificação:** padronização de nomenclatura de banco (índices + coluna `is_active`) via migration **V10__fix_naming_conventions.sql**. Encontra-se no **api !15 ATIVO** (aprovado por 2 revisores no GitLab; status Jira "CODE REVIEW"), ainda não mergeado em main. Verificação de conformidade de configuração (GCO) e responsabilidade DevOps de Cézar Velazquez (card `cezar.hiraki` no Jira); aprovado, aguardando merge. Não há requisito funcional a validar.
 
 ---
 
@@ -812,9 +812,9 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 | Itens de Verificação (Tarefas/Chores) | 25 |
 | Cenários/itens com resultado **Aprovado** | 47 (todos os Gherkin) |
 | Itens de verificação concluídos | 23 |
-| Itens de verificação em andamento (S9: MF-70 doc, MF-73 PR #29 ativo) | 2 |
+| Itens de verificação em andamento (S9: MF-70 doc, MF-73 api !15 ativo) | 2 |
 
-> Todos os cenários funcionais (Histórias e Bugs) estão **Aprovados**, incluindo os entregues na Sprint 9 (released em main v0.9.0). As únicas pendências são itens documentais/configuração da S9 sem requisito funcional (MF-70 documentação em andamento; MF-73 aguardando merge do PR #29).
+> Todos os cenários funcionais (Histórias e Bugs) estão **Aprovados**, incluindo os entregues na Sprint 9 (released em main v0.9.0). As únicas pendências são itens documentais/configuração da S9 sem requisito funcional (MF-70 documentação em andamento; MF-73 aguardando merge do api !15).
 
 ### 12.2 Relação card → CT consolidado
 
@@ -863,3 +863,4 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | MF-72: assignee corrigido para Abraão (`abraao.oliveira`), reatribuição concluída. MF-45: esclarecido como correção de rastreabilidade/numeração da migration de notifications (V7→V4), sem recriação — criação na V4 (Sprint 4, MF-26). |
+| 1.2 | 26/06/2026 | Time de Melhoria Contínua | Reconciliação GitLab: referências a Azure DevOps e PowerShell@2 atualizadas para GitLab e Docker runner (runner-vm-docker); conta legada "Mateus Veloso" removida — nota substituída por usernames GitLab reais; PRs da S9 substituídos por !iids GitLab (api !12/!13/!14, web !9/!10, crawler !4) com 2 revisores aprovados por MR; PR #29 → api !15 ativo; contas "Raony Chagas no Azure" removidas das tarefas de DevOps. |

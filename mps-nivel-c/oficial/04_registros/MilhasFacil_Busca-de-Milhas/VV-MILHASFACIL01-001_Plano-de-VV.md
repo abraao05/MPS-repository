@@ -5,8 +5,8 @@
 | **Documento** | VV-MILHASFACIL01-001 |
 | **Projeto** | MilhasFacil — Plataforma de Busca e Alerta de Passagens por Milhas |
 | **Cliente** | Hub de Milhas |
-| **Versão** | 1.0 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 26/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | VV (evidência de projeto) |
 
@@ -20,7 +20,7 @@ Definir a estratégia e as atividades de Verificação e Validação (V&V) da pl
 
 ## 2. Escopo do plano
 
-Este plano cobre as atividades de V&V aplicadas ao longo dos sprints do projeto, desde os testes unitários durante o desenvolvimento até os testes de integração, a revisão de código por pares (Pull Request), a validação de cobertura no pipeline de CI e os testes de aceitação/exploratórios manuais da QA. O projeto está ABERTO (Sprint 9 de 12, em andamento de 01–14/06/2026); este registro consolida a estratégia e a evidência do ciclo S1–S9, incluindo a release v0.9.0 (15/06/2026), que promoveu RF13, RF14 e MF-64 para `main`.
+Este plano cobre as atividades de V&V aplicadas ao longo dos sprints do projeto, desde os testes unitários durante o desenvolvimento até os testes de integração, a revisão de código por pares (Merge Request), a validação de cobertura no pipeline de CI e os testes de aceitação/exploratórios manuais da QA. O projeto está ABERTO (Sprint 9 de 12, em andamento de 01–14/06/2026); este registro consolida a estratégia e a evidência do ciclo S1–S9, incluindo a release v0.9.0 (15/06/2026), que promoveu RF13, RF14 e MF-64 para `main`.
 
 Componentes no escopo:
 
@@ -40,8 +40,8 @@ Componentes no escopo:
 | 2 | Testes de integração (API) | Time Timeware (Dev + QA) | Spring Boot Test + Testcontainers (PostgreSQL) | Testes unitários passando | Fluxos críticos (auth, busca, segurança) executados sem falha |
 | 3 | Testes unitários (Web) | Time Timeware (Dev + QA) | Karma + Jasmine | Componente/serviço concluído | Cobertura Karma ≥ 80%; specs passando |
 | 4 | Testes unitários (Crawler) | Time Timeware (Dev + QA) | pytest | Parser/endpoint concluído | Cobertura pytest ≥ 80%; testes passando |
-| 5 | Revisão de código (peer review) | Autor + Revisor (Tech Lead) | Azure DevOps Pull Requests | PR aberto com CI verde | PR aprovado pelo Tech Lead (Cézar Velazquez) e gate de CI atendido (ver REV-MILHASFACIL01-001) |
-| 6 | Gate de cobertura no CI | DevOps (Cézar Velazquez — Tech Lead) | Pipeline PowerShell@2 + JaCoCo | Build executado no pipeline | Cobertura ≥ 80% na API; pipeline verde para merge em `develop` |
+| 5 | Revisão de código (peer review) | Autor + Revisor (Tech Lead) | GitLab Merge Requests | MR aberto com CI verde | MR aprovado pelo Tech Lead (Cézar Velazquez) e gate de CI atendido (ver REV-MILHASFACIL01-001) |
+| 6 | Gate de cobertura no CI | DevOps (Cézar Velazquez — Tech Lead) | Pipeline Docker (runner-vm-docker) + JaCoCo | Build executado no pipeline | Cobertura ≥ 80% na API; pipeline verde para merge em `develop` |
 | 7 | Testes de aceitação / exploratórios MANUAIS (validação) | QA — Jonathan Alves | **Execução manual; evidências geradas à mão (capturas de tela e registros). Sem ferramenta de gestão de testes (Xray / Azure Test Plans)** | Funcionalidade integrada no ambiente de homologação | Cenários CT-01–CT-12 validados manualmente; evidências anexadas ao registro de execução (REL-VV-MILHASFACIL01-001) |
 
 > A validação funcional do produto é conduzida **manualmente** pela QA Jonathan Alves, que executa os cenários de teste (CT) na aplicação em homologação e **gera as evidências à mão** (capturas de tela, registros de resultado). O projeto **não utiliza ferramenta de gestão de testes** (Xray / Azure Test Plans); os casos e os resultados são mantidos neste plano e no relatório de execução (REL-VV-MILHASFACIL01-001). A validação manual da QA na release v0.9.0 sustentou a aprovação dos casos CT-11 e CT-12 (filtros avançados e busca de aeroporto por ILIKE).
@@ -54,7 +54,7 @@ Componentes no escopo:
 | Gate de cobertura no CI | Ativo a partir da Sprint 4 | RNF02 |
 | Tempo de resposta da busca | ≤ 30 s (média observada 8,3 s) | RNF01 |
 | Não conformidades em aberto | 0 | Meta de qualidade (GQA) |
-| Pull Requests sem revisor | 0 | RNF04 / política de branch |
+| Merge Requests sem revisor | 0 | RNF04 / política de branch |
 | Velocity por sprint | ≥ 30 SP | Meta de gestão |
 
 ---
@@ -110,15 +110,15 @@ CT-11 é sustentado pelos testes de `FilteredSearchService` (build verde) e CT-1
 | Médio | Funcionalidade secundária com comportamento incorreto | Próximo sprint | Não bloqueia; registrado no backlog |
 | Baixo | Melhorias cosméticas, textos, formatação | A critério | Não bloqueia |
 
-Os defeitos (type Bug no Jira) identificados ao longo do projeto — MF-17, MF-18, MF-28, MF-36, MF-37, MF-38, MF-46, MF-47, MF-56, MF-58, MF-59 — são registrados no Jira (board 614) e triados pelo time. O risco R-01 (redesign de companhias quebra os parsers) materializou-se na Sprint 8 (MF-59) e foi corrigido, com cobertura de regressão garantida por CT-08.
+Os defeitos (type Bug no GitLab) identificados ao longo do projeto — MF-17, MF-18, MF-28, MF-36, MF-37, MF-38, MF-46, MF-47, MF-56, MF-58, MF-59 — são registrados no GitLab (board 614) e triados pelo time. O risco R-01 (redesign de companhias quebra os parsers) materializou-se na Sprint 8 (MF-59) e foi corrigido, com cobertura de regressão garantida por CT-08.
 
 ---
 
 ## 7. Verificação contínua e pipeline de CI
 
-- **Revisão de código:** todo PR para `develop` passa por revisão antes do merge, com aprovação do Tech Lead (Cézar Velazquez) e gate de CI verde. A **branch policy de revisor está ativa em `develop`** nos três repositórios, exigindo ao menos um revisor por PR. O registro da revisão é o próprio Pull Request (ver REV-MILHASFACIL01-001).
-- **Pipeline CI:** a cada push, os pipelines "MilhasFacil API/Web/Crawler - Pipeline" (PowerShell@2, agente Default/Windows; triggers `develop`/`homolog`/`main`) executam build e testes. O pipeline da API inclui **gate JaCoCo de 80%**, ativo a partir da Sprint 4 — o merge no branch principal só é permitido com o gate atendido (CT-10).
-- **Rastreabilidade:** branches seguem o padrão `feat/`/`fix/` + `MF-XX` (RNF04), vinculando cada entrega ao card Jira correspondente.
+- **Revisão de código:** todo MR para `develop` passa por revisão antes do merge, com aprovação do Tech Lead (Cézar Velazquez) e gate de CI verde. A **proteção de branch com revisores obrigatórios está ativa em `develop`** nos três repositórios, exigindo ao menos um revisor por MR. O registro da revisão é o próprio Merge Request (ver REV-MILHASFACIL01-001).
+- **Pipeline CI:** a cada push, os pipelines "MilhasFacil API/Web/Crawler - Pipeline" (GitLab CI/CD, Docker runner-vm-docker; triggers `develop`/`homolog`/`main`) executam build e testes. O pipeline da API inclui **gate JaCoCo de 80%**, ativo a partir da Sprint 4 — o merge no branch principal só é permitido com o gate atendido (CT-10).
+- **Rastreabilidade:** branches seguem o padrão `feat/`/`fix/` + `MF-XX` (RNF04), vinculando cada entrega ao issue GitLab correspondente.
 
 ---
 
@@ -143,7 +143,7 @@ Indicadores reportados ao processo de Medição (MED):
 - Velocity por sprint (meta ≥ 30 SP).
 - Cobertura de testes JaCoCo, Karma e pytest (meta ≥ 80%).
 - Bugs por sprint e não conformidades em aberto (meta NCs = 0).
-- Pull Requests sem revisor (meta = 0).
+- Merge Requests sem revisor (meta = 0).
 
 ---
 
@@ -158,3 +158,4 @@ Os cenários de teste em formato Gherkin (happy path e sad path), derivados do c
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 26/06/2026 | Time de Melhoria Contínua | Correção de referências de CI: PowerShell@2/agente Windows substituído por Docker (runner-vm-docker); Azure Pipelines substituído por GitLab CI/CD. |

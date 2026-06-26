@@ -7,8 +7,8 @@
 | **Código do projeto** | MILHASFACIL01 |
 | **Cliente** | Hub de Milhas |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.1 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 26/06/2026 |
 | **Situação** | Aprovado |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | PCP (evidência de projeto) |
@@ -25,7 +25,7 @@ O MilhasFacil é uma plataforma que busca, em paralelo, passagens aéreas resgat
 | **Web** | Angular 17.3 standalone / Tailwind 3.4 | Interface do usuário: login, registro, busca, histórico e preferências. |
 | **Crawler** | FastAPI 0.111 / SeleniumBase 4.27.4 | Consulta os portais das companhias (Smiles, Azul, Latam) e devolve resultados estruturados à API. |
 
-> **Linha de ramos (15/06/2026 — release v0.9.0):** após a promoção `develop → homolog → main` (tag **v0.9.0**), `main` contém **8 controllers** (Auth, Search, User, RoutePreference, FlightHistory, **Airport**, **CsvExport**) — somados ao serviço **FilteredSearchService** — e migrations **V1–V5 + V9** (`V9__airport_search_index`). A padronização de nomenclatura de banco (MF-73, migration **V10__fix_naming_conventions** com a coluna `route_preferences.is_active` e a complementação de índices) está no **PR #29 ativo**, ainda não mergeado em `main`. Os componentes promovidos na v0.9.0 estão detalhados em §2.3 e §4.
+> **Linha de ramos (15/06/2026 — release v0.9.0):** após a promoção `develop → homolog → main` (tag **v0.9.0**), `main` contém **8 controllers** (Auth, Search, User, RoutePreference, FlightHistory, **Airport**, **CsvExport**) — somados ao serviço **FilteredSearchService** — e migrations **V1–V5 + V9** (`V9__airport_search_index`). A padronização de nomenclatura de banco (MF-73, migration **V10__fix_naming_conventions** com a coluna `route_preferences.is_active` e a complementação de índices) está no **api !15 ativo**, ainda não mergeado em `main`. Os componentes promovidos na v0.9.0 estão detalhados em §2.3 e §4.
 
 ---
 
@@ -87,7 +87,7 @@ O MilhasFacil é uma plataforma que busca, em paralelo, passagens aéreas resgat
 |---|---|---|
 | API | Spring Boot 3.2.5 / Java 21 | Exposição dos endpoints REST sob `/api/v1`; segurança JWT stateless; 8 controllers em `main` |
 | Persistência | PostgreSQL + Spring Data JPA / Hibernate | 5 entidades JPA; coluna `results_json` em `jsonb`; índice de busca de aeroportos (V9) |
-| Migrações | Flyway (V1–V5 + V9 em `main`) | Versionamento do schema; V10 pendente no PR #29 |
+| Migrações | Flyway (V1–V5 + V9 em `main`) | Versionamento do schema; V10 pendente no api !15 |
 | Cache / blacklist | Redis (`RedisTemplate`) | Blacklist de `jti` invalidados (logout), TTL 7 dias |
 | Crawler | FastAPI 0.111 / SeleniumBase 4.27.4 | Coleta nos portais; parsers Smiles/Azul/Latam com BeautifulSoup; `CABIN_MAP` para tipos de cabine |
 | Web | Angular 17.3 standalone / Tailwind 3.4 | SPA com rotas protegidas por `authGuard` |
@@ -107,7 +107,7 @@ A release v0.9.0 (promoção `develop → homolog → main`, tag v0.9.0) integro
 | `search/service/` | `FilteredSearchService` | Busca filtrada via `POST /api/v1/search/filtered` (`SearchRequestV2` com `maxMiles`/`cabinType`), integrando o `CABIN_MAP` dos crawlers (RF13). |
 | Migration | `V9__airport_search_index.sql` | Índice de busca de aeroportos que suporta a consulta `ILIKE`/`unaccent` do pacote `airport`. Não há V6/V7/V8. |
 
-> A padronização de nomenclatura de banco (MF-73) — migration `V10__fix_naming_conventions.sql`, com a coluna `route_preferences.is_active` e a complementação dos índices — está no **PR #29 ativo (aprovado pelo Cézar Velazquez na conta própria, vote 10)**, aguardando merge, e **ainda não integrada a `main`**.
+> A padronização de nomenclatura de banco (MF-73) — migration `V10__fix_naming_conventions.sql`, com a coluna `route_preferences.is_active` e a complementação dos índices — está no **api !15 ativo (aprovado por cezar.velazquez + lucas.batista no GitLab)**, aguardando merge, e **ainda não integrada a `main`**.
 
 ---
 
@@ -136,13 +136,13 @@ A release v0.9.0 (promoção `develop → homolog → main`, tag v0.9.0) integro
 | V5 | `V5__create_subscriptions.sql` | `subscriptions` | `user_id` único; `status` default `TRIAL`; `plan` default `BASIC` |
 | V9 | `V9__airport_search_index.sql` | Índice de busca de aeroportos | Suporta a busca `ILIKE` + `unaccent` do pacote `airport` (MF-64). Não há V6/V7/V8. |
 
-**Pendente no PR #29 (MF-73), ainda não em `main`:**
+**Pendente no api !15 (MF-73), ainda não em `main`:**
 
 | Versão | Arquivo | Objeto | Observações |
 |---|---|---|---|
-| V10 | `V10__fix_naming_conventions.sql` | Padronização de nomenclatura | Renomeia a coluna para `route_preferences.is_active` e completa a nomenclatura dos índices (GUIA-GCO-001). PR #29 ativo, aprovado pelo Cézar (vote 10), aguardando merge. |
+| V10 | `V10__fix_naming_conventions.sql` | Padronização de nomenclatura | Renomeia a coluna para `route_preferences.is_active` e completa a nomenclatura dos índices (GUIA-GCO-001). api !15 ativo, aprovado por cezar.velazquez + lucas.batista, aguardando merge. |
 
-> O schema de `main` abrange V1–V5 + V9. A migration V9 adiciona o índice que viabiliza a busca de aeroportos do pacote `airport`. A V10 (padronização de nomenclatura + `is_active`) está no PR #29 ativo e ainda não foi promovida.
+> O schema de `main` abrange V1–V5 + V9. A migration V9 adiciona o índice que viabiliza a busca de aeroportos do pacote `airport`. A V10 (padronização de nomenclatura + `is_active`) está no api !15 ativo e ainda não foi promovida.
 
 ---
 
@@ -211,7 +211,7 @@ A documentação interativa da API é gerada por springdoc-openapi (anotações 
 
 **Decisão:** o `DELETE /api/v1/route-preferences/{id}` define `active = false` em vez de remover o registro.
 
-**Justificativa:** preserva o histórico de preferências e mantém integridade referencial; a listagem usa `findByUserAndActiveTrue`, exibindo apenas rotas ativas. A padronização de nomenclatura para `is_active` está prevista na migration V10 (MF-73, PR #29 ativo).
+**Justificativa:** preserva o histórico de preferências e mantém integridade referencial; a listagem usa `findByUserAndActiveTrue`, exibindo apenas rotas ativas. A padronização de nomenclatura para `is_active` está prevista na migration V10 (MF-73, api !15 ativo).
 
 ### 5.6 Alertas agendados com dedupe
 
@@ -283,9 +283,7 @@ A camada Web (Angular 17.3 standalone, Tailwind 3.4) oferece as telas das rotas 
 
 A **arquitetura técnica** foi formalmente revisada e aprovada pelo **GP/PO (Abraão)** e pelo **Tech Lead / Arquiteto (Cézar Velazquez)** no **Design Review de 11/02/2026** (registrado em **ATA-MILHASFACIL01-002**). **Não há aprovação de design de UI/UX**, pois o **layout e a identidade visual são fornecidos pelo cliente Hub de Milhas** — a camada web apenas implementa o layout entregue, com validação visual nas Sprint Reviews.
 
-O design da solução foi avaliado e aprovado por **Cézar Velazquez** (Tech Lead / Arquiteto / DevOps), responsável pelas decisões arquiteturais e pela revisão de PR. As decisões de design (§5) e os pacotes promovidos a `main` na release v0.9.0 (`airport`, `export` e `FilteredSearchService` + migration V9) foram aprovados pelo Tech Lead, com evidência registrada no Jira/Azure DevOps (aprovador `Mateus Veloso` — Approved, vote 10, nos 6 PRs concluídos da Sprint 9 = Cézar Velazquez). A antecipação dos filtros avançados (CR-MF-001, 28/05/2026) teve o escopo aprovado pelo **GP Abraão**. A padronização de nomenclatura de banco (MF-73, migration V10) segue em revisão no PR #29 ativo, sob responsabilidade do Tech Lead Cézar Velazquez.
-
-> Nota de equivalência: nos registros de projeto o time atual é GP **Abraão**, Tech Lead/Arquiteto/aprovador de PR **Cézar Velazquez**, QA **Jonathan Alves**, GQA **Carol (Caroline)** e devs **Felipe Santos / Lucas Batista / Henry Oliveira**. Nas evidências legadas do Azure DevOps a aprovação de PR aparece sob a conta `Mateus Veloso` (= Cézar Velazquez), e os commits de infra/arquitetura sob `Raony Chagas`/`Mateus Sousa` (= Cézar).
+O design da solução foi avaliado e aprovado por **cezar.velazquez (Tech Lead)** (Tech Lead / Arquiteto / DevOps), responsável pelas decisões arquiteturais e pela revisão de MR. As decisões de design (§5) e os pacotes promovidos a `main` na release v0.9.0 (`airport`, `export` e `FilteredSearchService` + migration V9) foram aprovados pelo Tech Lead, com evidência registrada no Jira/GitLab (todos os MRs da Sprint 9 com 2 revisores aprovados). A antecipação dos filtros avançados (CR-MF-001, 28/05/2026) teve o escopo aprovado pelo **GP Abraão**. A padronização de nomenclatura de banco (MF-73, migration V10) segue em revisão no api !15 ativo, sob responsabilidade do Tech Lead cezar.velazquez.
 
 ---
 
@@ -295,3 +293,4 @@ O design da solução foi avaliado e aprovado por **Cézar Velazquez** (Tech Lea
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção da PK da migration V1 (`BIGSERIAL` → `UUID`) para consistência com a entidade `User` (UUID id) e o CTQ. |
+| 1.2 | 26/06/2026 | Time de Melhoria Contínua | Atualização da plataforma de Azure DevOps para GitLab; todas as ocorrências de "PR #29" substituídas por "api !15"; "Mateus Veloso" removido — revisores reais são cezar.velazquez (Tech Lead) e lucas.batista; referências a Azure DevOps corrigidas para GitLab. |

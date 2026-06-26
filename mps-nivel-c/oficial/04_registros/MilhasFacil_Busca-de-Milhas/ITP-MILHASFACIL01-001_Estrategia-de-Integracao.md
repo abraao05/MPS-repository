@@ -5,8 +5,8 @@
 | **Documento** | ITP-MILHASFACIL01-001 |
 | **Projeto** | MilhasFacil — Plataforma de Busca e Alerta de Passagens por Milhas |
 | **Cliente** | Hub de Milhas |
-| **Versão** | 1.0 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.1 |
+| **Data** | 26/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | ITP (evidência de projeto) |
 
@@ -14,37 +14,37 @@
 
 ## 1. Objetivo
 
-Descrever a estratégia de integração contínua do produto MilhasFacil: as pipelines de CI/CD por componente, o ambiente de execução conteinerizado, a ordem de integração dos componentes via pull request em `develop`, o ambiente de homologação e os mecanismos de verificação de prontidão (healthcheck/Actuator).
+Descrever a estratégia de integração contínua do produto MilhasFacil: as pipelines de CI/CD por componente, o ambiente de execução conteinerizado, a ordem de integração dos componentes via merge request em `develop`, o ambiente de homologação e os mecanismos de verificação de prontidão (healthcheck/Actuator).
 
 ---
 
 ## 2. Visão geral da integração
 
-O produto é composto por três componentes independentes, cada um em seu repositório no Azure DevOps:
+O produto é composto por três componentes independentes, cada um em seu repositório no GitLab:
 
 - **API (`MilhasFacil_api`)** — Spring Boot 3.2.5 / Java 21, base `/api/v1`, JWT HS256 stateless; orquestra a busca e expõe os endpoints de negócio.
 - **Web (`MilhasFacil_web`)** — Angular 17.3 standalone / Tailwind 3.4; consome a API.
 - **Crawler (`MilhasFacil_crawler`)** — FastAPI 0.111 / SeleniumBase 4.27.4; coleta preços em milhas das companhias (Smiles/Azul/Latam) e é consumido pela API.
 
-A abordagem de integração é **contínua e incremental por componente**: cada funcionalidade é desenvolvida em branch `feat/`-`fix/` + `MF-XX`, integrada em `develop` via pull request com gate de CI, e promovida a `homolog` e `main`. A independência dos três repositórios reduz o acoplamento de deploy e isola falhas (em especial as do crawler, sujeito a redesigns das companhias — risco R-01). Em 15/06/2026 a release v0.9.0 foi promovida `develop` → `homolog` → `main` nos três repositórios, com tag `v0.9.0` (released).
+A abordagem de integração é **contínua e incremental por componente**: cada funcionalidade é desenvolvida em branch `feat/`-`fix/` + `MF-XX`, integrada em `develop` via merge request com gate de CI, e promovida a `homolog` e `main`. A independência dos três repositórios reduz o acoplamento de deploy e isola falhas (em especial as do crawler, sujeito a redesigns das companhias — risco R-01). Em 15/06/2026 a release v0.9.0 foi promovida `develop` → `homolog` → `main` nos três repositórios, com tag `v0.9.0` (released).
 
 ---
 
 ## 3. Pipelines de integração contínua
 
-A operação de DevOps/Infra do projeto — pipelines de CI/CD, ambiente Docker e branch policy — é responsabilidade do Tech Lead / Arquiteto / DevOps **Cézar Velazquez**. São três pipelines no Azure DevOps, uma por componente, todas baseadas na tarefa **PowerShell@2** sobre agente Default/Windows (risco R-05 — pipeline CI em agente Windows). Os gatilhos cobrem `develop`, `homolog` e `main`.
+A operação de DevOps/Infra do projeto — pipelines de CI/CD, ambiente Docker e política de branches protegidas — é responsabilidade do Tech Lead / Arquiteto / DevOps **Cézar Velazquez**. São três pipelines no GitLab, uma por componente, todas baseadas em **Docker** sobre o runner **runner-vm-docker** (risco R-05 — pipeline CI). Os gatilhos cobrem `develop`, `homolog` e `main`.
 
-| Pipeline | Componente | Tarefa | Agente | Gatilhos | Gate específico |
+| Pipeline | Componente | Executor | Runner | Gatilhos | Gate específico |
 |---|---|---|---|---|---|
-| MilhasFacil API - Pipeline | `MilhasFacil_api` | PowerShell@2 | Default/Windows | develop / homolog / main | Gate de cobertura JaCoCo 80% (a partir da S4) |
-| MilhasFacil Web - Pipeline | `MilhasFacil_web` | PowerShell@2 | Default/Windows | develop / homolog / main | Build e testes Karma |
-| MilhasFacil Crawler - Pipeline | `MilhasFacil_crawler` | PowerShell@2 | Default/Windows | develop / homolog / main | Build e testes pytest |
+| MilhasFacil_api CI | `MilhasFacil_api` | Docker | runner-vm-docker | develop / homolog / main | Gate de cobertura JaCoCo 80% (a partir da S4) |
+| MilhasFacil_web CI | `MilhasFacil_web` | Docker | runner-vm-docker | develop / homolog / main | Build e testes Karma |
+| MilhasFacil_crawler CI | `MilhasFacil_crawler` | Docker | runner-vm-docker | develop / homolog / main | Build e testes pytest |
 
-Os builds reais registrados (#41–#60) concluíram quase todos com status `succeeded`; o build #42 foi `canceled`. As datas reais de build concentram-se em 13–15/06/2026 (histórico inicializado retroativamente).
+As pipelines GitLab CI concluíram quase todas com status `success`; uma pipeline foi cancelada. As datas reais de execução concentram-se em 13–15/06/2026 (histórico inicializado retroativamente).
 
 ![IMG-CI-04 — estágios da pipeline de integração](evidencias/IMG-CI-04_pipeline-stages.png)
 
-*Figura — Estágios das pipelines de CI (PowerShell@2, agente Default/Windows) com o gate JaCoCo 80% no pipeline da API.*
+*Figura — Estágios das pipelines GitLab CI (Docker, runner-vm-docker) com o gate JaCoCo 80% no pipeline da API.*
 
 ---
 
@@ -54,7 +54,7 @@ O ambiente de execução do produto é definido por **Docker Compose** (RNF05 �
 
 | Serviço | Imagem / Tecnologia | Função |
 |---|---|---|
-| postgres | PostgreSQL | Persistência relacional (migrations Flyway `V1`–`V5` + `V9` em `main` após a release v0.9.0; `V10` no PR #29 ativo) |
+| postgres | PostgreSQL | Persistência relacional (migrations Flyway `V1`–`V5` + `V9` em `main` após a release v0.9.0; `V10` no api !15 ativo) |
 | redis | Redis | Blacklist de tokens (`token:invalidated:`) e suporte ao logout seguro |
 | api | Spring Boot 3.2.5 / Java 21 | API REST base `/api/v1` |
 | web | Angular 17.3 / Tailwind 3.4 | Aplicação Web |
@@ -66,9 +66,9 @@ O ambiente de execução do produto é definido por **Docker Compose** (RNF05 �
 
 ## 5. Ordem de integração dos componentes em `develop`
 
-A integração ocorre por pull request em `develop`, na ordem das funcionalidades planejadas por sprint. Cada branch de trabalho é nomeada com o identificador `MF-XX` da issue correspondente (RNF04).
+A integração ocorre por merge request em `develop`, na ordem das funcionalidades planejadas por sprint. Cada branch de trabalho é nomeada com o identificador `MF-XX` da issue correspondente (RNF04).
 
-| Ordem | Sprint(s) | Componente / funcionalidade | Branch de origem | PR | Critério de prontidão |
+| Ordem | Sprint(s) | Componente / funcionalidade | Branch de origem | MR | Critério de prontidão |
 |---|---|---|---|---|---|
 | 1 | S1 | Cadastro BCrypt (RF01) | feat/MF-2-auth-register | API #1 / Web #13 | Build verde; cadastro com senha BCrypt |
 | 2 | S1 | Login JWT access+refresh (RF02) | feat/MF-3-auth-login | API #2 | Emissão de access + refresh token |
@@ -85,7 +85,7 @@ A integração ocorre por pull request em `develop`, na ordem das funcionalidade
 | 13 | S9 | Export CSV UTF-8 BOM (RF14) | feat/MF-69-csv-export / feat/MF-69-csv-ui | API #12 / Web #22 | Entregue (released v0.9.0) — promovido a `main` (build verde) |
 | 14 | S9 | Airport ILIKE (MF-64) | feat/MF-64-airport-ilike | API #28 | Entregue (released v0.9.0) — promovido a `main` (CT-12 Aprovado; build verde) |
 
-> Os 6 PRs da S9 (#11/#12/#28/#21/#22/#27) foram concluídos com aprovação técnica do Tech Lead Cézar Velazquez (conta legada `Mateus Veloso` — Approved, vote 10) e mergeados em `develop`; a release v0.9.0 foi então promovida `develop` → `homolog` → `main` nos três repositórios (tag `v0.9.0`, 15/06/2026), incluindo a migration `V9__airport_search_index.sql`. RF13/RF14/MF-64 estão **Entregues (released em `main`)**. O **PR #29 (MF-73)** — padronização de nomenclatura de BD, migration `V10__fix_naming_conventions.sql` — permanece **ativo, aprovado pelo Cézar Velazquez (conta própria no Azure, vote 10)**, aguardando merge. Os 22 PRs históricos S1–S8 foram integrados sem revisor registrado (ressalva imutável). Detalhamento em GCO-MILHASFACIL01-001.
+> Os 6 MRs da S9 (api !13 / api !14 / api !12 / web !9 / web !10 / crawler !4) foram concluídos com aprovação técnica do Tech Lead Cézar Velazquez (cezar.velazquez — Approved, vote 10) e mergeados em `develop`; a release v0.9.0 foi então promovida `develop` → `homolog` → `main` nos três repositórios (tag `v0.9.0`, 15/06/2026), incluindo a migration `V9__airport_search_index.sql`. RF13/RF14/MF-64 estão **Entregues (released em `main`)**. O **api !15 (MF-73)** — padronização de nomenclatura de BD, migration `V10__fix_naming_conventions.sql` — permanece **ativo, aprovado pelo Cézar Velazquez (cezar.velazquez, vote 10)**, aguardando merge. Os 22 MRs históricos S1–S8 foram integrados sem revisor registrado (ressalva imutável). Detalhamento em GCO-MILHASFACIL01-001.
 
 ---
 
@@ -109,8 +109,8 @@ A ordem de subida no Docker Compose respeita as dependências: `postgres` e `red
 |---|---|
 | **Branch de homologação** | `homolog` (promovida a partir de `develop`) |
 | **Composição** | Mesmo Docker Compose (Postgres + Redis + API + Web + Crawler) |
-| **Migrations** | Flyway `V1`–`V5` + `V9__airport_search_index.sql` em `main` (users, flight_history, route_preferences, notifications, subscriptions, índice de busca de aeroportos) após a release v0.9.0; `V10__fix_naming_conventions.sql` (MF-73) no PR #29 ativo |
-| **Gate de promoção** | Pipelines verdes (PowerShell@2); gate JaCoCo 80% na API; aprovação técnica do Tech Lead Cézar Velazquez no PR |
+| **Migrations** | Flyway `V1`–`V5` + `V9__airport_search_index.sql` em `main` (users, flight_history, route_preferences, notifications, subscriptions, índice de busca de aeroportos) após a release v0.9.0; `V10__fix_naming_conventions.sql` (MF-73) no api !15 ativo |
+| **Gate de promoção** | Pipelines GitLab CI verdes (Docker, runner-vm-docker); gate JaCoCo 80% na API; aprovação técnica do Tech Lead Cézar Velazquez no MR |
 | **Verificação de prontidão** | `/actuator/health` (API) e `GET /health` (Crawler) respondendo com sucesso |
 | **Disponibilidade** | Docker Compose (RNF05); downtime de 3 h registrado na S6 |
 
@@ -120,7 +120,7 @@ A ordem de subida no Docker Compose respeita as dependências: `postgres` e `red
 
 | Código | O que capturar | Fonte/URL |
 |---|---|---|
-| IMG-CI-04 | Estágios das pipelines de CI (PowerShell@2, agente Default/Windows) com o gate JaCoCo 80% no pipeline da API e builds #41–#60 | Azure DevOps — Pipelines (MilhasFacil API/Web/Crawler - Pipeline) |
+| IMG-CI-04 | Estágios das pipelines GitLab CI (Docker, runner-vm-docker) com o gate JaCoCo 80% no pipeline da API | GitLab — Pipelines (MilhasFacil_api CI / MilhasFacil_web CI / MilhasFacil_crawler CI) |
 
 ---
 
@@ -129,3 +129,4 @@ A ordem de subida no Docker Compose respeita as dependências: `postgres` e `red
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
+| 1.1 | 26/06/2026 | Time de Melhoria Contínua | Correção da plataforma CI: PowerShell@2/agente Windows → Docker/runner-vm-docker; nomes das pipelines → MilhasFacil_api/web/crawler CI; referências de MR atualizadas (MR #29 → api !15; PRs S9 → IDs GitLab). |

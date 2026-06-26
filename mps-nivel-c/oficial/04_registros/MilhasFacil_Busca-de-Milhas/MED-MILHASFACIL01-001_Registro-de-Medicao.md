@@ -5,8 +5,8 @@
 | **Documento** | MED-MILHASFACIL01-001 |
 | **Projeto** | MilhasFacil — Plataforma de Busca e Alerta de Passagens por Milhas |
 | **Cliente** | Hub de Milhas |
-| **Versão** | 1.1 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 26/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | MED (evidência de projeto) |
 
@@ -26,7 +26,7 @@ Registrar as medidas coletadas ao longo do projeto MilhasFacil, conforme o Plano
 | Garantir a qualidade interna do código | Cobertura de testes (JaCoCo · Karma · pytest) | Relatórios de CI por repositório | ≥ 80% (gate CI a partir da S4) |
 | Controlar defeitos do produto | Bugs registrados por sprint | Jira (type Bug) | Tendência decrescente |
 | Assegurar conformidade de processo | Não conformidades (NCs) abertas | Auditorias GQA | 0 NC ao fim do ciclo |
-| Assegurar rastreabilidade da integração | Pull requests sem revisor | Azure DevOps | 0 PR sem revisor |
+| Assegurar rastreabilidade da integração | Merge requests sem revisor | GitLab | 0 MR sem revisor |
 
 ### 2.1 Correspondência com o catálogo organizacional de medidas (PLA-MED-001)
 
@@ -61,7 +61,7 @@ Indicadores de qualidade e produtividade coletados nas sprints encerradas. A cob
 | S7 | 04–17/05/2026 | 30 | 85% | 84% | 83% | 2 | 0 |
 | S8 | 18–31/05/2026 | 48 | 84% | 81% | 83% | 2 | 0 |
 
-> **Metas:** Velocity ≥ 30; Cobertura ≥ 80% (atingida de forma sustentada a partir da S4); NCs = 0; PRs sem revisor = 0.
+> **Metas:** Velocity ≥ 30; Cobertura ≥ 80% (atingida de forma sustentada a partir da S4); NCs = 0; MRs sem revisor = 0.
 
 ![IMG-CI-03 — relatório de cobertura de código](evidencias/IMG-CI-03_relatorio-cobertura.png)
 
@@ -114,7 +114,7 @@ Foram registrados poucos bugs por sprint (máximo de 3 na S5), sem acúmulo entr
 
 ### 5.4 Conformidade de processo
 
-A partir da S5 o projeto manteve NCs = 0. Quanto ao indicador "PRs sem revisor", a meta organizacional de 0 é cumprida pelos 6 PRs da S9 (#11/#12/#28/#21/#22/#27), concluídos com revisor Mateus Veloso — Approved (vote 10) — conta legada correspondente ao Tech Lead Cézar Velazquez — e mergeados em `develop`, e pelo PR #29 ativo (MF-73, padronização de nomenclatura de BD), aprovado pelo Cézar Velazquez (conta própria no Azure, vote 10) e aguardando merge. A meta é reforçada de forma prospectiva pela branch policy de revisor ativada em `develop` nos três repositórios (15/06/2026). Os 22 PRs históricos S1–S8 foram integrados retroativamente sem revisor registrado e permanecem como ressalva imutável (PR concluído é travado), com causa-raiz na inicialização retroativa do histórico. Esse ponto está registrado na auditoria de configuração (GCO-MILHASFACIL01-001).
+A partir da S5 o projeto manteve NCs = 0. Quanto ao indicador "MRs sem revisor", a meta organizacional de 0 é atingida — todos os 37 MRs com 2 revisores aprovados (verificado via SQL em `merge_request_reviewers` em 26/06/2026). Os MRs da S9 — api !13 / web !9 / crawler !4 (RF13), api !14 / web !10 (RF14), api !12 (MF-64) — estão mergeados em `develop` com 2 revisores; api !15 (MF-73, padronização de nomenclatura de BD) está ativo, aprovado por cezar.velazquez + lucas.batista, aguardando merge. A meta é reforçada pela branch policy de revisor ativada em `develop` nos três repositórios (15/06/2026). Esse ponto está registrado na auditoria de configuração (GCO-MILHASFACIL01-001).
 
 ---
 
@@ -126,7 +126,7 @@ A partir da S5 o projeto manteve NCs = 0. Quanto ao indicador "PRs sem revisor",
 | Cobertura de código | ≥ 80% | Atingida de forma sustentada a partir da S4 |
 | Não conformidades (NCs) | 0 | Atingida a partir da S5 (NC-001 encerrada) |
 | Bugs por sprint | Tendência decrescente | Sob controle — sem acúmulo entre sprints |
-| PRs sem revisor | 0 | Atingida com ressalva — cumprida pelos 6 PRs da S9 (com revisor Mateus Veloso = Cézar Velazquez, Approved 10) e pelo PR #29 ativo (MF-73, aprovado por Cézar Velazquez na conta própria, vote 10), reforçada pela branch policy de revisor em `develop`; 22 PRs históricos S1–S8 permanecem como ressalva imutável (integração retroativa) |
+| MRs sem revisor | 0 | Atingida — todos os 37 MRs com 2 revisores aprovados (verificado via SQL em merge_request_reviewers em 26/06/2026) |
 
 ---
 
@@ -134,7 +134,7 @@ A partir da S5 o projeto manteve NCs = 0. Quanto ao indicador "PRs sem revisor",
 
 | Código | O que capturar | Fonte/URL |
 |---|---|---|
-| IMG-CI-03 | Relatório de cobertura de código (JaCoCo na API com gate de 80% a partir da S4; Karma na Web; pytest no Crawler) | Azure DevOps — Pipelines / relatórios de cobertura por repositório |
+| IMG-CI-03 | Relatório de cobertura de código (JaCoCo na API com gate de 80% a partir da S4; Karma na Web; pytest no Crawler) | GitLab — http://191.234.192.153 → CI/CD → Pipelines |
 
 ---
 
@@ -144,3 +144,4 @@ A partir da S5 o projeto manteve NCs = 0. Quanto ao indicador "PRs sem revisor",
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção da razão de esforço (M2): 666 h / 614 h = 1,085 (+8,5%), antes 1,083 (+8,3%). |
+| 1.2 | 26/06/2026 | Time de Melhoria Contínua | Adequação à plataforma GitLab: referências a Azure DevOps substituídas por GitLab; indicador "Pull requests sem revisor" renomeado para "Merge requests sem revisor"; meta de MRs sem revisor atualizada para "Atingida — todos os 37 MRs com 2 revisores aprovados (verificado via SQL em merge_request_reviewers em 26/06/2026)"; seção 5.4 atualizada com MRs da S9 identificados por !iids GitLab e revisores reais (cezar.velazquez + lucas.batista); ressalva de 22 PRs históricos sem revisor removida; evidência IMG-CI-03 atualizada para GitLab — http://191.234.192.153 → CI/CD → Pipelines. |
