@@ -143,5 +143,5 @@ Tags geradas ao longo do ciclo de vida do projeto, evidenciando GCO3 (baselines 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída consolidando o controle de configuração exercido durante o projeto |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Adição de §8 com evidências visuais de tags de baseline e branches do Azure DevOps |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituída consolidando o controle de configuração exercido durante o projeto |
+| 1.1 | 15/06/2026 | Abraão Oliveira | Adição de §8 com evidências visuais de tags de baseline e branches do Azure DevOps |

@@ -104,4 +104,4 @@ Desenvolver o novo sistema de Cadastro de Clientes da Rede D1000, substituindo a
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em e-mails e transcrições Fireflies do período 03/2025–01/2026 |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituída com base em e-mails e transcrições Fireflies do período 03/2025–01/2026 |

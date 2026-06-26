@@ -125,6 +125,6 @@ As lições aprendidas e oportunidades de melhoria deste projeto foram encaminha
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em retrospectivas, dailys e transcrições Fireflies do período 04/2025–01/2026 |
-| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna "Origem" na tabela §4, rastreando cada OM à retrospectiva e/ou auditoria GQA que a gerou (CP-vi) |
-| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Adição em §5 do registro de publicação das lições aprendidas no Confluence e Google Drive (conformidade com GPC 12 — PRO-GPC-001 v2.3) |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituída com base em retrospectivas, dailys e transcrições Fireflies do período 04/2025–01/2026 |
+| 1.1 | 11/06/2026 | Abraão Oliveira | Acréscimo da coluna "Origem" na tabela §4, rastreando cada OM à retrospectiva e/ou auditoria GQA que a gerou (CP-vi) |
+| 1.2 | 11/06/2026 | Abraão Oliveira | Adição em §5 do registro de publicação das lições aprendidas no Confluence e Google Drive (conformidade com GPC 12 — PRO-GPC-001 v2.3) |

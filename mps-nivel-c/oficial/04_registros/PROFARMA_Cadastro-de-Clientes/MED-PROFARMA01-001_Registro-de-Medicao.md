@@ -152,6 +152,6 @@ Conforme PLA-MED-001 §7, os resultados de medição foram comunicados:
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — registro de medição consolidado do projeto Cadastro de Clientes — Rede D1000 |
-| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo das métricas de Story Points na §2.2 (573 SP plan / 564 SP real / −1,6%; velocity ~30 SP/sprint) para consistência com a planilha de gestão do projeto |
-| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Adição de §6 Ações Corretivas e §7 Comunicação dos Resultados (evidência de MED 5 e MED 6) |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — registro de medição consolidado do projeto Cadastro de Clientes — Rede D1000 |
+| 1.1 | 10/06/2026 | Abraão Oliveira | Acréscimo das métricas de Story Points na §2.2 (573 SP plan / 564 SP real / −1,6%; velocity ~30 SP/sprint) para consistência com a planilha de gestão do projeto |
+| 1.2 | 11/06/2026 | Abraão Oliveira | Adição de §6 Ações Corretivas e §7 Comunicação dos Resultados (evidência de MED 5 e MED 6) |

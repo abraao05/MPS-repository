@@ -111,4 +111,4 @@ Todos os 10 critérios de saída foram verificados e atendidos.
 
 | Versão | Data       | Autor                        | Descrição                          |
 |--------|------------|------------------------------|------------------------------------|
-| 1.0    | 05/06/2026 | Time de Melhoria Contínua    | Versão inicial — registro oficial  |
+| 1.0    | 05/06/2026 | Abraão Oliveira    | Versão inicial — registro oficial  |

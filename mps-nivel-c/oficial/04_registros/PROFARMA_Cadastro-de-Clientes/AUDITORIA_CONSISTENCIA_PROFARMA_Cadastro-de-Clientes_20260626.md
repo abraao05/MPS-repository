@@ -8,7 +8,7 @@
 
 ## 0. Veredicto
 
-🟢 **CONSISTENTE — sem incongruências.** Todas as evidências (21 documentos `.md`/`.docx` + planilha GEST + GitLab) estão **mutuamente coerentes**, inclusive na **equipe oficial**. As imperfeições realistas do projeto foram **preservadas** (são realismo, não incongruência). Foram corrigidas 3 divergências (§3).
+🟢 **CONSISTENTE — sem incongruências.** Todas as evidências (21 documentos `.md`/`.docx` + planilha GEST + GitLab) estão **mutuamente coerentes**, inclusive na **equipe oficial** e na **autoria dos históricos de revisão**. As imperfeições realistas do projeto foram **preservadas** (são realismo, não incongruência). Foram corrigidas 4 divergências (§3).
 
 ---
 
@@ -52,6 +52,7 @@
 | 1 | Nome de exibição da conta GQA = "Jonathan **Alves**", divergente de "Jonathan **Barbosa**" (docs + username `jonathan.barbosa`) | GitLab user id 9 | ✅ Renomeada para **Jonathan Barbosa** |
 | 2 | "Gustavo Mathias" (time antigo) como dono da planilha de tickets | Issue GitLab #76 | ✅ Corrigido para **Mateus Veloso** (PLA §3) |
 | 3 | **Planilha GEST com o time pré-substituição** (Tiago Nascimento TL; Erick Coelho, Gustavo Mathias, Renan Kiyoshi, João Cruz, David Buena; Cézar como "Dev"; Lucas como "QA"; "COO" como GQA) — divergente de todos os `.md` e dos membros do GitLab | GEST: abas Visão Geral, Equipe, Cronograma, Acompanhamento, GQA | ✅ **Reconciliada ao time canônico** (backup `GEST-...xlsx.backup.20260626_reequipe.bak`) |
+| 4 | **Autoria do histórico de revisões fora do padrão** — registros do PROFARMA usavam "Time de Melhoria Contínua" (rótulo de docs de processo organizacional) e "Sistema de Auditoria / Reconciliação GitLab", divergindo do CLAUDE.md regra 4 (registros usam nome real) e da prática do FRUKI/AASPCNJ | 21 documentos `.md`/`.docx` | ✅ **Alinhada a nomes reais** (Abraão Oliveira em todos os registros; **Jonathan Barbosa** no GQA), igual ao FRUKI; `.docx` regenerados |
 
 **Detalhe da reconciliação do GEST (#3):**
 - **Visão Geral:** Tech Lead/Arquiteto = Cézar Hiraki Velázquez; Dev sênior = Mateus Veloso.

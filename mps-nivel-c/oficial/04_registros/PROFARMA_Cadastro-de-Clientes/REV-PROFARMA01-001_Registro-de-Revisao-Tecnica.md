@@ -137,5 +137,5 @@ Autora: Julielle Pereira de Sa Santos | Branch: Segmentacao_Clientes → develop
 
 | Versão | Data       | Autor                        | Descrição                          |
 |--------|------------|------------------------------|------------------------------------|
-| 1.0    | 05/06/2026 | Time de Melhoria Contínua    | Versão inicial — registro oficial  |
-| 1.1    | 15/06/2026 | Time de Melhoria Contínua    | Adição de §5 REV-004 com evidências de code review via Pull Request (PR 3, PR 4) e histórico de commits Azure DevOps |
+| 1.0    | 05/06/2026 | Abraão Oliveira    | Versão inicial — registro oficial  |
+| 1.1    | 15/06/2026 | Abraão Oliveira    | Adição de §5 REV-004 com evidências de code review via Pull Request (PR 3, PR 4) e histórico de commits Azure DevOps |

@@ -222,4 +222,4 @@ Sequência de liberação final (janeiro/2026):
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base nos status reports de 08/10, 14/10 e 17/10/2025, documentação da integração Propz (04/12/2025) e e-mails de liberação para testes (jan/2026) |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituída com base nos status reports de 08/10, 14/10 e 17/10/2025, documentação da integração Propz (04/12/2025) e e-mails de liberação para testes (jan/2026) |

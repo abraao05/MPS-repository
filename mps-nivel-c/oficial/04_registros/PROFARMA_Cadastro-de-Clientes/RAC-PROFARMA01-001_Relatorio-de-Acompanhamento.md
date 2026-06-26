@@ -304,4 +304,4 @@ Não aplicável — fase concluída sem desvios. O projeto foi encerrado em 29/0
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — consolidação dos snapshots de acompanhamento de todas as 6 fases do projeto |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — consolidação dos snapshots de acompanhamento de todas as 6 fases do projeto |

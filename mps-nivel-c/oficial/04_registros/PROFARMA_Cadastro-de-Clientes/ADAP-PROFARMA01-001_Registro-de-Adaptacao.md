@@ -70,5 +70,5 @@ Registrar as adaptações aplicadas ao processo-padrão de desenvolvimento Timew
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base nas reuniões de planejamento e dailys do período 04/2025–01/2026 |
-| 1.1 | 13/06/2026 | Time de Melhoria Contínua | Adicionada a seção 5 (Processos não aplicáveis), registrando explicitamente a não aplicabilidade do processo de Aquisição (AQU), conforme PRO-AQU-001 §2 |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituída com base nas reuniões de planejamento e dailys do período 04/2025–01/2026 |
+| 1.1 | 13/06/2026 | Abraão Oliveira | Adicionada a seção 5 (Processos não aplicáveis), registrando explicitamente a não aplicabilidade do processo de Aquisição (AQU), conforme PRO-AQU-001 §2 |

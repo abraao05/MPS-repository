@@ -200,8 +200,8 @@ A GQA-P01 registrou NC-01 (requisitos documentados retroativamente para os Sprin
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 28/04/2025 | Time de Melhoria Contínua | Versão inicial — requisitos RF-01 a RF-10, RNF-01 a RNF-08 |
-| 1.1 | 15/08/2025 | Time de Melhoria Contínua | Adição de RF-15, RF-16 (BlueSoft e CloseUp), RF-17 (worker expurgo LGPD), RNF-09 a RNF-14 |
-| 1.2 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — reconstituída com base nas entregas, change requests e transcrições do período 04/2025–01/2026 |
-| 1.3 | 05/06/2026 | Time de Melhoria Contínua | Adição da seção §8 (Confirmação de entendimento dos requisitos) para conformidade com MPS-SW REQ |
-| 1.4 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna SP Est. nas tabelas de RF (RF-01 a RF-19, total 294 SP) para consistência com a planilha de gestão do projeto |
+| 1.0 | 28/04/2025 | Abraão Oliveira | Versão inicial — requisitos RF-01 a RF-10, RNF-01 a RNF-08 |
+| 1.1 | 15/08/2025 | Abraão Oliveira | Adição de RF-15, RF-16 (BlueSoft e CloseUp), RF-17 (worker expurgo LGPD), RNF-09 a RNF-14 |
+| 1.2 | 05/06/2026 | Abraão Oliveira | Versão de encerramento — reconstituída com base nas entregas, change requests e transcrições do período 04/2025–01/2026 |
+| 1.3 | 05/06/2026 | Abraão Oliveira | Adição da seção §8 (Confirmação de entendimento dos requisitos) para conformidade com MPS-SW REQ |
+| 1.4 | 10/06/2026 | Abraão Oliveira | Acréscimo da coluna SP Est. nas tabelas de RF (RF-01 a RF-19, total 294 SP) para consistência com a planilha de gestão do projeto |

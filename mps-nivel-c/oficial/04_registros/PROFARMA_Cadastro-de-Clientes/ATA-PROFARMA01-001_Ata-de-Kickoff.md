@@ -132,4 +132,4 @@ Ficou acordado que o time Timeware não teria acesso direto ao banco de dados de
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em transcrições Fireflies e registros do período 04/2025 |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituída com base em transcrições Fireflies e registros do período 04/2025 |

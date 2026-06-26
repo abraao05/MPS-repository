@@ -163,5 +163,5 @@ O pipeline Azure DevOps executa a cada push no branch `develop` e a cada PR.
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída consolidando a estratégia e registros de integração do projeto |
-| 1.1 | 15/06/2026 | Time de Melhoria Contínua | Adição de §7.1.1 com evidências visuais do pipeline CI/CD (Azure DevOps): histórico de runs e stages |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituída consolidando a estratégia e registros de integração do projeto |
+| 1.1 | 15/06/2026 | Abraão Oliveira | Adição de §7.1.1 com evidências visuais do pipeline CI/CD (Azure DevOps): histórico de runs e stages |

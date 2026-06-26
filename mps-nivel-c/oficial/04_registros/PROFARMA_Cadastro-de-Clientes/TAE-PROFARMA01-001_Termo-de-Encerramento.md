@@ -141,4 +141,4 @@ Com a emissão deste termo:
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base nos registros do projeto e aceite de 29/01/2026 |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituída com base nos registros do projeto e aceite de 29/01/2026 |

@@ -75,4 +75,4 @@ Os demais CRs (CR-03, CR-04, CR-06, CR-08, CR-09, CR-10, CR-11, CR-12) foram abs
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituído com base no RAC-PROFARMA01-001 e TAE-PROFARMA01-001 |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituído com base no RAC-PROFARMA01-001 e TAE-PROFARMA01-001 |

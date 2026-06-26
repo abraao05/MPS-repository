@@ -105,5 +105,5 @@ Registrar a rastreabilidade entre requisitos, componentes de implementação, ca
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 28/04/2025 | Time de Melhoria Contínua | Versão inicial — RF-01 a RF-10, RNF-01 a RNF-08 |
-| 1.1 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — cobertura total dos requisitos, change requests e status de entrega |
+| 1.0 | 28/04/2025 | Abraão Oliveira | Versão inicial — RF-01 a RF-10, RNF-01 a RNF-08 |
+| 1.1 | 05/06/2026 | Abraão Oliveira | Versão de encerramento — cobertura total dos requisitos, change requests e status de entrega |

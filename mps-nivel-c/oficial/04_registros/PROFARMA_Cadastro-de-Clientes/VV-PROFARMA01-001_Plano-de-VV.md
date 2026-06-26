@@ -207,6 +207,6 @@ Os resultados de execução de cada ciclo de homologação estão em **REL-VV-PR
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 28/04/2025 | Time de Melhoria Contínua | Versão inicial — estratégia de V&V e roteiros de teste |
-| 1.1 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — inclusão do registro histórico dos eventos de V&V realizados |
-| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Adição de §9 "Análise e comunicação dos resultados" (VV 5) e §10 "Cenários Gherkin — referência ao CTQ" (conformidade com TPL-VV-001) |
+| 1.0 | 28/04/2025 | Abraão Oliveira | Versão inicial — estratégia de V&V e roteiros de teste |
+| 1.1 | 05/06/2026 | Abraão Oliveira | Versão de encerramento — inclusão do registro histórico dos eventos de V&V realizados |
+| 1.2 | 11/06/2026 | Abraão Oliveira | Adição de §9 "Análise e comunicação dos resultados" (VV 5) e §10 "Cenários Gherkin — referência ao CTQ" (conformidade com TPL-VV-001) |

@@ -137,5 +137,5 @@ O projeto Cadastro de Clientes — Rede D1000 atendeu aos requisitos do processo
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída consolidando as três auditorias realizadas ao longo do projeto |
-| 1.1 | 11/06/2026 | Time de Melhoria Contínua | Adição de itens GCO-1 a GCO-3 nas auditorias GQA-P02 e GQA-P03 (verificação de aderência à GCO — GCO 5) |
+| 1.0 | 05/06/2026 | Jonathan Barbosa | Versão inicial — reconstituída consolidando as três auditorias realizadas ao longo do projeto |
+| 1.1 | 11/06/2026 | Jonathan Barbosa | Adição de itens GCO-1 a GCO-3 nas auditorias GQA-P02 e GQA-P03 (verificação de aderência à GCO — GCO 5) |

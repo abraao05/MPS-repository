@@ -189,4 +189,4 @@ Todos os critérios de saída foram atendidos. O projeto foi encerrado sem defei
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — consolidação dos resultados de todas as atividades de teste do projeto |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — consolidação dos resultados de todas as atividades de teste do projeto |

@@ -397,10 +397,10 @@ A aprovação do design arquitetural pelo Tech Lead D1000 (Armando Junior) é ta
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 28/04/2025 | Time de Melhoria Contínua | Versão inicial — arquitetura macro e decisões DA-01 a DA-03 |
-| 1.1 | 20/06/2025 | Time de Melhoria Contínua | Adição do modelo de dados completo, fluxo de integração VTEX, decisões DA-04 e DA-05 |
-| 1.2 | 15/09/2025 | Time de Melhoria Contínua | Atualização: worker LGPD, segurança OAuth 2.0 para Call Center, integrações BlueSoft e CloseUp |
-| 1.3 | 05/06/2026 | Time de Melhoria Contínua | Versão de encerramento — consolidação final após piloto loja 9 |
-| 1.4 | 11/06/2026 | Time de Melhoria Contínua | Adição de §1.1 (canais completos do diagrama), atualização de §2.2 (API Gateway, Container Registry, Helm, Bot Services, Azure Monitor), adição de §9 (avaliação do design por Armando Junior — 17/07/2025) |
-| 1.5 | 11/06/2026 | Time de Melhoria Contínua | Adição de §9 "Design de produto (UX/UI) — não aplicável" e §10 "Rastreabilidade requisito → design" (conformidade com TPL-PCP-001); seção de avaliação renumerada para §11 |
-| 1.6 | 15/06/2026 | Time de Melhoria Contínua | Adição de §12 com evidências visuais da estrutura da solução (28 projetos, Clean Architecture) e commits de implementação da integração Call Center |
+| 1.0 | 28/04/2025 | Abraão Oliveira | Versão inicial — arquitetura macro e decisões DA-01 a DA-03 |
+| 1.1 | 20/06/2025 | Abraão Oliveira | Adição do modelo de dados completo, fluxo de integração VTEX, decisões DA-04 e DA-05 |
+| 1.2 | 15/09/2025 | Abraão Oliveira | Atualização: worker LGPD, segurança OAuth 2.0 para Call Center, integrações BlueSoft e CloseUp |
+| 1.3 | 05/06/2026 | Abraão Oliveira | Versão de encerramento — consolidação final após piloto loja 9 |
+| 1.4 | 11/06/2026 | Abraão Oliveira | Adição de §1.1 (canais completos do diagrama), atualização de §2.2 (API Gateway, Container Registry, Helm, Bot Services, Azure Monitor), adição de §9 (avaliação do design por Armando Junior — 17/07/2025) |
+| 1.5 | 11/06/2026 | Abraão Oliveira | Adição de §9 "Design de produto (UX/UI) — não aplicável" e §10 "Rastreabilidade requisito → design" (conformidade com TPL-PCP-001); seção de avaliação renumerada para §11 |
+| 1.6 | 15/06/2026 | Abraão Oliveira | Adição de §12 com evidências visuais da estrutura da solução (28 projetos, Clean Architecture) e commits de implementação da integração Call Center |

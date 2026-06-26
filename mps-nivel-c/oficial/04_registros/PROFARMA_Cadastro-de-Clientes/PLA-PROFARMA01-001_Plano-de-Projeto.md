@@ -277,9 +277,9 @@ O projeto foi viável e concluído em janeiro de 2026, com a entrega das correç
 
 | Versão | Data | Autor | Descrição da mudança |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — reconstituída com base em e-mails e transcrições Fireflies do período 03/2025–01/2026 |
-| 1.1 | 10/06/2026 | Time de Melhoria Contínua | Acréscimo da coluna SP Planejado na tabela §5.2 (573 SP totais) para consistência com a planilha de gestão do projeto |
-| 1.2 | 11/06/2026 | Time de Melhoria Contínua | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 4.774 h totais estimadas; ampliação do §8 (GPR 8) com estratégia de transição para produção, fluxo de GMUD e responsáveis pelo deploy |
-| 1.3 | 11/06/2026 | Time de Melhoria Contínua | Adição de §8.2 (checklist go-live), §8.3 (suporte pós-go-live com SLAs e indicadores Datadog) e §8.4 (critério de encerramento do suporte) — conformidade com TPL-GPR-001 v1.2 (GPR 8 / GPR 16) |
-| 1.4 | 25/06/2026 | Sistema de Auditoria / Reconciliação GitLab | Auditoria GitLab: (1) inclusão de release 25.10.0.1 em §5.2 (Sprint 11b), (2) formalização de Política de Revisão de Código em §3.1, (3) validação de divergências (zero críticas encontradas, conformidade ALTA). Backup pré-reconciliação: PLA-PROFARMA01-001_Plano-de-Projeto.md.backup.20260625_211538.bak |
-| 1.5 | 26/06/2026 | Sistema de Auditoria / Reconciliação GitLab | Reconciliação da contagem de MRs em §3.1 ao estado real do repositório (16 MRs: 11 com 1 revisor, 5 com 2 revisores), explicitando a segregação autor≠revisor em 100% dos MRs. Backup: PLA-PROFARMA01-001_Plano-de-Projeto.md.backup.20260626_reconc.bak |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — reconstituída com base em e-mails e transcrições Fireflies do período 03/2025–01/2026 |
+| 1.1 | 10/06/2026 | Abraão Oliveira | Acréscimo da coluna SP Planejado na tabela §5.2 (573 SP totais) para consistência com a planilha de gestão do projeto |
+| 1.2 | 11/06/2026 | Abraão Oliveira | Acréscimo da tabela de orçamento de horas por papel em §4 (GPR 4) — 4.774 h totais estimadas; ampliação do §8 (GPR 8) com estratégia de transição para produção, fluxo de GMUD e responsáveis pelo deploy |
+| 1.3 | 11/06/2026 | Abraão Oliveira | Adição de §8.2 (checklist go-live), §8.3 (suporte pós-go-live com SLAs e indicadores Datadog) e §8.4 (critério de encerramento do suporte) — conformidade com TPL-GPR-001 v1.2 (GPR 8 / GPR 16) |
+| 1.4 | 25/06/2026 | Abraão Oliveira | Auditoria GitLab: (1) inclusão de release 25.10.0.1 em §5.2 (Sprint 11b), (2) formalização de Política de Revisão de Código em §3.1, (3) validação de divergências (zero críticas encontradas, conformidade ALTA). Backup pré-reconciliação: PLA-PROFARMA01-001_Plano-de-Projeto.md.backup.20260625_211538.bak |
+| 1.5 | 26/06/2026 | Abraão Oliveira | Reconciliação da contagem de MRs em §3.1 ao estado real do repositório (16 MRs: 11 com 1 revisor, 5 com 2 revisores), explicitando a segregação autor≠revisor em 100% dos MRs. Backup: PLA-PROFARMA01-001_Plano-de-Projeto.md.backup.20260626_reconc.bak |

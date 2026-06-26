@@ -278,4 +278,4 @@ O Azure Service Bus é a única alternativa que suporta simultaneamente a carga 
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 05/06/2026 | Time de Melhoria Contínua | Versão inicial — cinco decisões de arquitetura registradas: banco de dados, chave primária, integração ITEC, estratégia de leitura e integração Propz CRM |
+| 1.0 | 05/06/2026 | Abraão Oliveira | Versão inicial — cinco decisões de arquitetura registradas: banco de dados, chave primária, integração ITEC, estratégia de leitura e integração Propz CRM |
