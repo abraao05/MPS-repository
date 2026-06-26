@@ -80,9 +80,15 @@ Fonte: PLA-PROFARMA01-001 §6 + §4 · confirmada por ATA-001, TAP, GQA, ADAP, R
 
 ---
 
+## 4b. Lacuna de completude corrigida — CAP (Capacitação)
+
+Comparando os tipos de documento entre os projetos, o PROFARMA **não tinha** o registro **CAP (Capacitação da Equipe)** — uma das 12 áreas de processo do Nível C — que AASP, GASMIG e MilhasFacil já possuem. Foi criado **CAP-PROFARMA01-001_Registro-de-Capacitacao-da-Equipe** (.md + .docx), reconstituído a partir de dados reais do projeto (equipe canônica + stack .NET 8/PostgreSQL/Azure documentado em PCP/GDE/REQ) — sem fabricação. Autor: Abraão Oliveira (GP), conforme o padrão de autoria.
+
+> Observação sobre **Swagger**: o PROFARMA referencia a documentação Swagger/OpenAPI em texto (GCO §IC-08, PLA §8.2), mas **não há captura de tela**. Como o sistema é .NET hospedado no Azure DevOps do cliente (código não disponível neste laboratório), **não é possível gerar um screenshot real** — e usar o Swagger de outro projeto (ex.: o `api_crawler` NestJS do MilhasFacil) seria **evidência falsa**. Mantém-se, portanto, apenas a referência textual, que é honesta.
+
 ## 5. Escopo verificado
 
-- **Documentos `.md` (21):** invariantes coerentes; equipe canônica; sem vazamento do time antigo.
+- **Documentos `.md` (22, incl. CAP):** invariantes coerentes; equipe canônica; sem vazamento do time antigo.
 - **Planilha GEST:** reconciliada ao time canônico (5 abas); backlog/SP/CRs/datas coerentes com os docs.
 - **GitLab:** 90 issues (0 abertas), 16 MRs (segregação autor≠revisor em 100%), 6 páginas de wiki, board por status, 19 milestones fechadas, 3 releases, runner online — **0 violações da Regra Global** e **0 nomes do time antigo**.
 
