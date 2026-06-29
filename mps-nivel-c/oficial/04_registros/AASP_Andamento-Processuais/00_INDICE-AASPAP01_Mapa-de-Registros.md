@@ -7,11 +7,11 @@
 | **Código do projeto** | AASPAP01 |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Versão** | 1.1 |
-| **Data** | 16/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 24/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza as evidências do projeto; não é, ele próprio, evidência auditável pela ASR. |
 
-> **Como usar:** mapeia os registros MPS do projeto AASPAP01 e o status de cada um. Execução concluída; projeto encerrado em 30/06/2026 (TAE-AASPAP01-001).
+> **Como usar:** mapeia os registros MPS do projeto AASPAP01 e o status de cada um. Projeto **em andamento** (Fase 5 — implantação; Iterações 6 e 7 ativas até jul/2026); encerramento previsto para 30/06/2026 — **pendente** (TAE-AASPAP01-001 preliminar).
 
 ## Registros do projeto (gerados ✅)
 
@@ -45,12 +45,12 @@
 | 25 | GEST-AASPAP01 | Planilha de Gestão do Projeto | GPR | ✅ |
 | 26 | TAE-AASPAP01-001 | Termo de Encerramento e Aceite (Lições integradas) | GPR | ✅ |
 
-## Encerramento (concluído ✅)
+## Encerramento (pendente ⏳)
 
 | Código | Documento | Processo | Status |
 |---|---|---|---|
-| TAE-AASPAP01-001 | Termo de Encerramento e Aceite | GPR | ✅ gerado em 30/06/2026 |
-| LI-AASPAP01-001 | Lições Aprendidas (integradas ao TAE) | GPR | ✅ integrado ao TAE-AASPAP01-001 §6 |
+| TAE-AASPAP01-001 | Termo de Encerramento e Aceite | GPR | ⏳ preliminar — encerramento previsto para 30/06/2026 (Iterações 6/7 ativas) |
+| LI-AASPAP01-001 | Lições Aprendidas (integradas ao TAE) | GPR | ⏳ pendente — integra o TAE no encerramento |
 
 ## Histórico de revisões
 
@@ -58,3 +58,4 @@
 |---|---|---|---|
 | 1.0 | 12/06/2026 | Gerente de Projeto | Índice de registros do projeto AASPAP01 (inventário inicial). |
 | 1.1 | 16/06/2026 | Gerente de Projeto | Inclui Metas de Qualidade (MQ-001), Atas de Acompanhamento por fase (ATA-002 a 005) e Revisão por Pares por Entrega (REV-002). |
+| 1.2 | 24/06/2026 | Gerente de Projeto | Status atualizado para projeto **em andamento**; encerramento (TAE/LI) marcado como pendente/previsto, alinhando ao GitLab (Iterações 6/7 ativas). |
