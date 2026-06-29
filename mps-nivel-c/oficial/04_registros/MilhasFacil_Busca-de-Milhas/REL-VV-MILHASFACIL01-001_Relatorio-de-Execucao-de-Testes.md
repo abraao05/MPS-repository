@@ -14,7 +14,7 @@
 
 ## 1. Objetivo
 
-Registrar os resultados de execução das atividades de teste realizadas ao longo do projeto MilhasFacil — Busca e Alerta de Passagens por Milhas, abrangendo testes unitários (JUnit 5, Karma, pytest), testes de integração (Spring Boot Test + Testcontainers), o gate de cobertura no pipeline de CI e os testes de aceitação manuais da QA. Este documento serve como evidência do processo VV (Verificação e Validação) e consolida cobertura, defeitos, resultado dos casos de teste e status por sprint. O projeto está ABERTO (Sprint 9 de 12, em andamento de 01–14/06/2026); os casos de teste CT-11 e CT-12 foram integrados em `develop` na Sprint 9 e promovidos para `main` na **release v0.9.0** (15/06/2026), com builds verdes e validação manual da QA.
+Registrar os resultados de execução das atividades de teste realizadas ao longo do projeto MilhasFacil — Busca e Alerta de Passagens por Milhas, abrangendo testes unitários (JUnit 5, Karma, pytest), testes de integração (Spring Boot Test + Testcontainers), o gate de cobertura no pipeline de CI e os testes de aceitação manuais da QA. Este documento serve como evidência do processo VV (Verificação e Validação) e consolida cobertura, defeitos, resultado dos casos de teste e status por sprint. O projeto está ABERTO (Sprint 10 de 12, em andamento de 15–28/06/2026); os casos de teste CT-11 e CT-12 foram integrados em `develop` na Sprint 9 e promovidos para `main` na **release v0.9.0** (15/06/2026), com builds verdes e validação manual da QA.
 
 ---
 
@@ -32,13 +32,13 @@ Cobertura medida por JaCoCo (API), Karma (Web) e pytest (Crawler). Bugs e não c
 | S6 | 20/04–03/05/2026 | 30 | 84% | 83% | 83% | 0 | 0 |
 | S7 | 04–17/05/2026 | 30 | 85% | 84% | 83% | 2 | 0 |
 | S8 | 18–31/05/2026 | 48 | 84% | 81% | 83% | 2 | 0 |
-| S9 | 01–14/06/2026 | Em andamento | Em andamento | Em andamento | Em andamento | — | — |
+| S9 | 01–14/06/2026 | 63 SP (91%) | 83% | 82% | 83% | 0 | 0 |
 
 **Observações:**
 
 - A cobertura JaCoCo caiu a 74% na Sprint 2, originando a NC-001 (abaixo da meta de 80%, RNF02). Após o plano de tratamento (priorização de unit tests + gate de CI a partir da S4), a cobertura atingiu 80% na S4 e 82% na S5, quando a NC-001 foi encerrada. A partir da S6 a cobertura manteve-se estável acima da meta.
 - Os 2 bugs da Sprint 8 incluem a regressão do LatamParser causada por redesign de companhia (MF-59, risco R-01), corrigida e coberta por teste de regressão (CT-08).
-- A Sprint 9 está em andamento; as métricas consolidadas de cobertura, bugs e NCs do período ainda não foram fechadas. As funcionalidades de filtros avançados (RF13), export CSV (RF14) e busca de aeroporto por ILIKE (MF-64) foram integradas em `develop` e promovidas para `main` na **release v0.9.0** com builds verdes, sustentando CT-11 e CT-12.
+- A Sprint 9 foi concluída; as funcionalidades de filtros avançados (RF13), export CSV (RF14) e busca de aeroporto por ILIKE (MF-64) foram integradas em `develop` e promovidas para `main` na **release v0.9.0** (15/06/2026) com builds verdes, sustentando CT-11 e CT-12. Sprint 10 em andamento (15–28/06/2026).
 
 ![IMG-CI-01 — Cobertura JaCoCo reportada no pipeline da API](evidencias/IMG-CI-01_cobertura-jacoco-pipeline.png)
 
@@ -239,3 +239,4 @@ Não há defeitos críticos em aberto. A não conformidade NC-001 (cobertura < 8
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Esclarecimento na §5 de que os builds #52–#60 são os recentes da S9, subconjunto da série de CI do projeto (#41–#60). |
+| 1.2 | 29/06/2026 | Auditoria MPS.BR Nível C | Status atualizado para Sprint 10 em andamento (S10 de 12, 15–28/06/2026); S9 marcada como concluída na tabela §2 com métricas reais (63 SP, 83%/82%/83%); observação §2 atualizada. |

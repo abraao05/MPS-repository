@@ -18,7 +18,7 @@
 
 ## 1. Objetivo
 
-Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do projeto MilhasFacil — Busca de Milhas, incluindo as auditorias independentes de aderência ao processo-padrão Timeware realizadas por ciclo de sprints, as não conformidades identificadas e suas ações corretivas, as constatações de auditoria de configuração com as respectivas ações corretivas aplicadas e o parecer consolidado de conformidade até a Sprint 8 (projeto aberto, com a Sprint 9 em andamento no período 01–14/06/2026 e a release v0.9.0 promovida a `main` em 15/06/2026).
+Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do projeto MilhasFacil — Busca de Milhas, incluindo as auditorias independentes de aderência ao processo-padrão Timeware realizadas por ciclo de sprints, as não conformidades identificadas e suas ações corretivas, as constatações de auditoria de configuração com as respectivas ações corretivas aplicadas e o parecer consolidado de conformidade até a Sprint 8 (projeto aberto, com Sprint 9 concluída (01–14/06/2026) e Sprint 10 em andamento (15–28/06/2026); release v0.9.0 promovida a `main` em 15/06/2026).
 
 ---
 

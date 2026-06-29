@@ -20,7 +20,7 @@ Definir a estratégia e as atividades de Verificação e Validação (V&V) da pl
 
 ## 2. Escopo do plano
 
-Este plano cobre as atividades de V&V aplicadas ao longo dos sprints do projeto, desde os testes unitários durante o desenvolvimento até os testes de integração, a revisão de código por pares (Merge Request), a validação de cobertura no pipeline de CI e os testes de aceitação/exploratórios manuais da QA. O projeto está ABERTO (Sprint 9 de 12, em andamento de 01–14/06/2026); este registro consolida a estratégia e a evidência do ciclo S1–S9, incluindo a release v0.9.0 (15/06/2026), que promoveu RF13, RF14 e MF-64 para `main`.
+Este plano cobre as atividades de V&V aplicadas ao longo dos sprints do projeto, desde os testes unitários durante o desenvolvimento até os testes de integração, a revisão de código por pares (Merge Request), a validação de cobertura no pipeline de CI e os testes de aceitação/exploratórios manuais da QA. O projeto está ABERTO (Sprint 10 de 12, em andamento de 15–28/06/2026); este registro consolida a estratégia e a evidência do ciclo S1–S9, incluindo a release v0.9.0 (15/06/2026), que promoveu RF13, RF14 e MF-64 para `main`.
 
 Componentes no escopo:
 
@@ -159,4 +159,4 @@ Os cenários de teste em formato Gherkin (happy path e sad path), derivados do c
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 26/06/2026 | Time de Melhoria Contínua | Correção de referências de CI: PowerShell@2/agente Windows substituído por Docker (runner-vm-docker); Azure Pipelines substituído por GitLab CI/CD. |
-| 1.2 | 29/06/2026 | Auditoria MPS.BR Nível C | Terminologia "PRs sem revisor" → "MRs sem revisor" em §9 (tabela de comunicação). |
+| 1.2 | 29/06/2026 | Auditoria MPS.BR Nível C | Status atualizado para Sprint 10 em andamento (S10 de 12, 15–28/06/2026) em §2; terminologia "PRs sem revisor" → "MRs sem revisor" em §9 (tabela de comunicação). |
