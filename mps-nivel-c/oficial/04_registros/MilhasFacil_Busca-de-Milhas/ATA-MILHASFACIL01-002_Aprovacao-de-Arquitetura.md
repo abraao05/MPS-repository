@@ -18,25 +18,34 @@
 
 ## 1. Participantes
 
-| Nome | Papel | Presença |
-|---|---|---|
-| Abraão | Gerente de Projeto / PO | Presente |
-| Cézar Velazquez | Tech Lead / Arquiteto / DevOps | Presente (facilitador) |
-| Felipe Santos | Dev (Backend / Crawlers) | Presente |
-| Lucas Batista | Dev (Full Stack) | Presente |
-| Henry Oliveira | Dev (Full Stack) | Presente |
+| Nome | Empresa | Papel | Presença |
+|---|---|---|---|
+| Abraão | Timeware | Gerente de Projeto / PO | Presente |
+| Cézar Velazquez | Timeware | Tech Lead / Arquiteto / DevOps | Presente (facilitador) |
+| Felipe Santos | Timeware | Dev (Backend / Crawlers) | Presente |
+| Lucas Batista | Timeware | Dev (Full Stack) | Presente |
+| Henry Oliveira | Timeware | Dev (Full Stack) | Presente |
 
 > A aprovação da arquitetura é responsabilidade conjunta do **Gerente de Projeto / PO (Abraão)** e do **Tech Lead / Arquiteto (Cézar Velazquez)**; os desenvolvedores participam como apoio técnico. A QA (Jonathan Alves) e a GQA independente (Carol/Caroline) não participam da decisão de arquitetura.
 
 ---
 
-## 2. Objetivo
+## 2. Pauta
+
+1. Revisão da arquitetura distribuída em três serviços (API, Web, Crawler)
+2. Validação das decisões arquiteturais (JWT stateless, busca paralela, crawler isolado)
+3. Deliberação e aprovação formal da baseline de design
+4. Registro de ações imediatas pós-aprovação
+
+---
+
+## 3. Objetivo
 
 Revisar e **aprovar formalmente a arquitetura técnica** da plataforma MilhasFacil antes do início do desenvolvimento incremental, conforme o processo de Projeto e Construção do Produto (PCP) e a Gerência de Decisões (GDE). A arquitetura aprovada é a baseline de design registrada em **PCP-MILHASFACIL01-001**.
 
 ---
 
-## 3. Escopo da aprovação de design
+## 4. Escopo da aprovação de design
 
 | Item de design | Aplicável? | Decisão |
 |---|---|---|
@@ -45,7 +54,7 @@ Revisar e **aprovar formalmente a arquitetura técnica** da plataforma MilhasFac
 
 ---
 
-## 4. Arquitetura revisada e aprovada
+## 5. Arquitetura revisada e aprovada
 
 Arquitetura distribuída em **três serviços conteinerizados**, orquestrados por Docker Compose (lida do código-fonte; detalhada em PCP-MILHASFACIL01-001):
 
@@ -66,7 +75,7 @@ Decisões arquiteturais aprovadas (registradas em **GDE-MILHASFACIL01-001**):
 
 ---
 
-## 5. Deliberações
+## 6. Deliberações
 
 | # | Deliberação | Responsável |
 |---|---|---|
@@ -77,7 +86,7 @@ Decisões arquiteturais aprovadas (registradas em **GDE-MILHASFACIL01-001**):
 
 ---
 
-## 6. Aprovação
+## 7. Aprovação
 
 A arquitetura técnica da plataforma MilhasFacil foi **revisada e aprovada** nesta reunião pelo **Gerente de Projeto / PO (Abraão)** e pelo **Tech Lead / Arquiteto (Cézar Velazquez)**, constituindo a baseline de design do projeto (PCP-MILHASFACIL01-001). Reitera-se que **não há aprovação de design de UI/UX**, por o layout ser fornecido pelo cliente Hub de Milhas.
 
@@ -85,6 +94,17 @@ A arquitetura técnica da plataforma MilhasFacil foi **revisada e aprovada** nes
 |---|---|---|
 | Abraão | Gerente de Projeto / PO | Aprovado |
 | Cézar Velazquez | Tech Lead / Arquiteto | Aprovado |
+
+---
+
+## 8. Ações imediatas
+
+| Ação | Responsável | Prazo |
+|---|---|---|
+| Publicar a baseline de design aprovada em PCP-MILHASFACIL01-001 e registrar as decisões em GDE-MILHASFACIL01-001 | Cézar Velazquez (Timeware) | 12/02/2026 |
+| Provisionar os três repositórios no GitLab com as branches e a política de PR definidas | Cézar Velazquez (Timeware) | 13/02/2026 |
+| Configurar Docker Compose de desenvolvimento local alinhado à arquitetura aprovada | Cézar Velazquez (Timeware) | 13/02/2026 |
+| Iniciar implementação do RF01 (cadastro BCrypt) e RF02 (login JWT) conforme a arquitetura aprovada | Felipe Santos (Timeware) | Sprint 1 (até 22/02/2026) |
 
 ---
 
@@ -102,3 +122,4 @@ A arquitetura técnica da plataforma MilhasFacil foi **revisada e aprovada** nes
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — registro da reunião de Design Review e aprovação da arquitetura (PO + Tech Lead) realizada em 11/02/2026. |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Inclusão dos campos de cabeçalho Código do projeto (MILHASFACIL01) e Organização (Timeware Brasil Softwares e Serviços LTDA), padronizando com os demais registros do projeto. |
+| 1.2 | 29/06/2026 | Auditoria MPS.BR Nível C | Adição da coluna Empresa na tabela de participantes, seção Pauta e seção Ações imediatas, padronizando a estrutura com os demais registros de ata do projeto; renumeração das seções. |
