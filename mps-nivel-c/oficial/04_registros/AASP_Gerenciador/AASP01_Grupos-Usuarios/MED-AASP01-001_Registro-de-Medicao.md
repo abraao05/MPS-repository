@@ -5,8 +5,8 @@
 | **Documento** | MED-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.1 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.2 |
+| **Data** | 24/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | MED — Medição (evidência de projeto) |
 
@@ -27,7 +27,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | **Plano de referência** | PLA-MED-001 — Plano de Medição Organizacional Timeware |
 | **Frequência de coleta** | Por sprint (a cada 2 semanas) |
 | **Responsável pela coleta** | Abraão (Gerente de Projeto) |
-| **Repositório dos dados** | GitLab — Boards + Repositório ms.auxo.gruposusuarios |
+| **Repositório dos dados** | GitLab — Boards + Repositório ms.auxo.usuarios |
 | **Destinatarios** | Abraão (interno), Marcos Turnes (AASP, status semanal) |
 
 ---
@@ -99,7 +99,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | Tempo de resposta p95 — GET listargrupo | <= 260 ms | <= 500 ms | Dev (Swagger UI) | Meta atingida |
 | Disponibilidade ambiente dev | > 99% no período da Sprint 1 | >= 99% | Dev (local) | Meta atingida |
 
-> Medições realizadas via Swagger UI em ambiente dev local durante a Sprint 1. Medições em ambiente de homologação AASP serão realizadas a partir da Sprint 2 (ambiente disponível a partir de 09/06/2026 — Leonardo Francisco Pereira).
+> Medições realizadas via Swagger UI em ambiente dev local durante a Sprint 1. Medições em ambiente de homologação AASP serão realizadas a partir da Sprint 2 (ambiente disponível a partir de 09/06/2026 — Caroline Sousa).
 
 ---
 
@@ -126,7 +126,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 - Atualizar M2 com SP realizado vs. planejado (28 SP)
 - Atualizar M3 com achados de code review MRs !6 e !7
 - Atualizar M4 com cobertura de testes unitarios AG-23 e AG-24
-- Atualizar M5 após UAT Sprint 2 (Leonardo Francisco Pereira)
+- Atualizar M5 após UAT Sprint 2 (Caroline Sousa)
 - Atualizar M6 com medições de performance em ambiente homologação AASP
 - Confirmar M7 com rastreabilidade AG-23 e AG-24
 - Atualizar M8 após aceite formal Sprint 2 (Marcos Turnes)
@@ -139,3 +139,4 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 |---|---|---|---|
 | 1.0 | 09/06/2026 | Abraão | Versão inicial — pos-encerramento Sprint 1; registros M1-M8 com dados reais Sprint 1 |
 | 1.1 | 15/06/2026 | Abraão | Atualização com status parcial Sprint 2 (~60% concluido em 15/06); seção 7 atualizada com próximo ponto de medição |
+| 1.2 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

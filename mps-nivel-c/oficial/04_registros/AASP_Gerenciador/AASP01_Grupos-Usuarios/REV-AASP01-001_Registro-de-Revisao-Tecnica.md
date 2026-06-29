@@ -3,21 +3,21 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REV-AASP01-001 |
-| **Versão** | 1.1 |
-| **Data** | 06/06/2026 |
-| **Projeto** | AG — ms.auxo.gruposusuarios |
+| **Versão** | 1.3 |
+| **Data** | 24/06/2026 |
+| **Projeto** | AG — ms.auxo.usuarios |
 | **Cliente** | AASP |
 | **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
 | **Dev** | Renan Kiyoshi (Timeware) |
 | **PO** | Marcos Turnes (AASP) |
-| **QA** | Leonardo Francisco Pereira (AASP) |
+| **QA** | Caroline Sousa (AASP) |
 | **Processo MPS-SW** | VV — Verificação e Validação (evidência de revisão por pares) |
 
 ---
 
 ## 1. Objetivo
 
-Registrar as revisões técnicas formais (code reviews via Merge Requests) realizadas durante a Sprint 1 da feature AG — ms.auxo.gruposusuarios, constituindo evidência do processo MPS-SW VV (Verificação e Validação). Cada revisão cobriu MRs específicos com o objetivo de identificar defeitos antes do merge na branch develop. Todos os achados foram classificados por severidade e resolvidos antes da integração. Os endpoints referem-se ao controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`, HTTP 200/400).
+Registrar as revisões técnicas formais (code reviews via Merge Requests) realizadas durante a Sprint 1 da feature AG — ms.auxo.usuarios, constituindo evidência do processo MPS-SW VV (Verificação e Validação). Cada revisão cobriu MRs específicos com o objetivo de identificar defeitos antes do merge na branch develop. Todos os achados foram classificados por severidade e resolvidos antes da integração. Os endpoints referem-se ao controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`, HTTP 200/400).
 
 ---
 
@@ -28,7 +28,7 @@ Registrar as revisões técnicas formais (code reviews via Merge Requests) reali
 | **Data** | 30/05/2026 (MR !1) e 02/06/2026 (MR !2) |
 | **Tipo** | Code review — implementação de feature |
 | **MRs revisados** | !1 (`incluirgrupo`, `listargrupo` — CRUD base), !2 (`buscargrupoporid`, `alterargrupo`, `excluirgrupo`, `ativardesativar`) |
-| **Revisor responsável** | Cezar Hiraki (Tech Lead — Timeware) |
+| **Revisor responsável** | Cezar Hiraki (Tech Lead — Timeware) e Abraão (GP — Timeware) |
 | **Autor do código** | Renan Kiyoshi (Timeware) |
 | **Resultado** | Aprovado com correções |
 
@@ -50,7 +50,7 @@ Registrar as revisões técnicas formais (code reviews via Merge Requests) reali
 | **Data** | 03/06/2026 |
 | **Tipo** | Code review — implementação de feature |
 | **MR revisado** | !3 (`alterarfuncaodousuario`) |
-| **Revisor responsável** | Cezar Hiraki (Tech Lead — Timeware) |
+| **Revisor responsável** | Cezar Hiraki (Tech Lead — Timeware) e Abraão (GP — Timeware) |
 | **Autor do código** | Henry Komatsu (Timeware) |
 | **Resultado** | Aprovado com correções |
 
@@ -71,7 +71,7 @@ Registrar as revisões técnicas formais (code reviews via Merge Requests) reali
 | **Data** | 05/06/2026 |
 | **Tipo** | Code review — implementação de feature |
 | **MRs revisados** | !4 (vinculo de usuários via `GrupoDeUsuarios` em `incluirgrupo`/`alterargrupo`), !5 (`removerusuario`) |
-| **Revisor responsável** | Cezar Hiraki (Tech Lead — Timeware) |
+| **Revisor responsável** | Cezar Hiraki (Tech Lead — Timeware) e Abraão (GP — Timeware) |
 | **Autor do código** | Mateus Veloso (Timeware) |
 | **Resultado** | Aprovado com correções |
 
@@ -95,7 +95,7 @@ Registrar as revisões técnicas formais (code reviews via Merge Requests) reali
 | REV-003 | !4, !5 | 2 | 1 | 1 | 2/2 | Aprovado |
 | **TOTAL** | **5 MRs** | **5** | **3** | **2** | **5/5 (100%)** | **Todos resolvidos** |
 
-Nenhum achado P1 (critico) identificado na Sprint 1. Todos os achados P2 e P3 foram resolvidos antes do merge final em develop. Nenhum defeito foi para o ambiente de homologação sem correção previa. Resultado confirmado pelo aceite sem ressalvas de Leonardo Francisco Pereira (AASP) em 06/06/2026.
+Nenhum achado P1 (critico) identificado na Sprint 1. Todos os achados P2 e P3 foram resolvidos antes do merge final em develop. Nenhum defeito foi para o ambiente de homologação sem correção previa. Resultado confirmado pelo aceite sem ressalvas de Caroline Sousa (AASP) em 06/06/2026.
 
 ---
 
@@ -111,3 +111,5 @@ Revisões técnicas previstas para a Sprint 2, cobrindo as historias AG-23 (Audi
 |---|---|---|---|
 | 1.0 | 06/06/2026 | Abraão | Criação do documento; registro formal das revisões técnicas da Sprint 1 (MRs !1 a !5) |
 | 1.1 | 15/06/2026 | Abraão | Achados e endpoints alinhados a API real (HTTP 200/400; função Usuario/Administrador; tabelas reais) |
+| 1.2 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o GitLab: 2 revisores por MR — Cezar (TL) + Abraão (GP) (antes 1). |
+| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

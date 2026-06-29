@@ -5,14 +5,14 @@
 | **Documento** | RASTR-AASP01-001 |
 | **Projeto** | AG — Grupos de Usuários |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Produto** | ms.auxo.gruposusuarios |
+| **Produto** | ms.auxo.usuarios |
 | **Repositório** | GitLab · http://191.234.192.153/aasp/ms.auxo.usuarios |
 | **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
 | **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
 | **PO** | Marcos Turnes — AASP |
-| **QA** | Leonardo Francisco Pereira — AASP |
-| **Data base** | 26/05/2026 |
-| **Versão** | 1.2 |
+| **QA** | Caroline Sousa — AASP |
+| **Data base** | 24/06/2026 |
+| **Versão** | 1.3 |
 | **Status** | Ativo |
 
 ---
@@ -76,7 +76,7 @@ Os itens abaixo possuem requisito definido e rastreabilidade registrada, mas ain
 - **Requisitos funcionais planejados:** 1 de 9 (11%) — RF-09 previsto para S3
 - **Requisitos não funcionais validados:** 2 de 3 (67%) — RNF-01 e RNF-02 validados em S1
 - **Requisitos não funcionais pendentes:** 1 de 3 (33%) — RNF-03 depende da conclusão de AG-23 (S2)
-- **Casos de teste Sprint 1:** 10 de 10 (100%) aprovados por Leonardo Francisco Pereira (AASP)
+- **Casos de teste Sprint 1:** 10 de 10 (100%) aprovados por Caroline Sousa (AASP)
 - **Rastreabilidade req → teste:** 100% para todos os requisitos entregues até S1
 - **Rastreabilidade req → MR:** 100% para requisitos entregues (MRs !1, !2, !3, !4, !5)
 
@@ -89,3 +89,4 @@ Os itens abaixo possuem requisito definido e rastreabilidade registrada, mas ain
 | 1.0 | 26/05/2026 | Abraão | Versão inicial — estrutura da matriz com requisitos RF-01 a RF-09 e RNF-01 a RNF-03 |
 | 1.1 | 09/06/2026 | Abraão | Atualizado pós-Sprint 1: MRs !1 a !5 registrados, status de entrega e resultados dos casos de teste incorporados |
 | 1.2 | 15/06/2026 | Abraão | Endpoints, casos de teste e cobertura alinhados à API real (GerenciarGruposController) |
+| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

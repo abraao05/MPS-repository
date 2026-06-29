@@ -5,9 +5,9 @@
 | Documento     | TAP-AASP01-001                                                        |
 | Projeto       | AASP01 — Grupos de Usuários (Feature AG)                              |
 | Cliente       | AASP — Associação dos Advogados de São Paulo                          |
-| Produto       | ms.auxo.gruposusuarios                                                |
-| Versão        | 1.0                                                                   |
-| Data          | 19/05/2026                                                            |
+| Produto       | ms.auxo.usuarios                                                |
+| Versão        | 1.1                                                                   |
+| Data          | 24/06/2026                                                            |
 | Autor         | Abraão                                                         |
 | Status        | Aprovado                                                              |
 
@@ -15,7 +15,7 @@
 
 ## 1. Objetivo do Projeto
 
-Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciador da AASP, permitindo a criação e gestão de grupos de usuários, com definição da função do usuário no grupo (Usuario/Administrador) e vínculos usuário↔grupo, integrado ao ecossistema existente da AASP.
+Desenvolver o microsserviço **ms.auxo.usuarios** para o sistema Gerenciador da AASP, permitindo a criação e gestão de grupos de usuários, com definição da função do usuário no grupo (Usuario/Administrador) e vínculos usuário↔grupo, integrado ao ecossistema existente da AASP.
 
 ## 2. Escopo
 
@@ -43,7 +43,7 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 | Papel                   | Nome             | Organização | Contato                          |
 |-------------------------|------------------|-------------|----------------------------------|
 | PO / Patrocinador        | Marcos Turnes  | AASP        | —                                |
-| QA                      | Leonardo Francisco Pereira     | AASP        | —                                |
+| QA                      | Caroline Sousa     | AASP        | —                                |
 | Gerente de Projeto / TL | Abraão (GP) · Cezar Hiraki (TL)    | Timeware    | Abraão (a confirmar) · contato@cezarvelazquez.com.br |
 | Desenvolvedor           | Renan Kiyoshi    | Timeware    | renan.kiyoshi.timeware@outlook.com |
 | Desenvolvedor           | Henry Komatsu    | Timeware    | henry.komatsu.timeware@outlook.com |
@@ -71,7 +71,7 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 
 ## 6. Restrições
 
-- Stack obrigatória: **.NET Framework 4.7.2** — migração para .NET 8 ou superior fora do escopo
+- Stack obrigatória: **.NET 5.0 (net5.0)** — migração para .NET 8 ou superior fora do escopo
 - ORM: **Dapper** — uso de Entity Framework Core não autorizado
 - Escopo limitado à feature AG (Grupos de Usuários); quaisquer outras demandas devem ser tratadas como novo projeto ou change request formal
 
@@ -90,3 +90,4 @@ Desenvolver o microsserviço **ms.auxo.gruposusuarios** para o sistema Gerenciad
 | Versão | Data       | Autor          | Descrição             |
 |--------|------------|----------------|-----------------------|
 | 1.0    | 19/05/2026 | Abraão  | Criação do documento  |
+| 1.1 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

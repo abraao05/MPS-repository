@@ -3,15 +3,15 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | CTQ-AASP01-001 |
-| **Versão** | 1.2 |
-| **Data** | 26/05/2026 |
-| **Projeto** | AG — ms.auxo.gruposusuarios |
+| **Versão** | 1.3 |
+| **Data** | 24/06/2026 |
+| **Projeto** | AG — ms.auxo.usuarios |
 | **Cliente** | AASP |
 | **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
 | **Dev** | Renan Kiyoshi (Timeware) |
 | **PO** | Marcos Turnes (AASP) |
-| **QA** | Leonardo Francisco Pereira (AASP) |
-| **Executado por** | Leonardo Francisco Pereira (AASP) + Abraão (Timeware) |
+| **QA** | Caroline Sousa (AASP) |
+| **Executado por** | Caroline Sousa (AASP) + Abraão (Timeware) |
 | **Ambiente de execução** | Homologação AASP |
 | **Data de execução Sprint 1** | 06/06/2026 |
 
@@ -19,9 +19,9 @@
 
 ## 1. Contexto
 
-Cenários de teste executados durante a homologação da Sprint 1 (AG-20, AG-21, AG-22). Definidos em conjunto entre Abraão (Timeware) e Leonardo Francisco Pereira (AASP). Todos os 10 cenários da Sprint 1 foram executados e aprovados em 06/06/2026, sem ressalvas, conforme registrado na ATA-AASP01-002.
+Cenários de teste executados durante a homologação da Sprint 1 (AG-20, AG-21, AG-22). Definidos em conjunto entre Abraão (Timeware) e Caroline Sousa (AASP). Todos os 10 cenários da Sprint 1 foram executados e aprovados em 06/06/2026, sem ressalvas, conforme registrado na ATA-AASP01-002.
 
-A feature AG — ms.auxo.gruposusuarios e desenvolvida em .NET Framework 4.7.2, com acesso ao banco SQL Server auxo3 via Dapper. Os endpoints são expostos pelo controller `GerenciarGruposController` (rota base `api/gerenciar/grupos`), com verbos GET/POST e resposta num envelope padrão `{ Sucesso, MensagemPublica, RetornaDados }` com HTTP 200 (sucesso) ou 400 (erro/validação). Os cenários cobrem os endpoints implementados nos MRs !1 a !5 da Sprint 1.
+A feature AG — ms.auxo.usuarios e desenvolvida em .NET 5.0 (net5.0), com acesso ao banco SQL Server auxo3 via Dapper. Os endpoints são expostos pelo controller `GerenciarGruposController` (rota base `api/gerenciar/grupos`), com verbos GET/POST e resposta num envelope padrão `{ Sucesso, MensagemPublica, RetornaDados }` com HTTP 200 (sucesso) ou 400 (erro/validação). Os cenários cobrem os endpoints implementados nos MRs !1 a !5 da Sprint 1.
 
 ---
 
@@ -99,6 +99,7 @@ Cenários previstos para a Sprint 3, cobrindo a historia AG-25 (Relatório conso
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 26/05/2026 | Abraão | Criação do documento; cenários da Sprint 1 definidos em conjunto com Leonardo Francisco Pereira (AASP) |
+| 1.0 | 26/05/2026 | Abraão | Criação do documento; cenários da Sprint 1 definidos em conjunto com Caroline Sousa (AASP) |
 | 1.1 | 09/06/2026 | Abraão | Resultado da execução Sprint 1 registrado (100% aprovado em 06/06/2026); cenários das Sprints 2 e 3 planejados |
 | 1.2 | 15/06/2026 | Abraão | Cenários alinhados aos endpoints e status reais (GerenciarGruposController; HTTP 200/400; função Usuario/Administrador) |
+| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

@@ -5,8 +5,8 @@
 | **Documento** | CAP-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.0 |
-| **Data** | 19/05/2026 |
+| **Versão** | 1.1 |
+| **Data** | 24/06/2026 |
 | **Responsável** | Abraão Oliveira (Gerente de Projeto) |
 | **Processo MPS-SW** | CAP — Capacitação (evidência de projeto) |
 
@@ -22,9 +22,9 @@ Registrar a identificação das competências necessárias à execução do proj
 
 | # | Competência | Justificativa no projeto |
 |---|---|---|
-| C-01 | .NET Framework 4.7.2 / ASP.NET Web API | Stack obrigatória do sistema Gerenciador AASP |
+| C-01 | .NET 5.0 (net5.0) / ASP.NET Web API | Stack obrigatória do sistema Gerenciador AASP |
 | C-02 | Dapper e SQL Server (T-SQL, migrations) | Acesso a dados sobre o banco legado auxo3 |
-| C-03 | Arquitetura de microsserviços REST e RBAC | Design do ms.auxo.gruposusuarios e controle de permissões |
+| C-03 | Arquitetura de microsserviços REST e RBAC | Design do ms.auxo.usuarios e controle de permissões |
 | C-04 | Integração HTTP entre serviços (contratos, retry) | Integração com o ms.temis.vinculos |
 | C-05 | Git Flow e Azure DevOps (Pull Request, pipeline CI/CD) | Versionamento, code review e gate de qualidade |
 | C-06 | Testes automatizados (xUnit, Moq) | Cobertura de testes unitários e de integração |
@@ -49,7 +49,7 @@ Legenda: ✅ competência atendida.
 
 ## 4. Ações de capacitação
 
-A equipe alocada já possuía as competências necessárias à stack e ao domínio do projeto, evidenciadas pela experiência prévia em módulos do sistema Gerenciador AASP (Dapper e .NET Framework 4.7.2 como padrão estabelecido — ver GDE-AASP01-001). Não foi identificada necessidade de treinamento formal específico para o início do projeto.
+A equipe alocada já possuía as competências necessárias à stack e ao domínio do projeto, evidenciadas pela experiência prévia em módulos do sistema Gerenciador AASP (Dapper e .NET 5.0 (net5.0) como padrão estabelecido — ver GDE-AASP01-001). Não foi identificada necessidade de treinamento formal específico para o início do projeto.
 
 | Necessidade | Ação | Situação |
 |---|---|---|
@@ -64,3 +64,4 @@ A equipe alocada já possuía as competências necessárias à stack e ao domín
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 19/05/2026 | Abraão Oliveira | Identificação das competências do projeto e situação da equipe (início do projeto) |
+| 1.1 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

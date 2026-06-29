@@ -5,14 +5,14 @@
 | **Documento** | RAC-AASP01-001 |
 | **Projeto** | AG — Grupos de Usuários |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Produto** | ms.auxo.gruposusuarios |
+| **Produto** | ms.auxo.usuarios |
 | **Repositório** | GitLab · http://191.234.192.153/aasp/ms.auxo.usuarios |
 | **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
 | **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
 | **PO** | Marcos Turnes — AASP |
-| **QA** | Leonardo Francisco Pereira — AASP |
+| **QA** | Caroline Sousa — AASP |
 | **Data do relatório** | 15/06/2026 |
-| **Versão** | 1.1 |
+| **Versão** | 1.2 |
 | **Status geral** | Em andamento — Sprint 2 |
 
 ---
@@ -80,7 +80,7 @@ Nenhum desvio de prazo, escopo ou esforço identificado na Sprint 1. Todas as hi
 | Código | Descrição | Probabilidade | Impacto | Mitigação | Status |
 |---|---|---|---|---|---|
 | R-04 | Falha ou instabilidade na integração com ms.temis.vinculos | Média | Alto | Contrato de API definido; retry implementado; cliente HTTP com timeout configurado | Em monitoramento |
-| R-01 | Atraso na disponibilização do ambiente de homologação AASP | Baixa | Médio | Aguardando confirmação de janela de testes por Leonardo Francisco Pereira (AASP) | Em monitoramento |
+| R-01 | Atraso na disponibilização do ambiente de homologação AASP | Baixa | Médio | Aguardando confirmação de janela de testes por Caroline Sousa (AASP) | Em monitoramento |
 
 ### 3.3 Projeção de Encerramento — Sprint 2
 
@@ -124,3 +124,4 @@ O próximo relatório de acompanhamento está previsto para **20/06/2026**, ao e
 | 1.0 | 09/06/2026 | Abraão | Versão inicial — snapshot pós-Sprint 1 com resultados de entrega, qualidade e aceite formal |
 | 1.1 | 15/06/2026 | Abraão | Atualização de status da Sprint 2 (AG-23 e AG-24 ainda não iniciados no código), riscos ativos e métricas |
 | 1.2 | 15/06/2026 | Abraão | Endpoints e escopo alinhados à API real (GerenciarGruposController); papel do usuário (Usuario/Administrador); três sprints |
+| 1.2 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

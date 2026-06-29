@@ -3,14 +3,14 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GDE-AASP01-001 |
-| **Versão** | 1.1 |
-| **Data** | 19/05/2026 |
-| **Projeto** | AG — ms.auxo.gruposusuarios |
+| **Versão** | 1.2 |
+| **Data** | 24/06/2026 |
+| **Projeto** | AG — ms.auxo.usuarios |
 | **Cliente** | AASP |
 | **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
 | **Dev** | Renan Kiyoshi (Timeware) |
 | **PO** | Marcos Turnes (AASP) |
-| **QA** | Leonardo Francisco Pereira (AASP) |
+| **QA** | Caroline Sousa (AASP) |
 
 ---
 
@@ -18,21 +18,21 @@
 
 ### 1. Contexto / problema
 
-O ms.auxo.gruposusuarios precisa de uma camada de acesso ao banco SQL Server (auxo3). O projeto Gerenciador da AASP usa .NET Framework 4.7.2 como target framework. A escolha do ORM e uma decisão arquitetural com impacto em toda a camada de dados do microsserviço, afetando performance, manutenção, compatibilidade e consistência com o restante do projeto.
+O ms.auxo.usuarios precisa de uma camada de acesso ao banco SQL Server (auxo3). O projeto Gerenciador da AASP usa .NET 5.0 (net5.0) como target framework. A escolha do ORM e uma decisão arquitetural com impacto em toda a camada de dados do microsserviço, afetando performance, manutenção, compatibilidade e consistência com o restante do projeto.
 
 ### 2. Alternativas avaliadas
 
 | # | Alternativa | Descrição |
 |---|---|---|
-| A | Dapper | Micro-ORM open-source; queries SQL explicitas escritas pelo desenvolvedor; suporte pleno e oficial ao .NET Framework 4.7.2; alto desempenho em operações de leitura e escrita; baixo overhead de memória e CPU; já utilizado em outros módulos do Gerenciador AASP como padrão estabelecido |
-| B | Entity Framework Core 6.x | ORM completo da Microsoft com abstração via LINQ e DbContext; suporte ao .NET Framework 4.7.2 e apenas experimental via netstandard2.0, podendo apresentar comportamentos inesperados; curva de aprendizado de migrations e DbContext; overhead maior em queries simples comparado ao Dapper; geração de SQL pode ser opaca |
+| A | Dapper | Micro-ORM open-source; queries SQL explicitas escritas pelo desenvolvedor; suporte pleno e oficial ao .NET 5.0 (net5.0); alto desempenho em operações de leitura e escrita; baixo overhead de memória e CPU; já utilizado em outros módulos do Gerenciador AASP como padrão estabelecido |
+| B | Entity Framework Core 6.x | ORM completo da Microsoft com abstração via LINQ e DbContext; suporte oficial ao .NET 5.0 (net5.0); porém introduziria um segundo padrão de acesso a dados no projeto; curva de aprendizado de migrations e DbContext; overhead maior em queries simples comparado ao Dapper; geração de SQL pode ser opaca |
 | C | ADO.NET puro | Acesso ao banco sem ORM; máximo controle sobre as queries; verboso e com alto custo de manutenção para operações CRUD; requer muito código boilerplate para cada operação; não oferece vantagem real sobre Dapper para este cenário |
 
 ### 3. Critérios de decisão
 
 | Critério | Peso |
 |---|---|
-| Compatibilidade plena com .NET Framework 4.7.2 | Alto |
+| Compatibilidade plena com .NET 5.0 (net5.0) | Alto |
 | Consistência com o padrão existente do projeto Gerenciador AASP | Alto |
 | Performance em operações de leitura (listagem de grupos, relatórios) | Alto |
 | Facilidade de manutenção e debugging de queries SQL | Medio |
@@ -42,7 +42,7 @@ O ms.auxo.gruposusuarios precisa de uma camada de acesso ao banco SQL Server (au
 
 | Critério | Peso | A — Dapper | B — EF Core 6.x | C — ADO.NET puro |
 |---|---|---|---|---|
-| Compatibilidade .NET FW 4.7.2 | Alto | Plena — suporte oficial e estavel para .NET Framework 4.7.2 | Parcial — suporte apenas via netstandard2.0; pode apresentar comportamentos inesperados em runtime com .NET FW legado | Plena — ADO.NET e nativo do .NET Framework em qualquer versão |
+| Compatibilidade com .NET 5.0 | Alto | Plena — suporte oficial e estável ao .NET 5.0 (net5.0) | Plena — EF Core 6 suporta net5.0 oficialmente, mas seria um novo padrão no projeto | Plena — ADO.NET é nativo do .NET em qualquer versão |
 | Consistência com o projeto | Alto | Excelente — Dapper já e o padrão adotado nos outros módulos do Gerenciador AASP; equipe conhece o padrão | Baixa — EF Core seria uma exceção no projeto, introduzindo um segundo padrão de acesso a dados sem justificativa técnica suficiente | Media — possível de usar, mas introduz verbosidade e diferenca de estilo em relação ao restante |
 | Performance em leitura | Alto | Excelente — queries SQL otimizadas escritas diretamente pelo desenvolvedor; sem overhead de tradução LINQ para SQL | Boa — pode gerar SQL ineficiente via LINQ para queries complexas; otimizações exigem conhecimento avancado do EF Core | Excelente — controle total sobre o SQL; sem overhead de ORM |
 | Manutenção e debugging | Medio | Bom — SQL explicito e legivel no código; fácil de debugar e otimizar queries diretamente | Bom — mas o SQL gerado pelo EF Core pode ser opaco e difícil de debugar sem ferramentas adicionais | Ruim — código muito verboso para CRUD básico; alto custo de manutenção para operações simples |
@@ -52,11 +52,11 @@ O ms.auxo.gruposusuarios precisa de uma camada de acesso ao banco SQL Server (au
 
 **Escolhido: Alternativa A — Dapper**
 
-Justificativa: A compatibilidade plena com .NET Framework 4.7.2 e a consistência com o padrão existente do Gerenciador AASP foram os fatores determinantes. O suporte do EF Core ao .NET Framework e apenas via netstandard2.0, introduzindo risco técnico desnecessario em um projeto de produção. O Dapper oferece performance superior em queries de leitura, e a equipe já possui experiência consolidada com o micro-ORM nos outros módulos do projeto, eliminando curva de aprendizado e garantindo consistência arquitetural. A alternativa C (ADO.NET puro) foi descartada por não oferecer vantagem real sobre o Dapper para este cenário, com custo de manutenção significativamente maior.
+Justificativa: a consistência com o padrão já adotado nos demais módulos do Gerenciador AASP e a performance em leitura foram os fatores determinantes. Embora o EF Core 6 também suporte o .NET 5.0, adotá-lo introduziria um segundo padrão de acesso a dados sem justificativa técnica suficiente, divergindo do restante do projeto. O Dapper oferece performance superior em queries de leitura, e a equipe já possui experiência consolidada com o micro-ORM nos outros módulos do projeto, eliminando curva de aprendizado e garantindo consistência arquitetural. A alternativa C (ADO.NET puro) foi descartada por não oferecer vantagem real sobre o Dapper para este cenário, com custo de manutenção significativamente maior.
 
 ### 6. Impacto e riscos da decisão
 
-- **Impacto arquitetural:** toda a camada de repositório do ms.auxo.gruposusuarios usara Dapper com queries SQL explicitas; migrations e alterações de schema serão gerenciadas por scripts .sql versionados no repositório (sem EF Core migrations)
+- **Impacto arquitetural:** toda a camada de repositório do ms.auxo.usuarios usara Dapper com queries SQL explicitas; migrations e alterações de schema serão gerenciadas por scripts .sql versionados no repositório (sem EF Core migrations)
 - **Risco aceito:** maior verbosidade no repositório em comparação com EF Core para operações simples; mitigado pela consistência com o padrão do projeto e pela experiência da equipe com Dapper
 - **Decisão validada por:** Cezar Hiraki (TL) e Marcos Turnes (PO) no Kickoff em 19/05/2026
 
@@ -97,7 +97,7 @@ Ao excluir um grupo de usuários, e necessário decidir se o registro e removido
 
 **Escolhido: Alternativa A — Soft Delete**
 
-Justificativa: A integridade referencial e critica para o ms.auxo.gruposusuarios — grupos possuem histórico de vinculos (`grupos_usuarios_vinculos`) e de funções (`grupos_usuarios_funcao`) que não devem ser perdidos. O hard delete exigiria cascata de exclusões ou geraria registros orfaos nas tabelas relacionadas, comprometendo a rastreabilidade exigida pelo processo MPS-SW. O soft delete preserva o histórico completo, e compativel com o requisito de auditoria (AG-23 — planejado para a Sprint 2) e alinhado com a rastreabilidade exigida pelo MPS-SW nível C. Decisão validada com o PO Marcos Turnes no Kickoff em 19/05/2026 (referenciado como D-02 na ATA-AASP01-001).
+Justificativa: A integridade referencial e critica para o ms.auxo.usuarios — grupos possuem histórico de vinculos (`grupos_usuarios_vinculos`) e de funções (`grupos_usuarios_funcao`) que não devem ser perdidos. O hard delete exigiria cascata de exclusões ou geraria registros orfaos nas tabelas relacionadas, comprometendo a rastreabilidade exigida pelo processo MPS-SW. O soft delete preserva o histórico completo, e compativel com o requisito de auditoria (AG-23 — planejado para a Sprint 2) e alinhado com a rastreabilidade exigida pelo MPS-SW nível C. Decisão validada com o PO Marcos Turnes no Kickoff em 19/05/2026 (referenciado como D-02 na ATA-AASP01-001).
 
 ### 6. Impacto da decisão
 
@@ -115,3 +115,4 @@ Justificativa: A integridade referencial e critica para o ms.auxo.gruposusuarios
 |---|---|---|---|
 | 1.0 | 19/05/2026 | Abraão | Criação do documento; decisões GDE-001 (Dapper) e GDE-002 (Soft Delete) tomadas no Kickoff |
 | 1.1 | 15/06/2026 | Abraão | GDE-002 alinhado ao schema real (soft delete via `excluido`; tabelas `grupos_usuarios`, `_vinculos`, `_funcao`; endpoint `excluirgrupo`) |
+| 1.2 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

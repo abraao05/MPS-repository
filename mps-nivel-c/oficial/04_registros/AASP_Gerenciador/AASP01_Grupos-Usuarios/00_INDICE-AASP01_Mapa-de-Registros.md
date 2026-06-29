@@ -6,9 +6,9 @@
 | **Projeto** | Grupos de Usuários — AASP Gerenciador (Feature AG) |
 | **Código do projeto** | AASP01 |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Produto** | ms.auxo.gruposusuarios |
-| **Versão** | 1.0 |
-| **Data** | 15/06/2026 |
+| **Produto** | ms.auxo.usuarios |
+| **Versão** | 1.1 |
+| **Data** | 24/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza a produção das evidências do projeto; não é, ele próprio, evidência auditável pela ASR. |
 
 > **Como usar:** este índice mapeia os registros MPS-SW do projeto AASP01, o processo de origem e o status de cada um. Conforme cada artefato evolui, atualizar a coluna **Status** e registrar no histórico ao final.
@@ -70,3 +70,4 @@
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Abraão Oliveira | Criação do índice de registros do projeto AASP01 (Sprint 2 em andamento) |
+| 1.1 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

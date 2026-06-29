@@ -5,8 +5,8 @@
 | **Documento** | ADAP-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.0 |
-| **Data** | 19/05/2026 |
+| **Versão** | 1.1 |
+| **Data** | 24/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | ADAP (evidência de projeto) |
 
@@ -14,7 +14,7 @@
 
 ## 1. Objetivo
 
-Registrar formalmente as adaptações realizadas ao processo-padrão Timeware para a execução do projeto AASP01 — Grupos de Usuários (ms.auxo.gruposusuarios). As adaptações descritas neste documento foram avaliadas e aprovadas pelo Gerente de Projeto antes do inicio das atividades de desenvolvimento, conforme exigido pelo processo de Adaptação (ADAP) do modelo MPS-SW nível C.
+Registrar formalmente as adaptações realizadas ao processo-padrão Timeware para a execução do projeto AASP01 — Grupos de Usuários (ms.auxo.usuarios). As adaptações descritas neste documento foram avaliadas e aprovadas pelo Gerente de Projeto antes do inicio das atividades de desenvolvimento, conforme exigido pelo processo de Adaptação (ADAP) do modelo MPS-SW nível C.
 
 Toda adaptação foi motivada por restrições reais de contexto — equipe enxuta, legado não documentado, restrições do cliente — e não implica redução de qualidade nos produtos entregues. Os mecanismos de mitigação associados a cada adaptação garantem que os objetivos do processo-padrão sejam atingidos por meios alternativos.
 
@@ -28,7 +28,7 @@ Toda adaptação foi motivada por restrições reais de contexto — equipe enxu
 | A-02 | Sprint Planning formal documentada desde o inicio do projeto | Sprints S1 e S2 conduzidas com planejamento ágil via Microsoft Teams e notas informais; formalização completa a partir da S3 | Equipe enxuta composta por 3 desenvolvedores (Renan Kiyoshi, Henry Komatsu e Mateus Veloso); overhead documental de um planning formal nas primeiras sprints comprometia a cadência de entrega dentro do prazo contratado. |
 | A-03 | Design de integração completo antes da implementação | Plano de Integração (ITP-AASP01-001) definido iterativamente; detalhes do contrato de API acordados no inicio da Sprint 2 | O contrato de API do microsserviço ms.temis.vinculos (banco temis3) foi disponibilizado pelo time do cliente somente no inicio da Sprint 2 (09/06/2026); especificação previa seria baseada em suposições sem validade. |
 | A-04 | Ambiente de homologação independente desde o inicio do projeto | Ambiente de homologação AASP disponibilizado somente a partir da Sprint 2 (09/06/2026); Sprint 1 executada com banco local SQL Server Express | Restrição imposta pelo cliente AASP; o time da AASP precisava preparar o ambiente de homologação em paralelo ao desenvolvimento. O time Timeware trabalhou com instancia local para não bloquear entregas. |
-| A-05 | Testes de sistema conduzidos exclusivamente pela equipe de desenvolvimento Timeware | Co-responsabilidade nos testes de aceite: Caroline Sousa (QA Timeware) + Leonardo Francisco Pereira (QA AASP); roteiros revisados e executados em conjunto | Cliente AASP exigiu participação direta nos testes de aceite como condição contratual. Os roteiros foram revisados em conjunto (CTQ-AASP01-001) e os resultados registrados formalmente (REL-VV-AASP01-001). |
+| A-05 | Testes de sistema conduzidos exclusivamente pela equipe de desenvolvimento Timeware | Co-responsabilidade nos testes de aceite: Caroline Sousa (QA Timeware) + Caroline Sousa (QA AASP); roteiros revisados e executados em conjunto | Cliente AASP exigiu participação direta nos testes de aceite como condição contratual. Os roteiros foram revisados em conjunto (CTQ-AASP01-001) e os resultados registrados formalmente (REL-VV-AASP01-001). |
 | A-06 | Plano de Construção e Produção (PCP) com especificações de baixo nível completas antes do desenvolvimento | PCP elaborado no nível de decisões arquiteturais e padrões de implementação; detalhes de baixo nível registrados nos Merge Requests !1 a !5 | Equipe enxuta; duplicar especificações de baixo nível no PCP e nos MRs geraria retrabalho documental sem agregar valor. Os MRs do GitLab servem como documentação viva, rastreável e revisada. |
 | A-07 | Code review com dois revisores independentes para cada Merge Request | Revisor único (Cezar Hiraki como Tech Lead) nos MRs de código critico; revisão cruzada entre os desenvolvedores (Renan, Henry e Mateus Veloso) nos MRs de menor risco | Equipe de 3 desenvolvedores; exigir dois revisores independentes inviabilizaria o fluxo de trabalho. Cezar Hiraki revisa todos os MRs dos desenvolvedores. Gate de CI/CD obrigatório compensa parcialmente a redução de revisores. |
 | A-08 | Papeis separados de Gerente de Projeto, GCO, Arquiteto e Tech Lead | Cezar Hiraki acumula os papeis de Arquiteto, Tech Lead, DevOps, Revisor e GCO; a Gerência de Projeto e exercida por Abraão | Contrato previsto para equipe enxuta de desenvolvimento; acumulo de papeis por Cezar Hiraki viabiliza a operação dentro do orçamento contratado. As responsabilidades de cada papel são exercidas formalmente, ainda que pela mesma pessoa. |
@@ -58,7 +58,7 @@ Os itens abaixo seguiram o processo-padrão Timeware sem qualquer adaptação:
 | A-02 | Planejamento menos formal nas primeiras sprints pode gerar lacunas de estimativa | Abraão revisou estimativas ao final de cada sprint e ajustou o PLA-AASP01-001; formalização completa a partir da S3 |
 | A-03 | Implementação da integração com temis iniciada sem contrato definitivo | Interfaces de integração projetadas com baixo acoplamento; adaptação ao contrato real custou apenas ajuste de payload na Sprint 2 |
 | A-04 | Bugs de ambiente não detectados na Sprint 1 por ausência de homologação real | Testes unitarios com cobertura estimada de 85% (22/26 métodos); bugs de ambiente identificados e corrigidos no inicio da Sprint 2 |
-| A-05 | Maior esforço de coordenação entre Timeware e AASP nos ciclos de teste | Roteiros de teste (CTQ-AASP01-001) preparados com antecedência; sessões de teste agendadas com Leonardo Francisco Pereira; resultados registrados formalmente |
+| A-05 | Maior esforço de coordenação entre Timeware e AASP nos ciclos de teste | Roteiros de teste (CTQ-AASP01-001) preparados com antecedência; sessões de teste agendadas com Caroline Sousa; resultados registrados formalmente |
 | A-06 | MRs como única fonte de especificação de baixo nível aumenta dependência do GitLab | MRs exportados como PDF e arquivados no pacote documental MPS-SW a cada baseline |
 | A-07 | Menor diversidade de perspectivas no code review | Gate de CI/CD obrigatório (build + testes + análise estática SonarQube); checklist de code review padrão Timeware aplicado em todos os MRs |
 | A-08 | Acumulo de papeis por Cezar Hiraki aumenta risco de sobrecarga e ponto único de falha | Cronograma previsto com buffer de 20%; Renan Kiyoshi preparado para assumir atividades de GCO em caso de indisponibilidade de Cezar |
@@ -70,3 +70,4 @@ Os itens abaixo seguiram o processo-padrão Timeware sem qualquer adaptação:
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Abraão | Versão inicial |
+| 1.1 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

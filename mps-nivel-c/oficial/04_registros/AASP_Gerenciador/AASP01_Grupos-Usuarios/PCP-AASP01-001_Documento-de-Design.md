@@ -5,8 +5,8 @@
 | **Documento** | PCP-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.2 |
-| **Data** | 26/05/2026 |
+| **Versão** | 1.3 |
+| **Data** | 24/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | PCP (evidência de projeto) |
 
@@ -14,7 +14,7 @@
 
 ## 1. Visão geral da solução
 
-O microsserviço **ms.auxo.gruposusuarios** e uma Web API desenvolvida em .NET Framework 4.7.2 com Dapper como ORM e SQL Server (banco principal auxo3) como banco de dados. Os endpoints são expostos pelo controller `GerenciarGruposController` na rota base **`api/gerenciar/grupos`**, utilizando apenas os verbos GET e POST e respondendo num envelope padrão `{ Sucesso, MensagemPublica, RetornaDados, HoraExecucao }` com HTTP 200 (sucesso) ou 400 (erro/validação).
+O microsserviço **ms.auxo.usuarios** e uma Web API desenvolvida em .NET 5.0 (net5.0) com Dapper como ORM e SQL Server (banco principal auxo3) como banco de dados. Os endpoints são expostos pelo controller `GerenciarGruposController` na rota base **`api/gerenciar/grupos`**, utilizando apenas os verbos GET e POST e respondendo num envelope padrão `{ Sucesso, MensagemPublica, RetornaDados, HoraExecucao }` com HTTP 200 (sucesso) ou 400 (erro/validação).
 
 A solução e multi-tenant: toda operação e escopada por **`escritorio_id`** (escritorio). As funcionalidades entregues na Sprint 1 são:
 
@@ -34,7 +34,7 @@ A API segue o padrão arquitetural do sistema Gerenciador da AASP, utilizando au
 
 ## 2. Arquitetura da solução
 
-![Diagrama de Arquitetura — ms.auxo.gruposusuarios](PCP-AASP01-001_Diagrama-Arquitetura.png)
+![Diagrama de Arquitetura — ms.auxo.usuarios](PCP-AASP01-001_Diagrama-Arquitetura.png)
 
 *Figura 1 — Arquitetura em camadas (API → Service → Repositório/Dapper → SQL Server auxo3).*
 
@@ -43,8 +43,8 @@ A API segue o padrão arquitetural do sistema Gerenciador da AASP, utilizando au
 
 | Camada | Tecnologia | Justificativa |
 |---|---|---|
-| Framework de API | ASP.NET Web API (.NET Framework 4.7.2) | Padrão do projeto Gerenciador AASP; compatibilidade com infraestrutura existente do cliente |
-| ORM / Acesso a dados | Dapper 2.x | Ver GDE-AASP01-001 (GDE-001) — compatibilidade com .NET FW 4.7.2, performance superior ao EF Core em queries complexas, padrão já adotado no projeto Gerenciador |
+| Framework de API | ASP.NET Web API (.NET 5.0 (net5.0)) | Padrão do projeto Gerenciador AASP; compatibilidade com infraestrutura existente do cliente |
+| ORM / Acesso a dados | Dapper 2.x | Ver GDE-AASP01-001 (GDE-001) — compatibilidade com .NET FW 5.0, performance superior ao EF Core em queries complexas, padrão já adotado no projeto Gerenciador |
 | Banco de dados principal | SQL Server — banco auxo3 | Banco existente do sistema Gerenciador da AASP |
 | Integração externa | HTTP REST — ms.temis.vinculos | *(Planejado — Sprint 2)* Ver ITP-AASP01-001; desacoplamento entre dominios |
 | Autenticação | JWT Bearer Token | Padrão do Gerenciador AASP; tokens emitidos pelo serviço de autenticação central |
@@ -158,7 +158,7 @@ A trilha de auditoria das operações de escrita esta planejada para a Sprint 2 
 
 **Decisão:** Dapper adotado como ORM para todas as operações de acesso a dados.
 
-**Contexto:** O projeto Gerenciador AASP roda em .NET Framework 4.7.2. O Entity Framework Core em suas versões modernas tem suporte limitado ao .NET FW 4.7.2. Além disso, o banco auxo3 possui schema legado com convenções de nomenclatura que dificultam o mapeamento automático do EF Core.
+**Contexto:** O projeto Gerenciador AASP roda em .NET 5.0 (net5.0). O Entity Framework Core em suas versões modernas tem suporte limitado ao .NET FW 5.0. Além disso, o banco auxo3 possui schema legado com convenções de nomenclatura que dificultam o mapeamento automático do EF Core.
 
 **Consequências:** Queries SQL escritas manualmente nos Repositories, o que aumenta o controle sobre performance mas exige disciplina no uso de queries parametrizadas para prevenção de SQL Injection. Toda query revisada no code review com checklist específico para segurança de dados.
 
@@ -189,3 +189,4 @@ A sincronização de vinculos com o microsserviço **ms.temis.vinculos** (banco 
 | 1.0 | 26/05/2026 | Abraão | Arquitetura inicial — Sprint 1; stack, modelo de dados, endpoints S1 |
 | 1.1 | 15/06/2026 | Abraão | Adição da seção de integração ms.temis.vinculos |
 | 1.2 | 15/06/2026 | Abraão | Design alinhado a API e ao schema reais (GerenciarGruposController; tabelas grupos_usuarios, _vinculos, _função); auditoria/integração/relatório marcados como planejados |
+| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

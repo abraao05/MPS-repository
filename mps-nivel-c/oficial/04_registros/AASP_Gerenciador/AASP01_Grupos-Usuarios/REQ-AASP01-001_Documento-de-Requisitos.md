@@ -5,9 +5,9 @@
 | Documento     | REQ-AASP01-001                                                        |
 | Projeto       | AASP01 — Grupos de Usuários (Feature AG)                              |
 | Cliente       | AASP — Associação dos Advogados de São Paulo                          |
-| Produto       | ms.auxo.gruposusuarios                                                |
-| Versão        | 1.2                                                                   |
-| Data          | 26/05/2026                                                            |
+| Produto       | ms.auxo.usuarios                                                |
+| Versão        | 1.3                                                                   |
+| Data          | 24/06/2026                                                            |
 | Autor         | Abraão                                                         |
 | Status        | Aprovado                                                              |
 
@@ -15,7 +15,7 @@
 
 ## 1. Objetivo
 
-Este documento descreve os requisitos funcionais, não funcionais e regras de negócio do microsserviço **ms.auxo.gruposusuarios**, desenvolvido para o sistema Gerenciador da AASP como parte da Feature AG — Grupos de Usuários. Os endpoints citados refletem o controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`).
+Este documento descreve os requisitos funcionais, não funcionais e regras de negócio do microsserviço **ms.auxo.usuarios**, desenvolvido para o sistema Gerenciador da AASP como parte da Feature AG — Grupos de Usuários. Os endpoints citados refletem o controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`).
 
 ## 2. Glossário
 
@@ -52,7 +52,7 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 | RNF-01 | Performance      | Tempo de resposta ≤ 500 ms para 95% das requisições em condições normais de carga      |
 | RNF-02 | Segurança        | Autenticação via JWT; comunicação exclusivamente por HTTPS                             |
 | RNF-03 | Rastreabilidade  | Operações de escrita devem ser rastreáveis via auditoria (entrega planejada na Sprint 2) |
-| RNF-04 | Compatibilidade  | Stack obrigatória: .NET Framework 4.7.2 e Dapper; SQL Server como SGBD                |
+| RNF-04 | Compatibilidade  | Stack obrigatória: .NET 5.0 (net5.0) e Dapper; SQL Server como SGBD                |
 | RNF-05 | Manutenibilidade | Cobertura mínima de 70% de testes unitários por módulo                                 |
 
 ## 5. Regras de Negócio
@@ -95,3 +95,4 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 | 1.0    | 19/05/2026 | Abraão  | Levantamento inicial dos requisitos (kickoff)    |
 | 1.1    | 26/05/2026 | Abraão  | Refinamento dos requisitos para Sprint 1         |
 | 1.2    | 15/06/2026 | Abraão  | Alinhamento dos endpoints e regras à API real (GerenciarGruposController) |
+| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

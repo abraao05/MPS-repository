@@ -5,8 +5,8 @@
 | **Documento** | REL-VV-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.2 |
-| **Data** | 15/06/2026 |
+| **Versão** | 1.3 |
+| **Data** | 24/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | VV (evidência de projeto) |
 
@@ -39,7 +39,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 | **Status** | Concluído — aceite formal em 06/06/2026 |
 | **Total Story Points entregue** | 34 SP (100% do planejado — 0% de desvio) |
 | **Histórias entregues** | AG-20 (Concluído) / AG-21 (Concluído) / AG-22 (Concluído) |
-| **MRs mergeados** | !1, !2, !3, !4, !5 — todos aprovados e mergeados para main |
+| **MRs mergeados** | !1–!5 — entregas da Sprint 1 aprovadas (alvo `develop`); baseline em `main` pela tag `sprint-1-aceite` |
 
 ---
 
@@ -70,7 +70,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 ### 3.4 Testes de Homologação — Sprint 1 (UAT)
 
-**Executados por:** Leonardo Francisco Pereira (AASP — QA/Homologadora)
+**Executados por:** Caroline Sousa (AASP — QA/Homologadora)
 **Data de execução:** 06/06/2026
 **Ambiente:** Homologação AASP — banco auxo3
 
@@ -107,7 +107,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 | Etapa | Responsável | Data | Resultado |
 |---|---|---|---|
-| Execução dos cenários de aceite (CTQ) | Leonardo Francisco Pereira (AASP — QA) | 06/06/2026 | Todos os 10 cenários aprovados |
+| Execução dos cenários de aceite (CTQ) | Caroline Sousa (AASP — QA) | 06/06/2026 | Todos os 10 cenários aprovados |
 | Aceite formal do cliente | Marcos Turnes (AASP — PO) | 06/06/2026 | Concedido sem ressalvas |
 
 ---
@@ -133,7 +133,7 @@ Não há resultados de V&V registrados para a Sprint 2 até a data de referênci
 |---|---|---|
 | Implementar a trilha de auditoria das operações de escrita (AG-23) | Renan Kiyoshi | Sprint 2 |
 | Implementar a integração com ms.temis.vinculos (AG-24) | Mateus Veloso | Sprint 2 |
-| UAT — Leonardo Francisco Pereira executa cenários AUD-01, AUD-02 e INT-01 | Leonardo Francisco Pereira (AASP) | 19–20/06/2026 |
+| UAT — Caroline Sousa executa cenários AUD-01, AUD-02 e INT-01 | Caroline Sousa (AASP) | 19–20/06/2026 |
 | Sprint Review e aceite formal Sprint 2 com Marcos Turnes | Abraão + Marcos Turnes | 20/06/2026 |
 
 ---
@@ -168,3 +168,4 @@ Não há resultados de V&V registrados para a Sprint 2 até a data de referênci
 | 1.0 | 09/06/2026 | Abraão | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
 | 1.1 | 15/06/2026 | Abraão | Inclusão do status parcial da Sprint 2 |
 | 1.2 | 15/06/2026 | Abraão | Resultados alinhados à API real (endpoints/HTTP 200/400; função; tabelas reais); 3 sprints; Sprint 2 sem resultados de teste até a data |
+| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

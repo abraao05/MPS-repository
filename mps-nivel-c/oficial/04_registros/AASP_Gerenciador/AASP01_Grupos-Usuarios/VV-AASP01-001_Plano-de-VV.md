@@ -5,8 +5,8 @@
 | **Documento** | VV-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.1 |
-| **Data** | 26/05/2026 |
+| **Versão** | 1.2 |
+| **Data** | 24/06/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | VER / VAL — Verificação e Validação (evidência de projeto) |
 
@@ -14,10 +14,10 @@
 
 ## 1. Objetivo
 
-Definir a estratégia e as atividades de Verificação e Validação (V&V) do microserviço `ms.auxo.gruposusuarios`, garantindo que o produto:
+Definir a estratégia e as atividades de Verificação e Validação (V&V) do microserviço `ms.auxo.usuarios`, garantindo que o produto:
 
 - **Verificação**: atende aos requisitos especificados nos documentos REQ-AASP01-001 e PCP-AASP01-001 (design técnico)
-- **Validação**: atende as necessidades reais do negocio AASP, conforme acordado com o Product Owner Marcos Turnes e validado por Leonardo Francisco Pereira
+- **Validação**: atende as necessidades reais do negocio AASP, conforme acordado com o Product Owner Marcos Turnes e validado por Caroline Sousa
 
 Este plano e aplicado a todos os sprints do projeto (S1 a S3) e constitui evidência obrigatória dos processos VER e VAL do MPS-SW nível C.
 
@@ -31,7 +31,7 @@ Este documento cobre todas as atividades de V&V desde:
 - Testes de integração com banco de dados (e, quando implementada na Sprint 2, com o microserviço `ms.temis.vinculos`)
 - Code review técnico (peer review) em Merge Requests no GitLab
 - Testes de sistema via Swagger UI e Postman
-- Testes de homologação (UAT) executados por Leonardo Francisco Pereira em ambiente AASP
+- Testes de homologação (UAT) executados por Caroline Sousa em ambiente AASP
 - Aceite formal por sprint realizado por Marcos Turnes
 
 O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos em REQ-AASP01-001, distribuidos nas sprints S1 a S3.
@@ -44,11 +44,11 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 
 | Nível | Tipo | Responsável | Ferramenta | Critério de Entrada | Critério de Saida |
 |---|---|---|---|---|---|
-| 1 | Testes Unitarios | Cezar Hiraki + Renan Kiyoshi (Timeware) | xUnit (.NET FW 4.7.2) + Moq | Feature implementada em branch de feature; build local verde | Cobertura adequada na camada de serviço (`GerenciarGruposServices`) e repositório (`GerenciarGruposRepositorio`); todos os testes passando sem falha |
+| 1 | Testes Unitarios | Cezar Hiraki + Renan Kiyoshi (Timeware) | xUnit (.NET FW 5.0) + Moq | Feature implementada em branch de feature; build local verde | Cobertura adequada na camada de serviço (`GerenciarGruposServices`) e repositório (`GerenciarGruposRepositorio`); todos os testes passando sem falha |
 | 2 | Testes de Integração | Cezar Hiraki (Timeware) | xUnit + SQL Server local (scripts de setup de banco de teste) | Testes unitarios passando; banco de teste configurado | Fluxos criticos da Sprint 1 (CRUD de grupos, função do usuário, vinculo usuário-grupo) executados sem falha. Integração com ms.temis.vinculos será coberta na Sprint 2 |
 | 3 | Code Review (peer review) | Cezar Hiraki como revisor principal | GitLab Merge Requests + checklist de revisão | MR aberto; build + testes unitarios passando | MR aprovado formalmente por Cezar Hiraki (Tech Lead); todos os achados P1 e P2 resolvidos antes da aprovação |
 | 4 | Testes de Sistema | Cezar Hiraki via Swagger UI / Postman | Swagger UI (gerado automaticamente) + Postman | Feature integrada em ambiente dev; MR mergeado em develop | Todos os endpoints respondem com status HTTP correto (200/400) e envelope padrão; autenticação JWT funcionando |
-| 5 | Testes de Homologação (UAT) | Leonardo Francisco Pereira (AASP) + Cezar Hiraki (suporte) | Roteiros CTQ-AASP01-001 + ambiente de homologação AASP | Ambiente de homologação disponível; roteiros de teste aprovados; build deployado em homolog. | >= 95% dos cenários criticos aprovados; todos os cenários P1 (criticos) aprovados sem ressalvas |
+| 5 | Testes de Homologação (UAT) | Caroline Sousa (AASP) + Cezar Hiraki (suporte) | Roteiros CTQ-AASP01-001 + ambiente de homologação AASP | Ambiente de homologação disponível; roteiros de teste aprovados; build deployado em homolog. | >= 95% dos cenários criticos aprovados; todos os cenários P1 (criticos) aprovados sem ressalvas |
 | 6 | Aceite Formal | Marcos Turnes (AASP, Product Owner) | Ata de aceite documentada (ATA-AASP01-00X) | Testes de homologação com >= 95% aprovação; relatório de execução emitido | Aceite formal registrado em ata por Marcos Turnes; versão do entregavel congelada no repositório |
 
 ### 3.2 Critérios de Qualidade do Projeto
@@ -69,9 +69,9 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 
 | Sprint | Escopo Funcional | Atividades de V&V | Responsável | Status |
 |---|---|---|---|---|
-| Sprint 1 (26/05–06/06) | AG-20: CRUD de grupos; AG-21: função do usuário no grupo; AG-22: vinculo usuário-grupo | Testes unitarios AG-20, AG-21, AG-22; code review MRs !1, !2, !3, !4, !5; testes de sistema via Swagger (endpoints GET/POST de `api/gerenciar/grupos`); UAT Leonardo Francisco Pereira (10 cenários CTQ); aceite formal Marcos Turnes | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Leonardo Francisco Pereira + Marcos Turnes | Concluido (aceite 06/06/2026) |
-| Sprint 2 (09/06–20/06) | AG-23: auditoria de ações; AG-24: integração com ms.temis.vinculos | Testes unitarios AG-23, AG-24; testes de integração ms.temis.vinculos (mock + real); code review MRs !6, !7 (previstos); testes de sistema em ambiente dev; UAT Leonardo Francisco Pereira; aceite formal Marcos Turnes | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Leonardo Francisco Pereira + Marcos Turnes | Em andamento |
-| Sprint 3 (23/06–04/07) | AG-25: relatório consolidado de grupos | Testes unitarios AG-25; testes de sistema (Swagger + Postman); UAT (Leonardo Francisco Pereira) com regressão de AG-20 a AG-25; preparação para aceite final | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Leonardo Francisco Pereira | Planejado |
+| Sprint 1 (26/05–06/06) | AG-20: CRUD de grupos; AG-21: função do usuário no grupo; AG-22: vinculo usuário-grupo | Testes unitarios AG-20, AG-21, AG-22; code review MRs !1, !2, !3, !4, !5; testes de sistema via Swagger (endpoints GET/POST de `api/gerenciar/grupos`); UAT Caroline Sousa (10 cenários CTQ); aceite formal Marcos Turnes | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Caroline Sousa + Marcos Turnes | Concluido (aceite 06/06/2026) |
+| Sprint 2 (09/06–20/06) | AG-23: auditoria de ações; AG-24: integração com ms.temis.vinculos | Testes unitarios AG-23, AG-24; testes de integração ms.temis.vinculos (mock + real); code review MRs !6, !7 (previstos); testes de sistema em ambiente dev; UAT Caroline Sousa; aceite formal Marcos Turnes | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Caroline Sousa + Marcos Turnes | Em andamento |
+| Sprint 3 (23/06–04/07) | AG-25: relatório consolidado de grupos | Testes unitarios AG-25; testes de sistema (Swagger + Postman); UAT (Caroline Sousa) com regressão de AG-20 a AG-25; preparação para aceite final | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Caroline Sousa | Planejado |
 
 ---
 
@@ -90,7 +90,7 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 2. Todos os testes de integração passando sem falha
 3. Code review aprovado por Cezar Hiraki (Tech Lead); achados P1 e P2 resolvidos
 4. Testes de sistema (Swagger / Postman) sem anomalias nos contratos de API
-5. UAT executado por Leonardo Francisco Pereira com >= 95% de aprovação (100% dos cenários P1)
+5. UAT executado por Caroline Sousa com >= 95% de aprovação (100% dos cenários P1)
 6. Aceite formal documentado em ata por Marcos Turnes
 
 ---
@@ -109,7 +109,7 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 ### 6.2 Fluxo de Gestão de Defeitos
 
 1. Defeito identificado em code review: registrado como comentário no MR com severidade e descrição
-2. Defeito identificado em UAT: registrado por Leonardo Francisco Pereira no GitLab Issues com ID, descrição, severidade e evidência
+2. Defeito identificado em UAT: registrado por Caroline Sousa no GitLab Issues com ID, descrição, severidade e evidência
 3. Desenvolvedor (Renan / Henry / Mateus Veloso) corrige e registra a resolução no item de trabalho
 4. Cezar Hiraki verifica a correção antes de re-aprovar o MR ou liberar para novo ciclo de UAT
 5. Defeitos P1 e P2 devem ser resolvidos e re-validados antes de qualquer merge em `develop`
@@ -132,12 +132,12 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 
 | Ferramenta / Ambiente | Uso | Responsável pela Manutenção |
 |---|---|---|
-| xUnit (.NET FW 4.7.2) + Moq | Testes unitarios e de integração automatizados | Cezar Hiraki |
+| xUnit (.NET FW 5.0) + Moq | Testes unitarios e de integração automatizados | Cezar Hiraki |
 | Swagger UI (Swashbuckle) | Testes de sistema manuais; documentação automática da API | Cezar Hiraki |
 | Postman | Testes de sistema e contratuais; coleção de endpoints exportavel | Cezar Hiraki |
 | GitLab Merge Requests | Code review, gate de qualidade, rastreabilidade de mudanças | Cezar Hiraki |
 | SQL Server (ambiente dev local) | Banco de dados para testes unitarios e de integração em ambiente local | Renan Kiyoshi, Henry Komatsu e Mateus Veloso |
-| Ambiente de homologação AASP (banco + servidor) | UAT e aceite formal por sprint; ambiente espelhado da produção | Leonardo Francisco Pereira (AASP) |
+| Ambiente de homologação AASP (banco + servidor) | UAT e aceite formal por sprint; ambiente espelhado da produção | Caroline Sousa (AASP) |
 
 ---
 
@@ -147,3 +147,4 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 |---|---|---|---|
 | 1.0 | 26/05/2026 | Abraão | Versão inicial — plano de V&V elaborado no inicio da Sprint 1 |
 | 1.1 | 15/06/2026 | Abraão | Alinhado a API real (endpoints GET/POST 200/400; função do usuário), 3 sprints, nomes reais de service/repositorio |
+| 1.2 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

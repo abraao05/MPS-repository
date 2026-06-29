@@ -5,9 +5,9 @@
 | Documento     | PLA-AASP01-001                                                        |
 | Projeto       | AASP01 — Grupos de Usuários (Feature AG)                              |
 | Cliente       | AASP — Associação dos Advogados de São Paulo                          |
-| Produto       | ms.auxo.gruposusuarios                                                |
-| Versão        | 1.0                                                                   |
-| Data          | 19/05/2026                                                            |
+| Produto       | ms.auxo.usuarios                                                |
+| Versão        | 1.1                                                                   |
+| Data          | 24/06/2026                                                            |
 | Autor         | Abraão                                                         |
 | Status        | Vigente                                                               |
 
@@ -15,7 +15,7 @@
 
 ## 1. Objetivo do Plano
 
-Este documento define o planejamento executivo do projeto AASP01, estabelecendo cronograma, papéis, plano de comunicação, gestão de riscos, verificação & validação e métricas de sucesso para o desenvolvimento do microsserviço **ms.auxo.gruposusuarios**.
+Este documento define o planejamento executivo do projeto AASP01, estabelecendo cronograma, papéis, plano de comunicação, gestão de riscos, verificação & validação e métricas de sucesso para o desenvolvimento do microsserviço **ms.auxo.usuarios**.
 
 ## 2. Escopo e Premissas
 
@@ -51,7 +51,7 @@ O escopo deste plano abrange as Sprints 1 a 3 do projeto, conforme detalhado no 
 | Papel                        | Responsável      | Organização | Responsabilidades                                                                           |
 |------------------------------|------------------|-------------|----------------------------------------------------------------------------------------------|
 | Product Owner                | Marcos Turnes  | AASP        | Priorização do backlog, aceite de entrega, aprovação de change requests                      |
-| QA / Homologação             | Leonardo Francisco Pereira     | AASP        | Execução de testes de homologação, emissão de parecer de aceite por sprint                   |
+| QA / Homologação             | Caroline Sousa     | AASP        | Execução de testes de homologação, emissão de parecer de aceite por sprint                   |
 | Gerente de Projeto / Tech Lead | Abraão (GP) · Cezar Hiraki (TL)  | Timeware    | Coordenação do projeto, arquitetura técnica, code review, relatório de status, gestão de riscos |
 | Desenvolvedor                | Renan Kiyoshi    | Timeware    | Implementação das features, testes unitários, atualização da documentação técnica            |
 | Desenvolvedor                | Henry Komatsu    | Timeware    | Implementação das features e testes unitários                                                |
@@ -64,7 +64,7 @@ O escopo deste plano abrange as Sprints 1 a 3 do projeto, conforme detalhado no 
 | Daily Stand-up          | Diária — 09h30                          | Microsoft Teams | Equipe Timeware            | Abraão  |
 | Sprint Review           | Sexta-feira da semana de fechamento     | Microsoft Teams | Equipe completa + PO + QA  | Abraão  |
 | Sprint Retrospectiva    | Sexta-feira da semana de fechamento     | Microsoft Teams | Equipe Timeware            | Abraão  |
-| Relatório de Status     | Semanal — toda segunda-feira            | E-mail         | Marcos Turnes, Leonardo Francisco Pereira | Abraão |
+| Relatório de Status     | Semanal — toda segunda-feira            | E-mail         | Marcos Turnes, Caroline Sousa | Abraão |
 | Comunicações urgentes   | Sob demanda                             | Microsoft Teams | Partes envolvidas          | Qualquer membro |
 
 ## 6. Plano de Gestão de Riscos
@@ -92,7 +92,7 @@ O escopo deste plano abrange as Sprints 1 a 3 do projeto, conforme detalhado no 
 | Testes unitários            | A cada sprint      | Renan Kiyoshi     | Cobertura ≥ 70% nos módulos entregues na sprint              |
 | Code review                 | A cada MR          | Cezar Hiraki     | Aprovação formal no GitLab antes do merge              |
 | Testes de integração        | Sprint 2           | Cezar Hiraki     | Endpoints integrados validados em ambiente de desenvolvimento |
-| Homologação QA              | Sprint 3            | Leonardo Francisco Pereira     | Parecer de aceite emitido pela QA da AASP                    |
+| Homologação QA              | Sprint 3            | Caroline Sousa     | Parecer de aceite emitido pela QA da AASP                    |
 | Aceite formal               | Fim de cada sprint  | Marcos Turnes  | Confirmação escrita do PO (e-mail ou Teams)                  |
 
 ## 8. Métricas de Sucesso
@@ -135,3 +135,4 @@ Mudanças não aprovadas por ambas as partes não serão implementadas.
 | Versão | Data       | Autor          | Descrição             |
 |--------|------------|----------------|-----------------------|
 | 1.0    | 19/05/2026 | Abraão  | Criação do documento  |
+| 1.1 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |

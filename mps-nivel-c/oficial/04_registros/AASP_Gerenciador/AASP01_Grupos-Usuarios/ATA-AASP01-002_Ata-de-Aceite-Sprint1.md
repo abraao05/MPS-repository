@@ -24,13 +24,13 @@
 | Henry Komatsu | Timeware | Desenvolvedor |
 | Mateus Veloso | Timeware | Desenvolvedor |
 | Marcos Turnes | AASP | Product Owner / Representante do Cliente / Aprovador |
-| Leonardo Francisco Pereira | AASP | QA / Homologadora |
+| Caroline Sousa | AASP | QA / Homologadora |
 
 ---
 
 ## 2. Objetivo da Reunião
 
-Apresentar os entregáveis da Sprint 1 (AG-20, AG-21, AG-22) ao cliente AASP, demonstrar o funcionamento dos endpoints via Swagger UI, apresentar os resultados dos testes de homologação executados por Leonardo Francisco Pereira e obter o aceite formal de Marcos Turnes (AASP, PO), encerrando oficialmente a Sprint 1.
+Apresentar os entregáveis da Sprint 1 (AG-20, AG-21, AG-22) ao cliente AASP, demonstrar o funcionamento dos endpoints via Swagger UI, apresentar os resultados dos testes de homologação executados por Caroline Sousa e obter o aceite formal de Marcos Turnes (AASP, PO), encerrando oficialmente a Sprint 1.
 
 ---
 
@@ -50,7 +50,7 @@ Cezar Hiraki demonstrou todos os endpoints via **Swagger UI** (`http://localhost
 
 Renan Kiyoshi demonstrou os **scripts de migration** do banco de dados (estrutura das tabelas grupos_usuarios, grupos_usuarios_vinculos e grupos_usuarios_funcao) e a organização do repositório no GitLab, incluindo as branches de feature, MRs aprovados e histórico de commits por história.
 
-Leonardo Francisco Pereira confirmou que todos os **10 cenários de aceite** (GRP-01 a GRP-07, FUNC-01, VINC-01 e VINC-02) foram executados por ela no ambiente de homologação AASP em 06/06/2026 e aprovados sem ressalvas, conforme evidências registradas no CTQ-AASP01-001.
+Caroline Sousa confirmou que todos os **10 cenários de aceite** (GRP-01 a GRP-07, FUNC-01, VINC-01 e VINC-02) foram executados por ela no ambiente de homologação AASP em 06/06/2026 e aprovados sem ressalvas, conforme evidências registradas no CTQ-AASP01-001.
 
 ---
 
@@ -60,7 +60,7 @@ Leonardo Francisco Pereira confirmou que todos os **10 cenários de aceite** (GR
 |---|---|---|
 | Testes unitários | 22 métodos | 100% passando; cobertura estimada 85% (meta: ≥80% — atingida) |
 | Testes de integração | 3 | 100% passando (round-trip banco auxo3 validado) |
-| Cenários de aceite (CTQ) | 10 | 10/10 (100%) aprovados por Leonardo Francisco Pereira em 06/06/2026 |
+| Cenários de aceite (CTQ) | 10 | 10/10 (100%) aprovados por Caroline Sousa em 06/06/2026 |
 | Achados code review (REV) | 5 (P2: 3; P3: 2) | Todos resolvidos antes do merge — nenhum defeito aberto |
 
 ---
@@ -69,9 +69,9 @@ Leonardo Francisco Pereira confirmou que todos os **10 cenários de aceite** (GR
 
 - **Marcos Turnes (AASP — PO):** Confirmou que os endpoints atendem ao que foi especificado no REQ-AASP01-001. Nenhuma ressalva técnica ou de negócio foi identificada. Solicitou que a Sprint Review da Sprint 2 seja realizada em 20/06/2026 no mesmo horário (14h00, Teams).
 
-- **Leonardo Francisco Pereira (AASP — QA):** Validou todos os 10 cenários de aceite no ambiente de homologação AASP. Solicitou que o ambiente de homologação para a Sprint 2 seja preparado pela equipe Timeware até 11/06/2026, incluindo os scripts de migration das novas tabelas (AuditoriaGrupos).
+- **Caroline Sousa (AASP — QA):** Validou todos os 10 cenários de aceite no ambiente de homologação AASP. Solicitou que o ambiente de homologação para a Sprint 2 seja preparado pela equipe Timeware até 11/06/2026, incluindo os scripts de migration das novas tabelas (AuditoriaGrupos).
 
-- **Abraão (Timeware — GP):** Informou que a Sprint 2 inicia em 09/06/2026 com as histórias AG-23 (Auditoria de Grupos) e AG-24 (Integração com ms.temis.vinculos). Confirmou que o ambiente de homologação será preparado até 11/06/2026 conforme solicitado por Leonardo Francisco Pereira.
+- **Abraão (Timeware — GP):** Informou que a Sprint 2 inicia em 09/06/2026 com as histórias AG-23 (Auditoria de Grupos) e AG-24 (Integração com ms.temis.vinculos). Confirmou que o ambiente de homologação será preparado até 11/06/2026 conforme solicitado por Caroline Sousa.
 
 ---
 
@@ -95,7 +95,7 @@ A Sprint 1 é considerada oficialmente encerrada e entregue. Todas as histórias
 |---|---|---|
 | Iniciar Sprint 2 — AG-23 (Auditoria) + AG-24 (Integração ms.temis.vinculos) | Renan Kiyoshi, Henry Komatsu e Mateus Veloso | 09/06/2026 |
 | Preparar ambiente de homologação AASP para Sprint 2 (migrations AuditoriaGrupos) | Renan Kiyoshi, Henry Komatsu e Mateus Veloso | 11/06/2026 |
-| Confirmar ambiente de homologação Sprint 2 recebido e validado | Leonardo Francisco Pereira (AASP) | 11/06/2026 |
+| Confirmar ambiente de homologação Sprint 2 recebido e validado | Caroline Sousa (AASP) | 11/06/2026 |
 | Atualizar GEST-AASP01, RAC-AASP01-001 e MED-AASP01-001 com resultados finais Sprint 1 | Abraão | 09/06/2026 |
 | Sprint Review Sprint 2 agendada — apresentação de AG-23 e AG-24 | Abraão + Marcos Turnes | 20/06/2026 — 14h00 Teams |
 
