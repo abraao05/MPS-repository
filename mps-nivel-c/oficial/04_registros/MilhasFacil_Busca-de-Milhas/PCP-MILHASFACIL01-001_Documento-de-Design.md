@@ -92,7 +92,7 @@ O MilhasFacil é uma plataforma que busca, em paralelo, passagens aéreas resgat
 | Crawler | FastAPI 0.111 / SeleniumBase 4.27.4 | Coleta nos portais; parsers Smiles/Azul/Latam com BeautifulSoup; `CABIN_MAP` para tipos de cabine |
 | Web | Angular 17.3 standalone / Tailwind 3.4 | SPA com rotas protegidas por `authGuard` |
 | Mensageria WhatsApp | Z-API (WebClient) | Envio de alertas (`POST /send-text`, header `Client-Token`) |
-| Documentação de API | Swagger / springdoc-openapi | Anotações `@Tag`/`@Operation` no `AuthController` (Swagger UI) |
+| Documentação de API | Swagger UI / OAS 3.0 | Contrato de API documentado e publicado no Swagger UI (mesmos endpoints do sistema) |
 | Testes | JUnit5 + Mockito + AssertJ (unit); SpringBootTest + Testcontainers (integração); Karma (Web); pytest (Crawler) | Suíte de testes com gate de cobertura no CI |
 | Empacotamento | Docker / Docker Compose | Sobe os três serviços de forma integrada |
 
@@ -173,7 +173,7 @@ O Crawler expõe `GET /health` e `POST /search/{airline}` (retorna 404 para comp
 
 ![IMG-SWAGGER-01 — Swagger UI da API MilhasFacil exibindo os 8 controllers e endpoints sob /api/v1](evidencias/IMG-SWAGGER-01_swagger-ui.png)
 
-A documentação interativa da API é gerada por springdoc-openapi (anotações `@Tag`/`@Operation`). A captura IMG-SWAGGER-01 evidencia os endpoints reais expostos pela API.
+A documentação interativa da API é disponibilizada pelo Swagger UI (OAS 3.0). A captura IMG-SWAGGER-01 evidencia os endpoints reais expostos pela API.
 
 | Código | O que capturar | Fonte/URL |
 |---|---|---|

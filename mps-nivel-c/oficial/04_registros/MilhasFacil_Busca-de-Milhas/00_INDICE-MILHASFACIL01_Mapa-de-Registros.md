@@ -92,7 +92,7 @@ Os registros referenciam capturas de tela que devem ser anexadas na subpasta `ev
 | IMG-CI-02 | Pipelines recentes succeeded (S9) | GitLab CI/CD | REL-VV |
 | IMG-CI-03 | Relatório de cobertura JaCoCo | GitLab CI/CD artifacts | MED |
 | IMG-CI-04 | Estágios do pipeline (Test→Build) | GitLab CI/CD | ITP |
-| IMG-SWAGGER-01 | Swagger UI da API | API (springdoc) | PCP |
+| IMG-SWAGGER-01 | Swagger UI da API (OAS 3.0) | Swagger UI | PCP |
 | IMG-ARQ-01 | Diagrama de arquitetura da solução (3 serviços) | Design Review / doc de arquitetura | ATA-002 |
 | IMG-QA-01 | Evidência de teste manual — auth (register/login) | QA (homologação) | CTQ |
 | IMG-QA-02 | Evidência de teste manual — busca de voos | QA (homologação) | CTQ |
