@@ -16,7 +16,7 @@
 
 ## 1. Escopo da verificação
 
-Verificação independente da aderência do projeto AASP01 — Grupos de Usuários ao Processo-Padrão Organizacional (PRO-GPC-001) e às adaptações registradas (ADAP-AASP01-001), conforme a Estratégia de Garantia da Qualidade (EST-GPC-001). Esta é a auditoria intermediária prevista para projetos de Nível 2 de adaptação (GUIA-GPC-001, §5.2); a auditoria de encerramento ocorrerá na Sprint 4.
+Verificação independente da aderência do projeto AASP01 — Grupos de Usuários ao Processo-Padrão Organizacional (PRO-GPC-001) e às adaptações registradas (ADAP-AASP01-001), conforme a Estratégia de Garantia da Qualidade (EST-GPC-001). Esta é a auditoria intermediária prevista para projetos de Nível 2 de adaptação (GUIA-GPC-001, §5.2); a auditoria de encerramento ocorrerá na Sprint 3.
 
 A verificação cobre os marcos já concluídos: Abertura, Discovery/Requisitos, Concepção/Design, Planejamento e a Sprint 1 (desenvolvimento, homologação e aceite). A independência é assegurada: o auditor não integra a equipe de execução (Gerente de Projeto, Tech Lead e desenvolvedores) nem a função de QA do produto.
 
@@ -33,7 +33,7 @@ Legenda: ✅ Conforme · ⚠ Observação · N/A não aplicável no momento.
 | 3 | Design técnico avaliado antes da construção | PCP-AASP01-001 (v1.0, 26/05/2026) com arquitetura, modelo de dados e decisões (GDE-AASP01-001) revisados antes da Sprint 1 | ✅ |
 | 4 | Definição de Pronto a cada entrega (critérios de aceite, code review, verificação, homologação) | REV-AASP01-001 (code review por PR), VV-AASP01-001, CTQ-AASP01-001 e gate de CI obrigatório | ✅ |
 | 5 | Aprovação do cliente antes da promoção para produção | Aceite formal da Sprint 1 por Marcos Turnes (ATA-AASP01-002, 06/06/2026); homologação e produção final pendentes (projeto em curso) | ✅ |
-| 6 | Encerramento formal (Termo de Aceite e lições aprendidas) | Previsto para a Sprint 4 (TAE e LI) | N/A |
+| 6 | Encerramento formal (Termo de Aceite e lições aprendidas) | Previsto para a Sprint 3 (TAE e LI) | N/A |
 
 **Gerência de Configuração (GCO 1–3):**
 
@@ -69,8 +69,8 @@ Legenda: ✅ Conforme · ⚠ Observação · N/A não aplicável no momento.
 | Planilha de Gestão do Projeto | GEST-AASP01 | ✅ |
 | Atas de Reunião | ATA-AASP01-001, ATA-AASP01-002 | ✅ |
 | Índice de Registros | 00_INDICE-AASP01 | ✅ |
-| Termo de Encerramento e Aceite | TAE-AASP01-001 | ⏳ Sprint 4 |
-| Lições Aprendidas | LI-AASP01-001 | ⏳ Sprint 4 |
+| Termo de Encerramento e Aceite | TAE-AASP01-001 | ⏳ Sprint 3 |
+| Lições Aprendidas | LI-AASP01-001 | ⏳ Sprint 3 |
 
 ---
 
@@ -81,7 +81,7 @@ Nenhuma não-conformidade bloqueante identificada. Registram-se as oportunidades
 | ID | Tipo | Descrição | Recomendação |
 |---|---|---|---|
 | OM-01 | Oportunidade de melhoria | A adaptação A-02 (ADAP-AASP01-001) previu formalização do Sprint Planning a partir da Sprint 3. | Garantir o registro do planejamento das sprints restantes (S3 e S4) na Planilha de Gestão. |
-| OM-02 | Oportunidade de melhoria | Avaliação de eficácia da capacitação e Lições Aprendidas ainda não aplicáveis (projeto em curso). | Concluir, no encerramento (Sprint 4), a avaliação de eficácia (CAP) e o registro de Lições Aprendidas (LI). |
+| OM-02 | Oportunidade de melhoria | Avaliação de eficácia da capacitação e Lições Aprendidas ainda não aplicáveis (projeto em curso). | Concluir, no encerramento (Sprint 3), a avaliação de eficácia (CAP) e o registro de Lições Aprendidas (LI). |
 
 ---
 
@@ -89,7 +89,7 @@ Nenhuma não-conformidade bloqueante identificada. Registram-se as oportunidades
 
 **Conforme.** A aderência ao processo-padrão e às adaptações registradas está confirmada para todos os marcos verificados. Os pontos de controle obrigatórios foram mantidos, os produtos de trabalho previstos para o estágio atual estão presentes e consistentes, e a gerência de configuração opera com baselines controladas. As observações registradas são oportunidades de melhoria, sem impacto na conformidade.
 
-**Próxima verificação:** auditoria de encerramento, na Sprint 4, cobrindo a homologação final, o Termo de Encerramento e Aceite e as Lições Aprendidas.
+**Próxima verificação:** auditoria de encerramento, na Sprint 3, cobrindo a homologação final, o Termo de Encerramento e Aceite e as Lições Aprendidas.
 
 ---
 

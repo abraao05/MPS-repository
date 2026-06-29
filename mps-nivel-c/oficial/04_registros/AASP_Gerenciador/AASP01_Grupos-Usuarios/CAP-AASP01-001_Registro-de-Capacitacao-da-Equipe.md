@@ -26,7 +26,7 @@ Registrar a identificação das competências necessárias à execução do proj
 | C-02 | Dapper e SQL Server (T-SQL, migrations) | Acesso a dados sobre o banco legado auxo3 |
 | C-03 | Arquitetura de microsserviços REST e RBAC | Design do ms.auxo.usuarios e controle de permissões |
 | C-04 | Integração HTTP entre serviços (contratos, retry) | Integração com o ms.temis.vinculos |
-| C-05 | Git Flow e Azure DevOps (Pull Request, pipeline CI/CD) | Versionamento, code review e gate de qualidade |
+| C-05 | Git Flow e GitLab (Merge Request, pipeline CI/CD) | Versionamento, code review e gate de qualidade |
 | C-06 | Testes automatizados (xUnit, Moq) | Cobertura de testes unitários e de integração |
 | C-07 | Segurança de aplicação (JWT, prevenção de SQL Injection) | Autenticação dos endpoints e queries parametrizadas |
 

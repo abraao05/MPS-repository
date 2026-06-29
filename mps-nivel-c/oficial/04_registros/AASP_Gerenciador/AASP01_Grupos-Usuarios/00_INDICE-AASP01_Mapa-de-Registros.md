@@ -20,7 +20,7 @@
 - **Início:** 19/05/2026 (Kickoff) · **Encerramento previsto:** 11/07/2026.
 - **Status atual (15/06/2026):** em execução — Sprint 1 concluída e aceita (06/06/2026); Sprint 2 em andamento; Sprints 3 e 4 planejadas.
 - **Nível de adaptação:** 2 — Padrão (ver ADAP-AASP01-001).
-- **Fases do processo-padrão (PRO-GPC-001):** Abertura, Discovery/Requisitos, Concepção e Planejamento concluídas; Desenvolvimento em curso; Homologação e Encerramento previstos para a Sprint 4.
+- **Fases do processo-padrão (PRO-GPC-001):** Abertura, Discovery/Requisitos, Concepção e Planejamento concluídas; Desenvolvimento em curso; Homologação e Encerramento previstos para a Sprint 3.
 
 ---
 
@@ -51,8 +51,8 @@
 | 19 | GEST-AASP01 | Planilha de Gestão do Projeto (xlsx) | GPR | ✅ |
 | 20 | ATA-AASP01-001 | Ata de Kickoff (19/05/2026) | ORG | ✅ |
 | 21 | ATA-AASP01-002 | Ata de Aceite — Sprint 1 (06/06/2026) | ORG | ✅ |
-| 22 | TAE-AASP01-001 | Termo de Encerramento e Aceite | GPR | ⏳ Sprint 4 |
-| 23 | LI-AASP01-001 | Lições Aprendidas | GPR | ⏳ Sprint 4 |
+| 22 | TAE-AASP01-001 | Termo de Encerramento e Aceite | GPR | ⏳ Sprint 3 |
+| 23 | LI-AASP01-001 | Lições Aprendidas | GPR | ⏳ Sprint 3 |
 
 > **Aquisição (AQU):** não aplicável — não houve subcontratação de desenvolvimento (equipe própria Timeware). Insumos de serviço (APIs e ambientes do cliente) são tratados em ITP-AASP01-001 e nos riscos do PLA-AASP01-001.
 

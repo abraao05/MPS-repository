@@ -78,7 +78,7 @@ Remoção individual = `removerusuario`. Mudança de papel = `alterarfuncaodousu
 | **CTQ** | Cenários da Sprint 1 reescritos: endpoints e status reais (200/400), mensagens reais do código (ex.: "Grupo já existe"). |
 | **VV / ITP / REL-VV** | Plano, estratégia e relatório de execução alinhados aos endpoints/status reais. |
 | **GCO** | Ajustar qualquer citação de endpoint. |
-| **Commits / PRs (Git + Azure)** | Mensagens e títulos passam a citar endpoints reais (ex.: "feat: incluirgrupo" em vez de "POST /grupos"). Reaplicar no Azure. |
+| **Commits / PRs (Git + Azure)** | Mensagens e títulos passam a citar endpoints reais (ex.: "feat: incluirgrupo" em vez de "POST /grupos"). Reaplicar no GitLab. |
 | **.docx** | Reconverter todos os .md alterados. |
 
 ---
@@ -94,7 +94,7 @@ Remoção individual = `removerusuario`. Mudança de papel = `alterarfuncaodousu
 
 ## 6. Brinde: a divergência de números de PR
 
-Os documentos citam **PRs #11–#17**; o Azure subiu com **#44+**. Como vou regenerar commits/PRs
+Os documentos citam **MRs !11–#17**; o Azure subiu com **#44+**. Como vou regenerar commits/PRs
 de qualquer forma, aproveito para alinhar os números num passo só (decidimos o critério na hora de aplicar).
 
 ---
