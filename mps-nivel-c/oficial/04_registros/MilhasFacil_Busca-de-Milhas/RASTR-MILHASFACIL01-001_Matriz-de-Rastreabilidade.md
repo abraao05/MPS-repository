@@ -73,7 +73,7 @@ Os três repositórios do projeto (branch padrão `main`) são: **MilhasFacil_ap
 
 ## 4. Merge requests e revisão (estado em 26/06/2026)
 
-São **37 MRs** ao todo: **36 concluídos** + **1 ativo (api !15 — MF-73, fix/MF-73-db-naming-conventions)**.
+São **39 MRs** ao todo: **38 concluídos** + **1 ativo (api !15 — MF-73, fix/MF-73-db-naming-conventions)**.
 
 | Conjunto | MRs GitLab | Revisores registrados |
 |---|---|---|
@@ -84,9 +84,9 @@ São **37 MRs** ao todo: **36 concluídos** + **1 ativo (api !15 — MF-73, fix/
 | 6 MRs de configuração CI S10 | api !18/!19, web !11/!12, crawler !5/!6 | lucas.batista (ou felipe.siqueira) + abraao.oliveira (Approved) |
 | MR ativo (MF-73) | api !15 fix/MF-73-db-naming-conventions → develop | cezar.velazquez + lucas.batista (Approved) — aguardando merge (padronização de nomenclatura de BD, migration V10) |
 
-> Nota de identidade (time atual): os registros de projeto adotam os nomes reais da equipe vigente — Gerente de Projeto **Abraão** (gestão; aprovador de escopo/CR), Tech Lead / Arquiteto / DevOps e **aprovador de MR Cézar Velazquez**, QA **Jonathan Alves**, GQA independente **Carol (Caroline)** e devs **Felipe Santos / Lucas Batista / Henry Oliveira**. Todos os **37 MRs possuem exatamente 2 revisores aprovados** registrados no GitLab (verificado em 26/06/2026 via SQL em `merge_request_reviewers` — 0 linhas com contagem ≠ 2). O MR api !15 (MF-73) segue **ativo**, aprovado por cezar.velazquez + lucas.batista, aguardando merge.
+> Nota de identidade (time atual): os registros de projeto adotam os nomes reais da equipe vigente — Gerente de Projeto **Abraão** (gestão; aprovador de escopo/CR), Tech Lead / Arquiteto / DevOps e **aprovador de MR Cézar Velazquez**, QA **Jonathan Alves**, GQA independente **Carol (Caroline)** e devs **Felipe Santos / Lucas Batista / Henry Oliveira**. Todos os **39 MRs possuem exatamente 2 revisores aprovados** registrados no GitLab (verificado em 26/06/2026 via SQL em `merge_request_reviewers` — 0 linhas com contagem ≠ 2). O MR api !15 (MF-73) segue **ativo**, aprovado por cezar.velazquez + lucas.batista, aguardando merge.
 
-Distribuição por repositório: api !1–!14 + !16–!19 (concluídos; inclui CI setup, release, docs e CI config) + api !15 (MF-73, ativo); web !1–!12 (todos concluídos); crawler !1–!6 (todos concluídos). Pipelines GitLab CI (runner-vm-docker, online; triggers `develop`/`homolog`/`main`): `.gitlab-ci.yml` presente em todos os repositórios. Gate JaCoCo de 80% no api (stage `test`). Baselines: v0.1.0 (S1) … v0.8.0 (S8), **v0.9.0 (release de 15/06/2026)**.
+Distribuição por repositório: api !1–!14 + !16–!21 (concluídos; inclui CI setup, release, docs, CI config e correção de build) + api !15 (MF-73, ativo); web !1–!12 (todos concluídos); crawler !1–!6 (todos concluídos). Pipelines GitLab CI (runner-vm-docker, online; triggers `develop`/`homolog`/`main`): `.gitlab-ci.yml` presente em todos os repositórios. Gate JaCoCo de 80% no api (stage `test`). Baselines: v0.1.0 (S1) … v0.8.0 (S8), **v0.9.0 (release de 15/06/2026)**.
 
 ---
 
@@ -128,7 +128,7 @@ Os requisitos não funcionais RNF01–RNF05 são rastreados às suas evidências
 
 | Código | O que capturar | Fonte/URL |
 |---|---|---|
-| IMG-GITLAB-01 | Lista dos 37 MRs (36 concluídos + 1 ativo, api !15/MF-73); todos com 2 revisores aprovados | GitLab — http://191.234.192.153 → MilhasFacil_api/web/crawler → Merge Requests |
+| IMG-GITLAB-01 | Lista dos 39 MRs (38 concluídos + 1 ativo, api !15/MF-73); todos com 2 revisores aprovados | GitLab — http://191.234.192.153 → MilhasFacil_api/web/crawler → Merge Requests |
 | IMG-JIRA-01 | Board 614 com os cartões MF-2..MF-72 distribuídos pelas sprints S1–S9 (MF-64/MF-65/MF-69 = Concluído) | Jira — board 614 |
 | IMG-CI-01 | Pipelines GitLab CI com status `success`; gate JaCoCo 80% no api (stage `test`); tag de release v0.9.0 | GitLab — http://191.234.192.153 → MilhasFacil_api → CI/CD → Pipelines |
 
@@ -141,3 +141,4 @@ Os requisitos não funcionais RNF01–RNF05 são rastreados às suas evidências
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Preenchimento do MR da branch `fix/MF-42-estabilizacao` (RF03) na rastreabilidade backward com api !9 (conforme ITP-MILHASFACIL01-001 §5, Ordem 9 — estabilização da S6). |
 | 1.2 | 26/06/2026 | Time de Melhoria Contínua | Reconciliação MPS.BR Nível C — substituição de todas as referências Azure DevOps por GitLab (MR !iids por repositório); contagem 29 → 37 MRs (inclui release api !17, docs api !16, 6 MRs de CI config S10); remoção da ressalva "sem revisor" (todos os 37 MRs com 2 revisores verificados via SQL em `merge_request_reviewers`); seções 2, 3 e 4 atualizadas com !iids reais do GitLab. |
+| 1.3 | 29/06/2026 | Auditoria MPS.BR Nível C | Contagem 37 → 39 MRs (inclusão de api !20/!21 — correção de build) em §4 e na evidência IMG-GITLAB-01. |

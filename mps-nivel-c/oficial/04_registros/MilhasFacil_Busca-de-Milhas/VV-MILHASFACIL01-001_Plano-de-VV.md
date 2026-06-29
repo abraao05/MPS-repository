@@ -135,7 +135,7 @@ Os resultados de V&V são analisados e comunicados ao longo do projeto conforme 
 | Frequência | Conteúdo | Canal | Destinatários |
 |---|---|---|---|
 | A cada sprint | Resultado dos casos de teste, cobertura (JaCoCo/Karma/pytest) e bugs abertos/fechados | Sprint Review | GP, equipe, PO Hub de Milhas |
-| A cada sprint | Indicadores de qualidade consolidados (cobertura, bugs, NCs, PRs sem revisor) | Planilha de gestão (GEST-MILHASFACIL01-001) | GP, Time de Melhoria Contínua |
+| A cada sprint | Indicadores de qualidade consolidados (cobertura, bugs, NCs, MRs sem revisor) | Planilha de gestão (GEST-MILHASFACIL01-001) | GP, Time de Melhoria Contínua |
 | Por ciclo | Análise consolidada de execução de testes | Repositório oficial (REL-VV-MILHASFACIL01-001) | GP, Time de Melhoria Contínua |
 
 Indicadores reportados ao processo de Medição (MED):
@@ -159,3 +159,4 @@ Os cenários de teste em formato Gherkin (happy path e sad path), derivados do c
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 26/06/2026 | Time de Melhoria Contínua | Correção de referências de CI: PowerShell@2/agente Windows substituído por Docker (runner-vm-docker); Azure Pipelines substituído por GitLab CI/CD. |
+| 1.2 | 29/06/2026 | Auditoria MPS.BR Nível C | Terminologia "PRs sem revisor" → "MRs sem revisor" em §9 (tabela de comunicação). |

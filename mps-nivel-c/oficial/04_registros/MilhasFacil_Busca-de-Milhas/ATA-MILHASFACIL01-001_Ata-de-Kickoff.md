@@ -26,7 +26,7 @@
 | Nome | Empresa | Papel |
 |---|---|---|
 | Abraão | Timeware | Gerente de Projeto / Facilitador (gestão; não codifica) |
-| Cézar Velazquez | Timeware | Tech Lead / Arquiteto / DevOps (revisor de PR) |
+| Cézar Velazquez | Timeware | Tech Lead / Arquiteto / DevOps (revisor de MR) |
 | Felipe Santos | Timeware | Dev Backend Principal (API + crawlers) |
 | Lucas Batista | Timeware | Full Stack |
 | Henry Oliveira | Timeware | Full Stack |
@@ -52,7 +52,7 @@
 
 ### 3.1 Apresentação da equipe e alinhamento de papéis
 
-A Timeware apresentou a equipe ao Hub de Milhas. Ficou estabelecido que Abraão atuaria como Gerente de Projeto (sem codificar e fora do DevOps), ponto de gestão e aprovador do escopo/change request; Cézar Velazquez como Tech Lead / Arquiteto / DevOps, responsável pela arquitetura, pela infraestrutura/pipeline e pela aprovação de todos os PRs (revisor de PR); Felipe Santos como Dev Backend Principal (API e crawlers); Lucas Batista e Henry Oliveira como desenvolvedores Full Stack; Jonathan Alves como QA, executando os testes de forma manual e gerando as evidências; e Carol (Caroline) como GQA independente, responsável pela auditoria de processo (sem codificar e fora do DevOps). Ficou distinta a função de QA (Jonathan, que executa os testes) da função de GQA (Carol, que audita o processo). O PO do Hub de Milhas seria o ponto de negócio e priorização do backlog.
+A Timeware apresentou a equipe ao Hub de Milhas. Ficou estabelecido que Abraão atuaria como Gerente de Projeto (sem codificar e fora do DevOps), ponto de gestão e aprovador do escopo/change request; Cézar Velazquez como Tech Lead / Arquiteto / DevOps, responsável pela arquitetura, pela infraestrutura/pipeline e pela aprovação de todos os MRs (revisor de MR); Felipe Santos como Dev Backend Principal (API e crawlers); Lucas Batista e Henry Oliveira como desenvolvedores Full Stack; Jonathan Alves como QA, executando os testes de forma manual e gerando as evidências; e Carol (Caroline) como GQA independente, responsável pela auditoria de processo (sem codificar e fora do DevOps). Ficou distinta a função de QA (Jonathan, que executa os testes) da função de GQA (Carol, que audita o processo). O PO do Hub de Milhas seria o ponto de negócio e priorização do backlog.
 
 ### 3.2 Revisão do escopo e objetivo do produto
 
@@ -99,7 +99,7 @@ Ficou estabelecida a seguinte cadência:
 
 ### 3.6 Gestão de acessos, política de branch e CI
 
-Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os acessos no GitLab e configurar os três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`, branch padrão `main`) e as pipelines (GitLab CI/CD em Docker runner-vm-docker, triggers `develop`/`homolog`/`main`). Acordou-se a política de branch com PR obrigatório para `develop`, aprovação do PR pelo Tech Lead (Cézar Velazquez), gate de CI e nomes de branch no padrão `feat/fix + MF-XX`. As mudanças de escopo (CR) seriam aprovadas pelo GP (Abraão). A meta de cobertura de testes foi fixada em ≥ 80% (JaCoCo/Karma/pytest), com gate de cobertura no CI a partir da S4.
+Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os acessos no GitLab e configurar os três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`, branch padrão `main`) e as pipelines (GitLab CI/CD em Docker runner-vm-docker, triggers `develop`/`homolog`/`main`). Acordou-se a política de branch com MR obrigatório para `develop`, aprovação do MR pelo Tech Lead (Cézar Velazquez), gate de CI e nomes de branch no padrão `feat/fix + MF-XX`. As mudanças de escopo (CR) seriam aprovadas pelo GP (Abraão). A meta de cobertura de testes foi fixada em ≥ 80% (JaCoCo/Karma/pytest), com gate de cobertura no CI a partir da S4.
 
 ---
 
@@ -111,7 +111,7 @@ Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os aces
 | D-02 | Autenticação JWT HS256 stateless (access 30 min / refresh 7 dias) com blacklist Redis | Felipe Santos (Timeware) | S1 |
 | D-03 | Busca paralela das três companhias (Smiles/Azul/Latam) via crawler, meta ≤ 30 s | Felipe Santos (Timeware) | S2–S3 |
 | D-04 | Sprints de 2 semanas, com S1 iniciando em 09/02/2026 e término previsto em 26/07/2026 | Abraão (Timeware) | Imediato (09/02/2026) |
-| D-05 | Política de branch: PR obrigatório para `develop`, aprovação do PR pelo Tech Lead (Cézar) e gate de CI | Cézar Velazquez (Timeware) | Vigente durante todo o projeto |
+| D-05 | Política de branch: MR obrigatório para `develop`, aprovação do MR pelo Tech Lead (Cézar) e gate de CI | Cézar Velazquez (Timeware) | Vigente durante todo o projeto |
 | D-06 | Meta de cobertura ≥ 80% com gate de cobertura no CI a partir da S4 | Cézar Velazquez (Timeware) | S4 |
 | D-07 | Notificação por WhatsApp via Z-API, com falha de envio não interrompendo o fluxo | Felipe Santos (Timeware) | S7 |
 | D-08 | Mudanças de escopo formalizadas via change request com aprovação do GP (Abraão) antes da implementação | Abraão (Timeware) | Vigente durante todo o projeto |
@@ -153,3 +153,4 @@ Cézar Velazquez (Tech Lead / DevOps) ficou responsável por provisionar os aces
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção do nome do plano de assinatura no RF10 (PREMIUM → PRO), alinhando ao enum real do código e ao REQ/PCP. |
 | 1.2 | 26/06/2026 | Auditoria MPS.BR Nível C | Reconciliação de plataforma na pauta/seção 3.6 e nota de implementação: Azure DevOps → GitLab e PowerShell@2/agente Windows → Docker runner (runner-vm-docker), alinhando ao estado real e aos demais registros. |
+| 1.3 | 29/06/2026 | Auditoria MPS.BR Nível C | Terminologia "PR" → "MR" em §1 (participantes) e §4 (D-05) e §3 (§3.6). |

@@ -24,7 +24,7 @@ Registrar a composição da equipe alocada ao projeto MilhasFacil — Busca de M
 | Membro (papel) | Período de atuação | Sprints |
 |---|---|---|
 | Abraão — Gerente de Projeto (gestão; não codifica; fora do DevOps) | Fev/2026 – Jul/2026 | Todas |
-| Cézar Velazquez — Tech Lead / Arquiteto / DevOps (revisor de PR; no DevOps) | Fev/2026 – Jul/2026 | Todas |
+| Cézar Velazquez — Tech Lead / Arquiteto / DevOps (revisor de MR; no DevOps) | Fev/2026 – Jul/2026 | Todas |
 | Felipe Santos — Dev Backend Principal (API + crawlers; no DevOps) | Fev/2026 – Jul/2026 | S1–S9 |
 | Lucas Batista — Full Stack (S1 Angular; S2+ backend; no DevOps) | Fev/2026 – Jul/2026 | S1–S9 |
 | Henry Oliveira — Full Stack (S3 Angular; S4+ backend; no DevOps) | Mar/2026 – Jul/2026 | S3–S9 |
@@ -74,10 +74,10 @@ A entrada de Henry Oliveira ao time ocorreu na S3 (atuando inicialmente em Angul
 | Spring Boot / JWT (backend) | RF01 (cadastro BCrypt) e RF02 (login JWT access+refresh) entregues na S1 por Lucas Batista; RF11 (refresh token rotation) por Felipe Santos na S5; RF12 (logout blacklist Redis jti) por Lucas Batista na S8 |
 | SeleniumBase / crawler | RF03 (busca paralela Smiles/Azul/Latam) entregue por Felipe Santos (S2–S3); estabilização de parsers (MF-58/MF-59) na S8 |
 | Angular 17 (frontend) | RF04 (SearchPage skeleton) por Lucas Batista na S2; histórico paginado e dark mode evidenciados nas rotas `/search`, `/history`, `/preferences` |
-| Arquitetura e GitLab CI (Tech Lead / DevOps) | Gate de cobertura JaCoCo ≥ 80% ativo no CI a partir da S4 (CT-10 aprovado na S6+); pipelines dos três repositórios operacionais; todos os 37 MRs com 2 revisores aprovados |
+| Arquitetura e GitLab CI (Tech Lead / DevOps) | Gate de cobertura JaCoCo ≥ 80% ativo no CI a partir da S4 (CT-10 aprovado na S6+); pipelines dos três repositórios operacionais; todos os 39 MRs com 2 revisores aprovados |
 | Teste manual com geração de evidências (QA) | Validação manual dos casos de teste CT-01 a CT-12 por Jonathan Alves, com evidências geradas (sem ferramenta de gestão de testes); CT-11 (filtros maxMiles + cabinType) e CT-12 (airport ILIKE) aprovados na S9 |
 | GQA / auditoria de processo (GQA independente) | Auditorias por ciclo (S1–S4 conforme com ressalva; S5–S8 conforme; S9 conforme) conduzidas por Carol (Caroline); acompanhamento da evolução da cobertura JaCoCo de 74% (S2) para 82%+ (S5–S8) e encerramento da NC-001 |
-| MPS-SW Nível C (processo / gestão) | Rastreabilidade RF → Jira → branch → PR → build mantida; gestão de escopo (CR-MF-001 aprovado por Abraão) e medição por sprint (velocity média 33,9 em S1–S8) registradas |
+| MPS-SW Nível C (processo / gestão) | Rastreabilidade RF → Jira → branch → MR → build mantida; gestão de escopo (CR-MF-001 aprovado por Abraão) e medição por sprint (velocity média 33,9 em S1–S8) registradas |
 
 ### Evidências referenciadas
 
@@ -85,7 +85,7 @@ A entrada de Henry Oliveira ao time ocorreu na S3 (atuando inicialmente em Angul
 |---|---|---|
 | IMG-CI-01 | Pipeline GitLab CI com gate JaCoCo ≥ 80% na API | GitLab — http://191.234.192.153 |
 | IMG-JIRA-01 | Issues entregues por responsável (RF01, RF02, RF11, RF12) com assignee | Jira — board 614 |
-| IMG-GITLAB-01 | Repositórios MilhasFacil_api/web/crawler com 37 MRs revisados | GitLab — http://191.234.192.153 |
+| IMG-GITLAB-01 | Repositórios MilhasFacil_api/web/crawler com 39 MRs revisados | GitLab — http://191.234.192.153 |
 
 ---
 
@@ -95,3 +95,4 @@ A entrada de Henry Oliveira ao time ocorreu na S3 (atuando inicialmente em Angul
 |---|---|---|---|
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 26/06/2026 | Time de Melhoria Contínua | Correção de plataforma: Azure DevOps → GitLab; PowerShell@2/agente Windows → Docker runner (runner-vm-docker); PR → MR; remoção de alias legado "Mateus Veloso"; evidência IMG-DEVOPS-01 renomeada para IMG-GITLAB-01 com 37 MRs revisados. |
+| 1.2 | 29/06/2026 | Auditoria MPS.BR Nível C | Contagem 37 → 39 MRs (api !20/!21) em §6; terminologia "PR → build" → "MR → build" em §6; evidência IMG-GITLAB-01 atualizada para 39 MRs. |

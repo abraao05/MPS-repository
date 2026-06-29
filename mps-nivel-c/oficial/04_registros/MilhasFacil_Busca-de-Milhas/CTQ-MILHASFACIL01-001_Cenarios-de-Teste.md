@@ -68,7 +68,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** cadastro válido retorna 200 com par de tokens; senha nunca armazenada em texto puro; duplicidade de e-mail/telefone rejeitada com 400.
 - **Resultado:** **Aprovado** (validação manual da QA Jonathan Alves + testes unitários AuthService verdes).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #1 / Web #13) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !1 / web !1) + validação manual da QA Jonathan Alves.
 
 ### MF-3 — História — Auth: Login endpoint + testes unitários AuthService · RF02
 
@@ -83,7 +83,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** login válido emite access (1.800.000 ms) e refresh (604.800.000 ms) JWT HS256; credenciais inválidas retornam 401.
 - **Resultado:** **Aprovado** (testes unitários AuthService + validação manual Jonathan Alves).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #2) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !2) + validação manual da QA Jonathan Alves.
 
 ### MF-4 — Tarefa — DevOps: Dockerfile multi-stage + docker-compose.yml
 
@@ -118,7 +118,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** busca agregada das 3 cias retorna resultados ordenados por milhas; tempo de resposta < 30s (média medida 8,3s); acesso exige autenticação.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves nas 3 cias; build verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #3 / Crawler #23) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !4 / crawler !1) + validação manual da QA Jonathan Alves.
 
 ### MF-9 — História — Crawler: SmilesService SeleniumBase headless chromium · RF03
 
@@ -132,7 +132,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** crawler Smiles retorna voos parseados; rota de cia inválida responde 404; `/health` responde 200.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; pytest verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Crawler #23) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR crawler !1) + validação manual da QA Jonathan Alves.
 
 ### MF-10 — História — Crawler: AzulParser e LatamParser (extração de voos) · RF03
 
@@ -145,7 +145,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** ambos os parsers extraem voos válidos das respectivas cias.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; pytest verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Crawler #23) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR crawler !1) + validação manual da QA Jonathan Alves.
 
 ### MF-11 — História — Web: Search page Angular 17 standalone + result cards TailwindCSS · RF04
 
@@ -160,7 +160,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** tela de busca exibe skeleton/loading, cards de resultado e estado vazio; rota protegida por authGuard.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web #14) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !2) + validação manual da QA Jonathan Alves.
 
 ### MF-12 — Tarefa — DevOps: Deploy VPS ambiente de homologação (Docker Compose)
 
@@ -183,7 +183,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** histórico retornado paginado por usuário; exclusão individual retorna 204.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #4) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !5) + validação manual da QA Jonathan Alves.
 
 ### MF-14 — História — Web: FlightHistoryComponent com paginação e delete · RF05
 
@@ -197,7 +197,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** lista paginada renderizada; ação de excluir reflete no backend; estado vazio tratado.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web #15) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !3) + validação manual da QA Jonathan Alves.
 
 ### MF-15 — História — Web: RoutePreference frontend CRUD + PaginationComponent · RF06
 
@@ -210,7 +210,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** CRUD de preferências de rota operante na UI com paginação.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web #15) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !3) + validação manual da QA Jonathan Alves.
 
 ### MF-16 — Tarefa — Testes: SearchService e FlightHistoryService unit tests
 
@@ -268,7 +268,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** CRUD de rotas favoritas com exclusão lógica; job agendado executa a cada 6h com dedupe origem-destino-milhas.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #5) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !6) + validação manual da QA Jonathan Alves.
 
 ### MF-22 — História — Web: CRUD RoutePreference frontend (forms + validação + feedback) · RF06
 
@@ -281,7 +281,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** formulário com validação e feedback; operações refletem no backend.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web #16) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !4) + validação manual da QA Jonathan Alves.
 
 ### MF-23 — História — Backend: Perfil de usuário GET/PATCH /users/me · RF07
 
@@ -297,7 +297,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** leitura e atualização parcial do perfil; acesso exige autenticação.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #6) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !7) + validação manual da QA Jonathan Alves.
 
 ### MF-24 — História — Web: Página de perfil frontend com form preenchido · RF07
 
@@ -310,7 +310,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** perfil carregado e editável na UI.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web #16) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !4) + validação manual da QA Jonathan Alves.
 
 ### MF-25 — História — Web: NotificationsComponent lista + badge counter sidebar
 
@@ -323,7 +323,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** lista de notificações e contador exibidos na UI.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web #16) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !4) + validação manual da QA Jonathan Alves.
 
 ### MF-26 — Tarefa — Backend: Flyway V4 migration notifications + índices
 
@@ -358,7 +358,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** alertas agendados disparam por rota com deduplicação; perfil completo operante.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #6) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !7) + validação manual da QA Jonathan Alves.
 
 ---
 
@@ -375,7 +375,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** entidade Subscription persistida com status/plano e vínculo 1:1 com o usuário.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #7) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !8) + validação manual da QA Jonathan Alves.
 
 ### MF-31 — História — Backend: Refresh token rotation (JWT access 30min + refresh 7d) · RF11
 
@@ -389,7 +389,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** rotação de refresh token funcional; token antigo invalidado após rotação.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #7) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !8) + validação manual da QA Jonathan Alves.
 
 ### MF-32 — História — Web: JWT interceptor 401 catchError + switchMap auto-refresh · RF11
 
@@ -402,7 +402,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** interceptor trata 401, renova o token e repete a chamada sem deslogar o usuário.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web #17) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !5) + validação manual da QA Jonathan Alves.
 
 ### MF-33 — Tarefa — Testes: AuthController integration tests (SpringBootTest)
 
@@ -419,7 +419,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** componente de estado vazio reutilizável aplicado às telas.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web #17) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !5) + validação manual da QA Jonathan Alves.
 
 ### MF-35 — História — Backend: Assinaturas de alertas (Subscription) + refresh token · RF10/RF11
 
@@ -433,7 +433,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** assinatura integrada ao fluxo de alertas; refresh token estável.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #7) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !8) + validação manual da QA Jonathan Alves.
 
 ---
 
@@ -519,7 +519,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** controles de filtro presentes e validados na UI (preparação para o backend da S9).
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !6) + validação manual da QA Jonathan Alves.
 
 ### MF-44 — Tarefa — Backend: WhatsAppClient integração Z-API webhook
 
@@ -571,7 +571,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** notificação WhatsApp entregue sem duplicidade; resiliência a falha da Z-API.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #9) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !10) + validação manual da QA Jonathan Alves.
 
 ---
 
@@ -588,7 +588,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** dark mode aplicado e persistido.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !7) + validação manual da QA Jonathan Alves.
 
 ### MF-51 — Tarefa — Backend: RedisTokenBlacklist: SET jti TTL 7 dias
 
@@ -617,7 +617,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** onboarding presente; lazy loading dos módulos operante.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !8) + validação manual da QA Jonathan Alves.
 
 ### MF-56 — Bug — Sidebar z-index overlap no mobile (z-50 fix)
 
@@ -673,7 +673,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** logout invalida o token via blacklist Redis; token revogado retorna 401.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; E2E verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR API #10) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR api !11) + validação manual da QA Jonathan Alves.
 
 ### MF-61 — História — Web: Onboarding UX + build otimizações Sprint 8
 
@@ -686,7 +686,7 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 
 - **Critério de aprovação:** onboarding e otimizações de build aplicados sem regressão funcional.
 - **Resultado:** **Aprovado** (validação manual Jonathan Alves; Karma verde).
-- **Aprovador:** aprovação técnica do TL Cézar Velazquez (PR Web) + validação manual da QA Jonathan Alves.
+- **Aprovador:** aprovação técnica do TL Cézar Velazquez (MR web !8) + validação manual da QA Jonathan Alves.
 
 ---
 
@@ -864,3 +864,4 @@ Os cenários por card abaixo referenciam, onde aplicável, os 12 CTs consolidado
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | MF-72: assignee corrigido para Abraão (`abraao.oliveira`), reatribuição concluída. MF-45: esclarecido como correção de rastreabilidade/numeração da migration de notifications (V7→V4), sem recriação — criação na V4 (Sprint 4, MF-26). |
 | 1.2 | 26/06/2026 | Time de Melhoria Contínua | Reconciliação GitLab: referências a Azure DevOps e PowerShell@2 atualizadas para GitLab e Docker runner (runner-vm-docker); conta legada "Mateus Veloso" removida — nota substituída por usernames GitLab reais; PRs da S9 substituídos por !iids GitLab (api !12/!13/!14, web !9/!10, crawler !4) com 2 revisores aprovados por MR; PR #29 → api !15 ativo; contas "Raony Chagas no Azure" removidas das tarefas de DevOps. |
+| 1.3 | 29/06/2026 | Auditoria MPS.BR Nível C | Conversão de todas as referências "PR API #N / Web #N / Crawler #N" (numeração Azure DevOps) para !iids GitLab por repositório (S1-S8): api !1–!11, web !1–!8, crawler !1–!3; S7 web !6; S8 web !7/!8; terminologia "PR" → "MR" em todos os campos Aprovador. |

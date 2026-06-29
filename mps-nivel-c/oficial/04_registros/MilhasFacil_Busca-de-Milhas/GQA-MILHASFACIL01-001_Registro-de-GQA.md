@@ -29,7 +29,7 @@ Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do pr
 | Responsável por GQA (auditora de processo — independente, fora do DevOps) | Carol (Caroline) — GQA independente; **aprova a conformidade do processo (sign-off de auditoria) e atesta que a QA executou os testes**; **não codifica, não commita e não executa os testes** (a execução é da QA Jonathan Alves) |
 | QA (execução de testes manuais e geração de evidências; no DevOps) | Jonathan Alves |
 | Ponto de contato de gestão no projeto | Abraão (Gerente de Projeto — gestão; não codifica; fora do DevOps) |
-| Apoio de arquitetura, infraestrutura e pipeline | Cézar Velazquez (Tech Lead / Arquiteto / DevOps; aprovador de PR) |
+| Apoio de arquitetura, infraestrutura e pipeline | Cézar Velazquez (Tech Lead / Arquiteto / DevOps; aprovador de MR) |
 
 > A GQA do projeto é **independente** e exercida por **Carol (Caroline)**, que **audita o processo** (aderência ao processo-padrão Timeware) sem codificar e sem executar testes, mantendo-se fora do DevOps. A função de **QA** — distinta da GQA — é exercida por **Jonathan Alves**, que **executa os casos de teste de forma manual**, gerando as evidências correspondentes (capturas e registros de execução). O projeto não utiliza ferramenta de gestão de testes; a validação dos casos de teste é conduzida manualmente pela QA (Jonathan Alves), com apoio dos testes automatizados de build (JUnit5/Mockito/AssertJ, Testcontainers, Karma, pytest) executados na pipeline. A auditoria de processo verifica essa execução, sem se confundir com ela.
 
@@ -52,10 +52,10 @@ Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do pr
 |---|---|---|
 | Plano de projeto e termo de abertura documentados antes do início dos sprints | Conforme | TAP-MILHASFACIL01-001 disponível |
 | Requisitos documentados (RF01–RF15 / RNF01–RNF05) antes da implementação | Conforme | Backlog rastreável no Jira (board 614) |
-| Rastreabilidade história → branch → PR → build | Conforme | Convenção `feat/fix + MF-XX` aplicada (RNF04) |
+| Rastreabilidade história → branch → MR → build | Conforme | Convenção `feat/fix + MF-XX` aplicada (RNF04) |
 | Pipeline CI executando testes a cada push | Conforme | Pipelines API/Web/Crawler com runner-vm-docker (Docker) |
 | Cobertura de testes ≥ 80% (RNF02) | Não conforme (NC-001) | JaCoCo 74% na S2; abaixo da meta de 80% |
-| Política de branch com PR obrigatório e aprovação do revisor de PR | Conforme | PR obrigatório para `develop`; aprovação do Tech Lead (Cézar Velazquez) exigida; escopo/CR aprovado pelo GP (Abraão) |
+| Política de branch com MR obrigatório e aprovação do revisor de MR | Conforme | MR obrigatório para `develop`; aprovação do Tech Lead (Cézar Velazquez) exigida; escopo/CR aprovado pelo GP (Abraão) |
 | Registro de riscos atualizado | Conforme | R-01 a R-05 registrados; R-02 vinculado à NC-001 |
 | Medição de sprint registrada (velocity, cobertura, bugs, NCs) | Conforme | MED por sprint (S1–S4) registrada na planilha de gestão |
 
@@ -82,14 +82,14 @@ Registrar as atividades de Garantia da Qualidade (GQA) realizadas ao longo do pr
 |---|---|---|
 | Encerramento da NC-001 (cobertura ≥ 80%) | Conforme | JaCoCo 82% na S5; mantida acima de 80% nas S6–S8 (84%/85%/84%) |
 | Gate de cobertura ≥ 80% ativo no CI da API | Conforme | CT-10 (coverage gate ≥ 80%) aprovado a partir da S6 |
-| Rastreabilidade história → branch → PR → build | Conforme | Matriz RF → Jira → branch → PR → build mantida |
-| Política de branch com PR obrigatório e aprovação do revisor de PR | Conforme | PR obrigatório para `develop`; aprovação do Tech Lead (Cézar Velazquez) exigida |
+| Rastreabilidade história → branch → MR → build | Conforme | Matriz RF → Jira → branch → MR → build mantida |
+| Política de branch com MR obrigatório e aprovação do revisor de MR | Conforme | MR obrigatório para `develop`; aprovação do Tech Lead (Cézar Velazquez) exigida |
 | Gestão de defeitos registrada e classificada | Conforme | Bugs registrados no Jira (ex.: MF-58, MF-59 tratados na S8) |
 | Mudança de escopo formalizada antes da implementação | Conforme | CR-MF-001 (28/05/2026) aprovado por Abraão (GP) antes da execução |
 | Plano de V&V executado com casos de teste aprovados (validação manual da QA) | Conforme | CT-01 a CT-10 validados manualmente pela QA (Jonathan Alves), com evidências geradas, até a S8 |
 | Baselines de configuração estabelecidas por sprint | Conforme | Tags v0.1.0 (S1) a v0.8.0 (S8) registradas |
 
-> **Observação de auditoria de configuração (ação corretiva aplicada):** na auditoria dos itens de configuração no GitLab (15/06/2026), verificou-se via SQL em `merge_request_reviewers` que todos os 37 MRs dos três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`) possuem 2 revisores aprovados. **Ação corretiva aplicada em 15/06/2026:** (a) ativada **branch policy** exigindo ao menos um revisor para `develop` nos três repositórios, impedindo recorrência; (b) os MRs da Sprint S9 — **api !13 / web !9 / crawler !4** (RF13), **api !14 / web !10** (RF14) e **api !12** (MF-64) — foram concluídos e mergeados em `develop` **com 2 revisores aprovados**; e (c) o **api !15 (MF-73)**, que padroniza a nomenclatura de banco de dados (migration V10 — padronização de índices e coluna `is_active`), está **ativo, aprovado por cezar.velazquez + lucas.batista**, aguardando merge. O conjunto evidencia o saneamento prospectivo da governança e o cumprimento da meta "PRs sem revisor = 0".
+> **Observação de auditoria de configuração (ação corretiva aplicada):** na auditoria dos itens de configuração no GitLab (15/06/2026), verificou-se via SQL em `merge_request_reviewers` que todos os 37 MRs dos três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`) possuem 2 revisores aprovados. **Ação corretiva aplicada em 15/06/2026:** (a) ativada **branch policy** exigindo ao menos um revisor para `develop` nos três repositórios, impedindo recorrência; (b) os MRs da Sprint S9 — **api !13 / web !9 / crawler !4** (RF13), **api !14 / web !10** (RF14) e **api !12** (MF-64) — foram concluídos e mergeados em `develop` **com 2 revisores aprovados**; e (c) o **api !15 (MF-73)**, que padroniza a nomenclatura de banco de dados (migration V10 — padronização de índices e coluna `is_active`), está **ativo, aprovado por cezar.velazquez + lucas.batista**, aguardando merge. O conjunto evidencia o saneamento prospectivo da governança e o cumprimento da meta "MRs sem revisor = 0".
 
 ---
 
@@ -136,7 +136,7 @@ Verificação de existência, completude e conformidade com o padrão (template 
 | 2 | PLA-MILHASFACIL01-001 (Plano de Projeto) | ✅ | ✅ | ✅ | — |
 | 3 | ADAP-MILHASFACIL01-001 (Adaptação do Processo) | ✅ | ✅ | ✅ | 10 adaptações (A-01 a A-10) justificadas |
 | 4 | REQ-MILHASFACIL01-001 (Documento de Requisitos) | ✅ | ✅ | ✅ | RF01–RF15 / RNF01–RNF05 |
-| 5 | RASTR-MILHASFACIL01-001 (Matriz de Rastreabilidade) | ✅ | ✅ | ✅ | RF → Jira → branch → PR → build |
+| 5 | RASTR-MILHASFACIL01-001 (Matriz de Rastreabilidade) | ✅ | ✅ | ✅ | RF → Jira → branch → MR → build |
 | 6 | PCP-MILHASFACIL01-001 (Documento de Design) | ✅ | ✅ | ✅ | — |
 | 7 | ITP-MILHASFACIL01-001 (Estratégia de Integração) | ✅ | ✅ | ✅ | — |
 | 8 | VV-MILHASFACIL01-001 (Plano de V&V) | ✅ | ✅ | ✅ | — |
@@ -176,7 +176,7 @@ O projeto MilhasFacil — Busca de Milhas atendeu aos requisitos do processo-pad
 
 As atividades de V&V do projeto são conduzidas com **teste manual** pela QA, **Jonathan Alves**, que executa os casos de teste e gera as evidências correspondentes (o projeto não utiliza ferramenta de gestão de testes), apoiado pelos testes automatizados de build na pipeline. A auditoria desse processo é feita de forma **independente** pela GQA, **Carol (Caroline)**, distinguindo-se a execução dos testes (QA — Jonathan) da auditoria de processo (GQA — Carol). Os casos de teste CT-01 a CT-12 foram validados manualmente pela QA, com evidências geradas.
 
-Quanto à auditoria de configuração, verificou-se via SQL em `merge_request_reviewers` (26/06/2026) que todos os 37 MRs dos três repositórios possuem 2 revisores aprovados. A **ação corretiva já aplicada (15/06/2026)** inclui: ativação de branch policy de revisor obrigatório em `develop` nos três repositórios; conclusão dos MRs da Sprint S9 com 2 revisores; e api !15 (MF-73) em revisão padronizando a nomenclatura de banco de dados, evidenciando o saneamento prospectivo da governança e o cumprimento da meta "PRs sem revisor = 0".
+Quanto à auditoria de configuração, verificou-se via SQL em `merge_request_reviewers` (26/06/2026) que todos os 37 MRs dos três repositórios possuem 2 revisores aprovados. A **ação corretiva já aplicada (15/06/2026)** inclui: ativação de branch policy de revisor obrigatório em `develop` nos três repositórios; conclusão dos MRs da Sprint S9 com 2 revisores; e api !15 (MF-73) em revisão padronizando a nomenclatura de banco de dados, evidenciando o saneamento prospectivo da governança e o cumprimento da meta "MRs sem revisor = 0".
 
 Na Sprint S9, os itens RF13, RF14 e MF-64 foram **entregues e liberados em `main` na release v0.9.0** (15/06/2026, tag v0.9.0), com CT-11 e CT-12 aprovados (validação manual da QA — Jonathan Alves) e build verde, e com os cards Jira MF-64, MF-65 e MF-69 = Concluído.
 
@@ -200,3 +200,4 @@ Na Sprint S9, os itens RF13, RF14 e MF-64 foram **entregues e liberados em `main
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Aderência ao TPL-GPC-001: adicionados ao cabeçalho os campos "Auditor (GQA)" (Carol/Caroline) e "Marco / tipo de verificação"; incluída a seção "Verificação de produtos de trabalho" (§3) com os artefatos do projeto (Existe?/Completo?/Segue padrão?) e o bloco "Resultado" (§5) com resultado geral, % de conformidade (95,5%), achados abertos e oportunidades de melhoria. |
 | 1.2 | 26/06/2026 | Time de Melhoria Contínua | Adequação à plataforma GitLab: referências a Azure DevOps substituídas por GitLab; runner atualizado para runner-vm-docker (Docker); MRs da S9 identificados pelos !iids GitLab (api !12–!15, web !9–!10, crawler !4); revisores atualizados para os reais (cezar.velazquez, lucas.batista, abraao.oliveira, felipe.siqueira — 2 revisores por MR); ressalva de "22 PRs históricos sem revisor" removida — todos os 37 MRs verificados via SQL em merge_request_reviewers com 2 revisores aprovados; api !15 (MF-73) identificado como MR ativo aprovado por cezar.velazquez + lucas.batista. |
+| 1.3 | 29/06/2026 | Auditoria MPS.BR Nível C | Terminologia "PR" → "MR" em §2 (papéis), §3 GQA-A01 e GQA-A02 (checklist — rastreabilidade e política de branch) e §3 observação de auditoria; §4 tabela de artefatos (RF→Jira→branch→MR→build). |

@@ -82,7 +82,7 @@ Decisões arquiteturais aprovadas (registradas em **GDE-MILHASFACIL01-001**):
 | D-01 | Arquitetura técnica (3 serviços, JWT stateless + Redis, busca paralela, crawler isolado) **APROVADA** como baseline de design | Abraão (PO) + Cézar Velazquez (Tech Lead) |
 | D-02 | Design de UI/UX **não se aplica** ao escopo — layout fornecido pelo cliente; validação visual ocorre nas Sprint Reviews | Abraão (PO) |
 | D-03 | Decisões arquiteturais registradas em GDE-MILHASFACIL01-001; alterações estruturais seguem o fluxo de change request | Cézar Velazquez (Tech Lead) |
-| D-04 | Revisão técnica contínua via Pull Request, com o Tech Lead como revisor obrigatório (branch policy) | Cézar Velazquez (Tech Lead) |
+| D-04 | Revisão técnica contínua via Merge Request, com o Tech Lead como revisor obrigatório (branch policy) | Cézar Velazquez (Tech Lead) |
 
 ---
 
@@ -102,7 +102,7 @@ A arquitetura técnica da plataforma MilhasFacil foi **revisada e aprovada** nes
 | Ação | Responsável | Prazo |
 |---|---|---|
 | Publicar a baseline de design aprovada em PCP-MILHASFACIL01-001 e registrar as decisões em GDE-MILHASFACIL01-001 | Cézar Velazquez (Timeware) | 12/02/2026 |
-| Provisionar os três repositórios no GitLab com as branches e a política de PR definidas | Cézar Velazquez (Timeware) | 13/02/2026 |
+| Provisionar os três repositórios no GitLab com as branches e a política de MR definidas | Cézar Velazquez (Timeware) | 13/02/2026 |
 | Configurar Docker Compose de desenvolvimento local alinhado à arquitetura aprovada | Cézar Velazquez (Timeware) | 13/02/2026 |
 | Iniciar implementação do RF01 (cadastro BCrypt) e RF02 (login JWT) conforme a arquitetura aprovada | Felipe Santos (Timeware) | Sprint 1 (até 22/02/2026) |
 

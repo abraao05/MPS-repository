@@ -42,7 +42,7 @@ As medidas coletadas no projeto são mapeadas ao catálogo organizacional M1–M
 | **M6** — Defeitos homologação × produção | defeitos em homologação vs. escapados para produção | Acompanhado a partir da promoção a produção | **0 defeito em produção** (release de produção pendente; ciclo em homologação/develop) |
 | **M7** — Retrabalho | itens reabertos / total de itens concluídos | Bugs vinculados a histórias/tarefas no Jira | Baixo — correções na própria sprint (MF-58/MF-59 na S8), sem reabertura relevante |
 
-> Medidas adicionais específicas do projeto (não pertencentes ao catálogo M1–M7): **cobertura de testes** (JaCoCo/Karma/pytest, gate de CI ≥ 80%), **não conformidades de GQA** e **PRs sem revisor** — usadas como indicadores de qualidade interna e de conformidade de processo. O *burndown* da sprint é ferramenta de acompanhamento diário e não constitui medida organizacional consolidada (PLA-MED-001 §3).
+> Medidas adicionais específicas do projeto (não pertencentes ao catálogo M1–M7): **cobertura de testes** (JaCoCo/Karma/pytest, gate de CI ≥ 80%), **não conformidades de GQA** e **MRs sem revisor** — usadas como indicadores de qualidade interna e de conformidade de processo. O *burndown* da sprint é ferramenta de acompanhamento diário e não constitui medida organizacional consolidada (PLA-MED-001 §3).
 
 ---
 
@@ -126,7 +126,7 @@ A partir da S5 o projeto manteve NCs = 0. Quanto ao indicador "MRs sem revisor",
 | Cobertura de código | ≥ 80% | Atingida de forma sustentada a partir da S4 |
 | Não conformidades (NCs) | 0 | Atingida a partir da S5 (NC-001 encerrada) |
 | Bugs por sprint | Tendência decrescente | Sob controle — sem acúmulo entre sprints |
-| MRs sem revisor | 0 | Atingida — todos os 37 MRs com 2 revisores aprovados (verificado via SQL em merge_request_reviewers em 26/06/2026) |
+| MRs sem revisor | 0 | Atingida — todos os 39 MRs com 2 revisores aprovados (verificado via SQL em merge_request_reviewers) |
 
 ---
 
@@ -145,3 +145,4 @@ A partir da S5 o projeto manteve NCs = 0. Quanto ao indicador "MRs sem revisor",
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção da razão de esforço (M2): 666 h / 614 h = 1,085 (+8,5%), antes 1,083 (+8,3%). |
 | 1.2 | 26/06/2026 | Time de Melhoria Contínua | Adequação à plataforma GitLab: referências a Azure DevOps substituídas por GitLab; indicador "Pull requests sem revisor" renomeado para "Merge requests sem revisor"; meta de MRs sem revisor atualizada para "Atingida — todos os 37 MRs com 2 revisores aprovados (verificado via SQL em merge_request_reviewers em 26/06/2026)"; seção 5.4 atualizada com MRs da S9 identificados por !iids GitLab e revisores reais (cezar.velazquez + lucas.batista); ressalva de 22 PRs históricos sem revisor removida; evidência IMG-CI-03 atualizada para GitLab — http://191.234.192.153 → CI/CD → Pipelines. |
+| 1.3 | 29/06/2026 | Auditoria MPS.BR Nível C | Contagem 37 → 39 MRs (api !20/!21) em §6; terminologia "PRs sem revisor" → "MRs sem revisor" em §2. |

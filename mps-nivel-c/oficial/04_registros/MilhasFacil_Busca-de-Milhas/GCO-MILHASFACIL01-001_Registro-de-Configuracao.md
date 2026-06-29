@@ -54,17 +54,17 @@ A integração de novas funcionalidades ocorre exclusivamente via merge request,
 
 - **`main`** — código de produção; recebe promoção a partir de `homolog`. A release v0.9.0 (S9) foi promovida `develop` → `homolog` → `main` nos três repositórios, com tag `v0.9.0`.
 - **`homolog`** — ambiente de homologação; recebe promoção a partir de `develop`.
-- **`develop`** — branch de integração contínua; alvo de todos os PRs de funcionalidade e correção.
+- **`develop`** — branch de integração contínua; alvo de todos os MRs de funcionalidade e correção.
 - **`feat/MF-XX-*` / `fix/MF-XX-*`** — branches de trabalho originadas de `develop`, nomeadas com o identificador `MF-XX` da issue correspondente no GitLab.
 
 **Regras da política de branch:**
 
-1. Pull request obrigatório para integrar qualquer branch de trabalho em `develop`.
+1. Merge request obrigatório para integrar qualquer branch de trabalho em `develop`.
 2. 2 revisores obrigatórios distintos do autor (Tech Lead cezar.velazquez + par). A aprovação de escopo/CR cabe ao Gerente de Projeto Abraão.
 3. Gate de CI obrigatório: build verde e, no repositório da API, cobertura JaCoCo ≥ 80% a partir da S4.
 4. Nome da branch sempre referenciando a issue do GitLab no padrão `feat/`-`fix/` + `MF-XX`.
 
-**Proteção de branch com revisores obrigatórios (controle prospectivo):** em 15/06/2026 foi ativada, nos três repositórios, a política de branch que exige no mínimo 2 revisores aprovadores distintos do autor para merge em `develop`. Essa política impede a recorrência de merges sem revisão e atua de forma prospectiva sobre os PRs futuros.
+**Proteção de branch com revisores obrigatórios (controle prospectivo):** em 15/06/2026 foi ativada, nos três repositórios, a política de branch que exige no mínimo 2 revisores aprovadores distintos do autor para merge em `develop`. Essa política impede a recorrência de merges sem revisão e atua de forma prospectiva sobre os MRs futuros.
 
 
 ---
@@ -95,7 +95,7 @@ Cada sprint encerrada gerou uma baseline marcada por tag de versão semântica n
 
 ## 6. Merge requests do projeto
 
-Até 26/06/2026 o GitLab registra **37 merge requests** nos três repositórios: **36 concluídos** e **1 ativo** (api !15, MF-73). Todos os **37 MRs possuem exatamente 2 revisores aprovados** registrados (verificado via SQL em `merge_request_reviewers` — 0 linhas com contagem ≠ 2). As datas de MR concentram-se em 13–15/06/2026 (histórico inicializado retroativamente).
+Até 29/06/2026 o GitLab registra **39 merge requests** nos três repositórios: **38 concluídos** e **1 ativo** (api !15, MF-73). Todos os **39 MRs possuem exatamente 2 revisores aprovados** registrados (verificado via SQL em `merge_request_reviewers` — 0 linhas com contagem ≠ 2). As datas de MR concentram-se em 13–15/06/2026 (histórico inicializado retroativamente); api !20/!21 criados em 26/06/2026 (correção de build).
 
 ### 6.1 22 MRs funcionais S1–S8 (todos concluídos, 2 revisores)
 
@@ -156,9 +156,18 @@ Até 26/06/2026 o GitLab registra **37 merge requests** nos três repositórios:
 
 > O api !15 (MF-73) introduz a migration `V10__fix_naming_conventions.sql` (padronização de índices + coluna `is_active`). É o único MR ativo do projeto, **aprovado por 2 revisores (cezar.velazquez + lucas.batista)**; aguardando merge.
 
+### 6.5 2 MRs de correção de build S10 (concluídos — auditoria 26/06/2026)
+
+| MR GitLab | Repositório | Branch de origem | Situação | Revisores |
+|---|---|---|---|---|
+| api !20 | MilhasFacil_api | fix/build-fix-develop-s10 | Concluído — merge em `develop` | cezar.velazquez + lucas.batista |
+| api !21 | MilhasFacil_api | fix/build-fix-homolog-s10 | Concluído — merge em `homolog` | cezar.velazquez + lucas.batista |
+
+> api !20/!21 retroportam os 4 arquivos ausentes em `develop`/`homolog` que causavam build quebrado (entidade `Airport`, dependências `webflux`/`data-redis`, import `FlightHistoryRepository`). Criados e mergeados em 26/06/2026 durante a auditoria MPS.BR Nível C; pipelines #469/#471 verdes.
+
 ![IMG-GITLAB-02 — lista de merge requests do projeto](evidencias/IMG-DEVOPS-02_lista-prs.png)
 
-*Figura — Lista dos 37 merge requests (36 concluídos; api !15 ativo) nos três repositórios do GitLab.*
+*Figura — Lista dos 39 merge requests (38 concluídos; api !15 ativo) nos três repositórios do GitLab.*
 
 
 ---
@@ -176,9 +185,9 @@ Até 26/06/2026 o GitLab registra **37 merge requests** nos três repositórios:
 | Proteção de branch com revisores obrigatórios ativa em `develop` | Conforme | Política de ≥2 revisores aprovadores distintos do autor ativada nos 3 repositórios; branches `main`/`homolog`/`develop` protegidas com push=No one |
 | Gate de CI no merge | Conforme | Build verde obrigatório; gate de cobertura JaCoCo 80% na API a partir da S4; `.gitlab-ci.yml` presente em `main`/`develop`/`homolog` nos 3 repositórios |
 | Segredos não expostos em logs | Conforme | Z-API Client-Token, conexões e chave JWT mantidas fora do código (RNF03) |
-| MRs sem revisor = 0 (meta organizacional) | **Conforme** | Todos os 37 MRs possuem exatamente 2 revisores aprovados (verificado em 26/06/2026 via SQL `merge_request_reviewers` — 0 linhas com contagem ≠ 2) |
+| MRs sem revisor = 0 (meta organizacional) | **Conforme** | Todos os 39 MRs possuem exatamente 2 revisores aprovados (verificado via SQL `merge_request_reviewers` — 0 linhas com contagem ≠ 2) |
 
-> A meta "MRs sem revisor = 0" está plenamente cumprida: todos os 37 MRs possuem 2 revisores aprovados registrados no GitLab. A proteção de branch com revisores obrigatórios em `develop`/`homolog`/`main` impede recorrência. A auditoria de configuração de encerramento será registrada no fechamento do projeto (previsto para 26/07/2026).
+> A meta "MRs sem revisor = 0" está plenamente cumprida: todos os 39 MRs possuem 2 revisores aprovados registrados no GitLab. A proteção de branch com revisores obrigatórios em `develop`/`homolog`/`main` impede recorrência. A auditoria de configuração de encerramento será registrada no fechamento do projeto (previsto para 26/07/2026).
 
 ---
 
@@ -186,7 +195,7 @@ Até 26/06/2026 o GitLab registra **37 merge requests** nos três repositórios:
 
 | Código | O que capturar | Fonte/URL |
 |---|---|---|
-| IMG-GITLAB-02 | Lista dos 37 MRs (36 concluídos + api !15 ativo, MF-73); todos com 2 revisores aprovados | GitLab — http://191.234.192.153 → MilhasFacil_api/web/crawler → Merge Requests |
+| IMG-GITLAB-02 | Lista dos 39 MRs (38 concluídos + api !15 ativo, MF-73); todos com 2 revisores aprovados | GitLab — http://191.234.192.153 → MilhasFacil_api/web/crawler → Merge Requests |
 | IMG-GITLAB-03 | Tags de baseline (`v0.1.0`–`v0.9.0`, com `v0.9.0` released em `main`) e proteção de branches `main`/`homolog`/`develop` ativa | GitLab — http://191.234.192.153 → Repositório → Tags / Settings → Repository → Protected branches |
 
 ---
@@ -198,3 +207,4 @@ Até 26/06/2026 o GitLab registra **37 merge requests** nos três repositórios:
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S10 (MR-MPS-SW:2024 Nível C). |
 | 2.0 | 25/06/2026 | Auditoria MPS.BR Nível C | Reconciliação com GitLab: plataforma atualizada de Azure DevOps para GitLab, política de revisores atualizada para 2 revisores distintos do autor. |
 | 3.0 | 26/06/2026 | Time de Melhoria Contínua | Reconciliação final MPS.BR Nível C — contagem 29 → 37 MRs; tabelas de MRs com !iids reais do GitLab por repositório; remoção de referência a "Mateus Veloso" e "sem revisor"; todos os 37 MRs confirmados com 2 revisores via SQL; inclusão de MRs de CI config S10 (api !18/!19, web !11/!12, crawler !5/!6); seção de auditoria atualizada (MRs sem revisor = 0, Conforme). |
+| 4.0 | 29/06/2026 | Auditoria MPS.BR Nível C | Contagem 37 → 39 MRs (inclusão de api !20/!21 — correção de build develop/homolog, §6.5); terminologia "PR" → "MR" em §4 (política de branch); seção de auditoria §7 atualizada. |

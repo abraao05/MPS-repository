@@ -86,7 +86,7 @@ Os registros referenciam capturas de tela que devem ser anexadas na subpasta `ev
 |---|---|---|---|
 | IMG-JIRA-01 | Board 614 e burndown da sprint | Jira | RAC |
 | IMG-GITLAB-01 | Merge Requests com 2 revisores aprovados; api !15 ativo | GitLab | REV |
-| IMG-GITLAB-02 | Lista dos 37 MRs (36 concluídos + api !15 ativo) | GitLab | GCO |
+| IMG-GITLAB-02 | Lista dos 39 MRs (38 concluídos + api !15 ativo) | GitLab | GCO |
 | IMG-GITLAB-03 | Tags/baselines (v0.1.0–v0.9.0) + branches protegidas | GitLab | GCO |
 | IMG-CI-01 | Pipelines GitLab CI (success) + gate JaCoCo 80% | GitLab CI/CD | RAC, REL-VV |
 | IMG-CI-02 | Pipelines recentes succeeded (S9) | GitLab CI/CD | REL-VV |
@@ -107,7 +107,7 @@ Os registros referenciam capturas de tela que devem ser anexadas na subpasta `ev
 
 - **Formato:** registros produzidos em Markdown (`.md`); conversão para Word (`.docx`) gerada em paralelo na mesma pasta.
 - **Release v0.9.0 (15/06/2026):** `develop` foi promovido `develop→homolog→main` nos 3 repositórios, com **tag v0.9.0** em `main`. Os filtros avançados (RF13), export CSV (RF14) e airport ILIKE (MF-64) estão **Entregues (released em `main`)**. `main` passou a abranger **Flyway V1–V5 + V9 (`airport_search_index`)**; a migration **V10** (padronização de nomenclatura de BD, MF-73) está no **api !15 ativo**, ainda não mergeada.
-- **Revisão de MR (26/06/2026):** todos os **37 MRs** possuem **exatamente 2 revisores aprovados** (verificado via SQL `merge_request_reviewers` — 0 linhas com contagem ≠ 2). Meta "MRs sem revisor = 0" — **Cumprida**. O **api !15 (MF-73)** está ativo, aprovado por cezar.velazquez + lucas.batista, aguardando merge. Proteção de branch (`push=No one`) ativa em `main`/`homolog`/`develop` nos 3 repositórios. Jira: MF-64/MF-65/MF-69 = Concluído; **MF-73** em andamento.
+- **Revisão de MR (26/06/2026):** todos os **39 MRs** possuem **exatamente 2 revisores aprovados** (verificado via SQL `merge_request_reviewers` — 0 linhas com contagem ≠ 2). Meta "MRs sem revisor = 0" — **Cumprida**. O **api !15 (MF-73)** está ativo, aprovado por cezar.velazquez + lucas.batista, aguardando merge. Proteção de branch (`push=No one`) ativa em `main`/`homolog`/`develop` nos 3 repositórios. Jira: MF-64/MF-65/MF-69 = Concluído; **MF-73** em andamento.
 
 ---
 
@@ -118,3 +118,4 @@ Os registros referenciam capturas de tela que devem ser anexadas na subpasta `ev
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Criação do índice-mestre dos registros do projeto MILHASFACIL01. Ondas 1 e 2 geradas (18 registros .md + planilha GEST existente); Onda 3 (encerramento) marcada como aguardando aceite formal. |
 | 2.0 | 25/06/2026 | Auditoria MPS.BR Nível C | Reconciliação: status S10, plataforma GitLab, remoção de mapa de aliases Azure DevOps. |
 | 3.0 | 26/06/2026 | Time de Melhoria Contínua | Reconciliação final MPS.BR Nível C — remoção de "Mateus Veloso" e aliases legados; contagem 29→37 MRs; api !15 substitui "MR #29"; referências IMG-DEVOPS-* atualizadas para IMG-GITLAB-*; meta "MRs sem revisor=0" confirmada (todos os 37 MRs com 2 revisores via SQL). |
+| 4.0 | 29/06/2026 | Auditoria MPS.BR Nível C | Contagem de MRs atualizada 37 → 39 (inclusão de api !20/!21 — correção de build develop/homolog) em §3 (IMG-GITLAB-02) e §4. |

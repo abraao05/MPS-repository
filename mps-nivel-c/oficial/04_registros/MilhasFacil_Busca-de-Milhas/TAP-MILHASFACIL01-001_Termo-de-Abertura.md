@@ -52,14 +52,14 @@ O Hub de Milhas necessita de uma ferramenta própria que centralize a consulta d
 | Papel | Responsável | Identificação / evidência no tooling |
 |---|---|---|
 | Gerente de Projeto (gestão; não codifica; fora do DevOps) | Abraão | Jira: conta a ser provisionada |
-| Tech Lead / Arquiteto / DevOps (revisor de PR; no DevOps) | Cézar Velazquez | GitLab `cezar.velazquez`; commits de infra/arquitetura podem aparecer sob `Raony Chagas`/`Mateus Sousa` (= Cézar) |
+| Tech Lead / Arquiteto / DevOps (revisor de MR; no DevOps) | Cézar Velazquez | GitLab `cezar.velazquez`; commits de infra/arquitetura podem aparecer sob `Raony Chagas`/`Mateus Sousa` (= Cézar) |
 | QA (teste manual; gera evidências; no DevOps) | Jonathan Alves | GitLab/Jira: conta a ser provisionada (`jonathan@timeware.com.br`) |
 | GQA independente (auditoria; não codifica; fora do DevOps) | Carol (Caroline) | (não assina issues) |
 | Dev (no DevOps) | Felipe Santos | Jira `Felipe Siqueira` |
 | Dev (no DevOps) | Lucas Batista | Jira `Lucas Batista de Sousa` |
 | Dev (no DevOps) | Henry Oliveira | Jira `Henry Komatsu` |
 
-> **DevOps (GitLab) = 5 pessoas:** Cézar (TL) + Henry/Lucas/Felipe (devs) + Jonathan (QA). Abraão (GP) e Carol (GQA) ficam fora do DevOps. O aprovador de PR é **Cézar Velazquez (Tech Lead)**; quem aprova o escopo/CR é o **GP Abraão**.
+> **DevOps (GitLab) = 5 pessoas:** Cézar (TL) + Henry/Lucas/Felipe (devs) + Jonathan (QA). Abraão (GP) e Carol (GQA) ficam fora do DevOps. O aprovador de MR é **Cézar Velazquez (Tech Lead)**; quem aprova o escopo/CR é o **GP Abraão**.
 
 > Nota de equivalência: em textos de gestão são usados os nomes reais do time atual. Quando uma evidência do GitLab citar o autor/assignee/revisor de uma issue ou MR, é usada a conta registrada na plataforma (`cezar.velazquez`); commits de infra/arquitetura sob `Raony Chagas`/`Mateus Sousa` correspondem a Cézar.
 
@@ -81,9 +81,9 @@ O Hub de Milhas necessita de uma ferramenta própria que centralize a consulta d
 - A planilha de gestão GEST-MILHASFACIL01-001 é a fonte da verdade de gestão do projeto.
 
 **Restrições:**
-- Equipe enxuta: GP (Abraão) que faz gestão e não codifica e fica fora do DevOps; GQA independente (Carol) que não codifica e fica fora do DevOps; um Tech Lead/Arquiteto/DevOps que revisa os PRs (Cézar Velazquez); QA de teste manual (Jonathan Alves); e três desenvolvedores efetivos (Felipe, Lucas, Henry). DevOps no GitLab = 5 (Cézar + Henry/Lucas/Felipe + Jonathan).
+- Equipe enxuta: GP (Abraão) que faz gestão e não codifica e fica fora do DevOps; GQA independente (Carol) que não codifica e fica fora do DevOps; um Tech Lead/Arquiteto/DevOps que revisa os MRs (Cézar Velazquez); QA de teste manual (Jonathan Alves); e três desenvolvedores efetivos (Felipe, Lucas, Henry). DevOps no GitLab = 5 (Cézar + Henry/Lucas/Felipe + Jonathan).
 - Autenticação stateless obrigatória (JWT HS256), CSRF desabilitado, sessão STATELESS; rotas públicas restritas a `/api/v1/auth/**` e `/actuator/health`.
-- Política de branches: PR obrigatório para develop, aprovação de PR pelo Tech Lead (Cézar Velazquez), gate de CI e nomenclatura `feat/` ou `fix/` + `MF-XX`; branch policy de revisor (≥1 revisor) ativa em develop nos três repositórios. A aprovação de escopo/CR é do GP (Abraão).
+- Política de branches: MR obrigatório para develop, aprovação de MR pelo Tech Lead (Cézar Velazquez), gate de CI e nomenclatura `feat/` ou `fix/` + `MF-XX`; branch policy de revisor (≥1 revisor) ativa em develop nos três repositórios. A aprovação de escopo/CR é do GP (Abraão).
 
 ## 7. Cronograma macro (Sprints S1–S12)
 
@@ -104,7 +104,7 @@ Modelo de sprints de 2 semanas. Início do projeto em 09/02/2026, término previ
 | S11 | 29/06–12/07/2026 | Refinamentos e testes |
 | S12 | 13–26/07/2026 | Fechamento e entrega |
 
-**Status atual:** Sprint 9 em andamento (01–14/06/2026); projeto ABERTO (S9 de 12). Release **v0.9.0** promovida a main (tag nos três repositórios) em 15/06/2026, com RF13/RF14/MF-64 entregues.
+**Status atual:** Sprint 10 em andamento (15–28/06/2026); projeto ABERTO (S10 de 12). Release **v0.9.0** promovida a main (tag nos três repositórios) em 15/06/2026, com RF13/RF14/MF-64 entregues.
 
 ## 8. Riscos iniciais
 
@@ -124,7 +124,7 @@ Modelo de sprints de 2 semanas. Início do projeto em 09/02/2026, término previ
 |---|---|
 | Início do projeto | 09/02/2026 |
 | Término previsto | 26/07/2026 |
-| Situação na emissão | Aprovado — projeto ABERTO (Sprint 9 de 12 em andamento) |
+| Situação na emissão | Aprovado — projeto ABERTO (Sprint 10 de 12 em andamento) |
 | Processos no projeto | GPR · REQ · PCP · ITP · VV · GCO · MED · GDE · CAP · GQA(GPC) |
 
 ---
@@ -136,3 +136,4 @@ Modelo de sprints de 2 semanas. Início do projeto em 09/02/2026, término previ
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção do nome do plano de assinatura no RF10 (PREMIUM → PRO), alinhando ao enum real do código e ao REQ/PCP. |
 | 1.2 | 26/06/2026 | Time de Melhoria Contínua | Remoção do alias legado "Mateus Veloso" (Azure DevOps); conta do Tech Lead atualizada para `cezar.velazquez` (GitLab). Correção de referências de CI: PowerShell@2/agente Windows substituído por Docker (runner-vm-docker); Azure DevOps substituído por GitLab em todas as ocorrências (§4, §6, §8/R-05). |
+| 1.3 | 29/06/2026 | Auditoria MPS.BR Nível C | Status atualizado para Sprint 10 em andamento (S10 de 12); terminologia "PR" → "MR" em §4 (equipe), §6 (restrições/política de branches) e §9 (registro de abertura). |

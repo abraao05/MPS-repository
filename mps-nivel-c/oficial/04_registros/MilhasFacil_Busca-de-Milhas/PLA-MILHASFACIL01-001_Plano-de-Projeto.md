@@ -151,7 +151,7 @@ Partes interessadas conforme `TAP-MILHASFACIL01-001` §5:
 ## 8. Modelo de sprints
 
 - Iterações de 2 semanas, com planejamento, execução e revisão por sprint.
-- Política de branches: PR obrigatório para develop, aprovação de MR pelo Tech Lead (Cézar Velazquez), gate de CI e nomenclatura `feat/`|`fix/` + `MF-XX`. Na S9 foi ativada a **política de branches protegidas** de revisor (≥1 revisor) em develop nos três repositórios. A aprovação de escopo/CR é do GP (Abraão).
+- Política de branches: MR obrigatório para develop, aprovação de MR pelo Tech Lead (Cézar Velazquez), gate de CI e nomenclatura `feat/`|`fix/` + `MF-XX`. Na S9 foi ativada a **política de branches protegidas** de revisor (≥1 revisor) em develop nos três repositórios. A aprovação de escopo/CR é do GP (Abraão).
 - Gate de cobertura (≥80% JaCoCo/Karma/pytest) ativo a partir da Sprint 4.
 - Baselines de versão por sprint (v0.1.0 … v0.8.0; **v0.9.0** released em main na S9).
 
@@ -167,7 +167,7 @@ A passagem para produção segue a esteira de promoção definida na gerência d
 |---|---|
 | **Fluxo de promoção** | `develop` (integração) → `homolog` (homologação) → `main` (produção), nos três repositórios (`MilhasFacil_api`, `MilhasFacil_web`, `MilhasFacil_crawler`) |
 | **Versionamento** | Tag de versão semântica por release (`v0.1.0`–`v0.9.0`); a release v0.9.0 foi promovida a `main` (tag nos três repositórios, 15/06/2026) |
-| **Política de revisão** | PR obrigatório para `develop` com aprovação técnica do Tech Lead (Cézar Velazquez) e **proteção de branch com revisores obrigatórios (≥1 revisor)** ativada em `develop` na S9, impedindo merge sem revisão |
+| **Política de revisão** | MR obrigatório para `develop` com aprovação técnica do Tech Lead (Cézar Velazquez) e **proteção de branch com revisores obrigatórios (≥1 revisor)** ativada em `develop` na S9, impedindo merge sem revisão |
 | **Verificação de prontidão** | Smoke checks por *healthcheck*: `/actuator/health` (API, Spring Boot Actuator) e `GET /health` (Crawler) respondendo com sucesso; pipelines verdes (Docker, runner-vm-docker) e gate de cobertura JaCoCo ≥80% na API — condições verificadas antes da promoção entre ambientes |
 | **Responsável pela operação de promoção** | Tech Lead / Arquiteto / DevOps (Cézar Velazquez) |
 | **Aprovação de escopo/entrega** | Gerente de Projeto (Abraão); validação funcional manual da QA (Jonathan Alves) em homologação |
@@ -208,3 +208,4 @@ O projeto está em execução dentro do cronograma macro, com Sprint 10 de 12 em
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S10 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Aderência ao TPL-GPR-001: correção do RF10 (PREMIUM → PRO); inclusão da seção de Transição e suporte pós-go-live (§9, GPR 8/16); plano de comunicação e partes interessadas (§7, GPR 9); orçamento de esforço com composição da equipe por papel e registro do controle de horas por sprint/equipe (§4, GPR 4). Renumeração das seções subsequentes. Uniformização do desvio acumulado de horas para +8,5% (M2), consistente com MED e GEST. |
 | 1.2 | 26/06/2026 | Time de Melhoria Contínua | Correção de referências de CI: PowerShell@2/agente Windows substituído por Docker (runner-vm-docker); Azure Pipelines/Azure DevOps substituído por GitLab CI/CD em todas as ocorrências (§3, §6, §9.1, §10/R-05). |
+| 1.3 | 29/06/2026 | Auditoria MPS.BR Nível C | Terminologia "PR obrigatório" → "MR obrigatório" em §8 (modelo de sprints) e §9.1 (política de revisão). |

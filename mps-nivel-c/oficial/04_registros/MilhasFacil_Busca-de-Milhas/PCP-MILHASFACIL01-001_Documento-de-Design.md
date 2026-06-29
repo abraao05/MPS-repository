@@ -274,7 +274,7 @@ A camada Web (Angular 17.3 standalone, Tailwind 3.4) oferece as telas das rotas 
 | RNF01 | `SearchService` timeout 40s; tempo de resposta dentro de 30s |
 | RNF02 | JaCoCo/Karma/pytest com gate de CI (S4+) |
 | RNF03 | BCrypt + JWT HS256 + Redis blacklist + CORS (`SecurityConfig`) |
-| RNF04 | Convenção de branches `feat/`/`fix/`+`MF-XX`, PR + gate de CI (branch policy de revisor em `develop`) |
+| RNF04 | Convenção de branches `feat/`/`fix/`+`MF-XX`, MR + gate de CI (branch policy de revisor em `develop`) |
 | RNF05 | Docker Compose para os três serviços |
 
 ---
@@ -294,3 +294,4 @@ O design da solução foi avaliado e aprovado por **cezar.velazquez (Tech Lead)*
 | 1.0 | 15/06/2026 | Time de Melhoria Contínua | Emissão inicial — evidência do ciclo S1–S9 (MR-MPS-SW:2024 Nível C). |
 | 1.1 | 15/06/2026 | Time de Melhoria Contínua | Correção da PK da migration V1 (`BIGSERIAL` → `UUID`) para consistência com a entidade `User` (UUID id) e o CTQ. |
 | 1.2 | 26/06/2026 | Time de Melhoria Contínua | Atualização da plataforma de Azure DevOps para GitLab; todas as ocorrências de "PR #29" substituídas por "api !15"; "Mateus Veloso" removido — revisores reais são cezar.velazquez (Tech Lead) e lucas.batista; referências a Azure DevOps corrigidas para GitLab. |
+| 1.3 | 29/06/2026 | Auditoria MPS.BR Nível C | Terminologia "PR + gate de CI" → "MR + gate de CI" em §7 (RNF04). |
