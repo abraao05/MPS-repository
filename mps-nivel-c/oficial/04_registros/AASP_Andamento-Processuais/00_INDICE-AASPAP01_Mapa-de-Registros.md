@@ -11,7 +11,7 @@
 | **Data** | 24/06/2026 |
 | **Natureza** | Documento de controle / índice — apoio interno. Organiza as evidências do projeto; não é, ele próprio, evidência auditável pela ASR. |
 
-> **Como usar:** mapeia os registros MPS do projeto AASPAP01 e o status de cada um. Projeto **em andamento** (Fase 5 — implantação; Iterações 6 e 7 ativas até jul/2026); encerramento previsto para 30/06/2026 — **pendente** (TAE-AASPAP01-001 preliminar).
+> **Como usar:** mapeia os registros MPS do projeto AASPAP01 e o status de cada um. Projeto **em andamento** (Fase 5 — implantação; Iterações 6 e 7 ativas até jul/2026); encerramento previsto para 31/08/2026 — **pendente** (TAE-AASPAP01-001 preliminar).
 
 ## Registros do projeto (gerados ✅)
 
@@ -49,7 +49,7 @@
 
 | Código | Documento | Processo | Status |
 |---|---|---|---|
-| TAE-AASPAP01-001 | Termo de Encerramento e Aceite | GPR | ⏳ preliminar — encerramento previsto para 30/06/2026 (Iterações 6/7 ativas) |
+| TAE-AASPAP01-001 | Termo de Encerramento e Aceite | GPR | ⏳ preliminar — encerramento previsto para 31/08/2026 (Iterações 6/7 ativas) |
 | LI-AASPAP01-001 | Lições Aprendidas (integradas ao TAE) | GPR | ⏳ pendente — integra o TAE no encerramento |
 
 ## Histórico de revisões

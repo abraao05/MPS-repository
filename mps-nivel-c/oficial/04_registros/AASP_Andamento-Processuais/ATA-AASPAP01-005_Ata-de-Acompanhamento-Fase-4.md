@@ -45,7 +45,7 @@ Concluída a Fase 4: campos Observacao e Segredo por instância, tratamento gran
 | Montar pacote de GMUD e iniciar a implantação em produção (Fase 5) | Cézar Hiraki Velázquez / Lucas Batista | Jun/2026 |
 
 ## 6. Próximos passos
-Fase 5 — Implantação (em andamento; encerramento previsto 30/06/2026).
+Fase 5 — Implantação (em andamento; encerramento previsto 31/08/2026).
 
 ## Histórico de revisões
 | Versão | Data | Autor | Descrição |
