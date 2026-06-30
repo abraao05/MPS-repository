@@ -45,15 +45,15 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 ### 3.2 Testes Unitários — Sprint 1
 
-| Suite / Classe | Métodos Testados | Passando | Falhando | Cobertura Estimada |
+| Suite / Classe | Métodos Testados | Passando | Falhando | Cobertura (Coverlet) |
 |---|---|---|---|---|
-| GerenciarGruposServicesTests | 8 | 8 | 0 | 90% (camada service) |
-| GerenciarGruposRepositorioTests | 6 | 6 | 0 | 85% (repositório Dapper) |
-| IncluirAlterarGrupoTests | 4 | 4 | 0 | 88% |
-| RemoverUsuarioFuncaoTests | 4 | 4 | 0 | 82% |
-| **TOTAL** | **22** | **22** | **0** | **85% est. média** |
+| GerenciarGruposServicesTests | 8 | 8 | 0 | — |
+| GerenciarGruposRepositorioTests | 6 | 6 | 0 | — |
+| IncluirAlterarGrupoTests | 4 | 4 | 0 | — |
+| RemoverUsuarioFuncaoTests | 4 | 4 | 0 | — |
+| **TOTAL** | **22** | **22** | **0** | **68.4% linhas / 61.9% branches** |
 
-**Meta de cobertura: 70% — ATINGIDA**
+**Meta de cobertura: ≥ 60% — ATINGIDA (68.4% de linhas / 61.9% de branches)**
 
 ---
 
@@ -70,7 +70,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 ### 3.4 Testes de Homologação — Sprint 1 (UAT)
 
-**Executados por:** Caroline Sousa (AASP — QA/Homologadora)
+**Executados por:** Leonardo Francisco Pereira (AASP — QA/Homologadora)
 **Data de execução:** 06/06/2026
 **Ambiente:** Homologação AASP — banco auxo3
 
@@ -107,7 +107,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 | Etapa | Responsável | Data | Resultado |
 |---|---|---|---|
-| Execução dos cenários de aceite (CTQ) | Caroline Sousa (AASP — QA) | 06/06/2026 | Todos os 10 cenários aprovados |
+| Execução dos cenários de aceite (CTQ) | Leonardo Francisco Pereira (AASP — QA) | 06/06/2026 | Todos os 10 cenários aprovados |
 | Aceite formal do cliente | Marcos Turnes (AASP — PO) | 06/06/2026 | Concedido sem ressalvas |
 
 ---
@@ -133,7 +133,7 @@ Não há resultados de V&V registrados para a Sprint 2 até a data de referênci
 |---|---|---|
 | Implementar a trilha de auditoria das operações de escrita (AG-23) | Renan Kiyoshi | Sprint 2 |
 | Implementar a integração com ms.temis.vinculos (AG-24) | Mateus Veloso | Sprint 2 |
-| UAT — Caroline Sousa executa cenários AUD-01, AUD-02 e INT-01 | Caroline Sousa (AASP) | 19–20/06/2026 |
+| UAT — Leonardo Francisco Pereira executa cenários AUD-01, AUD-02 e INT-01 | Leonardo Francisco Pereira (AASP) | 19–20/06/2026 |
 | Sprint Review e aceite formal Sprint 2 com Marcos Turnes | Abraão + Marcos Turnes | 20/06/2026 |
 
 ---
@@ -151,7 +151,7 @@ Não há resultados de V&V registrados para a Sprint 2 até a data de referênci
 | Métrica | Sprint 1 | Sprint 2 (15/06/2026) | Meta do Projeto |
 |---|---|---|---|
 | Testes unitários — total passando | 22/22 (100%) | — (não iniciado) | 100% |
-| Cobertura estimada de testes unitários | 85% | — | 70% |
+| Cobertura de testes unitários (Coverlet) | 68.4% linha / 61.9% branch | — | ≥ 60% |
 | Cenários de aceite aprovados | 10/10 (100%) | — | 95% |
 | Testes de integração passando | 3/3 (100%) | — | 100% |
 | Achados de code review — total identificados | 5 (P2: 3 / P3: 2) | — | — |

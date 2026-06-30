@@ -6,7 +6,7 @@
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
 | **Reunião** | Kickoff — Inicio formal do projeto |
-| **Data** | 24/06/2026 |
+| **Data** | 19/05/2026 |
 | **Horario** | 09h30 – 11h00 |
 | **Canal** | Microsoft Teams |
 | **Facilitador** | Abraão (Timeware) |
@@ -25,7 +25,7 @@
 | Henry Komatsu | Timeware | Desenvolvedor |
 | Mateus Veloso | Timeware | Desenvolvedor |
 | Marcos Turnes | AASP | Product Owner / Representante do Cliente |
-| Caroline Sousa | AASP | QA / Homologadora |
+| Leonardo Francisco Pereira | AASP | QA / Homologadora |
 
 ---
 
@@ -45,7 +45,7 @@
 
 ### 3.1 Apresentação da Equipe e Alinhamento de Papeis
 
-Abraão abriu a reunião apresentando a equipe Timeware responsável pela entrega da Feature AG: Abraão como Gerente de Projeto, Cezar Hiraki como Arquiteto e Tech Lead, e Renan Kiyoshi, Henry Komatsu e Mateus Veloso como desenvolvedores. Marcos Turnes foi apresentado como Product Owner da AASP e principal tomador de decisões de negocio para o projeto. Caroline Sousa ficou estabelecida como responsável pela execução dos testes de homologação e pelo aceite técnico dos entregaveis. Ficou acordado que Abraão e Marcos Turnes seriam os pontos focais primarios de comunicação entre Timeware e AASP.
+Abraão abriu a reunião apresentando a equipe Timeware responsável pela entrega da Feature AG: Abraão como Gerente de Projeto, Cezar Hiraki como Arquiteto e Tech Lead, e Renan Kiyoshi, Henry Komatsu e Mateus Veloso como desenvolvedores. Marcos Turnes foi apresentado como Product Owner da AASP e principal tomador de decisões de negocio para o projeto. Leonardo Francisco Pereira ficou estabelecida como responsável pela execução dos testes de homologação e pelo aceite técnico dos entregaveis. Ficou acordado que Abraão e Marcos Turnes seriam os pontos focais primarios de comunicação entre Timeware e AASP.
 
 ### 3.2 Revisão do Escopo
 
@@ -77,10 +77,10 @@ Marcos Turnes confirmou que o banco `auxo3` e o repositório GitLab estão dispo
 
 Ficou estabelecida a seguinte cadência de trabalho para todo o projeto:
 
-- **Daily Standup**: todos os dias úteis as 09h30 via Microsoft Teams (todas as partes — Abraão, Cezar e os desenvolvedores; quando necessário Marcos Turnes e Caroline)
+- **Daily Standup**: todos os dias úteis as 09h30 via Microsoft Teams (todas as partes — Abraão, Cezar e os desenvolvedores; quando necessário Marcos Turnes e Leonardo Francisco Pereira)
 - **Sprint**: duração de 2 semanas; Sprint 1 com inicio em 26/05/2026
 - **Sprint Planning**: segunda-feira de abertura do sprint (Abraão e a equipe de desenvolvimento, com alinhamento previo com Marcos Turnes)
-- **Sprint Review / Demo**: sexta-feira de encerramento do sprint, as 14h00 via Teams, com participação obrigatória de Marcos Turnes e Caroline Sousa
+- **Sprint Review / Demo**: sexta-feira de encerramento do sprint, as 14h00 via Teams, com participação obrigatória de Marcos Turnes e Leonardo Francisco Pereira
 - **Relatório de Status Semanal**: Abraão envia email de status a Marcos Turnes toda sexta-feira, cobrindo progresso, impedimentos e proximos passos
 - **Canal de comunicação assincronico**: Microsoft Teams (canal do projeto) para duvidas e alinhamentos não urgentes; urgências por telefone direto Abraão–Marcos
 
@@ -92,7 +92,7 @@ Marcos Turnes confirmou que os seguintes acessos seriam providenciados até **23
 - Acesso ao banco `auxo3` (ambiente dev) para Renan Kiyoshi, Henry Komatsu e Mateus Veloso
 - Documentação do contrato de API do `ms.temis.vinculos` (microserviço de vinculos)
 
-Caroline Sousa ficou responsável por preparar o ambiente de homologação AASP (banco de dados de homologação e servidor de aplicação) para estar disponível no inicio da Sprint 2, em **09/06/2026**, data em que os primeiros testes de homologação estão previstos.
+Leonardo Francisco Pereira ficou responsável por preparar o ambiente de homologação AASP (banco de dados de homologação e servidor de aplicação) para estar disponível no inicio da Sprint 2, em **09/06/2026**, data em que os primeiros testes de homologação estão previstos.
 
 ### 3.6 Schema do Banco auxo3
 
@@ -110,7 +110,7 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 | D-04 | Sprint de 2 semanas com daily as 09h30 no Teams; Sprint Review na sexta-feira de encerramento as 14h | Abraão + Marcos Turnes | PLA-AASP01-001 |
 | D-05 | JWT Bearer Token para autenticação em todos os endpoints do ms.auxo.usuarios, sem exceção | Cezar Hiraki | PCP-AASP01-001 |
 | D-06 | Connection strings via variáveis de ambiente — proibido hardcode de strings de conexão no código-fonte ou em arquivos commitados | Cezar Hiraki | GCO-AASP01-001 |
-| D-07 | Aceite formal por sprint realizado por Marcos Turnes, com participação de Caroline Sousa na execução dos testes de homologação; aceite documentado em ata | Marcos Turnes | VV-AASP01-001 |
+| D-07 | Aceite formal por sprint realizado por Marcos Turnes, com participação de Leonardo Francisco Pereira na execução dos testes de homologação; aceite documentado em ata | Marcos Turnes | VV-AASP01-001 |
 
 ---
 
@@ -121,7 +121,7 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 | Providenciar acesso ao repositório GitLab (ms.auxo.usuarios) para Renan Kiyoshi, Henry Komatsu e Mateus Veloso | Marcos Turnes | 23/05/2026 |
 | Compartilhar schema do banco auxo3 (tabelas existentes, PKs, FKs relevantes) | Marcos Turnes | 23/05/2026 |
 | Compartilhar contrato de API do ms.temis.vinculos (swagger ou documento de especificação) | Marcos Turnes | 23/05/2026 |
-| Preparar ambiente de homologação AASP (banco de dados e servidor de aplicação) para testes de homologação | Caroline Sousa | 09/06/2026 (inicio Sprint 2) |
+| Preparar ambiente de homologação AASP (banco de dados e servidor de aplicação) para testes de homologação | Leonardo Francisco Pereira | 09/06/2026 (inicio Sprint 2) |
 | Configurar pipeline CI/CD no GitLab (build automático, execução de testes unitarios no MR) | Cezar Hiraki | 26/05/2026 |
 | Criar branches de feature no repositório: feature/ag-20, feature/ag-21, feature/ag-22 | Renan Kiyoshi | 26/05/2026 |
 | Elaborar scripts de migration para criação das tabelas grupos_usuarios, grupos_usuarios_vinculos e grupos_usuarios_funcao no banco auxo3 | Cezar Hiraki | 28/05/2026 |
@@ -133,7 +133,7 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 ## 6. Proximos Passos
 
 - **Sprint 1** inicia em **26/05/2026**, com foco na implementação de AG-20 (CRUD base de grupos: incluirgrupo, listargrupo, buscargrupoporid, alterargrupo, excluirgrupo, ativardesativar)
-- **Próxima reunião formal**: Sprint Review Sprint 1 — **06/06/2026 as 14h00** via Microsoft Teams, com Marcos Turnes e Caroline Sousa
+- **Próxima reunião formal**: Sprint Review Sprint 1 — **06/06/2026 as 14h00** via Microsoft Teams, com Marcos Turnes e Leonardo Francisco Pereira
 - Equipe Timeware iniciara o setup do projeto (.NET FW 5.0, Dapper, estrutura de pastas, pipeline CI) imediatamente após recebimento dos acessos (previsto 23/05/2026)
 
 ---

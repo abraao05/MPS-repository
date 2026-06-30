@@ -16,7 +16,7 @@
 
 Estabelecer e registrar a estratégia de gerência de configuração adotada no projeto AASP01 — Grupos de Usuários (ms.auxo.usuarios), identificando os itens de configuração (ICs), as baselines estabelecidas, os mecanismos de controle de mudanças e os procedimentos de auditoria de configuração.
 
-Este documento cobre toda a vida útil do projeto, desde a baseline inicial (BL-01, TAP aprovado em 19/05/2026) até o encerramento previsto em 11/07/2026. E mantido e atualizado pelo responsável de GCO (Cezar Hiraki) a cada evento relevante de configuração.
+Este documento cobre toda a vida útil do projeto, desde a baseline inicial (BL-01, TAP aprovado em 19/05/2026) até o encerramento previsto em ~04/07/2026. E mantido e atualizado pelo responsável de GCO (Cezar Hiraki) a cada evento relevante de configuração.
 
 ---
 
@@ -24,7 +24,7 @@ Este documento cobre toda a vida útil do projeto, desde a baseline inicial (BL-
 
 | Item | Descrição |
 |---|---|
-| **Repositório de código** | GitLab · grupo aasp · projeto ms.auxo.usuarios (instancia GitLab http://191.234.192.153). Acesso restrito aos membros da equipe do projeto (Renan Kiyoshi, Henry Komatsu e Mateus Veloso — Timeware; acesso somente-leitura para Marcos Turnes e Caroline Sousa — AASP). |
+| **Repositório de código** | GitLab · grupo aasp · projeto ms.auxo.usuarios (instancia GitLab http://191.234.192.153). Acesso restrito aos membros da equipe do projeto (Renan Kiyoshi, Henry Komatsu e Mateus Veloso — Timeware; acesso somente-leitura para Marcos Turnes e Leonardo Francisco Pereira — AASP). |
 | **Estratégia de branching** | Git Flow (modelo Atlassian): `main` (produção, protegido — recebe merge de `release/*` e `hotfix/*`, com tags), `develop` (integração continua), `feature/ag-{id}` (desenvolvimento de requisito; sai de e retorna a `develop`, ex: feature/ag-20), `release/sprint-N` (preparação de entrega; mescla em `main` com tag e retorna ao `develop`), `hotfix/vX.Y.Z` (correção urgente de produção; sai de `main`, mescla em `main` com nova tag e retorna ao `develop`). Nenhum commit direto em main ou develop. |
 | **Tags de baseline** | Versionamento semantico em `main`: a release da sprint gera a tag de aceite `sprint-N-aceite`, equivalente a `vX.Y.0` (ex: sprint-1-aceite = v1.0.0 — 06/06/2026); correções de produção via hotfix geram tag `vX.Y.Z` (ex: v1.0.1). Tags imutaveis criadas após o aceite/correção formal. |
 | **Gate de merge (CI)** | Pipeline GitLab CI obrigatório antes de qualquer merge em develop ou main: (1) build sem erros, (2) todos os testes unitarios passando, (3) análise estática sem violações bloqueantes. MRs com pipeline vermelho são bloqueados automaticamente. |

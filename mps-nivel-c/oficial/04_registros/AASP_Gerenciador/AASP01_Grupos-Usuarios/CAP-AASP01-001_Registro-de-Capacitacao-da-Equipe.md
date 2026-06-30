@@ -39,11 +39,10 @@ Legenda: ✅ competência atendida.
 | Papel | Colaborador | Competências | Situação |
 |---|---|---|---|
 | Gerente de Projeto | Abraão Oliveira | Gestão ágil, GPR, comunicação com o cliente | ✅ |
-| Tech Lead / Arquiteto / GCO | Cézar Velázquez | C-01, C-02, C-03, C-04, C-05, C-07 | ✅ |
-| Desenvolvedor | Renan Kioshi | C-01, C-02, C-05, C-06 | ✅ |
+| Tech Lead / Arquiteto / GCO | Cezar Hiraki | C-01, C-02, C-03, C-04, C-05, C-07 | ✅ |
+| Desenvolvedor | Renan Kiyoshi | C-01, C-02, C-05, C-06 | ✅ |
 | Desenvolvedor | Henry Komatsu | C-01, C-02, C-05, C-06 | ✅ |
 | Desenvolvedor | Mateus Veloso | C-01, C-02, C-05, C-06 | ✅ |
-| QA (Timeware) | Caroline Jenifer | C-06, homologação e cenários de teste | ✅ |
 
 ---
 

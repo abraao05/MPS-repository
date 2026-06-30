@@ -10,7 +10,7 @@
 | **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
 | **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
 | **PO** | Marcos Turnes — AASP |
-| **QA** | Caroline Sousa — AASP |
+| **QA** | Leonardo Francisco Pereira — AASP |
 | **Data base** | 24/06/2026 |
 | **Versão** | 1.2 |
 | **Status** | Ativo |
@@ -84,7 +84,7 @@ Esta interface representa o consumo dos endpoints do ms.auxo.usuarios pelo front
 |---|---|---|---|
 | **Desenvolvimento** | Máquinas dos desenvolvedores (Timeware) | SQL Server local — auxo3 dev | Sprint 1 em diante |
 | **Integração contínua** | Pipeline GitLab CI (build + testes a cada MR) | SQL Server em container (CI) | *(previsto — ver GCO/MED)* |
-| **Homologação** | Ambiente AASP — instância dedicada com dados anonimizados | SQL Server AASP — auxo3 (e temis3 na Sprint 2) | A partir de Sprint 2 (aguardando confirmação Caroline Sousa) |
+| **Homologação** | Ambiente AASP — instância dedicada com dados anonimizados | SQL Server AASP — auxo3 (e temis3 na Sprint 2) | A partir de Sprint 2 (aguardando confirmação Leonardo Francisco Pereira) |
 
 **Observação de segurança:** as connection strings e quaisquer segredos de integração são gerenciados exclusivamente via variáveis de ambiente, sem nenhum valor hardcoded no código-fonte ou nos arquivos de configuração versionados.
 

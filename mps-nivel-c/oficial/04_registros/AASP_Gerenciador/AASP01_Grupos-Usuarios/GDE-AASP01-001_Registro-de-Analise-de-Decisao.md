@@ -10,7 +10,7 @@
 | **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
 | **Dev** | Renan Kiyoshi (Timeware) |
 | **PO** | Marcos Turnes (AASP) |
-| **QA** | Caroline Sousa (AASP) |
+| **QA** | Leonardo Francisco Pereira (AASP) |
 
 ---
 

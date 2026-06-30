@@ -43,7 +43,7 @@ Desenvolver o microsserviço **ms.auxo.usuarios** para o sistema Gerenciador da 
 | Papel                   | Nome             | Organização | Contato                          |
 |-------------------------|------------------|-------------|----------------------------------|
 | PO / Patrocinador        | Marcos Turnes  | AASP        | —                                |
-| QA                      | Caroline Sousa     | AASP        | —                                |
+| QA                      | Leonardo Francisco Pereira     | AASP        | —                                |
 | Gerente de Projeto / TL | Abraão (GP) · Cezar Hiraki (TL)    | Timeware    | Abraão (a confirmar) · contato@cezarvelazquez.com.br |
 | Desenvolvedor           | Renan Kiyoshi    | Timeware    | renan.kiyoshi.timeware@outlook.com |
 | Desenvolvedor           | Henry Komatsu    | Timeware    | henry.komatsu.timeware@outlook.com |

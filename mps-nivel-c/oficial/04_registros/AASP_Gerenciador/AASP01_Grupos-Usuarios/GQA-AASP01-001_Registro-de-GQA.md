@@ -80,7 +80,7 @@ Nenhuma não-conformidade bloqueante identificada. Registram-se as oportunidades
 
 | ID | Tipo | Descrição | Recomendação |
 |---|---|---|---|
-| OM-01 | Oportunidade de melhoria | A adaptação A-02 (ADAP-AASP01-001) previu formalização do Sprint Planning a partir da Sprint 3. | Garantir o registro do planejamento das sprints restantes (S3 e S4) na Planilha de Gestão. |
+| OM-01 | Oportunidade de melhoria | A adaptação A-02 (ADAP-AASP01-001) previu formalização do Sprint Planning a partir da Sprint 3. | Garantir o registro do planejamento da sprint restante (S3) na Planilha de Gestão. |
 | OM-02 | Oportunidade de melhoria | Avaliação de eficácia da capacitação e Lições Aprendidas ainda não aplicáveis (projeto em curso). | Concluir, no encerramento (Sprint 3), a avaliação de eficácia (CAP) e o registro de Lições Aprendidas (LI). |
 
 ---

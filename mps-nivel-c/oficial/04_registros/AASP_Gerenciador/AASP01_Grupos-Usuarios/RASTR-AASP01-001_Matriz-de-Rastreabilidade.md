@@ -10,7 +10,7 @@
 | **GP / Tech Lead** | Abraão (GP) · Cezar Hiraki (TL) — Timeware Brasil |
 | **Desenvolvedores** | Renan Kiyoshi, Henry Komatsu, Mateus Veloso — Timeware Brasil |
 | **PO** | Marcos Turnes — AASP |
-| **QA** | Caroline Sousa — AASP |
+| **QA** | Leonardo Francisco Pereira — AASP |
 | **Data base** | 24/06/2026 |
 | **Versão** | 1.3 |
 | **Status** | Ativo |
@@ -76,7 +76,7 @@ Os itens abaixo possuem requisito definido e rastreabilidade registrada, mas ain
 - **Requisitos funcionais planejados:** 1 de 9 (11%) — RF-09 previsto para S3
 - **Requisitos não funcionais validados:** 2 de 3 (67%) — RNF-01 e RNF-02 validados em S1
 - **Requisitos não funcionais pendentes:** 1 de 3 (33%) — RNF-03 depende da conclusão de AG-23 (S2)
-- **Casos de teste Sprint 1:** 10 de 10 (100%) aprovados por Caroline Sousa (AASP)
+- **Casos de teste Sprint 1:** 10 de 10 (100%) aprovados por Leonardo Francisco Pereira (AASP)
 - **Rastreabilidade req → teste:** 100% para todos os requisitos entregues até S1
 - **Rastreabilidade req → MR:** 100% para requisitos entregues (MRs !1, !2, !3, !4, !5)
 

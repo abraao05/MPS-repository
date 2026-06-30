@@ -10,7 +10,7 @@
 | **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
 | **Dev** | Renan Kiyoshi (Timeware) |
 | **PO** | Marcos Turnes (AASP) |
-| **QA** | Caroline Sousa (AASP) |
+| **QA** | Leonardo Francisco Pereira (AASP) |
 | **Processo MPS-SW** | VV — Verificação e Validação (evidência de revisão por pares) |
 
 ---
@@ -95,7 +95,7 @@ Registrar as revisões técnicas formais (code reviews via Merge Requests) reali
 | REV-003 | !4, !5 | 2 | 1 | 1 | 2/2 | Aprovado |
 | **TOTAL** | **5 MRs** | **5** | **3** | **2** | **5/5 (100%)** | **Todos resolvidos** |
 
-Nenhum achado P1 (critico) identificado na Sprint 1. Todos os achados P2 e P3 foram resolvidos antes do merge final em develop. Nenhum defeito foi para o ambiente de homologação sem correção previa. Resultado confirmado pelo aceite sem ressalvas de Caroline Sousa (AASP) em 06/06/2026.
+Nenhum achado P1 (critico) identificado na Sprint 1. Todos os achados P2 e P3 foram resolvidos antes do merge final em develop. Nenhum defeito foi para o ambiente de homologação sem correção previa. Resultado confirmado pelo aceite sem ressalvas de Leonardo Francisco Pereira (AASP) em 06/06/2026.
 
 ---
 

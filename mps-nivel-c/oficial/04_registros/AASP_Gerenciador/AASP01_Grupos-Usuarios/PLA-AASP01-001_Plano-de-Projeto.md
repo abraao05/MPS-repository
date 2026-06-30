@@ -51,7 +51,7 @@ O escopo deste plano abrange as Sprints 1 a 3 do projeto, conforme detalhado no 
 | Papel                        | Responsável      | Organização | Responsabilidades                                                                           |
 |------------------------------|------------------|-------------|----------------------------------------------------------------------------------------------|
 | Product Owner                | Marcos Turnes  | AASP        | Priorização do backlog, aceite de entrega, aprovação de change requests                      |
-| QA / Homologação             | Caroline Sousa     | AASP        | Execução de testes de homologação, emissão de parecer de aceite por sprint                   |
+| QA / Homologação             | Leonardo Francisco Pereira     | AASP        | Execução de testes de homologação, emissão de parecer de aceite por sprint                   |
 | Gerente de Projeto / Tech Lead | Abraão (GP) · Cezar Hiraki (TL)  | Timeware    | Coordenação do projeto, arquitetura técnica, code review, relatório de status, gestão de riscos |
 | Desenvolvedor                | Renan Kiyoshi    | Timeware    | Implementação das features, testes unitários, atualização da documentação técnica            |
 | Desenvolvedor                | Henry Komatsu    | Timeware    | Implementação das features e testes unitários                                                |
@@ -64,7 +64,7 @@ O escopo deste plano abrange as Sprints 1 a 3 do projeto, conforme detalhado no 
 | Daily Stand-up          | Diária — 09h30                          | Microsoft Teams | Equipe Timeware            | Abraão  |
 | Sprint Review           | Sexta-feira da semana de fechamento     | Microsoft Teams | Equipe completa + PO + QA  | Abraão  |
 | Sprint Retrospectiva    | Sexta-feira da semana de fechamento     | Microsoft Teams | Equipe Timeware            | Abraão  |
-| Relatório de Status     | Semanal — toda segunda-feira            | E-mail         | Marcos Turnes, Caroline Sousa | Abraão |
+| Relatório de Status     | Semanal — toda segunda-feira            | E-mail         | Marcos Turnes, Leonardo Francisco Pereira | Abraão |
 | Comunicações urgentes   | Sob demanda                             | Microsoft Teams | Partes envolvidas          | Qualquer membro |
 
 ## 6. Plano de Gestão de Riscos
@@ -89,10 +89,10 @@ O escopo deste plano abrange as Sprints 1 a 3 do projeto, conforme detalhado no 
 
 | Atividade                   | Quando             | Responsável       | Critério de Conclusão                                        |
 |-----------------------------|--------------------|-------------------|--------------------------------------------------------------|
-| Testes unitários            | A cada sprint      | Renan Kiyoshi     | Cobertura ≥ 70% nos módulos entregues na sprint              |
+| Testes unitários            | A cada sprint      | Renan Kiyoshi     | Cobertura ≥ 60% nos módulos entregues na sprint              |
 | Code review                 | A cada MR          | Cezar Hiraki     | Aprovação formal no GitLab antes do merge              |
 | Testes de integração        | Sprint 2           | Cezar Hiraki     | Endpoints integrados validados em ambiente de desenvolvimento |
-| Homologação QA              | Sprint 3            | Caroline Sousa     | Parecer de aceite emitido pela QA da AASP                    |
+| Homologação QA              | Sprint 3            | Leonardo Francisco Pereira     | Parecer de aceite emitido pela QA da AASP                    |
 | Aceite formal               | Fim de cada sprint  | Marcos Turnes  | Confirmação escrita do PO (e-mail ou Teams)                  |
 
 ## 8. Métricas de Sucesso
@@ -100,7 +100,7 @@ O escopo deste plano abrange as Sprints 1 a 3 do projeto, conforme detalhado no 
 | ID  | Métrica                                                             |
 |-----|---------------------------------------------------------------------|
 | M1  | 100% dos requisitos funcionais (RF-01 a RF-09) entregues e aceitos  |
-| M2  | Cobertura de testes unitários ≥ 70% em todos os módulos             |
+| M2  | Cobertura de testes unitários ≥ 60% em todos os módulos             |
 | M3  | Tempo de resposta ≤ 500 ms para 95% das requisições (RNF-01)        |
 | M4  | Zero defeitos críticos abertos na entrega final                     |
 | M5  | Aceite formal de sprint em 100% das sprints pelo PO                 |

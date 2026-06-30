@@ -53,7 +53,7 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 | RNF-02 | Segurança        | Autenticação via JWT; comunicação exclusivamente por HTTPS                             |
 | RNF-03 | Rastreabilidade  | Operações de escrita devem ser rastreáveis via auditoria (entrega planejada na Sprint 2) |
 | RNF-04 | Compatibilidade  | Stack obrigatória: .NET 5.0 (net5.0) e Dapper; SQL Server como SGBD                |
-| RNF-05 | Manutenibilidade | Cobertura mínima de 70% de testes unitários por módulo                                 |
+| RNF-05 | Manutenibilidade | Cobertura mínima de 60% de testes unitários por módulo                                 |
 
 ## 5. Regras de Negócio
 

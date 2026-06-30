@@ -54,7 +54,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | Sprint 1 | 34 | 34 | 0 (0%) | 34 | 0% desvio — meta <= 10% atingida |
 | Sprint 2 | 28 | Em andamento | — | — | ~60% concluido em 15/06/2026 |
 | Sprint 3 | 20 | Planejado | — | — | — |
-| **TOTAL** | **90** | **34 realizados + 56 planejados** | — | — | — |
+| **TOTAL** | **82** | **34 realizados + 48 planejados** | — | — | — |
 
 ---
 
@@ -64,11 +64,11 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 
 | Sprint | Métodos Testados | Total Métodos | Cobertura Est. | Meta | Status |
 |---|---|---|---|---|---|
-| Sprint 1 | 22 | ~26 | 85% | >= 80% | Meta atingida |
-| Sprint 2 | A apurar | — | — | >= 80% | Em andamento |
-| Sprint 3 | A apurar | — | — | >= 80% | Planejado |
+| Sprint 1 | 22 | — | 68.4% linha / 61.9% branch | >= 60% | Meta atingida |
+| Sprint 2 | A apurar | — | — | >= 60% | Em andamento |
+| Sprint 3 | A apurar | — | — | >= 60% | Planejado |
 
-> Nota: Cobertura estimada com base no total de métodos públicos das camadas de serviço (GruposService, PermissoesService) e repositório (GruposRepository, PermissoesRepository) implementados na Sprint 1. Medição exata disponível no relatório de execução xUnit (REL-VV-AASP01-001).
+> Nota: Cobertura medida pelo Coverlet 3.1.2 na execução xUnit da Sprint 1 — 68.4% de linhas e 61.9% de branches cobertas. Detalhes no REL-VV-AASP01-001.
 
 ### 4.2 Defeitos por Fase
 
@@ -99,7 +99,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | Tempo de resposta p95 — GET listargrupo | <= 260 ms | <= 500 ms | Dev (Swagger UI) | Meta atingida |
 | Disponibilidade ambiente dev | > 99% no período da Sprint 1 | >= 99% | Dev (local) | Meta atingida |
 
-> Medições realizadas via Swagger UI em ambiente dev local durante a Sprint 1. Medições em ambiente de homologação AASP serão realizadas a partir da Sprint 2 (ambiente disponível a partir de 09/06/2026 — Caroline Sousa).
+> Medições realizadas via Swagger UI em ambiente dev local durante a Sprint 1. Medições em ambiente de homologação AASP serão realizadas a partir da Sprint 2 (ambiente disponível a partir de 09/06/2026 — Leonardo Francisco Pereira).
 
 ---
 
@@ -110,7 +110,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 | M1 | % de entregas no prazo | 100% (Sprint 1 aceita em 06/06/2026) | >= 90% | Atingido | RAC-AASP01-001 |
 | M2 | Desvio de esforço (SP) | 0% Sprint 1 (34 planejado x 34 realizado) | <= 10% | Atingido | RAC-AASP01-001 |
 | M3 | Índice de defeitos por SP | 0,088 def/SP (3 achados P2 / 34 SP) | <= 0,20 | Atingido | REV-AASP01-001 |
-| M4 | Cobertura testes unitarios | 85% estimado Sprint 1 | >= 80% | Atingido | REL-VV-AASP01-001 |
+| M4 | Cobertura testes unitarios | 68.4% linha / 61.9% branch (Sprint 1) | >= 60% | Atingido | REL-VV-AASP01-001 |
 | M5 | Taxa de aprovação no aceite | 100% (10/10 cenários Sprint 1) | >= 95% | Atingido | CTQ-AASP01-001 |
 | M6 | Tempo medio de resposta API | <= 280 ms (Swagger dev, endpoint p95) | <= 500 ms | Atingido | Evidência Swagger Sprint 1 |
 | M7 | % de requisitos rastreados | 100% (AG-20 a AG-25 rastreados) | 100% | Atingido | RASTR-AASP01-001 |
@@ -126,7 +126,7 @@ Este registro e vinculado ao catalogo organizacional **PLA-MED-001** da Timeware
 - Atualizar M2 com SP realizado vs. planejado (28 SP)
 - Atualizar M3 com achados de code review MRs !6 e !7
 - Atualizar M4 com cobertura de testes unitarios AG-23 e AG-24
-- Atualizar M5 após UAT Sprint 2 (Caroline Sousa)
+- Atualizar M5 após UAT Sprint 2 (Leonardo Francisco Pereira)
 - Atualizar M6 com medições de performance em ambiente homologação AASP
 - Confirmar M7 com rastreabilidade AG-23 e AG-24
 - Atualizar M8 após aceite formal Sprint 2 (Marcos Turnes)
