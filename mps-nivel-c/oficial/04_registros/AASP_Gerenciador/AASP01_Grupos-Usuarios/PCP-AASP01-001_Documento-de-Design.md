@@ -5,8 +5,8 @@
 | **Documento** | PCP-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.3 |
-| **Data** | 24/06/2026 |
+| **Versão** | 1.4 |
+| **Data** | 01/07/2026 |
 | **Gerente de Projeto** | Abraão |
 | **Processo MPS-SW** | PCP (evidência de projeto) |
 
@@ -46,7 +46,7 @@ A API segue o padrão arquitetural do sistema Gerenciador da AASP, utilizando au
 | Framework de API | ASP.NET Web API (.NET 5.0 (net5.0)) | Padrão do projeto Gerenciador AASP; compatibilidade com infraestrutura existente do cliente |
 | ORM / Acesso a dados | Dapper 2.x | Ver GDE-AASP01-001 (GDE-001) — compatibilidade com .NET FW 5.0, performance superior ao EF Core em queries complexas, padrão já adotado no projeto Gerenciador |
 | Banco de dados principal | SQL Server — banco auxo3 | Banco existente do sistema Gerenciador da AASP |
-| Integração externa | HTTP REST — ms.temis.vinculos | *(Planejado — Sprint 2)* Ver ITP-AASP01-001; desacoplamento entre dominios |
+| Integração externa | HTTP REST — ms.temis.vinculos | Implementado na Sprint 2 (AG-24, MR !7) — Ver ITP-AASP01-001; desacoplamento entre domínios |
 | Autenticação | JWT Bearer Token | Padrão do Gerenciador AASP; tokens emitidos pelo serviço de autenticação central |
 | Documentação de API | Swagger / OpenAPI (Swashbuckle) | Gerado automaticamente a partir das anotações do código; validado em cada sprint |
 | CI/CD | GitLab CI/CD | Padrão Timeware; pipeline automatiza build e testes a cada MR |
@@ -78,8 +78,9 @@ A API segue o padrão arquitetural do sistema Gerenciador da AASP, utilizando au
 |  grupos_usuarios_funcao                           |
 +--------------------------------------------------+
 
-  (Planejado — Sprint 2) integracao HTTP REST com
-  ms.temis.vinculos; auditoria das operacoes de escrita.
+  Sprint 2: integracao HTTP REST com ms.temis.vinculos
+  (AG-24, MR !7) + auditoria das operacoes de escrita
+  via tabela auditoria_grupos (AG-23, MR !6).
 ```
 
 **Descrição das camadas:**
@@ -129,9 +130,9 @@ A API segue o padrão arquitetural do sistema Gerenciador da AASP, utilizando au
 
 **Regra:** `alterarfuncaodousuario` altera a função (Usuario/Administrador) de um usuário.
 
-### 3.4 Auditoria — *(Planejado — Sprint 2, AG-23)*
+### 3.4 Auditoria — ✅ Implementado Sprint 2 (AG-23, MR !6)
 
-A trilha de auditoria das operações de escrita esta planejada para a Sprint 2 e **ainda não foi implementada** no código. O modelo de dados será definido na entrega de AG-23.
+A trilha de auditoria das operações de escrita foi implementada na Sprint 2 (AG-23). A tabela `auditoria_grupos` registra cada operação de escrita com: `id`, `grupo_id`, `usuario_acao`, `operacao` (Create/Update/Delete), `data_hora`, `detalhe`. Registros imutáveis (append-only). Índice `IX_auditoria_grupos_usuario_acao` adicionado para performance de consulta.
 
 ---
 
@@ -176,9 +177,9 @@ A trilha de auditoria das operações de escrita esta planejada para a Sprint 2 
 
 ---
 
-## 6. Integração com ms.temis.vinculos — *(Planejado — Sprint 2)*
+## 6. Integração com ms.temis.vinculos — ✅ Implementado Sprint 2 (AG-24, MR !7)
 
-A sincronização de vinculos com o microsserviço **ms.temis.vinculos** (banco temis3) esta planejada para a Sprint 2 (AG-24) e **ainda não foi implementada** no código. O contrato de integração, os cenários de erro e o procedimento de reconciliação serão especificados no documento **ITP-AASP01-001_Estrategia-de-Integracao.docx** quando a implementação iniciar.
+A sincronização de vínculos com o microsserviço **ms.temis.vinculos** (banco temis3) foi implementada na Sprint 2 (AG-24). O contrato de integração está especificado em ITP-AASP01-001 (§4.1). A chamada HTTP REST ao endpoint `api/gerenciar/grupos/vinculados` ocorre após cada alteração de vínculo. Comportamento fault-tolerant: timeout 5 s + retry 2 tentativas; falha de integração gera log de erro sem interromper a operação de negócio.
 
 ---
 
@@ -189,4 +190,5 @@ A sincronização de vinculos com o microsserviço **ms.temis.vinculos** (banco 
 | 1.0 | 26/05/2026 | Abraão | Arquitetura inicial — Sprint 1; stack, modelo de dados, endpoints S1 |
 | 1.1 | 15/06/2026 | Abraão | Adição da seção de integração ms.temis.vinculos |
 | 1.2 | 15/06/2026 | Abraão | Design alinhado a API e ao schema reais (GerenciarGruposController; tabelas grupos_usuarios, _vinculos, _função); auditoria/integração/relatório marcados como planejados |
-| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.3 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.4 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: seções 3.4 e 6 atualizadas de "Planejado Sprint 2" para implementado (AG-23 auditoria_grupos + AG-24 integração ms.temis.vinculos); schema da tabela auditoria_grupos documentado. |

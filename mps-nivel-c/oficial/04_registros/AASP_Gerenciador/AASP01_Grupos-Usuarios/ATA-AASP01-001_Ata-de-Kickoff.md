@@ -10,9 +10,9 @@
 | **Horario** | 09h30 – 11h00 |
 | **Canal** | Microsoft Teams |
 | **Facilitador** | Abraão (Timeware) |
-| **Versão** | 1.1 |
-| **Gerente de Projeto** | Abraão |
-| **Processo MPS-SW** | GPR — Gerência de Projetos (evidência de projeto) |
+| **Versão** | 1.2 |
+| **Gerente de Projeto** | Abraão Oliveira |
+| **Processo MPS-SW** | GPR / ORG (evidência de início formal do projeto e comunicação) |
 
 ---
 
@@ -116,17 +116,17 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 
 ## 5. Ações Imediatas
 
-| Ação | Responsável | Prazo |
-|---|---|---|
-| Providenciar acesso ao repositório GitLab (ms.auxo.usuarios) para Renan Kiyoshi, Henry Komatsu e Mateus Veloso | Marcos Turnes | 23/05/2026 |
-| Compartilhar schema do banco auxo3 (tabelas existentes, PKs, FKs relevantes) | Marcos Turnes | 23/05/2026 |
-| Compartilhar contrato de API do ms.temis.vinculos (swagger ou documento de especificação) | Marcos Turnes | 23/05/2026 |
-| Preparar ambiente de homologação AASP (banco de dados e servidor de aplicação) para testes de homologação | Leonardo Francisco Pereira | 09/06/2026 (inicio Sprint 2) |
-| Configurar pipeline CI/CD no GitLab (build automático, execução de testes unitarios no MR) | Cezar Hiraki | 26/05/2026 |
-| Criar branches de feature no repositório: feature/ag-20, feature/ag-21, feature/ag-22 | Renan Kiyoshi | 26/05/2026 |
-| Elaborar scripts de migration para criação das tabelas grupos_usuarios, grupos_usuarios_vinculos e grupos_usuarios_funcao no banco auxo3 | Cezar Hiraki | 28/05/2026 |
-| Enviar convite recorrente do Teams para daily 09h30 (equipe Timeware e AASP) | Abraão | 19/05/2026 (neste dia) |
-| Enviar convite do Teams para Sprint Review Sprint 1 — 06/06/2026 as 14h00 | Abraão | 19/05/2026 (neste dia) |
+| Ação | Responsável | Prazo | Status |
+|---|---|---|---|
+| Providenciar acesso ao repositório GitLab (ms.auxo.usuarios) para Renan Kiyoshi, Henry Komatsu e Mateus Veloso | Marcos Turnes | 23/05/2026 | ✅ Cumprida — acessos concedidos até 23/05/2026 conforme Sprint 1 iniciada em 26/05 |
+| Compartilhar schema do banco auxo3 (tabelas existentes, PKs, FKs relevantes) | Marcos Turnes | 23/05/2026 | ✅ Cumprida — schema disponibilizado; tabela `Usuarios` identificada e migrations elaboradas |
+| Compartilhar contrato de API do ms.temis.vinculos (swagger ou documento de especificação) | Marcos Turnes | 23/05/2026 | ⚠️ Parcial — contrato disponibilizado apenas no início da Sprint 2 (09/06/2026); ver ADAP A-03 |
+| Preparar ambiente de homologação AASP (banco de dados e servidor de aplicação) para testes de homologação | Leonardo Francisco Pereira | 09/06/2026 (inicio Sprint 2) | ✅ Cumprida — ambiente disponível para UAT Sprint 1 em 06/06/2026 |
+| Configurar pipeline CI/CD no GitLab (build automático, execução de testes unitarios no MR) | Cezar Hiraki | 26/05/2026 | ✅ Cumprida — pipeline configurado; 22 testes unitários passando |
+| Criar branches de feature no repositório: feature/ag-20, feature/ag-21, feature/ag-22 | Renan Kiyoshi | 26/05/2026 | ✅ Cumprida — branches criadas e MRs abertos conforme Git Flow |
+| Elaborar scripts de migration para criação das tabelas grupos_usuarios, grupos_usuarios_vinculos e grupos_usuarios_funcao no banco auxo3 | Cezar Hiraki | 28/05/2026 | ✅ Cumprida — migrations elaboradas e aplicadas em dev e homologação |
+| Enviar convite recorrente do Teams para daily 09h30 (equipe Timeware e AASP) | Abraão | 19/05/2026 (neste dia) | ✅ Cumprida — daily 09h30 realizada ao longo de toda Sprint 1 |
+| Enviar convite do Teams para Sprint Review Sprint 1 — 06/06/2026 as 14h00 | Abraão | 19/05/2026 (neste dia) | ✅ Cumprida — Sprint Review realizada em 06/06/2026; ver ATA-AASP01-002 |
 
 ---
 
@@ -142,5 +142,6 @@ Cezar Hiraki levantou a necessidade de analisar o schema existente do banco `aux
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 19/05/2026 | Abraão | Versão inicial — registro da reunião de kickoff realizada em 19/05/2026 |
-| 1.1 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.0 | 19/05/2026 | Abraão Oliveira | Versão inicial — registro da reunião de kickoff realizada em 19/05/2026 |
+| 1.1 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.2 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: coluna "Status" adicionada à tabela de ações imediatas (todas as 9 ações verificadas e registradas como cumpridas ou parciais). |

@@ -2,14 +2,15 @@
 
 | Campo         | Valor                                                                 |
 |---------------|-----------------------------------------------------------------------|
-| Documento     | TAP-AASP01-001                                                        |
-| Projeto       | AASP01 — Grupos de Usuários (Feature AG)                              |
-| Cliente       | AASP — Associação dos Advogados de São Paulo                          |
-| Produto       | ms.auxo.usuarios                                                |
-| Versão        | 1.1                                                                   |
-| Data          | 24/06/2026                                                            |
-| Autor         | Abraão                                                         |
-| Status        | Aprovado                                                              |
+| Documento          | TAP-AASP01-001                                               |
+| Projeto            | AASP01 — Grupos de Usuários (Feature AG)                     |
+| Cliente            | AASP — Associação dos Advogados de São Paulo                  |
+| Produto            | ms.auxo.usuarios                                             |
+| Versão             | 1.2                                                          |
+| Data de Aprovação  | 19/05/2026                                                   |
+| Última Revisão     | 01/07/2026                                                   |
+| Autor              | Abraão Oliveira                                              |
+| Status             | Aprovado — ver ATA-AASP01-001 §4 D-07 e §5 (Kickoff 19/05/2026) |
 
 ---
 
@@ -44,7 +45,7 @@ Desenvolver o microsserviço **ms.auxo.usuarios** para o sistema Gerenciador da 
 |-------------------------|------------------|-------------|----------------------------------|
 | PO / Patrocinador        | Marcos Turnes  | AASP        | —                                |
 | QA                      | Leonardo Francisco Pereira     | AASP        | —                                |
-| Gerente de Projeto / TL | Abraão (GP) · Cezar Hiraki (TL)    | Timeware    | Abraão (a confirmar) · contato@cezarvelazquez.com.br |
+| Gerente de Projeto / TL | Abraão Oliveira (GP) · Cezar Hiraki (TL) | Timeware | abraao.oliveira@timeware.com.br · cezar.velazquez@timeware.com.br |
 | Desenvolvedor           | Renan Kiyoshi    | Timeware    | renan.kiyoshi.timeware@outlook.com |
 | Desenvolvedor           | Henry Komatsu    | Timeware    | henry.komatsu.timeware@outlook.com |
 | Desenvolvedor           | Mateus Veloso           | Timeware    | mateus.veloso.timeware@outlook.com |
@@ -89,5 +90,6 @@ Desenvolver o microsserviço **ms.auxo.usuarios** para o sistema Gerenciador da 
 
 | Versão | Data       | Autor          | Descrição             |
 |--------|------------|----------------|-----------------------|
-| 1.0    | 19/05/2026 | Abraão  | Criação do documento  |
-| 1.1 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.0 | 19/05/2026 | Abraão Oliveira | Criação do documento |
+| 1.1 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.2 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: contato do GP preenchido; campo de aprovação formal adicionado; versão alinhada com histórico real do projeto. |

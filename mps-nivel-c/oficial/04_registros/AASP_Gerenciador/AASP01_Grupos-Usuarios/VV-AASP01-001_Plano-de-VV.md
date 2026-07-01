@@ -5,9 +5,9 @@
 | **Documento** | VV-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.2 |
-| **Data** | 24/06/2026 |
-| **Gerente de Projeto** | Abraão |
+| **Versão** | 1.3 |
+| **Data** | 01/07/2026 |
+| **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | VER / VAL — Verificação e Validação (evidência de projeto) |
 
 ---
@@ -44,7 +44,7 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 
 | Nível | Tipo | Responsável | Ferramenta | Critério de Entrada | Critério de Saida |
 |---|---|---|---|---|---|
-| 1 | Testes Unitarios | Cezar Hiraki + Renan Kiyoshi (Timeware) | xUnit (.NET FW 5.0) + Moq | Feature implementada em branch de feature; build local verde | Cobertura adequada na camada de serviço (`GerenciarGruposServices`) e repositório (`GerenciarGruposRepositorio`); todos os testes passando sem falha |
+| 1 | Testes Unitarios | Renan Kiyoshi, Henry Komatsu e Mateus Veloso (Timeware — cada desenvolvedor responsável pelo próprio código) | xUnit (.NET FW 5.0) + Moq | Feature implementada em branch de feature; build local verde | Cobertura adequada na camada de serviço (`GerenciarGruposServices`) e repositório (`GerenciarGruposRepositorio`); todos os testes passando sem falha |
 | 2 | Testes de Integração | Cezar Hiraki (Timeware) | xUnit + SQL Server local (scripts de setup de banco de teste) | Testes unitarios passando; banco de teste configurado | Fluxos criticos da Sprint 1 (CRUD de grupos, função do usuário, vinculo usuário-grupo) executados sem falha. Integração com ms.temis.vinculos será coberta na Sprint 2 |
 | 3 | Code Review (peer review) | Cezar Hiraki como revisor principal | GitLab Merge Requests + checklist de revisão | MR aberto; build + testes unitarios passando | MR aprovado formalmente por Cezar Hiraki (Tech Lead); todos os achados P1 e P2 resolvidos antes da aprovação |
 | 4 | Testes de Sistema | Cezar Hiraki via Swagger UI / Postman | Swagger UI (gerado automaticamente) + Postman | Feature integrada em ambiente dev; MR mergeado em develop | Todos os endpoints respondem com status HTTP correto (200/400) e envelope padrão; autenticação JWT funcionando |
@@ -70,7 +70,7 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 | Sprint | Escopo Funcional | Atividades de V&V | Responsável | Status |
 |---|---|---|---|---|
 | Sprint 1 (26/05–06/06) | AG-20: CRUD de grupos; AG-21: função do usuário no grupo; AG-22: vinculo usuário-grupo | Testes unitarios AG-20, AG-21, AG-22; code review MRs !1, !2, !3, !4, !5; testes de sistema via Swagger (endpoints GET/POST de `api/gerenciar/grupos`); UAT Leonardo Francisco Pereira (10 cenários CTQ); aceite formal Marcos Turnes | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Leonardo Francisco Pereira + Marcos Turnes | Concluido (aceite 06/06/2026) |
-| Sprint 2 (09/06–20/06) | AG-23: auditoria de ações; AG-24: integração com ms.temis.vinculos | Testes unitarios AG-23, AG-24; testes de integração ms.temis.vinculos (mock + real); code review MRs !6, !7 (previstos); testes de sistema em ambiente dev; UAT Leonardo Francisco Pereira; aceite formal Marcos Turnes | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Leonardo Francisco Pereira + Marcos Turnes | Em andamento |
+| Sprint 2 (09/06–20/06) | AG-23: auditoria de ações; AG-24: integração com ms.temis.vinculos | Testes unitarios AG-23, AG-24 (14 métodos); testes de integração ms.temis.vinculos; code review MRs !6 e !7; testes de sistema em ambiente dev; UAT Leonardo Francisco Pereira (4 cenários: AUD-01, AUD-02, INT-01, INT-02); aceite formal Marcos Turnes | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Leonardo Francisco Pereira + Marcos Turnes | ✅ Concluído (aceite 20/06/2026) |
 | Sprint 3 (23/06–04/07) | AG-25: relatório consolidado de grupos | Testes unitarios AG-25; testes de sistema (Swagger + Postman); UAT (Leonardo Francisco Pereira) com regressão de AG-20 a AG-25; preparação para aceite final | Renan Kiyoshi, Henry Komatsu e Mateus Veloso + Leonardo Francisco Pereira | Planejado |
 
 ---
@@ -123,8 +123,11 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 | Sprint 1 | REV-S1-03 | Code Review | P2 | Conforme REV-AASP01-001 (RV-002-01) | Sim (antes do merge) | MR !3 |
 | Sprint 1 | REV-S1-04 | Code Review | P2 | Conforme REV-AASP01-001 (RV-003-01) | Sim (antes do merge) | MR !4 |
 | Sprint 1 | REV-S1-05 | Code Review | P3 | Conforme REV-AASP01-001 (RV-003-02) | Sim (antes do merge) | MR !5 |
+| Sprint 2 | REV-S2-01 | Code Review | P2 | Conforme REV-AASP01-001 (RV-006-01) | Sim (antes do merge) | MR !6 |
+| Sprint 2 | REV-S2-02 | Code Review | P2 | Conforme REV-AASP01-001 (RV-006-02) | Sim (antes do merge) | MR !6 |
+| Sprint 2 | REV-S2-03 | Code Review | P3 | Conforme REV-AASP01-001 (RV-007-01) | Sim (antes do merge) | MR !7 |
 
-> Detalhes completos de cada achado disponível em REV-AASP01-001 (Registro de Revisão Técnica). Nenhum defeito aberto em produção ou homologação ao termino da Sprint 1.
+> Detalhes completos de cada achado disponível em REV-AASP01-001 (Registro de Revisão Técnica). Nenhum defeito aberto em produção ou homologação ao término das Sprints 1 e 2.
 
 ---
 
@@ -147,4 +150,5 @@ O escopo funcional cobre todos os requisitos funcionais AG-20 a AG-25 definidos 
 |---|---|---|---|
 | 1.0 | 26/05/2026 | Abraão | Versão inicial — plano de V&V elaborado no inicio da Sprint 1 |
 | 1.1 | 15/06/2026 | Abraão | Alinhado a API real (endpoints GET/POST 200/400; função do usuário), 3 sprints, nomes reais de service/repositorio |
-| 1.2 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.2 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.3 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: Sprint 2 marcada como concluída (aceite 20/06/2026); responsabilidade de testes unitários corrigida para os 3 desenvolvedores; Sprint 2 adicionada ao histórico de defeitos (3 achados — todos resolvidos); GP com nome completo. |

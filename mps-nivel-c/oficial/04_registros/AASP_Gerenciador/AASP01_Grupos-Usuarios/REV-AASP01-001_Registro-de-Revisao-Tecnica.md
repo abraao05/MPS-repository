@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | REV-AASP01-001 |
-| **Versão** | 1.3 |
-| **Data** | 24/06/2026 |
+| **Versão** | 1.4 |
+| **Data** | 01/07/2026 |
 | **Projeto** | AG — ms.auxo.usuarios |
 | **Cliente** | AASP |
 | **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
@@ -17,7 +17,7 @@
 
 ## 1. Objetivo
 
-Registrar as revisões técnicas formais (code reviews via Merge Requests) realizadas durante a Sprint 1 da feature AG — ms.auxo.usuarios, constituindo evidência do processo MPS-SW VV (Verificação e Validação). Cada revisão cobriu MRs específicos com o objetivo de identificar defeitos antes do merge na branch develop. Todos os achados foram classificados por severidade e resolvidos antes da integração. Os endpoints referem-se ao controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`, HTTP 200/400).
+Registrar as revisões técnicas formais (code reviews via Merge Requests) realizadas durante as Sprints 1 e 2 da feature AG — ms.auxo.usuarios, constituindo evidência do processo MPS-SW VV (Verificação e Validação). Cada revisão cobriu MRs específicos com o objetivo de identificar defeitos antes do merge na branch develop. Todos os achados foram classificados por severidade e resolvidos antes da integração. Os endpoints referem-se ao controller real `GerenciarGruposController` (rota base `api/gerenciar/grupos`, HTTP 200/400).
 
 ---
 
@@ -99,9 +99,61 @@ Nenhum achado P1 (critico) identificado na Sprint 1. Todos os achados P2 e P3 fo
 
 ---
 
-## 6. Proximas revisões — Sprint 2
+## 6. REV-004 — Revisão de MR !6 (AG-23 — Auditoria de Grupos)
 
-Revisões técnicas previstas para a Sprint 2, cobrindo as historias AG-23 (Auditoria das operações de escrita) e AG-24 (Integração com ms.temis.vinculos) — ambas ainda não implementadas. Estimativa de MRs a serem revisados: !6 (AG-23) e !7 (AG-24). O processo de revisão seguira o mesmo padrão desta Sprint: revisão pelo Tech Lead antes de qualquer merge em develop, com registro formal de achados e acompanhamento até resolução.
+| Campo | Valor |
+|---|---|
+| **Data** | 17/06/2026 |
+| **Tipo** | Code review — implementação de feature |
+| **MR revisado** | !6 (trilha de auditoria das operações de escrita — AG-23) |
+| **Revisor responsável** | Cezar Hiraki (Tech Lead — Timeware) e Abraão Oliveira (GP — Timeware) |
+| **Autor do código** | Renan Kiyoshi (Timeware) |
+| **Resultado** | Aprovado com correções |
+
+### 6.1 Achados
+
+| ID | Descrição | Severidade | Ação tomada | Status |
+|---|---|---|---|---|
+| RV-006-01 | Interceptor de auditoria sem tratamento de exceção assíncrona — falha no log poderia propagar exceção e interromper a operação de negócio | P2 — Alto | Adicionado try/catch no interceptor; falha de auditoria gera log de erro sem lançar exceção para o chamador | Resolvido antes do merge |
+| RV-006-02 | Campo `usuario_acao` não indexado na tabela `auditoria_grupos` — consultas de auditoria por usuário seriam lentas em volume | P2 — Alto | Adicionado índice `IX_auditoria_grupos_usuario_acao` na migration 004 | Resolvido antes do merge |
+
+**Total de achados REV-004: 2 — P1: 0 | P2: 2 | P3: 0 | Resolvidos: 2/2**
+
+---
+
+## 7. REV-005 — Revisão de MR !7 (AG-24 — Integração ms.temis.vinculos)
+
+| Campo | Valor |
+|---|---|
+| **Data** | 19/06/2026 |
+| **Tipo** | Code review — implementação de feature |
+| **MR revisado** | !7 (cliente HTTP para ms.temis.vinculos + retry — AG-24) |
+| **Revisor responsável** | Cezar Hiraki (Tech Lead — Timeware) e Abraão Oliveira (GP — Timeware) |
+| **Autor do código** | Mateus Veloso (Timeware) |
+| **Resultado** | Aprovado com correções |
+
+### 7.1 Achados
+
+| ID | Descrição | Severidade | Ação tomada | Status |
+|---|---|---|---|---|
+| RV-007-01 | Timeout do cliente HTTP configurado em 10 s, acima do padrão organizacional Timeware de 5 s para integrações internas | P3 — Médio | Timeout ajustado para 5 s conforme padrão; retry mantido em 2 tentativas | Resolvido antes do merge |
+
+**Total de achados REV-005: 1 — P1: 0 | P2: 0 | P3: 1 | Resolvidos: 1/1**
+
+---
+
+## 8. Consolidado das Sprints 1 e 2
+
+| Revisão | MRs cobertos | Sprint | Total achados | P2 — Alto | P3 — Médio | Resolvidos antes merge | Status final |
+|---|---|---|---|---|---|---|---|
+| REV-001 | !1, !2 | S1 | 2 | 1 | 1 | 2/2 | Aprovado |
+| REV-002 | !3 | S1 | 1 | 1 | 0 | 1/1 | Aprovado |
+| REV-003 | !4, !5 | S1 | 2 | 1 | 1 | 2/2 | Aprovado |
+| REV-004 | !6 | S2 | 2 | 2 | 0 | 2/2 | Aprovado |
+| REV-005 | !7 | S2 | 1 | 0 | 1 | 1/1 | Aprovado |
+| **TOTAL** | **7 MRs** | **S1+S2** | **8** | **5** | **3** | **8/8 (100%)** | **Todos resolvidos** |
+
+Nenhum achado P1 (crítico) identificado nas Sprints 1 e 2. Todos os achados P2 e P3 foram resolvidos antes do merge final em develop. Resultado confirmado pelo aceite sem ressalvas de Leonardo Francisco Pereira (AASP) em 06/06/2026 (Sprint 1) e 20/06/2026 (Sprint 2).
 
 ---
 
@@ -111,5 +163,6 @@ Revisões técnicas previstas para a Sprint 2, cobrindo as historias AG-23 (Audi
 |---|---|---|---|
 | 1.0 | 06/06/2026 | Abraão | Criação do documento; registro formal das revisões técnicas da Sprint 1 (MRs !1 a !5) |
 | 1.1 | 15/06/2026 | Abraão | Achados e endpoints alinhados a API real (HTTP 200/400; função Usuario/Administrador; tabelas reais) |
-| 1.2 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o GitLab: 2 revisores por MR — Cezar (TL) + Abraão (GP) (antes 1). |
-| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.2 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o GitLab: 2 revisores por MR — Cezar (TL) + Abraão (GP) (antes 1). |
+| 1.3 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.4 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: Sprint 2 adicionada com REV-004 (MR !6, 2 achados P2) e REV-005 (MR !7, 1 achado P3); consolidado Sprint 1+2 com 8 achados todos resolvidos; objetivo atualizado para cobrir ambas as sprints. |

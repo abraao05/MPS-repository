@@ -5,10 +5,10 @@
 | **Documento** | CR-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.0 |
-| **Data** | 06/06/2026 |
-| **Gerente de Projeto** | Abraão |
-| **Processo MPS-SW** | GRE (evidência de projeto) |
+| **Versão** | 1.1 |
+| **Data** | 01/07/2026 |
+| **Gerente de Projeto** | Abraão Oliveira |
+| **Processo MPS-SW** | GMUDS / GPR (evidência de controle de mudanças de escopo) |
 
 ---
 
@@ -26,7 +26,7 @@ Qualquer solicitação de alteração de escopo, prazo, custo ou requisitos deve
 |---|---|---|---|---|---|---|---|
 | — | — | — | — | — | — | — | — |
 
-> **Nota:** Nenhum Change Request foi registrado até 15/06/2026. O escopo permanece estável conforme TAP-AASP01-001 assinado em 19/05/2026. As histórias AG-20 a AG-25 seguem inalteradas em relação ao planejamento original.
+> **Nota:** Nenhum Change Request foi registrado durante todo o projeto (Sprint 1 a Sprint 3, 19/05/2026 a 01/07/2026). O escopo permanece estável conforme TAP-AASP01-001 aprovado em 19/05/2026. As histórias AG-20 a AG-25 seguem inalteradas em relação ao planejamento original. Confirmação de ausência de CRs em 01/07/2026.
 
 ---
 
@@ -34,9 +34,9 @@ Qualquer solicitação de alteração de escopo, prazo, custo ou requisitos deve
 
 | Dimensão | Impacto |
 |---|---|
-| **Prazo** | Sem impacto — zero CRs registrados até 15/06/2026 |
-| **Custo** | Sem impacto — zero CRs registrados até 15/06/2026 |
-| **Escopo** | Estável — AG-20 a AG-25 conforme TAP assinado em 19/05/2026 |
+| **Prazo** | Sem impacto — zero CRs registrados durante todo o projeto |
+| **Custo** | Sem impacto — zero CRs registrados durante todo o projeto |
+| **Escopo** | Estável — AG-20 a AG-25 conforme TAP aprovado em 19/05/2026 |
 | **Qualidade** | Sem impacto — nenhuma alteração de requisito ou critério de aceite |
 
 ---
@@ -51,7 +51,7 @@ O fluxo de gestão de change requests adotado no projeto segue as etapas abaixo:
 
 3. **Apresentação ao cliente** — Abraão apresenta a análise de impacto a Marcos Turnes (AASP, PO) em reunião formal (Teams ou presencial), com as opções disponíveis e recomendação da equipe.
 
-4. **Aprovação formal** — A mudança somente é aprovada com assinatura (ou confirmação formal por e-mail) de Marcos Turnes (AASP) e Abraão (Timeware). Mudanças sem aprovação dupla não são implementadas.
+4. **Aprovação formal** — A mudança somente é aprovada com assinatura (ou confirmação formal por e-mail) de Marcos Turnes (AASP) e Abraão (Timeware). Mudanças sem aprovação dupla não são implementadas. **E-mails de aprovação são arquivados como anexo ao CR aprovado no repositório MPS-SW** (pasta `04_registros/AASP01_Grupos-Usuarios/evidencias/cr-aprovacoes/`).
 
 5. **Registro neste documento** — O CR aprovado é registrado na tabela da Seção 2, com todos os campos preenchidos, e o documento é atualizado com nova versão.
 
@@ -61,7 +61,7 @@ O fluxo de gestão de change requests adotado no projeto segue as etapas abaixo:
 
 ## 5. Histórico de CRs Pendentes / Em Avaliação
 
-Nenhum Change Request em avaliação em 15/06/2026.
+Nenhum Change Request em avaliação em 01/07/2026.
 
 | CR | Data de Solicitação | Descrição | Status Atual | Previsão de Análise |
 |---|---|---|---|---|
@@ -75,4 +75,5 @@ Nenhum Change Request em avaliação em 15/06/2026.
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 06/06/2026 | Abraão | Versão inicial — zero CRs registrados; escopo estável conforme TAP-AASP01-001 |
+| 1.0 | 06/06/2026 | Abraão Oliveira | Versão inicial — zero CRs registrados; escopo estável conforme TAP-AASP01-001 |
+| 1.1 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: processo MPS-SW corrigido (GRE → GMUDS/GPR); confirmação de ausência de CRs estendida até 01/07/2026 (Sprint 3 em andamento); mecanismo de arquivamento de aprovações documentado. |

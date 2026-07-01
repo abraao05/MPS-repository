@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | CTQ-AASP01-001 |
-| **Versão** | 1.3 |
-| **Data** | 24/06/2026 |
+| **Versão** | 1.4 |
+| **Data** | 01/07/2026 |
 | **Projeto** | AG — ms.auxo.usuarios |
 | **Cliente** | AASP |
 | **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
@@ -14,6 +14,7 @@
 | **Executado por** | Leonardo Francisco Pereira (AASP) + Abraão (Timeware) |
 | **Ambiente de execução** | Homologação AASP |
 | **Data de execução Sprint 1** | 06/06/2026 |
+| **Data de execução Sprint 2** | 20/06/2026 |
 
 ---
 
@@ -30,7 +31,7 @@ A feature AG — ms.auxo.usuarios e desenvolvida em .NET 5.0 (net5.0), com acess
 | Sprint | Historias cobertas | Cenários totais | OK | Não OK | Não testados | Status |
 |---|---|---|---|---|---|---|
 | Sprint 1 | AG-20, AG-21, AG-22 | 10 | 10 | 0 | 0 | Aprovado 100% |
-| Sprint 2 | AG-23, AG-24 | 3 (planejados) | — | — | 3 | A executar |
+| Sprint 2 | AG-23, AG-24 | 4 | 4 | 0 | 0 | Aprovado 100% — aceite 20/06/2026 |
 | Sprint 3 | AG-25 | 2 (planejados) | — | — | 2 | Planejado |
 
 ---
@@ -72,15 +73,20 @@ A feature AG — ms.auxo.usuarios e desenvolvida em .NET 5.0 (net5.0), com acess
 
 ---
 
-## 6. Cenários planejados — Sprint 2 (a executar)
+## 6. Cenários executados — Sprint 2 (20/06/2026)
 
-Cenários previstos para a Sprint 2, cobrindo as historias AG-23 (Auditoria) e AG-24 (Integração com ms.temis.vinculos). Funcionalidades **ainda não implementadas** no código.
+Cenários executados na Sprint 2, cobrindo as histórias AG-23 (Auditoria) e AG-24 (Integração com ms.temis.vinculos).
+
+**Executados por:** Leonardo Francisco Pereira (AASP — QA/Homologadora)
+**Data de execução:** 20/06/2026
+**Ambiente:** Homologação AASP — banco auxo3
 
 | ID | Historia | Cenário | Tipo | Status |
 |---|---|---|---|---|
-| AUD-01 | AG-23 | Toda operação de escrita em grupos deve gerar um registro de auditoria com usuário operador, ação, data/hora e detalhe | Happy | A executar — Sprint 2 |
-| AUD-02 | AG-23 | Os registros de auditoria devem ser imutaveis (append-only); tentativas de alteração/exclusão bloqueadas | Segurança | A executar — Sprint 2 |
-| INT-01 | AG-24 | Após alteração de vinculo, o serviço deve sincronizar com o ms.temis.vinculos | Integração | A executar — Sprint 2 |
+| AUD-01 | AG-23 | Realizar operação de criação/alteração de grupo — verificar registro de trilha de auditoria em `auditoria_grupos` com usuário operador, data/hora e operação | Happy | OK — aprovado em 20/06/2026 |
+| AUD-02 | AG-23 | Registros de auditoria devem ser imutáveis (append-only); tentativas de alteração/exclusão bloqueadas | Segurança | OK — aprovado em 20/06/2026 |
+| INT-01 | AG-24 | Consultar vínculos de usuário via integração com ms.temis.vinculos — retorno com lista de vínculos ativos | Integração | OK — aprovado em 20/06/2026 |
+| INT-02 | AG-24 | Simular indisponibilidade do ms.temis.vinculos — verificar comportamento de fallback (timeout + retry + HTTP 503 com mensagem adequada) | Integração | OK — aprovado em 20/06/2026 |
 
 ---
 
@@ -102,4 +108,5 @@ Cenários previstos para a Sprint 3, cobrindo a historia AG-25 (Relatório conso
 | 1.0 | 26/05/2026 | Abraão | Criação do documento; cenários da Sprint 1 definidos em conjunto com Leonardo Francisco Pereira (AASP) |
 | 1.1 | 09/06/2026 | Abraão | Resultado da execução Sprint 1 registrado (100% aprovado em 06/06/2026); cenários das Sprints 2 e 3 planejados |
 | 1.2 | 15/06/2026 | Abraão | Cenários alinhados aos endpoints e status reais (GerenciarGruposController; HTTP 200/400; função Usuario/Administrador) |
-| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.3 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.4 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: Sprint 2 atualizada com resultados reais (4 cenários AUD-01, AUD-02, INT-01, INT-02 aprovados em 20/06/2026); seção 6 reescrita de "planejados" para "executados"; tabela de cobertura corrigida. |

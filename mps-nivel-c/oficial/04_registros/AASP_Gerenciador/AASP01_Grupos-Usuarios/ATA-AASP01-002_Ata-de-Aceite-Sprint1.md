@@ -10,8 +10,8 @@
 | **Canal** | Microsoft Teams |
 | **Facilitador** | Abraão (Timeware) |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.1 |
-| **Processo MPS-SW** | AQU / GRE (evidência de projeto) |
+| **Versão** | 1.2 |
+| **Processo MPS-SW** | VV / GPR (evidência de validação formal e aceite de fase) |
 
 ---
 
@@ -91,13 +91,13 @@ A Sprint 1 é considerada oficialmente encerrada e entregue. Todas as histórias
 
 ## 8. Próximos Passos
 
-| Ação | Responsável | Prazo |
-|---|---|---|
-| Iniciar Sprint 2 — AG-23 (Auditoria) + AG-24 (Integração ms.temis.vinculos) | Renan Kiyoshi, Henry Komatsu e Mateus Veloso | 09/06/2026 |
-| Preparar ambiente de homologação AASP para Sprint 2 (migrations AuditoriaGrupos) | Renan Kiyoshi, Henry Komatsu e Mateus Veloso | 11/06/2026 |
-| Confirmar ambiente de homologação Sprint 2 recebido e validado | Leonardo Francisco Pereira (AASP) | 11/06/2026 |
-| Atualizar GEST-AASP01, RAC-AASP01-001 e MED-AASP01-001 com resultados finais Sprint 1 | Abraão | 09/06/2026 |
-| Sprint Review Sprint 2 agendada — apresentação de AG-23 e AG-24 | Abraão + Marcos Turnes | 20/06/2026 — 14h00 Teams |
+| Ação | Responsável | Prazo | Status |
+|---|---|---|---|
+| Iniciar Sprint 2 — AG-23 (Auditoria) + AG-24 (Integração ms.temis.vinculos) | Renan Kiyoshi, Henry Komatsu e Mateus Veloso | 09/06/2026 | ✅ Cumprida — Sprint 2 iniciada em 09/06/2026 |
+| Preparar ambiente de homologação AASP para Sprint 2 (migrations AuditoriaGrupos) | Renan Kiyoshi, Henry Komatsu e Mateus Veloso | 11/06/2026 | ✅ Cumprida — migrations aplicadas no início da Sprint 2 |
+| Confirmar ambiente de homologação Sprint 2 recebido e validado | Leonardo Francisco Pereira (AASP) | 11/06/2026 | ✅ Cumprida — ambiente validado conforme UAT Sprint 2 executado em 20/06/2026 |
+| Atualizar GEST-AASP01, RAC-AASP01-001 e MED-AASP01-001 com resultados finais Sprint 1 | Abraão Oliveira | 09/06/2026 | ✅ Cumprida — documentos atualizados com métricas reais da Sprint 1 |
+| Sprint Review Sprint 2 agendada — apresentação de AG-23 e AG-24 | Abraão + Marcos Turnes | 20/06/2026 — 14h00 Teams | ✅ Cumprida — Sprint Review realizada em 20/06/2026; aceite concedido por Marcos Turnes |
 
 ---
 
@@ -105,5 +105,6 @@ A Sprint 1 é considerada oficialmente encerrada e entregue. Todas as histórias
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 06/06/2026 | Abraão | Versão inicial — ata de aceite formal da Sprint 1 (AG-20, AG-21, AG-22); aceite concedido por Marcos Turnes sem ressalvas |
+| 1.0 | 06/06/2026 | Abraão Oliveira | Versão inicial — ata de aceite formal da Sprint 1 (AG-20, AG-21, AG-22); aceite concedido por Marcos Turnes sem ressalvas |
 | 1.1 | 29/06/2026 | Henry Komatsu | Atualização do responsável de QA (Leonardo Francisco Pereira); métricas de cobertura corrigidas (68.4%, meta ≥ 60%); testes de integração marcados como N/A |
+| 1.2 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: classificação do processo MPS-SW corrigida (AQU/GRE → VV/GPR); coluna "Status" adicionada à tabela de próximos passos com confirmação de cumprimento de todas as ações. |

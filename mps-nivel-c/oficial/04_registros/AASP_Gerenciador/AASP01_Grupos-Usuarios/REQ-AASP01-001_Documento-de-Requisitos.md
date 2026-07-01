@@ -6,9 +6,9 @@
 | Projeto       | AASP01 — Grupos de Usuários (Feature AG)                              |
 | Cliente       | AASP — Associação dos Advogados de São Paulo                          |
 | Produto       | ms.auxo.usuarios                                                |
-| Versão        | 1.3                                                                   |
-| Data          | 24/06/2026                                                            |
-| Autor         | Abraão                                                         |
+| Versão        | 1.4                                                                   |
+| Data          | 01/07/2026                                                            |
+| Autor         | Abraão Oliveira                                                       |
 | Status        | Aprovado                                                              |
 
 ---
@@ -41,9 +41,9 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 | RF-04 | Exclusão de grupo via `POST excluirgrupo`, com opção de notificar os membros (campo `NotificarMembros`)             | AG-20   | Alta       | S1     | 2   |
 | RF-05 | Definição da função (`Usuario`/`Administrador`) de um usuário no grupo via `POST alterarfuncaodousuario`            | AG-21   | Alta       | S1     | 11  |
 | RF-06 | Vinculação de usuário ao grupo pela lista de membros em `incluirgrupo`/`alterargrupo` e remoção via `POST removerusuario` | AG-22 | Alta    | S1     | 10  |
-| RF-07 | *(Planejado — Sprint 2)* Registro automático de auditoria em tabela `AuditoriaGrupos` para operações de escrita     | AG-23   | Média      | S2     | 13  |
-| RF-08 | *(Planejado — Sprint 2)* Integração com `ms.temis.vinculos` para sincronização de vínculos na base `temis3`         | AG-24   | Alta       | S2     | 15  |
-| RF-09 | *(Planejado — Sprint 3)* Geração de relatório consolidado de grupos                                                 | AG-25   | Média      | S3     | 10  |
+| RF-07 | Registro automático de auditoria em tabela `AuditoriaGrupos` para operações de escrita — ✅ Entregue 20/06/2026     | AG-23   | Média      | S2     | 14  |
+| RF-08 | Integração com `ms.temis.vinculos` para sincronização de vínculos na base `temis3` — ✅ Entregue 20/06/2026         | AG-24   | Alta       | S2     | 14  |
+| RF-09 | *(Planejado — Sprint 3)* Geração de relatório consolidado de grupos com exportação CSV                              | AG-25   | Média      | S3     | 20  |
 
 ## 4. Requisitos Não Funcionais
 
@@ -62,8 +62,8 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 | RN-01 | O nome do grupo deve ser único no banco `auxo3`; tentativa de criação com nome duplicado retorna HTTP 400 com mensagem `Grupo já existe` |
 | RN-02 | A exclusão de grupo (`POST excluirgrupo`) pode notificar os membros do grupo quando `NotificarMembros = true`          |
 | RN-03 | A função atribuída a um usuário no grupo deve pertencer ao enum `FuncaoUsuariosEnum` (`Usuario`, `Administrador`)       |
-| RN-04 | *(Planejado — Sprint 2)* Os registros de auditoria de `AuditoriaGrupos` são imutáveis — não podem ser alterados ou excluídos |
-| RN-05 | *(Planejado — Sprint 2)* A sincronização com `ms.temis.vinculos` deve ser acionada após alteração de vínculo           |
+| RN-04 | Os registros de auditoria de `AuditoriaGrupos` são imutáveis — não podem ser alterados ou excluídos (append-only) — implementado na Sprint 2 |
+| RN-05 | A sincronização com `ms.temis.vinculos` é acionada após alteração de vínculo; falha gera log sem interromper a operação — implementado na Sprint 2 |
 
 ## 6. Critérios de Aceite
 
@@ -75,9 +75,9 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 | RF-04 | `POST excluirgrupo` retorna HTTP 200 após a exclusão; notifica os membros quando `NotificarMembros = true`               |
 | RF-05 | `POST alterarfuncaodousuario` altera a função (`Usuario`/`Administrador`) do usuário e retorna HTTP 200; dados inválidos retornam HTTP 400 |
 | RF-06 | Vincular usuário (na lista `GrupoDeUsuarios` de `incluirgrupo`/`alterargrupo`) e `POST removerusuario` retornam HTTP 200 |
-| RF-07 | *(Planejado — Sprint 2)* Toda operação de escrita gera registro de auditoria com usuário, timestamp e operação realizada |
-| RF-08 | *(Planejado — Sprint 2)* Após alteração de vínculo, `ms.temis.vinculos` é chamado; falha gera log e não interrompe a operação |
-| RF-09 | *(Planejado — Sprint 3)* Relatório consolidado de grupos disponível para consulta                                        |
+| RF-07 | Toda operação de escrita gera registro de auditoria em `AuditoriaGrupos` com usuário operador, timestamp e operação; registro imutável; consulta paginada disponível — ✅ Entregue e aceito 20/06/2026 |
+| RF-08 | Após alteração de vínculo, `ms.temis.vinculos` é chamado via HTTP REST; falha gera log e não interrompe a operação (comportamento fault-tolerant); timeout + retry implementados — ✅ Entregue e aceito 20/06/2026 |
+| RF-09 | *(Planejado — Sprint 3)* Relatório consolidado de grupos disponível para consulta + exportação em formato CSV                |
 
 ## 7. Referências
 
@@ -95,4 +95,5 @@ Este documento descreve os requisitos funcionais, não funcionais e regras de ne
 | 1.0    | 19/05/2026 | Abraão  | Levantamento inicial dos requisitos (kickoff)    |
 | 1.1    | 26/05/2026 | Abraão  | Refinamento dos requisitos para Sprint 1         |
 | 1.2    | 15/06/2026 | Abraão  | Alinhamento dos endpoints e regras à API real (GerenciarGruposController) |
-| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.3 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.4 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: RF-07 e RF-08 marcados como entregues (20/06/2026); SP corrigidos (14+14=28 SP Sprint 2); RN-04 e RN-05 atualizados como implementados; RF-09 expandido com CSV; critérios de aceite RF-07/RF-08 detalhados; autor corrigido. |

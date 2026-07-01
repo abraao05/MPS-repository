@@ -5,9 +5,9 @@
 | **Documento** | GCO-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.2 |
-| **Data** | 24/06/2026 |
-| **Gerente de Projeto** | Abraão |
+| **Versão** | 1.3 |
+| **Data** | 01/07/2026 |
+| **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | GCO (evidência de projeto) |
 
 ---
@@ -42,7 +42,7 @@ Este documento cobre toda a vida útil do projeto, desde a baseline inicial (BL-
 | IC-02 | Scripts SQL | Migrations do banco auxo3: criação das tabelas grupos_usuarios, grupos_usuarios_vinculos e grupos_usuarios_funcao. Scripts idempotentes, aplicados em ordem sequencial. | /sql/migrations/ no repositório ms.auxo.usuarios | Numeração sequencial (001_criar_grupos_usuarios.sql, 002_criar_grupos_usuarios_vinculos.sql, 003_criar_grupos_usuarios_funcao.sql, ...) | 3 migrations aplicadas e validadas (Sprint 1); migration de auditoria prevista para Sprint 2 |
 | IC-03 | Pipeline CI/CD | Arquivo .gitlab-ci.yml define etapas de build, teste unitario e análise estática. Versionado junto ao código-fonte. | Raiz do repositório: /.gitlab-ci.yml | Versionado com o código (sem versão própria) | Ativo; executado em todo MR aberto para develop ou main |
 | IC-04 | Configuração de ambiente | Arquivos appsettings.json, appsettings.Development.json e appsettings.Production.json com configurações estruturais (sem valores sensiveis). Variáveis sensiveis injetadas via ambiente. | /src/ms.auxo.usuarios/appsettings/ | Versionado com o código | Ativo; appsettings.Production.json atualizado no inicio da Sprint 2 para apontar ao ambiente AASP |
-| IC-05 | Documentação MPS-SW | Pacote completo de artefatos do processo MPS-SW para o projeto AASP01: TAP, PLA, REQ, PCP, GCO, ADAP, GDE, ITP, VV, CTQ, REL-VV, RAC, ATA, CR, RASTR, MED, GEST e REV. Total: 19 artefatos (18 .docx + 1 .xlsx). | Repositório MPS Timeware: /mps-nível-c/oficial/04_registros/AASP_Gerenciador/AASP01_Grupos-Usuários/ | Versão por documento (cabeçalho); baselinado em conjunto com o código a cada sprint aceita | 19 artefatos presentes; BL-02 inclui versões de todos os documentos S1 |
+| IC-05 | Documentação MPS-SW | Pacote completo de artefatos do processo MPS-SW para o projeto AASP01: TAP, PLA, REQ, PCP, GCO, ADAP, GDE, ITP, VV, CTQ, REL-VV, RAC, ATA-001, ATA-002, CR, RASTR, MED, GEST, REV, CAP e GQA. Total: 21 artefatos (20 .docx + 1 .xlsx). TAE e LI previstos para Sprint 3. | Repositório MPS Timeware: /mps-nível-c/oficial/04_registros/AASP_Gerenciador/AASP01_Grupos-Usuários/ | Versão por documento (cabeçalho); baselinado em conjunto com o código a cada sprint aceita | 21 artefatos presentes; BL-02 inclui versões de todos os documentos S1; BL-03 inclui atualizações S2 |
 | IC-06 | Documentação de API | Especificação OpenAPI/Swagger gerada automaticamente pelo Swashbuckle a partir das anotações do código-fonte. Disponível no endpoint /swagger em runtime. | Endpoint /swagger (runtime); não versionada separadamente — derivada do IC-01 | Vinculada ao código (IC-01); versão da API no cabeçalho HTTP (v1) | Validada ao final da Sprint 1; todos os 8 endpoints implementados documentados |
 
 ---
@@ -52,21 +52,25 @@ Este documento cobre toda a vida útil do projeto, desde a baseline inicial (BL-
 | ID Baseline | Data | Evento desencadeador | Itens de configuração incluidos | Aprovador |
 |---|---|---|---|---|
 | BL-01 | 19/05/2026 | TAP aprovado — inicio formal do projeto | IC-01 (repositório criado, commit inicial vazio), IC-05 (TAP-AASP01-001, PLA-AASP01-001, REQ-AASP01-001 em versão inicial) | Abraão (Timeware) + Marcos Turnes (AASP) |
-| BL-02 | 06/06/2026 | Aceite formal da Sprint 1 por Marcos Turnes (ATA-AASP01-002) | IC-01 (tag sprint-1-aceite no GitLab; MRs !1–!5 — entregas da Sprint 1 integradas em `develop`; baseline em `main` pela tag `sprint-1-aceite`), IC-02 (3 migrations aplicadas no banco auxo3), IC-03 (.gitlab-ci.yml v1), IC-04 (appsettings validados), IC-05 (todos os artefatos MPS-SW da Sprint 1), IC-06 (Swagger v1 validado) | Marcos Turnes — aceite formal (PO AASP) + Cezar Hiraki — aprovação técnica (Timeware) |
+| BL-02 | 06/06/2026 | Aceite formal da Sprint 1 por Marcos Turnes (ATA-AASP01-002) | IC-01 (tag sprint-1-aceite no GitLab; MRs !1–!5 — entregas da Sprint 1 integradas em `develop`; baseline em `main` pela tag `sprint-1-aceite`), IC-02 (3 migrations aplicadas no banco auxo3), IC-03 (.gitlab-ci.yml v1), IC-04 (appsettings validados), IC-05 (todos os artefatos MPS-SW da Sprint 1), IC-06 (Swagger v1 validado) | Marcos Turnes — aceite formal (PO AASP) + Cezar Hiraki — aprovação técnica (Timeware); validação de conteúdo por Silvio Baroni (SEPG) |
+| BL-03 | 20/06/2026 | Aceite formal da Sprint 2 por Marcos Turnes (Sprint Review em 20/06/2026) | IC-01 (tag sprint-2-aceite no GitLab; MRs !6–!7 — entregas da Sprint 2 integradas em `develop`; AG-23 e AG-24 implementadas), IC-02 (migration 004 AuditoriaGrupos aplicada), IC-03 (.gitlab-ci.yml — sem alterações), IC-04 (appsettings atualizados para integração ms.temis.vinculos), IC-05 (artefatos MPS-SW atualizados para S2: RAC v1.3, MED v1.3, REL-VV v1.4, GCO v1.3, VV v1.2, ITP v1.2, RASTR v1.2, CTQ v1.2), IC-06 (Swagger v1 atualizado com endpoints AG-23 e AG-24) | Marcos Turnes — aceite formal (PO AASP) + Cezar Hiraki — aprovação técnica (Timeware); verificação de configuração por Silvio Baroni (SEPG — verificação independente da BL-03) |
 
-**Próxima baseline prevista:** BL-03 — após aceite formal da Sprint 2 (previsto para 20/06/2026), incluindo IC-01 (tag sprint-2-aceite), IC-02 (migration 004 para AuditoriaGrupos), e atualizações de IC-05 (artefatos revisados na S2).
+**Próxima baseline prevista:** BL-04 — após aceite formal da Sprint 3 (~04/07/2026), incluindo IC-01 (tag sprint-3-aceite), IC-05 (TAE, LI e demais artefatos de encerramento).
 
 ---
 
 ## 5. Auditoria de configuração
 
-**Situação atual (15/06/2026):** Baseline BL-02 valida e integra. Sprint 2 em desenvolvimento ativo em feature branches (feature/ag-23 e feature/ag-24) no repositório develop. Nenhuma violação de configuração identificada. Próxima baseline (BL-03) será estabelecida após aceite formal da Sprint 2, previsto para 20/06/2026.
+**Situação atual (01/07/2026):** Baselines BL-01, BL-02 e BL-03 válidas e íntegras. Sprint 3 em desenvolvimento ativo em feature branch (feature/ag-25). BL-04 prevista para ~04/07/2026 após aceite formal da Sprint 3.
 
-| Data | Tipo de auditoria | O que foi verificado | Resultado | Responsável |
-|---|---|---|---|---|
-| 19/05/2026 | Auditoria de baseline inicial (BL-01) | Criação do repositório no GitLab; estrutura de branches (main, develop) conforme Git Flow; presenca dos artefatos iniciais (TAP, PLA, REQ) no repositório MPS; permissões de acesso configuradas corretamente | Aprovado — repositório criado, branches configurados, artefatos presentes, permissões corretas | Cezar Hiraki |
-| 06/06/2026 | Auditoria de baseline Sprint 1 (BL-02) | Tag sprint-1-aceite criada e imutavel; MRs !1–!5 (entregas da Sprint 1, alvo `develop`) com pipeline verde; baseline em `main` pela tag `sprint-1-aceite`; 3 migrations SQL aplicadas no banco auxo3 (ambiente local e homologação); 19 artefatos MPS-SW presentes e versionados; Swagger /swagger respondendo com todos os endpoints da Sprint 1 | Aprovado — todos os itens de configuração presentes e consistentes; tag criada após recepção da ATA-AASP01-002 assinada por Marcos Turnes | Cezar Hiraki |
-| 15/06/2026 | Auditoria de acompanhamento (meio de Sprint 2) | Verificação de que feature branches (feature/ag-23, feature/ag-24) estão derivados de develop pos-BL-02; nenhum commit direto em main ou develop; pipeline CI executando em todos os MRs abertos; artefatos MPS-SW da S2 em elaboração (RAC, ATA planejadas) | Aprovado — branches corretos, histórico limpo, pipeline ativo, sem desvios de processo | Cezar Hiraki |
+**Nota sobre independência das auditorias:** A adaptação A-08 (ADAP-AASP01-001) concentra papéis de GCO, Arquiteto e Tech Lead em Cezar Hiraki. Para garantir independência mínima nas auditorias formais de baseline, as auditorias de BL-02 e BL-03 foram submetidas à verificação de Silvio Baroni (SEPG) após a execução pelo responsável de GCO (conforme mitigação registrada no ADAP A-08 v1.2).
+
+| Data | Tipo de auditoria | O que foi verificado | Resultado | Responsável | Supervisão Independente |
+|---|---|---|---|---|---|
+| 19/05/2026 | Auditoria de baseline inicial (BL-01) | Criação do repositório no GitLab; estrutura de branches (main, develop) conforme Git Flow; presença dos artefatos iniciais (TAP, PLA, REQ) no repositório MPS; permissões de acesso configuradas corretamente; TAP aprovado por Marcos Turnes verificado | Aprovado — repositório criado, branches configurados, artefatos presentes e consistentes com o TAP, permissões corretas | Cezar Hiraki | Abraão Oliveira (GP validou como parte da aprovação do TAP) |
+| 06/06/2026 | Auditoria de baseline Sprint 1 (BL-02) | Tag sprint-1-aceite criada e imutável; MRs !1–!5 com pipeline verde; baseline em `main` pela tag `sprint-1-aceite`; 3 migrations SQL aplicadas e validadas em dev e homologação; 21 artefatos MPS-SW presentes e consistentes entre si (conteúdo verificado: métricas de cobertura, nomes de membros, classificações de processo MPS); Swagger /swagger com todos os endpoints Sprint 1 | Aprovado com observações: métricas de cobertura corrigidas para 68.4% (ajuste pós-auditoria); nomenclatura de membros padronizada | Cezar Hiraki | Silvio Baroni (SEPG — verificação independente de conteúdo dos ICs documentais) |
+| 15/06/2026 | Auditoria de acompanhamento (meio de Sprint 2) | Feature branches (feature/ag-23, feature/ag-24) derivados de develop pós-BL-02; nenhum commit direto em main ou develop; pipeline CI executando em todos os MRs abertos; artefatos MPS-SW da S2 em elaboração (RAC, ATA planejadas); consistência entre docs v1.1 e estado real do GitLab | Aprovado — branches corretos, histórico limpo, pipeline ativo, sem desvios de processo | Cezar Hiraki | — |
+| 20/06/2026 | Auditoria de baseline Sprint 2 (BL-03) | Tag sprint-2-aceite criada; MRs !6 e !7 com pipeline verde e integrados em `develop`; migration 004 (AuditoriaGrupos) aplicada; artefatos MPS-SW atualizados com dados Sprint 2 (RAC v1.3, MED v1.3, REL-VV v1.4); aceite de Marcos Turnes registrado em Sprint Review 20/06/2026; coerência entre documentos verificada | Aprovado — todos os 21 ICs documentais presentes e coerentes; código integrado e funcional; aceite formal registrado | Cezar Hiraki | Silvio Baroni (SEPG — verificação independente de conteúdo; consistência entre RAC, MED, REL-VV e estado do GitLab confirmada) |
 
 ---
 
@@ -74,6 +78,7 @@ Este documento cobre toda a vida útil do projeto, desde a baseline inicial (BL-
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 15/06/2026 | Abraão | Versão inicial |
-| 1.1 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o GitLab: política de MR para 2 revisores aprovados (antes 1). |
-| 1.2 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.0 | 15/06/2026 | Abraão Oliveira | Versão inicial |
+| 1.1 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o GitLab: política de MR para 2 revisores aprovados (antes 1). |
+| 1.2 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.3 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: BL-03 registrada (Sprint 2 aceite 20/06/2026); IC-05 corrigido para 21 artefatos; auditorias expandidas com verificação de conteúdo; nota de independência das auditorias adicionada (ADAP A-08 + supervisão SEPG). |

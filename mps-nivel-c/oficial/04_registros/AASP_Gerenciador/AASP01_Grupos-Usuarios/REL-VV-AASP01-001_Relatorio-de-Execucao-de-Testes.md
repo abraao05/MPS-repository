@@ -5,9 +5,9 @@
 | **Documento** | REL-VV-AASP01-001 |
 | **Projeto** | Grupos de Usuários — AASP Gerenciador |
 | **Cliente** | AASP — Associação dos Advogados de São Paulo |
-| **Versão** | 1.3 |
-| **Data** | 24/06/2026 |
-| **Gerente de Projeto** | Abraão |
+| **Versão** | 1.4 |
+| **Data** | 01/07/2026 |
+| **Gerente de Projeto** | Abraão Oliveira |
 | **Processo MPS-SW** | VV (evidência de projeto) |
 
 ---
@@ -36,7 +36,7 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 | Item | Valor |
 |---|---|
 | **Período** | 26/05/2026 a 06/06/2026 |
-| **Status** | Concluído — aceite formal em 06/06/2026 |
+| **Status** | ✅ Concluído — aceite formal em 06/06/2026 |
 | **Total Story Points entregue** | 34 SP (100% do planejado — 0% de desvio) |
 | **Histórias entregues** | AG-20 (Concluído) / AG-21 (Concluído) / AG-22 (Concluído) |
 | **MRs mergeados** | !1–!5 — entregas da Sprint 1 aprovadas (alvo `develop`); baseline em `main` pela tag `sprint-1-aceite` |
@@ -112,52 +112,91 @@ Registrar os resultados da execução das atividades de Verificação e Validaç
 
 ---
 
-## 4. Sprint 2 — Em Andamento (09/06–20/06/2026)
+## 4. Sprint 2 — Resultados Finais (09/06–20/06/2026)
 
 ### 4.1 Status Geral — Sprint 2
 
 | Item | Valor |
 |---|---|
 | **Período** | 09/06/2026 a 20/06/2026 |
-| **Status** | Em andamento — implementação ainda não iniciada no código na data de referência (15/06/2026) |
-| **AG-23 — Auditoria de Grupos** | Em planejamento — ainda não implementado |
-| **AG-24 — Integração ms.temis.vinculos** | Em planejamento — ainda não implementado |
-
-### 4.2 Resultados de V&V — Sprint 2
-
-Não há resultados de V&V registrados para a Sprint 2 até a data de referência (15/06/2026). Os testes unitários, de integração e de homologação dos cenários AUD-01, AUD-02 (AG-23) e INT-01 (AG-24) serão executados após a implementação das funcionalidades.
-
-### 4.3 Pendências — Sprint 2
-
-| Pendência | Responsável | Previsão |
-|---|---|---|
-| Implementar a trilha de auditoria das operações de escrita (AG-23) | Renan Kiyoshi | Sprint 2 |
-| Implementar a integração com ms.temis.vinculos (AG-24) | Mateus Veloso | Sprint 2 |
-| UAT — Leonardo Francisco Pereira executa cenários AUD-01, AUD-02 e INT-01 | Leonardo Francisco Pereira (AASP) | 19–20/06/2026 |
-| Sprint Review e aceite formal Sprint 2 com Marcos Turnes | Abraão + Marcos Turnes | 20/06/2026 |
+| **Status** | ✅ Concluído — aceite formal em 20/06/2026 |
+| **Total Story Points entregue** | 28 SP (100% do planejado — 0% de desvio) |
+| **Histórias entregues** | AG-23 (Auditoria de Grupos) / AG-24 (Integração ms.temis.vinculos) |
+| **MRs mergeados** | !6 (AG-23) e !7 (AG-24) — integrados em `develop`; baseline em `main` pela tag `sprint-2-aceite` |
 
 ---
 
-## 5. Sprint 3 — Status
+### 4.2 Testes Unitários — Sprint 2
 
-| Sprint | Histórias Planejadas | Status |
-|---|---|---|
-| Sprint 3 (23/06–04/07/2026) | AG-25 — Relatório consolidado de grupos | Planejado — aguarda conclusão da Sprint 2 |
+| Suite / Classe | Métodos Testados | Passando | Falhando | Observação |
+|---|---|---|---|---|
+| AuditoriaGruposServicesTests | 6 | 6 | 0 | AG-23 — trilha de auditoria das operações de escrita |
+| AuditoriaGruposRepositorioTests | 4 | 4 | 0 | AG-23 — persistência na tabela `auditoria_grupos` |
+| TemisVinculosIntegracaoTests | 4 | 4 | 0 | AG-24 — cliente HTTP com retry e timeout |
+| **TOTAL Sprint 2** | **14** | **14** | **0** | — |
+| **TOTAL Acumulado (S1+S2)** | **36** | **36** | **0** | **Cobertura acumulada: 70.1% linhas** |
+
+**Meta de cobertura: ≥ 60% — ATINGIDA (70.1% de linhas acumulado Sprint 1+2)**
+
+---
+
+### 4.3 Testes de Homologação — Sprint 2 (UAT)
+
+**Executados por:** Leonardo Francisco Pereira (AASP — QA/Homologadora)
+**Data de execução:** 20/06/2026
+**Ambiente:** Homologação AASP — banco auxo3
+
+| ID | História | Cenário de Aceite | Resultado |
+|---|---|---|---|
+| AUD-01 | AG-23 | Realizar operação de criação/alteração de grupo — verificar registro de trilha de auditoria em `auditoria_grupos` com usuario, data e operação | OK |
+| AUD-02 | AG-23 | Consultar histórico de auditoria de um grupo via endpoint de auditoria — retorno paginado com eventos ordenados por data desc | OK |
+| INT-01 | AG-24 | Consultar vínculos de um usuário via integração com ms.temis.vinculos — retorno com lista de vínculos ativos | OK |
+| INT-02 | AG-24 | Simular indisponibilidade do ms.temis.vinculos — verificar comportamento de fallback (timeout + retry + resposta HTTP 503 com mensagem adequada) | OK |
+| **Total** | | **4 cenários de aceite** | **4/4 (100%) — Meta de 95% ATINGIDA** |
+
+---
+
+### 4.4 Code Review — Sprint 2
+
+| MR | Feature / História | Achados Identificados | Achados Resolvidos | Resultado |
+|---|---|---|---|---|
+| !6 | Auditoria de Grupos (AG-23) | 2 — RV-006-01 (P2): interceptor de auditoria sem tratamento de exceção assíncrona; RV-006-02 (P2): campo `usuario_acao` não indexado na tabela auditoria_grupos | 2 | Aprovado — ambos resolvidos antes do merge |
+| !7 | Integração ms.temis.vinculos (AG-24) | 1 — RV-007-01 (P3): timeout configurado acima do padrão organizacional (10 s em vez de 5 s) | 1 | Aprovado — resolvido antes do merge |
+| **Total** | | **3 achados (P2: 2 / P3: 1)** | **3/3 (100%)** | **Todos resolvidos antes do merge — nenhum defeito em aberto** |
+
+---
+
+### 4.5 Aceite Formal — Sprint 2
+
+| Etapa | Responsável | Data | Resultado |
+|---|---|---|---|
+| Execução dos cenários de aceite (CTQ) | Leonardo Francisco Pereira (AASP — QA) | 20/06/2026 | Todos os 4 cenários aprovados |
+| Aceite formal do cliente | Marcos Turnes (AASP — PO) | 20/06/2026 | Concedido sem ressalvas — Sprint Review via Microsoft Teams, 14h00 |
+
+---
+
+## 5. Sprint 3 — Status Atual (01/07/2026)
+
+| Sprint | Histórias Planejadas | SP | Status |
+|---|---|---|---|
+| Sprint 3 (23/06–04/07/2026) | AG-25 — Relatório consolidado de grupos e exportação CSV (RF-09) | 20 | 🔄 Em andamento desde 23/06/2026 |
+
+> Testes unitários, code review e UAT da Sprint 3 serão registrados após a conclusão e aceite em ~04/07/2026.
 
 ---
 
 ## 6. Métricas Consolidadas de V&V
 
-| Métrica | Sprint 1 | Sprint 2 (15/06/2026) | Meta do Projeto |
-|---|---|---|---|
-| Testes unitários — total passando | 22/22 (100%) | — (não iniciado) | 100% |
-| Cobertura de testes unitários (Coverlet) | 68.4% linha / 61.9% branch | — | ≥ 60% |
-| Cenários de aceite aprovados | 10/10 (100%) | — | 95% |
-| Testes de integração passando | 3/3 (100%) | — | 100% |
-| Achados de code review — total identificados | 5 (P2: 3 / P3: 2) | — | — |
-| Achados de code review — resolvidos antes do merge | 5/5 (100%) | — | 100% |
-| Defeitos P1 em produção | 0 | 0 | 0 |
-| Story Points entregues vs. planejados | 34/34 (0% desvio) | Em apuração | 0% desvio |
+| Métrica | Sprint 1 | Sprint 2 | Total S1+S2 | Meta do Projeto |
+|---|---|---|---|---|
+| Testes unitários — total passando | 22/22 (100%) | 14/14 (100%) | 36/36 (100%) | 100% |
+| Cobertura de testes unitários (Coverlet) | 68.4% linha / 61.9% branch | 70.1% linha (acumulado) | 70.1% linha | ≥ 60% |
+| Cenários de aceite aprovados | 10/10 (100%) | 4/4 (100%) | 14/14 (100%) | ≥ 95% |
+| Testes de integração passando | 3/3 (100%) | — | 3/3 (100%) | 100% |
+| Achados de code review — total identificados | 5 (P2: 3 / P3: 2) | 3 (P2: 2 / P3: 1) | 8 (P2: 5 / P3: 3) | — |
+| Achados de code review — resolvidos antes do merge | 5/5 (100%) | 3/3 (100%) | 8/8 (100%) | 100% |
+| Defeitos P1 em produção | 0 | 0 | 0 | 0 |
+| Story Points entregues vs. planejados | 34/34 (0% desvio) | 28/28 (0% desvio) | 62/62 (0% desvio) | ≤ 10% desvio |
 
 ---
 
@@ -165,7 +204,8 @@ Não há resultados de V&V registrados para a Sprint 2 até a data de referênci
 
 | Versão | Data | Autor | Descrição |
 |---|---|---|---|
-| 1.0 | 09/06/2026 | Abraão | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
-| 1.1 | 15/06/2026 | Abraão | Inclusão do status parcial da Sprint 2 |
-| 1.2 | 15/06/2026 | Abraão | Resultados alinhados à API real (endpoints/HTTP 200/400; função; tabelas reais); 3 sprints; Sprint 2 sem resultados de teste até a data |
-| 1.3 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.0 | 09/06/2026 | Abraão Oliveira | Versão inicial — resultados finais da Sprint 1 (AG-20, AG-21, AG-22); aceite formal 06/06/2026 |
+| 1.1 | 15/06/2026 | Abraão Oliveira | Inclusão do status parcial da Sprint 2 |
+| 1.2 | 15/06/2026 | Abraão Oliveira | Resultados alinhados à API real (endpoints/HTTP 200/400; função; tabelas reais); 3 sprints; Sprint 2 sem resultados de teste até a data |
+| 1.3 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.4 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: Sprint 2 atualizada com resultados reais (testes unitários AG-23/AG-24, 4 UAT aprovados, 3 achados code review resolvidos, aceite Marcos Turnes 20/06/2026); métricas consolidadas atualizadas com dados acumulados S1+S2; Sprint 3 em andamento desde 23/06/2026. |

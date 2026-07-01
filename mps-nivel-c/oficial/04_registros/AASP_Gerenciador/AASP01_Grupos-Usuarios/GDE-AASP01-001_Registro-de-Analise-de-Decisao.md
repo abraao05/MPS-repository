@@ -3,8 +3,8 @@
 | Campo | Valor |
 |---|---|
 | **Documento** | GDE-AASP01-001 |
-| **Versão** | 1.2 |
-| **Data** | 24/06/2026 |
+| **Versão** | 1.3 |
+| **Data** | 01/07/2026 |
 | **Projeto** | AG — ms.auxo.usuarios |
 | **Cliente** | AASP |
 | **GP/TL** | Abraão (GP) · Cezar Hiraki (TL) (Timeware) |
@@ -115,4 +115,5 @@ Justificativa: A integridade referencial e critica para o ms.auxo.usuarios — g
 |---|---|---|---|
 | 1.0 | 19/05/2026 | Abraão | Criação do documento; decisões GDE-001 (Dapper) e GDE-002 (Soft Delete) tomadas no Kickoff |
 | 1.1 | 15/06/2026 | Abraão | GDE-002 alinhado ao schema real (soft delete via `excluido`; tabelas `grupos_usuarios`, `_vinculos`, `_funcao`; endpoint `excluirgrupo`) |
-| 1.2 | 24/06/2026 | Time de Melhoria Contínua | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.2 | 24/06/2026 | Silvio Baroni (SEPG) | Reconciliação com o estado real do GitLab (produto/repositório ms.auxo.usuarios; framework net5.0 onde aplicável; entregas da Sprint 1 integradas em develop com baseline pela tag sprint-1-aceite). |
+| 1.3 | 01/07/2026 | Silvio Baroni (SEPG) | Correção de NCs de auditoria: autor de v1.2 corrigido (Time de Melhoria Contínua → Silvio Baroni SEPG); versão e data do cabeçalho atualizadas. |
