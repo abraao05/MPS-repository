@@ -83,7 +83,7 @@ As medidas abaixo são derivadas dos objetivos de medição e possuem definiçã
 
 - As medidas são **coletadas continuamente** ao longo das sprints, a partir do Jira e demais ferramentas, conforme as definições operacionais do catálogo.
 - Os dados de cada projeto ficam registrados no **Jira** (repositório por projeto).
-- O **repositório organizacional de medidas** é mantido pelo Time de Melhoria Contínua, que consolida as medidas dos projetos em uma **planilha/dashboard organizacional**, permitindo a visão histórica e comparativa entre projetos.
+- O **repositório organizacional de medidas** é uma **consolidação derivada do Jira** — materializada em **dashboards do Jira/Confluence** — mantida pelo Time de Melhoria Contínua, que reúne as medidas dos projetos, permitindo a visão histórica e comparativa entre projetos. Diferencia-se, assim, do **repositório por projeto** (o próprio Jira), do qual os dados de origem são extraídos.
 - Antes de serem consolidadas, as medidas são **verificadas** quanto à integridade e à consistência (ver seção 8).
 
 ## 5. Análise do desempenho organizacional
@@ -117,9 +117,12 @@ O repositório organizacional de medidas é avaliado periodicamente para assegur
 | Papel | Responsabilidade |
 |---|---|
 | **Equipes de Projeto** | Registram os dados no Jira ao longo das sprints. |
-| **Gerente de Projeto** | Garante que as medidas do projeto sejam coletadas e estejam corretas. |
-| **Time de Melhoria Contínua** | Mantém o catálogo e o repositório; consolida, analisa, verifica a qualidade e comunica as medidas. |
-| **COO (Operações)** | Usa as medidas na governança e na análise crítica; reporta ao CEO. |
+| **Gerente de Projeto (coleta)** | Responsável (R) pela coleta: garante que as medidas do projeto sejam coletadas e estejam corretas. |
+| **Responsável de Medição** | Responsável (R) pela consolidação: executa e consolida as medidas no repositório organizacional; verifica a qualidade e comunica os resultados. |
+| **Time de Melhoria Contínua** | Autoridade (A) pela medição organizacional; mantém o catálogo e o repositório; analisa as medidas. |
+| **COO (Operações)** | Informado (I); usa as medidas na governança e na análise crítica; reporta ao CEO. |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 10. Documentos relacionados
 

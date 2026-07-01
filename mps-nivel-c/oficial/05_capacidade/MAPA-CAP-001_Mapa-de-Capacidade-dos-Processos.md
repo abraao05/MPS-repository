@@ -30,7 +30,7 @@ O Nível C requer que cada processo no escopo atinja os atributos de capacidade 
 
 ## 3. Resultados de atributo de processo (RAP) e onde são evidenciados
 
-A tabela abaixo relaciona cada exigência de capacidade ao(s) ativo(s) da Timeware que a sustenta(m). Estes ativos aplicam-se a **todos os 12 processos** no escopo.
+A tabela abaixo relaciona cada exigência de capacidade ao(s) ativo(s) da Timeware que a sustenta(m). Estes ativos aplicam-se a **todos os 11 processos** no escopo.
 
 | # | Exigência de capacidade | Onde é definida/evidenciada |
 |---|---|---|
@@ -39,8 +39,8 @@ A tabela abaixo relaciona cada exigência de capacidade ao(s) ativo(s) da Timewa
 | (iii) | O processo é planejado | PRO-GPR-001 (projeto) e planejamento de cada processo |
 | (iv) | O processo é monitorado e ajustado | PRO-GPR-001; PLA-MED-001; análise crítica (PRO-OSW-001) |
 | (v) | Recursos e informações adequados são providos | POL-ORG-001 §4.3; PRO-OSW-001 §3 |
-| (vi) | Responsabilidades e autoridade definidas | PRO-OSW-001 §4; papéis em cada processo |
-| (vii) | Pessoas preparadas para o processo | PLA-CAP-001 |
+| (vi) | Responsabilidades e autoridade definidas (CP-ii) | MAPA-ORG-002 — Matriz de Papéis e Responsabilidades; PRO-OSW-001 §4 |
+| (vii) | Pessoas preparadas para o processo (CP-iii) | MAPA-ORG-002 — Matriz de Papéis e Responsabilidades; PLA-CAP-001 |
 | (viii) | Produtos de trabalho gerenciados (configuração) | PLA-GCO-001; CONV-ORG-001 |
 | (ix) | Processo-padrão organizacional estabelecido | PRO-GPC-001 |
 | (x) | Diretrizes de adaptação do processo-padrão | GUIA-GPC-001 |
@@ -50,12 +50,12 @@ A tabela abaixo relaciona cada exigência de capacidade ao(s) ativo(s) da Timewa
 | (xiv) | Oportunidades de melhoria identificadas | PLA-GPC-001 §5; EST-GPC-001 §7 |
 | (xv) | Informações compartilhadas com a organização | PRO-GPC-001 (biblioteca de ativos); PLA-MED-001 |
 
-## 4. Aplicação aos 12 processos
+## 4. Aplicação aos 11 processos
 
 Os ativos acima são **organizacionais e transversais** — valem para todos os processos no escopo da avaliação:
 
 **Processos de Projeto:** GPR, REQ, PCP, ITP, VV
-**Processos Organizacionais:** GCO, CAP, OSW, GPC, MED, AQU, GDE
+**Processos Organizacionais:** GCO, CAP, OSW, GPC, MED, GDE
 
 Para cada um, a capacidade é demonstrada da seguinte forma:
 
@@ -81,6 +81,7 @@ A camada de evidências dos projetos é, portanto, o complemento necessário des
 ## 6. Documentos relacionados
 
 - POL-ORG-001 — Política Organizacional de Processos
+- MAPA-ORG-002 — Matriz de Papéis e Responsabilidades (rastreabilidade CP-ii/CP-iii)
 - PRO-GPC-001 — Processo-Padrão Organizacional
 - GUIA-GPC-001 — Guia de Adaptação do Processo-Padrão
 - EST-GPC-001 — Estratégia de Garantia da Qualidade

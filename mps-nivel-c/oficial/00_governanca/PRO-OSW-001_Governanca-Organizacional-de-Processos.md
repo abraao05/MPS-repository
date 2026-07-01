@@ -20,6 +20,8 @@ Este documento define como a direção da Timeware governa seus processos: como 
 
 Os processos da Timeware existem para servir ao objetivo central de **crescer com qualidade e previsibilidade**: entregar software conforme o acordado, dentro de prazos e custos planejados, de forma sustentável ao crescimento da organização. Toda a governança de processos descrita aqui é orientada a esse objetivo.
 
+O processo de Aquisição (AQU) do MR-MPS-SW é **não-aplicável** à Timeware — o desenvolvimento é 100% realizado por equipe própria, sem terceirização/subcontratação. O ativo PRO-AQU-001 é mantido na biblioteca (prateleira), fora do escopo de avaliação.
+
 ## 3. Garantia de recursos
 
 A direção da Timeware garante os recursos necessários para definir, executar, verificar e melhorar os processos, incluindo:
@@ -37,13 +39,17 @@ A organização define a autoridade e as competências necessárias para a opera
 
 | Nível | Papel | Autoridade / responsabilidade |
 |---|---|---|
-| Direção estratégica | Founder e CEO | Patrocina os processos no nível estratégico; assegura o alinhamento aos objetivos de negócio; recebe o reporte da análise crítica. |
-| Direção operacional | COO (Operações) | Responde operacionalmente pelos processos, pelo escritório de portfólio de projetos e pelo Time de Melhoria Contínua; garante recursos; decide impasses operacionais; conduz a análise crítica e reporta ao CEO. |
-| Processos | Time de Melhoria Contínua | Define, mantém, verifica e melhora os processos. |
+| Direção estratégica | Founder e CEO | Detém a **autoridade final (A)** sobre a governança organizacional de processos (OSW); patrocina os processos no nível estratégico; assegura o alinhamento aos objetivos de negócio; recebe o reporte da análise crítica. |
+| Direção operacional | COO (Operações) | **Executa (R)** a governança organizacional junto ao Time de Melhoria Contínua; responde operacionalmente pelos processos, pelo escritório de portfólio de projetos e pelo Time de Melhoria Contínua; garante recursos; decide impasses operacionais; conduz a análise crítica e reporta ao CEO. |
+| Processos | Time de Melhoria Contínua | **Executa (R)** a definição, manutenção, verificação e melhoria dos processos. |
 | Projeto | Gerente de Projeto | Conduz o projeto conforme os processos. |
 | Execução | Equipes de Engenharia / QA | Executam o trabalho conforme os processos e padrões. |
 
+Alinhado ao RACI da **MAPA-ORG-002**, a Governança Organizacional de Processos (OSW) tem **A = Founder e CEO** e **R = COO + Time de Melhoria Contínua**.
+
 As competências necessárias a cada papel são desenvolvidas por meio da capacitação (CAP), alinhando os colaboradores aos objetivos da organização.
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 5. Riscos e oportunidades organizacionais
 
@@ -84,6 +90,7 @@ As decisões e encaminhamentos da análise crítica são registrados (ata mantid
 - PLA-GPC-001 — Plano de Gestão e Melhoria de Processos
 - Plano de Medição (MED) e Plano de Capacitação (CAP)
 - PRO-OSW-002 — Gestão de Portfólio de Projetos
+- MAPA-ORG-002 — Matriz de Papéis e Responsabilidades
 
 ## 9. Rastreabilidade e instrução para auditoria
 

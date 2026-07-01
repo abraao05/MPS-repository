@@ -34,6 +34,10 @@ O Plano de Projeto é registrado no template TPL-GPR-001.
 | **Product Owner** | Mantém e prioriza o backlog; representa o cliente. |
 | **Tech Lead / Arquiteto** | Apoia estimativas técnicas e decisões; conduz o time tecnicamente. |
 | **Equipe** | Participa das estimativas (planning poker) e executa o trabalho. |
+| **QA** | Verifica e valida as entregas conforme o processo de V&V. |
+| **GQA** | Avalia, de forma independente, a aderência do processo e dos produtos de trabalho. |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 4. Escopo e adaptação
 

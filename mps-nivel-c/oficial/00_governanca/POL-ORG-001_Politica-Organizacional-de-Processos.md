@@ -41,7 +41,7 @@ Os projetos da Timeware são conduzidos predominantemente sob abordagem **ágil 
 
 ## 4. Diretrizes (compromissos da direção)
 
-A direção da Timeware, representada pelo Founder e CEO, compromete-se a:
+A direção da Timeware — no nível **estratégico**, exercida pelo Founder e CEO (patrocínio), e no nível **operacional**, exercida pelo COO (Operações) — compromete-se a:
 
 **4.1. Definir e manter processos-padrão.** A organização manterá um conjunto de processos-padrão documentados, com diretrizes de adaptação, disponíveis a todos os colaboradores em uma biblioteca de ativos de processo.
 
@@ -67,7 +67,8 @@ A Timeware adota uma separação clara entre quem **define** os processos, quem 
 
 | Papel | Responsabilidade em relação à Política |
 |---|---|
-| **Founder e CEO** | Aprovar e patrocinar a Política; garantir recursos; revisar periodicamente o alinhamento dos processos aos objetivos de negócio. |
+| **Founder e CEO** | Aprovar e patrocinar a Política no nível estratégico; garantir recursos; revisar periodicamente o alinhamento dos processos aos objetivos de negócio. |
+| **COO (Operações)** | Direção operacional dos processos: prover e priorizar recursos e o portfólio de projetos; conduzir a análise crítica dos processos e reportar ao CEO. |
 | **Time de Melhoria Contínua** (Grupo de Processos da organização) | **Definir** e manter os processos-padrão, templates e materiais de apoio; disponibilizá-los na biblioteca de ativos; apoiar os projetos no uso dos processos e conduzir sua melhoria contínua. |
 | **Garantia da Qualidade de Processo (GQA)** | **Verificar** objetivamente se os projetos e equipes executam o trabalho de acordo com os processos definidos e se os produtos de trabalho atendem aos padrões, de forma independente em relação a quem executou o trabalho avaliado. |
 | **Gerentes de Projeto** | **Executar** o planejamento e o acompanhamento dos projetos conforme os processos, adaptando-os ao contexto de cada projeto. |
@@ -82,6 +83,8 @@ A Timeware adota uma separação clara entre quem **define** os processos, quem 
 - Plano de Medição
 - Estratégia de Gerência de Riscos e Oportunidades
 - Plano de Melhoria de Processos
+- CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
+- MAPA-ORG-002 — Matriz de Papéis e Responsabilidades
 
 ## 7. Aprovação
 

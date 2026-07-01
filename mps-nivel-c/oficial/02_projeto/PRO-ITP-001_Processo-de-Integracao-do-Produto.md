@@ -27,7 +27,7 @@ A integração na Timeware é majoritariamente **contínua e automatizada**, apo
 
 ## 4. Ambiente de integração
 
-- O **ambiente de integração** é estabelecido com o Azure DevOps (Pipelines) e os ambientes de build/homologação, conforme os ambientes-padrão (PLA-GCO-001 / PLA-GPC-001).
+- O **ambiente de integração** é estabelecido com o Azure DevOps (Pipelines) e os ambientes de build/homologação, conforme os ambientes-padrão (PLA-GPC-001 §3).
 
 ## 5. Prontidão dos componentes
 
@@ -44,7 +44,7 @@ A integração na Timeware é majoritariamente **contínua e automatizada**, apo
 
 ## 8. Entrega e material de apoio
 
-- O produto integrado e testado é **entregue** em homologação para aprovação do cliente e, após aprovação, promovido para produção (conforme o processo-padrão).
+- O produto integrado e testado é **promovido** pelo fluxo de ambientes do processo-padrão — **dev → QA → homologação → stage → produção**. A **aprovação do cliente** ocorre em **stage** (réplica de produção) e, quando não há ambiente de stage, em **homologação** (fallback); após a aprovação, o produto é promovido para **produção**.
 - O **material de apoio** necessário (documentação técnica, instruções de uso/implantação, quando aplicável) é disponibilizado junto à entrega.
 
 ## 9. Papéis
@@ -52,9 +52,12 @@ A integração na Timeware é majoritariamente **contínua e automatizada**, apo
 | Papel | Responsabilidade |
 |---|---|
 | **Tech Lead / Arquiteto** | Definem a estratégia de integração e as interfaces. |
-| **Equipe de Desenvolvimento** | Integra os componentes; mantém os pipelines. |
+| **DevOps** | Provê e mantém os pipelines e os ambientes de integração e de promoção. |
+| **Equipe de Desenvolvimento** | Integra os componentes conforme a estratégia. |
 | **QA** | Testa o produto integrado (ver VV). |
 | **Gerente de Projeto** | Garante a entrega e o material de apoio. |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 10. Documentos e artefatos relacionados
 

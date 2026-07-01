@@ -68,10 +68,13 @@ Além do registro padrão, a Timeware incorpora dois elementos que aumentam o va
 
 | Papel | Responsabilidade |
 |---|---|
-| **Tech Lead / Arquiteto** | Conduzem decisões técnicas e de arquitetura formais. |
-| **Gerente de Projeto** | Identifica decisões que atingem os gatilhos; garante o registro. |
+| **Tech Lead / Arquiteto** | Responsável (R): conduz decisões técnicas e de arquitetura formais (conforme o contexto). |
+| **Gerente de Projeto** | Responsável (R): conduz e/ou identifica decisões que atingem os gatilhos, conforme o contexto; garante o registro. |
 | **Product Owner** | Participa de decisões que afetam escopo e produto. |
-| **COO (Operações)** | Participa de decisões de alto impacto organizacional. |
+| **COO (Operações)** | Consultado (C) em decisões de alto impacto organizacional. |
+| **Garantia da Qualidade (GQA)** | Consultada (C) quanto à aderência ao processo de decisão. |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 7. Documentos relacionados
 

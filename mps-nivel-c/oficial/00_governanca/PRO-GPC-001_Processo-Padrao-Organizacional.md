@@ -55,13 +55,16 @@ A primeira é concepção que antecede o plano; a segunda é uma dinâmica de ex
 | **Comercial** | Origina o projeto; formaliza o fechamento com o cliente; define o escopo macro (o que entra e o que não entra). |
 | **Escritório de Projetos / Gerente de Projeto** | Recebe a demanda do Comercial (passagem de bastão); monta a equipe; planeja, monitora e controla o projeto; gerencia riscos, escopo, cronograma e partes interessadas. O Escritório de Projetos é a função de gestão de projetos da organização, porta de entrada das demandas. |
 | **Product Owner (PO)** | Conduz o levantamento com o cliente; mantém e prioriza o backlog; valida entregas. |
-| **Tech Lead** | Conduz o Discovery com o PO; lidera tecnicamente o time; participa do design técnico. Pode ser acumulado com o papel de Arquiteto. |
-| **Arquiteto** | Define a arquitetura técnica, modelo de dados e integrações; acompanha o design adiantado quanto a impactos estruturais. Pode ser a mesma pessoa que o Tech Lead. |
+| **Tech Lead / Arquiteto** | Conduz o Discovery com o PO; lidera tecnicamente o time; define a arquitetura técnica, o modelo de dados e as integrações; acompanha o design adiantado quanto a impactos estruturais. Os papéis de Tech Lead e Arquiteto podem ser acumulados pela mesma pessoa. |
 | **UX/UI** | Elabora wireframes e protótipos; valida o design com o cliente. |
 | **Equipe de Desenvolvimento** | Constrói o produto conforme o design e os critérios de aceite. |
 | **QA** | Aplica metodologias de teste e valida o produto antes da entrega. |
+| **DevOps** | Provê e mantém os ambientes e o pipeline de integração e entrega (Git + Azure DevOps); apoia versionamento, builds e promoções entre ambientes. |
+| **GCO Baseline / Auditoria** | Estabelece e controla as baselines de configuração; audita a integridade dos itens de configuração e o controle de mudanças. |
 | **Garantia da Qualidade de Processo (GQA)** | Verifica objetivamente a aderência ao processo e a qualidade dos produtos de trabalho. |
 | **Time de Melhoria Contínua** | Mantém e melhora este processo-padrão; apoia os projetos no seu uso. |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 5. Fases do processo
 

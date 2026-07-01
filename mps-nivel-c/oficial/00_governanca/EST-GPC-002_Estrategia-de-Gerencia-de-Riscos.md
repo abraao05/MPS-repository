@@ -6,7 +6,7 @@
 | **Versão** | 1.1 |
 | **Data** | 25/11/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Aprovação** | Time de Melhoria Contínua |
+| **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -81,7 +81,7 @@ Os riscos e oportunidades são registrados e acompanhados no **Jira**, contendo 
 
 ## 6. Riscos organizacionais
 
-Além dos riscos de projeto, a Timeware acompanha riscos de natureza organizacional — por exemplo, concorrência de recursos entre projetos do portfólio, dependência de pessoas-chave e riscos de negócio. Esses riscos são tratados pela gerência e pelo Time de Melhoria Contínua, conforme a Gerência Organizacional de Software (OSW).
+Além dos riscos de projeto, a Timeware acompanha riscos de natureza organizacional — por exemplo, concorrência de recursos entre projetos do portfólio, dependência de pessoas-chave e riscos de negócio. Esses riscos são tratados pela gerência e pelo Time de Melhoria Contínua, conforme a PRO-OSW-001 — Governança Organizacional de Processos.
 
 ## 7. Papéis
 
@@ -93,12 +93,14 @@ Além dos riscos de projeto, a Timeware acompanha riscos de natureza organizacio
 | **COO (Operações)** | Trata os riscos organizacionais; decide respostas no nível operacional; reporta ao CEO os de maior exposição. |
 | **Founder e CEO** | Decide sobre riscos organizacionais que exigem autoridade estratégica. |
 
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
+
 ## 8. Documentos relacionados
 
 - POL-ORG-001 — Política Organizacional de Processos
 - PRO-GPC-001 — Processo-Padrão Organizacional
 - Processo de Gerência de Projetos (GPR)
-- Gerência Organizacional de Software (OSW)
+- PRO-OSW-001 — Governança Organizacional de Processos
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
 
 ## 9. Rastreabilidade e instrução para auditoria

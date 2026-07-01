@@ -21,7 +21,7 @@ Este processo define como a Timeware projeta (design) e constrói o produto de s
 O design ocorre em dois momentos distintos: (a) na **concepção** (antes da construção), como parte das trilhas paralelas que geram insumo para o plano — define-se a arquitetura e, quando aplicável, o design de UX/UI validado com o cliente; e (b) durante o **desenvolvimento**, em que o design segue **adiantado** de uma a duas sprints à frente da construção. Em ambos, o design compreende duas dimensões:
 
 - **Design de produto (UX/UI):** aplicável a projetos com interface de usuário. Quando aplicável, parte de wireframes de baixa fidelidade validados com o cliente.
-- **Design técnico (arquitetura):** sempre aplicável. Arquitetura, modelo de dados e integrações, definidos pelo Arquiteto/Tech Lead.
+- **Design técnico (arquitetura):** sempre aplicável. Arquitetura, modelo de dados e integrações, definidos pelo Tech Lead / Arquiteto.
 
 A aplicabilidade do design de UX/UI é definida na adaptação do projeto (GUIA-GPC-001): projetos sem front-end (APIs, serviços) mantêm apenas o design técnico.
 
@@ -35,25 +35,27 @@ A aplicabilidade do design de UX/UI é definida na adaptação do projeto (GUIA-
 ## 4. Avaliação do design
 
 - O design é **avaliado antes da construção**, verificando aderência aos requisitos, consistência e viabilidade.
-- Quando há UX/UI, o protótipo é **validado com o cliente**; o design técnico é revisado pela equipe técnica (Arquiteto/Tech Lead).
+- Quando há UX/UI, o protótipo é **validado com o cliente**; o design técnico é revisado pela equipe técnica (Tech Lead / Arquiteto).
 - Problemas identificados na avaliação são **tratados** antes de a construção do item correspondente iniciar.
 
 ## 5. Construção do produto
 
 - O produto é **implementado conforme o design** validado, em sprints, seguindo o fluxo do processo-padrão (PRO-GPC-001).
 - O código é versionado e controlado conforme a Gerência de Configuração (PLA-GCO-001).
-- Cada item segue a **Definição de Pronto**: critérios de aceite atendidos, code review aprovado, testes do QA executados, entrega em homologação/staging.
+- Cada item segue a **Definição de Pronto**: critérios de aceite atendidos, code review aprovado, testes do QA executados, entrega em homologação/stage.
 - As informações de construção (código, documentação técnica) são mantidas e rastreáveis em relação ao design e aos requisitos.
 
 ## 6. Papéis
 
 | Papel | Responsabilidade |
 |---|---|
-| **Arquiteto / Tech Lead** | Definem o design técnico; avaliam o design; lideram tecnicamente a construção. |
+| **Tech Lead / Arquiteto** | Definem o design técnico; avaliam o design; lideram tecnicamente a construção. |
 | **UX/UI** | Elabora e valida o design de interface (quando aplicável). |
 | **Equipe de Desenvolvimento** | Implementa o produto conforme o design; realiza code review. |
 | **Product Owner** | Valida o design de produto com o cliente. |
 | **QA** | Verifica a implementação conforme a Definição de Pronto (ver VV). |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 7. Documentos e artefatos relacionados
 

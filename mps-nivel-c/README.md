@@ -11,8 +11,9 @@ Este repositório contém a **camada de definição** dos processos da Timeware:
 - **Escopo da avaliação:** desenvolvimento de **software sob medida para clientes** (modelo fábrica de software). Produto próprio e sustentação não fazem parte do escopo desta versão.
 - **Modelo de referência:** MR-MPS-SW:2024, Nível C.
 - **Avaliadora:** ASR Consultoria.
+- O processo de Aquisição (AQU) é não-aplicável (desenvolvimento 100% com equipe própria) — ver declaração em PRO-OSW-001.
 
-> **Estado atual:** a camada de **definição** dos 12 processos está completa. A camada de **evidências** (preenchimento dos templates com dados de 4 projetos reais) é a etapa seguinte.
+> **Estado atual:** a camada de **definição** dos 11 processos está completa. A camada de **evidências** (preenchimento dos templates com dados de 4 projetos reais) é a etapa seguinte.
 
 ## 2. Organização do repositório
 
@@ -21,9 +22,10 @@ Este repositório contém a **camada de definição** dos processos da Timeware:
 ├── oficial/                     ← evidência MPS (auditada pela ASR)
 │   ├── 00_governanca/           ← política, processo-padrão, GQA, riscos, OSW, diagrama
 │   ├── 01_apoio/                ← MED, CAP, GDE, GCO, AQU
-│   ├── 02_processos_projeto/    ← GPR, REQ, PCP, ITP, VV
+│   ├── 02_projeto/              ← GPR, REQ, PCP, ITP, VV
 │   ├── 03_templates/            ← TPL-* (modelos preenchidos por projeto)
-│   └── 04_capacidade/           ← mapa de capacidade
+│   ├── 04_registros/            ← evidências preenchidas por projeto
+│   └── 05_capacidade/           ← mapa de capacidade
 │
 └── _interno/                    ← apoio à gestão (NÃO vai para a avaliação)
     ├── MAPA-ORG-001             ← mapa de artefatos (índice-mestre)
@@ -43,14 +45,14 @@ Os documentos seguem o padrão **`TIPO-PROCESSO-NÚMERO`** (definido em CONV-ORG
 - **Processo:** sigla MPS (GPR, REQ, GPC...) ou `ORG` (organizacional).
 - **Versão:** `MAIOR.MENOR`, sem data no nome (o histórico de versões fica no rodapé de cada documento e no Git).
 
-## 4. Os 12 processos (camada de definição — completa)
+## 4. Os 11 processos (camada de definição — completa)
 
 ### Governança
 | Código | Documento | Versão | Resultados MPS |
 |---|---|---|---|
 | POL-ORG-001 | Política Organizacional de Processos | 1.0 | OSW 1 |
-| CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.0 | GCO 1, 4 |
-| PRO-GPC-001 | Processo-Padrão Organizacional | 2.1 | GPC 2 |
+| CONV-ORG-001 | Convenção de Nomenclatura e Versionamento | 1.1 | GCO 1, 4 |
+| PRO-GPC-001 | Processo-Padrão Organizacional | 2.2 | GPC 2 |
 | GUIA-GPC-001 | Guia de Adaptação do Processo-Padrão | 1.2 | GPC 2 |
 | EST-GPC-001 | Estratégia de Garantia da Qualidade | 1.2 | GPC 3 |
 | EST-GPC-002 | Estratégia de Gerência de Riscos | 1.1 | GPC 7 |
@@ -58,6 +60,7 @@ Os documentos seguem o padrão **`TIPO-PROCESSO-NÚMERO`** (definido em CONV-ORG
 | PLA-GPC-001 | Plano de Gestão e Melhoria de Processos | 1.2 | GPC 1, 4, 5, 8, 10, 11 |
 | PRO-OSW-001 | Governança Organizacional de Processos | 1.1 | OSW 2-7 |
 | PRO-OSW-002 | Gestão de Portfólio de Projetos | 1.1 | OSW 8-10 |
+| MAPA-ORG-002 | Matriz de Papéis e Responsabilidades | 1.4 | CP-ii/CP-iii (rastreabilidade) |
 
 ### Apoio
 | Código | Documento | Versão | Resultados MPS |
@@ -66,7 +69,6 @@ Os documentos seguem o padrão **`TIPO-PROCESSO-NÚMERO`** (definido em CONV-ORG
 | PLA-CAP-001 | Plano de Capacitação | 1.0 | CAP 1-4 |
 | PRO-GDE-001 | Processo de Gerência de Decisões | 1.0 | GDE 1-6 |
 | PLA-GCO-001 | Plano de Gerência de Configuração | 1.0 | GCO 1-5 |
-| PRO-AQU-001 | Processo de Aquisição | 1.0 | AQU 1-4 |
 
 ### Processos de Projeto
 | Código | Documento | Versão | Resultados MPS |
@@ -143,7 +145,7 @@ A garantia da qualidade opera em três funções separadas, assegurando independ
 
 ## 10. Estado e próximos passos
 
-**Concluído:** camada de definição completa (12 processos + templates + mapa de capacidade).
+**Concluído:** camada de definição completa (11 processos + templates + mapa de capacidade).
 
 **Próximas etapas:**
 - Definir os 4 projetos da avaliação (modelo fábrica de software).

@@ -31,7 +31,7 @@ A implantação segue do macro (governança organizacional) para o granular (exe
 | Fase | Camada | Processos | Por quê primeiro |
 |---|---|---|---|
 | **1** | Governança | OSW, GPC | Definem a estrutura, a política e a *biblioteca de processos* que todo o resto usa |
-| **2** | Apoio organizacional | MED, CAP, GDE, GCO, AQU | Serviços organizacionais que os projetos consomem |
+| **2** | Apoio organizacional | MED, CAP, GDE, GCO | Serviços organizacionais que os projetos consomem |
 | **3** | Execução de projeto | GPR, REQ, PCP, ITP, VV | O ciclo de vida do projeto, adaptado do processo-padrão |
 | **4** | Capacidade (transversal) | CP_Projeto, CP_Organizacional | Institucionalização — aplica-se a TODOS os processos acima |
 
@@ -75,7 +75,6 @@ MPS-Nivel-C/
 | PLA-GCO-001 | Plano de Gerência de Configuração | 1.0 | GCO 1-5 | Aprovado |
 | PRO-GDE-001 | Processo de Gerência de Decisões | 1.0 | GDE 1-6 | Aprovado |
 | PLA-CAP-001 | Plano de Capacitação | 1.0 | CAP 1-4 | Aprovado |
-| PRO-AQU-001 | Processo de Aquisição | 1.0 | AQU 1-4 | Aprovado (a confirmar aplicabilidade c/ ASR) |
 | PRO-GPR-001 | Processo de Gerência de Projetos | 1.3 | GPR 1-20 | Aprovado |
 | TPL-GPR-001 | Template de Plano de Projeto | 1.0 | GPR (template) | Aprovado |
 | PRO-REQ-001 | Processo de Engenharia de Requisitos | 1.1 | REQ 1-7 | Aprovado |
@@ -98,7 +97,9 @@ MPS-Nivel-C/
 | GUIA-GPR-001 | Roteiro de Apresentação de Kickoff | 1.0 | — (apoio) | Aprovado |
 | README | README do repositório [INTERNO] | 1.0 | — (apoio/navegação) | Aprovado |
 | TREINO-* | Materiais de Treinamento do time (apostilas por papel) [INTERNO] | — | — (apoio à preparação para a avaliação) | Criados em conversa dedicada do projeto |
-| DIAG-GPC-001 | Diagrama do Fluxo do Processo-Padrão (figura) | 1.0 | GPC 2 (ilustra PRO-GPC-001) | A atualizar (grooming/ambientes) |
+| DIAG-GPC-001 | Diagrama do Fluxo do Processo-Padrão (figura) | — | GPC 2 (ilustra PRO-GPC-001) | A produzir |
+| MAPA-ORG-002 | Matriz de Papéis e Responsabilidades | 1.4 | CP-ii/CP-iii (rastreabilidade) | Aprovado |
+| MAPA-ORG-003 | Matriz de Papéis (planilha) | 1.4 | CP-ii/CP-iii (rastreabilidade) | Aprovado |
 | MAPA-CAP-001 | Mapa de Capacidade dos Processos | 1.0 | CP-E/D/C (rastreabilidade) | Aprovado |
 
 ---
@@ -180,16 +181,6 @@ MPS-Nivel-C/
 | GCO 4 | Registros de itens e modificações | **PLA-GCO-001 §6** | PROJ | Git/Azure DevOps | ✅ |
 | GCO 5 | Auditorias de configuração executadas | **PLA-GCO-001 §7** (auditoria via GQA) | DEF/ORG | Confluence | ✅ |
 
-### AQU — Aquisição
-| Resultado | Exigência (resumo) | Artefato de evidência | Tipo | Local | Status |
-|---|---|---|---|---|---|
-| AQU 1 | Critérios de avaliação de fornecedores + pedidos de proposta | **PRO-AQU-001 §3** | DEF/ORG | Confluence | ✅ |
-| AQU 2 | Respostas avaliadas e fornecedor selecionado | **PRO-AQU-001 §4** | DEF/ORG + PROJ | Confluence | ✅ |
-| AQU 3+ | Desempenho do fornecedor monitorado (acordo) | **PRO-AQU-001 §5** | DEF/ORG + PROJ | Confluence | ✅ |
-| AQU 4+ | Revisão técnica das entregas do fornecedor documentada | **PRO-AQU-001 §6** | DEF/ORG + PROJ | Confluence | ✅ |
-
-> **AQU — DECISÃO v0.2: ÚLTIMO A PRODUZIR / CANDIDATO A NÃO-APLICÁVEL.** A TIMEWARE confirmou que **nenhum dos 4 projetos** da avaliação tem aquisição/subcontratação de desenvolvimento (todo o desenvolvimento é feito por colaboradores próprios sob gestão da TIMEWARE). Ação: (1) confirmar a não-aplicabilidade com o **avaliador líder da ASR**; (2) se a ASR exigir, produzir apenas a versão organizacional enxuta (Critérios de Seleção + Template de Acordo/Monitoramento) "na prateleira". **Não bloqueia o restante da implantação.**
-
 ---
 
 ## FASE 3 — EXECUÇÃO DE PROJETO
@@ -259,9 +250,9 @@ MPS-Nivel-C/
 
 ---
 
-## FASE 4 — CAPACIDADE (TRANSVERSAL A TODOS OS 13 PROCESSOS)
+## FASE 4 — CAPACIDADE (TRANSVERSAL A TODOS OS 11 PROCESSOS)
 
-> **Atenção:** os atributos CP-E/D/C **não são um processo separado**. São exigências de *institucionalização* que o avaliador verifica para **cada um** dos 13 processos. É o que diferencia o Nível C de níveis iniciais.
+> **Atenção:** os atributos CP-E/D/C **não são um processo separado**. São exigências de *institucionalização* que o avaliador verifica para **cada um** dos 11 processos. É o que diferencia o Nível C de níveis iniciais.
 
 | Atributo (CP-E/D/C) | O que exige | Como evidenciamos (transversal) | Status |
 |---|---|---|---|

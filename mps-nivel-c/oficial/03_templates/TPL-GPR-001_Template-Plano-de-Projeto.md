@@ -86,15 +86,25 @@
 
 *[Registre a avaliação de viabilidade do projeto considerando escopo, estimativas, recursos e riscos.]*
 
-## 11. Aprovação do Plano (GPR 13)
+## 11. Aprovação do Plano (GPR 12) e compromisso da equipe (GPR 13)
 
-*[O plano é apresentado ao cliente na reunião de Apresentação e Aprovação do Plano. O aceite é registrado na ata dessa reunião (não há documento de assinatura separado). Registre abaixo a referência da reunião/ata e os envolvidos.]*
+*[O plano integrado é apresentado ao cliente na reunião de Apresentação e Aprovação do Plano. O aceite é registrado na ata dessa reunião (não há documento de assinatura separado). Registre abaixo a referência da reunião/ata e os envolvidos.]*
+
+**Aprovação do Plano — baseline (GPR 12)**
 
 | Envolvido | Papel | Aceite | Data | Ref. da ata |
 |---|---|---|---|---|
 | [nome/papel] | [...] | [aprovado] | [data] | [link/ata] |
 
 > A aprovação registrada aqui estabelece a **baseline** do projeto. A partir dela, mudanças de escopo seguem o fluxo de change request.
+
+**Compromisso da equipe (GPR 13)**
+
+*[Registre o compromisso formal da equipe do projeto com o plano — distinto do aceite do cliente. É a evidência de que os responsáveis pela execução revisaram e se comprometeram com escopo, prazos e recursos planejados.]*
+
+| Membro / papel | Compromisso | Data | Ref. da ata |
+|---|---|---|---|
+| [nome/papel] | [assumido] | [data] | [link/ata] |
 
 ---
 

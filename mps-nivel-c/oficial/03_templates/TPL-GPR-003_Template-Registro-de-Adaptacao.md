@@ -33,7 +33,7 @@
 | Etapa / artefato | Aplicável? | Observação |
 |---|---|---|
 | Design de UX/UI | [sim / não] | [ex.: projeto sem front-end] |
-| Mapa de teste (por história) | [conforme critério VV 5.1] | [...] |
+| Mapa de teste (por história) | [conforme PRO-VV-001 §5.1] | [...] |
 | [outros] | [...] | [...] |
 
 ## 3. Pontos de controle obrigatórios (não adaptáveis)

@@ -41,10 +41,14 @@ O Time de Melhoria Contínua é composto por um conjunto de colaboradores design
 |---|---|
 | **Coordenação do Time** | Conduz os trabalhos do Time, organiza a pauta, representa o grupo junto à direção. |
 | **Membros do Time** | Participam da definição, manutenção e melhoria dos processos; atuam como auditores da GQA em regime de rodízio. |
-| **Patrocínio operacional (COO)** | Responde operacionalmente pelos processos e pelo Time de Melhoria Contínua; garante recursos no dia a dia; decide impasses operacionais; reporta ao CEO. |
+| **Patrocínio operacional (COO)** | Detém a **autoridade (A)** sobre a Gerência de Processos (GPC); responde operacionalmente pelos processos e pelo Time de Melhoria Contínua; garante recursos no dia a dia; decide impasses operacionais; reporta ao CEO. |
 | **Patrocínio estratégico (Founder e CEO)** | Patrocina os processos no nível estratégico; assegura o alinhamento aos objetivos de negócio. |
 
+Na Gerência de Processos (GPC), a **autoridade (A)** é do COO e a **execução (R)** é conduzida pelo Time de Melhoria Contínua, com a coordenação do SEPG; a Garantia da Qualidade de Processo (GQA) é consultada (C).
+
 A composição nominal do Time de Melhoria Contínua (nomes e cargos dos membros) é registrada em `<lista de membros — a designar>`.
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 5. Funcionamento
 
@@ -63,6 +67,7 @@ Embora a Garantia da Qualidade de Processo seja uma função do Time de Melhoria
 - PRO-GPC-001 — Processo-Padrão Organizacional
 - EST-GPC-001 — Estratégia de Garantia da Qualidade
 - CONV-ORG-001 — Convenção de Nomenclatura e Versionamento
+- MAPA-ORG-002 — Matriz de Papéis e Responsabilidades
 
 ## 8. Rastreabilidade e instrução para auditoria
 

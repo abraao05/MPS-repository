@@ -79,8 +79,12 @@ Os **defeitos** identificados são registrados (Jira/Xray), priorizados e **trat
 |---|---|
 | **Desenvolvedor** | Testa o que produz conforme critérios de aceite; participa do code review. |
 | **QA** | Planeja e aplica metodologias de teste; registra casos e resultados. |
-| **Tech Lead** | Conduz/garante a revisão por pares. |
-| **Product Owner / Cliente** | Valida o produto na homologação. |
+| **Gerente de Projeto** | Conduz a validação com o cliente e assegura o tratamento dos resultados. |
+| **Tech Lead / Arquiteto** | Conduz/garante a revisão por pares. |
+| **GQA** | Verifica, de forma independente, a aderência das atividades de V&V ao processo. |
+| **Product Owner / Cliente** | Valida o produto em **stage** (réplica de produção; ou homologação, quando não há stage). |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 9. Documentos e artefatos relacionados
 

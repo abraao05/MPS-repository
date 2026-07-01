@@ -6,7 +6,7 @@
 | **Versão** | 1.2 |
 | **Data** | 17/12/2025 |
 | **Organização** | Timeware Brasil Softwares e Serviços LTDA |
-| **Aprovação** | Time de Melhoria Contínua |
+| **Aprovação** | COO (Operações) |
 | **Nota de auditoria** | Para a correspondência deste documento com o modelo de referência, ver a seção final "Rastreabilidade e instrução para auditoria". |
 | **Classificação** | Ativo de processo organizacional |
 
@@ -27,15 +27,15 @@ A GQA **não avalia a qualidade técnica interna do código-fonte** — essa res
 
 ## 3. Responsável e independência
 
-A GQA é exercida por **membros do Time de Melhoria Contínua, em regime de rodízio**.
+A GQA é exercida por um **papel dedicado e independente** — o **Responsável pela Garantia da Qualidade (GQA)** —, cujo titular é **externo ao Time de Melhoria Contínua**. Este arranjo substitui o modelo anterior de rodízio de membros do Time de Melhoria Contínua, assegurando que a função de verificação seja permanente e estruturalmente independente das áreas que executam e mantêm os processos.
 
 A objetividade da verificação é assegurada pela **independência entre quem audita e quem executa**:
 
-- o responsável pela verificação de um projeto **não pode ter atuado na execução** daquele projeto;
-- a verificação é conduzida por **auditor externo à equipe avaliada**;
-- o rodízio entre os membros do Time de Melhoria Contínua distribui as verificações e evita que a mesma pessoa audite continuamente o mesmo time.
+- o responsável pela verificação **não pode ter atuado na execução** do projeto ou da atividade que audita;
+- a verificação é conduzida por um **papel externo à equipe avaliada**;
+- o responsável pela GQA **não audita ativo que ele mesmo produziu**, preservando a imparcialidade também na verificação dos ativos organizacionais.
 
-No caso específico da verificação dos ativos produzidos pelo próprio Time de Melhoria Contínua, o responsável pela auditoria não deve ser o autor do ativo avaliado.
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 4. Momentos e frequência das verificações
 

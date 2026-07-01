@@ -6,7 +6,7 @@ Este arquivo define **como trabalhar neste repositório**. São regras de compor
 
 ## Contexto do repositório
 
-Repositório dos ativos de processo da **Timeware** para a avaliação **MPS-SW Nível C (MR-MPS-SW:2024)**. Contém a camada de definição dos 12 processos (políticas, processos, estratégias, planos, guias, templates) e, futuramente, as evidências de projetos.
+Repositório dos ativos de processo da **Timeware** para a avaliação **MPS-SW Nível C (MR-MPS-SW:2024)**. Contém a camada de definição dos 11 processos aplicáveis (políticas, processos, estratégias, planos, guias, templates) e, futuramente, as evidências de projetos.
 
 - **Idioma:** português brasileiro. Datas em `dd/mm/aaaa`, moeda em `R$`.
 - **Avaliadora:** ASR Consultoria.

@@ -89,11 +89,14 @@ As auditorias de configuração são conduzidas no contexto da Garantia da Quali
 
 | Papel | Responsabilidade |
 |---|---|
-| **Equipe de Desenvolvimento** | Versiona o código; abre e revisa Pull Requests; mantém os itens sob controle. |
-| **Tech Lead / Arquiteto** | Define a estrutura de branches do projeto; aprova mudanças técnicas relevantes. |
+| **Equipe de Desenvolvimento / DevOps** | Responsável (R): versiona o código; abre e revisa Pull Requests; opera pipelines, builds e releases; mantém os itens sob controle. |
+| **Tech Lead / Arquiteto** | Responsável (R): define a estrutura de branches do projeto; aprova mudanças técnicas relevantes. |
+| **Responsável de Baseline / Auditoria de Configuração (GCO)** | Responsável (R): estabelece e mantém as baselines; conduz as auditorias de configuração e registra os achados. |
 | **Product Owner** | Avalia e aprova mudanças de escopo com o cliente. |
 | **Gerente de Projeto** | Garante que a gerência de configuração seja seguida no projeto. |
-| **Garantia da Qualidade (GQA)** | Conduz as auditorias de configuração. |
+| **Garantia da Qualidade (GQA)** | Consultada (C) quanto à integridade da configuração e à aderência ao processo de GCO. |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 9. Documentos relacionados
 

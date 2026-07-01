@@ -58,9 +58,12 @@ Mudanças de requisito são avaliadas quanto ao impacto (escopo, prazo, design),
 | Papel | Responsabilidade |
 |---|---|
 | **Product Owner** | Conduz o levantamento com o cliente; mantém e prioriza requisitos; valida entregas. |
-| **Tech Lead** | Conduz o Discovery com o PO; analisa viabilidade técnica dos requisitos. |
+| **Gerente de Projeto** | Assegura o compromisso com os requisitos e o controle de mudanças sobre a baseline. |
+| **Tech Lead / Arquiteto** | Conduz o Discovery com o PO; analisa viabilidade técnica dos requisitos. |
 | **Equipe** | Revisa requisitos e assume compromisso; implementa conforme especificado. |
 | **Cliente** | Fornece e valida as necessidades e requisitos. |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 10. Documentos e artefatos relacionados
 

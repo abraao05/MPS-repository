@@ -67,11 +67,13 @@ A manutenção desses recursos é responsabilidade da área de Cultura e Pessoas
 
 | Papel | Responsabilidade |
 |---|---|
-| **COO (Operações)** | Garante recursos e orçamento para a capacitação. |
-| **Cultura e Pessoas (Backoffice)** | Mantém o controle de capacitação, os recursos e os registros. |
-| **Time de Melhoria Contínua** | Identifica necessidades de capacitação relacionadas aos processos. |
+| **COO (Operações)** | Autoridade (A) pela capacitação; garante recursos e orçamento. |
+| **Cultura e Pessoas / Capacitação (Backoffice)** | Responsável (R): mantém o controle de capacitação, os recursos e os registros. |
+| **Time de Melhoria Contínua** | Responsável (R): identifica necessidades de capacitação relacionadas aos processos. |
 | **Líderes / Tech Leads** | Identificam lacunas técnicas; atuam como instrutores e mentores. |
 | **Colaboradores** | Participam das ações e aplicam o aprendizado nos projetos. |
+
+> Os papéis, o RACI e os titulares seguem a **MAPA-ORG-002 — Matriz de Papéis e Responsabilidades** (fonte única).
 
 ## 8. Documentos relacionados
 
